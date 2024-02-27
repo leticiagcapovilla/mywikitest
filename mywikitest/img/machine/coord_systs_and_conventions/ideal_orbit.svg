@@ -1,0 +1,46 @@
+<svg version="1.1" id="svg2" height="218.93004" width="408.90048" xmlns="http://www.w3.org/2000/svg">
+  <defs id="defs4">
+    
+    
+    
+    
+    
+    
+    <marker style="overflow:visible" id="Arrow1Mend" refX="0" refY="0" orient="auto">
+      <path transform="matrix(-0.4,0,0,-0.4,-4,0)" style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" d="M 0,0 5,-5 -12.5,0 5,5 0,0 z" id="path3773"></path>
+    </marker>
+    
+    <marker style="overflow:visible" id="Arrow1Lstart" refX="0" refY="0" orient="auto">
+      <path transform="matrix(0.8,0,0,0.8,10,0)" style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" d="M 0,0 5,-5 -12.5,0 5,5 0,0 z" id="path3764"></path>
+    </marker>
+    <marker style="overflow:visible" id="Arrow1Lend" refX="0" refY="0" orient="auto">
+      <path transform="matrix(-0.8,0,0,-0.8,-10,0)" style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none" d="M 0,0 5,-5 -12.5,0 5,5 0,0 z" id="path3767"></path>
+    </marker>
+    
+  </defs>
+  
+  <metadata id="metadata7">
+    
+      
+        image/svg+xml
+        
+        
+      
+    
+  </metadata>
+  <g transform="translate(-90.491199,-253.86822)" id="layer1">
+    <path transform="matrix(1.2301887,0.14110713,-0.11864877,1.034394,-51.888829,-170.41458)" d="m 471.74124,479.60568 c 0,47.42081 -67.38684,85.86297 -150.51272,85.86297 -83.12589,0 -150.51273,-38.44216 -150.51273,-85.86297 0,-47.42081 67.38684,-85.86297 150.51273,-85.86297 83.12588,0 150.51272,38.44216 150.51272,85.86297 z" id="path4575" style="fill:none;stroke:#000000;stroke-width:0.78015625;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"></path>
+    <path id="path4597" d="m 240.92138,279.84803 c 28.45091,-0.89154 57.00015,1.39149 84.94781,6.79314 28.87299,5.58049 57.20085,14.5315 83.36005,27.96607 7.37542,3.78779 14.57721,7.9309 21.41435,12.62107 4.17145,2.86154 8.20443,5.92492 12.08013,9.17583" style="fill:none;stroke:#f80000;stroke-width:0.87199998;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"></path>
+    <path id="path4789" d="m 240.92138,264.19066 0,31.8198" style="fill:none;stroke:#000000;stroke-width:0.6448819;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.93464567, 1.93464567;stroke-dashoffset:0"></path>
+    <path id="path4793" d="m 442.80396,336.97819 -1e-5,-38.63911" style="fill:none;stroke:#3000f5;stroke-width:0.84600002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"></path>
+    <path style="fill:none;stroke:#3000f5;stroke-width:0.63099998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" d="m 442.94023,336.52525 32.04588,-12.97427" id="path4983"></path>
+    <path id="path4987" d="m 442.57181,297.37229 33.34817,-11.59088" style="fill:none;stroke:#000000;stroke-width:0.60829771;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.433191, 0.60829776;stroke-dashoffset:0;marker-end:none"></path>
+    <path style="fill:none;stroke:#000000;stroke-width:0.60590553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.81771654, 0.60590551;stroke-dashoffset:0;marker-end:none" d="m 475.80469,322.69449 -10e-6,-37" id="path5177"></path>
+    <text id="text5367" y="324.22296" x="480.44638" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans" xml:space="preserve"><tspan y="324.22296" x="480.44638" id="tspan5369">x</tspan></text>
+    <text id="text5371" y="292.43723" x="434.19635" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans" xml:space="preserve"><tspan y="292.43723" x="434.19635" id="tspan5373">y</tspan></text>
+    <text id="text5375" y="362.25867" x="469.91061" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans" xml:space="preserve"><tspan y="362.25867" x="469.91061" id="tspan5377">s</tspan></text>
+    <path id="path5379" d="m 443.04091,336.7429 24.47559,18.57541" style="fill:none;stroke:#3000f5;stroke-width:0.63088322px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"></path>
+    <text id="text5757" y="445.93362" x="275.71426" style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" xml:space="preserve"><tspan y="445.93362" x="275.71426" id="tspan5759">ideal orbit</tspan></text>
+    <text id="text5757-2" y="313.35834" x="199.5058" style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" xml:space="preserve"><tspan y="313.35834" x="199.5058" id="tspan5759-6">reference </tspan><tspan id="tspan5782" y="335.85834" x="199.5058">point for s</tspan></text>
+  </g>
+</svg>
