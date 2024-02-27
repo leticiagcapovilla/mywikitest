@@ -2,7 +2,7 @@
 title: Main page
 description: 
 published: 1
-date: 2024-02-27T21:19:28.552Z
+date: 2024-02-27T21:23:31.459Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-27T21:18:35.165Z
@@ -11,9 +11,9 @@ dateCreated: 2024-02-27T21:18:35.165Z
 # The IMBUIA beamline project
   
 
-![IMB_stations](https://i.ibb.co/BqqwpHJ/estacoes-overview.png){width=200px}
+![estacoes-overview.png](/img/beamlines/imbuia/estacoes-overview.png)
 
-![parameters](https://i.ibb.co/LpB7z3g/overview-table.png){width=200px}
+![overview-table.png](/img/beamlines/imbuia/overview-table.png)
 
 ## Introduction
 
@@ -23,33 +23,33 @@ IMBUIA, an acronym for Infrared Micro- and nano-spectroscopy Beamline for Ultra-
 
 The 5-bend-achromat (5BA) cell of Sirius is comprised of 4 low-field (0.56 T) magnets, named B1 and B2, one super-bend (BC, peak field 3.2 T) and one straight section, as illustrated in Fig. 1a. The IMBUIA beamline source is located in the Sector 7 of the storage ring, inside the first B2 dipole downstream the straight section. The source is defined by an extraction port (originally designed for visible photons diagnostics) centered at 3.01 ==deg== from the electrons orbit (Fig. 1b) and longitudinally located at 295 mm upstream the dipole center. A radiation mask of 7.07 $\times$ 6.00 mm^2^ located in the pumping station of the B2 dipole (1137 mm from the source) defines a radiation extraction of 5.57 $\times$ 5.27 mrad^2^ (Fig. 1c).
 
-![extraction](https://i.ibb.co/prKRRGP/extraction.png){width=500px}
+![extraction.png](/img/beamlines/imbuia/extraction.png)
 
 ****Figure 1****: IR extraction port. a) Magnetic lattice of the sector 7 of the accelerator with indication of the bending magnet source (B2, 0.57 T). b) Top-view section of the B2 dipole chamber highlighting the electrons orbit, SR extraction port and source origin. c) Pumping station after the dipole with radiation mask of 5.57 $\times$ 5.27 mrad^2^ for SR extraction.
 
 Simulations of IR intensity at the radiation mask are presented in Fig. 2. The maps were calculated using the code Synchrotron Radiation Workshop ([SRW](http://www.esrf.eu/Accelerators/Groups/InsertionDevices/Software/SRW)) for an observation window located at the radiation mask of the pumping station of the B2 dipole and for 350 mA stored current. The intensity maps show that the horizontal polarization is dominant as the wavelengths get longer. For instance, for 1 µm wavelength, the 6 mm vertical aperture of the mask allows a fair portion of vertically polarized radiation to be collected, while, for a wavelength of 20 µm, very little of this radiation can exit the port.
 
-![flux_at_port](https://i.ibb.co/Cvh9y7j/Flux-At-Mask.png){width=800px}
+![flux-at-mask.png](/img/beamlines/imbuia/flux-at-mask.png)
 
 ****Figure 2****: SRW simulation of the flux at the radiation mask of the B2 pumping station for several wavelengths. Intensity maps simulated for a stored current of 350 mA.
 
 An important figure to be considered in the designing of SR probes is the source size. Fig.3 presents the simulation of the IR source for the wavelengths of 1, 10 and 20 µm. Since the source is inside the magnetic fields of a B2 dipole, most of the numerical codes do not allow a direct visualisation of the source. Therefore, we used a 1:1 magnification system based on thin lens of the SRW (top row diagram of Fig.3) to simulate the source at its origin. The FWHM of the IR intensity distribution at the origin are 0.22 µm, 1.82 µm and 3.53 µm for the wavelengths of 1, 10 and 20 µm, respectively.
 
-![source_shape](https://i.ibb.co/wyGHXgy/source.png){width=800px}
+![source.png](/img/beamlines/imbuia/source.png)
 
  ****Figure 3****: SRW simulation of the IMBUIA source produced by an imaging optical scheme with magnification 1. Simulations performed for 100 mA stored current.
 
 The size of the source is directly proportional to the wavelength, therefore, it is a diffraction-limited point source in the infrared range. In the other hand, the maximum value for the flux density does not follow the same proportion law as it influenced by the maximum collection angle of the port. To illustrate this in depth, we calculated the spectral flux (Fig. 4a), polarization portions (Fig. 4b), spectral brilliance (Fig. 4c) and irradiance (Fig. 4d). By observing the flux trend (Fig. 4a), it is clear that longer wavelengths are hardly penalized by the small vertical aperture of the port, as the curve drops fast above 1 μm wavelengths. Moreover, the extracted radiation is dominated by horizontal polarization, as the total polarization flux is just slightly above the h-polarized flux. This is confirmed by the polarization study in Fig. 4b, where the h-polarized portion correspond to more than 75% of the total. For longer wavelengths (>20 μm) the polarization becomes mainly horizontal (above 90%), confirming that a very small central portion of the far-IR/THz beam is passing through the extraction port.
 
 
-![figures_merit](https://i.ibb.co/8PJpxSK/figures-merit.png){width=800px}
+![figures-merit.png](/img/beamlines/imbuia/figures-merit.png)
 
 ****Figure 4****: Calculated spectral flux, polarization degree, brilliance and irradiance in the visible-to-IR ranges considering the extraction port described in Fig. 1 at 100 mA. All simulations were done using SRW.
 
 For radiation collection, we designed a vertically-supported flat mirror (M1) installed in front of the extraction port illustrated in Fig. 1c. The full white beam from the bending magnet illuminates the Au-coated Glidcop flat surface that absorbs most of the high energy portion (X-rays) and reflects the lower energy portion (UV, visible and IR), as illustrated in Fig. 5a. As a safety requirement, the entire M1 shaft can move vertically in case the mirror needs to be removed from the beam path, which is the only degree of freedom of M1. Most of the heat load from the white beam is absorbed by the M1, which corresponds to $\sim$ 150 W. Hence, a water-cooling system operates to drain this large power and to reduce M1 surface deformations. For that, a coaxial concept flows cold water ($\sim$ 19$^\circ$ C) towards the illuminated area guided by an inner pipe which returns warmer through the outer gap, as schemed in Fig. 5b. The maximum temperature of the mirror surface is about 62$^\circ$ C predicted for 350 mA (maximum storage ring current), as depicted in Fig. 5c (left panel). Given the total heat load and illumination area of the beam over M1, we calculated the deformation in the X direction (thermal bump quasi-normal to the surface) whose maximum is near 1.9 μm, as displayed in Fig. 5c (middle panel) sided by the equivalent stress that peaks at 54 MPa (Fig. 5c, right panel).
 
 
-![M1](https://i.ibb.co/MS7FyHK/M1.png){width=500px}
+![m1.png](/img/beamlines/imbuia/m1.png)
 
 ****Figure 5****: IR extraction mirror heat load. a) Vertical-mounted flat mirror (M1) is illumi- nated by near 150 W of SR from the B2 bending magnetic. The Au coated mir- ror surface reflects low energy radiation (UV-VIS-IR) and transmits the high energy portion (mostly X-rays) that is mainly absorbed by the Glidcop sub- strate. b) Cross-section of the M1 shaft highlighting the water cooling flow path. c) Numerical simulation of the thermal load, X-deformation and stress around the illuminated area of the mirror, respectively. d) Optical simulation of the secondary source produced by a M1 flat mirror with a Si substrate at -150 $^\circ$C (control case) and the Glidcop substrate (actual case with thermal bump) with the heat load and water cooling system for λ=15 μm (scale bars 1 mm) and λ=1.24 μm (scale bars 100 μm), respectively.
 
@@ -69,19 +69,19 @@ Si @ -150 °C | -118 | 7.9E-6 | 1
 
 The optical layout of IMBUIA is comprised of 4 mirrors in vacuum that delivers the broadband IR beam to either the IMBUIA-nano station or the IMBUIA-micro station (Fig. 4a). The bending magnet IR radiation is first collected by a custom- designed water-cooled Au/Glidcop flat mirror (M1, Fig. 3) that directs the beam towards a periscope made of two Au/glass 2- inches flat mirrors (M2 and M3). Before the periscope, a 1-inch diameter and 500 nm thick CVD diamond window (W1) separates the storage ring and beamline vacuum environments. Flowing downstream, the IR beam crosses the X-rays beam from the neighbor undulator beamline, a concept that avoids extra reflections and makes the beam path as shorter as possible. Then a BaF2 window (W2) separates UHV and open-air environments downstream M3. 
 
-![optics](https://i.ibb.co/nCPb2YP/optics.png){width=500px}
+![optics.png](/img/beamlines/imbuia/optics.png)
 
 ****Figure 6****: IMBUIA optical layout: three flat mirrors (M1, M2 and M3) deliver the VIS-IR broadband beam to the IMBUIA-nano station. A movable parabolic mirror (M4) collimates and directs the beam towards the IMBUIA-micro station on demand.
 
 Yet on the optical table in air environment, a custom designed Au/Aluminum toroidal mirror (M5) collects the naturally divergent IR beam and focuses it 419 mm downstream, producing a secondary source (SS). Using a regular CCD and a band pass filter centered at λ=980 nm, we imaged the SS as showed in (Fig. 4e), whose shape and dimen- sions (FWHM $\sim$ 20 μm) are consistent to the SRW numerical simulation of the SS (FWHM $\sim$ 33 μm at λ=1.24 μm) depicted in Fig. 4d. The small discrepancy between experiment and simulation regarding the FWHM is associated to the slightly different wavelengths and exposure parameters. We used different wavelengths since we could not match available bandpass filters with the minimum energy that SRW can simulate. By positioning a screen at the M5 position and using a 633 nm band pass filter, we could image the beam cross-section (Fig. 4c) with horizontal $\times$ vertical dimensions of 26 $\times$ 23 mm^2^, respectively, and with good agreement with the numerical prediction (Fig. 4b). A structure of rings is observed in both experiment and simulation for λ=633 (Fig. 4b,c) nm and it is understood here as diffraction fringes from the bending magnet extraction port, previously presented in Fig. 1c. An intense curved feature was observed (white arrow in Fig. 4c) and is interpreted as an internal reflection from the dipole chamber. Inside the UHV periscope, a custom-designed Au/Aluminum parabolic mirror (M4) is mounted on a long travel linear stage that enables beam selection to the IMBUIA-micro station.
   
- ![beam_profiles](https://i.ibb.co/JKh69Zk/beam-profiles.png){width=500px}
+ ![beam-profiles.png](/img/beamlines/imbuia/beam-profiles.png)
 
 ****Figure 7****: a,b) Simulated and experimental beam cross-section at the M5 position for 633 nm wavelength. Scale bars represent 10 mm. c,d) Simulation and experiment of the secondary source (SS) after the toroidal focusing mirror (M5) for 1.24 μm and 980 nm wavelengths, respectively. Scale bars represent 10 μm.
 
 Figure 8 shows the supports and stages for the primary optical elements for IMBUIA. The first element M1 is mounted on a custom long travel linear stage (150 mm in vertical) that will be used in special situations when M1 cannot be exposed to the full synchrotron beam (vacuum or thermal failures). M1 stage should not be used for beam alignment purposes. M2, M3 are be mounted on commercial 2-axis (Rx, Ry) kinematic mounts driven by picomotors. M4 is mounted on two commercial stages: _i)_ a long travel Z-stage (103 mm) that allows the selection of the beam to the IMBUIA-micro station and _ii_ a 5-axis stage (Rx, Ry, XYZ) for alignment and collimation purposes of the beam towards the W3 window. All the stages in Figure 8 are ultra-high vacuum (UHV) compatible and controlled by either step motors or piezo drivers.
 
-![stages](https://i.ibb.co/FWy6N1X/Mirrors-mounts.png){width=500px}
+![mirrors-mounts.png](/img/beamlines/imbuia/mirrors-mounts.png)
 
 ****Figure 8****: UHV mirrors mounts and stages. From left to right: M1 long travel vertical stage (Y), 2-axis (Rx, Ry) kinematic mount for M2 and M3, long travel linear stage (Z) and 5-axes stage (Rx, Ry, XYZ) for positioning M4.
 
@@ -114,15 +114,13 @@ Table 4 shows the specifications optical-vacuum windows of the beamline
 
 The vacuum concept have two main objectives: _i)_ to be compatible to the requirements of the storage ring since the first optical element almost inside the B2 pumping station and _ii)_ to offer a humidity-free path for the IR radiation. Despite UHV is not required, the use of ion pumps is mandatory as it avoids extra mechanical noise in the station. The sketch in Figure 9 presents the main idea for the vacuum components for this beamline.
 
-
-![stages](https://i.ibb.co/yPd2HzJ/Vacuum-layout-sketch.png){width=700px}
+![vacuum-layout-sketch.png](/img/beamlines/imbuia/vacuum-layout-sketch.png)
 
 ****Figure 9****: Whiteboard with preliminary thoughts for the vacuum setup for the IMBUIA beamline. Credits: Thiago Miguel, Gustavo Rodrigues and Rafael Molena.
 
 Figure 10 shows the actual vacuum layout installed in the IMBUIA beamline. The first gate valve (GV1) is responsible for isolating the vacuum environment of the storage ring from the M1 chamber when it is in retracted position (case of failure of M1). Bellow the M1 mirror, a non evaporable getter (NEG) cartridge is installed for enhancing the vacuum in the nearby volume. GV2 and GV3 gate valves are responsible for isolating the vacuum paths of the IMBUIA and CATERETÊ beamlines. A CVD diamond window (W1) is installed right after GV3 for isolating the storage ring vacuum from the experimental stations vacuum environments. Before the shielding wall, an ion pump (PMP1) is installed in the gamma shutter chamber together with a pressure sensor (VPS1) and pre-vacuum all-metal angle valve (AV1). A gate valve (GV4) is the last vacuum component inside the accelerator tunnel. Right after the wall, a mirror box (M2-M4) is responsible for delivering the beam to the experimental stations, where a pressure sensor (VPS2) and pre-vacuum all-metal angle valve (AV2) are installed. Towards the IMBUIA-nano station, a KRS5 IR window (W2) separates UHV and air environments. Towards the IMBUIA-micro station, a pair of ion pumps (PMP2 and PMP3) and gate valves (GV5 and GV6) keep an ultra low pressure in a $\sim$ 10 m beam path. Finally, a pressure sensor (VPS3) and pre-vacuum all-metal angle valve (AV3) allow monitoring and pumping the volume right before a KRS5 IR window (W3).
 
-
-![stages](https://i.ibb.co/djcQjkQ/IMBUIA-vac-Full-Layout.png){width=700px}
+![imbuia-vac-full-layout.png](/img/beamlines/imbuia/imbuia-vac-full-layout.png)
 
 ****Figure 10****: IMBUIA vacuum layout. Up to the first window (W1), the vacuum of the beamline is shared with the storage ring and is connected to the pre-frontend of the Caterê beamline. After the shielding wall, the vacuum path is extended to the two experimental station of the beamline (IMBUIA-nano and IMBUIA-micro stations).
 
@@ -155,8 +153,7 @@ Table 5 lists all the vacuum components of the IMBUIA beamline followed by their
   
 ## Radiation protection
 
-
-![stages](https://i.ibb.co/HD500Q7/IMBUIA-rad.png){width=700px}
+![imbuia-rad.png](/img/beamlines/imbuia/imbuia-rad.png)
 
 ****Figure 11****: IMBUIA vacuum layout. Up to the first window (W1), the vacuum of the beamline is shared with the storage ring and is connected to the pre-frontend of the Caterê beamline. After the shielding wall, the vacuum path is extended to the two experimental station of the beamline (IMBUIA-nano and IMBUIA-micro stations).
 
@@ -166,7 +163,7 @@ Table 5 lists all the vacuum components of the IMBUIA beamline followed by their
 
 Brief explanation of the s-SNOM technique and its combination with SR.
 
-![stages](https://i.ibb.co/P6cvW1L/IMB-nano-overview.png){width=700px}
+![imb-nano-overview.png](/img/beamlines/imbuia/imb-nano-overview.png)
 
 ****Figure 12****: Overview of the IMBUIA-nano station.
 
@@ -194,7 +191,7 @@ Lasers: cables/connectors/switches
 
 ### IMBUIA-micro
 
-![warning](https://i.ibb.co/b64SZBg/commissioning.png){width=400px}
+![commissioning.png](/img/beamlines/imbuia/commissioning.png)
 
 The IMBUIA-micro station is still under technical commissioning. This section will be added as soon as it starts operation with synchrotron radiation.
 
