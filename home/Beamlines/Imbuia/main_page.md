@@ -2,7 +2,7 @@
 title: Main page
 description: 
 published: 1
-date: 2024-02-27T21:18:35.166Z
+date: 2024-02-27T21:18:50.533Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-27T21:18:35.165Z
@@ -11,7 +11,7 @@ dateCreated: 2024-02-27T21:18:35.165Z
 # The IMBUIA beamline project
   
 
-![IMB_stations](https://i.ibb.co/BqqwpHJ/estacoes-overview.png){width=20px}
+![IMB_stations](https://i.ibb.co/BqqwpHJ/estacoes-overview.png){width=200px}
 
 ![parameters](https://i.ibb.co/LpB7z3g/overview-table.png){width=200px}
 
