@@ -2,7 +2,7 @@
 title: Magnets
 description: 
 published: 1
-date: 2024-02-28T17:33:34.807Z
+date: 2024-02-28T17:34:00.924Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T15:03:10.955Z
