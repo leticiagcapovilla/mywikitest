@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-02-28T19:56:21.779Z
+date: 2024-02-28T19:57:01.123Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T13:34:03.079Z
@@ -676,7 +676,7 @@ $\Sigma ² = S ² + \Sigma _0 ² + \Sigma _1 ²$
 
 where S is the rms size of the image of the photon beam at a distance d from the pinhole, Σ0² is the point spread function of the system and Σ1² accounts for effects of blurring caused by the phosphor screen and also the CCD camera resolution. For monochromatic radiation the pinhole contribution to the PSF can be further decomposed into two contributions: 
 
-$\Sigma _0 ² = S²_{aperture} + S²_{diff}$
+${\Sigma _0 ² = S²_{aperture} + S²_{diff}}$
 
 $S_{aperture}$ is the geometrical projection of the pinhole opening. A point source of light illuminating a hole at a distance d, will project a spot of light on the scintillator screen. The size of this spot is A(D+d)/d, where A is the pinhole diameter and D is the distance from the pinhole to the screen. The camera geometric magnification is M=D/d, and the corresponding rms size of this contribution to the total measured beam size is: 
 
