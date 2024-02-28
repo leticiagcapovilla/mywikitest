@@ -2,7 +2,7 @@
 title: Main Page
 description: 
 published: 1
-date: 2024-02-27T21:28:09.953Z
+date: 2024-02-28T18:21:24.147Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-27T16:38:22.793Z
@@ -12,7 +12,7 @@ dateCreated: 2024-02-27T16:38:22.793Z
 
 Look at the First steps page to get acquainted with the Sirius wiki.
 
-Please click here to access Machine:Sirius Commissioning Schedule 
+Please click here to access Machine:Sirius Commissioning Schedule
 
 ## The Sirius project
 
