@@ -2,7 +2,7 @@
 title: Magnets
 description: 
 published: 1
-date: 2024-02-28T15:04:04.565Z
+date: 2024-02-28T17:26:18.052Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T15:03:10.955Z
@@ -751,7 +751,7 @@ A summary of magnet field measurements of SI quadrupoles.
 
 ###### Summary
 
-**IntQuad[T]**
+**IntQuad [T]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
@@ -761,7 +761,7 @@ A summary of magnet field measurements of SI quadrupoles.
 | QDP1  | +5.2365 | ± 0.0021 | 0.0070 |
 | QDP2  | +5.2365 | ± 0.0012 | 0.0042 |
 
-**XCenter[um]**
+**XCenter [um]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
@@ -771,7 +771,7 @@ A summary of magnet field measurements of SI quadrupoles.
 | QDP1  | +4.7 | ± 5.5 | 17.8 |
 | QDP2  | -2.1 | ± 5.4 | 15.6 |
 
-**YCenter[um]**
+**YCenter [um]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
@@ -781,7 +781,7 @@ A summary of magnet field measurements of SI quadrupoles.
 | QDP1  | +3.6 | ± 3.2 | 11.4 |
 | QDP2  | +4.5 | ± 5.3 | 17.9 |
 
-**RollError[mrad]**
+**RollError [mrad]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
@@ -819,7 +819,7 @@ A summary of magnet field measurements of SI quadrupoles.
 
 ###### Summary
 
-**IntQuad[T]**
+**IntQuad [T]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
@@ -829,7 +829,7 @@ A summary of magnet field measurements of SI quadrupoles.
 | Q3  | -9.0883 | ± 0.0057 | 0.0235 |
 | Q4  | -9.0790 | ± 0.0059 | 0.0236 |
 
-**XCenter[um]**
+**XCenter [um]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
@@ -839,7 +839,7 @@ A summary of magnet field measurements of SI quadrupoles.
 | Q3  | +6.5 | ± 5.9 | 25.5 |
 | Q4  | +7.8 | ± 5.5 | 26.2 |
 
-**YCenter[um]**
+**YCenter [um]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
@@ -849,7 +849,7 @@ A summary of magnet field measurements of SI quadrupoles.
 | QDP1  | +4.0 | ± 6.6 | 31.4 |
 | QDP2  | +3.5 | ± 4.4 | 20.8 |
 
-**RollError[mrad]**
+**RollError [mrad]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
@@ -887,28 +887,28 @@ A summary of magnet field measurements of SI quadrupoles.
 
 ###### Summary
 
-**IntQuad[T]**
+**IntQuad [T]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
 | QFB | -13.6385 | ± 0.0050 | 0.0215 | 
 | QFP | -13.6295 | ± 0.0038 | 0.0127 |
 
-**XCenter[um]**
+**XCenter [um]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
 | QFB | +0.6 | ± 7.1 | 28.9 | 
 | QFP | -4.2 | ± 5.1 | 18.8 |
 
-**YCenter[um]**
+**YCenter [um]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
 | QFB | -1.8 | ± 4.5 | 18.0 | 
 | QFP | -2.8 | ± 4.0 | 13.2 |
 
-**RollError[mrad]**
+**RollError [mrad]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
@@ -943,7 +943,7 @@ A summary of magnet field measurements of SI quadrupoles.
 
 ##### Q14 Installation Order
 
-QDA
+**QDA**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -958,7 +958,7 @@ QDA
 |SI-17M2:MA-QDA| Q14-068 |
 |SI-01M1:MA-QDA| Q14-018  |
 
-QDB1
+**QDB1**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -983,7 +983,7 @@ QDB1
 |SI-20M1:MA-QDB1| Q14-025 |
 |SI-20M2:MA-QDB1| Q14-053  |
 
-QDB2
+**QDB2**
 
 | Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1023,7 +1023,7 @@ QDP1
 |SI-19M1:MA-QDP1| Q14-029 |
 |SI-19M2:MA-QDP1| Q14-061  |
 
-QDP2
+**QDP2**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1055,7 +1055,7 @@ Not Used
 
 ##### Q20 Installation Order
 
-QFA
+**QFA**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1070,7 +1070,7 @@ QFA
 |SI-17M2:MA-QFA| Q20-071 |
 |SI-01M1:MA-QFA| Q20-049  |
 
-Q1
+**Q1**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1115,7 +1115,7 @@ Q1
 |SI-20C1:MA-Q1| Q20-007 |
 |SI-20C4:MA-Q1| Q20-021  | 
 
-Q2
+**Q2**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1160,7 +1160,7 @@ Q2
 |SI-20C1:MA-Q2| Q20-065 |
 |SI-20C4:MA-Q2| Q20-152  |
 
-Q3
+**Q3**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1205,7 +1205,7 @@ Q3
 |SI-20C2:MA-Q3| Q20-031 |
 |SI-20C3:MA-Q3| Q20-064  |
 
-Q4
+**Q4**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1250,7 +1250,7 @@ Q4
 |SI-20C2:MA-Q4| Q20-173 |
 |SI-20C3:MA-Q4| Q20-083  |
 
-Not Used
+**Not Used**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1264,7 +1264,7 @@ Not Used
 
 ##### Q30 Installation Order
 
-QFB
+**QFB**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1289,7 +1289,7 @@ QFB
 |SI-20M1:MA-QFB| Q30-023 |
 |SI-20M2:MA-QFB| Q30-022  |
 
-QFP
+**QFP**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1304,7 +1304,7 @@ QFP
 |SI-19M1:MA-QFP| Q30-007 |
 |SI-19M2:MA-QFP| Q30-004  | 
 
-Not Used
+**Not Used**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1338,7 +1338,6 @@ Table 22 lists main specifications for the strength of the sextupole magnets.
 **Table 22**: Storage ring sextupole strength specifications. 
 
 Table 23 lists main specifications for the orbit-corrector in the sextupole magnets.
-
 
 |Coils| CH| CV|  |
 | --- | --- | --- | --- |
