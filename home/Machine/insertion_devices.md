@@ -1,3 +1,13 @@
+---
+title: Insertion Devices
+description: 
+published: 1
+date: 2024-02-28T16:57:49.398Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T16:57:00.067Z
+---
+
 # Machine: Insertion Devices
 
 ## 1 Beamline Insertion Devices Specifications
