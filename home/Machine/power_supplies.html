@@ -2,96 +2,100 @@
 title: Power Supplies
 description: 
 published: 1
-date: 2024-02-28T17:49:23.018Z
+date: 2024-02-28T17:50:01.483Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-02-28T16:57:03.405Z
 -->
 
-<h1 class="toc-header" id="machine-power-supplies"> Machine: Power Supplies</h1>
-<h2 class="toc-header" id="introduction"> Introduction</h2>
+<h1>Machine: Power Supplies</h1>
+<h2>Introduction</h2>
 <p>The Power Supplies (PS) are used to feed the magnets of all accelerators and transport lines, working as current sources. Due to their parameters, the PS were divided in three families:</p>
 <ol>
-<li>Low Power Supplies (FBP): bipolar PS, with output up to 10A/10V, used to feed steering magnets, skew quadrupoles, quadrupole trim coils, etc.</li>
-<li>High Power Supplies (FAP): unipolar PS, with ouput up to 350A/460V, used to feed Dipoles, Quadrupoles and Sextupoles of Storage Ring and other magnets.</li>
-<li>AC Power Supplies (FAC): bipolar PS which will follow a 2-Hz reference, with output up to 1.1kA/800V, used to feed Dipoles, Quadrupoles and Sextupoles of Booster.</li>
+  <li>Low Power Supplies (FBP): bipolar PS, with output up to 10A/10V, used to feed steering magnets, skew quadrupoles, quadrupole trim coils, etc.</li>
+  <li>High Power Supplies (FAP): unipolar PS, with ouput up to 350A/460V, used to feed Dipoles, Quadrupoles and Sextupoles of Storage Ring and other magnets.</li>
+  <li>AC Power Supplies (FAC): bipolar PS which will follow a 2-Hz reference, with output up to 1.1kA/800V, used to feed Dipoles, Quadrupoles and Sextupoles of Booster.</li>
 </ol>
 <p>All the PS will be controlled by the same digital hardware, called Digital Regulation System (DRS), but with different firmwares.</p>
 <p>The main parameters of the Sirius storage ring power supplies are shown in Table 1.</p>
-<div class="table-container"><table>
-<thead>
-<tr>
-<th>Magnet kind</th>
-<th>Dipole B1</th>
-<th>Dipole B2</th>
-<th>Quadrupole Q30 <br>(QFB, QFP)</th>
-<th>Quadrupole Q20 <br>(QFA, Q1, Q2, Q3, Q4)</th>
-<th>Quadrupole Q14 <br>(QDA, QDB1, QDB2, QDP1, QDP2)</th>
-<th>Sextupoles</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Magnet quantity</td>
-<td>40</td>
-<td>40</td>
-<td>30</td>
-<td>170</td>
-<td>70</td>
-<td>280</td>
-</tr>
-<tr>
-<td>Magnet resistance [mohm]</td>
-<td>21.47</td>
-<td>30.26</td>
-<td>46.94</td>
-<td>36.33</td>
-<td>29.97</td>
-<td>35.22</td>
-</tr>
-<tr>
-<td>Magnet inductance [mH]</td>
-<td>8.2</td>
-<td>12.4</td>
-<td>18.0</td>
-<td>12.5</td>
-<td>9.2</td>
-<td>4.6</td>
-</tr>
-<tr>
-<td>Magnet time constant [ms]</td>
-<td>382</td>
-<td>410</td>
-<td>383</td>
-<td>344</td>
-<td>307</td>
-<td>131</td>
-</tr>
-</tbody>
-</table></div>
+<p>blalalal</p>
+<p>&nbsp;</p>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Magnet kind</th>
+        <th>Dipole B1</th>
+        <th>Dipole B2</th>
+        <th>Quadrupole Q30&nbsp;<br>(QFB, QFP)</th>
+        <th>Quadrupole Q20&nbsp;<br>(QFA, Q1, Q2, Q3, Q4)</th>
+        <th>Quadrupole Q14&nbsp;<br>(QDA, QDB1, QDB2, QDP1, QDP2)</th>
+        <th>Sextupoles</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Magnet quantity</td>
+        <td>40</td>
+        <td>40</td>
+        <td>30</td>
+        <td>170</td>
+        <td>70</td>
+        <td>280</td>
+      </tr>
+      <tr>
+        <td>Magnet resistance [mohm]</td>
+        <td>21.47</td>
+        <td>30.26</td>
+        <td>46.94</td>
+        <td>36.33</td>
+        <td>29.97</td>
+        <td>35.22</td>
+      </tr>
+      <tr>
+        <td>Magnet inductance [mH]</td>
+        <td>8.2</td>
+        <td>12.4</td>
+        <td>18.0</td>
+        <td>12.5</td>
+        <td>9.2</td>
+        <td>4.6</td>
+      </tr>
+      <tr>
+        <td>Magnet time constant [ms]</td>
+        <td>382</td>
+        <td>410</td>
+        <td>383</td>
+        <td>344</td>
+        <td>307</td>
+        <td>131</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
 <p><strong>Table 1</strong>: Sirius SI main PS parameters.</p>
-<h2 class="toc-header" id="general-tables"> General Tables</h2>
+<h2>General Tables</h2>
 <ol>
-<li>A general table with power supply parameters can be accessed here (available only through CNPEM Office-365 login)</li>
-<li>Power supply communications architecture can be accessed here (available only through CNPEM Office-365 login)</li>
-<li>Device names of beaglebone black units used for power supply control can be accessed here (available only through CNPEM Office-365 login)</li>
-<li>Control system static table relating power supplies with their DC-Links can be accessed here</li>
+  <li>A general table with power supply parameters can be accessed here (available only through CNPEM Office-365 login)</li>
+  <li>Power supply communications architecture can be accessed here (available only through CNPEM Office-365 login)</li>
+  <li>Device names of beaglebone black units used for power supply control can be accessed here (available only through CNPEM Office-365 login)</li>
+  <li>Control system static table relating power supplies with their DC-Links can be accessed here</li>
 </ol>
-<h2 class="toc-header" id="digital-regulation-system-drs-specifications"> Digital Regulation System (DRS) Specifications</h2>
+<h2>Digital Regulation System (DRS) Specifications</h2>
 <ol>
-<li>BSMP specification of power supplies can be accessed here (available only through CNPEM Office-365 login)</li>
-<li>BSMP documentation can be accessed here</li>
-<li>Parameters bank specification from UDC firmware can be accessed here (available only through CNPEM Office-365 login)</li>
-<li>Control electronics inventory and gain for each HRADC BNC monitors can be accessed here (available only through CNPEM Office-365 login)</li>
-<li>[[ELP:Table of memory addresses for power supplies Scope Source]]</li>
+  <li>BSMP specification of power supplies can be accessed here (available only through CNPEM Office-365 login)</li>
+  <li>BSMP documentation can be accessed here</li>
+  <li>Parameters bank specification from UDC firmware can be accessed here (available only through CNPEM Office-365 login)</li>
+  <li>Control electronics inventory and gain for each HRADC BNC monitors can be accessed here (available only through CNPEM Office-365 login)</li>
+  <li>[[ELP:Table of memory addresses for power supplies Scope Source]]</li>
 </ol>
-<h2 class="toc-header" id="operation-manuals"> Operation Manuals</h2>
-<h1 class="toc-header" id="pscommands-test-turn-on-and-turn-off-procedures"> PSCommands (Test, Turn On and Turn Off procedures)</h1>
-<h2 class="toc-header" id="the-digital-regulation-system-drs"> The Digital Regulation System (DRS)</h2>
-<h2 class="toc-header" id="low-power-power-supplies-fbp"> Low Power Power Supplies (FBP)</h2>
-<h2 class="toc-header" id="high-power-power-supplies-fap"> High Power Power Supplies (FAP)</h2>
+<h2>Operation Manuals</h2>
+<h1>PSCommands (Test, Turn On and Turn Off procedures)</h1>
+<h2>The Digital Regulation System (DRS)</h2>
+<h2>Low Power Power Supplies (FBP)</h2>
+<h2>High Power Power Supplies (FAP)</h2>
 <p>ELP:List of front panel interlocks for FAP power supply modules</p>
-<h2 class="toc-header" id="ac-power-supplies-fac"> AC Power Supplies (FAC)</h2>
+<h2>AC Power Supplies (FAC)</h2>
 <p>ELP:List of front panel interlocks for FAC output stage power supply modules</p>
 <p>ELP:List of front panel interlocks for FAC input stage power supply modules</p>
 <p>ELP:List of front panel interlocks for FAC command rack power supply modules</p>
