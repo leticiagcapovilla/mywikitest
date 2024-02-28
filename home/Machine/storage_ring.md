@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-02-28T19:42:41.728Z
+date: 2024-02-28T19:43:07.924Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T13:34:03.079Z
@@ -310,7 +310,7 @@ ${\sqrt{\langle \mathcal{u}² (s_0) \rangle} = A_{\mathcal{u}} \sigma_{quad} = \
 
 where represents either x or y and $A_{\mathcal{u}}$ is the corresponding orbit amplification factor. We can define an orbit amplification factor $\overline{A}_{\mathcal{u}}$ normalized to $\sqrt{\beta _{\mathcal{u}} (s_0)}$ at the observation point: 
 
-$\overline{A}_{\mathcal{u}} = \frac{A_{\mathcal{u}}}{\sqrt{\beta _{\mathcal{u}} (s_0)}} = \frac{1}{2 \sqrt{2} sin(\pi \nu _{\mathcal{u}})} (\sum_{i=1}^{all quads}(KL)_i ^2 \beta _{\mathcal{u}}(s_i))^{1/2}$
+${\overline{A}_{\mathcal{u}} = \frac{A_{\mathcal{u}}}{\sqrt{\beta _{\mathcal{u}} (s_0)}} = \frac{1}{2 \sqrt{2} sin(\pi \nu _{\mathcal{u}})} (\sum_{i=1}^{all quads}(KL)_i ^2 \beta _{\mathcal{u}}(s_i))^{1/2}}$
 
 The tolerance for these high frequency vibration amplitudes that cannot be compensated by the feedback system is related to the orbit stability goal (usually 10% of beam size) in the vertical plane by: 
 
