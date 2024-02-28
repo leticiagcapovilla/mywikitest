@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-02-28T19:52:52.899Z
+date: 2024-02-28T19:55:46.314Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T13:34:03.079Z
@@ -654,9 +654,9 @@ There will be three possible sources available for diagnostics, light from B1 an
 | B1 | 1.7 | 26.8 | 2.9 | -6.6 | 5.7 | 1.6 | 0.1 | 3.2 | 20.3 | 20.3 | 8.2 | 37.6 | 37.7 | 2.0 |
 | B2 | 1.6 | 24.5 | 2.4 | -7.6 | 4.1 | 2.4 | 28.1 | -41.8 | 20.0 | 32.2 | 7.8 | 31.8 | 49.3 | 2.4 |
 
-Table 19: Sources, optical functions and beam sizes (at the source point), considering 1% coupling ($\kappa$), $\epsilon _0 = 251$ pmrad and $\sigma _{\delta}$ = 0.09%.
+Table 19: Sources, optical functions and beam sizes (at the source point), considering 1% coupling ($\kappa$), ${\epsilon _0 = 251$ pmrad and $\sigma _{\delta}}$ = 0.09%.
 
-where $\alpha = -\frac{1}{2} \frac{d \beta}{ds'}, {\;} {\;} \gamma = \frac{1 + \alpha ²}{\beta}, {\;} {\;} \sigma _{\beta} = \sqrt{\epsilon \beta}, {\;} {\;} \sigma = \sqrt{\sigma _{\beta}  ²+ \eta² \sigma _{\delta '} ²}, {\;} {\;} \sigma ' _{beta} = \sqrt{\epsilon \gamma}, {\;} {\;} \sigma ' = \sqrt{\sigma '² _{\beta} + \eta '² \sigma ² _{\delta}}, {\;} {\;} \epsilon _x = \frac{\epsilon _0}{1 + \kappa} {\;} {\;} and {\;} {\;} \epsilon _y = \frac{\epsilon _0 \kappa}{1 + \kappa}$
+where ${\alpha = -\frac{1}{2} \frac{d \beta}{ds'}, {\;} {\;} \gamma = \frac{1 + \alpha ²}{\beta}, {\;} {\;} \sigma _{\beta} = \sqrt{\epsilon \beta}, {\;} {\;} \sigma = \sqrt{\sigma _{\beta}  ²+ \eta² \sigma _{\delta '} ²}, {\;} {\;} \sigma ' _{beta} = \sqrt{\epsilon \gamma}, {\;} {\;} \sigma ' = \sqrt{\sigma '² _{\beta} + \eta '² \sigma ² _{\delta}}, {\;} {\;} \epsilon _x = \frac{\epsilon _0}{1 + \kappa} {\;} {\;} and {\;} {\;} \epsilon _y = \frac{\epsilon _0 \kappa}{1 + \kappa}}$
 
 The beam line coming from dipole B2 requires some modification on the vacuum chamber design, so the allocation for this beam line should be done well in advance in the project. According to ray tracing it is possible to extract light from this dipole, as long as the vertical corrector that comes right after it is removed in order to give space for a new pumping station. Due to limitations in the vacuum tube mechanics it is not possible to extract light from the very beginning of B2 (like it will be for B1) and the beam line will take light from 19 up to 27 mrad inside the dipole, as show in Figure 41. For dipole B1 it is possible to extract radiation from 0 up to 6 mrad inside the element.
 
