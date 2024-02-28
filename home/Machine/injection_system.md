@@ -13,7 +13,7 @@ dateCreated: 2024-02-28T14:30:29.180Z
 ## Introduction
 The Sirius injection system is composed of a 150 MeV Linac, a full energy 3 GeV synchrotron booster operating in top-up mode and 2 transport lines, one from the Linac to the Booster (LTB) and another from the Booster to the Storage Ring (BTS). The booster and the storage ring are concentric and share the same tunnel. Their injection sections are placed close together to restrict the 'dirty' area in terms of radiation. A general layout of the Sirius injection system is shown in Figure 1. 
 
-![LAYOUT INJECTION SYSTEM](img/layout_inject_system.svg)
+![LAYOUT INJECTION SYSTEM](/img/machine/injection_system/layout_inject_system.svg)
 
 **Figure 1**: Layout of the Sirius injection system with a 150 MeV Linac and a full energy 3 GeV booster in the same tunnel as the storage ring. The booster and storage ring injection sections are placed close together to restrict the 'dirty' area in terms of radiation.
 
@@ -117,11 +117,11 @@ The booster main parameters are summarized in Table 1 and Table 2, and the optic
 
 **Table 6**: Sirius booster sextupoles main parameters. 
 
-![BOOSTER TWISS](img/bo_twiss.svg)
+![BOOSTER TWISS](/img/machine/injection_system/bo_twiss.svg)
 
 **Figure 2**: Twiss functions for V02.
 
-![BOOSTER STRAIGHT SECTIONS](img/bo_straight_sections.png)
+![BOOSTER STRAIGHT SECTIONS](/img/machine/injection_system/bo_straight_sections.png)
 
 **Figure 3**: Booster straight sections. All 50 sections contain a QF in the center and a BPM in the Upstream part. Odd sections contain correctors CH and CV in the Upstream part, and Even sections contain SF (Upstream) and QD (Downstream). Section 49, where extraction septa are located, is an exception with CH in the Downstream part. The 10 sextupoles SD are distributed in Odd and Even sections.
 
@@ -231,7 +231,7 @@ Assumed multipole errors for Booster dipoles, quadrupoles and sextupoles are sho
 ### Closed orbit correction system
 The specification for the closed orbit correction system for the Sirius booster is in Table 12 and its distribution along the ring is shown in Figure 4. To calculate corrector kicks and estimate residual orbit displacements, we have simulated static orbit distortions due to random alignment and excitation errors in all magnets in the lattice (see Table 10). These are relaxed error tolerances, we expect better results for the real machine. The implicit safety margin that is assumed should account for the dynamic effects during energy ramping that were not taken into account in these calculations. The closed orbit before correction is shown in Figure 5 and the residual closed orbit distortion after correction is shown in Figure 6. The corrector strengths are listed in Table 13
 
-![BOOSTER LATTICE](img/bo_lattice.svg)
+![BOOSTER LATTICE](/img/machine/injection_system/bo_lattice.svg)
 
 **Figure 4**: Booster lattice
 
@@ -245,11 +245,11 @@ The specification for the closed orbit correction system for the Sirius booster 
 
 **Table 12**: Parameters of the global closed orbit and coupling correction system for the Booster. 
 
-![BOOSTER UNCORR COD](img/sr_bo_cod_uncorrected.svg)
+![BOOSTER UNCORR COD](/img/machine/injection_system/sr_bo_cod_uncorrected.svg)
 
 **Figure 5**: Horizontal (blue) and vertical (red) uncorrected closed orbit for 20 random booster machines. The bold curves represent one rms value.
 
-![BOOSTER CORR COD](img/sr_bo_cod_corrected.svg)
+![BOOSTER CORR COD](/img/machine/injection_system/sr_bo_cod_corrected.svg)
 
 **Figure 6**: Horizontal (blue) and vertical (red) corrected closed orbit for 20 random booster machines. The bold curves represent one rms value.
 
@@ -273,7 +273,7 @@ $Ay = 4 \sqrt{\beta_y \epsilon_y(170 nm.rad)} \qquad\qquad\qquad\quad + y_{COD}(
 
 The resulting requirements are illustrated in Figure 7. 
 
-![BOOSTER APERTURE REQS](img/bo_aperture_reqs.png)
+![BOOSTER APERTURE REQS](/img/machine/injection_system/bo_aperture_reqs.png)
 
 **Figure 7**: The half-aperture requirements for the Booster are based on error tolerances for the injected beam at 120 MeV. Allowances in both planes (horizontal and vertical) have been set for orbit distortions and residual beam oscillations due to errors in meeting the on-axis injection conditions. In the horizontal plane, an extra allowance is set for a Linac beam energy mismatch.
 
@@ -283,15 +283,15 @@ The booster vacuum chambers will be made of 1 mm thick stainless steel cylindric
 ### Dynamic aperture
 The chromaticity correction sextupoles, multipole components in dipoles and quadrupoles, and alignment errors reduce the dynamic aperture to about ±12 mm in the horizontal and ±4 mm in the vertical plane at the injection point. This is sufficiently large for an efficient on-axis injection and for beam lifetime. Figure 8, Figure 9 and Figure 10 show the dynamic and momentum apertures for 20 machines with random multipole, alignment and excitation errors in all magnets. 
 
-![BOOSTER MULTICOD TUNE DAXY](img/bo_multi_cod_tune_daxy.png)
+![BOOSTER MULTICOD TUNE DAXY](/img/machine/injection_system/bo_multi_cod_tune_daxy.png)
 
 **Figure 8**: On-momentum dynamic aperture at the center of quadrupole QF for 20 machines with alignment and multipole errors, orbit and tune corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum and off-momentum apertures; The vacuum chamber physical aperture (17.5x17.5 mm2 in the straights and 12x12 mm2 in the dipoles) is considered along the ring.
 
-![BOOSTER MULTICOD TUNE DAEX](img/bo_multi_cod_tune_daex.png)
+![BOOSTER MULTICOD TUNE DAEX](/img/machine/injection_system/bo_multi_cod_tune_daex.png)
 
 **Figure 9**: Off-momentum dynamic aperture at the center of quadrupole QF for 20 machines with alignment and multipole errors, orbit and tune corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 3500 turns for on-momentum and off-momentum apertures; The vacuum chamber physical aperture (17.5x17.5 mm2 in the straights and 12x12 mm2 in the dipoles) is considered along the ring.
 
-![MA BOOSTER MULTICOD](img/bo_multi_cod_tune_Tous_LT.svg)
+![MA BOOSTER MULTICOD](/img/machine/injection_system/bo_multi_cod_tune_Tous_LT.svg)
 
 **Figure 10**: Momentum aperture for 1/10 of the Booster for 20 machines with alignment and multipole errors, orbit and tune corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (17.5x17.5 mm2 in the straights and 12x12 mm2 in the dipoles) is considered along the ring. Black lines represent the loss rate.
 
@@ -299,15 +299,15 @@ The chromaticity correction sextupoles, multipole components in dipoles and quad
 ### Booster injection
 The 150 MeV electron beam from the Linac is injected on axis into the booster. The injection septum and the on-axis injection kicker are shown in Figure 43, the horizontal trajectory of the injected beam in Figure 12 and a cross section at the injection point in Figure 13. The injection point at the booster is defined at the physical end of the injection septum. 
 
-![BOOSTER INJECTION SECTION LAYOUT](img/bo_inject_sec_layout.svg)
+![BOOSTER INJECTION SECTION LAYOUT](/img/machine/injection_system/bo_inject_sec_layout.svg)
 
 **Figure 11**: Booster injection section layout.
 
-![BOOSTER INJECTION TRAJECTORY](img/bo_inject_trajectory.png)
+![BOOSTER INJECTION TRAJECTORY](/img/machine/injection_system/bo_inject_trajectory.png)
 
 **Figure 12**: Trajectory of the injected beam from the Linac in the horizontal plane. The solid red curve represents the injected beam centroid and the dashed curves represent ±3σx beam envelope.
 
-![BOOSTER INJECTION XY](img/bo_injection_xy.svg)
+![BOOSTER INJECTION XY](/img/machine/injection_system/bo_injection_xy.svg)
 
 **Figure 13**: Schematic representation of the transverse cross section at booster injection point. Incoming beam from TB is moving towards the viewer.
 
@@ -315,7 +315,7 @@ The 150 MeV electron beam from the Linac is injected on axis into the booster. T
 ### Booster extraction
 Two kickers are used to extract the beam from the booster. They deflect the beam towards the extraction septum, passing through a defocusing dipole and a tune corrector quadrupole along the way. The nominal strength for this quadrupole is zero, it will only be used for small tune corrections. The arrangement of the booster extraction system elements is shown in Figure 14. 
 
-![BOOSTER EXTRACTION LAYOUT](img/bo_extract_layout.svg)
+![BOOSTER EXTRACTION LAYOUT](/img/machine/injection_system/bo_extract_layout.svg)
 
 **Figure 14**: Booster extraction layout.
 
@@ -331,11 +331,11 @@ The extracted beam horizontal trajectory is shown in Figure 15. Due to the large
 
 **Table 14**: Booster extraction apertures. 
 
-![BOOSTER EXTRACTION TRAJECTORY](img/bo_extract_trajectory.jpg)
+![BOOSTER EXTRACTION TRAJECTORY](/img/machine/injection_system/bo_extract_trajectory.jpg)
 
 **Figure 15**: Trajectory of the extracted beam from the booster in the horizontal plane. The solid red curve represents the extracted beam trajectory calculated by the linear model and the dashed curves represent ±4σx beam envelope. The green curve is the horizontal beam stay clear. Due to the large amplitude of the extracted beam at the dipole, the beam trajectory has also been calculated by Runge-Kutta integration using the simulated dipole field map (dark blue curve).
 
-![BOOSTER EXTRACTION XY](img/bo_extract_xy.svg)
+![BOOSTER EXTRACTION XY](/img/machine/injection_system/bo_extract_xy.svg)
 
 **Figure 16**: Schematic representation of transverse cross section at booster extraction point.
 
@@ -461,23 +461,23 @@ The Sirius 150 MeV Linac is a 'turn-key' system provided by SSRF/SINAP. The Lina
 
 **Table 17**: Main parameters of Sirius Linac in multi-bunch and single-bunch operation modes. 
 
-![LINAC LAYOUT](img/li_layout.png)
+![LINAC LAYOUT](/img/machine/injection_system/li_layout.png)
 
 **Figure 17**: General layout of Sirius 150 MeV Linac.
 
-![LINAC LAYOUT2](img/li_layout2.png)
+![LINAC LAYOUT2](/img/machine/injection_system/li_layout2.png)
 
 **Figure 18**: Linac layout in detail.
 
-![LINAC SCHEME](img/li_scheme.png)
+![LINAC SCHEME](/img/machine/injection_system/li_scheme.png)
 
 **Figure 19**: Schematic diagram of Sirius 150 MeV Linac.
 
 ### Linac pictures during FAT at SSRF
 
-![LINAC SSRF1](img/li_ssrf1.png) ![LINAC SSRF2](img/li_ssrf2.png)
+![LINAC SSRF1](/img/machine/injection_system/li_ssrf1.png) ![LINAC SSRF2](/img/machine/injection_system/li_ssrf2.png)
 
-![LINAC SSRF3](img/li_ssrf3.png) ![LINAC SSRF4](img/li_ssrf4.png)
+![LINAC SSRF3](/img/machine/injection_system/li_ssrf3.png) ![LINAC SSRF4](/img/machine/injection_system/li_ssrf4.png)
 
 **Figures 20, 21, 22 and 23**: Pictures at SSRF
 
@@ -485,11 +485,11 @@ The Sirius 150 MeV Linac is a 'turn-key' system provided by SSRF/SINAP. The Lina
 ## Linac to booster transport line (LTB) 
 The Linac-to-Booster transport line (LTB - naming initials TB), transports the 150 MeV electron beam from the end of the Linac (by definition, just after the last accelerating section) to the booster injection point, just after the injection septum. A general view of the LTB transport line is shown in Figure 24. A schematic diagram of the LTB elements with their names is shown in Figure 25. The main parameters are shown in Table 18. 
 
-![LTB INJECTION LAYOUT](img/ltb_inject_layout.svg)
+![LTB INJECTION LAYOUT](/img/machine/injection_system/ltb_inject_layout.svg)
 
 **Figure 24**: Overview of the LTB transfer line.
 
-![LTB DETAIL](img/ltb_detail.png)
+![LTB DETAIL](/img/machine/injection_system/ltb_detail.png)
 
 **Figure 25**: LTB transfer line in detail
 
@@ -506,11 +506,11 @@ The LTB lattice is composed of two chromatic sections separated by an achromatic
 
 Since the optical functions at the Linac exit are not precisely known, we have considered 6 different initial condition modes (M1, ... , M6) for the transport line and looked for solutions that are flexible enough to accommodate all modes. The initial Twiss functions for the modes are shown in Table 19, where several different combinations of initial αx and αy are covered. The corresponding optical functions are shown in Table 16. 
 
-![TABLE LTB TWISS](img/tab_twiss_ltb.png)
+![TABLE LTB TWISS](/img/machine/injection_system/tab_twiss_ltb.png)
 
 **Table 19**: Initial Twiss functions for the LTB transfer line modes, and matching parameters at booster injection point.
 
-![TABLE TWISS LTB](img/tab_ltb_twiss_M4.svg)
+![TABLE TWISS LTB](/img/machine/injection_system/tab_ltb_twiss_M4.svg)
 
 **Table 20**: Optical functions along the LTB transfer line for 6 different initial condition modes. 
 
@@ -518,11 +518,11 @@ Since the optical functions at the Linac exit are not precisely known, we have c
 ### LTB Beam Size and Aperture Requirement
 The figures below show the horizontal and vertical beam sizes along LTB for the different modes M1 to M6. The beam parameters at the Linac end are: emittance: εx = εy = 170 nm.rad; rms energy spread: δ=0.5%. 
 
-![LTB BEAMSIZE HOR](img/ltb_beamsize_hor.png)
+![LTB BEAMSIZE HOR](/img/machine/injection_system/ltb_beamsize_hor.png)
 
 **Figure 26**: Horizontal beam size along LTB transfer line for various operation modes. Different operation modes correspond to different initial conditions for the optical functions at the Linac end. The beam sizes are calculated for the following parameters: beam energy=150 MeV; emittance: εx = εy = 170 nm.rad; rms energy spread: δ=0.5%.
 
-![LTB BEAMSIZE VERT](img/ltb_beamsize_vert.png)
+![LTB BEAMSIZE VERT](/img/machine/injection_system/ltb_beamsize_vert.png)
 
 **Figure 27**: Vertical beam size along LTB transfer line for various operation modes. Different operation modes correspond to different initial conditions for the optical functions at the Linac end. The beam sizes are calculated for the following parameters: beam energy=150 MeV; emittance: εx = εy = 170 nm.rad; rms energy spread: δ=0.5%.
 
@@ -541,11 +541,11 @@ The aperture requirements and BSC for the LTB transport line are calculated cons
 
 The calculated horizontal and vertical BSC for LTB transport line modes are shown in the figures below. 
 
-![LTB BSCH](img/ltb_bsch.png)
+![LTB BSCH](/img/machine/injection_system/ltb_bsch.png)
 
 **Figure 28**: Horizontal beam stay clear (BSC) for LTB transfer line. The BSC can accommodate the residual orbit distortion and trajectory variations due to pulse to pulse differences in beam energy and launching conditions (position and angle) described in Table 18. The vacuum chamber inner half-aperture is represented by the solid black curve.
 
-![LTB BSCV](img/ltb_bscv.png)
+![LTB BSCV](/img/machine/injection_system/ltb_bscv.png)
 
 **Figure 29**: Vertical beam stay clear (BSC) for LTB transfer line. The BSC can accommodate the residual orbit distortion and trajectory variations due to pulse to pulse differences in launching conditions (position and angle) described in Table 18. The vacuum chamber inner half-aperture is represented by the solid black curve.
 
@@ -615,7 +615,7 @@ Over 100 random seeds for LTB transfer line modes M1 to M6 were used.
 
 **Table 27**:  Corrector strength in mrad 
 
-![TABLE LTB ORBIT](img/tab_M4_Orbit.svg)
+![TABLE LTB ORBIT](/img/machine/injection_system/tab_M4_Orbit.svg)
 
 **Table 28**: Orbit along the LTB transfer line for modes M1 to M6. For each mode, 100 random machines are simulated with errors given in Table xx??. The bold solid curves represent one sigma of the orbit distribution. 
 
@@ -634,7 +634,7 @@ The LTB diagnostics elements are summarized in Table 29.
 
 **Table 29**: LTB diagnostics elements.
 
-![LTB DIAGNOSTICS](img/ltb_diagnostics.png)
+![LTB DIAGNOSTICS](/img/machine/injection_system/ltb_diagnostics.png)
 
 **Figure 30**: Schematic layout of LTB diagnostic elements.
 
@@ -702,11 +702,11 @@ The main function of the booster-to-storage ring transport line (BTS - with nami
 
 A general view of the BTS transport line is shown in Figure 30. A schematic diagram of the BTS elements with their names is shown in Figure 31. The main parameters are shown in Table 29. 
 
-![BTS INJECTION LAYOUT](img/bts_inject_layout.svg)
+![BTS INJECTION LAYOUT](/img/machine/injection_system/bts_inject_layout.svg)
 
 **Figure 30**: Overview of the TS transfer line.
 
-![TRANSFER LINE DETAIL](img/tl_detail.png)
+![TRANSFER LINE DETAIL](/img/machine/injection_system/tl_detail.png)
 
 **Figure 31**: TS transfer line in detail.
 
@@ -742,7 +742,7 @@ The parameters of the injected beam at the booster extraction point, SR injectio
 
 **Table 35**: Beam parameters at the booster extraction point and storage ring injection point optimized for injection with NLK. 
 
-![TRANSFER LINE TWISS M1M2](img/tl_twiss_m1m2.svg)
+![TRANSFER LINE TWISS M1M2](/img/machine/injection_system/tl_twiss_m1m2.svg)
 
 **Figure 32**: Optical functions along the BTS transfer line for operation modes M1 and M2.
 
@@ -772,11 +772,11 @@ The considerations for the extracted beam amplitude at the booster extraction se
 ### BTS Beam Size and Aperture Requirement
 The figures below show the horizontal and vertical beam sizes along BTS for the modes M1 and M2. 
 
-![BTS BEAM SIZE HOR](img/bts_beam_size_H.png)
+![BTS BEAM SIZE HOR](/img/machine/injection_system/bts_beam_size_H.png)
 
 **Figure 33**: Horizontal beam size along the BTS transfer line for modes M1 and M2 assuming the booster parameters for emittance, ε=3.47 nm.rad, energy spread, σε=0.087%, and emittance coupling, κ=1%.
 
-![BTS BEAM SIZE VERT](img/bts_beam_size_V.png)
+![BTS BEAM SIZE VERT](/img/machine/injection_system/bts_beam_size_V.png)
 
 **Figure 34**: Vertical beam size along the BTS transfer line for modes M1 and M2 assuming the booster parameters for emittance, ε=3.47 nm.rad, energy spread, σε=0.087%, and emittance coupling, κ=1%.
 
@@ -794,11 +794,11 @@ The aperture requirements and beam stay clear (BSC) for the BTS transport line a
 
 The calculated horizontal and vertical BSC for BTS transport line modes are shown in the figures below. 
 
-![TS BSC HOR](img/ts_bsch.png)
+![TS BSC HOR](/img/machine/injection_system/ts_bsch.png)
 
 **Figure 35**: Horizontal beam stay clear (BSC) for BTS transfer line. The BSC can accommodate residual orbit distortion and trajectory variations due to pulse to pulse differences in beam launching conditions described in Table 37. The vacuum chamber inner half-aperture is represented by the solid black curve.
 
-![TS BSC VERT](img/ts_bscv.png)
+![TS BSC VERT](/img/machine/injection_system/ts_bscv.png)
 
 **Figure 36**: Vertical beam stay clear (BSC) for BTS transfer line. The BSC can accommodate residual orbit distortion and trajectory variations due to pulse to pulse differences in beam launching conditions described in Table 37. The vacuum chamber inner half-aperture is represented by the solid black curve.
 
@@ -872,38 +872,38 @@ Over 100 random seeds for BTS transfer line. were used.
 
 **Table 43**:  Corrector strength in mrad 
 
-![TS ORBIT](img/ts_orbit.svg)
+![TS ORBIT](/img/machine/injection_system/ts_orbit.svg)
 
 **Figure 37**: Orbit along the BTS transfer line for modes M1 and M2. For each mode, 100 random machines are simulated with errors given in Tables 39, 40, 41. The bold solid curves represent one sigma of the orbit distribution. 
 
 ### BTS Diagnostics Elements
-![TS DIAGNOSTICS](img/ts_diagnostics.png)
+![TS DIAGNOSTICS](/img/machine/injection_system/ts_diagnostics.png)
 
 **Figure 38**: Schematic layout of BTS diagnostic elements.
 
 ## Injection into the Storage Ring 
 The injection point in the storage ring is, by definition, the physical end of the thin septum. 
 
-![SIRIUS RING INJECTION](img/ring_inject.svg)
+![SIRIUS RING INJECTION](/img/machine/injection_system/ring_inject.svg)
 
 **Figure 39**: Layout of the storage ring injection straight section.
 
-![RING TRANSVERSE CROSS SECTION](img/ring_transverse_cross.svg)
+![RING TRANSVERSE CROSS SECTION](/img/machine/injection_system/ring_transverse_cross.svg)
 
 **Figure 40**: Schematic representation of the transverse cross section at the storage ring injection point.
 
 ### Injection with Nonlinear Kicker (InjNLKckr)
-![NONLINEAR INJECTION RING](img/nonlin_kick_inject_ring.png)
+![NONLINEAR INJECTION RING](/img/machine/injection_system/nonlin_kick_inject_ring.png)
 
 **Figure 41**: Injection into the storage ring using a Nonlinear Kicker. The trajectory of the injected beam centroid in the horizontal plane is shown in solid red curve. The dashed curves represent ±3σx beam envelope.
 
-![MAGNET PHASE](img/magnet_phase.png)
+![MAGNET PHASE](/img/machine/injection_system/magnet_phase.png)
 
 **Figure 42**: Phase space at the Pulsed Multipole Magnet (PMM) position. The green curve represents the injected beam (±4σx) inside the storage ring acceptance (red curve) after the PMM non-linear kick. The black curve is plotted against the right axis and represents the magnetic field of the PMM.
 
 
 ### On-axis injection (InjDpKckr)
-![ON AXIS INJECTION](img/onaxis_inject_ring.png)
+![ON AXIS INJECTION](/img/machine/injection_system/onaxis_inject_ring.png)
 
 **Figure 43**: On-axis injection into the storage ring with a on-axis dipole kicker. The trajectory of the injected beam centroid in the horizontal plane is shown in solid red curve. The dashed curves represent ±3σx beam envelope.
 
@@ -911,15 +911,15 @@ The injection point in the storage ring is, by definition, the physical end of t
 ## Pulsed Magnets Parameters 
 
 ### General layout
-![BOOSTER INJECTION SECTION LAYOUT](img/bo_inject_sec_layout.svg)
+![BOOSTER INJECTION SECTION LAYOUT](/img/machine/injection_system/bo_inject_sec_layout.svg)
 
 **Figure 44**: Booster injection section layout.
 
-![BOOSTER EXTRACTION LAYOUT](img/bo_extract_layout.svg)
+![BOOSTER EXTRACTION LAYOUT](/img/machine/injection_system/bo_extract_layout.svg)
 
 **Figure 45**: Booster extraction layout.
 
-![SIRIUS RING INJECTION](img/ring_inject.svg)
+![SIRIUS RING INJECTION](/img/machine/injection_system/ring_inject.svg)
 
 **Figure 46**: Layout of the storage ring injection straight section.
 
@@ -1085,6 +1085,6 @@ then the half-sine pulse duration T required for a flat-top dA/A0 in the time ra
 
 $T = \pi t_0 * (2 dA/A_0) ^{1/2}$
 
-![SEPTUM PULSE DURATION](img/septum_pulse_duration.svg)
+![SEPTUM PULSE DURATION](/img/machine/injection_system/septum_pulse_duration.svg)
 
 **Figure 43**: Septum pulse.
