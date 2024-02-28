@@ -2,7 +2,7 @@
 title: Insertion Devices
 description: 
 published: 1
-date: 2024-02-28T16:59:06.394Z
+date: 2024-02-28T19:02:56.862Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T16:57:00.067Z
