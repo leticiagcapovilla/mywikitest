@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-02-28T19:48:00.565Z
+date: 2024-02-28T19:52:14.966Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T13:34:03.079Z
@@ -459,15 +459,15 @@ Traditional elliptically polarizing undulators have strong horizontal field roll
 
 #### plots below are out-of-date 
 
-![DAXY EFFECTS IDS](/img/machine/storage_ring/daxy_effects_IDs.svg)
+![daxy_effects_ids.svg](/img/machine/storage_ring/daxy_effects_ids.svg)
 
 **Figure 22**: Effect of the IDs on the on-momentum dynamical aperture (red lines) as compared to the lattice without IDs (blue lines). Solid lines represent the average aperture of 20 machines with random multipole, alignment and excitation errors and dashed lines the average plus or minus one rms.
 
-![DAEX EFFECTS IDS](/img/machine/storage_ring/daex_effects_IDs.svg)
+![daex_effects_ids](/img/machine/storage_ring/daex_effects_ids.svg)
 
 **Figure 23**: Effect of the IDs on the off-momentum dynamical aperture (red lines) as compared to the lattice without IDs (blue lines). Solid lines represent the average aperture of 20 machines with random multipole, alignment and excitation errors and dashed lines the average plus or minus one rms.
 
-![MA EFFECTS](/img/machine/storage_ring/MA_effects_IDs.svg)
+![ma_effects_ids](/img/machine/storage_ring/ma_effects_ids.svg)
 
 **Figure 24**: Momentum Aperture reduction due to IDs (red lines). Solid lines represent the average aperture of 20 machines with random multipole, alignment and excitation errors and dashed lines the average plus or minus one rms.
 
@@ -477,7 +477,7 @@ With additional optics symmetrization the dynamical and momentum apertures are a
 
 **Figure 25**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with the IDS for phase2 and alignment and multipole errors, orbit, tune, coupling and optics corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring.
 
-![MA SUPERPERIOD](/img/machine/storage_ring/MA_superperiod.svg)
+![MA SUPERPERIOD](/img/machine/storage_ring/ma_superperiod.svg)
 
 **Figure 26**: Momentum aperture for one superperiod of the ring for 20 machines with the IDS for phase 2 plus alignment and multipole errors, orbit, tune, coupling and optics corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring.
 
