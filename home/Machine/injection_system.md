@@ -2,7 +2,7 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-02-28T14:37:27.971Z
+date: 2024-02-28T17:20:09.430Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T14:30:29.180Z
@@ -129,10 +129,12 @@ The booster main parameters are summarized in Table 1 and Table 2, and the optic
 ### Tune correction
 Tune correction in the Sirius Booster will be performed with QF and QD families: 
 
-$\begin{bmatrix} \nu_x\\ \nu_y \end{bmatrix} = 
+$$
+\begin{bmatrix} \nu_x\\ \nu_y \end{bmatrix} = 
 \begin{bmatrix} 19.204\\7.314 \end{bmatrix}+
 \begin{bmatrix} 92.6900 &   4.1213 \\-21.1086 & -39.2987\end{bmatrix} \times
-\begin{bmatrix}Q_F-0.377 \\Q_D+0.001\end{bmatrix}$
+\begin{bmatrix}Q_F-0.377 \\Q_D+0.001\end{bmatrix}
+$$
 
 where $\nu$ is the tune and $Q [m^{-1}]$ is the integrated quadrupole strength.
 
@@ -140,12 +142,12 @@ where $\nu$ is the tune and $Q [m^{-1}]$ is the integrated quadrupole strength.
 ### Chromaticity Correction
 Chromaticity correction in the Sirius Booster will be performed with SF and SD families. 
 
-$
+$$
 \begin{bmatrix} \xi_x\\ \xi_y \end{bmatrix} = 
 \begin{bmatrix} 0.5 \\ 0.5 \end{bmatrix} +
 \begin{bmatrix} 30.1642  &  0.2808 \\ -8.1027  & -2.7899 \end{bmatrix} \times
 \begin{bmatrix} S_F - 1.189\\ S_D - 0.742 \end{bmatrix}
-$
+$$
 
 where $\xi$ is the chromaticity and $S [m^{-2}]$ is the integrated sextupole strength. From the above equation, we notice the chromaticity is corrected to 0.5 in both planes when $S_F$ and $S_D$ are equal to 1.189 and 0.742, respectively. 
 
@@ -216,7 +218,6 @@ Assumed multipole errors for Booster dipoles, quadrupoles and sextupoles are sho
 | Dipole Gradient Error | 2.4 | -- | -- | -- |  %  |
 
 **Table 10**: Maximum absolute value of random alignment and excitation errors for the Booster. The errors are generated with a Gaussian distribution truncated at ±1σ. 
-
 
 #### Booster Magnets High Frequency Errors
 
@@ -427,19 +428,12 @@ Table:Booster RF parameters shows the design parameters of the RF system for the
 **Table 16**: Booster straight sections allocation 
 
 QS = Skew Quadrupole
-
 GSL = Generic Stripline
-
 TunePkup = Tune Pickup
-
 TuneShkr = Tune Shaker
-
 InjKckr = Injection Kicker
-
 InjSept = Injection Septum
-
 EjeKckr = Ejection Kicker
-
 Scrn = Fluorescent Screen 
 
 ## Linac 
@@ -815,8 +809,6 @@ The BTS transport line orbit correction main parameters are shown in Table 38. T
 | Maximum corrector strength | ±0.35 | mrad |
 
 **Table 38**: Parameters for BTS transfer line orbit correction. 
-
-#########################################################################
 
 #### Maximum absolute random errors for BTS transfer line orbit correction simulation
 
