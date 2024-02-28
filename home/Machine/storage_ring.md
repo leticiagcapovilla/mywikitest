@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-02-28T19:57:01.123Z
+date: 2024-02-28T19:57:35.532Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T13:34:03.079Z
@@ -680,11 +680,11 @@ ${\Sigma _0 ² = S²_{aperture} + S²_{diff}}$
 
 $S_{aperture}$ is the geometrical projection of the pinhole opening. A point source of light illuminating a hole at a distance d, will project a spot of light on the scintillator screen. The size of this spot is A(D+d)/d, where A is the pinhole diameter and D is the distance from the pinhole to the screen. The camera geometric magnification is M=D/d, and the corresponding rms size of this contribution to the total measured beam size is: 
 
-$S_{aperture} = \frac{A}{\sqrt{12}} \frac{D + d}{d}$
+${S_{aperture} = \frac{A}{\sqrt{12}} \frac{D + d}{d}}$
 
 where the factor √12 is due to the conversion of the width of the rectangular profile to an rms value. S accounts for the pinhole diffraction, which in the regime of Fraunhofer diffraction is described by a Bessel function of first order, for a circular pinhole. If the Bessel function of first order is approximated by a Gaussian function, the rms size of the diffraction contribution to the total beam size is: 
 
-$S_{diff} = 0.42 \frac{\lambda D}{A}$
+${S_{diff} = 0.42 \frac{\lambda D}{A}}$
 
 Thus, pinholes with large apertures will lead to image blurring due to geometrical shadowing while pinholes with small apertures have strong diffraction effects. The total contribution from the pinholes to the PSF as a function of the photon energy for the different pinhole apertures is shown in Figure 42 as well as a plot of the optimum aperture as a function of photon energy in Figure 43. For Sirius we considered that the pinholes are 3.5 m away from the source and that the beam line has a magnification of 5 for a beam line in dipole B1. From the plots we can see that there is no gain in having pinholes smaller than 10 µm and having an array with 10, 15 and 20 µm pinholes would cover the optimum size for a broad range of wavelengths. In Figure 44 is the result from a SRW simulation for the pinholes in Sirius, notice that for most cases the Fraunhoffer approximation is still valid and the diffraction pattern can be fitted by a Gaussian. 
 
