@@ -2,7 +2,7 @@
 title: Pulsed Magnets
 description: 
 published: 1
-date: 2024-02-28T17:34:54.515Z
+date: 2024-02-28T18:56:33.288Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T16:57:06.388Z
@@ -85,7 +85,6 @@ SR = Storage Ring
 |Capacitance | 400 | 600 | 400 | 300 | uF |
 |Repetition Rate | 2 | 2 | 2 | 2 | Hz |
 
-
 **Table 4**: Septa design pulser parameters
 
 ## Kickers/NLK
@@ -109,8 +108,8 @@ The kicker geometric and magnetic field quality specifications parameters are gi
 |Rise time | - | ≤ 1.5 | - | - | μs |
 |Fall time | ≤ 1.5 | - | ≤ 1.5 | ≤ 1.5 | μs |
 |Minimum half-sine pulse duration to satisfy flat-top | ≥ 3.0 | ≥ 2.7 | ≥ 2.9 | ≥ 2.0 | μs |
-|Tolerance for integrated dipole field at center 1 | - | - | - | < 3.7 | G.cm |
-|Tolerance for integrated quadrupole gradient at center 2 | - | - | - | < 0.12 | T  |
+|Tolerance for integrated dipole field at center ¹ | - | - | - | < 3.7 | G.cm |
+|Tolerance for integrated quadrupole gradient at center ² | - | - | - | < 0.12 | T  |
 
 **Table 5**: Main parameters for Sirius kickers.
 
