@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-02-28T19:37:06.315Z
+date: 2024-02-28T19:38:09.091Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T13:34:03.079Z
@@ -305,6 +305,7 @@ Tracking calculations have shown that the misalignment errors of the magnets are
 
 ### High frequency errors
 We analyzed the effect of high frequency (> 1 kHz) magnet vibration and power supply ripple errors on the beam stability. These high frequency perturbations cannot be compensated by the presently available fast feedback systems and thus, in this case, the amplitude of the perturbations must be limited at the source. To estimate the effects of these perturbations we resort to the definition of the orbit amplification factor. The expected rms value for the orbit distortion at any observation point due to a Gaussian distribution of quadrupole misalignments with standard deviation $\sigma _{quad}$ is given by
+
 
 $\sqrt{\langle \mathcal{u}² (s_0) \rangle} = A_{\mathcal{u}} \sigma_{quad} = \sqrt{\beta _{\mathcal{u}} (s_0)} {\space} \overline{A}_{\mathcal{u}} \sigma _{quad}$
 
