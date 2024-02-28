@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-02-28T19:55:46.314Z
+date: 2024-02-28T19:56:21.779Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T13:34:03.079Z
@@ -654,7 +654,7 @@ There will be three possible sources available for diagnostics, light from B1 an
 | B1 | 1.7 | 26.8 | 2.9 | -6.6 | 5.7 | 1.6 | 0.1 | 3.2 | 20.3 | 20.3 | 8.2 | 37.6 | 37.7 | 2.0 |
 | B2 | 1.6 | 24.5 | 2.4 | -7.6 | 4.1 | 2.4 | 28.1 | -41.8 | 20.0 | 32.2 | 7.8 | 31.8 | 49.3 | 2.4 |
 
-Table 19: Sources, optical functions and beam sizes (at the source point), considering 1% coupling ($\kappa$), ${\epsilon _0 = 251$ pmrad and $\sigma _{\delta}}$ = 0.09%.
+**Table 19**: Sources, optical functions and beam sizes (at the source point), considering 1% coupling ($\kappa$), $\epsilon _0 = 251$ pmrad and $\sigma _{\delta}$ = 0.09%.
 
 where ${\alpha = -\frac{1}{2} \frac{d \beta}{ds'}, {\;} {\;} \gamma = \frac{1 + \alpha ²}{\beta}, {\;} {\;} \sigma _{\beta} = \sqrt{\epsilon \beta}, {\;} {\;} \sigma = \sqrt{\sigma _{\beta}  ²+ \eta² \sigma _{\delta '} ²}, {\;} {\;} \sigma ' _{beta} = \sqrt{\epsilon \gamma}, {\;} {\;} \sigma ' = \sqrt{\sigma '² _{\beta} + \eta '² \sigma ² _{\delta}}, {\;} {\;} \epsilon _x = \frac{\epsilon _0}{1 + \kappa} {\;} {\;} and {\;} {\;} \epsilon _y = \frac{\epsilon _0 \kappa}{1 + \kappa}}$
 
