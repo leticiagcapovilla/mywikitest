@@ -2,7 +2,7 @@
 title: Magnets
 description: 
 published: 1
-date: 2024-02-28T17:34:00.924Z
+date: 2024-02-28T19:32:51.419Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T15:03:10.955Z
@@ -385,7 +385,6 @@ The values used to calculate the difference to model were:
 Deflection angle: 1.37765 deg
 
 KL: -0.32289 1/m
-
 SL: -0.10763 1/m²
 
 ###### Deflection Angle
@@ -670,15 +669,15 @@ All three types of quadrupoles models, namely Q14, Q20 and Q30 quadrupoles, have
 
 ##### Fieldmap Analysis
 
-###### Q14
+**Q14**
 
 The 3D magnetic model of Q14 has been analyzed and approved, corresponding to maximum quadrupole strength, both family and trim coils excited. Analysis data for the latest model fieldmap can be [accessed here](https://github.com/lnls-ima/si-quadrupoles-q14/tree/master/links-official). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-quadrupoles-q14/tree/master/links-official). 
 
-###### Q20
+**Q20**
 
 The 3D magnetic model of Q20 has been analyzed and approved, corresponding to maximum quadrupole strength, both family and trim coils excited. Analysis data for the latest model fieldmap can be [accessed here](https://github.com/lnls-ima/si-quadrupoles-q20/tree/master/links-official). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-quadrupoles-q20/tree/master/links-official). 
 
-###### Q30
+**Q30**
 
 The 3D magnetic model of Q30 has been analyzed and approved, corresponding to maximum quadrupole strength, both family and trim coils excited. Analysis data for the latest model fieldmap can be [accessed here](https://github.com/lnls-ima/si-quadrupoles-q30/tree/master/links-official). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-quadrupoles-q30/tree/master/links-official). 
 
@@ -1008,7 +1007,7 @@ A summary of magnet field measurements of SI quadrupoles.
 |SI-20M1:MA-QDB2| Q14-060 |
 |SI-20M2:MA-QDB2| Q14-052  |
 
-QDP1
+**QDP1**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1038,7 +1037,7 @@ QDP1
 |SI-19M1:MA-QDP2| Q14-037 |
 |SI-19M2:MA-QDP2| Q14-002  |
 
-Not Used 
+**Not Used**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1454,19 +1453,19 @@ Multipole errors from skew quadrupole excitation
 
 A 3D model of multifunctional sextupole magnet has been [[FAC:Fieldmap analysis|analyzed]] and approved. Fieldmap analysis for each function has been performed with maximum excitation currents, when residual multipoles are expected to be worse. For the analysis of horizontal and vertical orbit corrector fields, as well as for the skew quadrupole corrector field, the sextupolar function was also excited in order to guarantee fast convergence of the magnetic solution.
 
-###### Sextupolar function
+**Sextupolar function**
 
 The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-sextupoles-s15/tree/master/links-official-sx/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-sextupoles-s15/tree/master/links-official-sx).
 
-###### Sextupolar+Horizontal functions
+**Sextupolar+Horizontal functions**
 
 The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-sextupoles-s15/tree/master/links-official-sx-ch/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-sextupoles-s15/tree/master/links-official-sx-ch).
 
-###### Sextupolar+Vertical functions
+**Sextupolar+Vertical functions**
 
 The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-sextupoles-s15/tree/master/links-official-sx-cv/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-sextupoles-s15/tree/master/links-official-sx-cv).
 
-###### Sextupolar+Skew functions
+**Sextupolar+Skew functions**
 
 The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-sextupoles-s15/tree/master/links-official-sx-qs/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-sextupoles-s15/tree/master/links-official-sx-qs).
 
@@ -1939,7 +1938,7 @@ A summary of magnet field measurements of SI S15 sextupoles.
 |SI-18C4:MA-SDP2| S15-161 |
 |SI-19C1:MA-SDP2| S15-028  |
 
-SFP2
+**SFP2**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -2057,19 +2056,24 @@ The impact on the beam dynamics of residual multipole errors for the fast correc
 ###### Fieldmap Analysis
 
 A 3D model of multifunctional sextupole magnet has been analyzed and approved. Fieldmap analysis for each function has been performed with maximum excitation currents, when residual multipoles are expected to be worse. For the analysis of horizontal and vertical orbit corrector fields, as well as for the skew quadrupole corrector field, the sextupolar function was also excited in order to guarantee fast convergence of the magnetic solution.
-FC1 Horizontal correction function
+
+**FC1 Horizontal correction function**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-fast-correctors/tree/master/links-official-FC1-fch).
-FC1 Vertical correction function
+
+**FC1 Vertical correction function**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-fast-correctors/tree/master/links-official-FC1-fcv).
-FC1 Skew quadrupole function
+
+**FC1 Skew quadrupole function**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-fast-correctors/tree/master/links-official-FC1-qs).
-FC2 Horizontal correction function
+
+**FC2 Horizontal correction function**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-fast-correctors/tree/master/links-official-FC2-fch).
-FC2 Vertical correction function
+
+**FC2 Vertical correction function**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-fast-correctors/tree/master/links-official-FC2-fcv). 
 
@@ -2577,23 +2581,23 @@ quadrupoles @r = 17.5 mm
 
 There will be two types of quadrupoles: QF and QD. QF quadrupoles are longer, 212-mm, whereas QD quadrupoles are shorter: 85-mm long. While QF magnets power supply is planed to be monopolar, the power supply for the QD family will be dipolar. 3D magnetic models for both QD and QF quadrupoles were analyzed. Nominal quadrupole field component in the booster dipoles provide most necessary defocusing for the optics and hence QD quadrupoles are installed in the lattice for optics correction purposes.
 
-###### QF at Ejection Energy
+**QF at Ejection Energy**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-quadrupoles-qf/tree/master/links-official-3gev).
 
-###### QF at Injection Energy
+**QF at Injection Energy**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-quadrupoles-qf/tree/master/links-official-150mev).
 
-###### QD at Ejection Energy
+**QD at Ejection Energy**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-quadrupoles-qd/tree/master/links-official-3gev).
 
-###### QD at Injection Energy
+**QD at Injection Energy**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-quadrupoles-qd/tree/master/links-official-150mev).
 
-###### QS at Ejection Energy
+**QS at Ejection Energy**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-quadrupoles-qs/tree/master/links-official-3gev). 
 
