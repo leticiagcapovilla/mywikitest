@@ -1,3 +1,13 @@
+---
+title: Pulsed Magnets
+description: 
+published: 1
+date: 2024-02-28T17:34:54.515Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T16:57:06.388Z
+---
+
 # Machine: Pulsed Magnets
 
 ## Septa
