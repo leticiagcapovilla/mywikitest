@@ -2,7 +2,7 @@
 title: Power Supplies
 description: 
 published: 1
-date: 2024-02-28T18:53:20.431Z
+date: 2024-02-28T18:54:02.141Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T16:57:03.405Z
@@ -24,7 +24,7 @@ The main parameters of the Sirius storage ring power supplies are shown in Table
 
 blalalal
 
-| Magnet kind | Dipole B1 | Dipole B2 | Quadrupole Q30   <br>(QFB, QFP) | Quadrupole Q20   <br>(QFA, Q1, Q2, Q3, Q4) | Quadrupole Q14   <br>(QDA, QDB1, QDB2, QDP1, QDP2) | Sextupoles |
+| Magnet kind | Dipole B1 | Dipole B2 | Quadrupole Q30 <br>(QFB, QFP) | Quadrupole Q20 <br>(QFA, Q1, Q2, Q3, Q4) | Quadrupole Q14 <br>(QDA, QDB1, QDB2, QDP1, QDP2) | Sextupoles |
 | --- | --- | --- | --- | --- | --- | --- |
 | Magnet quantity | 40  | 40  | 30  | 170 | 70  | 280 |
 | Magnet resistance \[mohm\] | 21.47 | 30.26 | 46.94 | 36.33 | 29.97 | 35.22 |
