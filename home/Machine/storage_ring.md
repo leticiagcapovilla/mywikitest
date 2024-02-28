@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-02-28T13:57:50.641Z
+date: 2024-02-28T17:07:28.742Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T13:34:03.079Z
@@ -515,19 +515,19 @@ Given the scenarios presented in the previous section it is important to calcula
 
 **Table 14**: IBS effects (CIMP formalism) on the bunch emittances in Sirius.
 
-![IBS EFFECT1](/img/machine/storage_ring/IBS_effect1.png)
+![ibs_effect1.png](/img/machine/storage_ring/ibs_effect1.png)
 
 **Figure 27**: IBS effect (CIMP and Bane formalisms) on horizontal emittance as a function of current per bunch. Calculation for Phase 1 (no 3HC) and Phase 2 (with 3HC).
 
-![IBS EFFECT2](/img/machine/storage_ring/IBS_effect2.png)
+![ibs_effect2.png](/img/machine/storage_ring/ibs_effect2.png)
 
 **Figure 28**: IBS effect (CIMP and Bane formalism) on vertical emittance as a function of current per bunch. Calculation for Phase 1 (no 3HC) and Phase 2 (with 3HC).
 
-![IBS EFFECT3](/img/machine/storage_ring/IBS_effect3.png)
+![ibs_effect3.png](/img/machine/storage_ring/ibs_effect3.png)
 
 **Figure 29**: IBS effect (CIMP and Bane formalisms) on energy spread as a function of current per bunch. Calculation for Phase 1 (no 3HC) and Phase 2 (with 3HC).
 
-![IBS EFFECT4](/img/machine/storage_ring/IBS_effect4.png)
+![ibs_effect4.png](/img/machine/storage_ring/ibs_effect4.png)
 
 **Figure 30**: IBS effect (CIMP and Bane formalisms) on bunch length as a function of current per bunch. Calculation for Phase 1 (no 3HC) and Phase 2 (with 3HC).
 
@@ -692,11 +692,11 @@ Thus, pinholes with large apertures will lead to image blurring due to geometric
 
 **Figure 42**: Contribution to the point spread function for the pinholes as a function of photon energy (calculated and simulated in SRW). The distance source-pinhole was kept fixed at 3.5 m and the beam line magnification is 5.
 
-![VARIATION PSF](/img/machine/storage_ring/var_PSF.png)
+![var_psf.png](/img/machine/storage_ring/var_psf.png)
 
 **Figure 43**: Variation of the PSF as a function os pinhole size. The distance source-pinhole was kept fixed at 3.5 m and the beamline magnification is 5.
 
-![SWR SIMULATION](/img/machine/storage_ring/SRW_sim.png)
+![srw_sim.png](/img/machine/storage_ring/srw_sim.png)
 
 **Figure 44**: SRW simulations for the pinholes in Sirius, up to 50 keV the diffraction can be nicely approximated by a gaussian. The distance source-pinhole was kept fixed at 5 m and the beamline magnification is 5.
 
@@ -787,7 +787,7 @@ The injection point in the storage ring is, by definition, the physical end of t
 | 19 | SP | -- GSL15 | | | | PingV |
 | 20 | SB | -- GSL07 | | | | 
 
-**Tabela x**: Allocation of Beamlines and Diagnostics Equipments in the Storage Ring
+**Table 21**: Allocation of Beamlines and Diagnostics Equipments in the Storage Ring
 
 BbBKckrH  : H BbB (Bunch-by-Bunch) Kicker
 BbBKckrV  : V BbB Kicker 
