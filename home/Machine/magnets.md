@@ -1,3 +1,13 @@
+---
+title: Magnets
+description: 
+published: 1
+date: 2024-02-28T15:04:04.565Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T15:03:10.955Z
+---
+
 # Machine: Magnets
 
 ## Storage Ring Magnets
