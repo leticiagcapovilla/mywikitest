@@ -2,7 +2,7 @@
 title: Magnets
 description: 
 published: 1
-date: 2024-02-28T17:26:18.052Z
+date: 2024-02-28T17:33:34.807Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T15:03:10.955Z
@@ -1492,7 +1492,7 @@ A summary of magnet field measurements of SI S15 sextupoles.
 
 ##### Summary
 
-**IntSext[(T/m)/A]**
+**IntSext [(T/m)/A]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
@@ -1518,7 +1518,7 @@ A summary of magnet field measurements of SI S15 sextupoles.
 | SDB3 | -2.2446 | ± 0.00060 | 0.00199 |
 | SDP3 | -2.2484 | ± 0.00038 | 0.00134 |
 
-**XCenter[um]**
+**XCenter [um]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
@@ -1572,7 +1572,7 @@ A summary of magnet field measurements of SI S15 sextupoles.
 | SDP3 | +22.0 | ± 2.8 |  11.2 
 
 
-**RollError[mrad]**
+**RollError [mrad]**
 
 | Parameters | Avg | ± Std | MaxMin |
 | --- | --- | --- | --- |
@@ -1624,7 +1624,7 @@ A summary of magnet field measurements of SI S15 sextupoles.
 
 #### SI Sextupole Magnet Sorting
 
-SDA0
+**SDA0**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1639,7 +1639,7 @@ SDA0
 |SI-17M2:MA-SDA0| S15-118 |
 |SI-01M1:MA-SDA0| S15-261  |
 
-SFA0
+**SFA0**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1654,7 +1654,7 @@ SFA0
 |SI-17M2:MA-SFA0| S15-010 |
 |SI-01M1:MA-SFA0| S15-172  |
 
-SDB0
+**SDB0**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1679,7 +1679,7 @@ SDB0
 |SI-20M1:MA-SDB0| S15-045 |
 |SI-20M2:MA-SDB0| S15-239  |
 
-SFB0
+**SFB0**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1704,7 +1704,7 @@ SFB0
 |SI-20M1:MA-SFB0| S15-056 |
 |SI-20M2:MA-SFB0| S15-073  |
 
-SDP0
+**SDP0**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1719,7 +1719,7 @@ SDP0
 |SI-19M1:MA-SDP0| S15-232 |
 |SI-19M2:MA-SDP0| S15-187  |
 
-SFP0
+**SFP0**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1734,7 +1734,7 @@ SFP0
 |SI-19M1:MA-SFP0| S15-258 |
 |SI-19M2:MA-SFP0| S15-093  |
 
-SDA1
+**SDA1**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1749,7 +1749,7 @@ SDA1
 |SI-17C1:MA-SDA1| S15-223 |
 |SI-20C4:MA-SDA1| S15-112  |
 
-SFA1
+**SFA1**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1764,7 +1764,7 @@ SFA1
 |SI-17C1:MA-SFA1| S15-098 |
 |SI-20C4:MA-SFA1| S15-105  |
 
-SDB1
+**SDB1**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1789,7 +1789,7 @@ SDB1
 |SI-19C4:MA-SDB1| S15-123 |
 |SI-20C1:MA-SDB1| S15-170  |
 
-SFB1
+**SFB1**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1814,7 +1814,7 @@ SFB1
 |SI-19C4:MA-SFB1| S15-071 |
 |SI-20C1:MA-SFB1| S15-065  |
 
-SDP1
+**SDP1**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1829,7 +1829,7 @@ SDP1
 |SI-18C4:MA-SDP1| S15-155 |
 |SI-19C1:MA-SDP1| S15-227  |
 
-SFP1
+**SFP1**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1844,7 +1844,7 @@ SFP1
 |SI-18C4:MA-SFP1| S15-229 |
 |SI-19C1:MA-SFP1| S15-251  |
 
-SDA2
+**SDA2**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1859,7 +1859,7 @@ SDA2
 |SI-17C1:MA-SDA2| S15-166 |
 |SI-20C4:MA-SDA2| S15-032  |
 
-SFA2
+**SFA2**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1874,7 +1874,7 @@ SFA2
 |SI-17C2:MA-SFA2| S15-281 |
 |SI-20C3:MA-SFA2| S15-005  |
 
-SDB2
+**SDB2**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1899,7 +1899,7 @@ SDB2
 |SI-19C4:MA-SDB2| S15-222 |
 |SI-20C1:MA-SDB2| S15-203  |
 
-SFB2
+**SFB2**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1924,7 +1924,7 @@ SFB2
 |SI-19C3:MA-SFB2| S15-179 |
 |SI-20C2:MA-SFB2| S15-185  |
 
-SDP2
+**SDP2**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1954,7 +1954,7 @@ SFP2
 |SI-18C3:MA-SFP2| S15-089 |
 |SI-19C2:MA-SFP2| S15-054  |
 
-SDA3
+**SDA3**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1969,7 +1969,7 @@ SDA3
 |SI-17C2:MA-SDA3| S15-051 |
 |SI-20C3:MA-SDA3| S15-022  |
 
-SDB3
+**SDB3**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -1994,7 +1994,7 @@ SDB3
 |SI-19C3:MA-SDB3| S15-083 |
 |SI-20C2:MA-SDB3| S15-046  |
 
-SDP3
+**SDP3**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -2009,7 +2009,7 @@ SDP3
 |SI-18C3:MA-SDP3| S15-137 |
 |SI-19C2:MA-SDP3| S15-285  |
 
-Not Used
+**Not Used**
 
 |Magnet Name| Magnet Serial ID |
 | --- | --- |
@@ -2455,16 +2455,16 @@ The magnetic measurement results for Booster dipoles at the extraction current, 
 |Power supply type| monopolar| bipolar| bipolar|  |
 |Magnet model name| BQF| BQD| BQS|  |
 |Number of magnets| 50| 25| 1|  |
-|Maximum integrated strength 1| 0.425| -0.052| 0.017| m⁻¹ |
+|Maximum integrated strength ¹| 0.425| -0.052| 0.017| m⁻¹ |
 |Magnetic length| 0.228| 0.100| 0.100| m |
 |Physical length| 0.212| 0.085| 0.100| m |
-|Maximum strength 1| 1.865| -0.525| 0.168| m⁻² |
+|Maximum strength ¹| 1.865| -0.525| 0.168| m⁻² |
 |Bore diameter| 40| 40| 40| mm |
-|Maximum integrated field gradient 1| -4.255| 0.525| 0.168| T |
-|Maximum field gradient 1| -18.664| 5.254| 1.600| TÂ·m⁻¹ |
-|Maximum field at pole tip 1| 0.373| 0.105| 0.032| T |
+|Maximum integrated field gradient ¹| -4.255| 0.525| 0.168| T |
+|Maximum field gradient ¹| -18.664| 5.254| 1.600| TÂ·m⁻¹ |
+|Maximum field at pole tip ¹| 0.373| 0.105| 0.032| T |
 
-1 The maximum field gradient is 5% higher than the field gradient at extraction energy. This is required by the adopted ramping curve. 
+¹ The maximum field gradient is 5% higher than the field gradient at extraction energy. This is required by the adopted ramping curve. 
 
 **Table 45**: Booster quadrupole main parameters 
 
@@ -2481,7 +2481,7 @@ The magnetic measurement results for Booster dipoles at the extraction current, 
 
 ##### Multipole Errors
 
-Quadrupole QF
+**Quadrupole QF**
 
 quadrupoles @r = 17.5 mm
 
@@ -2501,7 +2501,7 @@ quadrupoles @r = 17.5 mm
 
 **Table 47**: Booster QF quadrupole multipole errors. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ. 
 
-Quadrupole QD
+**Quadrupole QD**
 
 quadrupoles @r = 17.5 mm
 
@@ -2521,7 +2521,7 @@ quadrupoles @r = 17.5 mm
 
 **Table 48**: Booster QD quadrupole multipole errors. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ. 
 
-Quadrupole QS
+**Quadrupole QS**
 
 quadrupoles @r = 17.5 mm
 
@@ -2738,11 +2738,11 @@ Multipole error| Systematic¹| Random Normal | Random Skew |
 
 There will be 25 focusing sextupoles (SF) and 10 defocusing sextupoles (SD) in the booster for chromaticity control. A 105-mm long 3D magnetic model for both SF and SD sextupoles was analyzed. SF family of magnets will be excited with a monopolar power supply whereas SD sextupoles family will be excited with a bipolar power supply. Analysis has been done for fieldmaps corresponding to injection and extraction energy currents. Since the magnetic field is very linear with the excitation current the two results are virtually identical with respect to field quality.
 
-SD/SF at Ejection Energy
+**SD/SF at Ejection Energy**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-sextupoles/tree/master/links-official-3gev).
 
-SD/SF at Injection Energy
+**SD/SF at Injection Energy**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-sextupoles/tree/master/links-official-150mev). 
 
@@ -2825,11 +2825,11 @@ Orbit correctors for the booster use a single model for both horizontal and vert
 
 There will be 25 horizontal and 25 vertical orbit correctors in the booster for orbit control. There will be one magnet model for both corrector types. Vertical corrector magnets are the same as horizontal correctors rotated by 90 degrees. The following are the [analysis][link]summaries created with [fma-analysis.py](https://github.com/lnls-fac/fieldmaptrack/blob/master/scripts/fma-analysis.py)
 
-CH at Ejection Energy
+**CH at Ejection Energy**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-correctors/tree/master/links-official-ch-3gev).
 
-CV at Ejection Energy
+**CV at Ejection Energy**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-correctors/tree/master/links-official-cv-3gev). 
 
@@ -3167,11 +3167,11 @@ The main TB corrector parameters are shown in Table 71.
 
 ##### Fieldmap Analysis
 
-CH
+**CH**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/tb-correctors/tree/master/links-official-ch).
 
-CV
+**CV**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/tb-correctors/tree/master/links-official-cv). 
 
