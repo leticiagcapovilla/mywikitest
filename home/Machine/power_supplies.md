@@ -2,7 +2,7 @@
 title: Power Supplies
 description: 
 published: 1
-date: 2024-02-28T18:54:02.141Z
+date: 2024-02-28T18:54:11.686Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T16:57:03.405Z
@@ -21,8 +21,6 @@ The Power Supplies (PS) are used to feed the magnets of all accelerators and tra
 All the PS will be controlled by the same digital hardware, called Digital Regulation System (DRS), but with different firmwares.
 
 The main parameters of the Sirius storage ring power supplies are shown in Table 1.
-
-blalalal
 
 | Magnet kind | Dipole B1 | Dipole B2 | Quadrupole Q30 <br>(QFB, QFP) | Quadrupole Q20 <br>(QFA, Q1, Q2, Q3, Q4) | Quadrupole Q14 <br>(QDA, QDB1, QDB2, QDP1, QDP2) | Sextupoles |
 | --- | --- | --- | --- | --- | --- | --- |
