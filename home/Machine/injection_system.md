@@ -2,7 +2,7 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-02-28T14:30:29.180Z
+date: 2024-02-28T14:37:27.971Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T14:30:29.180Z
@@ -1010,88 +1010,80 @@ The requirements for the 3 GeV kickers and septa flat-top and pulse-to-pulse rep
 
 If we suppose these effects add in quadrature and have the same weight, the tolerance for each contribution becomes: 
 
-> $\Delta x < 60 \mu m {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' < 20 \mu rad$
+$\Delta x < 60 \mu m {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' < 20 \mu rad$
 
-<br />
 1) Booster extraction kickers (bek): A variation in the bek kick (same kick in both kickers) affects the position and angle at the NLK according to: 
 
-> $\Delta x [mm] = 11.1 \Delta \theta _{bek} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = 3.4 \Delta \theta _{bek} {\;} {\;}$ , thus ${\;} {\;} \Delta \theta _{bek} < 5.4 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bek} / \theta _{bek} < 0.3\%$ 
+$\Delta x [mm] = 11.1 \Delta \theta _{bek} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = 3.4 \Delta \theta _{bek} {\;} {\;}$ , thus ${\;} {\;} \Delta \theta _{bek} < 5.4 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bek} / \theta _{bek} < 0.3\%$ 
 
-<br />
 2) Booster extraction septa (bes): A variation in the bes kick (same kick in both septa) affects the position and angle at the NLK according to: 
 
-> $\Delta x [mm] = 13.9 \Delta \theta _{bes} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = 0.5 \Delta \theta _{bes} {\;} {\;}$ , thus ${\;} {\;} \Delta \theta _{bes} < 4.3 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bes} / \theta _{bes} < 0.006\%$ 
+$\Delta x [mm] = 13.9 \Delta \theta _{bes} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = 0.5 \Delta \theta _{bes} {\;} {\;}$ , thus ${\;} {\;} \Delta \theta _{bes} < 4.3 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bes} / \theta _{bes} < 0.006\%$ 
 
-<br />
 3) Storage ring thick injection septum (stk): A variation in the stk kick affects the position and angle at the NLK according to: 
 
-> $\Delta x [mm] = 5.3 \Delta \theta _{stk} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = \Delta \theta _{stk} {\;} {\;}$ , thus ${\;} {\;} \Delta \theta _{stk} < 11.4 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{stk} / \theta _{stk} < 0.01\%$ 
+$\Delta x [mm] = 5.3 \Delta \theta _{stk} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = \Delta \theta _{stk} {\;} {\;}$ , thus ${\;} {\;} \Delta \theta _{stk} < 11.4 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{stk} / \theta _{stk} < 0.01\%$ 
 
-<br />
 4) Storage ring thin injection septum (stn): A variation in the stn kick affects the position and angle at the NLK according to: 
 
-> $\Delta x [mm] = 3.7 \Delta \theta _{stn} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = \Delta \theta _{stn} {\;} {\;}$ , thus ${\;} {\;} \Delta \theta _{stn} < 16.2 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{stn} / \theta _{stn} < 0.019\%$ 
+$\Delta x [mm] = 3.7 \Delta \theta _{stn} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = \Delta \theta _{stn} {\;} {\;}$ , thus ${\;} {\;} \Delta \theta _{stn} < 16.2 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{stn} / \theta _{stn} < 0.019\%$ 
 
 <br />
 5) Storage ring NLKckr (pmm): 
 
-> $\Delta \theta _{pmm} < 20 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{pmm} / \theta _{pmm} < 0.7\%$
+$\Delta \theta _{pmm} < 20 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{pmm} / \theta _{pmm} < 0.7\%$
 
 For the other pulsed magnets:
 
 1) Storage ring on-axis injection kicker (sik): The tolerance is calculated by requiring that the injected beam oscillation amplitude be limited to $\Delta x _{max}$ < 0.5 mm along the storage ring horizontal plane. The trajectory of the electron beam after a residual kick at sik is: 
 
-> $\Delta x (s) = \Delta \theta _{sik} [\beta _{x , sik} \beta _{x , max}] ^{1/2} sin(\Delta \varphi)$
-
-$\Delta x _{max}$ is limited if 
-
-> $\Delta \theta _{sik} < \Delta x _{max} / [\beta _{x , sik} \beta _{x , max}] ^{1/2}$
+$\Delta x (s) = \Delta \theta _{sik} [\beta _{x , sik} \beta _{x , max}] ^{1/2} sin(\Delta \varphi)$
+$\Delta x _{max}$ is limited if
+$\Delta \theta _{sik} < \Delta x _{max} / [\beta _{x , sik} \beta _{x , max}] ^{1/2}$
 
 Using $\beta _{x , sik}=18.6$ m and $\beta _{x , max}=19.3$ m, we have 
 
-> $\Delta \theta _{sik} < 26.4 \Delta x _{max} [\mu rad] {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{sik} / \theta _{sik} < 0.33\%$
+$\Delta \theta _{sik} < 26.4 \Delta x _{max} [\mu rad] {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{sik} / \theta _{sik} < 0.33\%$
 
 
 2) Booster on-axis injection kicker (bik): The tolerance can be calculated in a similar way, by requiring that the injected beam oscillation amplitude be limited to Δxmax < 1.5 mm along the booster horizontal plane. When specifying the booster aperture, an allowance of 4.5 mm was considered for beam oscillations after injection. For the booster $\beta _{x , bik}=17.9$ m and βx,max=23.2 m, so we have 
 
-> $\Delta \theta _{bik} < 0.074 mrad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bik} / \theta _{bik} < 0.31\%$
+$\Delta \theta _{bik} < 0.074 mrad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bik} / \theta _{bik} < 0.31\%$
 
 3) Booster injection septum (bis): A variation in the bis kick affects the position and angle at the injection kicker (bik) according to: 
 
-> $\Delta x [mm] = 1.85 \Delta \theta _{bis} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = 0.2 \Delta \theta _{bis} ,$
+$\Delta x [mm] = 1.85 \Delta \theta _{bis} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = 0.2 \Delta \theta _{bis} ,$
 
 if we require Δx < 0.5 mm at the booster injection kicker, we have: 
 
-> $\Delta \theta _{bis} < 0.27 mrad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bis} / \theta _{bis} < 0.07\%$
+$\Delta \theta _{bis} < 0.27 mrad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bis} / \theta _{bis} < 0.07\%$
 
 #### Leakage field
 To calculate the allowed **storage ring injection septa** leakage field at the stored beam position in the storage ring, we have assumed that the oscillations caused by the perturbation be limited to 10% of the beam size. The beam trajectory after a kick is given by: 
 
-> $\Delta x (s) = \Delta \theta _0 [\beta _0 \beta (s)] ^{1/2} sin[\varphi (s) - \varphi _0] < 0.1 \sigma _x (s) = 0.1 [\epsilon _x \beta (s)] ^{1/2}$
+$\Delta x (s) = \Delta \theta _0 [\beta _0 \beta (s)] ^{1/2} sin[\varphi (s) - \varphi _0] < 0.1 \sigma _x (s) = 0.1 [\epsilon _x \beta (s)] ^{1/2}$
 
 and as a worst-case estimate we take sin[φ(s)-φ0]=1, and the residual kick at the stored beam position should satisfy:
 
-> $\Delta \theta _0 < 0.1 [\epsilon _x /\beta _0] ^{1/2}$ <br /> for $\epsilon _x = 0.27 nm.rad {\;} {\;} {\;} and {\;} {\;} {\;} \beta _0 = 20 m$, we have $\Delta \theta _0 < 0.37 \mu rad, {\;} {\;} {\;} or {\;} {\;} {\;} \int B .dl < 3.7 G.cm{\;} {\;}$ at ${\;} {\;}E = 3 GeV.$
+$\Delta \theta _0 < 0.1 [\epsilon _x /\beta _0] ^{1/2}$ <br /> for $\epsilon _x = 0.27 nm.rad {\;} {\;} {\;} and {\;} {\;} {\;} \beta _0 = 20 m$, we have $\Delta \theta _0 < 0.37 \mu rad, {\;} {\;} {\;} or {\;} {\;} {\;} \int B .dl < 3.7 G.cm{\;} {\;}$ at ${\;} {\;}E = 3 GeV.$
 
 For the **booster extraction septum**, we set the allowed leakage field so that the orbit distortion amplitude is limited to 0.3 mm. 
 
-> $\Delta x (s) = \Delta \theta _0 [\beta _0 /\beta (s)] ^{1/2} sin[\varphi (s) - \varphi _0] < 1.5 mm {\;} {\;} {\;} ,$ then <br /> for $\beta _{x , max} = 23.2 m {\;} {\;} {\;} and {\;} {\;} {\;} \beta _0 = 9.2 m$, we have $\Delta \theta _0 < 20 \mu rad, {\;} {\;} {\;} or {\;} {\;} {\;} \int B .dl < 200 G.cm{\;} {\;}$ at ${\;} {\;}E = 3 GeV.$
+$\Delta x (s) = \Delta \theta _0 [\beta _0 /\beta (s)] ^{1/2} sin[\varphi (s) - \varphi _0] < 1.5 mm {\;} {\;} {\;} ,$ then <br /> for $\beta _{x , max} = 23.2 m {\;} {\;} {\;} and {\;} {\;} {\;} \beta _0 = 9.2 m$, we have $\Delta \theta _0 < 20 \mu rad, {\;} {\;} {\;} or {\;} {\;} {\;} \int B .dl < 200 G.cm{\;} {\;}$ at ${\;} {\;}E = 3 GeV.$
 
 For the **booster injection septum**, we set the allowed leakage field so that the orbit distortion amplitude is limited to 1.5 mm. 
 
-$$
-\Delta x (s) = \Delta \theta _0 [\beta _0 /\beta (s)] ^{1/2} sin[\varphi (s) - \varphi _0] < 1.5 mm {\;} {\;} {\;} ,$ then <br /> for $\beta _{x , max} = 23.2 m {\;} {\;} {\;} and {\;} {\;} {\;} \beta _0 = 9.2 m$, we have $\Delta \theta _0 < 0.1 mrad, {\;} {\;} {\;} or {\;} {\;} {\;} \int B .dl < 50 G.cm{\;} {\;}$ at ${\;} {\;}E = 150 MeV.
-$$
+$\Delta x (s) = \Delta \theta _0 [\beta _0 /\beta (s)] ^{1/2} sin[\varphi (s) - \varphi _0] < 1.5 mm {\;} {\;} {\;} ,$ then <br /> for $\beta _{x , max} = 23.2 m {\;} {\;} {\;} and {\;} {\;} {\;} \beta _0 = 9.2 m$, we have $\Delta \theta _0 < 0.1 mrad, {\;} {\;} {\;} or {\;} {\;} {\;} \int B .dl < 50 G.cm{\;} {\;}$ at ${\;} {\;}E = 150 MeV.$
 
 
 #### Half-sine pulse duration
 If we define the pulse amplitude by 
 
-> $A = A_0 cos(\pi t/T)$
+$A = A_0 cos(\pi t/T)$
 
 then the half-sine pulse duration T required for a flat-top dA/A0 in the time range 2t0 << T is given by 
 
-> $T = \pi t_0 * (2 dA/A_0) ^{1/2}$
+$T = \pi t_0 * (2 dA/A_0) ^{1/2}$
 
 ![SEPTUM PULSE DURATION](img/septum_pulse_duration.svg)
 
