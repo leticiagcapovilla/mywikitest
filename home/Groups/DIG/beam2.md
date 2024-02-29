@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:22:16.710Z
+date: 2024-02-29T14:22:42.826Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -78,3 +78,6 @@ After the $Kx$ calibration process, the output curve is as observed on Figure 4.
 
 **Figure 4**: Calibration curve of the Delta/Sigma Method.
 
+#### Line Gain
+
+Considering the gains $T_1$,$T_2$,$T_3$ and $T_4$ for the lines of antennas A, B, C and D respectively, and calculating the mean values as the geometric mean, the $x$ equation would be:
