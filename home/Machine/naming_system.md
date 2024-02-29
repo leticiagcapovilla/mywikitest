@@ -1,8 +1,8 @@
 ---
-title: naming_system
+title: Naming System
 description: 
 published: 1
-date: 2024-02-29T15:43:03.095Z
+date: 2024-02-29T15:43:17.308Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:37:36.486Z
