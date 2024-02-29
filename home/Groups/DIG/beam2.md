@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T15:11:23.435Z
+date: 2024-02-29T15:12:42.533Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -157,5 +157,35 @@ $$
 $$
 
 $$
-=log\left(\frac{A \cdot D}{B \cdot C}\right) \cdot 
+=log\left(\frac{A \cdot D}{B \cdot C}\right) \cdot K_x
 $$
+
+In this case, the gains $T_1$,$T_2$,$T_3$ and $T_4$ were mathematically cancelled, reducing processing effort as a compensation is not required anymore. The second part of the equation (B and D) was omitted for a better visualization and is similar to the cancellation done using A and C. If a arithmetic mean had been used, the result would have been the same, and the gains would have been cancelled.
+
+#### No Iteration
+
+##### "K" Calculation
+
+If $Kx$ is consider as a constant value resulting from the calibration process done so far, the resulting curve would be as shown in <xr id="fig:4_1"/>, and $K_y = K_x$ by the system symmetry.
+
+![](img/Beam_Pos_Calc/4_1.png)
+
+**Figure 10**: Calibration curve of the Partial Delta/Sigma Method (No iteration).
+
+##### Real and Calculated Values
+
+Choosing a matrix of coordinates $x$ and $y$ in a 5 mm square representing positing where the beam would pass, a corresponding matrix of the points seen by the algorithm is shown in Figure 11. 
+
+![](img/Beam_Pos_Calc/4_2.png) ![](img/Beam_Pos_Calc/4_3.png)
+
+**Figure 11**: Real and calculated coordinates for the Partial Delta/Sigma (No iteration) Method.
+
+##### Contour Plot Inaccuracy
+
+A contour plot was made to show the inaccuracy variation on the considered area, as seen on Figure 12. The result was based on the difference between the distances to the origin, according to the following equation:
+
+$Inaccuracy = \sqrt{(x')^2 + (y')^2} - \sqrt{x^2 + y^2}$ 
+
+Considering $x$ and $y$ as the real positions and $x'$ and $y'$ as the calculated ones.
+
+![](img/Beam_Pos_Calc/4_4.png)
