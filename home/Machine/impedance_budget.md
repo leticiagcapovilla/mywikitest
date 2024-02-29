@@ -2,7 +2,7 @@
 title: Impedance Budget
 description: 
 published: 1
-date: 2024-02-29T15:53:14.961Z
+date: 2024-02-29T15:58:01.474Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:37:33.823Z
@@ -222,15 +222,15 @@ Based on experience at other facilities [4], the coaxial cavity effect of the BP
 
 Other mechanical aspects are briefly discussed:
 
-• Reverse polarity connectors: the button pin can be a male conductor, avoiding the need of BeCu spring fingers that can be easily damaged. The price is a drawback;
+* Reverse polarity connectors: the button pin can be a male conductor, avoiding the need of BeCu spring fingers that can be easily damaged. The price is a drawback;
 
-• Constant pin diameter: brings improvements in mechanical resistance and in the thermal contact area between the pin and the ceramics. Also it allows to have the button and the pin as a single piece;
+* Constant pin diameter: brings improvements in mechanical resistance and in the thermal contact area between the pin and the ceramics. Also it allows to have the button and the pin as a single piece;
 
-• Tiny dimensions require very small tolerances and precise alignment. It makes the brazing process harder (small filler sites, short circuit risks, etc.);
+* Tiny dimensions require very small tolerances and precise alignment. It makes the brazing process harder (small filler sites, short circuit risks, etc.);
 
-• Materials choice: The higher the button electrical conductivity, the lower the button power dissipation [8]. Brazing and welding process play also a big role on materials choice;
+* Materials choice: The higher the button electrical conductivity, the lower the button power dissipation [8]. Brazing and welding process play also a big role on materials choice;
 
-• Vacuum insulation between the BPM body and housing: brazing and laser welding are the considered alternatives under evaluation.
+* Vacuum insulation between the BPM body and housing: brazing and laser welding are the considered alternatives under evaluation.
 
 ### Flanges
 The mechanical design of the Sirius flanges, shown by Figure 8, was based on KEK MO-flange. 
@@ -256,40 +256,37 @@ Combined with several transverse configurations these profiles were used as basi
 
 Some conclusions were made for the studied cases:
 
-• Axisymmetric: free of HOM’s, but very large broadband impedance;
+* Axisymmetric: free of HOM’s, but very large broadband impedance;
+<br />
 
+* Single ridge, 5mm width:
+	- Approx. 8x lower broadband impedance than axisymmetric;
+	- Suffers from several quite strong HOM’s;
+<br />
 
-• Single ridge, 5mm width:
+* Single ridge, '''increasing''' to 10mm width:
+	- Broadband impedance: ~20% increase;
+	- HOM’s: from 25% to '''complete''' damping;
+<br />
 
-- Approx. 8x lower broadband impedance than axisymmetric;
+* 10 mm width, adding other ridge (2-ridge type):
+	- Broadband impedance: 2x higher;
+	- HOM’s: less HOM’s, but the remaining ones were more than '''3x higher'''! 
+<br />
 
-- Suffers from several quite strong HOM’s;
-
-
-• Single ridge, '''increasing''' to 10mm width:
-
-- Broadband impedance: ~20% increase;
-
-- HOM’s: from 25% to '''complete''' damping;
-
-
-• 10 mm width, adding other ridge (2-ridge type):
-
-- Broadband impedance: 2x higher;
-
-- HOM’s: less HOM’s, but the remaining ones were more than '''3x higher'''! 
-
-
-• Keeping with single ridge, w10: Parabola shapes were not succesfull. Full width was slightly better!
-
+* Keeping with single ridge, w10: Parabola shapes were not succesfull. Full width was slightly better!
+<br />
 
 And the conclusions regarding the geometric parameters were made as well:
+<br />
 
-• Taper in: a steeper taper causes a more defined stair-shape of the broadband impedance;
+* Taper in: a steeper taper causes a more defined stair-shape of the broadband impedance;
+<br />
 
-• Taper out: a steeper taper increases the slope of the broadband impedance – does not affect the narrowband impedance;
+* Taper out: a steeper taper increases the slope of the broadband impedance – does not affect the narrowband impedance;
+<br />
 
-• Iris height (h): broadband impedance increases linearly with it and narrowband one increases quadratically – actually h is the only parameter which affects narrowband impedance
+* Iris height (h): broadband impedance increases linearly with it and narrowband one increases quadratically – actually h is the only parameter which affects narrowband impedance
 
 
 A final sketch was made in order to guide [VAC][link] group to determine the best possible configurations considering their ray-tracing analysis. Figure 11 shows the isolines (in orange) that give the best trade-off between narrowband (pink) and broadband (purple) impedance isolines.
