@@ -1,6 +1,16 @@
+---
+title: Beam Position Calculation
+description: 
+published: 1
+date: 2024-02-29T14:01:11.005Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T21:01:06.589Z
+---
+
 # DIG: Beam Position Calculation
 
-   See also: [[Machine:Beam_Diagnostics_and_Feedback_System|Beam Diagnostics and Feedback System]] and [[DIG:DIG|DIG Group Page]]
+See also: [[Machine:Beam_Diagnostics_and_Feedback_System|Beam Diagnostics and Feedback System]] and [[DIG:DIG|DIG Group Page]]
 
 ## General
 
@@ -16,7 +26,7 @@ Data acquisition is made through four antennas arranged on the edges of the vacu
 
     3.  Excitations are used in the algorithms, obtaining the respective positions x' and y'.
 
-![](/img/groups/dig/beam_pos_calcChamber_ilu.png)
+![](/img/groups/dig/beam_pos_calc/Chamber_ilu.png)
 
 **Figure 1**: Vacuum chamber ilustration.
 
@@ -28,7 +38,7 @@ After the calculation of the beam positions, a considerable discrepancy between 
 
 The "K" value is a constant obtained through the first-degree linear interpolation of the measures of the central region of the chamber. The "K" is calculated as the inverse of the angular coefficient obtained, so that values at this region have the measured value (horizontal axis) equivalent to the actual values (vertical axis) as seen in Figure 2.
 
-![](/img/groups/dig/beam_pos_calcK_calc_demo.png)
+![](/img/groups/dig/beam_pos_calc/K_calc_demo.png)
 
 **Figure 2**: Comparison of pure and compensated measures.
 
@@ -46,7 +56,7 @@ The variable $Method$ stands for any calculation equation being used to calculat
 
 Although the physical construction and installation of equipments is made seeking to minimize the differences between the measurements on each antenna, small imperfections in them result in different gains in measures. One way to minimize this is to conduct a switching between opposing antennas, so that a signals passes through one equipment line (having a respective gain, "T1" for example) and then through the opposite line ( having a gain "T2", for instance). In this way, through further processing is possible to take a mean value of the switched signal, obtaining a signal close to the pure ones, without the distortions caused by different gains from each equipment line, as seen in Figure 3.
 
-![](/img/groups/dig/beam_pos_calcB_gain_ilu.png)
+![](/img/groups/dig/beam_pos_calc/B_gain_ilu.png)
 
 **Figure 3**: Signals of antennas A and B after the switching, and their respective mean values.
 
@@ -64,7 +74,7 @@ $y= \frac{(a+b)-(c+d)}{a+b+c+d} \cdot K_y$
 
 After the $Kx$ calibration process, the output curve is as observed on Figure 4. Using the system symmetry, is possible to consider $K_y = K_x$.
 
-![](/img/groups/dig/beam_pos_calc1_1.png)
+![](/img/groups/dig/beam_pos_calc/1_1.png)
 
 **Figure 4**: Calibration curve of the Delta/Sigma Method.
 
@@ -72,11 +82,17 @@ After the $Kx$ calibration process, the output curve is as observed on Figure 4.
 
 Considering the gains $T_1$,$T_2$,$T_3$ and $T_4$ for the lines of antennas A, B, C and D respectively, and calculating the mean values as the geometric mean, the $x$ equation would be:
 
-$x= \frac{(a+d)-(b+c)}{a+b+c+d} \cdot K_x $
+$$
+x= \frac{(a+d)-(b+c)}{a+b+c+d} \cdot K_x
+$$
 
-$=\frac{(\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{D^2 \cdot {\color{blue}T_3 \cdot T_4}})-(\sqrt{B^2 \cdot {\color{blue}T_3 \cdot T_4}}+\sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}})}{\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{B^2 \cdot {\color{blue}T_3 \cdot T_4}}+\sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{D^2 \cdot {\color{blue}T_3 \cdot T_4}}} \cdot K_x$
+$$
+=\frac{(\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{D^2 \cdot {\color{blue}T_3 \cdot T_4}})-(\sqrt{B^2 \cdot {\color{blue}T_3 \cdot T_4}}+\sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}})}{\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{B^2 \cdot {\color{blue}T_3 \cdot T_4}}+\sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{D^2 \cdot {\color{blue}T_3 \cdot T_4}}} \cdot K_x
+$$
 
-$= \frac{{\color{red} \sqrt{T_1 \cdot T_2}} \cdot(A-C)+{\color{blue} \sqrt{T_3 \cdot T_4}} \cdot (D-B)}{{\color{red} \sqrt{T_1 \cdot T_2}} \cdot(A+C)+{\color{blue} \sqrt{T_3 \cdot T_4}} \cdot (D+B)} \cdot K_x$
+$$
+=\frac{{\color{red} \sqrt{T_1 \cdot T_2}} \cdot(A-C)+{\color{blue} \sqrt{T_3 \cdot T_4}} \cdot (D-B)}{{\color{red} \sqrt{T_1 \cdot T_2}} \cdot(A+C)+{\color{blue} \sqrt{T_3 \cdot T_4}} \cdot (D+B)} \cdot K_x
+$$
 
 It is important to observe that the terms $\sqrt{T_1 \cdot T_2}$ and $\sqrt{T_3 \cdot T_4}$ were not cancelled, and further processing is required to compensate these in order to reduce its interference on the measuring process. If a arithmetic mean had been used, a similar situation would have happened, as the values would not have been cancelled as well.
 
@@ -84,7 +100,7 @@ It is important to observe that the terms $\sqrt{T_1 \cdot T_2}$ and $\sqrt{T_3 
 
 Choosing a matrix of coordinates $x$ and $y$ in a 5 mm square representing positing where the beam would pass, a corresponding matrix of the points seen by the algorithm is shown in Figure 5.
 
-![](/img/groups/dig/beam_pos_calc1_2.png) ![](/img/groups/dig/beam_pos_calc1_3.png)
+![](/img/groups/dig/beam_pos_calc/1_2.png) ![](/img/groups/dig/beam_pos_calc/1_3.png)
 
 **Figure 5**: Real and calculated coordinates for the Delta/Sigma Method.
 
@@ -96,7 +112,7 @@ $Inaccuracy = \sqrt{(x')^2 + (y')^2} - \sqrt{x^2 + y^2}$
 
 Considering $x$ and $y$ as the real positions and $x'$ and $y'$ as the calculated ones.
 
-![](/img/groups/dig/beam_pos_calc1_4.png)
+![](/img/groups/dig/beam_pos_calc/1_4.png)
 
 **Figure 6**: Inaccuracy contour plot of the Delta/Sigma Method.
 
@@ -118,9 +134,9 @@ $x=log\left(\frac{a}{c}\right) \cdot K_x$
 
 $y=log\left(\frac{b}{d}\right) \cdot K_y$
 
-After the $Kx$ calibration process, the output curve is as observed on <xr id="fig:2_1"/>. Using the system symmetry, is possible to consider $K_y = K_x$.
+After the $Kx$ calibration process, the output curve is as observed on Figure 7. Using the system symmetry, is possible to consider $K_y = K_x$.
 
-![](/img/groups/dig/beam_pos_calc2_1.png)
+![](/img/groups/dig/beam_pos_calc/2_1.png)
 
 **Figure 7**: Calibration curve of the Pi/Pi Method.
 
@@ -128,13 +144,21 @@ After the $Kx$ calibration process, the output curve is as observed on <xr id="f
 
 Considering the gains $T_1$,$T_2$,$T_3$ and $T_4$ for the lines of antennas A, B, C and D respectively, and calculating the mean values as the geometric mean, the $x$ equation would be:
 
-$x=log\left(\frac{a \cdot d}{b \cdot c}\right) \cdot K_x $
+$$
+x=log\left(\frac{a \cdot d}{b \cdot c}\right) \cdot K_x
+$$
 
-$=log\left(\frac{\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}} \cdot \sqrt{D^2 \cdot {\color{blue}T_3 \cdot T_4}}}{\sqrt{B^2 \cdot {\color{blue}T_3 \cdot T_4}} \cdot \sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}}}\right) \cdot K_x $
+$$
+=log\left(\frac{\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}} \cdot \sqrt{D^2 \cdot {\color{blue}T_3 \cdot T_4}}}{\sqrt{B^2 \cdot {\color{blue}T_3 \cdot T_4}} \cdot \sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}}}\right) \cdot K_x
+$$
 
-$=log\left(\left ( \frac{\cancel{\sqrt{{\color{red}T_1 \cdot T_2}}} \cdot \cancel{\sqrt{\color{blue}T_3 \cdot T_4}}}{\cancel{\sqrt{{\color{blue}T_3 \cdot T_4}}} \cdot \cancel{\sqrt{{\color{red}T_1 \cdot T_2}}}} \right ) \cdot \frac{\sqrt{A^2} \cdot \sqrt{D^2}}{\sqrt{B^2} \cdot \sqrt{C^2}}\right) \cdot K_x $
+$$
+=log\left(\left ( \frac{\cancel{\sqrt{{\color{red}T_1 \cdot T_2}}} \cdot \cancel{\sqrt{\color{blue}T_3 \cdot T_4}}}{\cancel{\sqrt{{\color{blue}T_3 \cdot T_4}}} \cdot \cancel{\sqrt{{\color{red}T_1 \cdot T_2}}}} \right ) \cdot \frac{\sqrt{A^2} \cdot \sqrt{D^2}}{\sqrt{B^2} \cdot \sqrt{C^2}}\right) \cdot K_x
+$$
 
-$=log\left(\frac{A \cdot D}{B \cdot C}\right) \cdot K_x $
+$$
+=log\left(\frac{A \cdot D}{B \cdot C}\right) \cdot K_x
+$$
 
 In this case, the gains $T_1$,$T_2$,$T_3$ and $T_4$ were mathematically cancelled, reducing processing effort as a compensation is not required anymore. If a arithmetic mean had been used, the result would have been the same, and the gains would have been cancelled.
 
@@ -142,7 +166,7 @@ In this case, the gains $T_1$,$T_2$,$T_3$ and $T_4$ were mathematically cancelle
 
 Choosing a matrix of coordinates $x$ and $y$ in a 5 mm square representing positing where the beam would pass, a corresponding matrix of the points seen by the algorithm is shown in Figure 8.
 
-![](/img/groups/dig/beam_pos_calc2_2.png) ![](/img/groups/dig/beam_pos_calc2_3.png)
+![](/img/groups/dig/beam_pos_calc/2_2.png) ![](/img/groups/dig/beam_pos_calc/2_3.png)
 
 **Figure 8**: Real and calculated coordinates for the Pi/Pi Method.
 
@@ -154,7 +178,7 @@ $Inaccuracy = \sqrt{(x')^2 + (y')^2} - \sqrt{x^2 + y^2}$
 
 Considering $x$ and $y$ as the real positions and $x'$ and $y'$ as the calculated ones.
 
-![](/img/groups/dig/beam_pos_calc2_4.png)
+![](/img/groups/dig/beam_pos_calc/2_4.png)
 
 **Figure 9**: Inaccuracy contour plot of the Pi/Pi Method.
 
@@ -180,13 +204,21 @@ $y = \frac{1}{2}\left(\frac{a-c}{a+c}-\frac{d-b}{d+b}\right) \cdot K_y$
 
 Considering the gains $T_1$,$T_2$,$T_3$ and $T_4$ for the lines of antennas A, B, C and D respectively, and calculating the mean values as the geometric mean, the $x$ equation would be:
 
-$x = \frac{1}{2}\left(\frac{a-c}{a+c}+\frac{d-b}{d+b}\right) \cdot K_x$
+$$
+x = \frac{1}{2}\left(\frac{a-c}{a+c}+\frac{d-b}{d+b}\right) \cdot K_x
+$$
 
-$=\frac{1}{2}\left(\frac{\sqrt{A^2 {\color{red}\cdot T_1  \cdot T_2}}-\sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}}}{\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}}}+...\right) \cdot K_x$
+$$
+=\frac{1}{2}\left(\frac{\sqrt{A^2 {\color{red}\cdot T_1  \cdot T_2}}-\sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}}}{\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}}}+...\right) \cdot K_x
+$$
 
-$=\frac{1}{2} \left ( \frac{\cancel{{\color{red}\sqrt{T_1 \cdot T_2}}}}{\cancel{{\color{red}\sqrt{T_1 \cdot T_2}}}} \right )  \left(\frac{\sqrt{A^2}-\sqrt{C^2}}{\sqrt{A^2}+\sqrt{C^2}}+...\right) \cdot K_x$
+$$
+=\frac{1}{2} \left ( \frac{\cancel{{\color{red}\sqrt{T_1 \cdot T_2}}}}{\cancel{{\color{red}\sqrt{T_1 \cdot T_2}}}} \right )  \left(\frac{\sqrt{A^2}-\sqrt{C^2}}{\sqrt{A^2}+\sqrt{C^2}}+...\right) \cdot K_x
+$$
 
-$=\frac{1}{2} \left(\frac{A-C}{A+C}+...\right) \cdot K_x$
+$$
+=\frac{1}{2} \left(\frac{A-C}{A+C}+...\right) \cdot K_x
+$$
 
 In this case, the gains $T_1$,$T_2$,$T_3$ and $T_4$ were mathematically cancelled, reducing processing effort as a compensation is not required anymore. The second part of the equation (B and D) was omitted for a better visualization and is similar to the cancellation done using A and C. If a arithmetic mean had been used, the result would have been the same, and the gains would have been cancelled.
 
@@ -196,7 +228,7 @@ In this case, the gains $T_1$,$T_2$,$T_3$ and $T_4$ were mathematically cancelle
 
 If $Kx$ is consider as a constant value resulting from the calibration process done so far, the resulting curve would be as shown in <xr id="fig:4_1"/>, and $K_y = K_x$ by the system symmetry.
 
-![](/img/groups/dig/beam_pos_calc4_1.png)
+![](/img/groups/dig/beam_pos_calc/4_1.png)
 
 **Figure 10**: Calibration curve of the Partial Delta/Sigma Method (No iteration).
 
@@ -204,7 +236,7 @@ If $Kx$ is consider as a constant value resulting from the calibration process d
 
 Choosing a matrix of coordinates $x$ and $y$ in a 5 mm square representing positing where the beam would pass, a corresponding matrix of the points seen by the algorithm is shown in Figure 11. 
 
-![](/img/groups/dig/beam_pos_calc4_2.png) ![](/img/groups/dig/beam_pos_calc4_3.png)
+![](/img/groups/dig/beam_pos_calc/4_2.png) ![](/img/groups/dig/beam_pos_calc/4_3.png)
 
 **Figure 11**: Real and calculated coordinates for the Partial Delta/Sigma (No iteration) Method.
 
@@ -216,7 +248,7 @@ $Inaccuracy = \sqrt{(x')^2 + (y')^2} - \sqrt{x^2 + y^2}$
 
 Considering $x$ and $y$ as the real positions and $x'$ and $y'$ as the calculated ones.
 
-![](/img/groups/dig/beam_pos_calc4_4.png)
+![](/img/groups/dig/beam_pos_calc/4_4.png)
 
 **Figure 12**: Inaccuracy contour plot of the Partial Delta/Sigma (No iteration) Method.
 
@@ -228,7 +260,6 @@ Considering $x$ and $y$ as the real positions and $x'$ and $y'$ as the calculate
 
 
 #### Using 5 Iterations
-
 
 ##### "K" Polynom
 
@@ -251,7 +282,7 @@ The coefficients were calibrated using a non-linear regression algorithm using t
 
 Choosing a matrix of coordinates $x$ and $y$ in a 5 mm square representing positing where the beam would pass, a corresponding matrix of the points seen by the algorithm is shown in Figure 13. 
 
-![](/img/groups/dig/beam_pos_calc5_2.png) ![](/img/groups/dig/beam_pos_calc5_3.png)
+![](/img/groups/dig/beam_pos_calc/5_2.png) ![](/img/groups/dig/beam_pos_calc/5_3.png)
 
 **Figure 13**: Real and calculated coordinates for the Partial Delta/Sigma (5 iterations) Method.
 
@@ -263,7 +294,7 @@ $Inaccuracy = \sqrt{(x')^2 + (y')^2} - \sqrt{x^2 + y^2}$
 
 Considering $x$ and $y$ as the real positions and $x'$ and $y'$ as the calculated ones.
 
-![](/img/groups/dig/beam_pos_calc5_4.png)
+![](/img/groups/dig/beam_pos_calc/5_4.png)
 
 **Figure 14**: Inaccuracy contour plot of the Partial Delta/Sigma (5 iterations) Method.
 
@@ -288,8 +319,8 @@ In order to compare the methods, a table containing the maximum and minimum valu
 
 A better comparison of the methods is done by setting all the contour plots to use a same colour scale. The maximum and minimum values were chosen considering the maximum and minimum values among all situations, therefore 2000 nm (Delta/Sigma Method) and -2500 nm (Partial Delta/Sigma without iterations). 
 
-![](/img/groups/dig/beam_pos_calc1_5.png) ![](/img/groups/dig/beam_pos_calc2_5.png)
-![](/img/groups/dig/beam_pos_calc3_5.png) ![](/img/groups/dig/beam_pos_calc4_5.png)
+![](/img/groups/dig/beam_pos_calc/1_5.png) ![](/img/groups/dig/beam_pos_calc/2_5.png)
+![](/img/groups/dig/beam_pos_calc/3_5.png) ![](/img/groups/dig/beam_pos_calc/4_5.png)
 
 **Figure 15**: Inaccuracies of All Methods
 
@@ -297,8 +328,8 @@ A better comparison of the methods is done by setting all the contour plots to u
 
 Considering that the resolution of the measures has an order of magnitude of hundred of nano meters, a comparison of the areas that would provide a resolution of 100nm on each method is done. 
 
-![](/img/groups/dig/beam_pos_calc1_6.png) ![](/img/groups/dig/beam_pos_calc2_6.png)
-![](/img/groups/dig/beam_pos_calc3_6.png) ![](/img/groups/dig/beam_pos_calc4_6.png)
+![](/img/groups/dig/beam_pos_calc/1_6.png) ![](/img/groups/dig/beam_pos_calc/2_6.png)
+![](/img/groups/dig/beam_pos_calc/3_6.png) ![](/img/groups/dig/beam_pos_calc/4_6.png)
 
 **Figure 16**: Area Providing a 100 nm Accuracy
 
