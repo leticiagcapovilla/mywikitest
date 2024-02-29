@@ -2,7 +2,7 @@
 title: Impedance Budget
 description: 
 published: 1
-date: 2024-02-29T15:47:46.406Z
+date: 2024-02-29T15:48:48.453Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:37:33.823Z
@@ -66,7 +66,7 @@ We considered three types of undulator for Sirius, as seen in Table 2. In this i
 |Natural energy spread*| 0.085| 0.084| 0.083|  % |
 |Natural bunch length*| 2.4| 2.3| 11.6| mm  |
 
-* considering the zero current case only.
+*considering the zero current case only.
 
 **Table 2**: Sirius operation phases for beam lifetime and instability threshold calculations.
 
