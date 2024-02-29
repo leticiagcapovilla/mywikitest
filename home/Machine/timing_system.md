@@ -2,7 +2,7 @@
 title: Timing System
 description: 
 published: 1
-date: 2024-02-29T15:32:47.081Z
+date: 2024-02-29T16:11:20.525Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:27:21.681Z
@@ -46,7 +46,9 @@ Table 1 shows the Sirius parameters concerning timing system.
 **Table 1**: Sirius parameters.
 
 
-''*Note: This is defined as the jitter of the E-gun trigger relative to the RF clock. The experience from the high voltage modulators of the existing LNLS Linac showed us that equipment are also quite sensitive to jitter. We believe the amplitude modulation (or ripple) in the high voltage pulses are responsible for that. The closer to 50 ps RMS the modulators jitter are, the better.''
+> Note: This is defined as the jitter of the E-gun trigger relative to the RF clock. The experience from the high voltage modulators of the existing LNLS Linac showed us that equipment are also quite sensitive to jitter. We believe the amplitude modulation (or ripple) in the high voltage pulses are responsible for that. The closer to 50 ps RMS the modulators jitter are, the better.
+{.is-info}
+
 
 The detailed machine operation sequence is shown in Figure 2, in accordance to Sirius' energy ramp scheme.
 
