@@ -2,7 +2,7 @@
 title: naming_system
 description: 
 published: 1
-date: 2024-02-29T15:40:10.926Z
+date: 2024-02-29T15:43:03.095Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:37:36.486Z
@@ -476,12 +476,12 @@ record-separator   = "."
 
 Links bellow point to drawings with family names of lattice elements for each accelerator section
 
--   AS - Accelerator System drawing \[link\] PDF file (sectors split in PDF files) \[link\]
--   SI - Storage Ring drawing \[link\] PDF file
--   TS - Booster to Storage Ring transport line drawing \[link\] PDF file
--   \[BO - Booster drawing\] PDF file
--   TB - Linac to Booster transport line drawing \[link\] PDF file
--   LI - Linac drawing \[link\] PDF file
+-   [AS - Accelerator System drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-AS.pdf) PDF file [(sectors split in PDF files)](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings)
+-   [SI - Storage Ring drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-SI.pdf) PDF file
+-   [TS - Booster to Storage Ring transport line drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-TS.pdf) PDF file
+-   [BO - Booster drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-BO.pdf) PDF file
+-   [TB - Linac to Booster transport line drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-TB.pdf) PDF file
+-   [LI - Linac drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-LI.pdf) PDF file
 
 ## Reference
 
