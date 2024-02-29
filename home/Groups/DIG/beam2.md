@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T15:14:26.574Z
+date: 2024-02-29T15:15:24.588Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -201,7 +201,6 @@ Considering $x$ and $y$ as the real positions and $x'$ and $y'$ as the calculate
 
 #### Using 5 Iterations
 
-
 ##### "K" Polynom
 
 Another approach to compensate the differences between real and calculated values is to use a function that has different gains depending on its position, and not a constant one as done so far. This can be done using the following strategy:
@@ -210,5 +209,28 @@ $x_{n+1} = K_x\left ( x_n,y_n \right ) \cdot Method$
 	
 $y_{n+1} = K_y\left ( x_n,y_n \right ) \cdot Method$
 
-
 It is important to realise that the more iterations are done, the more the calculated value approximates the real one. For this case, the polynoms are calculated using the following equations:
+
+$K_x\left ( x_0,y_0 \right ) = a_0 + a_1 \cdot y_0^2 + a_2 \cdot y_0^4 + a_3 \cdot x_0^2 + a_4 \cdot x_0^2 \cdot y_0^2 + a_5 \cdot x_0^4$
+	
+$K_y\left ( x_0,y_0 \right ) = b_0 + b_1 \cdot y_0^2 + b_2 \cdot y_0^4 + b_3 \cdot x_0^2 + b_4 \cdot x_0^2 \cdot y_0^2 + b_5 \cdot x_0^4$
+
+The coefficients were calibrated using a non-linear regression algorithm using the simulation data.
+
+##### Real and Calculated Values
+
+Choosing a matrix of coordinates $x$ and $y$ in a 5 mm square representing positing where the beam would pass, a corresponding matrix of the points seen by the algorithm is shown in Figure 13. 
+
+![](/img/groups/dig/beam_pos_calc/5_2.png) ![](/img/groups/dig/beam_pos_calc/5_3.png)
+
+**Figure 13**: Real and calculated coordinates for the Partial Delta/Sigma (5 iterations) Method.
+
+##### Contour Plot Inaccuracy
+
+A contour plot was made to show the inaccuracy variation on the considered area, as seen on Figure 14. The result was based on the difference between the distances to the origin, according to the following equation:
+
+${Inaccuracy = \sqrt{(x')^2 + (y')^2} - \sqrt{x^2 + y^2}$} 
+
+Considering $x$ and $y$ as the real positions and $x'$ and $y'$ as the calculated ones.
+
+![](/img/groups/dig/beam_pos_calc/5_4.png)
