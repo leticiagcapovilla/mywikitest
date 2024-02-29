@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T15:15:47.355Z
+date: 2024-02-29T15:16:59.860Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -234,3 +234,40 @@ ${Inaccuracy = \sqrt{(x')^2 + (y')^2} - \sqrt{x^2 + y^2}}$
 Considering $x$ and $y$ as the real positions and $x'$ and $y'$ as the calculated ones.
 
 ![](/img/groups/dig/beam_pos_calc/5_4.png)
+
+**Figure 14**: Inaccuracy contour plot of the Partial Delta/Sigma (5 iterations) Method.
+
+##### Advantagens vs. Disadvantages
+
+* High accuracy
+* Line gain compensation
+* Expensive processing on the FPGA due to the iterative function and polynom usage
+
+## Comparison 
+
+### Maximum and Minimum Individual Inaccuracies
+
+In order to compare the methods, a table containing the maximum and minimum values is show bellow: 
+
+|  | Δ/Σ| Π/Π <br />("X") | Π/Π <br />("Cross") | ∂Δ/Σ <br />(No iter.) | ∂Δ/Σ <br />(5 iter.) |
+| --- | --- | --- | --- | --- | --- |
+|Min (nm)| -800| 200| -650| -2500| 0.9 |
+|Max (nm)| 2000| 700| 250| 0| 50  |
+
+### Inaccuracy Comparison
+
+A better comparison of the methods is done by setting all the contour plots to use a same colour scale. The maximum and minimum values were chosen considering the maximum and minimum values among all situations, therefore 2000 nm (Delta/Sigma Method) and -2500 nm (Partial Delta/Sigma without iterations). 
+
+![](/img/groups/dig/beam_pos_calc/1_5.png) ![](/img/groups/dig/beam_pos_calc/2_5.png)
+![](/img/groups/dig/beam_pos_calc/3_5.png) ![](/img/groups/dig/beam_pos_calc/4_5.png)
+
+**Figure 15**: Inaccuracies of All Methods
+
+### Area Providing a 100 nm Accuracy
+
+Considering that the resolution of the measures has an order of magnitude of hundred of nano meters, a comparison of the areas that would provide a resolution of 100nm on each method is done. 
+
+![](/img/groups/dig/beam_pos_calc/1_6.png) ![](/img/groups/dig/beam_pos_calc/2_6.png)
+![](/img/groups/dig/beam_pos_calc/3_6.png) ![](/img/groups/dig/beam_pos_calc/4_6.png)
+
+**Figure 16**: Area Providing a 100 nm Accuracy
