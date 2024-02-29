@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:38:22.729Z
+date: 2024-02-29T14:39:29.173Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -91,5 +91,5 @@ $$
 $$
 
 $$
-=\frac{\sqrt{T_1 \cdot T_2} \cdot (A-C)}{\sqrt{T_1 \cdot T_2} \cdot (A+C)} \cdot K_x
+=\frac{\sqrt{T_1 \cdot T_2} \cdot (A-C) + \sqrt{T_3 \cdot T_4}}{\sqrt{T_1 \cdot T_2} \cdot (A+C) + \sqrt{T_3 \cdot T_4}} \cdot K_x
 $$
