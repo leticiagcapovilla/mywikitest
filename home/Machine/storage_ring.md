@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-02-28T19:57:35.532Z
+date: 2024-02-29T16:05:22.182Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T13:34:03.079Z
@@ -233,7 +233,7 @@ where $\beta _0$ is the value of the betatron function at the center of the stra
 
 ![NONLIN BSC](/img/machine/storage_ring/nonlinear_beam_sc.svg)
 
-**Figure 5**: Beam-stay-clear calculated from tracking simulations including nonlinear elements for SI.V14.C03. Note the asymmetry introduced by the optimization method, in which the negative side of the dynamic aperture is maximized at the high straight sections to improve the injection process.
+**Figure 6**: Beam-stay-clear calculated from tracking simulations including nonlinear elements for SI.V14.C03. Note the asymmetry introduced by the optimization method, in which the negative side of the dynamic aperture is maximized at the high straight sections to improve the injection process.
 
 ## Error tolerance specifications 
 After optimization of the bare lattice, errors are introduced in the model to study their influence on the beam stability and quality. This is accomplished with the flexible AcceleratorToolbox (AT) in MATLAB. Aftwerwards these imperfect machine models are exported as flat-lattice files and used in a home-developed tracking code based on AT/TracyIII for performance optimization. From these tracking simulations, which are presented in the subsequent sections, the following error tolerance specifications were determined to be acceptable: 
