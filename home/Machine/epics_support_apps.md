@@ -2,7 +2,7 @@
 title: EPICS Support Applications
 description: 
 published: 1
-date: 2024-02-29T15:47:11.198Z
+date: 2024-02-29T16:10:36.132Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:37:29.076Z
@@ -17,8 +17,9 @@ This section will give an overview on the EPICS Support Applications that can be
     
 2. **Middlelayer Services**
 
-Note that not all applications are in use by LNLS, but instead constitute a general panorama of Support Applications for 
-EPICS-based control systems.
+> Note that not all applications are in use by LNLS, but instead constitute a general panorama of Support Applications for EPICS-based control systems.
+{.is-info}
+
 
 ##  Links to Running Support Applications 
 
