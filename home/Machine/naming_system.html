@@ -2,1210 +2,1166 @@
 title: naming_system
 description: 
 published: 1
-date: 2024-02-29T15:36:21.022Z
+date: 2024-02-29T15:39:55.154Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-02-28T20:37:36.486Z
 -->
 
-<h1 class="toc-header" id="machine-naming-system"> Machine: Naming System</h1>
-<h2 class="toc-header" id="introduction"> Introduction</h2>
-<p>In the sections below the naming convention for Sirius is defined. It should be used to name device types, signals (properties) and machine slots.<br>
-Moreover, the infrastructure of EPICS support applications that should be used to help managing lists of named objects for Sirius is described.</p>
+<h1>Machine: Naming System</h1>
+<h2>Introduction</h2>
+<p>In the sections below the naming convention for Sirius is defined. It should be used to name device types, signals (properties) and machine slots.<br>Moreover, the infrastructure of EPICS support applications that should be used to help managing lists of named objects for Sirius is described.</p>
 <p>The Naming service and other support services can be accessed through the EPICS Support Applications [link] menu</p>
 <p>The wiki page for the outdated previous naming convention can be accessed here [link]</p>
-<h2 class="toc-header" id="pv-naming-specification"> PV Naming Specification</h2>
-<p><img alt="" src="/img/machine/naming_system/SIRIUS_naming_convention.png"></p>
-<p><strong>Figure 1</strong>:</p>
-<h3 class="toc-header" id="pv-name"> PV Name</h3>
+<h2>PV Naming Specification</h2>
+<figure class="image image_resized" style="width:81.34%;"><img src="/img/machine/naming_system/SIRIUS_naming_convention.png" alt=""></figure>
+<h3>PV Name</h3>
 <p>sec-sub:dis-dev[-idx]:propty[.field]</p>
-<div class="table-container"><table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Area</td>
-<td>• sec<br>(=Section) <br><br>• sub<br>(=Subsection)</td>
-<td>• Accelerator Section comprising the machine (e.g, Storage Ring, Booster, Linac, Transport Lines, etc) <br><br>• Accelerator Subsection within a specific Section (e.g., First Sector, First Chromatic Section = 01C1, 02C2, 01M2, 01M1, etc)</td>
-</tr>
-<tr>
-<td>Device</td>
-<td>• dis<br>(=Discipline) <br><br>• dev<br>(=Device) <br><br>• idx<br>(=Index)</td>
-<td>• Branch of knowledge indicating the context in which a device is used (e.g, VAC, DIG, etc) <br><br>• Physical device or indirect controlled device (needs to be unique only inside the same Discipline) (e.g., BPM, PS, Shaker, BBB, temperature sensor, fan, etc) <br><br>• Distinsgish between same Devices in the same Subsection and Discipline (e.g., 010, 020, 1, 2, 3, R1C2, etc).</td>
-</tr>
-<tr>
-<td>PField</td>
-<td>• propty<br>(=Property) <br><br>• field<br>(=Field)</td>
-<td>• A particular property of the accelerator system (e.g., Current, Position, Temperature). <br><br><br>• A particular attribute of the property (an EPICS record field).</td>
-</tr>
-</tbody>
-</table></div>
-<h3 class="toc-header" id="rationale"> Rationale</h3>
-<h4 class="toc-header" id="area"> AREA</h4>
-<p>(From ESS naming convention and DISCS Collaboration: <a class="is-external-link" href="https://ess-ics.atlassian.net/wiki/display/NC">https://ess-ics.atlassian.net/wiki/display/NC</a> [link])</p>
-<p>From the operational point of view it is beneficial to have names mentally linked to functional area.<br>
-This would help physicists, operators, technicians and engineers to orient themselves on the site relative<br>
-to named technical systems. Devices and signals are therefore sorted under a functional area structure in<br>
-three levels:</p>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Area</td>
+        <td>• sec<br>(=Section)&nbsp;<br><br>• sub<br>(=Subsection)</td>
+        <td>• Accelerator Section comprising the machine (e.g, Storage Ring, Booster, Linac, Transport Lines, etc)&nbsp;<br><br>• Accelerator Subsection within a specific Section (e.g., First Sector, First Chromatic Section = 01C1, 02C2, 01M2, 01M1, etc)</td>
+      </tr>
+      <tr>
+        <td>Device</td>
+        <td>• dis<br>(=Discipline)&nbsp;<br><br>• dev<br>(=Device)&nbsp;<br><br>• idx<br>(=Index)</td>
+        <td>• Branch of knowledge indicating the context in which a device is used (e.g, VAC, DIG, etc)&nbsp;<br><br>• Physical device or indirect controlled device (needs to be unique only inside the same Discipline) (e.g., BPM, PS, Shaker, BBB, temperature sensor, fan, etc)&nbsp;<br><br>• Distinsgish between same Devices in the same Subsection and Discipline (e.g., 010, 020, 1, 2, 3, R1C2, etc).</td>
+      </tr>
+      <tr>
+        <td>PField</td>
+        <td>• propty<br>(=Property)&nbsp;<br><br>• field<br>(=Field)</td>
+        <td>• A particular property of the accelerator system (e.g., Current, Position, Temperature).&nbsp;<br><br><br>• A particular attribute of the property (an EPICS record field).</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<h3>Rationale</h3>
+<h4>AREA</h4>
+<p>(From ESS naming convention and DISCS Collaboration: <a href="https://ess-ics.atlassian.net/wiki/display/NC">https://ess-ics.atlassian.net/wiki/display/NC</a> [link])</p>
+<p>From the operational point of view it is beneficial to have names mentally linked to functional area.<br>This would help physicists, operators, technicians and engineers to orient themselves on the site relative<br>to named technical systems. Devices and signals are therefore sorted under a functional area structure in<br>three levels:</p>
 <ul>
-<li>Level 1. Super Section: Not part of the naming convention.</li>
-<li>Level 2. Section (Sec)</li>
-<li>Level 3. Subsection (Sub)</li>
+  <li>Level 1. Super Section: Not part of the naming convention.</li>
+  <li>Level 2. Section (Sec)</li>
+  <li>Level 3. Subsection (Sub)</li>
 </ul>
-<h4 class="toc-header" id="device"> DEVICE</h4>
+<h4>DEVICE</h4>
 <p>Any equipment that serves a particular function and is connected to the Control System is modelled as a device.</p>
 <ul>
-<li>A Device name can represent Single piece of equipment, e.g. a temperature transmitter with only one signal.</li>
-<li>Complex module of components, named devices and a local control system. Examples: Klystron modulators.</li>
-<li>Indirectly controlled equipment, (e.g., a quadrupole magnet with the gradient field calculated from the settings and readouts from the connected power supply).</li>
+  <li>A Device name can represent Single piece of equipment, e.g. a temperature transmitter with only one signal.</li>
+  <li>Complex module of components, named devices and a local control system. Examples: Klystron modulators.</li>
+  <li>Indirectly controlled equipment, (e.g., a quadrupole magnet with the gradient field calculated from the settings and readouts from the connected power supply).</li>
 </ul>
-<p>Devices can resided inside other devices, however the parent child relation cannot be resolved from the names.<br>
-The hierarchy can instead be found in the configuration database or in other systems where the names are used.</p>
+<p>Devices can resided inside other devices, however the parent child relation cannot be resolved from the names.<br>The hierarchy can instead be found in the configuration database or in other systems where the names are used.</p>
 <ul>
-<li>Level 1. Discipline (Dis)</li>
-<li>Level 2. Category: Not part of the naming convention.</li>
-<li>Level 3. Device Type (Dev)</li>
+  <li>Level 1. Discipline (Dis)</li>
+  <li>Level 2. Category: Not part of the naming convention.</li>
+  <li>Level 3. Device Type (Dev)</li>
 </ul>
-<h4 class="toc-header" id="property"> PROPERTY</h4>
-<p>Naming convention users prefer to use generic device type as device identifier in names.<br>
-Essential for configuration of the control system is however the specific device type, which<br>
-in principle could be viewed as the fourth level in the device structure. In difference to items<br>
-in the device structure, which are managed in the Naming Service, the specific device types and<br>
-signal part of names are handled by integrators in the IOC Factory. The specific device types and<br>
-the signal part are therefore sorted under a separate configuration structure:</p>
+<h4>PROPERTY</h4>
+<p>Naming convention users prefer to use generic device type as device identifier in names.<br>Essential for configuration of the control system is however the specific device type, which<br>in principle could be viewed as the fourth level in the device structure. In difference to items<br>in the device structure, which are managed in the Naming Service, the specific device types and<br>signal part of names are handled by integrators in the IOC Factory. The specific device types and<br>the signal part are therefore sorted under a separate configuration structure:</p>
 <ul>
-<li>Level 1 Specific Device Type: Not part of the naming convention.</li>
-<li>Level 2 Property (Property)</li>
-<li>Level 3 Field (FIELD)</li>
+  <li>Level 1 Specific Device Type: Not part of the naming convention.</li>
+  <li>Level 2 Property (Property)</li>
+  <li>Level 3 Field (FIELD)</li>
 </ul>
-<h3 class="toc-header" id="naming-rules"> Naming Rules</h3>
+<h3>Naming Rules</h3>
 <p><strong>R01</strong> Instance index (Idx) shall be alphanumeric. I.e., only upper and lower case alphanumeric characters (a-z, A-Z, 0-9) are allowed.</p>
-<p><strong>R02</strong> The device names Sec-Sub:Dis-Dev-Idx shall be distinguishable, which means that names shall be unique irrespective of:<br>
-:: Letter case<br>
-:: Letters I, l and number 1<br>
-:: Letter O and number 0<br>
-:: Letters V and W<br>
-:: Leading zeros, i.e., number 0 immediately following a non-numerical character<br>
-: '''R03''' The maximum length of instance index (Idx) is 6 characters.<br>
-: '''R04''' Properties like temperature, current, voltage etc., will be used for many different device types.<br>
-:: Therefore, the signal property shall follow the LNLS Signal-Property Standard. Users of the naming<br>
-:: convention are strongly encouraged to update this list.</p>
+<p><strong>R02</strong> The device names Sec-Sub:Dis-Dev-Idx shall be distinguishable, which means that names shall be unique irrespective of:<br>:: Letter case<br>:: Letters I, l and number 1<br>:: Letter O and number 0<br>:: Letters V and W<br>:: Leading zeros, i.e., number 0 immediately following a non-numerical character<br>: '''R03''' The maximum length of instance index (Idx) is 6 characters.<br>: '''R04''' Properties like temperature, current, voltage etc., will be used for many different device types.<br>:: Therefore, the signal property shall follow the LNLS Signal-Property Standard. Users of the naming<br>:: convention are strongly encouraged to update this list.</p>
 <p><strong>R05</strong> A signal, which is intended only for debugging or for other private purposes, shall include a lowercase i as prefix (iProperty).</p>
-<p><strong>R06</strong> To distinguish identical signals of the same device, suffices shall be appended to the property as<br>
-:: PropertySuffix. Users shall refer to the LNLS Signal-Property Standard, where common suffices are listed,<br>
-:: before inventing new ones for standard types such as read (Rd) and set (Set).</p>
+<p><strong>R06</strong> To distinguish identical signals of the same device, suffices shall be appended to the property as<br>:: PropertySuffix. Users shall refer to the LNLS Signal-Property Standard, where common suffices are listed,<br>:: before inventing new ones for standard types such as read (Rd) and set (Set).</p>
 <p><strong>R07</strong> Units must not be entered in the names. The record field for engineering units (EGU) handles this.</p>
-<p><strong>R08</strong> Each part of the PV name must have the following number of characters:<br>
-:: Sec  &gt;= 1 &amp;&amp; Sec &lt;= 6<br>
-:: Sub  &gt;= 1 &amp;&amp; Sub &lt;= 6<br>
-:: Dis  &gt;= 1 &amp;&amp; Dis &lt;= 6<br>
-:: Dev  &gt;= 1 &amp;&amp; Dev &lt;= 12<br>
-:: Idx  &gt;= 0 &amp;&amp; Idx &lt;= 12<br>
-:: Prop &gt;= 1</p>
+<p><strong>R08</strong> Each part of the PV name must have the following number of characters:<br>:: Sec &gt;= 1 &amp;&amp; Sec &lt;= 6<br>:: Sub &gt;= 1 &amp;&amp; Sub &lt;= 6<br>:: Dis &gt;= 1 &amp;&amp; Dis &lt;= 6<br>:: Dev &gt;= 1 &amp;&amp; Dev &lt;= 12<br>:: Idx &gt;= 0 &amp;&amp; Idx &lt;= 12<br>:: Prop &gt;= 1</p>
 <p><strong>R09</strong> Characters '-' (dash), '.' (dot) and ':' (colon) are reserved and should not be used in Sec, Sub, Dis, Dev, Idx, Property or FIELD fields. The exception to this rule is in the use of suffixes, as defined by table [[Table:Naming_System_Property_Domains|Suffixes Table]]</p>
-<h3 class="toc-header" id="abbreviation-tables"> Abbreviation Tables</h3>
-<h4 class="toc-header" id="device-names-link"> Device Names [link]</h4>
-<div class="table-container"><table>
-<thead>
-<tr>
-<th>Abbreviation</th>
-<th>Device Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AccStr</td>
-<td>Accelerating Structure</td>
-</tr>
-<tr>
-<td>Amp</td>
-<td>Amplifier</td>
-</tr>
-<tr>
-<td>Anode</td>
-<td>Anode</td>
-</tr>
-<tr>
-<td>B</td>
-<td>Bending magnet/Dipole</td>
-</tr>
-<tr>
-<td>BakJ</td>
-<td>Bakeout heating jackets</td>
-</tr>
-<tr>
-<td>BE</td>
-<td>Back-End</td>
-</tr>
-<tr>
-<td>BLM</td>
-<td>Beam Loss Monitor</td>
-</tr>
-<tr>
-<td>Blw</td>
-<td>Non-RF bellows</td>
-</tr>
-<tr>
-<td>BlwRF</td>
-<td>RF shielded bellows</td>
-</tr>
-<tr>
-<td>BMPS</td>
-<td>Bending Magnet Photon Shutter</td>
-</tr>
-<tr>
-<td>BPM</td>
-<td>Beam Position Monitor</td>
-</tr>
-<tr>
-<td>Brd</td>
-<td>Board</td>
-</tr>
-<tr>
-<td>Bun</td>
-<td>Buncher</td>
-</tr>
-<tr>
-<td>Cam</td>
-<td>Camera</td>
-</tr>
-<tr>
-<td>CCG</td>
-<td>Cold cathode vacuum gauge</td>
-</tr>
-<tr>
-<td>CH</td>
-<td>Horizontal Corrector Magnet</td>
-</tr>
-<tr>
-<td>Corr</td>
-<td>Corrector/Correction</td>
-</tr>
-<tr>
-<td>CRL</td>
-<td>Compound Refractive Lens</td>
-</tr>
-<tr>
-<td>CV</td>
-<td>Vertical Corrector Magnet</td>
-</tr>
-<tr>
-<td>DCCT</td>
-<td>Direct Current Current Transformer</td>
-</tr>
-<tr>
-<td>Detec</td>
-<td>Detector</td>
-</tr>
-<tr>
-<td>Dig</td>
-<td>Digitizer</td>
-</tr>
-<tr>
-<td>Distrib</td>
-<td>Distributor/Distribution</td>
-</tr>
-<tr>
-<td>Door</td>
-<td>Door</td>
-</tr>
-<tr>
-<td>EBeam</td>
-<td>Electron beam</td>
-</tr>
-<tr>
-<td>EjeKckr</td>
-<td>Ejection Kicker</td>
-</tr>
-<tr>
-<td>EjeSeptF</td>
-<td>Ejection Thin Septum</td>
-</tr>
-<tr>
-<td>EjeSeptG</td>
-<td>Ejection Thick Septum</td>
-</tr>
-<tr>
-<td>APU</td>
-<td>Adjustable Phase Undulator</td>
-</tr>
-<tr>
-<td>EPU</td>
-<td>Elliptically Polarizing Undulator</td>
-</tr>
-<tr>
-<td>FBE</td>
-<td>Front/Back-End</td>
-</tr>
-<tr>
-<td>FCH</td>
-<td>Horizontal Fast Corrector Magnet</td>
-</tr>
-<tr>
-<td>FCT</td>
-<td>Fast Current Transformer</td>
-</tr>
-<tr>
-<td>FE</td>
-<td>Front-End</td>
-</tr>
-<tr>
-<td>FOFB</td>
-<td>Fast Orbit Feedback</td>
-</tr>
-<tr>
-<td>Fout</td>
-<td>Fanout</td>
-</tr>
-<tr>
-<td>EGun</td>
-<td>Electron gun</td>
-</tr>
-<tr>
-<td>GV</td>
-<td>Gate valve (may be used for FE and</td>
-</tr>
-<tr>
-<td>H</td>
-<td>Horizontal</td>
-</tr>
-<tr>
-<td>Hyb</td>
-<td>Hybrid</td>
-</tr>
-<tr>
-<td>ICT</td>
-<td>Integrating Current Transformer</td>
-</tr>
-<tr>
-<td>InjDpKckr</td>
-<td>Injection Dipolar Kicker</td>
-</tr>
-<tr>
-<td>InjKckr</td>
-<td>Injection Kicker</td>
-</tr>
-<tr>
-<td>InjNLKckr</td>
-<td>Injection Non-Linear Kicker</td>
-</tr>
-<tr>
-<td>InjSept</td>
-<td>Injection Septum</td>
-</tr>
-<tr>
-<td>InjSeptF</td>
-<td>Injection Thin Septum</td>
-</tr>
-<tr>
-<td>InjSeptG</td>
-<td>Injection Thick Septum</td>
-</tr>
-<tr>
-<td>IOC</td>
-<td>EPICS IOC</td>
-</tr>
-<tr>
-<td>IP</td>
-<td>Sputter Ion Pump</td>
-</tr>
-<tr>
-<td>IPC</td>
-<td>Ion Pump Controller</td>
-</tr>
-<tr>
-<td>IVU</td>
-<td>In-Vacuum Undulator</td>
-</tr>
-<tr>
-<td>Kly</td>
-<td>Klystron</td>
-</tr>
-<tr>
-<td>Mark</td>
-<td>Placeholder position for calculations</td>
-</tr>
-<tr>
-<td>Modltr</td>
-<td>Modulator</td>
-</tr>
-<tr>
-<td>Mtr</td>
-<td>Motor</td>
-</tr>
-<tr>
-<td>Mpole</td>
-<td>Multipole</td>
-</tr>
-<tr>
-<td>NEG</td>
-<td>Non-evaporable getter pump</td>
-</tr>
-<tr>
-<td>NEGC</td>
-<td>NEG pump controller</td>
-</tr>
-<tr>
-<td>NetSw</td>
-<td>Network Switch</td>
-</tr>
-<tr>
-<td>Pkup</td>
-<td>Pickup</td>
-</tr>
-<tr>
-<td>Panel</td>
-<td>HMI Panel</td>
-</tr>
-<tr>
-<td>PLC</td>
-<td>Programmable Logic Controller</td>
-</tr>
-<tr>
-<td>PRV</td>
-<td>Pressure relief valve</td>
-</tr>
-<tr>
-<td>PS</td>
-<td>Power supply</td>
-</tr>
-<tr>
-<td>QD</td>
-<td>Defocusing Quadrupole</td>
-</tr>
-<tr>
-<td>QF</td>
-<td>Focusing Quadrupole</td>
-</tr>
-<tr>
-<td>QN</td>
-<td>Normal Quadrupole</td>
-</tr>
-<tr>
-<td>QS</td>
-<td>Skew Quadrupole</td>
-</tr>
-<tr>
-<td>RGA</td>
-<td>Residual gas analyzer / partial</td>
-</tr>
-<tr>
-<td>Shkr</td>
-<td>Shaker</td>
-</tr>
-<tr>
-<td>SHB</td>
-<td>Sub-Harmonic Buncher</td>
-</tr>
-<tr>
-<td>Scan</td>
-<td>Scan (for experiment control)</td>
-</tr>
-<tr>
-<td>Scrap</td>
-<td>Scraper</td>
-</tr>
-<tr>
-<td>ScrapH</td>
-<td>Horizontal Scraper</td>
-</tr>
-<tr>
-<td>ScrapV</td>
-<td>Vertical Scraper</td>
-</tr>
-<tr>
-<td>Scrn</td>
-<td>Screen monitor</td>
-</tr>
-<tr>
-<td>Slnd</td>
-<td>Solenoid</td>
-</tr>
-<tr>
-<td>SD</td>
-<td>Defocusing Sextupole magnet</td>
-</tr>
-<tr>
-<td>SF</td>
-<td>Focusing Sextupole magnet</td>
-</tr>
-<tr>
-<td>Sx</td>
-<td>Sextupole magnet</td>
-</tr>
-<tr>
-<td>SOFB</td>
-<td>Slow Orbit Feedback</td>
-</tr>
-<tr>
-<td>StrkCam</td>
-<td>Streak Camera</td>
-</tr>
-<tr>
-<td>TCU</td>
-<td>Temperature Compensating Unit</td>
-</tr>
-<tr>
-<td>TCG</td>
-<td>Thermal conductivity vacuum gauge</td>
-</tr>
-<tr>
-<td>TMP</td>
-<td>Turbomolecular pump</td>
-</tr>
-<tr>
-<td>TSP</td>
-<td>Titanium sublimation pump</td>
-</tr>
-<tr>
-<td>TSPC</td>
-<td>Titanium sublimation pump</td>
-</tr>
-<tr>
-<td>TSrv</td>
-<td>Terminal server</td>
-</tr>
-<tr>
-<td>V</td>
-<td>Vertical</td>
-</tr>
-<tr>
-<td>VF</td>
-<td>Visual Flag</td>
-</tr>
-<tr>
-<td>VFD</td>
-<td>Variable Frequency Drive</td>
-</tr>
-<tr>
-<td>VGC</td>
-<td>Vacuum gauge controller</td>
-</tr>
-<tr>
-<td>UPS</td>
-<td>Uninterruptible Power Supply</td>
-</tr>
-</tbody>
-</table></div>
+<h3>Abbreviation Tables</h3>
+<h4>Device Names [link]</h4>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Abbreviation</th>
+        <th>Device Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AccStr</td>
+        <td>Accelerating Structure</td>
+      </tr>
+      <tr>
+        <td>Amp</td>
+        <td>Amplifier</td>
+      </tr>
+      <tr>
+        <td>Anode</td>
+        <td>Anode</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td>Bending magnet/Dipole</td>
+      </tr>
+      <tr>
+        <td>BakJ</td>
+        <td>Bakeout heating jackets</td>
+      </tr>
+      <tr>
+        <td>BE</td>
+        <td>Back-End</td>
+      </tr>
+      <tr>
+        <td>BLM</td>
+        <td>Beam Loss Monitor</td>
+      </tr>
+      <tr>
+        <td>Blw</td>
+        <td>Non-RF bellows</td>
+      </tr>
+      <tr>
+        <td>BlwRF</td>
+        <td>RF shielded bellows</td>
+      </tr>
+      <tr>
+        <td>BMPS</td>
+        <td>Bending Magnet Photon Shutter</td>
+      </tr>
+      <tr>
+        <td>BPM</td>
+        <td>Beam Position Monitor</td>
+      </tr>
+      <tr>
+        <td>Brd</td>
+        <td>Board</td>
+      </tr>
+      <tr>
+        <td>Bun</td>
+        <td>Buncher</td>
+      </tr>
+      <tr>
+        <td>Cam</td>
+        <td>Camera</td>
+      </tr>
+      <tr>
+        <td>CCG</td>
+        <td>Cold cathode vacuum gauge</td>
+      </tr>
+      <tr>
+        <td>CH</td>
+        <td>Horizontal Corrector Magnet</td>
+      </tr>
+      <tr>
+        <td>Corr</td>
+        <td>Corrector/Correction</td>
+      </tr>
+      <tr>
+        <td>CRL</td>
+        <td>Compound Refractive Lens</td>
+      </tr>
+      <tr>
+        <td>CV</td>
+        <td>Vertical Corrector Magnet</td>
+      </tr>
+      <tr>
+        <td>DCCT</td>
+        <td>Direct Current Current Transformer</td>
+      </tr>
+      <tr>
+        <td>Detec</td>
+        <td>Detector</td>
+      </tr>
+      <tr>
+        <td>Dig</td>
+        <td>Digitizer</td>
+      </tr>
+      <tr>
+        <td>Distrib</td>
+        <td>Distributor/Distribution</td>
+      </tr>
+      <tr>
+        <td>Door</td>
+        <td>Door</td>
+      </tr>
+      <tr>
+        <td>EBeam</td>
+        <td>Electron beam</td>
+      </tr>
+      <tr>
+        <td>EjeKckr</td>
+        <td>Ejection Kicker</td>
+      </tr>
+      <tr>
+        <td>EjeSeptF</td>
+        <td>Ejection Thin Septum</td>
+      </tr>
+      <tr>
+        <td>EjeSeptG</td>
+        <td>Ejection Thick Septum</td>
+      </tr>
+      <tr>
+        <td>APU</td>
+        <td>Adjustable Phase Undulator</td>
+      </tr>
+      <tr>
+        <td>EPU</td>
+        <td>Elliptically Polarizing Undulator</td>
+      </tr>
+      <tr>
+        <td>FBE</td>
+        <td>Front/Back-End</td>
+      </tr>
+      <tr>
+        <td>FCH</td>
+        <td>Horizontal Fast Corrector Magnet</td>
+      </tr>
+      <tr>
+        <td>FCT</td>
+        <td>Fast Current Transformer</td>
+      </tr>
+      <tr>
+        <td>FE</td>
+        <td>Front-End</td>
+      </tr>
+      <tr>
+        <td>FOFB</td>
+        <td>Fast Orbit Feedback</td>
+      </tr>
+      <tr>
+        <td>Fout</td>
+        <td>Fanout</td>
+      </tr>
+      <tr>
+        <td>EGun</td>
+        <td>Electron gun</td>
+      </tr>
+      <tr>
+        <td>GV</td>
+        <td>Gate valve (may be used for FE and</td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td>Horizontal</td>
+      </tr>
+      <tr>
+        <td>Hyb</td>
+        <td>Hybrid</td>
+      </tr>
+      <tr>
+        <td>ICT</td>
+        <td>Integrating Current Transformer</td>
+      </tr>
+      <tr>
+        <td>InjDpKckr</td>
+        <td>Injection Dipolar Kicker</td>
+      </tr>
+      <tr>
+        <td>InjKckr</td>
+        <td>Injection Kicker</td>
+      </tr>
+      <tr>
+        <td>InjNLKckr</td>
+        <td>Injection Non-Linear Kicker</td>
+      </tr>
+      <tr>
+        <td>InjSept</td>
+        <td>Injection Septum</td>
+      </tr>
+      <tr>
+        <td>InjSeptF</td>
+        <td>Injection Thin Septum</td>
+      </tr>
+      <tr>
+        <td>InjSeptG</td>
+        <td>Injection Thick Septum</td>
+      </tr>
+      <tr>
+        <td>IOC</td>
+        <td>EPICS IOC</td>
+      </tr>
+      <tr>
+        <td>IP</td>
+        <td>Sputter Ion Pump</td>
+      </tr>
+      <tr>
+        <td>IPC</td>
+        <td>Ion Pump Controller</td>
+      </tr>
+      <tr>
+        <td>IVU</td>
+        <td>In-Vacuum Undulator</td>
+      </tr>
+      <tr>
+        <td>Kly</td>
+        <td>Klystron</td>
+      </tr>
+      <tr>
+        <td>Mark</td>
+        <td>Placeholder position for calculations</td>
+      </tr>
+      <tr>
+        <td>Modltr</td>
+        <td>Modulator</td>
+      </tr>
+      <tr>
+        <td>Mtr</td>
+        <td>Motor</td>
+      </tr>
+      <tr>
+        <td>Mpole</td>
+        <td>Multipole</td>
+      </tr>
+      <tr>
+        <td>NEG</td>
+        <td>Non-evaporable getter pump</td>
+      </tr>
+      <tr>
+        <td>NEGC</td>
+        <td>NEG pump controller</td>
+      </tr>
+      <tr>
+        <td>NetSw</td>
+        <td>Network Switch</td>
+      </tr>
+      <tr>
+        <td>Pkup</td>
+        <td>Pickup</td>
+      </tr>
+      <tr>
+        <td>Panel</td>
+        <td>HMI Panel</td>
+      </tr>
+      <tr>
+        <td>PLC</td>
+        <td>Programmable Logic Controller</td>
+      </tr>
+      <tr>
+        <td>PRV</td>
+        <td>Pressure relief valve</td>
+      </tr>
+      <tr>
+        <td>PS</td>
+        <td>Power supply</td>
+      </tr>
+      <tr>
+        <td>QD</td>
+        <td>Defocusing Quadrupole</td>
+      </tr>
+      <tr>
+        <td>QF</td>
+        <td>Focusing Quadrupole</td>
+      </tr>
+      <tr>
+        <td>QN</td>
+        <td>Normal Quadrupole</td>
+      </tr>
+      <tr>
+        <td>QS</td>
+        <td>Skew Quadrupole</td>
+      </tr>
+      <tr>
+        <td>RGA</td>
+        <td>Residual gas analyzer / partial</td>
+      </tr>
+      <tr>
+        <td>Shkr</td>
+        <td>Shaker</td>
+      </tr>
+      <tr>
+        <td>SHB</td>
+        <td>Sub-Harmonic Buncher</td>
+      </tr>
+      <tr>
+        <td>Scan</td>
+        <td>Scan (for experiment control)</td>
+      </tr>
+      <tr>
+        <td>Scrap</td>
+        <td>Scraper</td>
+      </tr>
+      <tr>
+        <td>ScrapH</td>
+        <td>Horizontal Scraper</td>
+      </tr>
+      <tr>
+        <td>ScrapV</td>
+        <td>Vertical Scraper</td>
+      </tr>
+      <tr>
+        <td>Scrn</td>
+        <td>Screen monitor</td>
+      </tr>
+      <tr>
+        <td>Slnd</td>
+        <td>Solenoid</td>
+      </tr>
+      <tr>
+        <td>SD</td>
+        <td>Defocusing Sextupole magnet</td>
+      </tr>
+      <tr>
+        <td>SF</td>
+        <td>Focusing Sextupole magnet</td>
+      </tr>
+      <tr>
+        <td>Sx</td>
+        <td>Sextupole magnet</td>
+      </tr>
+      <tr>
+        <td>SOFB</td>
+        <td>Slow Orbit Feedback</td>
+      </tr>
+      <tr>
+        <td>StrkCam</td>
+        <td>Streak Camera</td>
+      </tr>
+      <tr>
+        <td>TCU</td>
+        <td>Temperature Compensating Unit</td>
+      </tr>
+      <tr>
+        <td>TCG</td>
+        <td>Thermal conductivity vacuum gauge</td>
+      </tr>
+      <tr>
+        <td>TMP</td>
+        <td>Turbomolecular pump</td>
+      </tr>
+      <tr>
+        <td>TSP</td>
+        <td>Titanium sublimation pump</td>
+      </tr>
+      <tr>
+        <td>TSPC</td>
+        <td>Titanium sublimation pump</td>
+      </tr>
+      <tr>
+        <td>TSrv</td>
+        <td>Terminal server</td>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>Vertical</td>
+      </tr>
+      <tr>
+        <td>VF</td>
+        <td>Visual Flag</td>
+      </tr>
+      <tr>
+        <td>VFD</td>
+        <td>Variable Frequency Drive</td>
+      </tr>
+      <tr>
+        <td>VGC</td>
+        <td>Vacuum gauge controller</td>
+      </tr>
+      <tr>
+        <td>UPS</td>
+        <td>Uninterruptible Power Supply</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
 <p><strong>Table 1</strong>: Device Names Table.</p>
-<h4 class="toc-header" id="property-names-link"> Property Names [link]</h4>
-<div class="table-container"><table>
-<thead>
-<tr>
-<th>Abbreviation</th>
-<th>Property Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Addr</td>
-<td>Address</td>
-</tr>
-<tr>
-<td>Alrm</td>
-<td>Alarm</td>
-</tr>
-<tr>
-<td>Alpha</td>
-<td>Alpha (physics calc)</td>
-</tr>
-<tr>
-<td>Ampl</td>
-<td>Amplitude</td>
-</tr>
-<tr>
-<td>Beta</td>
-<td>Beta (physics calc)</td>
-</tr>
-<tr>
-<td>Beam</td>
-<td>Beam</td>
-</tr>
-<tr>
-<td>Btn</td>
-<td>Button</td>
-</tr>
-<tr>
-<td>Bw</td>
-<td>Bandwidth</td>
-</tr>
-<tr>
-<td>Chan</td>
-<td>Channel</td>
-</tr>
-<tr>
-<td>Clk</td>
-<td>Clock</td>
-</tr>
-<tr>
-<td>Cmd</td>
-<td>Command</td>
-</tr>
-<tr>
-<td>Cnt</td>
-<td>Count</td>
-</tr>
-<tr>
-<td>Ctrl</td>
-<td>Control</td>
-</tr>
-<tr>
-<td>Cyc</td>
-<td>Cyclic</td>
-</tr>
-<tr>
-<td>Delay</td>
-<td>Delay</td>
-</tr>
-<tr>
-<td>DI</td>
-<td>Digital input</td>
-</tr>
-<tr>
-<td>Dir</td>
-<td>Direction</td>
-</tr>
-<tr>
-<td>Div</td>
-<td>Divider</td>
-</tr>
-<tr>
-<td>DO</td>
-<td>Digital output</td>
-</tr>
-<tr>
-<td>Dose</td>
-<td>Accumulated Radiation Dose</td>
-</tr>
-<tr>
-<td>Dsbl</td>
-<td>Disable</td>
-</tr>
-<tr>
-<td>Dur</td>
-<td>Duration</td>
-</tr>
-<tr>
-<td>Eff</td>
-<td>Efficiency</td>
-</tr>
-<tr>
-<td>Emit</td>
-<td>Emittance (physics calc)</td>
-</tr>
-<tr>
-<td>Enbl</td>
-<td>Enable</td>
-</tr>
-<tr>
-<td>EStop</td>
-<td>Emergency Stop</td>
-</tr>
-<tr>
-<td>EU</td>
-<td>Engineering Units</td>
-</tr>
-<tr>
-<td>Evt</td>
-<td>Event</td>
-</tr>
-<tr>
-<td>Excit</td>
-<td>Excitation</td>
-</tr>
-<tr>
-<td>Fld</td>
-<td>Field (magnetic)</td>
-</tr>
-<tr>
-<td>Flt</td>
-<td>Fault</td>
-</tr>
-<tr>
-<td>Fluor</td>
-<td>Fluorescent</td>
-</tr>
-<tr>
-<td>Freq</td>
-<td>Frequency</td>
-</tr>
-<tr>
-<td>Fxd</td>
-<td>Fixed</td>
-</tr>
-<tr>
-<td>Gen</td>
-<td>Generator</td>
-</tr>
-<tr>
-<td>HwFlt</td>
-<td>Hardware fault</td>
-</tr>
-<tr>
-<td>Intvl</td>
-<td>Interval</td>
-</tr>
-<tr>
-<td>ID</td>
-<td>Indentifier (e.g. serial number)</td>
-</tr>
-<tr>
-<td>In</td>
-<td>Input (e.g., from PLC)</td>
-</tr>
-<tr>
-<td>Incr</td>
-<td>Increment / Incremented</td>
-</tr>
-<tr>
-<td>Ind</td>
-<td>Indicator (e.g. lamp, light, LED)</td>
-</tr>
-<tr>
-<td>Inh</td>
-<td>Inhibit</td>
-</tr>
-<tr>
-<td>Intlk</td>
-<td>Interlock</td>
-</tr>
-<tr>
-<td>Lvl</td>
-<td>Level</td>
-</tr>
-<tr>
-<td>Lk</td>
-<td>Lock</td>
-</tr>
-<tr>
-<td>Lim</td>
-<td>Limit</td>
-</tr>
-<tr>
-<td>Mark</td>
-<td>Mark (position indicatore)</td>
-</tr>
-<tr>
-<td>Mig</td>
-<td>Migration</td>
-</tr>
-<tr>
-<td>Mode</td>
-<td>Mode</td>
-</tr>
-<tr>
-<td>Mon</td>
-<td>Monitor</td>
-</tr>
-<tr>
-<td>Mult</td>
-<td>Mult</td>
-</tr>
-<tr>
-<td>Offset</td>
-<td>Offset</td>
-</tr>
-<tr>
-<td>Out</td>
-<td>Output (e.g., from PLC)</td>
-</tr>
-<tr>
-<td>Pressure</td>
-<td>Pressure</td>
-</tr>
-<tr>
-<td>Permit</td>
-<td>Permit</td>
-</tr>
-<tr>
-<td>Phs</td>
-<td>Phase</td>
-</tr>
-<tr>
-<td>Pol</td>
-<td>Polarity</td>
-</tr>
-<tr>
-<td>Pos</td>
-<td>Position</td>
-</tr>
-<tr>
-<td>Pt</td>
-<td>Point</td>
-</tr>
-<tr>
-<td>Pulse</td>
-<td>Pulse</td>
-</tr>
-<tr>
-<td>Pwr</td>
-<td>Power</td>
-</tr>
-<tr>
-<td>Rdy</td>
-<td>Ready</td>
-</tr>
-<tr>
-<td>Rmp</td>
-<td>Ramp</td>
-</tr>
-<tr>
-<td>Rx</td>
-<td>Receiver</td>
-</tr>
-<tr>
-<td>RB</td>
-<td>Readback</td>
-</tr>
-<tr>
-<td>Req</td>
-<td>Request</td>
-</tr>
-<tr>
-<td>Res</td>
-<td>Resolution</td>
-</tr>
-<tr>
-<td>Humidity</td>
-<td>Relative humidity</td>
-</tr>
-<tr>
-<td>ROI</td>
-<td>Region of interest</td>
-</tr>
-<tr>
-<td>Rslt</td>
-<td>Result</td>
-</tr>
-<tr>
-<td>Rslv</td>
-<td>Resolver</td>
-</tr>
-<tr>
-<td>Rsrv</td>
-<td>Reserved</td>
-</tr>
-<tr>
-<td>Rst</td>
-<td>Reset</td>
-</tr>
-<tr>
-<td>S</td>
-<td>Speed</td>
-</tr>
-<tr>
-<td>Seq</td>
-<td>Sequence</td>
-</tr>
-<tr>
-<td>SP</td>
-<td>Setpoint</td>
-</tr>
-<tr>
-<td>Src</td>
-<td>Source</td>
-</tr>
-<tr>
-<td>Sgl</td>
-<td>Single</td>
-</tr>
-<tr>
-<td>Sig</td>
-<td>Signal</td>
-</tr>
-<tr>
-<td>Siren</td>
-<td>Alarm siren</td>
-</tr>
-<tr>
-<td>Size</td>
-<td>Size</td>
-</tr>
-<tr>
-<td>Slope</td>
-<td>Slope</td>
-</tr>
-<tr>
-<td>Slot</td>
-<td>Slot</td>
-</tr>
-<tr>
-<td>Step</td>
-<td>Step</td>
-</tr>
-<tr>
-<td>Sw</td>
-<td>Switch</td>
-</tr>
-<tr>
-<td>Temp</td>
-<td>Temperature</td>
-</tr>
-<tr>
-<td>Tbl</td>
-<td>Table</td>
-</tr>
-<tr>
-<td>Time</td>
-<td>Time</td>
-</tr>
-<tr>
-<td>Ts</td>
-<td>Time interval</td>
-</tr>
-<tr>
-<td>Tx</td>
-<td>Transmitter</td>
-</tr>
-<tr>
-<td>Trig</td>
-<td>Trigger</td>
-</tr>
-<tr>
-<td>Trip</td>
-<td>Interlock trip</td>
-</tr>
-<tr>
-<td>Type</td>
-<td>Type (of device)</td>
-</tr>
-<tr>
-<td>Undo</td>
-<td>Undo</td>
-</tr>
-<tr>
-<td>Volt</td>
-<td>Voltage</td>
-</tr>
-<tr>
-<td>W</td>
-<td>Weight or Force</td>
-</tr>
-<tr>
-<td>Wfm</td>
-<td>Waveform</td>
-</tr>
-<tr>
-<td>X</td>
-<td>Horizontal</td>
-</tr>
-<tr>
-<td>Y</td>
-<td>Vertical</td>
-</tr>
-<tr>
-<td>Z</td>
-<td>Longitudinal</td>
-</tr>
-</tbody>
-</table></div>
+<h4>Property Names [link]</h4>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Abbreviation</th>
+        <th>Property Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Addr</td>
+        <td>Address</td>
+      </tr>
+      <tr>
+        <td>Alrm</td>
+        <td>Alarm</td>
+      </tr>
+      <tr>
+        <td>Alpha</td>
+        <td>Alpha (physics calc)</td>
+      </tr>
+      <tr>
+        <td>Ampl</td>
+        <td>Amplitude</td>
+      </tr>
+      <tr>
+        <td>Beta</td>
+        <td>Beta (physics calc)</td>
+      </tr>
+      <tr>
+        <td>Beam</td>
+        <td>Beam</td>
+      </tr>
+      <tr>
+        <td>Btn</td>
+        <td>Button</td>
+      </tr>
+      <tr>
+        <td>Bw</td>
+        <td>Bandwidth</td>
+      </tr>
+      <tr>
+        <td>Chan</td>
+        <td>Channel</td>
+      </tr>
+      <tr>
+        <td>Clk</td>
+        <td>Clock</td>
+      </tr>
+      <tr>
+        <td>Cmd</td>
+        <td>Command</td>
+      </tr>
+      <tr>
+        <td>Cnt</td>
+        <td>Count</td>
+      </tr>
+      <tr>
+        <td>Ctrl</td>
+        <td>Control</td>
+      </tr>
+      <tr>
+        <td>Cyc</td>
+        <td>Cyclic</td>
+      </tr>
+      <tr>
+        <td>Delay</td>
+        <td>Delay</td>
+      </tr>
+      <tr>
+        <td>DI</td>
+        <td>Digital input</td>
+      </tr>
+      <tr>
+        <td>Dir</td>
+        <td>Direction</td>
+      </tr>
+      <tr>
+        <td>Div</td>
+        <td>Divider</td>
+      </tr>
+      <tr>
+        <td>DO</td>
+        <td>Digital output</td>
+      </tr>
+      <tr>
+        <td>Dose</td>
+        <td>Accumulated Radiation Dose</td>
+      </tr>
+      <tr>
+        <td>Dsbl</td>
+        <td>Disable</td>
+      </tr>
+      <tr>
+        <td>Dur</td>
+        <td>Duration</td>
+      </tr>
+      <tr>
+        <td>Eff</td>
+        <td>Efficiency</td>
+      </tr>
+      <tr>
+        <td>Emit</td>
+        <td>Emittance (physics calc)</td>
+      </tr>
+      <tr>
+        <td>Enbl</td>
+        <td>Enable</td>
+      </tr>
+      <tr>
+        <td>EStop</td>
+        <td>Emergency Stop</td>
+      </tr>
+      <tr>
+        <td>EU</td>
+        <td>Engineering Units</td>
+      </tr>
+      <tr>
+        <td>Evt</td>
+        <td>Event</td>
+      </tr>
+      <tr>
+        <td>Excit</td>
+        <td>Excitation</td>
+      </tr>
+      <tr>
+        <td>Fld</td>
+        <td>Field (magnetic)</td>
+      </tr>
+      <tr>
+        <td>Flt</td>
+        <td>Fault</td>
+      </tr>
+      <tr>
+        <td>Fluor</td>
+        <td>Fluorescent</td>
+      </tr>
+      <tr>
+        <td>Freq</td>
+        <td>Frequency</td>
+      </tr>
+      <tr>
+        <td>Fxd</td>
+        <td>Fixed</td>
+      </tr>
+      <tr>
+        <td>Gen</td>
+        <td>Generator</td>
+      </tr>
+      <tr>
+        <td>HwFlt</td>
+        <td>Hardware fault</td>
+      </tr>
+      <tr>
+        <td>Intvl</td>
+        <td>Interval</td>
+      </tr>
+      <tr>
+        <td>ID</td>
+        <td>Indentifier (e.g. serial number)</td>
+      </tr>
+      <tr>
+        <td>In</td>
+        <td>Input (e.g., from PLC)</td>
+      </tr>
+      <tr>
+        <td>Incr</td>
+        <td>Increment / Incremented</td>
+      </tr>
+      <tr>
+        <td>Ind</td>
+        <td>Indicator (e.g. lamp, light, LED)</td>
+      </tr>
+      <tr>
+        <td>Inh</td>
+        <td>Inhibit</td>
+      </tr>
+      <tr>
+        <td>Intlk</td>
+        <td>Interlock</td>
+      </tr>
+      <tr>
+        <td>Lvl</td>
+        <td>Level</td>
+      </tr>
+      <tr>
+        <td>Lk</td>
+        <td>Lock</td>
+      </tr>
+      <tr>
+        <td>Lim</td>
+        <td>Limit</td>
+      </tr>
+      <tr>
+        <td>Mark</td>
+        <td>Mark (position indicatore)</td>
+      </tr>
+      <tr>
+        <td>Mig</td>
+        <td>Migration</td>
+      </tr>
+      <tr>
+        <td>Mode</td>
+        <td>Mode</td>
+      </tr>
+      <tr>
+        <td>Mon</td>
+        <td>Monitor</td>
+      </tr>
+      <tr>
+        <td>Mult</td>
+        <td>Mult</td>
+      </tr>
+      <tr>
+        <td>Offset</td>
+        <td>Offset</td>
+      </tr>
+      <tr>
+        <td>Out</td>
+        <td>Output (e.g., from PLC)</td>
+      </tr>
+      <tr>
+        <td>Pressure</td>
+        <td>Pressure</td>
+      </tr>
+      <tr>
+        <td>Permit</td>
+        <td>Permit</td>
+      </tr>
+      <tr>
+        <td>Phs</td>
+        <td>Phase</td>
+      </tr>
+      <tr>
+        <td>Pol</td>
+        <td>Polarity</td>
+      </tr>
+      <tr>
+        <td>Pos</td>
+        <td>Position</td>
+      </tr>
+      <tr>
+        <td>Pt</td>
+        <td>Point</td>
+      </tr>
+      <tr>
+        <td>Pulse</td>
+        <td>Pulse</td>
+      </tr>
+      <tr>
+        <td>Pwr</td>
+        <td>Power</td>
+      </tr>
+      <tr>
+        <td>Rdy</td>
+        <td>Ready</td>
+      </tr>
+      <tr>
+        <td>Rmp</td>
+        <td>Ramp</td>
+      </tr>
+      <tr>
+        <td>Rx</td>
+        <td>Receiver</td>
+      </tr>
+      <tr>
+        <td>RB</td>
+        <td>Readback</td>
+      </tr>
+      <tr>
+        <td>Req</td>
+        <td>Request</td>
+      </tr>
+      <tr>
+        <td>Res</td>
+        <td>Resolution</td>
+      </tr>
+      <tr>
+        <td>Humidity</td>
+        <td>Relative humidity</td>
+      </tr>
+      <tr>
+        <td>ROI</td>
+        <td>Region of interest</td>
+      </tr>
+      <tr>
+        <td>Rslt</td>
+        <td>Result</td>
+      </tr>
+      <tr>
+        <td>Rslv</td>
+        <td>Resolver</td>
+      </tr>
+      <tr>
+        <td>Rsrv</td>
+        <td>Reserved</td>
+      </tr>
+      <tr>
+        <td>Rst</td>
+        <td>Reset</td>
+      </tr>
+      <tr>
+        <td>S</td>
+        <td>Speed</td>
+      </tr>
+      <tr>
+        <td>Seq</td>
+        <td>Sequence</td>
+      </tr>
+      <tr>
+        <td>SP</td>
+        <td>Setpoint</td>
+      </tr>
+      <tr>
+        <td>Src</td>
+        <td>Source</td>
+      </tr>
+      <tr>
+        <td>Sgl</td>
+        <td>Single</td>
+      </tr>
+      <tr>
+        <td>Sig</td>
+        <td>Signal</td>
+      </tr>
+      <tr>
+        <td>Siren</td>
+        <td>Alarm siren</td>
+      </tr>
+      <tr>
+        <td>Size</td>
+        <td>Size</td>
+      </tr>
+      <tr>
+        <td>Slope</td>
+        <td>Slope</td>
+      </tr>
+      <tr>
+        <td>Slot</td>
+        <td>Slot</td>
+      </tr>
+      <tr>
+        <td>Step</td>
+        <td>Step</td>
+      </tr>
+      <tr>
+        <td>Sw</td>
+        <td>Switch</td>
+      </tr>
+      <tr>
+        <td>Temp</td>
+        <td>Temperature</td>
+      </tr>
+      <tr>
+        <td>Tbl</td>
+        <td>Table</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>Time</td>
+      </tr>
+      <tr>
+        <td>Ts</td>
+        <td>Time interval</td>
+      </tr>
+      <tr>
+        <td>Tx</td>
+        <td>Transmitter</td>
+      </tr>
+      <tr>
+        <td>Trig</td>
+        <td>Trigger</td>
+      </tr>
+      <tr>
+        <td>Trip</td>
+        <td>Interlock trip</td>
+      </tr>
+      <tr>
+        <td>Type</td>
+        <td>Type (of device)</td>
+      </tr>
+      <tr>
+        <td>Undo</td>
+        <td>Undo</td>
+      </tr>
+      <tr>
+        <td>Volt</td>
+        <td>Voltage</td>
+      </tr>
+      <tr>
+        <td>W</td>
+        <td>Weight or Force</td>
+      </tr>
+      <tr>
+        <td>Wfm</td>
+        <td>Waveform</td>
+      </tr>
+      <tr>
+        <td>X</td>
+        <td>Horizontal</td>
+      </tr>
+      <tr>
+        <td>Y</td>
+        <td>Vertical</td>
+      </tr>
+      <tr>
+        <td>Z</td>
+        <td>Longitudinal</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
 <p><strong>Table 2</strong>: Properties Table.</p>
-<h5 class="toc-header" id="property-domains-suffixes-link"> Property Domains (suffixes) [link]</h5>
-<div class="table-container"><table>
-<thead>
-<tr>
-<th>Suffix</th>
-<th>Read/Write</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-Cte</td>
-<td>read</td>
-<td>Constant device property variable</td>
-</tr>
-<tr>
-<td>-Cmd</td>
-<td>write</td>
-<td>Variable to issue a momentary binary digital command to the device</td>
-</tr>
-<tr>
-<td>-Sel</td>
-<td>write/read</td>
-<td>Enumerated device property setpoint variable</td>
-</tr>
-<tr>
-<td>-Sts</td>
-<td>read</td>
-<td>Enumerated device property readback variable</td>
-</tr>
-<tr>
-<td>-SP</td>
-<td>write/read</td>
-<td>Non-enumerated device property setpoint variable</td>
-</tr>
-<tr>
-<td>-RB</td>
-<td>read</td>
-<td>Non-enumerated device property readback variable</td>
-</tr>
-<tr>
-<td>-Mon</td>
-<td>read</td>
-<td>Monitor non-enumerated or enumerated device property variable</td>
-</tr>
-</tbody>
-</table></div>
+<h5>Property Domains (suffixes) [link]</h5>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Suffix</th>
+        <th>Read/Write</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>-Cte</td>
+        <td>read</td>
+        <td>Constant device property variable</td>
+      </tr>
+      <tr>
+        <td>-Cmd</td>
+        <td>write</td>
+        <td>Variable to issue a momentary binary digital command to the device</td>
+      </tr>
+      <tr>
+        <td>-Sel</td>
+        <td>write/read</td>
+        <td>Enumerated device property setpoint variable</td>
+      </tr>
+      <tr>
+        <td>-Sts</td>
+        <td>read</td>
+        <td>Enumerated device property readback variable</td>
+      </tr>
+      <tr>
+        <td>-SP</td>
+        <td>write/read</td>
+        <td>Non-enumerated device property setpoint variable</td>
+      </tr>
+      <tr>
+        <td>-RB</td>
+        <td>read</td>
+        <td>Non-enumerated device property readback variable</td>
+      </tr>
+      <tr>
+        <td>-Mon</td>
+        <td>read</td>
+        <td>Monitor non-enumerated or enumerated device property variable</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
 <p><strong>Table 3</strong>: Suffixes for non Setpoint/Readback device properties.</p>
-<h4 class="toc-header" id="general-names-link"> General Names [link]</h4>
-<div class="table-container"><table>
-<thead>
-<tr>
-<th>Abbreviation</th>
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Acc</td>
-<td>Accelerator</td>
-</tr>
-<tr>
-<td>Avg</td>
-<td>Average/Averaging</td>
-</tr>
-<tr>
-<td>BbB</td>
-<td>bunch-by-bunch</td>
-</tr>
-<tr>
-<td>Dev</td>
-<td>Device</td>
-</tr>
-<tr>
-<td>Eje</td>
-<td>Ejection/Extraction</td>
-</tr>
-<tr>
-<td>Err</td>
-<td>Error</td>
-</tr>
-<tr>
-<td>Fam</td>
-<td>Family</td>
-</tr>
-<tr>
-<td>Fib</td>
-<td>Optical Fiber</td>
-</tr>
-<tr>
-<td>Filt</td>
-<td>Filter</td>
-</tr>
-<tr>
-<td>Glob</td>
-<td>Global</td>
-</tr>
-<tr>
-<td>Hw</td>
-<td>Hardware</td>
-</tr>
-<tr>
-<td>Img</td>
-<td>Image</td>
-</tr>
-<tr>
-<td>Inj</td>
-<td>Injection</td>
-</tr>
-<tr>
-<td>Integ</td>
-<td>Integrated</td>
-</tr>
-<tr>
-<td>Kicker</td>
-<td>Kicker</td>
-</tr>
-<tr>
-<td>Mat</td>
-<td>Matrix</td>
-</tr>
-<tr>
-<td>MultB</td>
-<td>Multi bunch</td>
-</tr>
-<tr>
-<td>Nr</td>
-<td>Number</td>
-</tr>
-<tr>
-<td>Op</td>
-<td>Operation</td>
-</tr>
-<tr>
-<td>Ref</td>
-<td>Reference</td>
-</tr>
-<tr>
-<td>Resp</td>
-<td>Response</td>
-</tr>
-<tr>
-<td>Ser</td>
-<td>Serial</td>
-</tr>
-<tr>
-<td>SingB</td>
-<td>Single bunch</td>
-</tr>
-<tr>
-<td>Spl</td>
-<td>Sample(s)/Sampling</td>
-</tr>
-<tr>
-<td>Struct</td>
-<td>Structure</td>
-</tr>
-<tr>
-<td>Strth</td>
-<td>Strength</td>
-</tr>
-<tr>
-<td>Tot</td>
-<td>Total</td>
-</tr>
-<tr>
-<td>Tr</td>
-<td>Transfer</td>
-</tr>
-<tr>
-<td>Thold</td>
-<td>Threshold</td>
-</tr>
-</tbody>
-</table></div>
+<h4>General Names [link]</h4>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Abbreviation</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Acc</td>
+        <td>Accelerator</td>
+      </tr>
+      <tr>
+        <td>Avg</td>
+        <td>Average/Averaging</td>
+      </tr>
+      <tr>
+        <td>BbB</td>
+        <td>bunch-by-bunch</td>
+      </tr>
+      <tr>
+        <td>Dev</td>
+        <td>Device</td>
+      </tr>
+      <tr>
+        <td>Eje</td>
+        <td>Ejection/Extraction</td>
+      </tr>
+      <tr>
+        <td>Err</td>
+        <td>Error</td>
+      </tr>
+      <tr>
+        <td>Fam</td>
+        <td>Family</td>
+      </tr>
+      <tr>
+        <td>Fib</td>
+        <td>Optical Fiber</td>
+      </tr>
+      <tr>
+        <td>Filt</td>
+        <td>Filter</td>
+      </tr>
+      <tr>
+        <td>Glob</td>
+        <td>Global</td>
+      </tr>
+      <tr>
+        <td>Hw</td>
+        <td>Hardware</td>
+      </tr>
+      <tr>
+        <td>Img</td>
+        <td>Image</td>
+      </tr>
+      <tr>
+        <td>Inj</td>
+        <td>Injection</td>
+      </tr>
+      <tr>
+        <td>Integ</td>
+        <td>Integrated</td>
+      </tr>
+      <tr>
+        <td>Kicker</td>
+        <td>Kicker</td>
+      </tr>
+      <tr>
+        <td>Mat</td>
+        <td>Matrix</td>
+      </tr>
+      <tr>
+        <td>MultB</td>
+        <td>Multi bunch</td>
+      </tr>
+      <tr>
+        <td>Nr</td>
+        <td>Number</td>
+      </tr>
+      <tr>
+        <td>Op</td>
+        <td>Operation</td>
+      </tr>
+      <tr>
+        <td>Ref</td>
+        <td>Reference</td>
+      </tr>
+      <tr>
+        <td>Resp</td>
+        <td>Response</td>
+      </tr>
+      <tr>
+        <td>Ser</td>
+        <td>Serial</td>
+      </tr>
+      <tr>
+        <td>SingB</td>
+        <td>Single bunch</td>
+      </tr>
+      <tr>
+        <td>Spl</td>
+        <td>Sample(s)/Sampling</td>
+      </tr>
+      <tr>
+        <td>Struct</td>
+        <td>Structure</td>
+      </tr>
+      <tr>
+        <td>Strth</td>
+        <td>Strength</td>
+      </tr>
+      <tr>
+        <td>Tot</td>
+        <td>Total</td>
+      </tr>
+      <tr>
+        <td>Tr</td>
+        <td>Transfer</td>
+      </tr>
+      <tr>
+        <td>Thold</td>
+        <td>Threshold</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
 <p><strong>Table 4</strong>: General Table.</p>
-<h4 class="toc-header" id="guidelines"> Guidelines</h4>
-<ul>
-<li>
+<h4>Guidelines</h4>
 <p>Device names should use index suffixes (-H/-V) to differentiate between two equal devices (e.g., TuneAmp-H/TuneAmp-V). The exception to this guideline should be only for historical reasons, such as horizontal/vertical correctors that use H/V as prefixes (e.g., CH/CV).</p>
-</li>
-<li>
 <p>Properties should use X/Y sufixes without "-" (e.g., MonitX/MonitY) for X and Y directions.</p>
-</li>
-</ul>
-<h3 class="toc-header" id="examples-of-pv-names"> Examples of PV Names</h3>
-<ol>
-<li>
-<p>SI-Glob:AP-SOFB:Mode-Sel</p>
-</li>
-<li>
-<p>SI-13SA:DI-TuneSh:ExcAmp</p>
-</li>
-<li>
-<p>SI-Glob:AP-TuneM:TuneX-Mon</p>
-</li>
-<li>
-<p>SI-01M2:DI-BPM:PosX-Mon</p>
-</li>
-<li>
-<p>SI-02M1:PS-QFB:Current-SP</p>
-</li>
-<li>
-<p>LI-01:TI-STDMOE:TrigDelayCh01 (sending signal to LI-01:EG-EGun)</p>
-</li>
-<li>
-<p>SI-Fam:PS-B1B2-1:Current-RB</p>
-</li>
-<li>
-<p>SI-13SA:DI-DCCT:BbBCurrent-Mon</p>
-</li>
-<li>
-<p>SI-01SA:TI-SOE:TrigDelayCh02 (sending signal to SI-01SA:PU-InjDpK)</p>
-</li>
-</ol>
-<h3 class="toc-header" id="abnf-grammar-for-pv-naming"> ABNF grammar for PV naming</h3>
-<pre v-pre="true">; ABNF grammar (conforming to http://www.ietf.org/rfc/rfc4234.txt)
-<br>; for LNLS EPICS naming convention, candidate 2
-<br>
-<br>PV-Name            = area device record field
-<br>
-<br>area               = sec inner-separator sub group-separator
-<br>
-<br>; Section can only be one of the options listed and approved below
-<br>
-<br>; The following may not work on all parsers. So, the traditional decimal
-<br>; coding is used.
-<br>; sec                = ( %s"AS" "SI" / %s"BO" / %s"LI" / %s"TS" / %s"TB" / %s"BL" / %s"UT" )
-<br>sec                = ( %d83.73 / %d66.79 / %d76.73 / %d84.83 / %d84.66 / %d66.76 / %d85.84 )
-<br>sub                = sub-code
-<br>
-<br>; combination of numbers and letters (e.g., C1, C2, M1, M2, etc)
-<br>sub-code           = 1*6alpha-num
-<br>
-<br>; device definition with optional index
-<br>device             = dis inner-separator dev opt-idx group-separator
-<br>
-<br>opt-idx            = ( inner-separator idx ) / ""
-<br>
-<br>; Discipline can only be one of the options listed and approved below
-<br>
-<br>; The following may not work on all parsers. So, the traditional decimal
-<br>; coding is used.
-<br>; dis                = ( %s"MA" / %s"DI" / %s"PS" / %s"VA" / %s"RF" / %s"CO" / %s"TI" / %s"PU" / %s"PM" / %s"EP" / %s"PP" / %s"AP" / %s"ID" / %s"MS" / %s"EG" / %s"MO" )
-<br>dis                = ( %d77.65 / %d68.73 / %d80.83 / %d86.65 / %d82.70 / %d67.79 / %d84.73 / %d80.85 / %d80.77 / %d69.80 / %d80.80 / %d80.65 / %d73.68 / %d77.83 / %d69.71 / %d77.79 )
-<br>dev                = 1*12letter
-<br>idx                = 1*6alpha-num
-<br>
-<br>; the field is just optional so we can check for the validity of the PV name,
-<br>; but the field is always present on regular EPICS IOCs
-<br>record             = 1*15alpha-num opt-suffix
-<br>
-<br>opt-suffix         = ( suffix-separator record-suffix ) / ""
-<br>record-suffix      = 1*letter
-<br>
-<br>field              = ( record-separator epics-field ) / ""
-<br>
-<br>; EPICS record fields
-<br>epics-field        = 1*30letter-upper
-<br>
-<br>; alphanumeric
-<br>alpha-num          = ( digit / letter )
-<br>
-<br>; letter
-<br>letter             = letter-lower / letter-upper
-<br>
-<br>; letter lowercase
-<br>letter-lower       = ALPHA-LOWER
-<br>
-<br>; letter uppercase
-<br>letter-upper       = ALPHA-UPPER
-<br>
-<br>; 1 or more digits
-<br>number             = 1*DIGIT
-<br>
-<br>; 1 or more letters
-<br>word               = 1*ALPHA
-<br>
-<br>; regular digit
-<br>digit              = %x30-39
-<br>
-<br>; regular character a-z A-Z
-<br>ALPHA          =  ALPHA-LOWER / ALPHA-UPPER
-<br>ALPHA-LOWER    =  %x41-5A
-<br>ALPHA-UPPER    =  %x61-7A
-<br>
-<br>; separators
-<br>inner-separator    = "-"
-<br>suffix-separator   = "-"
-<br>group-separator    = ":"
-<br>record-separator   = "."
-</pre>
-<h2 class="toc-header" id="drawings-with-names-of-lattice-elements"> Drawings with Names of Lattice Elements</h2>
+<h3>Examples of PV Names</h3>
+<p>01) SI-Glob:AP-SOFB:Mode-Sel</p>
+<p>02) SI-13SA:DI-TuneSh:ExcAmp</p>
+<p>03) SI-Glob:AP-TuneM:TuneX-Mon</p>
+<p>04) SI-01M2:DI-BPM:PosX-Mon</p>
+<p>05) SI-02M1:PS-QFB:Current-SP</p>
+<p>06) LI-01:TI-STDMOE:TrigDelayCh01 (sending signal to LI-01:EG-EGun)</p>
+<p>07) SI-Fam:PS-B1B2-1:Current-RB</p>
+<p>08) SI-13SA:DI-DCCT:BbBCurrent-Mon</p>
+<p>09) SI-01SA:TI-SOE:TrigDelayCh02 (sending signal to SI-01SA:PU-InjDpK)</p>
+<h3>ABNF grammar for PV naming</h3>
+<p>; ABNF grammar (conforming to http://www.ietf.org/rfc/rfc4234.txt)
+  <br>; for LNLS EPICS naming convention, candidate 2
+  <br>
+  <br>PV-Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= area device record field
+  <br>
+  <br>area &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = sec inner-separator sub group-separator
+  <br>
+  <br>; Section can only be one of the options listed and approved below
+  <br>
+  <br>; The following may not work on all parsers. So, the traditional decimal
+  <br>; coding is used.
+  <br>; sec &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= ( %s"AS" "SI" / %s"BO" / %s"LI" / %s"TS" / %s"TB" / %s"BL" / %s"UT" )
+  <br>sec &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= ( %d83.73 / %d66.79 / %d76.73 / %d84.83 / %d84.66 / %d66.76 / %d85.84 )
+  <br>sub &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= sub-code
+  <br>
+  <br>; combination of numbers and letters (e.g., C1, C2, M1, M2, etc)
+  <br>sub-code &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 1*6alpha-num
+  <br>
+  <br>; device definition with optional index
+  <br>device &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = dis inner-separator dev opt-idx group-separator
+  <br>
+  <br>opt-idx &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= ( inner-separator idx ) / ""
+  <br>
+  <br>; Discipline can only be one of the options listed and approved below
+  <br>
+  <br>; The following may not work on all parsers. So, the traditional decimal
+  <br>; coding is used.
+  <br>; dis &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= ( %s"MA" / %s"DI" / %s"PS" / %s"VA" / %s"RF" / %s"CO" / %s"TI" / %s"PU" / %s"PM" / %s"EP" / %s"PP" / %s"AP" / %s"ID" / %s"MS" / %s"EG" / %s"MO" )
+  <br>dis &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= ( %d77.65 / %d68.73 / %d80.83 / %d86.65 / %d82.70 / %d67.79 / %d84.73 / %d80.85 / %d80.77 / %d69.80 / %d80.80 / %d80.65 / %d73.68 / %d77.83 / %d69.71 / %d77.79 )
+  <br>dev &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 1*12letter
+  <br>idx &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 1*6alpha-num
+  <br>
+  <br>; the field is just optional so we can check for the validity of the PV name,
+  <br>; but the field is always present on regular EPICS IOCs
+  <br>record &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 1*15alpha-num opt-suffix
+  <br>
+  <br>opt-suffix &nbsp; &nbsp; &nbsp; &nbsp; = ( suffix-separator record-suffix ) / ""
+  <br>record-suffix &nbsp; &nbsp; &nbsp;= 1*letter
+  <br>
+  <br>field &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= ( record-separator epics-field ) / ""
+  <br>
+  <br>; EPICS record fields
+  <br>epics-field &nbsp; &nbsp; &nbsp; &nbsp;= 1*30letter-upper
+  <br>
+  <br>; alphanumeric
+  <br>alpha-num &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= ( digit / letter )
+  <br>
+  <br>; letter
+  <br>letter &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = letter-lower / letter-upper
+  <br>
+  <br>; letter lowercase
+  <br>letter-lower &nbsp; &nbsp; &nbsp; = ALPHA-LOWER
+  <br>
+  <br>; letter uppercase
+  <br>letter-upper &nbsp; &nbsp; &nbsp; = ALPHA-UPPER
+  <br>
+  <br>; 1 or more digits
+  <br>number &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 1*DIGIT
+  <br>
+  <br>; 1 or more letters
+  <br>word &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 1*ALPHA
+  <br>
+  <br>; regular digit
+  <br>digit &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= %x30-39
+  <br>
+  <br>; regular character a-z A-Z
+  <br>ALPHA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= &nbsp;ALPHA-LOWER / ALPHA-UPPER
+  <br>ALPHA-LOWER &nbsp; &nbsp;= &nbsp;%x41-5A
+  <br>ALPHA-UPPER &nbsp; &nbsp;= &nbsp;%x61-7A
+  <br>
+  <br>; separators
+  <br>inner-separator &nbsp; &nbsp;= "-"
+  <br>suffix-separator &nbsp; = "-"
+  <br>group-separator &nbsp; &nbsp;= ":"
+  <br>record-separator &nbsp; = "."
+</p>
+<h2>Drawings with Names of Lattice Elements</h2>
 <p>Links bellow point to drawings with family names of lattice elements for each accelerator section</p>
 <ul>
-<li>AS - Accelerator System drawing [link] PDF file (sectors split in PDF files) [link]</li>
-<li>SI - Storage Ring drawing [link] PDF file</li>
-<li>TS - Booster to Storage Ring transport line drawing [link] PDF file</li>
-<li>[BO - Booster drawing] PDF file</li>
-<li>TB - Linac to Booster transport line drawing [link] PDF file</li>
-<li>LI - Linac drawing [link] PDF file</li>
+  <li>AS - Accelerator System drawing [link] PDF file (sectors split in PDF files) [link]</li>
+  <li>SI - Storage Ring drawing [link] PDF file</li>
+  <li>TS - Booster to Storage Ring transport line drawing [link] PDF file</li>
+  <li>[BO - Booster drawing] PDF file</li>
+  <li>TB - Linac to Booster transport line drawing [link] PDF file</li>
+  <li>LI - Linac drawing [link] PDF file</li>
 </ul>
-<h2 class="toc-header" id="reference"> Reference</h2>
-<p><a class="is-external-link" href="https://wiki.bnl.gov/nsls2controls/index.php/Standards-Naming_Convention_Signal_Names#Signal_Domains">https://wiki.bnl.gov/nsls2controls/index.php/Standards-Naming_Convention_Signal_Names#Signal_Domains</a></p>
+<h2>Reference</h2>
+<p><a href="https://wiki.bnl.gov/nsls2controls/index.php/Standards-Naming_Convention_Signal_Names#Signal_Domains">https://wiki.bnl.gov/nsls2controls/index.php/Standards-Naming_Convention_Signal_Names#Signal_Domains</a></p>
