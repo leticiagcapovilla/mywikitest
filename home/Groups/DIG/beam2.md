@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:17:12.637Z
+date: 2024-02-29T14:17:32.283Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -41,3 +41,21 @@ The "K" value is a constant obtained through the first-degree linear interpolati
 ![](/img/groups/dig/beam_pos_calc/K_calc_demo.png)
 
 **Figure 2**: Comparison of pure and compensated measures.
+
+#### Variable "K"
+
+Another way to compensate the measures is to consider a polynomial $K(x,y)$, which apply a different correction factor for each point in space. In this case, a few iterations are made to converge the measure to a value close to the real one, as seen on the equations below: 
+
+$x_{n+1} = Method * K_x(x_n, y_n)$
+
+$y_{n+1} = Method * K_y(x_n, y_n)$
+
+The variable $Method$ stands for any calculation equation being used to calculate the coordinates.
+
+### Line Gain Differences
+
+Although the physical construction and installation of equipments is made seeking to minimize the differences between the measurements on each antenna, small imperfections in them result in different gains in measures. One way to minimize this is to conduct a switching between opposing antennas, so that a signals passes through one equipment line (having a respective gain, "T1" for example) and then through the opposite line ( having a gain "T2", for instance). In this way, through further processing is possible to take a mean value of the switched signal, obtaining a signal close to the pure ones, without the distortions caused by different gains from each equipment line, as seen in Figure 3.
+
+![](/img/groups/dig/beam_pos_calc/B_gain_ilu.png)
+
+**Figure 3**: Signals of antennas A and B after the switching, and their respective mean values.
