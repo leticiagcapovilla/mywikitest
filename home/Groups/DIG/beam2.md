@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T15:10:53.210Z
+date: 2024-02-29T15:11:23.435Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -154,4 +154,8 @@ $$
 
 $$
 =log \left( \left( \frac{\cancel{\sqrt{\color{red}T_1 \cdot T_2}} \cdot \cancel{\sqrt{\color{blue}T_3 \cdot T_4}}}{\cancel{\sqrt{\color{blue}T_3 \cdot T_4}} \cdot \cancel{\sqrt{\color{red}T_1 \cdot T_2}}} \right) \cdot \left( \frac{\sqrt{A²} \cdot \sqrt{B²}}{\sqrt{B²} \cdot \sqrt{C²}} \right) \right) \cdot K_x
+$$
+
+$$
+=log\left(\frac{A \cdot D}{B \cdot C}\right) \cdot 
 $$
