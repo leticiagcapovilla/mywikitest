@@ -1,3 +1,13 @@
+---
+title: Fieldmap analysis
+description: 
+published: 1
+date: 2024-02-29T13:15:17.276Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T20:58:02.930Z
+---
+
 # FAC: Fieldmap analysis
 
 Field specification of every 3D nominal model of magnets is checked. This is accomplished by having its 3D-field map sampled on the mid-plane (at y = 0 mm) and analyzed. It can be demonstrated that knowledge of the 3D magnetic field on any plane, and on the mid-plane in particular, is enough for the reconstruction of the 3D field over the entire gap region. Apart from the discreteness of the fieldmap grid on the xz plane, numerical trajectories with arbitrary precision can be computed using standard Runge-Kutta integration algorithms. Multipoles around these trajectories can then be calculated and compared to specifications.
