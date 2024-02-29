@@ -2,7 +2,7 @@
 title: Naming System
 description: 
 published: 1
-date: 2024-02-29T15:43:17.308Z
+date: 2024-02-29T15:44:10.573Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:37:36.486Z
