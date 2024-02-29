@@ -1,3 +1,13 @@
+---
+title: Cookbook
+description: 
+published: 1
+date: 2024-02-29T13:12:05.254Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T20:57:55.148Z
+---
+
 # FAC: Cookbook
 
 Straightforward recipes for Accelerator Physics group projects and activities tasks. Command-line instructions are given for bash.
@@ -14,9 +24,9 @@ Straightforward recipes for Accelerator Physics group projects and activities ta
 ### Import lnls-sirius OPIs
 To test and run lnls-sirius OPIs in CS-Studio, clone the `hla` repository if it is not already available, with
 
-```
-git clone https://github.com/lnls-sirius/hla
-```
+
+<kbd>$ git clone https://github.com/lnls-sirius/hla</kbd>
+
 
 Import the projects containing the OPIs into CS-Studio, clicking on *File->Import...->Existing Projects into Workspace*. Then select the root directory and click *Finish*. Colour and font definitions used are retrieved from the Sirius web server.
 
@@ -56,19 +66,16 @@ As we are currently using the SNS version of CS-Studio for tests, some default c
 ### Create empty IOC from template
 To create an empty IOC structure using the EPICS Base-provided `makeBaseApp.pl`, create a directory and, inside it, issue (assuming makeBaseApp.pl is in PATH)
 
-```
-makeBaseApp.pl -t ioc <ioc_name>
-makeBaseApp.pl -t ioc -i -a <architecture> <ioc_name>
-```
+<kbd>$ makeBaseApp.pl -t ioc <ioc_name></kbd>
+<kbd>$ makeBaseApp.pl -t ioc -i -a <architecture> <ioc_name></kbd>
+
 where `<architecture>` must be substituted by the host architecture (e.g., `linux-x86_64`.)
 
 ### Create empty PCASPy Channel Access Server
 To create a PCASPy CAS simple structure, the script `instantiate_template.py` available in the [hla](https://github.com/lnls-fac/hla) repository at `sirius/iocs/pcaspy_template` can be used with
 
-```
-<path_to_hla>/sirius/iocs/pcaspy_template/instantiate_template.py <name> [-d <dest_dir>]
-```
-
+<kbd><path_to_hla>/sirius/iocs/pcaspy_template/instantiate_template.py <name> [-d <dest_dir>]</kbd>
+  
 ### Install ChannelFinder
 Follow the [instructions in the ChannelFinder page](http://channelfinder.sourceforge.net/ChannelFinderService/installation.html) to install version 1.1.1. Some workarounds were needed and are described below with some additional recommendations for setting up a test installation; they are not recommended for a production installation, so the issues must be investigated.
 
@@ -78,11 +85,11 @@ Follow the [instructions in the ChannelFinder page](http://channelfinder.sourcef
 * OpenLDAP can be installed using `apt-get install slapd`; run `dpkg-reconfigure slapd` and set the DNS domain name, organisation name, and administrator password, leaving other options as default. Then, configure phpldapadmin by setting the following variables in `/etc/phpldapadmin/config.php` to the values shown:
 
 ```
-$servers->setValue('server','host','localhost');
+servers->setValue('server','host','localhost');
 // If the domain name is example.com, <DNS domain name>='dc=example,dc=com'
-$servers->setValue('server','base',array(<DNS domain name>));
-$servers->setValue('server','bind_id',array('cn=admin,'<DNS domain name>));
-$config->custom->appearance['hide_template_warning'] = true;
+servers->setValue('server','base',array(<DNS domain name>));
+servers->setValue('server','bind_id',array('cn=admin,'<DNS domain name>));
+config->custom->appearance['hide_template_warning'] = true;
 ```
 
 Open `<nowiki>http://localhost/phpldapadmin</nowiki>` and log in using the administrator password you set for slapd. Then add the following items:
@@ -96,10 +103,8 @@ For testing ChannelFinder with the Python API, it may be necessary to disable SS
 ### Set Channel Access environment variables
 To set the EPICS environment variables that define the IP addresses Channel Access will use to look for PVs, issue
 
-```
-export EPICS_CA_ADDR_LIST=<server_ip>
-export EPICS_CA_AUTO_ADDR_LIST=no
-```
+<kbd>$ export EPICS_CA_ADDR_LIST=<server_ip></kbd>
+<kbd>$ export EPICS_CA_AUTO_ADDR_LIST=no</kbd>
 
 where `<server_ip>` must be substituted by the broadcast, server or Gateway address to be used.
 
@@ -108,15 +113,11 @@ where `<server_ip>` must be substituted by the broadcast, server or Gateway addr
 ### Change working directory contents to specific release
 To change the working directory contents to that of a release, inside the local repository issue
 
-```
-git checkout <version_tag>
-```
+<kbd>$ git checkout <version_tag></kbd>
 
 where `<version_tag>` must be substituted by a valid release tag (e.g., vX.Y.Z for the procedure described [below][link].) To return to the master working directory, use
 
-```
-git checkout master
-```
+<kbd>$ git checkout master</kbd>
 
 ## GitHub
 
@@ -150,44 +151,33 @@ This section contains recipes for performing maintenance tasks on the Sirius Wik
 
 In the machine where Sirius Wiki is running, open the MySQL client with
 
-```
-mysql -u root -p
-```
+<kbd>$ mysql -u root -p</kbd>
 
 Then, select the `parameters` database:
 
-```
-USE parameters;
-```
+<kbd>$ USE parameters;</kbd>
 
 Some useful examples of commands to issue are
 
-
-```
-SHOW TABLES;
-SELECT * FROM parameter;
-SELECT * FROM parameter WHERE NAME LIKE "SI optics radiation%";
-```
+<kbd>$ SHOW TABLES;</kbd>
+  
+<kbd>$ SELECT * FROM parameter;</kbd>
+  
+<kbd>$ SELECT * FROM parameter WHERE NAME LIKE "SI optics radiation%";</kbd>
 
 ### Install the Parameters MediaWiki extension
 
 In this recipe, we assume that MediaWiki and MySQL are already installed in the machine. First install a required package with (when prompted, choose to keep current local version of php.ini)
 
-```
-apt-get install php5-mysqlnd
-```
+<kbd>$ apt-get install php5-mysqlnd</kbd>
 
 Then download and copy the `Parameters` directory to the MediaWiki extensions directory using
 
-```
-cp -r Parameters /var/www/mediawiki-1.23.1/extensions
-```
+<kbd>$ cp -r Parameters /var/www/mediawiki-1.23.1/extensions</kbd>
 
 The extension's MySQL user and tables are created by the commands in the file `Parameters.sql` available in the `Parameters` directory. The user password is defined in that file and, if changed, must also be updated in the class `FacConnection` in the file `FacTable.php`. To create the user and tables, run (you will be prompted for the MySQL root user password)
 
-```
-mysql -u root -p < Parameters.sql
-```
+<kbd>$ mysql -u root -p < Parameters.sql</kbd>
 
 Finally, to install the extension, add the following line to the `/var/www/mediawiki-1.23.1/extensions/LocalSettings.php` file:
 
@@ -199,16 +189,13 @@ require_once "$IP/extensions/Parameters/Parameters.php";
 
 Inside the fac-wiki virtual machine, open the MySQL client with (you will be prompted for the MySQL root user password)
 
-```
-mysql -u root -p
-```
+<kbd>$ mysql -u root -p</kbd>
 
 Then issue the commands below, substituting `<user_name>` and `<new_password>`:
 
-```
-USE fac_wiki
-UPDATE `user` SET user_password = CONCAT(':B:somesalt:', MD5(CONCAT('somesalt-', MD5('<new password>')))) WHERE user_name = '<user_name>';
-```
+<kbd>$ USE fac_wiki</kbd>
+  
+<kbd>$ UPDATE user SET user_password = CONCAT(':B:somesalt:', MD5(CONCAT('somesalt-', MD5('<new password>')))) WHERE user_name = '<user_name>';</kbd>
 
 ## VirtualBox
 
@@ -216,23 +203,17 @@ UPDATE `user` SET user_password = CONCAT(':B:somesalt:', MD5(CONCAT('somesalt-',
 
 To obtain a list of available or running virtual machines (VMs), run
 
-```
-vboxmanage list vms|runningvms
-```
+<kbd>$ vboxmanage list vms|runningvms</kbd>
 
 You can start a VM on headless mode (without opening a window with its GUI) with
 
-```
-vboxmanage startvm <vm_name> --type headless
-```
+<kbd>$ vboxmanage startvm <vm_name> --type headless</kbd>
 
 where `vm_name` is the VM name, that can be obtained with the `list vms` command given above.
 
 To save the machine state or power it off, issue
 
-```
-vboxmanage controlvm <vm_name> savestate|poweroff
-```
+<kbd>$ vboxmanage controlvm <vm_name> savestate|poweroff</kbd>
 
 ## Virtual Accelerator
 
@@ -252,16 +233,13 @@ gateway -sip <ip_address> -access ./GATEWAY.access -prefix FAC-VA-GATEWAY -serve
 
 To stop the Gateway and IOCs in the va virtual machine created with [hla-vagrant](https://github.com/lnls-fac/hla-vagrant) and started as described [above][link], issue in the fac user's home directory
 
-```
-./gateway.killer
-sirius-va stop viocs
-```
+<kbd>$ ./gateway.killer</kbd>
+  
+<kbd>$ sirius-va stop viocs</kbd>
 
 To stop the virtual accelerator (VA), use ps to find the main process PID:
 
-```
-ps -elf | grep sirius-vaca.py
-```
+<kbd>$ ps -elf | grep sirius-vaca.py</kbd>
 
 The output should look like the following lines if the VA is running:
 
@@ -279,6 +257,4 @@ Sample output:
 
 The main process is that with the PID repeated five times on the the fifth column (one for each child process), 31870 in this example. To send the `SIGINT` signal to it, issue
 
-```
-kill -2 <main_process_pid>
-```
+<kbd>$ kill -2 <main_process_pid></kbd>
