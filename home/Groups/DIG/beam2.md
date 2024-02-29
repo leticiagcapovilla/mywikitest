@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:19:15.982Z
+date: 2024-02-29T14:21:56.094Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -59,4 +59,11 @@ Although the physical construction and installation of equipments is made seekin
 ![](/img/groups/dig/beam_pos_calc/B_gain_ilu.png)
 
 **Figure 3**: Signals of antennas A and B after the switching, and their respective mean values.
+
+## Methods
+
+### Delta/Sigma $(&Delta;/&Sigma;)$
+
+#### Model
+
 
