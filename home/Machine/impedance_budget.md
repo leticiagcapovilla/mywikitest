@@ -1,3 +1,13 @@
+---
+title: Impedance Budget
+description: 
+published: 1
+date: 2024-02-29T15:47:46.406Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T20:37:33.823Z
+---
+
 # Machine: Impedance Budget
 
 ## Analytic Calculations
