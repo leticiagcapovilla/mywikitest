@@ -1,10 +1,20 @@
+---
+title: Radiation Safety
+description: 
+published: 1
+date: 2024-02-29T16:01:18.608Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T20:47:45.216Z
+---
+
 # Machine: Radiation Safety
 
-*Sirius has a radiological protection program committed to ensuring radiological safety in all areas. Engineering, administrative controls, as well as training, are used to prevent exposure to radiation by employees, members of the public and the environment. Our monitoring systems operate continuously and cover all areas of Sirius to ensure that the premises of radioprotection are met at all times. Any location that presents potential exposure is identified with warnings and strictly controlled. Our radiological protection program follows national and international standards, being even stricter than those recommended. No accessible area of the facility offers radiological risk to employees or visitors. **If you would like more information regarding our Sirius Radiation Protection Program, please contact us:** [rad@cnpem.br][link]*
+*Sirius has a radiological protection program committed to ensuring radiological safety in all areas. Engineering, administrative controls, as well as training, are used to prevent exposure to radiation by employees, members of the public and the environment. Our monitoring systems operate continuously and cover all areas of Sirius to ensure that the premises of radioprotection are met at all times. Any location that presents potential exposure is identified with warnings and strictly controlled. Our radiological protection program follows national and international standards, being even stricter than those recommended. No accessible area of the facility offers radiological risk to employees or visitors. **If you would like more information regarding our Sirius Radiation Protection Program, please contact us:** [rad@cnpem.br](https://wiki-sirius.lnls.br/mediawiki/index.php/RAD:RAD)
 
 ## Segurança Radiológica
 
-O Sirius possui um programa de proteção radiológica comprometido em garantir a segurança radiológica em todas as áreas da instalação. Controles de engenharia, controles administrativos e treinamentos são usados para evitar a exposição à radiação de funcionários, membros do público e o meio ambiente. Nossos sistemas de monitoração funcionam de forma contínua e abrangem todas as áreas do Sirius para garantirmos que as premissas de radioproteção sejam cumpridas em todos os momentos. Qualquer local que apresente potencial de exposição é identificado com avisos e rigorosamente controlado. Nosso programa de proteção radiológica segue normas nacionais e internacionais, além de possuir controles ainda mais rigorosos do que os preconizados. Nenhuma área acessível da instalação oferece risco radiológico aos funcionários ou visitantes. **Caso queira mais informações em relação ao nosso Programa de Proteção Radiológica do Sirius, entre em contato:** [rad@cnpem.br][link]
+O Sirius possui um programa de proteção radiológica comprometido em garantir a segurança radiológica em todas as áreas da instalação. Controles de engenharia, controles administrativos e treinamentos são usados para evitar a exposição à radiação de funcionários, membros do público e o meio ambiente. Nossos sistemas de monitoração funcionam de forma contínua e abrangem todas as áreas do Sirius para garantirmos que as premissas de radioproteção sejam cumpridas em todos os momentos. Qualquer local que apresente potencial de exposição é identificado com avisos e rigorosamente controlado. Nosso programa de proteção radiológica segue normas nacionais e internacionais, além de possuir controles ainda mais rigorosos do que os preconizados. Nenhuma área acessível da instalação oferece risco radiológico aos funcionários ou visitantes. **Caso queira mais informações em relação ao nosso Programa de Proteção Radiológica do Sirius, entre em contato:** [rad@cnpem.br](https://wiki-sirius.lnls.br/mediawiki/index.php/RAD:RAD)
 
 ## Segurança Radiológica: Fase de comissionamento do Sirius
 Os limites de dose adotados para proteção radiológica do Sirius são especificados de modo que o acesso ao prédio seja livre em qualquer momento sob o ponto de vista de proteção radiológica. O limite anual para áreas livres é de 1 mSv¹. Por conservadorismo, adotamos carga de trabalho máxima de 2000 horas por ano para qualquer pessoa que acesse o prédio. Dessa forma, o valor de referência de taxa de dose máxima pra operação continuada dos aceleradores é de 0.5 uSv/h. 
@@ -12,7 +22,7 @@ Os limites de dose adotados para proteção radiológica do Sirius são especifi
 O comissionamento é um período atípico e curto, comparado ao tempo total de operação de uma fonte de luz síncrotron ao longo dos anos, em que há perdas de elétrons mais recorrentes, inerentes ao processo de testes e ajustes com feixe. **Ainda assim, durante todo o comissionamento é mantida a política de operar dentro dos limites de proteção radiológica para área livre.**
 
 A estratégia usada para seguir o comissionamento e manter as doses geradas abaixo dos limites foi reduzir a carga emitida pelo canhão de elétrons e controlar a taxa de pulsos injetados, otimizando o uso de carga frente ao avanço do comissionamento. 
-Caso queira mais informações em relação ao nosso Programa de Proteção Radiológica do Sirius, entre em contato: [rad@cnpem.br][link]
+Caso queira mais informações em relação ao nosso Programa de Proteção Radiológica do Sirius, entre em contato: [rad@cnpem.br](https://wiki-sirius.lnls.br/mediawiki/index.php/RAD:RAD)
 
 ## Você sabe o que é radiação?
 
