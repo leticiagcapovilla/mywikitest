@@ -2,7 +2,7 @@
 title: Low-alpha optics mode
 description: 
 published: 1
-date: 2024-02-29T13:44:46.114Z
+date: 2024-02-29T13:46:37.411Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:58:11.223Z
@@ -24,13 +24,19 @@ $$
 \frac{\nu_s}{\nu_{s,0}} = \left\{ 1 - \frac{4 \alpha_2}{\alpha_1^2} \left(\frac{\delta f}{f}\right)_{RF}\right\}^{1/4}
 $$
 
-$\xi_x \equiv \frac{\delta\nu_x}{\delta\epsilon} = \frac{\delta}{\delta\epsilon}\left(\frac{f_x}{f_{rev}}\right)$
+$$
+\xi_x \equiv \frac{\delta\nu_x}{\delta\epsilon} = \frac{\delta}{\delta\epsilon}\left(\frac{f_x}{f_{rev}}\right)
+$$
 
-$\xi_y \equiv \frac{\delta\nu_y}{\delta\epsilon} = \frac{\delta}{\delta\epsilon}\left(\frac{f_y}{f_{rev}}\right)$
+$$
+\xi_y \equiv \frac{\delta\nu_y}{\delta\epsilon} = \frac{\delta}{\delta\epsilon}\left(\frac{f_y}{f_{rev}}\right)
+$$
 
 As the RF frequency is varied the beam has its energy changed by the quantity $\delta\epsilon$ so that it retains the correct synchronous phase:
 
-$-\left(\frac{\delta f}{f}\right)_{RF} = \frac{\delta L}{L} = \alpha_1 {\delta\epsilon} + \alpha_2 {\delta\epsilon}^2$
+$$
+-\left(\frac{\delta f}{f}\right)_{RF} = \frac{\delta L}{L} = \alpha_1 {\delta\epsilon} + \alpha_2 {\delta\epsilon}^2
+$$
 
 The second-order momentum compaction factor $\alpha_2$ is obtained from linear fitting and from the $\alpha_1$ value extracted from the LOCO-calibrated model of the low-alpha optics. These two parameters are then used to calculate the beam energy variation $\delta\epsilon$ which is used to estimate the chromaticities $\xi_x$ and $\xi_y$ from linear fitting of the tune curves.
 Below are the measurement data
