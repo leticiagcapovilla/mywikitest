@@ -1,3 +1,13 @@
+---
+title: LOCO
+description: 
+published: 1
+date: 2024-02-29T13:43:28.769Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T20:58:08.703Z
+---
+
 # FAC: LOCO
 
 [LOCO](http://accelconf.web.cern.ch/AccelConf/e02/PAPERS/WEPLE003.pdf), or Linear Optics from Closed Orbit, is a set of tools that aims at calibrating a given lattice model from closed orbit measurements in an storage ring. Currently it is implemented in Matlab using both MML and AT toolkits. Since its first applications in 2002 it has been applied to most existing storage rings and it has become a standard tool to calibrate the model of linear beam dynamics.
