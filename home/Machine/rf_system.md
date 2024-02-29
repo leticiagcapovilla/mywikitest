@@ -1,3 +1,13 @@
+---
+title: RF System
+description: 
+published: 1
+date: 2024-02-29T15:25:46.975Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T20:17:07.334Z
+---
+
 # Machine: RF System
 
 The RF system is responsible for supplying energy to the electrons during the acceleration process and replenishing the energy lost due to the emission of synchrotron radiation  or to other dissipative processes. The electrons gain energy from electric fields excited in special components of the RF system called accelerating structures and resonant cavities. The main role of the RF systems is to excite and maintain these accelerating fields in line with the stability requirements of the three machines that make up the light source. Linac, booster and storage ring each have their dedicated RF system, designed to meet the specifications required by electron beam dynamics for each of these main components of the light source. The linac is being purchased turn-key from SSRF/SINAP and no development is being pursued in house for any part of its RF system. The RF systems for the booster and for the storage ring are being designed in house and the main specifications of both systems are presented below.
@@ -63,7 +73,6 @@ There are still two possible options being considered for the storage ring RF ca
 
 In addition to stability considerations there are other aspects that should be taken into account when choosing the cavities, mainly because it is not clear that the normal conducting cavity should be discarded as unfitted based on insufficient HOM damping. Some of the pros and cons of each system, from the viewpoint of LNLS' experience with RF systems, are listed below
 
-
 **Pros**
 
 |NC System | SC System |
@@ -71,7 +80,6 @@ In addition to stability considerations there are other aspects that should be t
 |Less expensive to install | Efficient HOM damping |
 |Experience with the technology | Demands less RF power |
 Smaller number of RF plants  |
-
 
 **Cons**
 
@@ -83,14 +91,12 @@ Smaller number of RF plants  |
 |Requires large water cooling capacity | Maintenance intensive |
 |Larger impact on tunnel temperature control | Expensive spare cavity  |
 
-
 **?**
 
 |NC System | SC System |
 | --- | --- |
 |Sufficient HOM damping | May require longer shutdowns |
 |May need feedback |  |
-
 
 The main advantages of the SC system are the reduced number of RF plants and high power amplifiers needed to run the system, and the great beam dynamics performance due to the efficient suppression of beam driven higher order modes (HOM) that can be achieved in the SC cavities. The high shunt impedance of these cavities minimizes the number of necessary RF plants leading to an overall simplification of the RF system. However, the SC system is more expensive than the NC one, requiring a cryogenic infrastructure that is at the same time also expensive and complex. The initial investment required for the installation of the SC system is much higher than the one required for the NC system. The DAMPY cavity also features an efficient suppression of the HOM and it is much less expensive. However these cavities have much lower shunt impedance and many of them are needed to establish the necessary total gap voltage, each one requiring its own RF plant, which is also an expensive component of the system. In the case of SC cavities only two RF plants are necessary to supply the RF power required to maintain the beam stored in the machine. In its final configuration the output power of each RF plant will be the combination the output power of four solid state amplifiers. On the other hand, a NC system with six DAMPY cavities will require a total of six RF plants, although each plant will include the combination of just two solid state amplifiers. In both cases the RF system will be able to maintain the nominal beam current of 350 mA.
 
@@ -101,7 +107,6 @@ In order to operate the machine with a NC system at least three cavities have to
 The table below shows the minimum requirements for each of the two systems for starting the commissioning and first operation of Sirius in a safe condition, without pushing the RF cavities to higher than normal gap voltages. That corresponds to a Phase 1 of the RF system installation. For the SC system the machine would be able to operate at the nominal gap voltage from the start but a gradual increase in the gap voltage up to the nominal voltage should be preferable. The subsequent phases of RF upgrade correspond to increase in gap voltage, available power and the final installation of a third SC cavity.
 
 According to the cavity type:
-
 
 | Parameter | Phase1 <br />NC | Phase 1 <br />SC | Phase 2 <br />SC | Phase3 <br />SC | Unit |
 | --- | --- | --- | --- | --- | --- |
