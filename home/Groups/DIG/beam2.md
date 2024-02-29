@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:21:56.094Z
+date: 2024-02-29T14:22:16.710Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -66,4 +66,15 @@ Although the physical construction and installation of equipments is made seekin
 
 #### Model
 
+The $x$ and $y$ values are calculated using the following formulae:
+
+$x= \frac{(a+d)-(b+c)}{a+b+c+d} \cdot K_x$
+
+$y= \frac{(a+b)-(c+d)}{a+b+c+d} \cdot K_y$
+
+After the $Kx$ calibration process, the output curve is as observed on Figure 4. Using the system symmetry, is possible to consider $K_y = K_x$.
+
+![](/img/groups/dig/beam_pos_calc/1_1.png)
+
+**Figure 4**: Calibration curve of the Delta/Sigma Method.
 
