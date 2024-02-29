@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:48:38.668Z
+date: 2024-02-29T14:49:11.636Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
