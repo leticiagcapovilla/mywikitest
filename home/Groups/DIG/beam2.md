@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:31:26.991Z
+date: 2024-02-29T14:32:11.242Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -91,5 +91,5 @@ $$
 $$
 
 $$
-lalala
+=\frac{1}{2} \cdot K_x
 $$
