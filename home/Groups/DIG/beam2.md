@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:45:02.332Z
+date: 2024-02-29T14:45:25.701Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -103,3 +103,39 @@ Choosing a matrix of coordinates $x$ and $y$ in a 5 mm square representing posit
 ![](/img/groups/dig/beam_pos_calc/1_2.png) ![](/img/groups/dig/beam_pos_calc/1_3.png)
 
 **Figure 5**: Real and calculated coordinates for the Delta/Sigma Method.
+
+#### Contour Plot Inaccuracy
+
+A contour plot was made to show the inaccuracy variation on the considered area, as seen on Figure 6. The result was based on the difference between the distances to the origin, according to the following equation:
+
+$Inaccuracy = \sqrt{(x')^2 + (y')^2} - \sqrt{x^2 + y^2}$ 
+
+Considering $x$ and $y$ as the real positions and $x'$ and $y'$ as the calculated ones.
+
+![](/img/groups/dig/beam_pos_calc/1_4.png)
+
+**Figure 6**: Inaccuracy contour plot of the Delta/Sigma Method.
+
+#### Advantagens vs. Disadvantages
+
+* Cheap processing
+* Doesn't eliminate line gain
+* Low Accuracy
+
+----
+
+### Pi/Pi ($&Pi;/&Pi;$)
+
+#### Model
+
+The $x$ and $y$ values are calculated using the following formulae:
+
+$x=log\left(\frac{a}{c}\right) \cdot K_x$
+
+$y=log\left(\frac{b}{d}\right) \cdot K_y$
+
+After the $Kx$ calibration process, the output curve is as observed on Figure 7. Using the system symmetry, is possible to consider $K_y = K_x$.
+
+![](/img/groups/dig/beam_pos_calc/2_1.png)
+
+**Figure 7**: Calibration curve of the Pi/Pi Method.
