@@ -1,3 +1,13 @@
+---
+title: Beam Diagnostics and Feedback System
+description: 
+published: 1
+date: 2024-02-29T15:27:55.307Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T20:27:15.655Z
+---
+
 # Machine: Beam Diagnostics and Feedback System
 
 Beam diagnostics and feedback systems are essential in synchrotron light sources to monitor and control a variety of electron and photon beam parameters. Adequate diagnostics helps to reduce the light source commissioning time and is fundamental to provide a high level of reliability to the accelerators. Feedback systems, in turn, improve the machine performance thus improving the photon beam quality delivered to the light source users.
