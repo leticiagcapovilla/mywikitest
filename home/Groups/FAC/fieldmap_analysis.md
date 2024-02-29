@@ -2,7 +2,7 @@
 title: Fieldmap analysis
 description: 
 published: 1
-date: 2024-02-29T13:15:17.276Z
+date: 2024-02-29T13:17:43.160Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:58:02.930Z
@@ -16,18 +16,24 @@ Field specification of every 3D nominal model of magnets is checked. This is acc
 
 Maxwell equations for $\vec{B} = (B_x,B_y,B_z)$ can be solved in the magnet gap by expansion of the field components in power series around the midplane, $y = 0$:
 
-$B_x(x,y,z) = {B_x}^(0)(x,z) + B_x^{(1)}(x,z) \; y + B_x^{(2)}(x,z) \; y^2 + \cdots \\
+$$
+B_x(x,y,z) = {B_x}^(0)(x,z) + B_x^{(1)}(x,z) \; y + B_x^{(2)}(x,z) \; y^2 + \cdots \\
 B_y(x,y,z) = B_y^{(0)}(x,z) + B_y^{(1)}(x,z) \; y + B_y^{(2)}(x,z) \; y^2 + \cdots \\
-B_z(x,y,z) = B_z^{(0)}(x,z) + B_z^{(1)}(x,z) \; y + B_z^{(2)}(x,z) \; y^2 + \cdots \\$
+B_z(x,y,z) = B_z^{(0)}(x,z) + B_z^{(1)}(x,z) \; y + B_z^{(2)}(x,z) \; y^2 + \cdots \\
+$$
 
 where $B_x^{(0)}$, $B_y^{(0)}$ and $B_z^{(0)}$ are the three-components of the 3D fieldmap of the magnet on the mid-plane. The rotational of $\vec{B}$ in the source-free gap gives the following recursion relation:
 
-$\frac{\partial B_x}{\partial y} - \frac{\partial B_y}{\partial x} = 0 \rightarrow B_x^{(n+1)} = \frac{\partial B_y^{(n)}}{\partial x} \\
-\frac{\partial B_z}{\partial y} - \frac{\partial B_y}{\partial z} = 0 \rightarrow B_z^{(n+1)} = \frac{\partial B_y^{(n)}}{\partial z}$
+$$
+\frac{\partial B_x}{\partial y} - \frac{\partial B_y}{\partial x} = 0 \rightarrow B_x^{(n+1)} = \frac{\partial B_y^{(n)}}{\partial x} \\
+\frac{\partial B_z}{\partial y} - \frac{\partial B_y}{\partial z} = 0 \rightarrow B_z^{(n+1)} = \frac{\partial B_y^{(n)}}{\partial z}
+$$
 
 whereas the divergence-free equation yields
 
-$\frac{\partial B_x}{\partial x} + \frac{\partial B_y}{\partial y} + \frac{\partial B_z}{\partial z} = 0  \rightarrow B_y^{(n+1)} = - \left( \frac{\partial Bx^{(n)}}{\partial x} + \frac{\partial B_z^{(n)}}{\partial z} \right)$
+$$
+\frac{\partial B_x}{\partial x} + \frac{\partial B_y}{\partial y} + \frac{\partial B_z}{\partial z} = 0  \rightarrow B_y^{(n+1)} = - \left( \frac{\partial Bx^{(n)}}{\partial x} + \frac{\partial B_z^{(n)}}{\partial z} \right)
+$$
 
 this set of three equations allows us to reconstruct the 3D magnetic field off the midplane, if necessary, provided the $xz$ grid is fine enough for the calculation of required partial derivatives.
 
@@ -47,19 +53,25 @@ This script does basic analysis of the fieldmap. It is used to check for simple 
 
 Calculates a Runge-Kutta trajectory for an electron subject to a given fieldmap and a particular initial conditions. The algorithm used is a RK integrator of fourth order. The independent coordinate used is the electron path length $s$ and the spatial coordinates are the Cartesian coordinates $x$ (horizontal/radial), $y$ (vertical) and $z$ (local longitudinal), corresponding to the fieldmap coordinate system. The right-hand rule $\hat{z} = \hat{x} \times \hat{y}$ applies in this system. As for ''momenta'', the dependent coordinates chosen are the linear ''momenta'' normalized by the nominal momentum: 
 
-$x' \equiv \frac{p_x}{p_0} = \frac{1}{\beta c} \frac{dx}{dt} = \frac{dx}{ds} \\
+$$
+x' \equiv \frac{p_x}{p_0} = \frac{1}{\beta c} \frac{dx}{dt} = \frac{dx}{ds} \\
 y' \equiv \frac{p_y}{p_0} = \frac{1}{\beta c} \frac{dy}{dt} = \frac{dy}{ds} \\
-z' \equiv \frac{p_z}{p_0} = \frac{1}{\beta c} \frac{dz}{dt} = \frac{dz}{ds}$
+z' \equiv \frac{p_z}{p_0} = \frac{1}{\beta c} \frac{dz}{dt} = \frac{dz}{ds}
+$$
 
 The exact equations of motion in these coordinates are as follows,
 
-$\frac{dx'}{ds} = - \frac{1}{\beta |B\rho|} \left( y' B_z - z' B_y \right) \\
+$$
+\frac{dx'}{ds} = - \frac{1}{\beta |B\rho|} \left( y' B_z - z' B_y \right) \\
 \frac{dy'}{ds} = - \frac{1}{\beta |B\rho|} \left( z' B_x - x' B_y \right) \\
-\frac{dz'}{ds} = - \frac{1}{\beta |B\rho|} \left( x' B_y - y' B_x \right)$
+\frac{dz'}{ds} = - \frac{1}{\beta |B\rho|} \left( x' B_y - y' B_x \right)
+$$
 
 With these variables the deflection angle $\theta$ of the trajectory from $s_1$ to $s_2$ is given by
 
-$\theta = \left. \arctan  \left( \frac{dx}{dz} \right) \right|_{s_1}^{s_2} = \left. \arctan  \left( \frac{x'}{z'} \right) \right|_{s_1}^{s_2}.$
+$$
+\theta = \left. \arctan  \left( \frac{dx}{dz} \right) \right|_{s_1}^{s_2} = \left. \arctan  \left( \frac{x'}{z'} \right) \right|_{s_1}^{s_2}.
+$$
 
 The script reads an input file called `trajectory.in` ([see example in link for help on input parameters](https://github.com/lnls-fac/code/blob/master/scripts/fieldmap_analysis/trajectory.in)) and generates an output text file called `trajectory.out` with results of analysis. An important information stored in this file is the value of the parameter ''rx position of reference point''. This is the horizontal coordinate of the intersection point of the two tangential straight lines, one upstream and the other downstream the trajectory. Since symmetry longitudinal symmetry is always assumed for the magnets, this point lies on the center line of the magnet (rz = 0). This reference point can be used for the fiducialization of the magnet. A file called `field_on_trajectory.txt` is generated in the current directory.
 
