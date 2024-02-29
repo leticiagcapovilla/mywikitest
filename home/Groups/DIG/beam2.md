@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:31:00.891Z
+date: 2024-02-29T14:31:26.991Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -91,5 +91,5 @@ $$
 $$
 
 $$
-=\frac{\sqrt{{\color{red}T_1 \cdot T_2}}}{1}
+lalala
 $$
