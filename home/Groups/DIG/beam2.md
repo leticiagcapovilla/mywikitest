@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:18:24.565Z
+date: 2024-02-29T14:19:15.982Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -60,38 +60,3 @@ Although the physical construction and installation of equipments is made seekin
 
 **Figure 3**: Signals of antennas A and B after the switching, and their respective mean values.
 
-## Methods
-
-### Delta/Sigma (&Delta;/&Sigma;)
-
-#### Model
-
-The $x$ and $y$ values are calculated using the following formulae:
-
-$x= \frac{(a+d)-(b+c)}{a+b+c+d} \cdot K_x$
-
-$y= \frac{(a+b)-(c+d)}{a+b+c+d} \cdot K_y$
-
-After the $Kx$ calibration process, the output curve is as observed on Figure 4. Using the system symmetry, is possible to consider $K_y = K_x$.
-
-![](/img/groups/dig/beam_pos_calc/1_1.png)
-
-**Figure 4**: Calibration curve of the Delta/Sigma Method.
-
-#### Line Gain
-
-Considering the gains $T_1$,$T_2$,$T_3$ and $T_4$ for the lines of antennas A, B, C and D respectively, and calculating the mean values as the geometric mean, the $x$ equation would be:
-
-$$
-x= \frac{(a+d)-(b+c)}{a+b+c+d} \cdot K_x
-$$
-
-$$
-=\frac{(\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{D^2 \cdot {\color{blue}T_3 \cdot T_4}})-(\sqrt{B^2 \cdot {\color{blue}T_3 \cdot T_4}}+\sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}})}{\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{B^2 \cdot {\color{blue}T_3 \cdot T_4}}+\sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{D^2 \cdot {\color{blue}T_3 \cdot T_4}}} \cdot K_x
-$$
-
-$$
-=\frac{{\color{red} \sqrt{T_1 \cdot T_2}} \cdot(A-C)+{\color{blue} \sqrt{T_3 \cdot T_4}} \cdot (D-B)}{{\color{red} \sqrt{T_1 \cdot T_2}} \cdot(A+C)+{\color{blue} \sqrt{T_3 \cdot T_4}} \cdot (D+B)} \cdot K_x
-$$
-
-It is important to observe that the terms $\sqrt{T_1 \cdot T_2}$ and $\sqrt{T_3 \cdot T_4}$ were not cancelled, and further processing is required to compensate these in order to reduce its interference on the measuring process. If a arithmetic mean had been used, a similar situation would have happened, as the values would not have been cancelled as well.
