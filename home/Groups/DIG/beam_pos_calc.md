@@ -2,7 +2,7 @@
 title: Beam Position Calculation
 description: 
 published: 1
-date: 2024-02-29T14:01:11.005Z
+date: 2024-02-29T14:12:59.144Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T21:01:06.589Z
@@ -10,11 +10,11 @@ dateCreated: 2024-02-28T21:01:06.589Z
 
 # DIG: Beam Position Calculation
 
-See also: [[Machine:Beam_Diagnostics_and_Feedback_System|Beam Diagnostics and Feedback System]] and [[DIG:DIG|DIG Group Page]]
+See also: [Beam Diagnostics and Feedback System][link] and [DIG Group Page][link]
 
 ## General
 
-  Due to beam high speed, an efficient and fast measurement is required, allowing the control of the beam position. This is done by combining a hardware implementation using FPGA with an efficient calculation algorithm. Through simulations it is possible to compare different algorithms, finding the one that best suits the needs of the machine operation. The coordinate system used is in accordance with all the other conventions, as seen on [[Machine:Coordinate_System_and_Conventions|Coordinate System and Conventions]].
+  Due to beam high speed, an efficient and fast measurement is required, allowing the control of the beam position. This is done by combining a hardware implementation using FPGA with an efficient calculation algorithm. Through simulations it is possible to compare different algorithms, finding the one that best suits the needs of the machine operation. The coordinate system used is in accordance with all the other conventions, as seen on [Coordinate System and Conventions][link].
 
 ### Simulation Algorithm
 
@@ -26,7 +26,7 @@ Data acquisition is made through four antennas arranged on the edges of the vacu
 
     3.  Excitations are used in the algorithms, obtaining the respective positions x' and y'.
 
-![](/img/groups/dig/beam_pos_calc/Chamber_ilu.png)
+![Chamber_ilu.png](/img/groups/dig/beam_pos_calc/Chamber_ilu.png)
 
 **Figure 1**: Vacuum chamber ilustration.
 
