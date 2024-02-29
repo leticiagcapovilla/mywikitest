@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:45:47.588Z
+date: 2024-02-29T14:46:11.988Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -146,4 +146,8 @@ Considering the gains $T_1$,$T_2$,$T_3$ and $T_4$ for the lines of antennas A, B
 
 $$
 x=log\left(\frac{a \cdot d}{b \cdot c}\right) \cdot K_x
+$$
+
+$$
+=log\left(\frac{\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}} \cdot \sqrt{D^2 \cdot {\color{blue}T_3 \cdot T_4}}}{\sqrt{B^2 \cdot {\color{blue}T_3 \cdot T_4}} \cdot \sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}}}\right) \cdot K_x
 $$
