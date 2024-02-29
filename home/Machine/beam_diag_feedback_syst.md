@@ -2,7 +2,7 @@
 title: Beam Diagnostics and Feedback System
 description: 
 published: 1
-date: 2024-02-29T15:27:55.307Z
+date: 2024-02-29T15:29:17.269Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:27:15.655Z
@@ -84,7 +84,7 @@ Due to its hardware modularity, different variants of the RF BPM electronics cou
 
 ##### Firmware
 
-See also: [[DIG:Beam Position Calculation|Beam Position Calculation]]
+See also: [Beam Position Calculation][link]
 
 The core digital signal processing of the RF BPM electronics is shown in Figure 2. Amplitude and phase information of the RF signal coming from each BPM antenna is downconverted from the intermediate frequency, produced on the sampling process, to baseband.
 
