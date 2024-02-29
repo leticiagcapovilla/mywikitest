@@ -1,3 +1,13 @@
+---
+title: Discussions tutorial on FAC tools
+description: 
+published: 1
+date: 2024-02-29T13:13:30.746Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T20:57:57.724Z
+---
+
 # FAC: Discussions tutorial on FAC tools
 
 ## PyTaskManager(?)
