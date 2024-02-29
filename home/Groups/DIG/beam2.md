@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:24:25.542Z
+date: 2024-02-29T14:24:40.888Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -90,6 +90,3 @@ $$
 =\frac{(\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{D^2 \cdot {\color{blue}T_3 \cdot T_4}})-(\sqrt{B^2 \cdot {\color{blue}T_3 \cdot T_4}}+\sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}})}{\sqrt{A^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{B^2 \cdot {\color{blue}T_3 \cdot T_4}}+\sqrt{C^2 \cdot {\color{red}T_1 \cdot T_2}}+\sqrt{D^2 \cdot {\color{blue}T_3 \cdot T_4}}} \cdot K_x
 $$
 
-$$
-=\frac{{\color{red} \sqrt{T_1 \cdot T_2}} \cdot(A-C)+{\color{blue} \sqrt{T_3 \cdot T_4}} \cdot (D-B)}{{\color{red} \sqrt{T_1 \cdot T_2}} \cdot(A+C)+{\color{blue} \sqrt{T_3 \cdot T_4}} \cdot (D+B)} \cdot K_x
-$$
