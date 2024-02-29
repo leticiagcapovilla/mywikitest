@@ -1,3 +1,13 @@
+---
+title: Timing System
+description: 
+published: 1
+date: 2024-02-29T15:32:11.251Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T20:27:21.681Z
+---
+
 # Machine: Timing System
 
 ## Introduction 
@@ -71,10 +81,7 @@ In the Sirius' timing system, all required triggers and clocks are generated and
 
 **Figure 4**: The simplified system structure of Sirius timing system.
 
-The system topology of Sirius timing system is a 3-level star. 
-The first level contains the STD-EVO/EVG, that is connected to STD-EVE or STD-EVO/EVR by multimode fibre.
-The second level contains STD-EVO/EVR modules that are connected to STD-MOE and FANOUT modules by multimode fibres. The EVO/EVR also is connected to SOE or STD-SOE modules by plastic fibres. STD-MOE, SOE and STD-SOE provide triggers to high voltage device, like E-gun, septa, kickers and ramping power supplies.
-The third level contains FANOUTs that are connected to OEL by multimode fibres. OEL devices provide triggers and clocks to BPM electronics at both Booster and Storage Ring, and can also provide triggers and clocks to some special beamline devices in time resolved experiments.
+The system topology of Sirius timing system is a 3-level star. The first level contains the STD-EVO/EVG, that is connected to STD-EVE or STD-EVO/EVR by multimode fibre. The second level contains STD-EVO/EVR modules that are connected to STD-MOE and FANOUT modules by multimode fibres. The EVO/EVR also is connected to SOE or STD-SOE modules by plastic fibres. STD-MOE, SOE and STD-SOE provide triggers to high voltage device, like E-gun, septa, kickers and ramping power supplies. The third level contains FANOUTs that are connected to OEL by multimode fibres. OEL devices provide triggers and clocks to BPM electronics at both Booster and Storage Ring, and can also provide triggers and clocks to some special beamline devices in time resolved experiments.
 
 ### Fibre Network 
 
@@ -144,7 +151,7 @@ The function diagram of the Synchronizer is shown in Figure 8. The AC line is sy
 
 ![](/img/machine/timing_system/TI_event_sequencer.png)
 
-**Figure 7**: Caption
+**Figure 7**: The event sequencer.
 
 ![](/img/machine/timing_system/TI_event_synchronizer.png)
 
