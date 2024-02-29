@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T15:03:29.239Z
+date: 2024-02-29T15:03:46.844Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -153,5 +153,5 @@ $$
 $$
 
 $$
-=log\left(\left(\frac{\sqrt{\color{red}T_1 \cdot T_2} \cdot \sqrt{\color{blue}T_3 \cdot T_4}}{\sqrt{\color{blue}T_3 \cdot T_4} \cdot \sqrt{\color{red}T_1 \cdot T_2}}) \cdot (\frac{\sqrt{A²} \cdot \sqrt{B²}}{\sqrt{B²} \cdot \sqrt{C²}})) \cdot K_x
+=log \left( \left( \frac{\sqrt{\color{red}T_1 \cdot T_2} \cdot \sqrt{\color{blue}T_3 \cdot T_4}}{\sqrt{\color{blue}T_3 \cdot T_4} \cdot \sqrt{\color{red}T_1 \cdot T_2}}) \cdot (\frac{\sqrt{A²} \cdot \sqrt{B²}}{\sqrt{B²} \cdot \sqrt{C²}})) \cdot K_x
 $$
