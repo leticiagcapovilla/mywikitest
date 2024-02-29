@@ -1,3 +1,13 @@
+---
+title: High Level Applications and Virtual Accelerator
+description: 
+published: 1
+date: 2024-02-29T15:46:06.812Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T20:37:31.390Z
+---
+
 # Machine: High Level Applications and Virtual Accelerator
 
 The high level applications for the Sirius control system comprise software for monitoring and controlling parameters; parameter data archiving, visualisation and analysis; and the operations and maintenance management systems.
