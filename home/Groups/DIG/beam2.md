@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:45:25.701Z
+date: 2024-02-29T14:45:47.588Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -139,3 +139,11 @@ After the $Kx$ calibration process, the output curve is as observed on Figure 7.
 ![](/img/groups/dig/beam_pos_calc/2_1.png)
 
 **Figure 7**: Calibration curve of the Pi/Pi Method.
+
+#### Line Gain
+
+Considering the gains $T_1$,$T_2$,$T_3$ and $T_4$ for the lines of antennas A, B, C and D respectively, and calculating the mean values as the geometric mean, the $x$ equation would be:
+
+$$
+x=log\left(\frac{a \cdot d}{b \cdot c}\right) \cdot K_x
+$$
