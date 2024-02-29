@@ -1,8 +1,8 @@
 ---
-title: Beam 2
+title: Beam Position Calculation
 description: 
 published: 1
-date: 2024-02-29T15:16:59.860Z
+date: 2024-02-29T15:21:13.248Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
