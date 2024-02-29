@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T15:14:01.326Z
+date: 2024-02-29T15:14:26.574Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -184,7 +184,7 @@ Choosing a matrix of coordinates $x$ and $y$ in a 5 mm square representing posit
 
 A contour plot was made to show the inaccuracy variation on the considered area, as seen on Figure 12. The result was based on the difference between the distances to the origin, according to the following equation:
 
-$Inaccuracy = \sqrt{(x')^2 + (y')^2} - \sqrt{x^2 + y^2}$ 
+${Inaccuracy = \sqrt{(x')^2 + (y')^2} - \sqrt{x^2 + y^2}}$ 
 
 Considering $x$ and $y$ as the real positions and $x'$ and $y'$ as the calculated ones.
 
