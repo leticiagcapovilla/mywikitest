@@ -1,3 +1,13 @@
+---
+title: amplif_fac_mag_tol
+description: 
+published: 1
+date: 2024-02-29T12:39:25.310Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T20:57:51.634Z
+---
+
 # FAC: Amplification Factors and Magnet Tolerances
 
 ### Introduction
@@ -57,7 +67,7 @@ The use of amplification factors does not take into account all the effects of t
 
 ### Magnet Tolerances
 
-According to the subsection [[FAC:Amplification Factors and Magnet Tolerances#Amplification Factors | Amplification Factors]], the amplification factor of each error in each magnet depends on the orbit correction system used to counter-act its effect. Thus, for the Sirius storage ring it is possible to define three kinds of amplification factors: without orbit correction (AF w/o COR), with the slow orbit correction system (AF w/ SOFB) and with the fast orbit correction system (AF w/ FOFB); each of them is adequate to study a specific set of errors, depending on their time dependence:
+According to the subsection [Amplification Factors](#Amplification Factors), the amplification factor of each error in each magnet depends on the orbit correction system used to counter-act its effect. Thus, for the Sirius storage ring it is possible to define three kinds of amplification factors: without orbit correction (AF w/o COR), with the slow orbit correction system (AF w/ SOFB) and with the fast orbit correction system (AF w/ FOFB); each of them is adequate to study a specific set of errors, depending on their time dependence:
 
 * AF w/ SOFB: for alignment, excitation, or errors due drifts (thermal or floor) or other source which varies slowly with time (less than 0.5Hz);
 * AF w/ FOFB: for errors with medium frequency spectrum, such as ripple and low harmonics of power supplies, fundamental modes of girder vibrations (from 0.5Hz to ~200Hz);
