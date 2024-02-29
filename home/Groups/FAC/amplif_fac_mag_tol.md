@@ -1,8 +1,8 @@
 ---
-title: amplif_fac_mag_tol
+title: Amplification Factors and Magnet Tolerances
 description: 
 published: 1
-date: 2024-02-29T12:46:50.676Z
+date: 2024-02-29T12:47:26.069Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:57:51.634Z
