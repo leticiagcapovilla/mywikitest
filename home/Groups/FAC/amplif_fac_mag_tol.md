@@ -2,7 +2,7 @@
 title: amplif_fac_mag_tol
 description: 
 published: 1
-date: 2024-02-29T12:45:38.870Z
+date: 2024-02-29T12:46:50.676Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:57:51.634Z
