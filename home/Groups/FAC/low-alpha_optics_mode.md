@@ -1,16 +1,28 @@
+---
+title: Low-alpha optics mode
+description: 
+published: 1
+date: 2024-02-29T13:44:46.114Z
+tags: 
+editor: markdown
+dateCreated: 2024-02-28T20:58:11.223Z
+---
+
 # FAC:Low-alpha optics mode
 
 The idea in this optics mode is to generate a very short beam for terahertz experiments. This is accomplished by reducing the linear compaction factor $\alpha _{1}$ as much as possible. 
 
 ## Linear optics model calibration
 
-Model calibration is performed with [LOCO](/home/leticia/Documents/GPP/WikiSirius/sirius_page/docs/machine_page/Groups/FAC/loco.md) algorithm.
+Model calibration is performed with [LOCO][link] algorithm.
 
 ## Chromaticities and second-order momentum compaction factor measurements
 
 Measurement of transverse chromaticities and second-order momentum compaction factor is performed by varying the RF frequency $f_{RF}$ and registering the horizontal $f_x$, vertical $f_y$ and longitudinal $f_s$ betatron frequencies. Transverse frequencies are measured using the spectral analyzer and the longitudinal frequency is measured with the bunch-by-bunch feedback system. These measured quantities are dependent on the RF frequency according to the following expressions:
 
-$\frac{\nu_s}{\nu_{s,0}} = \left\{ 1 - \frac{4 \alpha_2}{\alpha_1^2} \left(\frac{\delta f}{f}\right)_{RF}\right\}^{1/4}$
+$$
+\frac{\nu_s}{\nu_{s,0}} = \left\{ 1 - \frac{4 \alpha_2}{\alpha_1^2} \left(\frac{\delta f}{f}\right)_{RF}\right\}^{1/4}
+$$
 
 $\xi_x \equiv \frac{\delta\nu_x}{\delta\epsilon} = \frac{\delta}{\delta\epsilon}\left(\frac{f_x}{f_{rev}}\right)$
 
