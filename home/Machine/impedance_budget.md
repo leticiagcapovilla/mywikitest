@@ -2,7 +2,7 @@
 title: Impedance Budget
 description: 
 published: 1
-date: 2024-02-29T15:48:48.453Z
+date: 2024-02-29T15:53:14.961Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-28T20:37:33.823Z
@@ -185,10 +185,11 @@ The longitudinal narrow-band impedance is shown in Figure4. In the BPM Button ge
 As a conservative approach we can assume that the bunch length in the Sirius storage ring with passive third-harmonic Landau cavities will be extended at least by a factor of two, making all geometries as HOM’s free ones. The loss factor due to single bunch was calculated as a function of bunch length for all three geometries using the GdfidL simulated $ReZ_{||}(\omega)$ or $W_{||}(s)$.
 Summary results of $\kappa_{loss}$ are shown in Table 2 for different $\sigma_s$. In the BPM Buttons design and in their optimization process, the results and experience at other synchrotron radiation facilities [6-8] were taken into account. As can be seen from Table 5 two new optimized BPM Buttons, Bell-Shaped and Flat, have the advantage over the standard Step-Shaped BPM Button at any $\sigma_s$.
 
-|| , mV/pC |
-| --- | --- |
+$\kappa _{loss}$, mV/pC
+
 |Geometry| Bell-Shaped| Step-Shaped| Flat |
-|, mm| 2.65–4.5–6.0| 2.65–4.5–6.0| 2.65–4.5–6.0 |
+| --- | --- | --- | --- |
+|$\sigma _s$, mm| 2.65–4.5–6.0| 2.65–4.5–6.0| 2.65–4.5–6.0 |
 |AlN| 4.5–0.9–0.3| 8.9–2.5–0.8| 5.6–0.9–0.2 |
 |BN| 3.6–0.8–0.4| 8.3–2.3–0.7| 4.6–0.7–0.2  |
 
@@ -196,7 +197,9 @@ Summary results of $\kappa_{loss}$ are shown in Table 2 for different $\sigma_s$
 
 The power loss goes from 1.9 to 4.4 W, for $\sigma_s$ = 2.65 mm, at $I_{av}$ = 500 mA withn M = 864 bunches and 1.73 μs revolution period $T_0$:
 
-$P_{loss} = T_0 \frac{I_{av}^2}{M}\kappa_{loss}$
+$$
+P_{loss} = T_0 \frac{I_{av}^2}{M}\kappa_{loss}
+$$
 
 
 #### Mechanical Aspects
