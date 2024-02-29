@@ -2,7 +2,7 @@
 title: Beam 2
 description: 
 published: 1
-date: 2024-02-29T14:44:32.881Z
+date: 2024-02-29T14:45:02.332Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-29T14:16:28.261Z
@@ -93,3 +93,13 @@ $$
 $$
 =\frac{\sqrt{\color{red}T_1 \cdot T_2} \cdot (A-C) + \sqrt{\color{blue}T_3 \cdot T_4} \cdot (D-B)}{\sqrt{\color{red}T_1 \cdot T_2} \cdot (A+C) + \sqrt{\color{blue}T_3 \cdot T_4} \cdot (D+B)} \cdot K_x
 $$
+
+It is important to observe that the terms $\sqrt{T_1 \cdot T_2}$ and $\sqrt{T_3 \cdot T_4}$ were not cancelled, and further processing is required to compensate these in order to reduce its interference on the measuring process. If a arithmetic mean had been used, a similar situation would have happened, as the values would not have been cancelled as well.
+
+#### Real and Calculated Values
+
+Choosing a matrix of coordinates $x$ and $y$ in a 5 mm square representing positing where the beam would pass, a corresponding matrix of the points seen by the algorithm is shown in Figure 5.
+
+![](/img/groups/dig/beam_pos_calc/1_2.png) ![](/img/groups/dig/beam_pos_calc/1_3.png)
+
+**Figure 5**: Real and calculated coordinates for the Delta/Sigma Method.
