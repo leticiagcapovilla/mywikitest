@@ -2,7 +2,7 @@
 title: Magnets
 description: 
 published: 1
-date: 2024-03-05T15:56:36.008Z
+date: 2024-03-05T15:58:33.436Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:29.287Z
@@ -134,7 +134,7 @@ The BC dipoles in the Sirius storage ring is composed of a central high field sl
 
 ###### Fieldmap Analysis
 
-Nominally BC dipoles should deflect the beam in 4.2966 Â°. A 3D model of BC has been analyzed and approved. Fieldmap corresponding to one value for the control gap has been considered, namely 3.2 mm. A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-dipoles-bc/tree/master/links-official).
+Nominally BC dipoles should deflect the beam in 4.2966 Â°. A 3D model of BC has been [analyzed](/home/Groups/FAC/fieldmap_analysis) and approved. Fieldmap corresponding to one value for the control gap has been considered, namely 3.2 mm. A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-dipoles-bc/tree/master/links-official).
 
 <br />
 
