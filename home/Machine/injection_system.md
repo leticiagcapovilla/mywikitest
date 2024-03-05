@@ -2,7 +2,7 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-03-05T15:35:25.416Z
+date: 2024-03-05T15:37:02.214Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:21.285Z
@@ -1096,6 +1096,8 @@ If we suppose these effects add in quadrature and have the same weight, the tole
 
 $\Delta x < 60 \mu m {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' < 20 \mu rad$
 
+<br />
+
 1) Booster extraction kickers (bek): A variation in the bek kick (same kick in both kickers) affects the position and angle at the NLK according to: 
 
 $\Delta x [mm] = 11.1 \Delta \theta _{bek} [mrad] and \Delta x' = 3.4 \Delta \theta _{bek} {\;} {\;}$ , thus 
@@ -1108,11 +1110,15 @@ $\Delta x [mm] = 13.9 \Delta \theta _{bes} [mrad] {\;} {\;} {\;} and {\;} {\;} {
 
 $\Delta \theta _{bes} < 4.3 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bes} / \theta _{bes} < 0.006\%$ 
 
+<br />
+
 3) Storage ring thick injection septum (stk): A variation in the stk kick affects the position and angle at the NLK according to: 
 
 $\Delta x [mm] = 5.3 \Delta \theta _{stk} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = \Delta \theta _{stk} {\;} {\;}$ , thus
 
 ${\;} {\;} \Delta \theta _{stk} < 11.4 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{stk} / \theta _{stk} < 0.01\%$ 
+
+<br />
 
 4) Storage ring thin injection septum (stn): A variation in the stn kick affects the position and angle at the NLK according to: 
 
@@ -1121,11 +1127,14 @@ $\Delta x [mm] = 3.7 \Delta \theta _{stn} [mrad] {\;} {\;} {\;} and {\;} {\;} {\
 ${\;} {\;} \Delta \theta _{stn} < 16.2 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{stn} / \theta _{stn} < 0.019\%$ 
 
 <br />
+
 5) Storage ring NLKckr (pmm): 
 
 $\Delta \theta _{pmm} < 20 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{pmm} / \theta _{pmm} < 0.7\%$
 
 For the other pulsed magnets:
+
+<br />
 
 1) Storage ring on-axis injection kicker (sik): The tolerance is calculated by requiring that the injected beam oscillation amplitude be limited to $\Delta x _{max}$ < 0.5 mm along the storage ring horizontal plane. The trajectory of the electron beam after a residual kick at sik is: 
 
@@ -1139,9 +1148,13 @@ Using $\beta _{x , sik}=18.6$ m and $\beta _{x , max}=19.3$ m, we have
 
 $\Delta \theta _{sik} < 26.4 \Delta x _{max} [\mu rad] {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{sik} / \theta _{sik} < 0.33\%$
 
+<br />
+
 2) Booster on-axis injection kicker (bik): The tolerance can be calculated in a similar way, by requiring that the injected beam oscillation amplitude be limited to Δxmax < 1.5 mm along the booster horizontal plane. When specifying the booster aperture, an allowance of 4.5 mm was considered for beam oscillations after injection. For the booster $\beta _{x , bik}=17.9$ m and βx,max=23.2 m, so we have 
 
 $\Delta \theta _{bik} < 0.074 mrad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bik} / \theta _{bik} < 0.31\%$
+
+<br />
 
 3) Booster injection septum (bis): A variation in the bis kick affects the position and angle at the injection kicker (bik) according to: 
 
