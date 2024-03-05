@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T14:59:10.663Z
+date: 2024-03-05T15:00:21.363Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:48.087Z
@@ -463,6 +463,7 @@ Optics symmetrization consists in using individual quadrupoles to correct for th
 **Figure 21**: Momentum Aperture increase due to symmetrization of the linear optics. Solid lines represent the average aperture of 20 machines with random multipole, alignment and excitation errors and dashed lines the average plus or minus one rms.
 
 ### Impact of insertion devices
+
 Insertion devices change the beam equilibrium properties through modifications of radiation integrals due to their alternating field (???). They also introduce focusing in the beam dynamics due to their intrinsic field roll-offs. This additional focusing is mitigated with appropriate tweaking of the lattice quadrupole magnets, specially the flanking ones. All quadrupole families are re-tuned in order to restore the optics symmetries, original tunes, and dispersion-free straights that the lattice had before the introduction of the IDs.
 
 
@@ -488,13 +489,14 @@ With additional optics symmetrization the dynamical and momentum apertures are a
 
 ![ONOFF MOMENTUM3](/img/machine/storage_ring/on_off_momentum3.png)
 
-**Figure 25**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with the IDS for phase2 and alignment and multipole errors, orbit, tune, coupling and optics corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring.
+**Figure 25**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with the IDS for phase2 and alignment and multipole errors, orbit, tune, coupling and optics corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring.
 
 ![MA SUPERPERIOD](/img/machine/storage_ring/ma_superperiod.svg)
 
-**Figure 26**: Momentum aperture for one superperiod of the ring for 20 machines with the IDS for phase 2 plus alignment and multipole errors, orbit, tune, coupling and optics corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring.
+**Figure 26**: Momentum aperture for one superperiod of the ring for 20 machines with the IDS for phase 2 plus alignment and multipole errors, orbit, tune, coupling and optics corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring.
 
 ## Operation Phases
+
 In this section the operation phases for Sirius from commissioning to maximum current and full insertion devices usage are described. The parameters for each phase, shown in Table 13, will be used in the following sections to estimate beam lifetime and instability thresholds and also to make an assessment of the operation conditions of the storage ring. In the commissioning phase (Phase 0) the energy loss is due only to dipoles and no insertion device is restricting the vertical acceptance of the machine. The RF voltage is provided by two super conducting cavities (SC) and the target stored current is 100 mA, distributed in a uniform-filling pattern. In the initial users mode (Phase 1), the first 12 beamlines described in the next section are included. The IDs for these beam lines include four in-vacuum undulators with 4.5 mm minimum gap (IVU19), two in-vacuum undulators with 8.0 mm minimum gap (IVU25) and four EPUs. All those insertion devices add about 145 keV to the energy loss/turn and cause a reduction in the natural emittance from 0.24 to 0.20 nm rad. The same RF cavities and stored current of the commissioning phase are assumed. The IDs for the final scenario (Phase 2) are not defined yet and it is therefore more difficult to estimate their impact on the beam parameters. It was then considered filling all low-beta sections with IVUs and the high-beta ones with EPUs, adding another 230 keV to the energy loss/turn. For the purpose of lifetime calculation and machine subsystems design, such as vacuum and RF, a maximum current of 500 mA is being considered. In this case, to have a reasonable lifetime, it is necessary a third-harmonic cavity (3HC) to flatten the potential in the RF bucket. This is essential both to increase the bunch length and the synchrotron tune spread. The former improves beam lifetime by reducing the charge density, and the latter increases beam stability by adding Landau damping. A factor of about five increase in bunch length can be achieved for a uniform bunch filling pattern. 
 
 | Parameter | Phase 0 <br />(commissioning)| Phase 1 <br />(initial user mode)| Phase 2 <br />(final user mode)|
