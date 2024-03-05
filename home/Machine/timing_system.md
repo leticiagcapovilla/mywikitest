@@ -2,7 +2,7 @@
 title: Timing System
 description: 
 published: 1
-date: 2024-03-05T18:46:05.171Z
+date: 2024-03-05T18:48:52.512Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:51.483Z
@@ -105,8 +105,8 @@ The multimode fibre is a 50 µm OM3 multimode with LC connectors. The multimode 
 *	Level-1 has the fibres connecting EVO/EVG to EVO/EVR or EVE. The length of level-1 fibres should be the same. The event timing protocol is transmitted through these fibres.
 *	Level-2 has the fibres connecting EVO to STD-MOE, STD-SOE and FANOUT modules. The modulated triggers and clocks are transmitted through these fibres. The level-2 fibres, which are used for the devices in Booster and Storage Ring, should be of the same type and have the same length. The level-2 fibres used for FANOUT of BPM electronics in Booster and Storage Ring should be of the same length. The level-2 fibres used for FANOUT of beamline triggers and clocks should be of the same length.
 *	Level-3 has the fibres from FANOUT to OEL. The modulated triggers and clocks are transmitted through these fibres. Level-3 fibres should be of the same type and length.
-Plastic optical fibre links connect the outputs of EVO/EVR to the STD-SOE. These fibres are 1 mm Plastic Optical Fibre (POF) with SC connectors. The length of plastic fibres should be the same.
-The following is the list of fibres for Sirius timing system.
+
+Plastic optical fibre links connect the outputs of EVO/EVR to the STD-SOE. These fibres are 1 mm Plastic Optical Fibre (POF) with SC connectors. The length of plastic fibres should be the same. The following is the list of fibres for Sirius timing system.
 
 |Fibre| Quantity| Length (m) |
 | --- | --- | --- |
@@ -177,6 +177,7 @@ According to the physical requirements of Sirius' Timing System, the main parame
 * RF divider is set to 4, so that event clock is the RF clock divided by 4; 
 * MUX divider in the Synchronizer is set to 4968 to generate CROC clock;
 * AC divider is set to 30 to generate 2 Hz machine repetition rate.
+
 The output of the Synchronizer in STD-EVO/EVG is the trigger of the Event Sequencer, so every event code of STD-EVO/EVG output could be synchronized with the AC-line input and CROC. 
 
 In STD-EVO/EVR, the key blocks are Triggers, TB Outputs and SFP Outputs.
