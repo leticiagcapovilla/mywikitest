@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-05T16:57:08.317Z
+date: 2024-03-05T17:00:42.105Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -467,12 +467,12 @@ Using these equation above is possible calculate the longitudinal density distri
 To calculate the improvement in Touschek lifetime, consider the expression for the Touschek loss rate².
 
 $$
-\dot{N} = \overline {\upsilon \sigma} \int_{V}^{} \rho^2 \, dV
+\dot{N} = \overline{\upsilon \sigma} \int_{V}^{} \rho^2 \, dV
 $$
 
-where $\overline{v}$ is the probability for scattering beyond the RF acceptance <b>ε<sub>RF</sub></b>; <b>ρ</b> is the volume charge density.
+where $\overline{\upsilon \sigma}$ is the probability for scattering beyond the RF acceptance <b>ε<sub>RF</sub></b>; <b>ρ</b> is the volume charge density.
 
-The scattering probability **${\overline{\upsilon \sigma}}$** is proportional to <b>1/ε<sub>RF</sub><sup>2</sup></b>, so it is necessary to include the effect of the harmonic voltage on the RF acceptance <b>ε<sub>RF</sub></b>. The ratio of lifetime with and without harmonic voltage can be found from
+The scattering probability $\overline{\upsilon \sigma}$ is proportional to <b>1/ε<sub>RF</sub><sup>2</sup></b>, so it is necessary to include the effect of the harmonic voltage on the RF acceptance <b>ε<sub>RF</sub></b>. The ratio of lifetime with and without harmonic voltage can be found from
 
 $$
 R = \frac{\tau_{hc}}{\tau} = \frac{\epsilon_{hc}^2}{\epsilon_{RF}^2}\frac{\int \rho^2(z)\,dz}{\int \rho_{hc}^2(z)\,dz}
