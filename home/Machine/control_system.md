@@ -2,7 +2,7 @@
 title: Control System
 description: 
 published: 1
-date: 2024-03-05T18:55:00.249Z
+date: 2024-03-05T19:03:24.155Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T18:55:00.249Z
@@ -24,9 +24,7 @@ This page is a synopsis of all the content related to Sirius control system. Add
 
 The figure below shows a conceptual overview of the control system architecture.
 
-
-[[File:Sirius control system architecture.png|center|900px]]
-
+![Sirius_control_system_architecture.png](/img/machine/control_system/Sirius_control_system_architecture.png)
 
 Next to the accelerator components, there are various types of hardware that interact with them, collecting information or providing configuration parameters and setpoints. These hardware entities consists of in-house developments or commercial equipments, and will implement all fast closed-loop controls. They will communicate to upper levels of the control system through serial interfaces (RS-485, RS-232) or Ethernet.
 
