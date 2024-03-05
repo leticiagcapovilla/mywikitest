@@ -2,10 +2,10 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-02-29T16:05:46.147Z
+date: 2024-03-05T13:35:59.919Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T13:34:03.079Z
+dateCreated: 2024-03-04T20:05:48.087Z
 ---
 
 # Machine: Storage Ring
@@ -17,12 +17,12 @@ The Sirius 5BA lattice design comprises a 5-fold symmetric configuration with al
 
 Links below point to drawings with family names of lattice elements for each accelerator section
 
-* AS - Accelerator System drawing PDF file (sectors split in PDF files)
-* SI - Storage Ring drawing PDF file
-* TS - Booster to Storage Ring transport line drawing PDF file
-* BO - Booster drawing PDF file
-* TB - Linac to Booster transport line drawing PDF file
-* LI - Linac drawing PDF file
+* [AS - Accelerator System drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-AS.pdf) PDF file [(sectors split in PDF files)](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings)
+* [SI - Storage Ring drawing]((https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-SI.pdf)) PDF file
+* [TS - Booster to Storage Ring transport line drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-TS.pdf) PDF file
+* [BO - Booster drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-BO.pdf) PDF file
+* [TB - Linac to Booster transport line drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-TB.pdf) PDF file
+* [LI - Linac drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-LI.pdf) PDF file
 
 ## General Layout
 Sirius will be comprised of an injection system and a 3 GeV electron storage ring. The injection system is composed of a 150 MeV linear accelerator (LINAC) and a full energy booster ring, providing top-up electron filling to the main storage ring. The booster and the storage ring will be concentric and will share the same tunnel. 
@@ -112,6 +112,7 @@ In the arc sections the dispersion function reaches a maximum of 8 cm. A pair of
 | Radiation power from IDS | 200.0 | kW |
 | Total radiation power | 435.5 | kW |
 
+
 | Parameter | Horizontal | Vertical | Longitudinal | Unit |
 | --- | --- | --- | --- | --- |
 | Damping partition number | 1.30 | 1.00 | 1.70 |  |
@@ -137,6 +138,7 @@ In the arc sections the dispersion function reaches a maximum of 8 cm. A pair of
 | Bending radius | 17.738 | m |
 | Critical energy | 3.38 | keV |
 
+
 | Parameter | B1 | B2 | BC_LF | Unit |
 | --- | --- | --- | --- | --- |
 | Number of dipoles | 40 | 40 | 40 |  |
@@ -150,6 +152,7 @@ In the arc sections the dispersion function reaches a maximum of 8 cm. A pair of
 | Magnetic peak field | 3.2 | T |
 | Bending radius @ peak | 3.127 | m |
 | Critical energy @ peak | 19.15 | keV |
+
 
 | Parameter | BC_HF | Unit |
 | --- | --- | --- |
@@ -210,7 +213,7 @@ $BSCH (s) = max (BSC_b^x (s), BSC_e^x (s))$
 ### Beam stay clear at ID straight sections
 The values of the beta functions and beam-stay-clear presented in this table are considered to be the specification values for SIRIUS beam-stay-clear. For this reason, the beta function shown here may be different from other tables, which will be in accordance with the latest storage ring model. 
 
-| Straight Type | $\beta_x$[m] | BSCx [mm] | $\beta_y$[m] | BSCy [mm] |
+| Straight Type | $\beta_x$ [m] | BSCx [mm] | $\beta_y$ [m] | BSCy [mm] |
 | --- | --- | --- | --- | --- |
 | SA | 17.78 | ±11.54 | 3.57 | ±2.84 |
 | SB | 1.36 | ±3.20 | 1.60 | ±1.90 |
@@ -233,10 +236,10 @@ where $\beta _0$ is the value of the betatron function at the center of the stra
 
 ![NONLIN BSC](/img/machine/storage_ring/nonlinear_beam_sc.svg)
 
-**Figure 6**: Beam-stay-clear calculated from tracking simulations including nonlinear elements for SI.V14.C03. Note the asymmetry introduced by the optimization method, in which the negative side of the dynamic aperture is maximized at the high straight sections to improve the injection process.
+**Figure 6**: Beam-stay-clear calculated from tracking simulations including nonlinear elements for SI.V14.C03. Note the asymmetry introduced by the optimization method, in which the negative side of the dynamic aperture is maximized at the high $\beta_x$ straight sections to improve the injection process.
 
 ## Error tolerance specifications 
-After optimization of the bare lattice, errors are introduced in the model to study their influence on the beam stability and quality. This is accomplished with the flexible AcceleratorToolbox (AT) in MATLAB. Aftwerwards these imperfect machine models are exported as flat-lattice files and used in a home-developed tracking code based on AT/TracyIII for performance optimization. From these tracking simulations, which are presented in the subsequent sections, the following error tolerance specifications were determined to be acceptable: 
+After optimization of the bare lattice, errors are introduced in the model to study their influence on the beam stability and quality. This is accomplished with the flexible [AcceleratorToolbox (AT)][link] in MATLAB. Aftwerwards these imperfect machine models are exported as flat-lattice files and used in a home-developed tracking code based on AT/TracyIII for performance optimization. From these tracking simulations, which are presented in the subsequent sections, the following error tolerance specifications were determined to be acceptable: 
 
 ### Multipole errors
 We have simulated higher-order systematic and random multipole errors in all dipoles, quadrupoles, sextupoles and corrector magnets. The systematic multipole components for these magnets are taken from approved 3D magnetic models. Normal and skew random errors were chosen such that, at x = 12 mm from the reference orbit, their total residual fields deviate 100 and 30 ppm from their nominal values, respectively. Table 5, Table 4, Table 7, Table 6 shows the sets of systematic and random multipole errors used in the tracking simulations. The effects of higher-order multipoles associated with insertion device modeling are introduced separately in the form of non-linear kick maps for each device. 
