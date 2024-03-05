@@ -2,7 +2,7 @@
 title: High Level Applications and Virtual Accelerator
 description: 
 published: 1
-date: 2024-03-05T21:42:45.306Z
+date: 2024-03-05T21:44:25.984Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:16.484Z
@@ -191,7 +191,7 @@ We need to discuss how to store and retrieve data such as excitation curves. A D
 
 ## Machine Applications
 
-Machine applications are soft IOCs running on the control system whose purpose is to process low level PVs, providing derived high level PVs for client applications. There will be a number of such machines applications: <code>sirius-vaca</code>, <code>si-ap-currlt</code>, <code>si-tune</code>, <code>si-sofb</code>, <code>si-fam-ma</code>, and so on.
+Machine applications are soft IOCs running on the control system whose purpose is to process low level PVs, providing derived high level PVs for client applications. There will be a number of such machines applications: `sirius-vaca`, `si-ap-currlt`, `si-tune`, `si-sofb`, `si-fam-ma`, and so on.
 
 ### Virtual accelerator
 
