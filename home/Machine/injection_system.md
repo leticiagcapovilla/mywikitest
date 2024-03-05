@@ -2,7 +2,7 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-03-05T15:37:02.214Z
+date: 2024-03-05T15:40:38.667Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:21.285Z
@@ -1092,6 +1092,8 @@ The requirements for the 3 GeV kickers and septa flat-top and pulse-to-pulse rep
 
 6) BTS transport line magnet vibrations and ripple
 
+<br /> 
+
 If we suppose these effects add in quadrature and have the same weight, the tolerance for each contribution becomes: 
 
 $\Delta x < 60 \mu m {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' < 20 \mu rad$
@@ -1103,6 +1105,8 @@ $\Delta x < 60 \mu m {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' < 20 \mu rad$
 $\Delta x [mm] = 11.1 \Delta \theta _{bek} [mrad] and \Delta x' = 3.4 \Delta \theta _{bek} {\;} {\;}$ , thus 
 
 $\Delta \theta _{bek} < 5.4 \mu rad  or  \Delta \theta _{bek} / \theta _{bek} < 0.3%$
+
+<br />
 
 2) Booster extraction septa (bes): A variation in the bes kick (same kick in both septa) affects the position and angle at the NLK according to: 
 
@@ -1132,9 +1136,9 @@ ${\;} {\;} \Delta \theta _{stn} < 16.2 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} 
 
 $\Delta \theta _{pmm} < 20 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{pmm} / \theta _{pmm} < 0.7\%$
 
-For the other pulsed magnets:
-
 <br />
+
+For the other pulsed magnets:
 
 1) Storage ring on-axis injection kicker (sik): The tolerance is calculated by requiring that the injected beam oscillation amplitude be limited to $\Delta x _{max}$ < 0.5 mm along the storage ring horizontal plane. The trajectory of the electron beam after a residual kick at sik is: 
 
@@ -1177,11 +1181,13 @@ and as a worst-case estimate we take sin[φ(s)-φ0]=1, and the residual kick at 
 $\Delta \theta _0 < 0.1 [\epsilon _x /\beta _0] ^{1/2}$ <br /> for $\epsilon _x = 0.27 nm.rad {\;} {\;} {\;} and {\;} {\;} {\;} \beta _0 = 20 m$, we have $\Delta \theta _0 < 0.37 \mu rad, {\;} {\;} {\;} or {\;} {\;} {\;} \int B .dl < 3.7 G.cm{\;} {\;}$ at ${\;} {\;}E = 3 GeV.$
 
 <br />
+
 For the **booster extraction septum**, we set the allowed leakage field so that the orbit distortion amplitude is limited to 0.3 mm. 
 
 $\Delta x (s) = \Delta \theta _0 [\beta _0 /\beta (s)] ^{1/2} sin[\varphi (s) - \varphi _0] < 1.5 mm {\;} {\;} {\;} ,$ then <br /> for $\beta _{x , max} = 23.2 m {\;} {\;} {\;} and {\;} {\;} {\;} \beta _0 = 9.2 m$, we have $\Delta \theta _0 < 20 \mu rad, {\;} {\;} {\;} or {\;} {\;} {\;} \int B .dl < 200 G.cm{\;} {\;}$ at ${\;} {\;}E = 3 GeV.$
 
 <br />
+
 For the **booster injection septum**, we set the allowed leakage field so that the orbit distortion amplitude is limited to 1.5 mm. 
 
 $\Delta x (s) = \Delta \theta _0 [\beta _0 /\beta (s)] ^{1/2} sin[\varphi (s) - \varphi _0] < 1.5 mm {\;} {\;} {\;} ,$ then <br /> for $\beta _{x , max} = 23.2 m {\;} {\;} {\;} and {\;} {\;} {\;} \beta _0 = 9.2 m$, we have $\Delta \theta _0 < 0.1 mrad, {\;} {\;} {\;} or {\;} {\;} {\;} \int B .dl < 50 G.cm{\;} {\;}$ at ${\;} {\;}E = 150 MeV.$
