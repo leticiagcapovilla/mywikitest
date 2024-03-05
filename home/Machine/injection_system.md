@@ -2,7 +2,7 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-03-05T15:30:03.395Z
+date: 2024-03-05T15:31:22.312Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:21.285Z
@@ -1081,16 +1081,20 @@ and as a worst-case estimate we take sin[φ(s)-φ0]=1, and the residual kick at 
 
 $\Delta \theta _0 < 0.1 [\epsilon _x /\beta _0] ^{1/2}$ <br /> for $\epsilon _x = 0.27 nm.rad {\;} {\;} {\;} and {\;} {\;} {\;} \beta _0 = 20 m$, we have $\Delta \theta _0 < 0.37 \mu rad, {\;} {\;} {\;} or {\;} {\;} {\;} \int B .dl < 3.7 G.cm{\;} {\;}$ at ${\;} {\;}E = 3 GeV.$
 
+<br />
 For the **booster extraction septum**, we set the allowed leakage field so that the orbit distortion amplitude is limited to 0.3 mm. 
 
 $\Delta x (s) = \Delta \theta _0 [\beta _0 /\beta (s)] ^{1/2} sin[\varphi (s) - \varphi _0] < 1.5 mm {\;} {\;} {\;} ,$ then <br /> for $\beta _{x , max} = 23.2 m {\;} {\;} {\;} and {\;} {\;} {\;} \beta _0 = 9.2 m$, we have $\Delta \theta _0 < 20 \mu rad, {\;} {\;} {\;} or {\;} {\;} {\;} \int B .dl < 200 G.cm{\;} {\;}$ at ${\;} {\;}E = 3 GeV.$
 
+<br />
 For the **booster injection septum**, we set the allowed leakage field so that the orbit distortion amplitude is limited to 1.5 mm. 
 
 $\Delta x (s) = \Delta \theta _0 [\beta _0 /\beta (s)] ^{1/2} sin[\varphi (s) - \varphi _0] < 1.5 mm {\;} {\;} {\;} ,$ then <br /> for $\beta _{x , max} = 23.2 m {\;} {\;} {\;} and {\;} {\;} {\;} \beta _0 = 9.2 m$, we have $\Delta \theta _0 < 0.1 mrad, {\;} {\;} {\;} or {\;} {\;} {\;} \int B .dl < 50 G.cm{\;} {\;}$ at ${\;} {\;}E = 150 MeV.$
 
+<br />
 
 #### Half-sine pulse duration
+
 If we define the pulse amplitude by 
 
 $A = A_0 cos(\pi t/T)$
