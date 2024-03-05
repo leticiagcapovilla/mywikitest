@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T13:35:59.919Z
+date: 2024-03-05T13:49:14.058Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:48.087Z
@@ -239,7 +239,7 @@ where $\beta _0$ is the value of the betatron function at the center of the stra
 **Figure 6**: Beam-stay-clear calculated from tracking simulations including nonlinear elements for SI.V14.C03. Note the asymmetry introduced by the optimization method, in which the negative side of the dynamic aperture is maximized at the high $\beta_x$ straight sections to improve the injection process.
 
 ## Error tolerance specifications 
-After optimization of the bare lattice, errors are introduced in the model to study their influence on the beam stability and quality. This is accomplished with the flexible [AcceleratorToolbox (AT)][link] in MATLAB. Aftwerwards these imperfect machine models are exported as flat-lattice files and used in a home-developed tracking code based on AT/TracyIII for performance optimization. From these tracking simulations, which are presented in the subsequent sections, the following error tolerance specifications were determined to be acceptable: 
+After optimization of the bare lattice, errors are introduced in the model to study their influence on the beam stability and quality. This is accomplished with the flexible [AcceleratorToolbox (AT)](http://10.39.50.85:3000/en/home/Groups/FAC/matlab_at) in MATLAB. Aftwerwards these imperfect machine models are exported as flat-lattice files and used in a home-developed tracking code based on AT/TracyIII for performance optimization. From these tracking simulations, which are presented in the subsequent sections, the following error tolerance specifications were determined to be acceptable: 
 
 ### Multipole errors
 We have simulated higher-order systematic and random multipole errors in all dipoles, quadrupoles, sextupoles and corrector magnets. The systematic multipole components for these magnets are taken from approved 3D magnetic models. Normal and skew random errors were chosen such that, at x = 12 mm from the reference orbit, their total residual fields deviate 100 and 30 ppm from their nominal values, respectively. Table 5, Table 4, Table 7, Table 6 shows the sets of systematic and random multipole errors used in the tracking simulations. The effects of higher-order multipoles associated with insertion device modeling are introduced separately in the form of non-linear kick maps for each device. 
