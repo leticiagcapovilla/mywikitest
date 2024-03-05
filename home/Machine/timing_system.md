@@ -2,13 +2,15 @@
 title: Timing System
 description: 
 published: 1
-date: 2024-02-29T16:11:34.423Z
+date: 2024-03-05T18:46:05.171Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T20:27:21.681Z
+dateCreated: 2024-03-04T20:05:51.483Z
 ---
 
 # Machine: Timing System
+
+<br />
 
 ## Introduction 
 
@@ -19,6 +21,8 @@ Furthermore, the timing system needs to perform the Sirius machine operation seq
 ![](/img/machine/timing_system/TI_event_based_system.png)
 
 **Figure 1**: Event-based timing system.
+
+<br />
 
 ## Physical Requirements 
 
@@ -45,10 +49,8 @@ Table 1 shows the Sirius parameters concerning timing system.
 
 **Table 1**: Sirius parameters.
 
-
 > Note: This is defined as the jitter of the E-gun trigger relative to the RF clock. The experience from the high voltage modulators of the existing LNLS Linac showed us that equipment are also quite sensitive to jitter. We believe the amplitude modulation (or ripple) in the high voltage pulses are responsible for that. The closer to 50 ps RMS the modulators jitter are, the better.
 {.is-info}
-
 
 The detailed machine operation sequence is shown in Figure 2, in accordance to Sirius' energy ramp scheme.
 
@@ -68,10 +70,14 @@ The E-gun trigger is synchronized with CROC so that the beam can be injected int
 
 **Figure 3**: Relation between different clocks.>
 
+<br />
+
 ###  Machine Operation Mode 
 
 Top-up is foreseen to be the Sirius normal operation mode after the commissioning phase. According to its requirement, timing system should support the injection to any bucket.
 The bucket selection is supported by low-level timing software, and the beam filling pattern is realized in top-level injection software.
+
+<br />
 
 ## System Structure 
 
@@ -84,6 +90,8 @@ In the Sirius' timing system, all required triggers and clocks are generated and
 **Figure 4**: The simplified system structure of Sirius timing system.
 
 The system topology of Sirius timing system is a 3-level star. The first level contains the STD-EVO/EVG, that is connected to STD-EVE or STD-EVO/EVR by multimode fibre. The second level contains STD-EVO/EVR modules that are connected to STD-MOE and FANOUT modules by multimode fibres. The EVO/EVR also is connected to SOE or STD-SOE modules by plastic fibres. STD-MOE, SOE and STD-SOE provide triggers to high voltage device, like E-gun, septa, kickers and ramping power supplies. The third level contains FANOUTs that are connected to OEL by multimode fibres. OEL devices provide triggers and clocks to BPM electronics at both Booster and Storage Ring, and can also provide triggers and clocks to some special beamline devices in time resolved experiments.
+
+<br />
 
 ### Fibre Network 
 
@@ -112,6 +120,8 @@ The following is the list of fibres for Sirius timing system.
 
 **Table 2**: Fibres for Sirius timing system.
 
+<br />
+
 ###  Interfaces to Hardware Devices 
 
 The detailed interface diagram of Sirius timing system is shown in Figure 6.
@@ -122,6 +132,8 @@ The detailed interface diagram of Sirius timing system is shown in Figure 6.
 
 The outputs of STD-EVE are LVTTL level with $50 \Omega$ impedance, and the interface of beam diagnostic devices in LINAC, TB (transport line Linac-Booster), TS (transport line Booster-Storage Ring) and streak camera should be compatible with LVTTL level with $50 \Omega$ impedance.
 The outputs of STD-MOE and STD-SOE are TTL level with $50 \Omega$ impedance. The electrical standard of the OEL outputs should be designed according to BPM electronics and beamline device requirements.
+
+<br />
 
 ### Hardware Modules 
 
@@ -138,6 +150,8 @@ The hardware modules of Sirius timing system, STD-EVO and STD-EVE, in standalone
 |OEL| 26| 1 SFP input <br />12 LVDS outputs  |
 
 **Table 3**: Hardware modules of Sirius timing system.
+
+<br />
 
 ## Software System Design 
 
@@ -177,6 +191,8 @@ The SFP Outputs maps the outputs of Triggers or Distributed Bus to any OUT0 – 
 
 **Figure 9**: STD-EVR triggers block
 
+<br />
+
 ### Event Code Definition 
 
 Following is the definition of event code in Sirius timing system:
@@ -188,11 +204,15 @@ Following is the definition of event code in Sirius timing system:
 * 0x07 for the trigger of Booster injection
 * 0x08 for the trigger of Storage ring injection 
 
+<br />
+
 ### Bucket Selection Design 
 
 The arbitrary bucket injection is realized by changing the timestamp of event code in sequence RAM and the RF delay of the E-gun trigger. 
 Assuming that the injection bucket number is N, the timestamp offset related to the bucket number zero in the sequence RAM needs to change REM(N / 4), and the RF delay step (1/20 event clock) of E-gun triggers needs to changed 5*MOD(N / 4).
 The timestamp of the event code 0x1 is fixed when the injection bucket number changing, but the address of event code 0x2, 0x3, 0x4, 0x6, 0x7 and 0x8 should be changed with the bucket number.
+
+<br />
 
 ### Software 
 
@@ -245,6 +265,8 @@ Some high level PVs related to injection proccess already defined:
 - TS:TI:BPM:ENABLED : sets when to pulse the BPMs for the Booster-Storage Ring transport line [0|1]
 - TS:TI:BPM:DELAY : sets the delay of the pulse for the BPMs for the Booster-Storage Ring transport line [second]
 
+<br />
+
 ##  Status 
 
 ### SINAP Modules
@@ -252,15 +274,21 @@ Some high level PVs related to injection proccess already defined:
 
 02/03/2015 - Modules stopped in red channel at the Brazilian customs.
 
+<br />
+
 ### LNLS Modules
 
 12/03/2015 - Modules produced and received. Tests started.
+
+<br />
 
 ### Low-level Software (EPICS IOC)
 
 13/02/2015 - EPICS IOC developed by SINAP was received. 
 
 27/02/2015 - Initial test in EPICS IOC was done and it is ok. Waiting for SINAP Modules to continue the tests.
+
+<br />
 
 ### High-level software
 
