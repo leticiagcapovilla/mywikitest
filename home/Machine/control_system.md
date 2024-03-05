@@ -2,7 +2,7 @@
 title: Control System
 description: 
 published: 1
-date: 2024-03-05T20:27:11.287Z
+date: 2024-03-05T20:31:40.596Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T18:55:00.249Z
@@ -40,9 +40,9 @@ A high-performance computer network infrastructure will connect all SBCs and oth
 
 ## In-house hardware design
 
-Some groups at LNLS are developing hardware solutions for Sirius. In order to standardize communication to all these hardware, CON developed a lightweight application layer protocol named [[CON:Basic_Small_Messages_Protocol_(BSMP)|Basic Small Messages Protocol (BSMP)]]. It may be used over several communication links (current uses are over RS-485 and Ethernet).
+Some groups at LNLS are developing hardware solutions for Sirius. In order to standardize communication to all these hardware, CON developed a lightweight application layer protocol named [Basic Small Messages Protocol (BSMP)][link]. It may be used over several communication links (current uses are over RS-485 and Ethernet).
 
-[[CON:CON|Controls group]] is responsible for the development of [[CON:PUC|general-purpose analog and digital hardware control interfaces]], an [[CON:CON_Serial_Cape|adapter board with UARTs for BeagleBone Black]] and a [[CON:MBTemp|module for reading temperature data from Pt100 sensors]].
+[[CON:CON|Controls group]] is responsible for the development of [|general-purpose analog and digital hardware control interfaces][link], an [adapter board with UARTs for BeagleBone Black][link] and a [module for reading temperature data from Pt100 sensors][link].
 
 <br />
 
@@ -50,26 +50,26 @@ Some groups at LNLS are developing hardware solutions for Sirius. In order to st
 
 As mentioned before, EPICS is the default software environment for exchange of data between client and server control applications. See [[CON:Sirius_control_system_interfaces|Sirius control system interfaces]] for more information about server-side EPICS software, its conventions and how they are related to hardware devices.
 
-This Wiki also have a page dedicated to [[Machine:High_Level_Applications_and_Virtual_Accelerator|Sirius high level applications]].
+This Wiki also have a page dedicated to [Sirius high level applications](/home/Machine/high_level_app_virt_acc).
 
-[[CON:Sirius_control_system_network|Sirius control system network]] contains all the details about control system underlying computer network.
+[Sirius control system network][link] contains all the details about control system underlying computer network.
 
 <br />
 
-## [[Machine:Power Supply IOCs|Power Supply IOCs]]
+## [Power Supply IOCs][link]
 {{Machine:Power Supply IOCs}}
 
 <br />
 
-## [[Machine:BPM IOCs|BPM IOCS]]
+## [BPM IOCS][link]
 {{Machine:BPM IOCs}}
 
 <br />
 
-##  [[Machine:Timing Devices IOCs| Timing Devices IOCs]] 
+##  [Timing Devices IOCs][link]
 {{Machine:Timing Devices IOCs}}
 
 <br />
 
-##  [[Machine:High Level Timing IOC | High Level Timing IOC]] 
+##  [High Level Timing IOC][link]
 {{Machine:High Level Timing IOC}}
