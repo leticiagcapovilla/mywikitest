@@ -2,21 +2,27 @@
 title: Magnets
 description: 
 published: 1
-date: 2024-02-28T19:34:05.215Z
+date: 2024-03-05T15:48:14.088Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T15:03:10.955Z
+dateCreated: 2024-03-04T20:05:29.287Z
 ---
 
 # Machine: Magnets
+
+<br />
 
 ## Storage Ring Magnets
 
 At this point all magnets have been designed, simulated and approved. A few prototype magnets (quadrupoles) have been measured mechanical and magnetically. Overall magnetic measurements with rotating coil and Hall probe systems are still pending.
 
+<br />
+
 ### Storage Ring Dipoles
 
 Dipoles in Sirius are of three distinct families: B1, B2 and BC. The first two, B1 and B2, are electromagnetic dipoles, whereas BC is a NdFeB permanent magnet dipole made of a thin 3.2 T slice sandwiched between two low field sector dipoles.
+
+<br />
 
 #### SI Dipole Magnet Specifications
 
@@ -68,6 +74,8 @@ Main parameters for the electromagnetic dipoles B1 and B2 are shown in Table 1, 
 
 **Table 2**: Storage ring BC dipole main parameters.
 
+<br />
+
 ##### Electric parameters
 
 |Parameters |B1| B2| Unit |
@@ -79,6 +87,7 @@ Main parameters for the electromagnetic dipoles B1 and B2 are shown in Table 1, 
 
 **Table 3**: Storage ring dipoles B1 and B2 electric parameters
 
+<br />
 
 ##### Multipole Errors
 
@@ -92,6 +101,8 @@ Main parameters for the electromagnetic dipoles B1 and B2 are shown in Table 1, 
 
 **Table 4**: Storage ring dipole multipole errors. Contribution of multipolar components relative to main dipolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
 
+<br />
+
 ##### Alignment and Excitation Errors
 
 |Parameters |Dipole Unit Blocks| Girders| Unit |
@@ -103,12 +114,13 @@ Main parameters for the electromagnetic dipoles B1 and B2 are shown in Table 1, 
 
 **Table 5**: Maximum absolute value of random alignment and excitation errors for Storage Ring Dipoles. The errors are generated with a Gaussian distribution truncated at ±1σ.
 
+<br />
+
 ####  SI Dipole Magnet 3D Models
 
 ##### BC
 
 The BC dipoles in the Sirius storage ring is composed of a central high field slice with 1.1395 Â° of deflection and two flanking low field sectors with 1.57855 Â°. There is a control gap in the back of the dipole that can be used to adjust the magnetic field. Additionally, the low field poles can be moved transversely to adjust the integrated field and the pole between the low and high field sectors can be rotated about the longitudinal axis to correct the integrated quadrupole gradient.
-
 
 ![](/img/machine/magnets/SI_magnet_dipole_BC_drawing.png)
 
@@ -118,9 +130,13 @@ The BC dipoles in the Sirius storage ring is composed of a central high field sl
 
 **Figure 2**: Field of the BC dipole half model.
 
+<br />
+
 ###### Fieldmap Analysis
 
 Nominally BC dipoles should deflect the beam in 4.2966 Â°. A 3D model of BC has been analyzed and approved. Fieldmap corresponding to one value for the control gap has been considered, namely 3.2 mm. A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-dipoles-bc/tree/master/links-official).
+
+<br />
 
 ###### Segmented Model
 
@@ -162,9 +178,13 @@ In order to take into account the s-dependent field profile of the BC dipoles a 
 
 **Figure 5**: Field of the B1 dipole half model.
 
+<br />
+
 ###### Fieldmap Analysis
 
 Nominally B1 dipoles should deflect the beam in 2.7553 Â°. So far a preliminary 3D model of B1 has been analyzed and approved. Field map corresponding to the nominal excited field has been considered. The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-dipoles-b1/tree/master/links-official/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [accessed this folder](https://github.com/lnls-ima/si-dipoles-bc/tree/master/links-official).
+
+<br />
 
 ###### Segmented Model
 
@@ -206,9 +226,13 @@ In order to take into account the s-dependent field profile of the B1 dipoles a 
 
 **Figure 5**: Field of the B1 dipole half model.
 
+<br />
+
 ###### Fieldmap Analysis
 
 Nominally B1 dipoles should deflect the beam in 2.7553 Â°. So far a preliminary 3D model of B1 has been analyzed and approved. Field map corresponding to the nominal excited field has been considered. The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-dipoles-b1/tree/master/links-official/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [accessed this folder](https://github.com/lnls-ima/si-dipoles-b1/tree/master/links-official). 
+
+<br />
 
 ###### Segmented Model
 
@@ -240,6 +264,8 @@ In order to take into account the s-dependent field profile of the B1 dipoles a 
 
 **Table 7**: SI B1 dipole segmented model.
 
+<br />
+
 ##### B2
 
 ![](/img/machine/magnets/SI_magnet_dipole_B2_drawing.png)
@@ -250,9 +276,13 @@ In order to take into account the s-dependent field profile of the B1 dipoles a 
 
 **Figure 8**: Field of the B2 dipole half model.
 
+<br />
+
 ###### Fieldmap Analysis
 
 Nominally B1 dipoles should deflect the beam in 4.0964 Â°. So far a preliminary 3D model of B2 has been analyzed and approved. Field map corresponding to the nominal excited field has been considered. The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-dipoles-b2/tree/master/links-official/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [accessed this folder](https://github.com/lnls-ima/si-dipoles-b2/tree/master/links-official).
+
+<br />
 
 ###### Segmented Model
 
@@ -287,13 +317,19 @@ In order to take into account the s-dependent field profile of the B2 dipoles a 
 
 **Table 8**: SI B2 dipole segmented model.
 
+<br />
+
 #### SI Dipole Magnet Measurements
 
 A summary of magnet field measurements of SI BC dipole. The Hall probe measurement files can be found at [this folder](https://github.com/lnls-ima/si-dipoles-bc/tree/master/model-13/measurement/magnetic/hallprobe).
 
+<br />
+
 ##### BC
 
 Analysis of BC hallprobe measurements. The analysis results can be found at [this folder](https://github.com/lnls-ima/si-dipoles-bc/tree/master/model-13/analysis/hallprobe/production) with subfolders x0-0p0079mm which contains results based on Runge-Kutta trajectory and x0-0p0079mm-reftraj holds the results based on reference trajectory. The initial x coordinate used was + 79um. The reference point is 7.703087 mm for reference trajectory.
+
+<br />
 
 ###### Summary
 
@@ -330,19 +366,23 @@ KL: - 0.31267 1/m
 
 SL: -0.35037 1/m²
 
+<br />
+
 ###### Deflection Angle
 
 ![](/img/machine/magnets/si-dipoles-bc-deflection-angle.svg)
 
 **Figure 10**: Deflection angle calculated with reference trajectory, initial point at x = +79 um and the reference point is 7.703087mm.
 
-###### Integrated Quadrupole
+<br />
 
+###### Integrated Quadrupole
 
 ![](/img/machine/magnets/si-dipoles-bc-integrated-quadrupole.svg)
 
 **Figure 11**: Integrated quadrupole calculated with reference trajectory, initial point at x = +79 um and the reference point is 7.703087mm.
 
+<br />
 
 ###### Integrated Sextupole
 
@@ -350,9 +390,13 @@ SL: -0.35037 1/m²
 
 **Figure 12**: Integrated sextupole calculated with reference trajectory, initial point at x = +79 um and the reference point is 7.703087mm.
 
+<br />
+
 ##### B1
 
 Analysis of B1 hallprobe measurements. The analysis results can be found at [this folder](https://github.com/lnls-ima/si-dipoles-b1/tree/master/model-09/analysis/hallprobe/production) with subfolders x0-8p527mm which contains results based on Runge-Kutta trajectory and x0-8p527mm-reftraj holds the results based on reference trajectory. The initial point of reference trajectory is 8.5270 mm and reference point is 13.6929 mm.
+
+<br />
 
 ###### Summary
 
@@ -387,11 +431,15 @@ Deflection angle: 1.37765 deg
 KL: -0.32289 1/m
 SL: -0.10763 1/m²
 
+<br />
+
 ###### Deflection Angle
 
 ![](/img/machine/magnets/si-dipoles-b1-deflection-angle.svg)
 
 **Figure 13**: Deflection angle at current 403.6 A calculated with reference trajectory, initial point at x = 8.527 mm and reference point is 13.6929 mm.
+
+<br />
 
 ###### Integrated Quadrupole
 
@@ -399,15 +447,21 @@ SL: -0.10763 1/m²
 
 **Figure 14**: Integrated gradient at current 403.6 A calculated with reference trajectory, initial point at x = 8.527 mm and reference point is 13.6929 mm.
 
+<br />
+
 ###### Integrated Sextupole
 
 ![](/img/machine/magnets/si-dipoles-b1-integrated-sextupole.svg)
 
 **Figure 15**: Integrated sextupole at current 403.6 A calculated with reference trajectory, initial point at x = 8.527 mm and reference point is 13.6929 mm.
 
+<br />
+
 ##### B2
 
 Analysis of B2 hallprobe measurements. The analysis results can be found at [this folder](https://github.com/lnls-ima/si-dipoles-b2/tree/master/model-08/analysis/hallprobe/production) with subfolders x0-8p153mm which contains results based on Runge-Kutta trajectory and x0-8p153mm-reftraj holds the results based on reference trajectory. The initial point of reference trajectory is 8.1530 mm and reference point is 19.4278 mm. 
+
+<br />
 
 ###### Summary
 
@@ -443,11 +497,15 @@ KL: -0.47982 1/m
 
 SL: -0.09868 1/m²
 
+<br />
+
 ###### Deflection Angle
 
 ![](/img/machine/magnets/si-dipoles-b2-deflection-angle.svg)
 
 **Figure 16**: Deflection angle at current 401.8 A calculated with reference trajectory and initial point at x = 8.153 mm and reference point is 19.4278 mm.
+
+<br />
 
 ###### Integrated Quadrupole
 
@@ -455,16 +513,22 @@ SL: -0.09868 1/m²
 
 **Figure 17**:  Integrated gradient at current 401.8 A calculated with reference trajectory and initial point at x = 8.153 mm and reference point is 19.4278 mm.
 
+<br />
+
 ###### Integrated Sextupole
 
 ![](/img/machine/magnets/si-dipoles-b2-integrated-sextupole.svg)
 
 **Figure 18**:  Integrated sextupole at current 401.8 A calculated with reference trajectory and initial point at x = 8.153 mm and reference point is 19.4278 mm.
 
+<br />
+
 #### SI Dipole Magnet Sorting
 
 <!-- The order used was the result G286I010 of optimization run0. -->
 <!-- Results can be found in data repository of si.v24.01 inside the folder dipoles_sorting. -->
+
+<br />
 
 ##### B1 Installation Order
 
@@ -518,6 +582,8 @@ SL: -0.09868 1/m²
 |---| B1-022  |
 
 **Table 9**: Storage Ring Dipoles B1 Installation. 
+
+<br />
 
 ##### B2 Installation Order
 
