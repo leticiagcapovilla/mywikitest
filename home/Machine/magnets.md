@@ -2,7 +2,7 @@
 title: Magnets
 description: 
 published: 1
-date: 2024-03-05T15:48:14.088Z
+date: 2024-03-05T15:51:58.522Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:29.287Z
@@ -638,9 +638,13 @@ SL: -0.09868 1/m²
 
 **Table 10**: Storage Ring Dipoles B2 Installation.
 
+<br />
+
 ### Storage Ring Quadrupoles
 
 There will be three types of quadrupole magnets in the Sirius lattice: Q14, Q20 and Q30, labeled as such according to their hard-edge lengths in simulations. Magnets from families QDA, QDB1, QDB2, QDP1 and QDP2 will be of type Q14; magnets from families QFA, Q1, Q2, Q3 and Q4  will be of type Q20; and magnets from families QFB and QFP will be of type Q30.
+
+<br />
 
 #### SI Quadrupole Magnet Specifications
 
@@ -668,6 +672,8 @@ Table 11 lists main specifications for the quadrupoles.
 
 **Table 11**: Storage ring quadrupole magnets specification
 
+<br />
+
 ##### Electric parameters
 
 | | Q14| Q20| Q30| units |
@@ -680,6 +686,8 @@ Table 11 lists main specifications for the quadrupoles.
 |Magnet inductance| 6.74| 11.73| 17.84| mH  |
 
 **Table 12**: Storage ring quadrupole electric parameters 		
+
+<br />
 
 ##### Multipole Errors
 
@@ -695,6 +703,8 @@ Table 11 lists main specifications for the quadrupoles.
 
 **Table 13**: Storage ring quadrupole multipole errors. Contribution of multipolar components relative to main quadrupolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ. 
 
+<br />
+
 ##### Alignment and Excitation Errors
 
 || Quadrupoles|  |
@@ -704,6 +714,8 @@ Table 11 lists main specifications for the quadrupoles.
 |Strength error (static or low frequency)| 0.05|  % |
 
 **Table 14**: Maximum absolute value of random alignment and excitation errors for the Storage Ring Quadrupoles. The errors are generated with a Gaussian distribution truncated at ±1σ. 
+
+<br />
 
 #### SI Quadrupole Magnet 3D Models
 
@@ -732,6 +744,8 @@ All three types of quadrupoles models, namely Q14, Q20 and Q30 quadrupoles, have
 ![](/img/machine/magnets/SI_magnet_q30_field.png)
 
 **Figure 24**: Field of the Q30 quadrupole model.
+
+<br />
 
 ##### Fieldmap Analysis
 
@@ -767,6 +781,8 @@ The 3D magnetic model of Q30 has been analyzed and approved, corresponding to ma
 ³ normal integrated multipoles divided by integrated quadrupole at x = 11.7 mm.
 
 **Table 15**: Storage ring quadrupole magnet 3D-model parameters 
+
+<br />
 
 ##### Segmented Model
 
@@ -808,9 +824,13 @@ Currently the hard-edge approximation is being used to model all quadrupoles for
 
 **Table 18**: SI quadrupole Q30 half segmented model (maximum strength).
 
+<br />
+
 #### SI Quadrupole Magnet Measurements
 
 A summary of magnet field measurements of SI quadrupoles.
+
+<br />
 
 ##### Q14
 
@@ -856,11 +876,15 @@ A summary of magnet field measurements of SI quadrupoles.
 | QDP1  | -0.4 | ± 0.1 | 0.2 |
 | QDP2  | -0.4 | ± 0.1 | 0.3 |
 
+<br />
+
 ###### Integrated Quadrupole
 
 ![](/img/machine/magnets/si-quadrupoles-q14-integrated-quadrupole.svg)
 
 **Figure 28**: Integrated quadrupole strengths of Q14 magnets.
+
+<br />
 
 ###### Horizontal Magnetic Center
 
@@ -868,17 +892,23 @@ A summary of magnet field measurements of SI quadrupoles.
 
 **Figure 29**: Horizontal magnet center of Q14 magnets.
 
+<br />
+
 ###### Vertical Magnetic Center
 
 ![](/img/machine/magnets/si-quadrupoles-q14-ycenter.svg)
 
 **Figure 30**: Vertical magnet center of Q14 magnets.
 
+<br />
+
 ###### Roll-Angle Error
 
 ![](/img/machine/magnets/si-quadrupoles-q14-rollerror.svg)
 
 **Figure 31**: Roll angle error of Q14 magnets.
+
+<br />
 
 ##### Q20
 
@@ -924,17 +954,23 @@ A summary of magnet field measurements of SI quadrupoles.
 | QDP1  | +0.0 | ± 0.1 | 0.3 |
 | QDP2  | +0.1 | ± 0.1 | 0.4 |
 
+<br />
+
 ###### Integrated Quadrupole
 
 ![](/img/machine/magnets/si-quadrupoles-q20-integrated-quadrupole.svg)
 
 **Figure 32**: Integrated quadrupole strengths of Q20 magnets.
 
+<br />
+
 ###### Horizontal Magnetic Center
 
 ![](/img/machine/magnets/si-quadrupoles-q20-xcenter.svg)
 
 **Figure 33**: Horizontal magnet center of Q20 magnets.
+
+<br />
 
 ###### Vertical Magnetic Center
 
@@ -980,11 +1016,15 @@ A summary of magnet field measurements of SI quadrupoles.
 | QFB | -0.3 | ± 0.05 | 0.2 | 
 | QFP | -0.2 | ± 0.1 | 0.3 |
 
+<br />
+
 ###### Integrated Quadrupole
 
 ![](/img/machine/magnets/si-quadrupoles-q30-integrated-quadrupole.svg)
 
 **Figure 36**: Integrated quadrupole strengths of Q30 magnets.
+
+<br />
 
 ###### Horizontal Magnetic Center
 
@@ -992,17 +1032,23 @@ A summary of magnet field measurements of SI quadrupoles.
 
 **Figure 37**: Horizontal magnet center of Q30 magnets.
 
+<br />
+
 ###### Vertical Magnetic Center
 
 ![](/img/machine/magnets/si-quadrupoles-q30-ycenter.svg)
 
 **Figure 38**: Vertical magnet center of Q30 magnets.
 
+<br />
+
 ###### Roll-Angle Error
 
 ![](/img/machine/magnets/si-quadrupoles-q30-rollerror.svg)
 
 **Figure 39**: Roll angle error of Q30 magnets.
+
+<br />
 
 #### SI Quadrupole Magnet Sorting
 
@@ -1117,6 +1163,8 @@ A summary of magnet field measurements of SI quadrupoles.
 |---| Q14-036  |
 
 **Table 19**: Storage Ring Quadrupoles Q14 Installation. 
+
+<br />
 
 ##### Q20 Installation Order
 
@@ -1327,6 +1375,8 @@ A summary of magnet field measurements of SI quadrupoles.
 
 **Table 20**: Storage Ring Quadrupoles Q20 Installation.
 
+<br />
+
 ##### Q30 Installation Order
 
 **QFB**
@@ -1379,9 +1429,13 @@ A summary of magnet field measurements of SI quadrupoles.
 
 **Table 21**: Storage Ring Quadrupoles Q30 Installation. 
 
+<br />
+
 ### Storage Ring Sextupoles, Slow Orbit Correctors and Skew Quadrupoles
 
 Sextupole magnets in Sirius are designed to be multifunctional: apart from providing sextupolar field for chromaticity correction and dynamical aperture optimization, they also provide horizontal and vertical slow dipolar correctors for steering the beam orbit, as well as skew quadrupolar field to correct linear coupling introduced by lattice errors. These functions are implemented as additional excitations coils in the magnets. A sextupole magnet with excitation coils for vertical and/or horizontal dipolar fields does not have coils for skew quadrupolar fields, and vice-versa.
+
+<br />
 
 #### SI Sextupole Magnet Specifications
 
@@ -1428,6 +1482,8 @@ Table 24 lists main specifications for the skew quadrupoles in the sextupole mag
 
 ¹ Maximum value needed to correct linear coupling introduced by magnet alignment errors. Coupling introduced by IDs will be corrected using local skew quadrupoles. 
 
+<br />
+
 ##### Electric parameters
 
 || S15| units |
@@ -1446,6 +1502,8 @@ Table 24 lists main specifications for the skew quadrupoles in the sextupole mag
 **Table 25**: Storage ring sextupole electric parameters 
 
 ¹ Value required to reach the specified skew quadrupolar strength. 
+
+<br />
 
 ##### Multipole Errors
 
@@ -1495,6 +1553,8 @@ Multipole errors from skew quadrupole excitation
 
 **Table 29**: Storage ring skew quadrupoles multipole errors. Contribution of multipolar components relative to main quadrupolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ. 
 
+<br />
+
 ##### Alignment and Excitation Errors
 
 || Sextupoles|  |
@@ -1505,6 +1565,8 @@ Multipole errors from skew quadrupole excitation
 
 **Table 30**: Maximum absolute value of random alignment and excitation errors for the Storage Ring Sextupoles. The errors are generated with a Gaussian distribution truncated at ±1σ. 
 
+<br />
+
 #### SI Sextupole Magnet 3D Models
 
 ![](/img/machine/magnets/SI_magnet_sextupole_drawing.png)
@@ -1514,6 +1576,8 @@ Multipole errors from skew quadrupole excitation
 ![](/img/machine/magnets/SI_magnet_sextupole_field.png)
 
 **Figure 41**: Field of the quadrupole (with dipolar field coils) half model.
+
+<br />
 
 ##### Fieldmap Analysis
 
@@ -1535,6 +1599,8 @@ The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/
 
 The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-sextupoles-s15/tree/master/links-official-sx-qs/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-sextupoles-s15/tree/master/links-official-sx-qs).
 
+<br />
+
 ##### Segmented Model
 
 Currently the hard-edge approximation is being used to model sextupoles for beam dynamics calculations purposes. 
@@ -1551,9 +1617,13 @@ Segment#| Length [m]| Deflection [deg.]| Field [T]| K [m⁻²] *| S [m⁻³] * |
 
 **Table 31**: SI sextupole half segmented model (maximum strength). 
 
+<br />
+
 #### SI Sextupole Magnet Measurements
 
 A summary of magnet field measurements of SI S15 sextupoles.
+
+<br />
 
 ##### Summary
 
@@ -1663,11 +1733,15 @@ A summary of magnet field measurements of SI S15 sextupoles.
 | SDB3 | +0.220 | ± 0.052 |  0.231 |
 | SDP3 | +0.215 | ± 0.034 |  0.094 |
 
+<br />
+
 ##### Integrated Sextupole
 
 ![](/img/machine/magnets/si-sextupoles-s15-integrated-sextupole.svg)
 
 **Figure 43**:  Integrated sextupole strengths of S15 magnets.
+
+<br />
 
 ##### Horizontal Magnetic Center
 
@@ -1675,17 +1749,23 @@ A summary of magnet field measurements of SI S15 sextupoles.
 
 **Figure 44**: Horizontal magnet center of S15 magnets.
 
-##### Vertical Magnetic Center
+##### Vertical Magnetic Ce
+<br />
+nter
 
 ![](/img/machine/magnets/si-sextupoles-s15-ycenter.svg)
 
 **Figure 45**: Vertical magnet center of S15 magnets.
+
+<br />
 
 ##### Roll-Angle Error
 
 ![](/img/machine/magnets/si-sextupoles-s15-rollerror.svg)
 
 **Figure 46**: Roll angle error of S15 magnets.
+
+<br />
 
 #### SI Sextupole Magnet Sorting
 
@@ -2082,13 +2162,19 @@ A summary of magnet field measurements of SI S15 sextupoles.
 
 **Table 32**: Storage Ring Sextupoles Installation.
 
+<br />
+
 ### Storage Ring Vertical Corrector Magnets
 
 Apart from slow horizontal and vertical slow orbit correctors implemented as additional coils in sextupole magnets, there will be 20 vertical corrector magnets located in C2 dispersion sections. These magnets will be identical to the ones used in the Booster. 
 
+<br />
+
 ### Storage Ring Fast Orbit Correctors
 
 Sirius storage ring is planned to have 80 horizontal and 80 vertical fast orbit correctors, as well as 10 skew quadrupole correctors. There will be two types of fast correctors: FC1 magnets with iron poles resembling skew quadrupoles, where horizontal, vertical and skew correctors are implemented as independent coils, and FC2 magnets, which are CF1 magnets rotated 45 degrees with no skew corrector coils. FC2 magnets are installed in odd-numbered C2 sectors to allow for synchrotron light of B2 dipoles to go to diagnostics beamlines. Fast correctors will sit on top of stainless steel vacuum chambers coated with a thin copper inner layer.
+
+<br />
 
 #### SI Fast Correctors Specifications
 
@@ -2105,9 +2191,13 @@ Sirius storage ring is planned to have 80 horizontal and 80 vertical fast orbit 
 
 **Table 33**: Storage Ring fast orbit correctors.
 
+<br />
+
 ##### Multipole Errors
 
 The impact on the beam dynamics of residual multipole errors for the fast corrector magnets has been analyzed from fieldmaps of current models. The impact is very small and the current magnet models have been accepted. Magnetic measurements for prototypes are yet to be taken and analyzed. 
+
+<br />
 
 ####  SI Fast Correctors Magnet 3D Models
 
@@ -2118,6 +2208,8 @@ The impact on the beam dynamics of residual multipole errors for the fast correc
 ![](/img/machine/magnets/SI_magnet_fast_corrector_field.png)
 
 **Figure 48**: Field of the fast corrector model.
+
+<br />
 
 ###### Fieldmap Analysis
 
@@ -2142,6 +2234,8 @@ A summary of the analysis can be found in analysis.txt at [this folder](https://
 **FC2 Vertical correction function**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-fast-correctors/tree/master/links-official-FC2-fcv). 
+
+<br />
 
 ###### Segmented Model
 
