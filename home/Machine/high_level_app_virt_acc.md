@@ -2,7 +2,7 @@
 title: High Level Applications and Virtual Accelerator
 description: 
 published: 1
-date: 2024-03-05T21:23:57.180Z
+date: 2024-03-05T21:26:14.083Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:16.484Z
@@ -83,7 +83,7 @@ Templates are available for creating IOCs (EPICS-provided) and CASs (in [hla](ht
 
 ##### Gateway
 
-When running IOCs in a different subnet from the clients, use the EPICS Gateway. Set Channel Access environment variables. [Set the Channel Access environment variables][link] in the clients to look for PVs using it.
+When running IOCs in a different subnet from the clients, use the EPICS Gateway. Set Channel Access environment variables. [Set the Channel Access environment variables](/home/Groups/FAC/cookbook#set-channel-access-environment-variables) in the clients to look for PVs using it.
 
 <br />
 
@@ -112,7 +112,7 @@ The [Semantic Versioning](http://semver.org/) (version 2.0.0) system is the basi
 
 **Table 1**: Versioning scheme example.
 
-When a version is ready to be shipped, create a Release in the corresponding GitHub repository. A procedure for this is available in the [FAC:Cookbook][link] (see [Create a repository release][link].)
+When a version is ready to be shipped, create a Release in the corresponding GitHub repository. A procedure for this is available in the [FAC:Cookbook](/home/Groups/FAC/cookbook) (see [Create a repository release](/home/Groups/FAC/cookbook#create-a-repository-release).)
 
 <br />
 
