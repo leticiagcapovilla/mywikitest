@@ -2,7 +2,7 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-03-05T15:33:11.787Z
+date: 2024-03-05T15:35:25.416Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:21.285Z
@@ -10,12 +10,17 @@ dateCreated: 2024-03-04T20:05:21.285Z
 
 # Machine: Injection System
 
+<br />
+
 ## Introduction
+
 The Sirius injection system is composed of a 150 MeV Linac, a full energy 3 GeV synchrotron booster operating in top-up mode and 2 transport lines, one from the Linac to the Booster (LTB) and another from the Booster to the Storage Ring (BTS). The booster and the storage ring are concentric and share the same tunnel. Their injection sections are placed close together to restrict the 'dirty' area in terms of radiation. A general layout of the Sirius injection system is shown in Figure 1. 
 
 ![LAYOUT INJECTION SYSTEM](/img/machine/injection_system/layout_inject_system.svg)
 
 **Figure 1**: Layout of the Sirius injection system with a 150 MeV Linac and a full energy 3 GeV booster in the same tunnel as the storage ring. The booster and storage ring injection sections are placed close together to restrict the 'dirty' area in terms of radiation.
+
+<br />
 
 ## Booster
 
@@ -81,6 +86,7 @@ The booster main parameters are summarized in Table 1 and Table 2, and the optic
 
 **Table 3**: Sirius booster QF quadrupoles main parameters. 
 
+<br />
 
 #### QD Quadrupoles
 
@@ -93,6 +99,7 @@ The booster main parameters are summarized in Table 1 and Table 2, and the optic
 
 **Table 4**: Sirius booster QD quadrupoles main parameters. 
 
+<br />
 
 #### QS (skew) Quadrupoles
 
@@ -105,6 +112,7 @@ The booster main parameters are summarized in Table 1 and Table 2, and the optic
 
 **Table 5**: Sirius booster QS quadrupoles main parameters. 
 
+<br />
 
 #### Sextupoles
 
@@ -139,6 +147,7 @@ $$
 
 where $\nu$ is the tune and $Q [m^{-1}]$ is the integrated quadrupole strength.
 
+<br />
 
 ### Chromaticity Correction
 
@@ -155,10 +164,13 @@ where $\xi$ is the chromaticity and $S [m^{-2}]$ is the integrated sextupole str
 
 To specify the maximum SD integrated strength, we considered, among others, the effect of a systematic error of 12% in the sextupolar component of the dipoles and a range of variation of chromaticity of [0.5,4.0] in both planes.
 
+<br />
 
 ### Error Tolerance Specifications 
 
 Assumed multipole errors for Booster dipoles, quadrupoles and sextupoles are shown in Table 3, Table 4 and Table 5 
+
+<br />
 
 #### Booster Magnets Multipole Errors
 
@@ -194,6 +206,8 @@ Assumed multipole errors for Booster dipoles, quadrupoles and sextupoles are sho
 
 ¹ Multipoles of prototype magnets measured with radial rotating coils 
 
+<br />
+
 ##### Sextupoles @r = 17.5 mm
 
 |  Multipole error | Systematic¹ <br />Normal| Random <br />Normal | Random <br />Skew|
@@ -211,6 +225,8 @@ Assumed multipole errors for Booster dipoles, quadrupoles and sextupoles are sho
 
 ¹ Relative multipoles calculated around the Runge-Kutta trajectory for the latest sextupole model-03 fieldmap at 3 GeV 
 
+<br />
+
 #### Booster Magnets Alignment and Excitation Errors
 
 | Parameter | Dipoles | Quadrupoles | Sextupoles | BPMs | Unit |
@@ -222,6 +238,8 @@ Assumed multipole errors for Booster dipoles, quadrupoles and sextupoles are sho
 
 **Table 10**: Maximum absolute value of random alignment and excitation errors for the Booster. The errors are generated with a Gaussian distribution truncated at ±1σ. 
 
+<br />
+
 #### Booster Magnets High Frequency Errors
 
 | Parameter | Value | Unit |
@@ -231,6 +249,8 @@ Assumed multipole errors for Booster dipoles, quadrupoles and sextupoles are sho
 | Tracking error | 100 | ppm |
 
 **Table 11**: Booster magnets high frequency errors. 
+
+<br />
 
 ### Closed orbit correction system
 
@@ -267,7 +287,10 @@ The specification for the closed orbit correction system for the Sirius booster 
 
 **Table 13**: Statistics of orbit correction in the Booster for 20 random machines. 
 
+<br />
+
 ### Aperture requirements
+
 The physical aperture requirements for the booster are defined by the injected Linac beam size and energy variation from pulse to pulse, by the closed orbit distortions and by a tolerance for beam oscillations after injection. During acceleration the beam size shrinks as well as the oscillations due to mismatched energy, position and angle of the injected beam.
 
 The beam stay clear (half-aperture) was defined by the following formulae:
@@ -284,8 +307,10 @@ The resulting requirements are illustrated in Figure 7.
 
 The booster vacuum chambers will be made of 1 mm thick stainless steel cylindrical tubes with inner diameter of 23.4 mm at the dipoles and 36 mm at the straight sections. 
 
+<br />
 
 ### Dynamic aperture
+
 The chromaticity correction sextupoles, multipole components in dipoles and quadrupoles, and alignment errors reduce the dynamic aperture to about ±12 mm in the horizontal and ±4 mm in the vertical plane at the injection point. This is sufficiently large for an efficient on-axis injection and for beam lifetime. Figure 8, Figure 9 and Figure 10 show the dynamic and momentum apertures for 20 machines with random multipole, alignment and excitation errors in all magnets. 
 
 ![BOOSTER MULTICOD TUNE DAXY](/img/machine/injection_system/bo_multi_cod_tune_daxy.png)
@@ -300,6 +325,7 @@ The chromaticity correction sextupoles, multipole components in dipoles and quad
 
 **Figure 10**: Momentum aperture for 1/10 of the Booster for 20 machines with alignment and multipole errors, orbit and tune corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (17.5x17.5 mm² in the straights and 12x12 mm² in the dipoles) is considered along the ring. Black lines represent the loss rate.
 
+<br />
 
 ### Booster injection
 
@@ -317,6 +343,7 @@ The 150 MeV electron beam from the Linac is injected on axis into the booster. T
 
 **Figure 13**: Schematic representation of the transverse cross section at booster injection point. Incoming beam from TB is moving towards the viewer.
 
+<br />
 
 ### Booster extraction
 
@@ -345,6 +372,8 @@ The extracted beam horizontal trajectory is shown in Figure 15. Due to the large
 ![BOOSTER EXTRACTION XY](/img/machine/injection_system/bo_extract_xy.svg)
 
 **Figure 16**: Schematic representation of transverse cross section at booster extraction point.
+
+<br />
 
 ### Booster RF system
 
@@ -377,6 +406,7 @@ Table:Booster RF parameters shows the design parameters of the RF system for the
 
 **Table 15**: Parameters used to design the booster RF system. 
 
+<br />
 
 ### Booster straight sections allocation
 | Sector | U (upstream of QF) | D (downstream of QF) |
@@ -443,6 +473,8 @@ InjSept = Injection Septum
 EjeKckr = Ejection Kicker
 Scrn = Fluorescent Screen 
 
+<br />
+
 ## Linac 
 
 The Sirius 150 MeV Linac is a 'turn-key' system provided by SSRF/SINAP. The Linac design parameters are specified in Table 17. 
@@ -475,6 +507,8 @@ The Sirius 150 MeV Linac is a 'turn-key' system provided by SSRF/SINAP. The Lina
 
 **Figure 19**: Schematic diagram of Sirius 150 MeV Linac.
 
+<br />
+
 ### Linac pictures during FAT at SSRF
 
 ![LINAC SSRF1](/img/machine/injection_system/li_ssrf1.png) ![LINAC SSRF2](/img/machine/injection_system/li_ssrf2.png)
@@ -483,6 +517,7 @@ The Sirius 150 MeV Linac is a 'turn-key' system provided by SSRF/SINAP. The Lina
 
 **Figures 20, 21, 22 and 23**: Pictures at SSRF
 
+<br />
 
 ## Linac to booster transport line (LTB) 
 
@@ -504,6 +539,8 @@ The Linac-to-Booster transport line (LTB - naming initials TB), transports the 1
 
 **Table 18**: Main parameters of the LTB transfer line. 
 
+<br />
+
 ### LTB Lattice
 
 The LTB lattice is composed of two chromatic sections separated by an achromatic section. In the first chromatic section just after the Linac the dispersion function is negative, created by two negative deflection dipoles. The first dipole is also a beam energy spectrometer for the Linac. An energy slit is placed in this section at the position where the energy resolution is maximum, i.e., where the relation ηx/βx is maximum. In the achromatic section, the LTB line goes through a shielding wall separating the Linac from the storage ring tunnel. In the last chromatic section the dispersion is positive and the optical functions are matched to the Booster's functions. The beam is injected on-axis into the Booster. 
@@ -518,6 +555,7 @@ Since the optical functions at the Linac exit are not precisely known, we have c
 
 **Table 20**: Optical functions along the LTB transfer line for 6 different initial condition modes. 
 
+<br />
 
 ### LTB Beam Size and Aperture Requirement
 
@@ -554,6 +592,8 @@ The calculated horizontal and vertical BSC for LTB transport line modes are show
 
 **Figure 29**: Vertical beam stay clear (BSC) for LTB transfer line. The BSC can accommodate the residual orbit distortion and trajectory variations due to pulse to pulse differences in launching conditions (position and angle) described in Table 18. The vacuum chamber inner half-aperture is represented by the solid black curve.
 
+<br />
+
 ### LTB Orbit Correction
 
 The LTB orbit correction parameters are shown in Table 19 and the magnet alignment and excitation error tolerances assumed for orbit correction studies in the LTB transport line are shown in Table 20. The trajectory correction statistics are shown in Table 25 and the orbits before and after correction for all modes are shown in Table 26. The correction system uses a beam position measurement station with integrated fluorescent screens and striplines. The injection septum is used as corrector to adjust horizontal position and angle at the booster injection point. 
@@ -566,6 +606,8 @@ The LTB orbit correction parameters are shown in Table 19 and the magnet alignme
 | Maximum corrector strength | ± 2.5 | mrad |
 
 **Table 22**: Parameters for LTB transfer line orbit correction. 
+
+<br />
 
 #### Errors for LTB transfer line orbit correction simulation. 
 
@@ -596,6 +638,8 @@ A uniform random error distribution is assumed.
 | dp/p | ±0.5 |  %  |
 
 **Table 25**:  Error in beam launching conditions 
+
+<br />
 
 #### Orbit correction statistics
 
@@ -644,8 +688,10 @@ The LTB diagnostics elements are summarized in Table 29.
 
 **Figure 30**: Schematic layout of LTB diagnostic elements.
 
+<br />
 
 #### LTB Horizontal/Vertical Scrapers
+
 A horizontal scraper with a pair of blades will be used in the LTB line as energy slit, to select the portion of the beam coming from the Linac that is within the Booster energy acceptance at injection energy. For this purpose it is installed at a high dispersion and low horizontal betatron function place. An identical scraper will also be installed in the vertical plane, at a high vertical betatron function place, to reduce particle losses at the septum or in the Booster. 
 
 Specifications for the LTB horizontal and vertical scrapers are given in Table 30. 
@@ -665,8 +711,10 @@ Specifications for the LTB horizontal and vertical scrapers are given in Table 3
 
 **Vacuum chamber diameter ∅=36 mm 
 
+<br />
 
 #### LTB Beam Position Measurement Stations
+
 Beam position measurement stations combining a stripline BPM and a fluorescent screen will be used in the LTB line to measure the beam position. The specifications for the stripline BPMs are shown in Table 31 and for the fluorescent screens in Table 32. 
 
 | Parameter | Value | Unit |
