@@ -2,15 +2,17 @@
 title: RF System
 description: 
 published: 1
-date: 2024-02-29T15:27:00.979Z
+date: 2024-03-05T16:45:56.218Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T20:17:07.334Z
+dateCreated: 2024-03-04T20:05:45.041Z
 ---
 
 # Machine: RF System
 
 The RF system is responsible for supplying energy to the electrons during the acceleration process and replenishing the energy lost due to the emission of synchrotron radiation  or to other dissipative processes. The electrons gain energy from electric fields excited in special components of the RF system called accelerating structures and resonant cavities. The main role of the RF systems is to excite and maintain these accelerating fields in line with the stability requirements of the three machines that make up the light source. Linac, booster and storage ring each have their dedicated RF system, designed to meet the specifications required by electron beam dynamics for each of these main components of the light source. The linac is being purchased turn-key from SSRF/SINAP and no development is being pursued in house for any part of its RF system. The RF systems for the booster and for the storage ring are being designed in house and the main specifications of both systems are presented below.
+
+<br />
 
 ## Introduction
 
@@ -20,9 +22,13 @@ A single RF plant will be sufficient to meet the requirements for the booster sy
 
 The RF system has to be carefully designed since it may be a serious source of instabilities for the electron beam. The higher order resonant modes (HOM) of the RF cavities may be particularly harmful if not efficiently dealt with. HOM may excite longitudinal and transverse beam instabilities that can limit the maximum stored current or result in beam oscillations that lead to a much higher effective emittance. The efficient damping of such undesirable modes is the main reason why superconducting (SC) cavities would be the preferred choice for Sirius. SC cavities are operating with great success in most of the recently built 3rd generation light sources. The technology has reached maturity and turn-key systems are available in the market. However, a recently developed HOM damped room temperature cavity is now in operation at ALBA and is being installed in other machines, such as BESSY and ESRF. However, there is no experience with the operation of these cavities at high current although no instabilities have been observed at ALBA for beam currents up to 200 mA.
 
+<br />
+
 ## RF System for the Storage Ring
 
 |As the electron travels along the vacuum pipe it loses energy due to the interaction with the electromagnetic environment it finds along its path. Energy is lost both in the form of synchrotron radiation and from the interaction of the electrons with the walls of the vacuum chamber. Sirius has 20 achromatic arcs, each one deflecting the beam by 18 degrees. Except for a 12 cm long short dipole with 1.95 T peak magnetic field in the mid of the arch and which accounts for just about 1° deflection, all the remaining deflection in each 5BA arch is performed by a set of 0.58 T low field dipoles. Even with such low fields the energy loss per turn at the elements of the magnetic lattice dominates, followed by the energy radiated in the insertion devices. The energy loss per turn is about 450 keV in the dipoles and up to 400 keV is being considered for the insertion devices at full capacity. In this scenario, the RF power necessary in order to compensate for the radiation losses is about 85 kW per 100 mA. In the design of the RF system an extra 10% power loss is added in order to account for other energy losses such as HOM and vacuum chamber impedance losses and losses in the RF lines.
+
+<br />
 
 ### Major Design Parameters
 
@@ -51,6 +57,8 @@ The design parameters for the RF system consider a maximum beam current of 500 m
 
 **Table 1**: Main SI RF System Parameters
 
+<br />
+
 ### Specifications
 
 The specifications of the RF system are dictated by the beam stability requirements for the experiments that are planned to be performed by the users in the experimental stations. Under normal conditions the rule of thumb for longitudinal beam oscillation is to keep it within 10% of the RMS bunch length. For each cavity there are active feedback loops to control the amplitude of the accelerating voltage, the resonant frequency of the fundamental mode of the cavity and the relative phase of the RF signal in each cavity. Phase and amplitude jitter beyond certain limits have a negative impact on beam characteristics that may severely restrain the range of applicability of the beamlines by making important experiments unfeasible. Jitter may lead to vertical beam size and effective impedance increase and can be a problem for timing experiments. Phase and momentum jitter can also reduce the brightness of the higher harmonics emitted by the undulators by increasing the vertical divergence of the photon beam. Experiments using infrared radiation in the existing machines are very demanding and point to the need to achieve timing jitter of the order of only 5% of the RMS beam bunch length. Under these circumstances the tolerances for phase and momentum jitter would be:
@@ -66,6 +74,8 @@ For the other beamlines and techniques, such as timing experiments, the toleranc
 | --- | --- |
 |Phase Jitter | 0.5° |
 |Momentum Jitter (Δp/p) | 2×10⁻⁴ |
+
+<br />
 
 ### RF cavities
 
@@ -142,10 +152,11 @@ If the decision falls on the NC cavities there is no need to have all six caviti
 
 As already mentioned the beam lifetime with only three NC cavities and without bunch lengthening is just about 7 hours. In order to raise the beam lifetime to more than 10 hours it would be necessary to either install a 3HC or to install an additional cavity (4 NC cavities). Notice that in order to reach 500 mA with NC conducting cavities with a total gap voltage of 3.0 MV would require either the installation of an extra cavity or designing the amplifiers to deliver more RF power, 70 kW for example. With such higher output power it would be possible to reach the design specifications even with five cavities.
 
+<br />
+
 ### Superconducting cavity
 
 Currently, we are going to use in the storage ring, since the conditioning phase, two SC cavities CESR type (Figure 1). The Table 2 lists some of the main parameters of this cavity. In CESR cavity the coupling between the waveguide and the cavity is done through a hole located in Round Beam Tube (RBT). The geometry and dimensions of this hole are determined from the specification of the external Q of the cavity ($Q_{ext}$). To determine the ideal $Q_{ext}$, in which the RF power reflected is minimal, we have to know some ring operating parameters such as the stored current, energy lost per turn by electrons and some parameters of the harmonic cavity¹ 
-
 
 ![](/img/machine/rf_system/CESR_cavity_SRF_module.png)
 
@@ -167,7 +178,6 @@ The Figure 2 and Figure 3 shows, for the phase 2 of operation, the RF forward an
 $Q_{ext}$ ~ 1.6*10⁵ (ideal value for the nominal operation current of 350 mA) results in a reflected power of about 5 kW per cavity at 500 mA. The Table 2  shows some RF parameters calculated for each phase of operation using cavities with $Q_{ext}$ optimized for this nominal operation phase with 350 mA. The Table 3 shows some RF parameters calculated for all phases of operation using cavities with $Q_{ext}$ optimized for the phase 2 with 350 mA.
 
 Until now we only have some estimates about the energy loss per turn from IDs. The Figure 4 and Figure 5 show the reflected power within a range of energy loss from IDs in the oparation pahse 1 and phase 2.
-
 
 ![](/img/machine/rf_system/CESR_RF_forward_power.png)
 
@@ -207,6 +217,8 @@ Until now we only have some estimates about the energy loss per turn from IDs. T
 
 **Figure 5**: RF forward power per cavity at oparation phase 2.
 
+<br />
+
 ## High Power Amplifiers
 
 The RF plants of Sirius RF system are being designed to operate with high power solid state amplifiers. Each high power amplifier will supply at least 60 kW at maximum output power. For the NC cavities the plants will use a combination of the output power of two amplifiers and will be able to supply up to 120 kW per cavity. The same set of amplifiers could also be used to start the SC system and even with such reduced power it would be possible to operate the machine at 300 mA, considering the initial set of IDs planned to be installed in the machine (230 keV energy loss). After the installation of the SC RF system it would be possible to upgrade the output power of the plants by combining the output power of four amplifiers. This increase in output power is necessary to reach the design beam current and meets the power requirements for a possible future upgrade of the beam current to 500 mA. The experience with the two amplifiers of the UVX RF system has shown that working in a relaxed condition results in increased reliability. After four years there has not been a single beam loss caused by failures in the amplifier modules. In this period very few of them have failed and that happened without any impact on the beam. Besides, no degradation of the modules has been observed whatsoever. As much as possible, the amplifiers should be designed to operate not too close to the maximum output power of the modules. So, for the SC system there is plenty of power coming from the 60 kW amplifiers. For NC cavities it would be advisable to have more output power coming from each amplifier.
@@ -219,13 +231,19 @@ The topology of the high power solid state amplifiers is expected to be similar 
 
 The 500 MHz amplifier module is a variation of the 476 MHz modified for the new frequency and for the new power transistor. The module uses the BLF578, a power LDMOS-FET produced by NXP, and reaches the 1-dB compression point above 600 W output power. This is about 70% higher than the nominal output power of the modules used in the 476 MHz 50 kW amplifiers that are in operation at the UVX storage ring. For such higher output power the components of the amplifier will have to be redesigned not only due to the new RF frequency but also to account for the higher thermal load they will have to handle.
 
+<br />
+
 ## Low Level RF System
 
 A fully analogue LLRF could be used for the commissioning and first years of operations of Sirius. Fully analogue LLRF controls are still used at Soleil even though a digital system has been developed and tested. The analogue version of the LLRF will comprise the conventional amplitude, phase and tune control loops, even though the regulation of the amplitude and phase of the cavity fields may be implemented using IQ techniques.
 
+<br />
+
 ## RF System for the Booster
 
 Booster and storage ring have very different stability specifications for the RF system. The excitation of HOM in the cavities is a problem that has to be tackled with care in the storage ring but that it is not a serious issue in the booster. A 5-cell PETRA NC cavity is going to be used for the booster and the RF plant will be driven by a single solid state amplifier. A gap voltage of 1 MV is enough to provide sufficient beam lifetime for a safe ejection at the final energy. However, considering a safety margin related to the energy acceptance and optical parameters of the booster, the whole system is being designed considering a final gap voltage of 1.1 MV.
+
+<br />
 
 ### General Design
 
@@ -258,6 +276,8 @@ The storage ring and the booster synchrotron will share the same tunnel. The boo
 
 **Table 4**: Parameters used to design the booster RF system.
 
+<br />
+
 ### RF Cavity
 
 In order to obtain the necessary gap voltage using just one RF plant a 5-cell PETRA RF cavity was chosen for the booster RF system. The cavity has high shunt impedance and can provide the necessary gap voltage with a relatively low RF power. The table below shows the main parameters of the 5-cell PETRA RF cavity.
@@ -288,19 +308,27 @@ This same model is used in many machines to drive the injection booster. The cav
 
 **Figure 7**: Schematic view of the 50 kW high power solid state amplifier for the booster synchrotron.
 
+<br />
+
 ### High Power Amplifier
 
 Since the booster will operate at very low beam current the power required by the beam will be very small and most of the RF power from the amplifier will be used to excite the gap voltage. The booster system will use a 50 kW solid state amplifier which is not the same used for the storage ring RF plants. The modules are exactly the same but a smaller number is used in the combination chain. The amplifier is expected to work at fairly relaxed condition since the total RF power needed to produce the maximum gap voltage in the 5-cell cavity should is of the order of 40 kW. The nominal maximum output power of the amplifier modules is 600 W but the amplifier is being designed so that each module will deliver no more than 550 W. The modules have been thoroughly tested in the RF lab under conditions which replicate years of actual operating conditions in the booster and showed no signs of degradation.
 
+<br />
+
 ### Low Level RF
 
 An analogue LLRF is being designed for the booster RF system based on IQ techniques. The system is an improvement on the UVX LLRF and will include frequency, phase, gap voltage and field homogeneity controls. The use of a digital system is not discarded but the movement towards the development of an in-house digital system is still in very preliminary stage.
+
+<br />
 
 ## Harmonic Cavity
 
 Harmonic cavities are used in many machines to lengthen the electron bunches. The main effect of the bunch lengthening provided by these cavities is an increase of the Touschek lifetime due to the lowering of the bunch charge density, and an increase of beam stability due to an increase in the spread of synchrotron frequencies within the bunch. The harmonic cavities is used to add to the accelerating voltage produced by the main RF cavities a higher harmonic component which, given the correct phase and amplitude, zeroes (ideally) the slope of the resulting voltage as seen by the electron bunches at the synchronous phase. Harmonic cavities can operate in passive or active mode. An active cavity is driven by an external RF source; the passive cavity is driven by the beam itself. As expected, the efficiency of passive cavities depends on the beam current variation. In addition, harmonic cavities can also be normal conducting (NC) or superconducting (SC) cavities. Besides the advantages coming from the very high shunt impedance, the SC cavities also feature an efficient HOM suppression system. SC cavities are usually designed so as to have a smaller number of trapped HOM and to include means for damping the ones still standing.
 
 Third harmonic cavities (3HC) are being considered for installation in the Sirius storage ring. For a total gap voltage of 3.0 MV in the storage ring fundamental cavities the ideal gap voltage in the harmonic cavities would be 953 kV. That would increase the bunch length by a factor in between 4 to 5 and would have a big impact on the tolerances of the LLRF coming from timing experiments. The necessary gap voltage can be achieved by using passive SC harmonic cavities (SC-3HC). A single 2-cell cavity like the one installed at SLS or the one designed for NSLS-2 would perfectly match the specifications for Sirius. SC-3HC have the advantage of reaching higher gap voltages so that a small number of cells are enough to reach the usually high gap voltage needed for an efficient operation. In addition, the impact on the main RF system is very small since the overall power lost by the beam in the cavities is of the order of a few dozen Watts.
+
+<br />
 
 ### Specifications
 
@@ -358,6 +386,8 @@ A two cell SC-3HC like the one built for the NSLS-2 light source would perfectly
 
 **Table 7**: NSLS-2 SC-3HC parameters.
 
+<br />
+
 ### Bunch length
 
 To calculate the bunch length using the harmonic cavities we need understand the equations of longitudinal motion of a single electron given by
@@ -374,9 +404,7 @@ where <b>r</b> is the relative harmonic voltage to the main voltage; <b>φ<sub>s
 
 $\Phi (z) = \frac{\alpha}{EC} \int_{0}^{z} [eV(z')-U_0]\, dz'$
 
-
 where <b>C</b> is the ring circumference; <b>U<sub>0</sub></b> is the energy loss/turn. And the charge density distribution can be calculated by
-
 
 $\rho (z) = \rho_0  \exp { \left( \frac{ -\Phi (z)}{ \alpha^2 \sigma_e^2 } \right)}$
 
@@ -384,11 +412,9 @@ where <b>ρ<sub>0</sub></b> is a normalization constant.
 
 So the longitudinal bunch distribution can be shaped by varying the relative voltage and phase of the harmonic voltage. These parameters should be adjusted to cancel the slope of main RF voltage at the bunch center. The main RF voltage is perfectly canceled when the potential and its first two derivatives are zero. At this condition we have
 
-
 $r= \sqrt{ \frac{1}{m^2}-\frac{1}{m^2-1} \left( \frac{U_0}{eV_{RF}} \right)^2}$
 
 $\tan (\psi_h) = \frac{1}{m} \frac{eV_{RF}}{U_0} \sqrt{(m^2-1)^2 - \left( \frac{m^2U_0}{eV_{RF}} \right)^2}$
-
 
 and the new synchronous phase is given by
 
@@ -411,6 +437,8 @@ Using these equation above is possible calculate the longitudinal density distri
 
 **Figure 9**: Charge distribution and bunch length with 3HC.
 
+<br />
+
 ### Touschek lifetime
 
 To calculate the improvement in Touschek lifetime, consider the expression for the Touschek loss rate².
@@ -423,11 +451,9 @@ The scattering probability **$\overline {\upsilon \sigma}$** is proportional to 
 
 $R = \frac{\tau_{hc}}{\tau} = \frac{\epsilon_{hc}^2}{\epsilon_{RF}^2}\frac{\int \rho^2(z)\,dz}{\int \rho_{hc}^2(z)\,dz}$
 
-
 where <b>ε<sub>hc</sub></b> is the RF acceptance with harmonic cavity; <b>ρ<sub>hc</sub></b> is the longitudinal density with harmonic cavity.
 
 Using the NSLS-2 3HC in Sirius we have an improvement in the ratio of lifetime by a factor of 5. The Figure 10 shows the separatrices for each case studied.
-
 
 ![](/img/machine/rf_system/SI_separatrix_HC.svg)
 
@@ -442,7 +468,6 @@ In this section we studied the dependence of some parameters with the total volt
 
 **Figure 11**: RF acceptance versus total RF voltage with and without 3HC.
 
-
 ![](/img/machine/rf_system/SI_lifetime_ratio_HC.svg)
 
 **Figure 12**: Lifetime ratio versus total RF voltage with 3HC.
@@ -451,11 +476,16 @@ In this section we studied the dependence of some parameters with the total volt
 
 **Figure 13**: Power loss by the beam (@Ib=500 mA) in the NSLS-2 harmonic cavity.
 
+<br />
+
 ### LLRF
 
 The control system for the harmonic cavity is basically a tune control loop. Since the cavity is passively excited by the beam the control of the amplitude of the gap voltage is performed by changing the tune of the fundamental mode. So, the frequency loop is necessary to optimise the operation of the harmonic cavity for different beam currents and also to control the cavity tuning.
 
+<br />
+
 ## References
+
 ¹ We are assuming to use the harmonic cavity type NSLS-II which the main parameters are represents at [link]
 
 ² Byrd, J. M. and Georgsson, M., Phys. Rev. ST Accel. Beams 4, 030701 (2001).
