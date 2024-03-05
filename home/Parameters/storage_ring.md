@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T14:27:45.839Z
+date: 2024-03-05T14:27:54.725Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T14:05:27.623Z
@@ -305,7 +305,7 @@ Mode | S05.01 |  |
 
 |Sector |  | Long Straight (SA, SB, SP) | M2 | B2 | BC | C4 Straight |
 | --- | --- | --- | --- | --- | --- | --- |
-| 01 | SA | ${\color{red}T_1}$ TuneShkrH ScrapH ScrapV InjDpKckr InjNLKckr$ | | CARCARÁ (B1) | |  |
+| 01 | SA | TuneShkrH ScrapH ScrapV InjDpKckr InjNLKckr$ | | CARCARÁ (B1) | |  |
 | 02 | SB | (Petra7) {3HCav} | | | |  |
 | 03 | SP | {2 x SRFCav} | | | |  |
 | 04 | SB | TIMBÓ | | | HIBISCO |  |
