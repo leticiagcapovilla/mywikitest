@@ -2,7 +2,7 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-03-05T15:31:22.312Z
+date: 2024-03-05T15:33:11.787Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:21.285Z
@@ -689,8 +689,10 @@ Beam position measurement stations combining a stripline BPM and a fluorescent s
 
 **Table 32**: Specifications for LTB transfer line fluorescent screens. 
 
+<br />
 
 #### LTB ICTs
+
 Two Integrating Current Transformers (ICTs) will be installed at the LTB extremities allowing measurements of its transmission efficiency. The first ICT is being purchased as part of the Linac. The specifications for the LTB ICTs are shown in Table 33. 
 
 Model: ID 34.9 - Bergoz CF4.5"-34.9-40/1.1
@@ -703,7 +705,10 @@ Model: ID 34.9 - Bergoz CF4.5"-34.9-40/1.1
 
 **Table 33**: Specifications for LTB transfer line ICTs. 
 
+<br />
+
 ## Booster to storage ring transport line (BTS) 
+
 The main function of the booster-to-storage ring transport line (BTS - with naming initials TS), is to transport the 3.0 GeV electron beam from the booster synchrotron to the storage ring (SR). The geometric requirements for this line are determined by the lattice of the two accelerators located in the same machine tunnel. Since the BTS line traverses the machine tunnel, a long element-free drift section is required to facilitate the passage of people and equipment through this region. To save costs, the BTS line uses the same quadrupoles as the storage ring and same dipoles and correctors as the booster. The booster dipole is scaled to a lower value as compared to the booster peak value, so that it can be set to DC operation without overheating the coils. 
 
 A general view of the BTS transport line is shown in Figure 30. A schematic diagram of the BTS elements with their names is shown in Figure 31. The main parameters are shown in Table 29. 
@@ -728,7 +733,10 @@ A general view of the BTS transport line is shown in Figure 30. A schematic diag
 
 **Table 34**: Main parameters of the BTS transfer line. 
 
+<br />
+
 ### BTS Lattice
+
 The BTS lattice is designed with the same magnetic elements of the Booster (dipoles and correctors) and of the Storage Ring (quadrupoles Q14 and Q20). We define the BTS transport line from the Booster extraction septum to the Storage Ring thin injection septum, with both septa included.
 
 The BTS initial optical conditions are matched to the Booster parameters at the extraction point, but the final conditions are mismatched to optimize the injection efficiency into the storage ring with a nonlinear kicker (NLK). The 2 modes M1 and M2 are optimized for different positions of the injected beam at the NLK. Mode M1 assumes the beam is injected at x=-8.0 mm, close to the NLK field maximum, and mode M2 assumes the beam is injected at x=-5.3 mm, where the NLK field has a slope. We expect to inject the beam close to the NLK field maximum, but, for safety, in case the dynamic aperture is not sufficiently large in the beginning, we have studied the possibility of injecting the beam closer to the storage ring axis.
@@ -774,8 +782,10 @@ The considerations for the extracted beam amplitude at the booster extraction se
 
 **Table 36**: Storage ring injection apertures. 
 
+<br />
 
 ### BTS Beam Size and Aperture Requirement
+
 The figures below show the horizontal and vertical beam sizes along BTS for the modes M1 and M2. 
 
 ![BTS BEAM SIZE HOR](/img/machine/injection_system/bts_beam_size_H.png)
@@ -808,8 +818,10 @@ The calculated horizontal and vertical BSC for BTS transport line modes are show
 
 **Figure 36**: Vertical beam stay clear (BSC) for BTS transfer line. The BSC can accommodate residual orbit distortion and trajectory variations due to pulse to pulse differences in beam launching conditions described in Table 37. The vacuum chamber inner half-aperture is represented by the solid black curve.
 
+<br />
 
 ### BTS Orbit Correction
+
 The BTS transport line orbit correction main parameters are shown in Table 38. The specification of error tolerances takes into consideration the maximum Booster corrector strength at 3 GeV, since the same correctors are used. The tolerances are shown in Tables 39, 40, 41 and the correction statistics in Tables 42, 43. The orbits before and after correction for all modes are shown in Table 36. The correction system uses the same beam position measurement station with integrated fluorescent screens and striplines. The Booster extraction septum is used as a horizontal corrector as well as the storage ring injection septa, that are used to adjust horizontal position and angle at the storage ring injection point. 
 
 | Parameter | Value | Unit |
@@ -821,6 +833,8 @@ The BTS transport line orbit correction main parameters are shown in Table 38. T
 | Maximum corrector strength | ±0.35 | mrad |
 
 **Table 38**: Parameters for BTS transfer line orbit correction. 
+
+<br />
 
 #### Maximum absolute random errors for BTS transfer line orbit correction simulation
 
@@ -852,6 +866,8 @@ A Gaussian distribution with cutoff in ±1σ is assumed.
 
 **Table 41**: Beam launching conditions 
 
+<br />
+
 #### Orbit correction statistics
 
 Over 100 random seeds for BTS transfer line. were used.
@@ -880,10 +896,14 @@ Over 100 random seeds for BTS transfer line. were used.
 
 **Figure 37**: Orbit along the BTS transfer line for modes M1 and M2. For each mode, 100 random machines are simulated with errors given in Tables 39, 40, 41. The bold solid curves represent one sigma of the orbit distribution. 
 
+<br />
+
 ### BTS Diagnostics Elements
 ![TS DIAGNOSTICS](/img/machine/injection_system/ts_diagnostics.png)
 
 **Figure 38**: Schematic layout of BTS diagnostic elements.
+
+<br />
 
 ## Injection into the Storage Ring 
 The injection point in the storage ring is, by definition, the physical end of the thin septum. 
@@ -896,6 +916,8 @@ The injection point in the storage ring is, by definition, the physical end of t
 
 **Figure 40**: Schematic representation of the transverse cross section at the storage ring injection point.
 
+<br />
+
 ### Injection with Nonlinear Kicker (InjNLKckr)
 ![NONLINEAR INJECTION RING](/img/machine/injection_system/nonlin_kick_inject_ring.png)
 
@@ -905,12 +927,14 @@ The injection point in the storage ring is, by definition, the physical end of t
 
 **Figure 42**: Phase space at the Pulsed Multipole Magnet (PMM) position. The green curve represents the injected beam (±4σx) inside the storage ring acceptance (red curve) after the PMM non-linear kick. The black curve is plotted against the right axis and represents the magnetic field of the PMM.
 
+<br />
 
 ### On-axis injection (InjDpKckr)
 ![ON AXIS INJECTION](/img/machine/injection_system/onaxis_inject_ring.png)
 
 **Figure 43**: On-axis injection into the storage ring with a on-axis dipole kicker. The trajectory of the injected beam centroid in the horizontal plane is shown in solid red curve. The dashed curves represent ±3σx beam envelope.
 
+<br />
 
 ## Pulsed Magnets Parameters 
 
@@ -926,6 +950,8 @@ The injection point in the storage ring is, by definition, the physical end of t
 ![SIRIUS RING INJECTION](/img/machine/injection_system/ring_inject.svg)
 
 **Figure 46**: Layout of the storage ring injection straight section.
+
+<br />
 
 ### Septa
 
@@ -952,6 +978,8 @@ The injection point in the storage ring is, by definition, the physical end of t
 **Table 44**: Main parameters for Sirius septa. 
 
 † See Booster extraction apertures and SI injection apertures
+
+<br />
 
 ### Kickers
 
@@ -981,6 +1009,8 @@ The injection point in the storage ring is, by definition, the physical end of t
 
 ² For horizontal stored beam size oscillation < 10%. 
 
+<br /> 
+
 ### Assumptions for aperture requirements and tolerance calculations 
 
 #### Aperture requirements
@@ -996,6 +1026,8 @@ The injection point in the storage ring is, by definition, the physical end of t
 | **Total Full Size** | mm | 22 | 16.0 | 9.0 | 8.0 | 9.0 | 7.0 |
 
 **Table 46**: Beam aperture requirement considerations for Sirius septa. 
+
+<br />
 
 #### Flat-top and pulse-to-pulse reproducibility
 The requirements for the 3 GeV kickers and septa flat-top and pulse-to-pulse reproducibility were determined based on the NLK injection efficiency in the storage ring. The injected beam position and angle stability at the NLK are required to be within Δx < 150 μm and Δx' < 50 μrad. Random variations in the injected beam position and angle at the NLK are supposed to be caused by uncorrelated random variations in:
@@ -1070,6 +1102,8 @@ $\Delta x [mm] = 1.85 \Delta \theta _{bis} [mrad] {\;} {\;} {\;} and {\;} {\;} {
 if we require Δx < 0.5 mm at the booster injection kicker, we have: 
 
 $\Delta \theta _{bis} < 0.27 mrad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bis} / \theta _{bis} < 0.07\%$
+
+<br />
 
 #### Leakage field
 
