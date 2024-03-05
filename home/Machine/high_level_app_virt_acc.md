@@ -2,7 +2,7 @@
 title: High Level Applications and Virtual Accelerator
 description: 
 published: 1
-date: 2024-03-05T20:48:29.993Z
+date: 2024-03-05T21:20:29.906Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:16.484Z
@@ -34,7 +34,7 @@ Moreover, the different phases of the project will reflect on different requirem
     * Maintenance
     * Machine study
 
-Existing HLA solutions must be used as much as possible, at least in the initial stages of development. This could allow for parallel developments of software components. For example, [MML](https://wiki-sirius.lnls.br/mediawiki/index.php/FAC:Matlab_Middle_Layer) is planned be used for testing the virtual accelerator as it is being developed.
+Existing HLA solutions must be used as much as possible, at least in the initial stages of development. This could allow for parallel developments of software components. For example, [MML](/home/Groups/FAC/matlab_middle_layer) is planned be used for testing the virtual accelerator as it is being developed.
 
 The standard procedures used by the operators at UVX are an interesting source of knowledge for eliciting and evaluating requirements. These should be considered taking into account the differences between UVX and Sirius, but can provide ideas for scenarios to help design applications and their integration with the other control system applications.
 
