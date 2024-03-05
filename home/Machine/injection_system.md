@@ -2,7 +2,7 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-03-05T15:28:40.708Z
+date: 2024-03-05T15:30:03.395Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:21.285Z
@@ -1059,23 +1059,23 @@ Using $\beta _{x , sik}=18.6$ m and $\beta _{x , max}=19.3$ m, we have
 
 $\Delta \theta _{sik} < 26.4 \Delta x _{max} [\mu rad] {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{sik} / \theta _{sik} < 0.33\%$
 
-
 2) Booster on-axis injection kicker (bik): The tolerance can be calculated in a similar way, by requiring that the injected beam oscillation amplitude be limited to Δxmax < 1.5 mm along the booster horizontal plane. When specifying the booster aperture, an allowance of 4.5 mm was considered for beam oscillations after injection. For the booster $\beta _{x , bik}=17.9$ m and βx,max=23.2 m, so we have 
 
 $\Delta \theta _{bik} < 0.074 mrad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bik} / \theta _{bik} < 0.31\%$
 
 3) Booster injection septum (bis): A variation in the bis kick affects the position and angle at the injection kicker (bik) according to: 
 
-$\Delta x [mm] = 1.85 \Delta \theta _{bis} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = 0.2 \Delta \theta _{bis} ,$
+$\Delta x [mm] = 1.85 \Delta \theta _{bis} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = 0.2 \Delta \theta _{bis} {\;} {\;} {\;},$
 
 if we require Δx < 0.5 mm at the booster injection kicker, we have: 
 
 $\Delta \theta _{bis} < 0.27 mrad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bis} / \theta _{bis} < 0.07\%$
 
 #### Leakage field
+
 To calculate the allowed **storage ring injection septa** leakage field at the stored beam position in the storage ring, we have assumed that the oscillations caused by the perturbation be limited to 10% of the beam size. The beam trajectory after a kick is given by: 
 
-$\Delta x (s) = \Delta \theta _0 [\beta _0 \beta (s)] ^{1/2} sin[\varphi (s) - \varphi _0] < 0.1 \sigma _x (s) = 0.1 [\epsilon _x \beta (s)] ^{1/2}$
+${\Delta x (s) = \Delta \theta _0 [\beta _0 \beta (s)] ^{1/2} sin[\varphi (s) - \varphi _0] < 0.1 \sigma _x (s) = 0.1 [\epsilon _x \beta (s)] ^{1/2}}$
 
 and as a worst-case estimate we take sin[φ(s)-φ0]=1, and the residual kick at the stored beam position should satisfy:
 
