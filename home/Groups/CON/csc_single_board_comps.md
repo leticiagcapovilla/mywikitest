@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers
 description: 
 published: 1
-date: 2024-03-05T19:07:44.396Z
+date: 2024-03-05T19:09:16.576Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:07:44.396Z
@@ -14,7 +14,7 @@ dateCreated: 2024-03-05T19:07:44.396Z
 
 ## Default configuration for SBCs
 
-This section presents a brief tutorial about how to set up a BeagleBone Black/Green for use in [[Machine:Control_System|Sirius control system]]. The procedure has been used for the development of control node prototypes.
+This section presents a brief tutorial about how to set up a BeagleBone Black/Green for use in [Sirius control system](/home/Machine/control_system). The procedure has been used for the development of control node prototypes.
 
 Currently we are working with BeagleBone Black Revision C (the last hardware version of the board) and Beaglebone Green. It's necessary to configure the software environment before running applications.
 
