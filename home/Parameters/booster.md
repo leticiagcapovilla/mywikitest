@@ -2,7 +2,7 @@
 title: Booster
 description: 
 published: 1
-date: 2024-03-05T14:30:12.816Z
+date: 2024-03-05T14:30:56.619Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T14:05:18.596Z
@@ -83,7 +83,7 @@ dateCreated: 2024-03-05T14:05:18.596Z
 ### Alignment and excitation errors
 
 | Parameter | Dipoles | Quadrupoles | Sextupoles | BPMs | Unit |
-| --- | --- | --- | --- | ---|
+| --- | --- | --- | --- | --- | --- |
 | Transverse position, x, y| 160 | 160 | 160 | 300 | Î¼m |
 | Rotation around longitudinal axis | 0.8 | 0.8 | 0.8 | -- | mrad |
 | Excitation error (static or low frequency) | 0.15 | 0.3 | 0.3 | -- |  % |
