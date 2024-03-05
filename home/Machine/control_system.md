@@ -2,7 +2,7 @@
 title: Control System
 description: 
 published: 1
-date: 2024-03-05T20:31:40.596Z
+date: 2024-03-05T20:32:25.390Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T18:55:00.249Z
