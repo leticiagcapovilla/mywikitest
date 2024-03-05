@@ -2,7 +2,7 @@
 title: High Level Applications and Virtual Accelerator
 description: 
 published: 1
-date: 2024-03-05T21:55:39.671Z
+date: 2024-03-05T21:56:35.165Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:16.484Z
@@ -213,7 +213,7 @@ Introduction to the soft IOC of optics correction.
 
 ## HLA - High Level Applications
 
-FAC HLAs are part of the Control System for the Sirius. They are available in the *github* repository https://github.com/lnls-sirius/hla and have the following dependencies:
+FAC HLAs are part of the Control System for the Sirius. They are available in the [github repository](https://github.com/lnls-sirius/hla) and have the following dependencies:
 * PyEpics
 * Qt5/PyQt5
 * [pydm](https://github.com/slaclab/pydm)
