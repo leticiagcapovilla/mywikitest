@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T15:03:56.632Z
+date: 2024-03-05T15:09:38.463Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:48.087Z
@@ -605,7 +605,7 @@ The beam-environment interaction can be described by the impedance concept, wher
 **Figure 35**: Longitudinal Impedance for phase 2. Dashed lines represent negative data.
 
 ### Collective Instabilities
-With the impedance budget presented above, collective instability thresholds for Sirius have been calculated for the various operation scenarios described in Operation Phases, for coupled bunch and single bunch effects.
+With the impedance budget presented above, collective instability thresholds for Sirius have been calculated for the various operation scenarios described in [Operation Phases](/home/Machine/storage_ring#operation-phases), for coupled bunch and single bunch effects.
 
 Regarding the coupled bunch (CB) instabilities, the transverse planes will be unstable, due to resistive wall instability (see Table 17) and the longitudinal plane will be stable, given that there is no narrow band impedances in our model. the instabilities in the tansverse plane could be controlled by increasing the chromaticity, because of the strong head-tail damping of the azimuthal mode zero (see Figure 36 and Figure 37). However, this behaviour depends strongly on the strength of the broadband impedance and for the sake of safety a transverse feedback system will be installed in the machine from the beginning. 
 
@@ -653,18 +653,21 @@ Table 18 shows the current thresholds for single bunch instabilities. Even for P
 A hybrid filling pattern with an empty gap and a high current single bunch for time resolved experiments is planned for Sirius. In this mode, the bunch lengthening provided by the harmonic cavity can be smaller and non-uniform. For the single bunch in the middle of the gap, even with optimum lengthening, the threshold current for mode coupling (see Table 18, Phase 2) is already below the nominal value of 2 mA. A tracking code that includes the effects of the harmonic cavity with uniform and non-uniform filling as well as broadband impedances is being developed to study the hybrid filling mode more carefully. 
 
 ## Diagnostic Beamlines 
+
 Here is a summary of the main features and specifications of each diagnostic beam line for the Storage ring in the Sirius project. 
 
 ### General Idea
+
 Since Sirius will be a project mainly devoted to the production of soft and hard x-rays and due to the strong focusing nature of its lattice, the apertures available for beam lines are small. Bearing this in mind and the development of diagnostics equipment in the later years the natural choice is to use x-ray to image the beam in the diagnostic beamlines, and not vis-UV or visible radiation. Another issue is that on the new low emittance machines, impedances can represent a limiting factor and introducing vacuum chamber tapers, steps or strange geometries has to be a well thought process not to impact on the instability limits. Using x-rays to image the beam doesn't change the vacuum chamber current project and thus don't imply changes in the impedances on the overall machine. Also, making the design of the beam lines compatible with the overall machine design won't limit the number of diagnostic beamlines that can be built, if in the future this need arrises. For quick longitudinal profile measurements and filling pattern determination a streak camera and a BPM or Fast Current Transformer (FCT) will be used, thus a visible beaming is needed, however this line doesn't need extreme resolution for the vertical profiles and can use the available aperture in the machine without further modification on the vacuum chamber projects. Here is a summary of all the measurements that should be possible with the diagnostic beamlines:
 
 * Beam size and thus emittance in transverse plane (horizontal and vertical);
 * Energy spread (and for that it is necessary to have 2 beam lines, one with zero and one with significant dispersion -> B1 and B2 beam lines);
 * Bunch length and longitudinal profiles (using visible light + streak camera);
 * Filling pattern (visible diagnostics);
-* Transverse turn-by-turn mode (for injection studies, instabilities, etc.) by using a fast camera with enhanced sensitivity in any on of the beam lines measuring transverse sizes ([1], [2] and [3]).
+* Transverse turn-by-turn mode (for injection studies, instabilities, etc.) by using a fast camera with enhanced sensitivity in any on of the beam lines measuring transverse sizes ([1](http://www.stanfordcomputeroptics.com/applications/metrology/synchrotron-beam-profile-measurement.html), [2](http://www.stanfordcomputeroptics.com/applications/metrology/synchrotron-beam-diagnostics.html) and [3](http://www.stanfordcomputeroptics.com/applications/metrology/injected-beam-profile-at-synchrotron.html)).
 
 ### Available sources points
+
 There will be three possible sources available for diagnostics, light from B1 and B2 and also BC. Given the actual lattice the beam sizes in each of those sources are: 
 
 | Source | $\beta _x [m]$ | $\beta _y [m]$ | $\alpha _x [rad]$ | $\alpha _y [rad]$ | $\gamma _x [1/m]$ | $\gamma _y [1/m]$ | $\eta _x [mm]$ | $\eta ' _x [mrad]$ | $\sigma _{x,b} [\mu m]$ | $\sigma _x [\mu m]$ | $\sigma _y [\mu m]$ | $\sigma' _{x,b} [\mu rad]$ | $\sigma' _x [\mu rad]$ | $\sigma' _y [\mu rad]$ |
@@ -684,25 +687,35 @@ The available source points around the storage ring are (so far): the B1 and B2 
 
 **Figure 41**: Figure show the extraction path from dipole B2. The yellow line is the extraction of light from the beginning of the dipole, which cannot be realised due to mechanical constraints in the vacuum chamber production. The available extration point is them moved 19 mrad into the dipole and is represented by the green line in the picture. According to preliminary ray-tracing, this beamline won't colide with any magnet.
 
-### Techniques and limutations 
+### Techniques and limitations 
+
 In this section we describe a few techniques that can be used to measure the beam sizes in the Storage ring in Sirius. 
 
 #### Pinholes
+
 This is the most classical way for measuring beam sizes. The beam line would be composed of: a cooled monochromator followed by a set of attenuators and filters, a pinhole with array with 10, 15, 20 and 25 µm pinholes (explanation to follow), a phosphor screen and a CCD camera with pixel size of the order of 4 µm (of-the-shelf component, to reduce costs). The total magnification would be around 5 for B1 and 4.5 for B2. The image formed on the camera is the convolution of the source profile and the point spread function (PSF) of the system, i.e., the beamline. Consequently, the convolved PSF determines the smallest image size measurable by the imaging system. To calculate the PSF of the system we will, in a first approximation, assume to be in the far-field region. This is true when the distance between the pinhole and the screen in which the light is observed is significantly greater than A²/λ, where λ is the wavelength and A is the pinhole diameter. In the regime in which Fraunhofer optics are valid, the PSF can be approximated by a Gaussian function and in this case the rms Gaussian size of the image of the electron beam Σ fulfills: 
 
-$\Sigma ² = S ² + \Sigma _0 ² + \Sigma _1 ²$
+$$
+\Sigma ² = S ² + \Sigma _0 ² + \Sigma _1 ²
+$$
 
 where S is the rms size of the image of the photon beam at a distance d from the pinhole, Σ0² is the point spread function of the system and Σ1² accounts for effects of blurring caused by the phosphor screen and also the CCD camera resolution. For monochromatic radiation the pinhole contribution to the PSF can be further decomposed into two contributions: 
 
-${\Sigma _0 ² = S²_{aperture} + S²_{diff}}$
+$$
+{\Sigma _0 ² = S²_{aperture} + S²_{diff}}
+$$
 
 $S_{aperture}$ is the geometrical projection of the pinhole opening. A point source of light illuminating a hole at a distance d, will project a spot of light on the scintillator screen. The size of this spot is A(D+d)/d, where A is the pinhole diameter and D is the distance from the pinhole to the screen. The camera geometric magnification is M=D/d, and the corresponding rms size of this contribution to the total measured beam size is: 
 
-${S_{aperture} = \frac{A}{\sqrt{12}} \frac{D + d}{d}}$
+$$
+{S_{aperture} = \frac{A}{\sqrt{12}} \frac{D + d}{d}}
+$$
 
 where the factor √12 is due to the conversion of the width of the rectangular profile to an rms value. S accounts for the pinhole diffraction, which in the regime of Fraunhofer diffraction is described by a Bessel function of first order, for a circular pinhole. If the Bessel function of first order is approximated by a Gaussian function, the rms size of the diffraction contribution to the total beam size is: 
 
-${S_{diff} = 0.42 \frac{\lambda D}{A}}$
+$$
+{S_{diff} = 0.42 \frac{\lambda D}{A}}
+$$
 
 Thus, pinholes with large apertures will lead to image blurring due to geometrical shadowing while pinholes with small apertures have strong diffraction effects. The total contribution from the pinholes to the PSF as a function of the photon energy for the different pinhole apertures is shown in Figure 42 as well as a plot of the optimum aperture as a function of photon energy in Figure 43. For Sirius we considered that the pinholes are 3.5 m away from the source and that the beam line has a magnification of 5 for a beam line in dipole B1. From the plots we can see that there is no gain in having pinholes smaller than 10 µm and having an array with 10, 15 and 20 µm pinholes would cover the optimum size for a broad range of wavelengths. In Figure 44 is the result from a SRW simulation for the pinholes in Sirius, notice that for most cases the Fraunhoffer approximation is still valid and the diffraction pattern can be fitted by a Gaussian. 
 
@@ -732,9 +745,11 @@ The imaging system contribution to the PSF (Σ1) can be further decomposed into 
 
 
 #### Toroidal Mirror
+
 Given the results for the pinhole it is possible to notice that a accurate measurement of for the vertical beam size is not possible. In order to b able to measure vertical and horizontal beam size we are now studying the use of a toroidal X-ray mirror. The optics is much like the one used in the SAX beam line in the current machine, the UVX. A series of calculations using SHADOW are begin done to evaluate this possibility. 
 
 ### Bunch length and Filling pattern measurements
+
 In order to measure the bunch length the idea is to move the streak camera from the old light source (UVX) to the new one. The streak camera is a Hammamatsu with dual sweep unit running at a frequency of 1/4th of the RF frequency. In the old machine the RF frequency is 476.066 MHZ and thus the sincroscran frequency is about 119 MHz. It will be necessary to ship the unit to Japan in order to have the frequency changed to accommodate the 500 MHz, which is the nominal RF frequency from Sirius. The principle of operation of the streak camera is explained in Figure 45 , bellow. 
 
 ![STREAK CAM OPERATION](/img/machine/storage_ring/streak_cam_schema.png)
@@ -753,6 +768,7 @@ In order to digitize and process the data from the filling pattern monitors it i
 
 
 ## Injection into the Storage Ring 
+
 The injection point in the storage ring is, by definition, the physical end of the thin septum. 
 
 ![RING INJECTION](/img/machine/storage_ring/ring_inject.svg)
