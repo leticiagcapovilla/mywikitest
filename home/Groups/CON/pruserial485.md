@@ -2,7 +2,7 @@
 title: PRUserial485
 description: 
 published: 1
-date: 2024-03-05T19:39:57.288Z
+date: 2024-03-05T19:46:54.430Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:13:29.040Z
@@ -31,9 +31,9 @@ This was the first and largest application for BeagleBone PRU. Reaching data rat
 
 For this purpose, the PRUserial485 has been designed mainly for Sirius Power Supplies, which are digitally controlled at 6 Mbps. This interface, which is very deterministic, also includes a timing input for triggering data sending during sync operation, such as booster ramping and soft orbit correction.
 
+![Hardware-PRUserial485.jpg](/img/groups/con/pruserial485/Hardware-PRUserial485.jpg)
 
-<center>[[File:Hardware-PRUserial485.jpg|500px]]</center>               
-
+**Figure 2**:
 
 The steps below are mandatory to project development and understanding. They will be discussed in the next sections.
 
@@ -63,14 +63,13 @@ In this case, it is possible to changes curves on-the-fly by loading them into a
 
 ## Hardware Requirements
 
-[[File:Pruserial485-sch.png|500px|thumb|MAX3107 for PRUserial485]]
+![Pruserial485-sch.png](/img/groups/con/pruserial485/Pruserial485-sch.png)
 
-The main Controls Group hardware interface designed for BeagleBone Black, [[CON:SERIALxxCON|SERIALxxCON]], has all the peripherals that are needed to have the PRUserial485 interface working properly.
+The main Controls Group hardware interface designed for BeagleBone Black, [[CON:SERIALxxCON|SERIALxxCON]][link], has all the peripherals that are needed to have the PRUserial485 interface working properly.
 
-PRUserial485 depends on an external UART chip: [https://datasheets.maximintegrated.com/en/ds/MAX3107.pdf MAX3107], from Maxim Integrated. Although it is able to interface with integrated UART subsystem available at BBB SoC, using an external UART has led to FIFO depth increasing and a wide range of programmable baud-rates, reaching up to 15 Mbps. The external UART is digitally controlled with PRU through SPI.
+PRUserial485 depends on an external UART chip: [MAX3107](https://datasheets.maximintegrated.com/en/ds/MAX3107.pdf), from Maxim Integrated. Although it is able to interface with integrated UART subsystem available at BBB SoC, using an external UART has led to FIFO depth increasing and a wide range of programmable baud-rates, reaching up to 15 Mbps. The external UART is digitally controlled with PRU through SPI.
 
-
-Another important external IC is the line driver. Controls Group uses NVE [https://www.nve.com/Downloads/il3685.pdf IL3685] as the RS-485 transceiver.
+Another important external IC is the line driver. Controls Group uses NVE [IL3685](https://www.nve.com/Downloads/il3685.pdf) as the RS-485 transceiver.
 
  <br />
 
@@ -86,14 +85,15 @@ BeagleBone pins that are connected to P8 and P9 headers can be configured in sev
 
  <br />
 
+```
  # PRUserial485 pins
- 
  config-pin P8_46 pruin          # SOFT SPI MISO
  config-pin P8_39 pruin          # IRQ FROM MAX3107
  config-pin P8_27 pruin          # SYNC TIMING INPUT
  config-pin P8_45 pruout         # SOFT SPI CLK
  config-pin P8_43 pruout         # SOFT SPI CS
  config-pin P8_41 pruout         # SOFT SPI MOSI
+```
 
 In project folder, there is a bash script that configures pins automatically. It must be run before any application that uses PRUserial485.
 
@@ -103,7 +103,7 @@ In project folder, there is a bash script that configures pins automatically. It
 
 #### Conventional Mode
 
-Once serial interface is started, it is needed to have it configured. As it is a full-duplex RS-485 standard communication, BeagleBone can have a role either as a '''master''' or as a '''slave''' in the network. This parameter, along with desired baudrate, is passed when it is started.
+Once serial interface is started, it is needed to have it configured. As it is a full-duplex RS-485 standard communication, BeagleBone can have a role either as a **master** or as a **slave** in the network. This parameter, along with desired baudrate, is passed when it is started.
 
 The master is the main device in the network. It is the master who will always request for information and get the reply.
 The slave will only send data into the serial network if it is requested to do so. Receiving any incoming message, it will only reply if the message is addressed to it.
@@ -114,7 +114,9 @@ For both cases, there are ''write'' and ''read'' commands to send/get data to/fr
 
 #### Synchronized configuration
 
-[[File:Sync pru.jpg|600px]]
+![Sync_pru.jpg](/img/groups/con/pruserial485/Sync_pru.jpg)
+
+**Figure 3**:
 
  <br />
 
@@ -126,9 +128,9 @@ PRU is the core which will be controlling the external UART (MAX3107).
 
 Some important technical references about AM335x PRUs:
 
- [https://elinux.org/images/d/da/Am335xPruReferenceGuide.pdf AM335x PRU-ICSS Reference Guide]
- [http://www.ti.com/lit/ug/spruhv6c/spruhv6c.pdf PRU Assembly Language Tools - User's Guide]
- [http://www.ti.com/lit/ug/spruij2/spruij2.pdf PRU Assembly Instruction User Guide]
+ [AM335x PRU-ICSS Reference Guide](https://elinux.org/images/d/da/Am335xPruReferenceGuide.pdf)
+ [PRU Assembly Language Tools - User's Guide](http://www.ti.com/lit/ug/spruhv6c/spruhv6c.pdf)
+ [PRU Assembly Instruction User Guide](http://www.ti.com/lit/ug/spruij2/spruij2.pdf)
 
  <br />
 
@@ -141,7 +143,7 @@ Communication between PRU and Operating System is usually performed through memo
  <br />
 
 ### Source Codes
-Sources of PRU software (written in assembly language) and the corresponding system library for Linux (written in C) can be obtained from [https://github.com/lnls-sirius/pru-serial485 PRUserial485 Github repository].
+Sources of PRU software (written in assembly language) and the corresponding system library for Linux (written in C) can be obtained from [PRUserial485 Github repository](https://github.com/lnls-sirius/pru-serial485).
 
  <br />
 
@@ -159,7 +161,9 @@ First, and more directly, comes the shared RAM. A PRU-dedicated, it is reserved 
 
 Also, there is the possibility of reserving a larger region of the external DDR memory and use it with PRU sub-systems. It comes to be useful when it is intended to store many long curve points and share them with PRU to perform synchronized adjustments. It will be discussed in the next sub-sections.
 
-<center>[[File:Memoria-PRUserial485.jpg|500px]]</center>
+![Memoria-PRUserial485.jpg](/img/groups/con/pruserial485/Memoria-PRUserial485.jpg)
+
+**Figure 4**:
 
  <br />
 
@@ -167,60 +171,33 @@ Also, there is the possibility of reserving a larger region of the external DDR 
 
 It is a 12kbyte RAM, embedded on the SoC, shared with main core and both PRUs. For PRUserial485 application, memory mapping follows the sequence below:
 
-
-{| class="wikitable"
-|+ Shared RAM mapping for PRUserial485 
-|-
-! Offset !! Description
-|-
-| 00 || MAX3107 version (0x1A)
-|-
-| 01 || Data status (0x00: Data ready for reading / 0x55: Old data on buffer / 0xFF: Data ready for sending)
-|-
-| 02 || Serial baudrate (MAX3107 BRGCONFIG register)
-|-
-| 03 || Serial baudrate (MAX3107 DIVLSB register)
-|-
-| 04 || Serial baudrate (MAX3107 DIVMSB register)
-|-
-| 05 || Sync operation control (0x00: Stop / 0xFF: Start)
-|-
-| 06..09 || Timeout to wait for a reply after a writing cycle (x10 ns)
-|-
-| 10..13 || Curve execution: pointer for next curve point
-|-
-| 15..18 || Curve execution: absolute address of memory block at DDR memory (curve points storage)
-|-
-| 20..23 || Curve execution: total size, in bytes, of all four curves
-|-
-| 24 || Board hardware address (SERIALxxCON = 21)
-|- 
-| 25 || Master or Slave operation ("M" or "S")
-|-
-| 26..28 || One serial byte length (ns)
-|-
-| 29..31 || Delay to wait between a sync and normal command (x10 ns)
-|-
-| 32 || Serial receiving timeout (MAX3107 RXTIMEOUT register)
-|-
-| 50 || Sync operation: command size
-|-
-| 51.. || Sync operation: command
-|-
-| 80..83 || Sync operation: receiving pulse counting
-|-
-| 84 || Sync operation: sync ok (0x00: not waiting for pulse / 0xFF: waiting for pulse triggering)
-|-
-| 85 || Sync operation: mode (0x51 Single curve sequence & Intercalated read messages / 0x5E Single curve sequence & Read messages at End of curve / 0xC1 Continuous curve sequence & Intercalated read messages / 0xCE Continuous curve sequence & Read messages at End of curve / 0x5B Single Sequence - Single Broadcast Function command)
-|-
-| 100..103 || Sending data: vector size
-|-
-| 104..5999 || Sending data: data
-|-
-| 6000..6003 || Incoming data: vector size
-|-
-| 6004..11999 || Incoming data: data
-|}
+| Offset| Description |
+| --- | --- |
+|00| MAX3107 version (0x1A) |
+|01| Data status (0x00: Data ready for reading / 0x55: Old data on buffer / 0xFF: Data ready for sending) |
+|02| Serial baudrate (MAX3107 BRGCONFIG register) |
+|03| Serial baudrate (MAX3107 DIVLSB register) |
+|04| Serial baudrate (MAX3107 DIVMSB register) |
+|05| Sync operation control (0x00: Stop / 0xFF: Start) |
+|06..09| Timeout to wait for a reply after a writing cycle (x10 ns) |
+|10..13| Curve execution: pointer for next curve point |
+|15..18| Curve execution: absolute address of memory block at DDR memory (curve points storage) |
+|20..23| Curve execution: total size, in bytes, of all four curves |
+|24| Board hardware address (SERIALxxCON = 21) |
+|25| Master or Slave operation ("M" or "S") |
+|26..28| One serial byte length (ns) |
+|29..31| Delay to wait between a sync and normal command (x10 ns) |
+|32| Serial receiving timeout (MAX3107 RXTIMEOUT register) |
+|50| Sync operation: command size |
+|51..| Sync operation: command |
+|80..83| Sync operation: receiving pulse counting |
+|84| Sync operation: sync ok (0x00: not waiting for pulse / 0xFF: waiting for pulse triggering) |
+|85| Sync operation: mode (0x51 Single curve sequence & Intercalated read messages / 0x5E Single curve sequence & Read messages at End of curve / 0xC1 Continuous curve sequence & Intercalated read messages / 0xCE Continuous curve sequence & Read messages at End of curve / 0x5B Single Sequence - Single Broadcast Function command) |
+|100..103| Sending data: vector size |
+|104..5999| Sending data: data |
+|6000..6003| Incoming data: vector size |
+|6004..11999| Incoming data: data  |
+|
 
  <br />
 
