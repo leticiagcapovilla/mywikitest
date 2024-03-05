@@ -1,18 +1,22 @@
 ---
-sidebar_position: 5
-# Name that goes on the sidebar:
 title: Booster to storage ring transport line
+description: 
+published: 1
+date: 2024-03-05T14:35:47.460Z
+tags: 
+editor: markdown
+dateCreated: 2024-03-05T14:05:21.020Z
 ---
 
 # Machine: Booster to storage ring transport line
 
-## 1 Tables
+## Tables
 
-### 1.1 Twiss functions
+### Twiss functions
 
-(link)
+There is currently no text in this page.
 
-### 1.2 Main parameters
+### Main parameters
 
 | Parameter | Value | Unit |
 | --- | --- | ---|
@@ -26,7 +30,7 @@ title: Booster to storage ring transport line
 
 **Table 1**: Main parameters of the BTS transfer line.
 
-### 1.3 Dipoles parameters
+### Dipoles parameters
 
 | Parameter | Dipoles | Thin ext. septum | Thick ext. septum | Thick inj. septum | Thin inj. septum |  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -36,9 +40,9 @@ title: Booster to storage ring transport line
 | Deflection angle | +5.012 | -3.600 | -3.600 | +3.600 | +3.118 | Â° |
 | Hardedge bending radius | 13.902 | -9.188 | -9.188 | 9.188 | 9.188 | m |
 | Integrated magnetic field | 0.875 | -0.629 | -0.629 | 0.629 | 0.545 | TÂ·m |
-| Integrated quadrupole strength | -0.169 | -- | -- | -- | -- | m-1 |
+| Integrated quadrupole strength | -0.169 | -- | -- | -- | -- | m⁻¹ |
 | Hardedge sagitta | 13.40 | 4.53 | 4.53 | 4.53 | 3.40 | mm 
 
-### 1.4 Quadrupoles parameters
+### Quadrupoles parameters
 
-(link)
+There is currently no text in this page.
