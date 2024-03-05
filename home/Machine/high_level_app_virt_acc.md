@@ -2,7 +2,7 @@
 title: High Level Applications and Virtual Accelerator
 description: 
 published: 1
-date: 2024-03-05T21:44:25.984Z
+date: 2024-03-05T21:55:39.671Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:16.484Z
@@ -195,10 +195,10 @@ Machine applications are soft IOCs running on the control system whose purpose i
 
 ### Virtual accelerator
 
-A virtual accelerator (VA) with an EPICS interface is being developed for testing high level applications and will be integrated with the Sirius control system. Code is in the [va repository](https://github.com/lnls-fac/va). (see [FAC:Virtual accelerator][link]) 
+A virtual accelerator (VA) with an EPICS interface is being developed for testing high level applications and will be integrated with the Sirius control system. Code is in the [va repository](https://github.com/lnls-fac/va). (see [FAC:Virtual accelerator](/home/Groups/FAC/virtual_acc)) 
 
 ### [Optics Correction][link]
-{{#lst:Machine Application:Optics Correction|introduction}}
+Introduction to the soft IOC of optics correction. 
 
 ### [Current Information][link]
 
