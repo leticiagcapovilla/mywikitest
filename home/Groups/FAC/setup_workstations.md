@@ -2,68 +2,87 @@
 title: Setup workstations for sirius
 description: 
 published: 1
-date: 2024-03-05T20:57:59.965Z
+date: 2024-03-05T21:02:28.600Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T20:57:59.965Z
 ---
 
-=Create Users=
+# FAC:Setup workstations for sirius
+
+## Create Users
 
 Then create user 'fac' in group fac:
 
- sudo adduser fac; # need to choose a password for fac user
- sudo usermod -aG sudo fac
+*sudo adduser fac; # need to choose a password for fac user*
+*sudo usermod -aG sudo fac*
 
 Create other local users:
- for user in fernando ximenes guilherme liulin ana alexandre murilo; do
- sudo adduser $user --ingroup fac; # initialize the password with boo500mev
- sudo usermod -aG sudo $user;
- done;
- 
+
+```
+for user in fernando ximenes guilherme liulin ana alexandre murilo; do
+sudo adduser $user --ingroup fac; # initialize the password with boo500mev
+sudo usermod -aG sudo $user;
+done;
+```
+
 logout and login with your local user.
 
-=Configure ssh with other computers:=
+## Configure ssh with other computers
+
 If you already have the publickey method for ssh configured in other computer and you want to keep that configuration, including the keys. Just copy the folder:
- scp -r <other machine>:~/.ssh ~/
+
+`scp -r <other machine>:~/.ssh ~/`
+
 and skip the rest of this section.
 
 Generate your public key
- ssh-keygen 
+
+`ssh-keygen` 
 
 and copy it to all the computers you want to login without password:
- ssh-copy-id <computer name or address>
+
+`ssh-copy-id <computer name or address>`
 
 and create the ssh config file:
- echo "Host *" > ~/.ssh/config
- echo "        ForwardX11 yes" >> ~/.ssh/config
- echo "        PreferredAuthentications publickey,password" >> ~/.ssh/config
 
-=Install Git:=
- sudo apt-get install git
- git config --global core.editor vim
- git config --global push.default simple
- git config --global user.email "you@example.com"
- git config --global user.name "Your Name"
+```
+echo "Host *" > ~/.ssh/config
+echo "        ForwardX11 yes" >> ~/.ssh/config
+echo "        PreferredAuthentications publickey,password" >> ~/.ssh/config
+```
+
+## Install Git
+
+```
+sudo apt-get install git
+git config --global core.editor vim
+git config --global push.default simple
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
 Open the [https://www.github.com github] website and add the ssh key of your computer:
  cat ~/.ssh/id_rsa.pub
 to the list of authorized keys.
 
-=Create fac_files folder:=
+## Create fac_files folder
 
- cd /home
- sudo mkdir -p fac_files/
- sudo chown -R fac fac_files
- sudo sed -i -e 's/\(remount-ro\)/&,acl/; s/\(defaults\)/&,acl/' /etc/fstab
- sudo mount -oremount /
- sudo mount -oremount /home/ # in case your /home is in a different partition
- sudo chgrp -R fac fac_files
- sudo setfacl -Rdm u::rwx,g:fac:rwx,o::r /home/fac_files
- sudo setfacl -Rm u::rwx,g:fac:rwx,o::r /home/fac_files
- cd /home/fac_files/
- mkdir lnls-fac lnls-sirius lnls-ima
+```
+cd /home
+sudo mkdir -p fac_files/
+sudo chown -R fac fac_files
+sudo sed -i -e 's/\(remount-ro\)/&,acl/; s/\(defaults\)/&,acl/' /etc/fstab
+sudo mount -oremount /
+sudo mount -oremount /home/ # in case your /home is in a different partition
+sudo chgrp -R fac fac_files
+sudo setfacl -Rdm u::rwx,g:fac:rwx,o::r /home/fac_files
+sudo setfacl -Rm u::rwx,g:fac:rwx,o::r /home/fac_files
+cd /home/fac_files/
+mkdir lnls-fac lnls-sirius lnls-ima
+```
 
-=Install the scripts repository=
+## Install the scripts repository
 
 The sirius-bashrc file is useful for compiling and using some of the packages below, as it defines environment variables and add binaries to the path. First clone the [https://github.com/lnls-fac/scripts scripts] repository with
  cd /home/fac_files/lnls-fac
