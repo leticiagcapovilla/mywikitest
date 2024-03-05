@@ -2,7 +2,7 @@
 title: PRUserial485
 description: 
 published: 1
-date: 2024-03-05T19:13:29.040Z
+date: 2024-03-05T19:32:10.902Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:13:29.040Z
@@ -10,8 +10,9 @@ dateCreated: 2024-03-05T19:13:29.040Z
 
 # CON: PRUserial485
 
+ <br />
+ 
 ## Introduction
-
 
 [[File:PRU ICSS block diag.png|250px|thumb|PRU-SS, from Texas Instruments]]
 
@@ -39,6 +40,8 @@ The steps below are mandatory to project development and understanding. They wil
 * Carrier library
 * Memory mapping
 
+ <br />
+
 ### Synchronous operation mode: a particularity
 
 "Sirius power supplies must perform synchronized adjusts during booster ramping, orbit correction, magnets cycling and migration mode. For booster energy ramping, for example, curves with 3920 points must be run at 2 Hz. For that purpose, a PRU serial mode was implemented to deliver serial messages with low jitter to power supplies’ controllers. Concerning serial network, there are two main sync modes: after a triggering a timing pulse, PRU interface sends through RS-485:
@@ -53,29 +56,35 @@ could be a setpoint implementation or start of a magnet cycling, for example. Th
 
 In this case, it is possible to changes curves on-the-fly by loading them into a different block as well as changing pointer for next point of curve in execution. Also, two more parameters should be configured: execute curve once or multiple times and intercalate normal write/read messages between timing commands or only after the last curve point."
 
+ <br />
+
 ## Hardware Requirements
 
 [[File:Pruserial485-sch.png|500px|thumb|MAX3107 for PRUserial485]]
 
-
-
 The main Controls Group hardware interface designed for BeagleBone Black, [[CON:SERIALxxCON|SERIALxxCON]], has all the peripherals that are needed to have the PRUserial485 interface working properly.
-
 
 PRUserial485 depends on an external UART chip: [https://datasheets.maximintegrated.com/en/ds/MAX3107.pdf MAX3107], from Maxim Integrated. Although it is able to interface with integrated UART subsystem available at BBB SoC, using an external UART has led to FIFO depth increasing and a wide range of programmable baud-rates, reaching up to 15 Mbps. The external UART is digitally controlled with PRU through SPI.
 
 
 Another important external IC is the line driver. Controls Group uses NVE [https://www.nve.com/Downloads/il3685.pdf IL3685] as the RS-485 transceiver.
 
+ <br />
+
 ## Programming Developments
 
 This is the core of this project. It is needed to have, at least, two coding files: one for PRU firmware and other dedicated do ARM core (operating system). As a standalone system, PRU runs a binary file which must be pre-loaded and started by the ARM core.
+
+ <br />
 
 ### Pin configuration
 
 BeagleBone pins that are connected to P8 and P9 headers can be configured in several modes. Some of them are directly connected to pins that can be driven from PRUs and must be configured before use. For this application and considering SERIALxxCON hardware design and BBB kernel 4.14.x:
 
+ <br />
+
  # PRUserial485 pins
+ 
  config-pin P8_46 pruin          # SOFT SPI MISO
  config-pin P8_39 pruin          # IRQ FROM MAX3107
  config-pin P8_27 pruin          # SYNC TIMING INPUT
@@ -84,6 +93,8 @@ BeagleBone pins that are connected to P8 and P9 headers can be configured in sev
  config-pin P8_41 pruout         # SOFT SPI MOSI
 
 In project folder, there is a bash script that configures pins automatically. It must be run before any application that uses PRUserial485.
+
+ <br />
 
 ### Operation Modes
 
@@ -96,9 +107,13 @@ The slave will only send data into the serial network if it is requested to do s
 
 For both cases, there are ''write'' and ''read'' commands to send/get data to/from data line.
 
+ <br />
+
 #### Synchronized configuration
 
 [[File:Sync pru.jpg|600px]]
+
+ <br />
 
 ### PRU Firmware
 
@@ -112,18 +127,26 @@ Some important technical references about AM335x PRUs:
  [http://www.ti.com/lit/ug/spruhv6c/spruhv6c.pdf PRU Assembly Language Tools - User's Guide]
  [http://www.ti.com/lit/ug/spruij2/spruij2.pdf PRU Assembly Instruction User Guide]
 
+ <br />
+
 ### ARM/Linux Libraries
 
 Texas Instruments also provides a library for dealing with PRUs in system level. It is called "libprussdrv" and can be easily installed through ''apt-get install''. Using this library it is possible to load binary files into PRU, get/send signals to it, check/open memory mapping, etc. 
 
 Communication between PRU and Operating System is usually performed through memory access (either reading or writing to special registers). For that purpose, it has been developed a library for this project in C and a Python module (that comes from the C library) for interchanging information to/from PRU. Both are installed on the system, being available at the default directory (it is not necessary to carry along .h or .py files when coding).
 
+ <br />
+
 ### Source Codes
 Sources of PRU software (written in assembly language) and the corresponding system library for Linux (written in C) can be obtained from [https://github.com/lnls-sirius/pru-serial485 PRUserial485 Github repository].
+
+ <br />
 
 ## Detailed Description
 
 In this section, code development will be detailed. As discussed above, PRU and ARM share data through memory mapping. Specifically, there is a dedicated 12-kbyte shared RAM memory for this purpose and it will be used. Aditionally, it has been extended to DDR memory, in order to increase mapping size (developed for Power Supplies' synchronous operation through BBB).
+
+ <br />
 
 ### AM335x Memory Mapping
 
@@ -133,8 +156,9 @@ First, and more directly, comes the shared RAM. A PRU-dedicated, it is reserved 
 
 Also, there is the possibility of reserving a larger region of the external DDR memory and use it with PRU sub-systems. It comes to be useful when it is intended to store many long curve points and share them with PRU to perform synchronized adjustments. It will be discussed in the next sub-sections.
 
-
 <center>[[File:Memoria-PRUserial485.jpg|500px]]</center>
+
+ <br />
 
 #### Shared RAM Memory
 
@@ -195,6 +219,8 @@ It is a 12kbyte RAM, embedded on the SoC, shared with main core and both PRUs. F
 | 6004..11999 || Incoming data: data
 |}
 
+ <br />
+
 #### DDR Memory
 
 
@@ -206,13 +232,11 @@ Once this is performed, a system file will be created, indicating starting addre
  /sys/class/uio/uio0/maps/map1/addr
  /sys/class/uio/uio0/maps/map1/size
 
-
 As a project definition, it has been set to have:
 
  1. Four independent blocks (named 0 to 3)
  2. Each block will store four curves, one for each power supply (total: 16 curves)
  3. Each curve can have up to 6250 points (floating values, ie, 25000 bytes)
-
 
 Here, dealing with up to four curves is justified that Power Supplies can be allocated in crate with up to four of them in the same crate (FBP model) and there is a BSMP command that adjusts all their currents at once.
 
@@ -263,9 +287,13 @@ Inside DDR memory, data is allocated according to the table below.
 
 </center>
 
+ <br />
+
 ### PRU Firmware
 
 PRU is an assembly-based firmware for this application, once performance must be considered as well as jitter and determinism. This section discuss the code itself and strategies of implementation.
+
+ <br />
 
 #### Files and compiling
 
@@ -282,17 +310,24 @@ Texas Instruments provides a compiler (pasm) for PRU devices. As a standard, Con
 
 -b for little endian binary file''
 
+ <br />
+
 #### Code Structure
 
 '''''Initialization'''''
 
 <center>[[File:PRUserial485-init.png]]</center>
 
+ <br />
+
 ### ARM/Linux Libraries
 
 ARM/Linux library is coded in C language and a Python module is constructed using ''Python.h'' C library. This library is a bridge between userspace and PRU functionalities. It is used to pre-configure serial interface, to share data, select operation mode and verify PRU status.
 
+ <br />
+
 ####  Initialization 
+
 It is '''mandatory''' to initialize the interface before using it. For that purpose, there is a function available. PRUs and its interrupts are initialized, shared memory is mapped and some configuration (baudrate, master/slave mode, counting registers, etc) are set on memory before executing PRU binary.
 
 As explained on PRU section, there is a circular buffer for incoming data. At ARM level, the circular buffer depth is pre-configured to 100 kB (it can be increased, but it is enough for regular applications, so far).
@@ -307,12 +342,16 @@ The functions available can be divided into three main cathegories, which will b
 * '''Curves:''' dedicated for loading and manipulating curves when operating in sync mode.
 * '''Sync operation:''' commands designed to operate the interface when sync operation is required.
 
+ <br />
 
 ####  Compiling and installing the library 
 
 For compiling the library into your BeagleBone Black, clone the repository into it. There is a bash script that user can run to have all files correctly compiled and installed on the system (along with PRU firmware). Steps to install it are listed below:
 
- # Compiling and installing C library
+ <br />
+
+`# Compiling and installing C library`
+ 
  gcc -mfloat-abi=hard -Wall -fPIC -O2 -mtune=cortex-a8 -march=armv7-a -I/usr/include -c -o PRUserial485.o PRUserial485.c
  ar -rv libPRUserial485.a PRUserial485.o
  gcc -shared -Wl,-soname, -o libPRUserial485.so PRUserial485.o
@@ -323,15 +362,14 @@ For compiling the library into your BeagleBone Black, clone the repository into 
  
  rm PRUserial485.o libPRUserial485.so libPRUserial485.a
  
- # Installing Python module
+`# Installing Python module`
  python-sirius setup.py install
+
+ <br />
 
 ## Library Functions and Overview
 
-
 ### General Purpose Commands
-
-
 
 ####  Open serial interface 
 
@@ -344,6 +382,8 @@ For compiling the library into your BeagleBone Black, clone the repository into 
 
 PRU initialization. Shared memory configuration and loading binaries into PRU. It is mandatory to open serial interface before invoking any other function.
 
+ <br />
+
 #### Hardware physical address
 
  '''Python:''' int PRUserial485_address()
@@ -354,12 +394,16 @@ PRU initialization. Shared memory configuration and loading binaries into PRU. I
 
 Gets SERIALxxCON board address (hardware defined). For SERIALxxCON board, default value is 21.
 
+ <br />
+
 #### Close serial interface
 
  '''Python:''' int PRUserial485_close()
  '''C:     ''' void close_PRU()
 
 Closes PRUs and memory mapping.
+
+ <br />
 
 #### Send data through RS-485
 
@@ -377,6 +421,8 @@ Closes PRUs and memory mapping.
 
 Send data through RS485 network.
 
+ <br />
+
 ####  Receive data from serial 
 
  '''Python:''' bytes PRUserial485_read(uint32_t nbytes = 0)
@@ -393,12 +439,16 @@ Send data through RS485 network.
 
 Receiving data through RS485 network
 
+ <br />
+
 #### Flush input buffer
 
  '''Python:''' int PRUserial485_read_flush()
  '''C:''' int recv_flush()
 
 Flush receive FIFO buffer.
+
+ <br />
 
 ### Curves
 
@@ -415,8 +465,8 @@ Flush receive FIFO buffer.
  0 if curves are successful loaded.
 
 Storing curves into memory. Each curve correspond to a power supply in the crate.   
-   
 
+<br />
 
 #### Selecting curve block to be performed
 
@@ -428,6 +478,8 @@ Storing curves into memory. Each curve correspond to a power supply in the crate
 
 Selection of block which will be performed in next cycle. Default value is 0.
 
+ <br />
+
 #### Get curve block that will be performed
 
  '''Python:''' int PRUserial485_read_curve_block()
@@ -437,6 +489,8 @@ Selection of block which will be performed in next cycle. Default value is 0.
  Block identification (0 to 3)
 
 Read block identification which will be performed in next cycle.
+
+ <br />
 
 #### Select a point to be performed
 
@@ -449,6 +503,8 @@ Read block identification which will be performed in next cycle.
 
 Selection of point of curve that will be performed after the next sync pulse.
 
+ <br />
+
 #### Read which point will be performed
 
  '''Python:''' int PRUserial485_read_curve_pointer()
@@ -458,6 +514,8 @@ Selection of point of curve that will be performed after the next sync pulse.
  Index of next point (0 to (len(curve)-1))
 
 Read curve index (point) which will be sent in next sync pulse.
+
+ <br />
 
 ### Sync Operation
 
@@ -478,12 +536,16 @@ Read curve index (point) which will be sent in next sync pulse.
 
 Synchronous mode operation.
 
+ <br />
+
 #### Stop sync mode and return to normal operation
 
  '''Python:''' void PRUserial485_sync_stop()
  '''C:     ''' void set_sync_stop_PRU()
 
 Stops sync operation mode.
+
+ <br />
 
 #### Verify sync status
 
@@ -497,6 +559,8 @@ Stops sync operation mode.
 
 Verifies whether PRU is waiting for a sync pulse or not
 
+ <br />
+
 #### Reading pulse count register
 
  '''Python:''' int PRUserial485_read_pulse_count_sync()
@@ -506,6 +570,8 @@ Verifies whether PRU is waiting for a sync pulse or not
  counting value (0 to 4294967295)
 
 Read number of sync pulses already received.
+
+ <br />
 
 #### Clear pulse counting register
 
@@ -517,12 +583,13 @@ Read number of sync pulses already received.
 
 Clears pulse counting registers. Action is only performed if sync mode is disabled.
 
-
-
+ <br />
 
 ##  Intrinsic timing constraints 
 
 Software delays are real and in the case of high performance applications, they must be considered. For library version 1.3.3, some of them were quantified, as shown below:
+
+ <br />
 
 ###  Sync Mode - PRU level 
 
@@ -535,11 +602,15 @@ Software delays are real and in the case of high performance applications, they 
 ::''Normal message, without waiting for its answer: '''4 μs'''''
 ::''Normal message, receive the answer immediately (no response delay) and store its 64 bytes: '''48 μs'''''
 
+ <br />
+
 ###  Sync Mode - Processor level 
 
 * Load curve into memory: '''29 ms'''
 * Start sync mode: '''14 μs'''
 * Close sync mode and recover normal operation: '''517 μs'''
+
+ <br />
 
 ###  Normal Mode - Processor level 
 
