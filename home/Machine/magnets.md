@@ -2,21 +2,27 @@
 title: Magnets
 description: 
 published: 1
-date: 2024-02-28T19:34:05.215Z
+date: 2024-03-05T16:24:37.459Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T15:03:10.955Z
+dateCreated: 2024-03-04T20:05:29.287Z
 ---
 
 # Machine: Magnets
+
+<br />
 
 ## Storage Ring Magnets
 
 At this point all magnets have been designed, simulated and approved. A few prototype magnets (quadrupoles) have been measured mechanical and magnetically. Overall magnetic measurements with rotating coil and Hall probe systems are still pending.
 
+<br />
+
 ### Storage Ring Dipoles
 
 Dipoles in Sirius are of three distinct families: B1, B2 and BC. The first two, B1 and B2, are electromagnetic dipoles, whereas BC is a NdFeB permanent magnet dipole made of a thin 3.2 T slice sandwiched between two low field sector dipoles.
+
+<br />
 
 #### SI Dipole Magnet Specifications
 
@@ -68,6 +74,8 @@ Main parameters for the electromagnetic dipoles B1 and B2 are shown in Table 1, 
 
 **Table 2**: Storage ring BC dipole main parameters.
 
+<br />
+
 ##### Electric parameters
 
 |Parameters |B1| B2| Unit |
@@ -79,6 +87,7 @@ Main parameters for the electromagnetic dipoles B1 and B2 are shown in Table 1, 
 
 **Table 3**: Storage ring dipoles B1 and B2 electric parameters
 
+<br />
 
 ##### Multipole Errors
 
@@ -92,6 +101,8 @@ Main parameters for the electromagnetic dipoles B1 and B2 are shown in Table 1, 
 
 **Table 4**: Storage ring dipole multipole errors. Contribution of multipolar components relative to main dipolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
 
+<br />
+
 ##### Alignment and Excitation Errors
 
 |Parameters |Dipole Unit Blocks| Girders| Unit |
@@ -103,12 +114,13 @@ Main parameters for the electromagnetic dipoles B1 and B2 are shown in Table 1, 
 
 **Table 5**: Maximum absolute value of random alignment and excitation errors for Storage Ring Dipoles. The errors are generated with a Gaussian distribution truncated at ±1σ.
 
+<br />
+
 ####  SI Dipole Magnet 3D Models
 
 ##### BC
 
 The BC dipoles in the Sirius storage ring is composed of a central high field slice with 1.1395 Â° of deflection and two flanking low field sectors with 1.57855 Â°. There is a control gap in the back of the dipole that can be used to adjust the magnetic field. Additionally, the low field poles can be moved transversely to adjust the integrated field and the pole between the low and high field sectors can be rotated about the longitudinal axis to correct the integrated quadrupole gradient.
-
 
 ![](/img/machine/magnets/SI_magnet_dipole_BC_drawing.png)
 
@@ -118,9 +130,13 @@ The BC dipoles in the Sirius storage ring is composed of a central high field sl
 
 **Figure 2**: Field of the BC dipole half model.
 
+<br />
+
 ###### Fieldmap Analysis
 
-Nominally BC dipoles should deflect the beam in 4.2966 Â°. A 3D model of BC has been analyzed and approved. Fieldmap corresponding to one value for the control gap has been considered, namely 3.2 mm. A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-dipoles-bc/tree/master/links-official).
+Nominally BC dipoles should deflect the beam in 4.2966 Â°. A 3D model of BC has been [analyzed](/home/Groups/FAC/fieldmap_analysis) and approved. Fieldmap corresponding to one value for the control gap has been considered, namely 3.2 mm. A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-dipoles-bc/tree/master/links-official).
+
+<br />
 
 ###### Segmented Model
 
@@ -154,47 +170,7 @@ In order to take into account the s-dependent field profile of the BC dipoles a 
 
 **Table 6**: SI BC dipole segmented model.
 
-![](/img/machine/magnets/SI_magnet_dipole_B1_drawing.png)
-
-**Figure 4**: 3D drawing of the B1 dipole model.
-
-![](/img/machine/magnets/SI_magnet_dipole_B1_field.png)
-
-**Figure 5**: Field of the B1 dipole half model.
-
-###### Fieldmap Analysis
-
-Nominally B1 dipoles should deflect the beam in 2.7553 Â°. So far a preliminary 3D model of B1 has been analyzed and approved. Field map corresponding to the nominal excited field has been considered. The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-dipoles-b1/tree/master/links-official/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [accessed this folder](https://github.com/lnls-ima/si-dipoles-bc/tree/master/links-official).
-
-###### Segmented Model
-
-In order to take into account the s-dependent field profile of the B1 dipoles a symmetric model was created with 15 segments at each side of the magnet. Their segmentation points were chosen in a way to minimize the difference between integrals of the squared profile between for the model and the field on the Runge-Kutta trajectory.
-
-![](/img/machine/magnets/segmented_model_B1.svg)
-
-**Figure 6**: Field profile of segmented B1 dipole model
-
-|Segment#| Length [m]| Deflection [deg.]| Field [T]| K [m⁻²] *| S [m⁻³] * |
-| --- | --- | --- | --- | --- | --- |
-|01| 0.0020| 0.006| -0.562| -0.753| -0.297 |
-|02| 0.0030| 0.010| -0.562| -0.756| -0.245 |
-|03| 0.0050| 0.016| -0.564| -0.762| -0.117 |
-|04| 0.0050| 0.016| -0.566| -0.770| -0.015 |
-|05| 0.0050| 0.016| -0.567| -0.774| +0.004 |
-|06| 0.0100| 0.033| -0.568| -0.775| -0.003 |
-|07| 0.0400| 0.130| -0.567| -0.774| +0.019 |
-|08| 0.1500| 0.483| -0.563| -0.773| +0.055 |
-|09| 0.1000| 0.322| -0.563| -0.773| +0.076 |
-|10| 0.0500| 0.162| -0.565| -0.774| +0.008 |
-|11| 0.0340| 0.105| -0.540| -0.777| -0.159 |
-|12| 0.0160| 0.033| -0.363| -0.428| -2.230 |
-|13| 0.0400| 0.033| -0.143| -0.085| -1.960 |
-|14| 0.0400| 0.008| -0.034| -0.009| -0.428 |
-|15| 0.0500| 0.005| -0.016| -0.001| -0.102 |
-
-*K=B'/(Bρ), S=B"/(2Bρ)
-
-**Table 7**: SI B1 dipole segmented model.
+<br />
 
 ##### B1
 
@@ -206,9 +182,13 @@ In order to take into account the s-dependent field profile of the B1 dipoles a 
 
 **Figure 5**: Field of the B1 dipole half model.
 
+<br />
+
 ###### Fieldmap Analysis
 
 Nominally B1 dipoles should deflect the beam in 2.7553 Â°. So far a preliminary 3D model of B1 has been analyzed and approved. Field map corresponding to the nominal excited field has been considered. The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-dipoles-b1/tree/master/links-official/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [accessed this folder](https://github.com/lnls-ima/si-dipoles-b1/tree/master/links-official). 
+
+<br />
 
 ###### Segmented Model
 
@@ -240,6 +220,8 @@ In order to take into account the s-dependent field profile of the B1 dipoles a 
 
 **Table 7**: SI B1 dipole segmented model.
 
+<br />
+
 ##### B2
 
 ![](/img/machine/magnets/SI_magnet_dipole_B2_drawing.png)
@@ -250,9 +232,13 @@ In order to take into account the s-dependent field profile of the B1 dipoles a 
 
 **Figure 8**: Field of the B2 dipole half model.
 
+<br />
+
 ###### Fieldmap Analysis
 
 Nominally B1 dipoles should deflect the beam in 4.0964 Â°. So far a preliminary 3D model of B2 has been analyzed and approved. Field map corresponding to the nominal excited field has been considered. The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-dipoles-b2/tree/master/links-official/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [accessed this folder](https://github.com/lnls-ima/si-dipoles-b2/tree/master/links-official).
+
+<br />
 
 ###### Segmented Model
 
@@ -283,17 +269,23 @@ In order to take into account the s-dependent field profile of the B2 dipoles a 
 |17| 0.0320| 0.005| -0.029| -0.005| -0.359 |
 |18| 0.0325| 0.004| -0.022| -0.001| -0.149 |
 
-* K=B'/(Bρ), S=B"/(2Bρ)
+*K=B'/(Bρ), S=B"/(2Bρ)
 
 **Table 8**: SI B2 dipole segmented model.
+
+<br />
 
 #### SI Dipole Magnet Measurements
 
 A summary of magnet field measurements of SI BC dipole. The Hall probe measurement files can be found at [this folder](https://github.com/lnls-ima/si-dipoles-bc/tree/master/model-13/measurement/magnetic/hallprobe).
 
+<br />
+
 ##### BC
 
 Analysis of BC hallprobe measurements. The analysis results can be found at [this folder](https://github.com/lnls-ima/si-dipoles-bc/tree/master/model-13/analysis/hallprobe/production) with subfolders x0-0p0079mm which contains results based on Runge-Kutta trajectory and x0-0p0079mm-reftraj holds the results based on reference trajectory. The initial x coordinate used was + 79um. The reference point is 7.703087 mm for reference trajectory.
+
+<br />
 
 ###### Summary
 
@@ -327,8 +319,9 @@ The values used to calculate the difference to model were:
 Deflection angle: 2.1483 deg
 
 KL: - 0.31267 1/m
-
 SL: -0.35037 1/m²
+
+<br />
 
 ###### Deflection Angle
 
@@ -336,13 +329,15 @@ SL: -0.35037 1/m²
 
 **Figure 10**: Deflection angle calculated with reference trajectory, initial point at x = +79 um and the reference point is 7.703087mm.
 
-###### Integrated Quadrupole
+<br />
 
+###### Integrated Quadrupole
 
 ![](/img/machine/magnets/si-dipoles-bc-integrated-quadrupole.svg)
 
 **Figure 11**: Integrated quadrupole calculated with reference trajectory, initial point at x = +79 um and the reference point is 7.703087mm.
 
+<br />
 
 ###### Integrated Sextupole
 
@@ -350,9 +345,13 @@ SL: -0.35037 1/m²
 
 **Figure 12**: Integrated sextupole calculated with reference trajectory, initial point at x = +79 um and the reference point is 7.703087mm.
 
+<br />
+
 ##### B1
 
 Analysis of B1 hallprobe measurements. The analysis results can be found at [this folder](https://github.com/lnls-ima/si-dipoles-b1/tree/master/model-09/analysis/hallprobe/production) with subfolders x0-8p527mm which contains results based on Runge-Kutta trajectory and x0-8p527mm-reftraj holds the results based on reference trajectory. The initial point of reference trajectory is 8.5270 mm and reference point is 13.6929 mm.
+
+<br />
 
 ###### Summary
 
@@ -387,11 +386,15 @@ Deflection angle: 1.37765 deg
 KL: -0.32289 1/m
 SL: -0.10763 1/m²
 
+<br />
+
 ###### Deflection Angle
 
 ![](/img/machine/magnets/si-dipoles-b1-deflection-angle.svg)
 
 **Figure 13**: Deflection angle at current 403.6 A calculated with reference trajectory, initial point at x = 8.527 mm and reference point is 13.6929 mm.
+
+<br />
 
 ###### Integrated Quadrupole
 
@@ -399,15 +402,21 @@ SL: -0.10763 1/m²
 
 **Figure 14**: Integrated gradient at current 403.6 A calculated with reference trajectory, initial point at x = 8.527 mm and reference point is 13.6929 mm.
 
+<br />
+
 ###### Integrated Sextupole
 
 ![](/img/machine/magnets/si-dipoles-b1-integrated-sextupole.svg)
 
 **Figure 15**: Integrated sextupole at current 403.6 A calculated with reference trajectory, initial point at x = 8.527 mm and reference point is 13.6929 mm.
 
+<br />
+
 ##### B2
 
 Analysis of B2 hallprobe measurements. The analysis results can be found at [this folder](https://github.com/lnls-ima/si-dipoles-b2/tree/master/model-08/analysis/hallprobe/production) with subfolders x0-8p153mm which contains results based on Runge-Kutta trajectory and x0-8p153mm-reftraj holds the results based on reference trajectory. The initial point of reference trajectory is 8.1530 mm and reference point is 19.4278 mm. 
+
+<br />
 
 ###### Summary
 
@@ -440,8 +449,9 @@ The values used to calculate the difference to model were:
 Deflection angle: 2.0482 deg
 
 KL: -0.47982 1/m
-
 SL: -0.09868 1/m²
+
+<br />
 
 ###### Deflection Angle
 
@@ -449,11 +459,15 @@ SL: -0.09868 1/m²
 
 **Figure 16**: Deflection angle at current 401.8 A calculated with reference trajectory and initial point at x = 8.153 mm and reference point is 19.4278 mm.
 
+<br />
+
 ###### Integrated Quadrupole
 
 ![](/img/machine/magnets/si-dipoles-b2-integrated-quadrupole.svg)
 
 **Figure 17**:  Integrated gradient at current 401.8 A calculated with reference trajectory and initial point at x = 8.153 mm and reference point is 19.4278 mm.
+
+<br />
 
 ###### Integrated Sextupole
 
@@ -461,10 +475,14 @@ SL: -0.09868 1/m²
 
 **Figure 18**:  Integrated sextupole at current 401.8 A calculated with reference trajectory and initial point at x = 8.153 mm and reference point is 19.4278 mm.
 
+<br />
+
 #### SI Dipole Magnet Sorting
 
 <!-- The order used was the result G286I010 of optimization run0. -->
 <!-- Results can be found in data repository of si.v24.01 inside the folder dipoles_sorting. -->
+
+<br />
 
 ##### B1 Installation Order
 
@@ -519,6 +537,8 @@ SL: -0.09868 1/m²
 
 **Table 9**: Storage Ring Dipoles B1 Installation. 
 
+<br />
+
 ##### B2 Installation Order
 
 |Magnet Name| Magnet Serial ID |
@@ -572,9 +592,13 @@ SL: -0.09868 1/m²
 
 **Table 10**: Storage Ring Dipoles B2 Installation.
 
+<br />
+
 ### Storage Ring Quadrupoles
 
 There will be three types of quadrupole magnets in the Sirius lattice: Q14, Q20 and Q30, labeled as such according to their hard-edge lengths in simulations. Magnets from families QDA, QDB1, QDB2, QDP1 and QDP2 will be of type Q14; magnets from families QFA, Q1, Q2, Q3 and Q4  will be of type Q20; and magnets from families QFB and QFP will be of type Q30.
+
+<br />
 
 #### SI Quadrupole Magnet Specifications
 
@@ -602,6 +626,8 @@ Table 11 lists main specifications for the quadrupoles.
 
 **Table 11**: Storage ring quadrupole magnets specification
 
+<br />
+
 ##### Electric parameters
 
 | | Q14| Q20| Q30| units |
@@ -614,6 +640,8 @@ Table 11 lists main specifications for the quadrupoles.
 |Magnet inductance| 6.74| 11.73| 17.84| mH  |
 
 **Table 12**: Storage ring quadrupole electric parameters 		
+
+<br />
 
 ##### Multipole Errors
 
@@ -629,6 +657,8 @@ Table 11 lists main specifications for the quadrupoles.
 
 **Table 13**: Storage ring quadrupole multipole errors. Contribution of multipolar components relative to main quadrupolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ. 
 
+<br />
+
 ##### Alignment and Excitation Errors
 
 || Quadrupoles|  |
@@ -638,6 +668,8 @@ Table 11 lists main specifications for the quadrupoles.
 |Strength error (static or low frequency)| 0.05|  % |
 
 **Table 14**: Maximum absolute value of random alignment and excitation errors for the Storage Ring Quadrupoles. The errors are generated with a Gaussian distribution truncated at ±1σ. 
+
+<br />
 
 #### SI Quadrupole Magnet 3D Models
 
@@ -666,6 +698,8 @@ All three types of quadrupoles models, namely Q14, Q20 and Q30 quadrupoles, have
 ![](/img/machine/magnets/SI_magnet_q30_field.png)
 
 **Figure 24**: Field of the Q30 quadrupole model.
+
+<br />
 
 ##### Fieldmap Analysis
 
@@ -701,6 +735,8 @@ The 3D magnetic model of Q30 has been analyzed and approved, corresponding to ma
 ³ normal integrated multipoles divided by integrated quadrupole at x = 11.7 mm.
 
 **Table 15**: Storage ring quadrupole magnet 3D-model parameters 
+
+<br />
 
 ##### Segmented Model
 
@@ -742,9 +778,13 @@ Currently the hard-edge approximation is being used to model all quadrupoles for
 
 **Table 18**: SI quadrupole Q30 half segmented model (maximum strength).
 
+<br />
+
 #### SI Quadrupole Magnet Measurements
 
 A summary of magnet field measurements of SI quadrupoles.
+
+<br />
 
 ##### Q14
 
@@ -790,11 +830,15 @@ A summary of magnet field measurements of SI quadrupoles.
 | QDP1  | -0.4 | ± 0.1 | 0.2 |
 | QDP2  | -0.4 | ± 0.1 | 0.3 |
 
+<br />
+
 ###### Integrated Quadrupole
 
 ![](/img/machine/magnets/si-quadrupoles-q14-integrated-quadrupole.svg)
 
 **Figure 28**: Integrated quadrupole strengths of Q14 magnets.
+
+<br />
 
 ###### Horizontal Magnetic Center
 
@@ -802,17 +846,23 @@ A summary of magnet field measurements of SI quadrupoles.
 
 **Figure 29**: Horizontal magnet center of Q14 magnets.
 
+<br />
+
 ###### Vertical Magnetic Center
 
 ![](/img/machine/magnets/si-quadrupoles-q14-ycenter.svg)
 
 **Figure 30**: Vertical magnet center of Q14 magnets.
 
+<br />
+
 ###### Roll-Angle Error
 
 ![](/img/machine/magnets/si-quadrupoles-q14-rollerror.svg)
 
 **Figure 31**: Roll angle error of Q14 magnets.
+
+<br />
 
 ##### Q20
 
@@ -858,17 +908,23 @@ A summary of magnet field measurements of SI quadrupoles.
 | QDP1  | +0.0 | ± 0.1 | 0.3 |
 | QDP2  | +0.1 | ± 0.1 | 0.4 |
 
+<br />
+
 ###### Integrated Quadrupole
 
 ![](/img/machine/magnets/si-quadrupoles-q20-integrated-quadrupole.svg)
 
 **Figure 32**: Integrated quadrupole strengths of Q20 magnets.
 
+<br />
+
 ###### Horizontal Magnetic Center
 
 ![](/img/machine/magnets/si-quadrupoles-q20-xcenter.svg)
 
 **Figure 33**: Horizontal magnet center of Q20 magnets.
+
+<br />
 
 ###### Vertical Magnetic Center
 
@@ -914,11 +970,15 @@ A summary of magnet field measurements of SI quadrupoles.
 | QFB | -0.3 | ± 0.05 | 0.2 | 
 | QFP | -0.2 | ± 0.1 | 0.3 |
 
+<br />
+
 ###### Integrated Quadrupole
 
 ![](/img/machine/magnets/si-quadrupoles-q30-integrated-quadrupole.svg)
 
 **Figure 36**: Integrated quadrupole strengths of Q30 magnets.
+
+<br />
 
 ###### Horizontal Magnetic Center
 
@@ -926,17 +986,23 @@ A summary of magnet field measurements of SI quadrupoles.
 
 **Figure 37**: Horizontal magnet center of Q30 magnets.
 
+<br />
+
 ###### Vertical Magnetic Center
 
 ![](/img/machine/magnets/si-quadrupoles-q30-ycenter.svg)
 
 **Figure 38**: Vertical magnet center of Q30 magnets.
 
+<br />
+
 ###### Roll-Angle Error
 
 ![](/img/machine/magnets/si-quadrupoles-q30-rollerror.svg)
 
 **Figure 39**: Roll angle error of Q30 magnets.
+
+<br />
 
 #### SI Quadrupole Magnet Sorting
 
@@ -1051,6 +1117,8 @@ A summary of magnet field measurements of SI quadrupoles.
 |---| Q14-036  |
 
 **Table 19**: Storage Ring Quadrupoles Q14 Installation. 
+
+<br />
 
 ##### Q20 Installation Order
 
@@ -1261,6 +1329,8 @@ A summary of magnet field measurements of SI quadrupoles.
 
 **Table 20**: Storage Ring Quadrupoles Q20 Installation.
 
+<br />
+
 ##### Q30 Installation Order
 
 **QFB**
@@ -1313,9 +1383,13 @@ A summary of magnet field measurements of SI quadrupoles.
 
 **Table 21**: Storage Ring Quadrupoles Q30 Installation. 
 
+<br />
+
 ### Storage Ring Sextupoles, Slow Orbit Correctors and Skew Quadrupoles
 
 Sextupole magnets in Sirius are designed to be multifunctional: apart from providing sextupolar field for chromaticity correction and dynamical aperture optimization, they also provide horizontal and vertical slow dipolar correctors for steering the beam orbit, as well as skew quadrupolar field to correct linear coupling introduced by lattice errors. These functions are implemented as additional excitations coils in the magnets. A sextupole magnet with excitation coils for vertical and/or horizontal dipolar fields does not have coils for skew quadrupolar fields, and vice-versa.
+
+<br />
 
 #### SI Sextupole Magnet Specifications
 
@@ -1362,6 +1436,8 @@ Table 24 lists main specifications for the skew quadrupoles in the sextupole mag
 
 ¹ Maximum value needed to correct linear coupling introduced by magnet alignment errors. Coupling introduced by IDs will be corrected using local skew quadrupoles. 
 
+<br />
+
 ##### Electric parameters
 
 || S15| units |
@@ -1380,6 +1456,8 @@ Table 24 lists main specifications for the skew quadrupoles in the sextupole mag
 **Table 25**: Storage ring sextupole electric parameters 
 
 ¹ Value required to reach the specified skew quadrupolar strength. 
+
+<br />
 
 ##### Multipole Errors
 
@@ -1429,6 +1507,8 @@ Multipole errors from skew quadrupole excitation
 
 **Table 29**: Storage ring skew quadrupoles multipole errors. Contribution of multipolar components relative to main quadrupolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ. 
 
+<br />
+
 ##### Alignment and Excitation Errors
 
 || Sextupoles|  |
@@ -1438,6 +1518,8 @@ Multipole errors from skew quadrupole excitation
 |Strength error (static or low frequency)| 0.05|  %  |
 
 **Table 30**: Maximum absolute value of random alignment and excitation errors for the Storage Ring Sextupoles. The errors are generated with a Gaussian distribution truncated at ±1σ. 
+
+<br />
 
 #### SI Sextupole Magnet 3D Models
 
@@ -1449,9 +1531,11 @@ Multipole errors from skew quadrupole excitation
 
 **Figure 41**: Field of the quadrupole (with dipolar field coils) half model.
 
+<br />
+
 ##### Fieldmap Analysis
 
-A 3D model of multifunctional sextupole magnet has been [[FAC:Fieldmap analysis|analyzed]] and approved. Fieldmap analysis for each function has been performed with maximum excitation currents, when residual multipoles are expected to be worse. For the analysis of horizontal and vertical orbit corrector fields, as well as for the skew quadrupole corrector field, the sextupolar function was also excited in order to guarantee fast convergence of the magnetic solution.
+A 3D model of multifunctional sextupole magnet has been [analyzed](/home/Groups/FAC/fieldmap_analysis) and approved. Fieldmap analysis for each function has been performed with maximum excitation currents, when residual multipoles are expected to be worse. For the analysis of horizontal and vertical orbit corrector fields, as well as for the skew quadrupole corrector field, the sextupolar function was also excited in order to guarantee fast convergence of the magnetic solution.
 
 **Sextupolar function**
 
@@ -1469,6 +1553,8 @@ The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/
 
 The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-sextupoles-s15/tree/master/links-official-sx-qs/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-sextupoles-s15/tree/master/links-official-sx-qs).
 
+<br />
+
 ##### Segmented Model
 
 Currently the hard-edge approximation is being used to model sextupoles for beam dynamics calculations purposes. 
@@ -1485,9 +1571,13 @@ Segment#| Length [m]| Deflection [deg.]| Field [T]| K [m⁻²] *| S [m⁻³] * |
 
 **Table 31**: SI sextupole half segmented model (maximum strength). 
 
+<br />
+
 #### SI Sextupole Magnet Measurements
 
 A summary of magnet field measurements of SI S15 sextupoles.
+
+<br />
 
 ##### Summary
 
@@ -1597,11 +1687,15 @@ A summary of magnet field measurements of SI S15 sextupoles.
 | SDB3 | +0.220 | ± 0.052 |  0.231 |
 | SDP3 | +0.215 | ± 0.034 |  0.094 |
 
+<br />
+
 ##### Integrated Sextupole
 
 ![](/img/machine/magnets/si-sextupoles-s15-integrated-sextupole.svg)
 
 **Figure 43**:  Integrated sextupole strengths of S15 magnets.
+
+<br />
 
 ##### Horizontal Magnetic Center
 
@@ -1609,17 +1703,23 @@ A summary of magnet field measurements of SI S15 sextupoles.
 
 **Figure 44**: Horizontal magnet center of S15 magnets.
 
+<br />
+
 ##### Vertical Magnetic Center
 
 ![](/img/machine/magnets/si-sextupoles-s15-ycenter.svg)
 
 **Figure 45**: Vertical magnet center of S15 magnets.
 
+<br />
+
 ##### Roll-Angle Error
 
 ![](/img/machine/magnets/si-sextupoles-s15-rollerror.svg)
 
 **Figure 46**: Roll angle error of S15 magnets.
+
+<br />
 
 #### SI Sextupole Magnet Sorting
 
@@ -2016,13 +2116,19 @@ A summary of magnet field measurements of SI S15 sextupoles.
 
 **Table 32**: Storage Ring Sextupoles Installation.
 
+<br />
+
 ### Storage Ring Vertical Corrector Magnets
 
 Apart from slow horizontal and vertical slow orbit correctors implemented as additional coils in sextupole magnets, there will be 20 vertical corrector magnets located in C2 dispersion sections. These magnets will be identical to the ones used in the Booster. 
 
+<br />
+
 ### Storage Ring Fast Orbit Correctors
 
 Sirius storage ring is planned to have 80 horizontal and 80 vertical fast orbit correctors, as well as 10 skew quadrupole correctors. There will be two types of fast correctors: FC1 magnets with iron poles resembling skew quadrupoles, where horizontal, vertical and skew correctors are implemented as independent coils, and FC2 magnets, which are CF1 magnets rotated 45 degrees with no skew corrector coils. FC2 magnets are installed in odd-numbered C2 sectors to allow for synchrotron light of B2 dipoles to go to diagnostics beamlines. Fast correctors will sit on top of stainless steel vacuum chambers coated with a thin copper inner layer.
+
+<br />
 
 #### SI Fast Correctors Specifications
 
@@ -2039,9 +2145,13 @@ Sirius storage ring is planned to have 80 horizontal and 80 vertical fast orbit 
 
 **Table 33**: Storage Ring fast orbit correctors.
 
+<br />
+
 ##### Multipole Errors
 
 The impact on the beam dynamics of residual multipole errors for the fast corrector magnets has been analyzed from fieldmaps of current models. The impact is very small and the current magnet models have been accepted. Magnetic measurements for prototypes are yet to be taken and analyzed. 
+
+<br />
 
 ####  SI Fast Correctors Magnet 3D Models
 
@@ -2052,6 +2162,8 @@ The impact on the beam dynamics of residual multipole errors for the fast correc
 ![](/img/machine/magnets/SI_magnet_fast_corrector_field.png)
 
 **Figure 48**: Field of the fast corrector model.
+
+<br />
 
 ###### Fieldmap Analysis
 
@@ -2077,13 +2189,19 @@ A summary of the analysis can be found in analysis.txt at [this folder](https://
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/si-fast-correctors/tree/master/links-official-FC2-fcv). 
 
+<br />
+
 ###### Segmented Model
 
 A hardedge model is being used for fast correctors. 
 
+<br />
+
 #### SI Fast Correctors Magnet Measurements
 
 Not available yet.
+
+<br />
 
 ### Storage Ring Magnet Families
 
@@ -2176,6 +2294,8 @@ The storage ring magnets are grouped into families. The tables below list the st
 
 **Table 34**: Storage Ring Dipole Families (including transverse gradient variation with QB1B2) 
 
+<br />
+
 #### Storage Ring Quadrupole Families
 
 || SI-Fam:MA-Q1| SI-Fam:MA-Q2| SI-Fam:MA-Q3| SI-Fam:MA-Q4 |
@@ -2248,6 +2368,8 @@ The storage ring magnets are grouped into families. The tables below list the st
 
 **Table 36**: Storage Ring Non Dispersive Quadrupole Families 
 
+<br />
+
 #### Storage Ring Sextupole Families
 
 || SI-Fam:MA-SFA0| SI-Fam:MA-SFA1| SI-Fam:MA-SFA2| SI-Fam:MA-SDA0| SI-Fam:MA-SDA1| SI-Fam:MA-SDA2| SI-Fam:MA-SDA3 |
@@ -2305,11 +2427,15 @@ The storage ring magnets are grouped into families. The tables below list the st
 
 **Table 39**: Storage Ring Sextupole Families P
 
+<br />
+
 ## Booster Magnets
 
 ### Booster Dipoles
 
 There is only one type of dipole in the Booster. It is a multi-functional magnet with dipolar, defocusing quadrular and sextupolar functions.
+
+<br />
 
 #### BO Dipole Magnet Specifications
 
@@ -2350,6 +2476,8 @@ There is only one type of dipole in the Booster. It is a multi-functional magnet
 
 **Table 40**: Booster dipole main parameters 
 
+<br />
+
 ##### Electric Parameters
 
 |  | BD| units |
@@ -2360,6 +2488,8 @@ There is only one type of dipole in the Booster. It is a multi-functional magnet
 |Magnet inductance| 4.58| mH |
 
 **Table 41**: Booster dipole electric parameters 
+
+<br />
 
 ##### Multipole Errors
 
@@ -2381,6 +2511,8 @@ Dipoles @r = 17.5 mm
 
 Actual designed dipole model shows numbers are that in accordance with these specs. (see [fieldmap analysis][link])
 
+<br />
+
 ##### Alignment and Excitation Errors
 
 |  | Dipoles|  |
@@ -2393,6 +2525,8 @@ Actual designed dipole model shows numbers are that in accordance with these spe
 
 **Table 43**: Maximum absolute value of random alignment and excitation errors for the Booster Dipoles. The errors are generated with a Gaussian distribution truncated at ±1σ. 
 
+<br />
+
 #### BO Dipole Magnet 3D Model
 
 ![](/img/machine/magnets/BO_magnet_dipole_drawing.png)
@@ -2403,9 +2537,13 @@ Actual designed dipole model shows numbers are that in accordance with these spe
 
 **Figure 50**: Field of the booster dipole model.
 
+<br />
+
 ##### Fieldmap Analysis
 
-Each dipole in the booster deflects the beam in 7.2 Â° nominally. A 3D magnetic model has been created and its [fieldmap analyzed][link] for a excitation current corresponding to 3.0 GeV. The model has been optimized in a way that the beam trajectory is roughly centered at the good-field region of the magnet, corresponding to the axis x = 0 mm. At the longitudinal center of the magnet the trajectory starts at x = 9.045 mm. The reference point, defined as the interception of the straight lines asymptotically tangent to the up and downstream trajectory branches, is located at x = 28.572 mm, at the longitudinal center of the magnet. Multipoles from fieldmap analysis are all very well within specifications. A summary of the analysis for extraction energy can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-dipoles/tree/master/links-official-3gev). As for low energy, the corresponding file can be found in [here](https://github.com/lnls-ima/bo-dipoles/tree/master/links-official-150mev). 
+Each dipole in the booster deflects the beam in 7.2 Â° nominally. A 3D magnetic model has been created and its [fieldmap analyzed](/home/Groups/FAC/fieldmap_analysis) for a excitation current corresponding to 3.0 GeV. The model has been optimized in a way that the beam trajectory is roughly centered at the good-field region of the magnet, corresponding to the axis x = 0 mm. At the longitudinal center of the magnet the trajectory starts at x = 9.045 mm. The reference point, defined as the interception of the straight lines asymptotically tangent to the up and downstream trajectory branches, is located at x = 28.572 mm, at the longitudinal center of the magnet. Multipoles from fieldmap analysis are all very well within specifications. A summary of the analysis for extraction energy can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-dipoles/tree/master/links-official-3gev). As for low energy, the corresponding file can be found in [here](https://github.com/lnls-ima/bo-dipoles/tree/master/links-official-150mev). 
+
+<br />
 
 ##### Segmented Model
 
@@ -2432,6 +2570,8 @@ Table with segmented dipole model
 
 **Table 44**: Booster dipole segmented model.
 
+<br />
+
 #### BO Dipole Magnet Measurements
 
 The magnetic measurement results for Booster dipoles at the extraction current, I= 991.63 A, are shown in Figure 52 , Figure 53 and Figure 54. The Hall probe measurement files can be found at [this folder](https://github.com/lnls-ima/bo-dipoles/tree/master/model-09/measurement/magnetic/hallprobe/production). The excitation curve measurement files can be found at [this folder](https://github.com/lnls-ima/bo-dipoles/tree/master/model-09/measurement/magnetic/hallprobe/excitation_curve).
@@ -2447,6 +2587,8 @@ The magnetic measurement results for Booster dipoles at the extraction current, 
 ![](/img/machine/magnets/BOMA_BD_int_sext_992A.png)
 
 **Figure 54**: Integrated sextupole gradient on the Runge-Kutta trajectory, calculated for the Hall probe measurements of the Booster dipoles at the extraction current (991.63 A).
+
+<br />
 
 ### Booster Quadrupoles
 
@@ -2472,6 +2614,8 @@ The magnetic measurement results for Booster dipoles at the extraction current, 
 
 **Table 45**: Booster quadrupole main parameters 
 
+<br />
+
 ##### Electric Parameters
 
 || QF| QD| QS| units |
@@ -2482,6 +2626,8 @@ The magnetic measurement results for Booster dipoles at the extraction current, 
 |Magnet inductance| 9.14| 5.22| 4.68| mH |
 
 **Table 46**: Booster quadrupole electric parameters 
+
+<br />
 
 ##### Multipole Errors
 
@@ -2540,6 +2686,8 @@ quadrupoles @r = 17.5 mm
 
 **Table 49**: Booster QS quadrupole multipole errors. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ. 
 
+<br />
+
 ##### Alignment and Excitation Errors
 
 || Quadrupoles|  |
@@ -2550,6 +2698,8 @@ quadrupoles @r = 17.5 mm
 |Tracking error| 100| ppm |
 
 **Table 50**: Maximum absolute value of random alignment and excitation errors for the Booster Quadrupoles. The errors are generated with a Gaussian distribution truncated at ±1σ. 
+
+<br />
 
 #### BO Quadrupole 3D Models
 
@@ -2577,9 +2727,11 @@ quadrupoles @r = 17.5 mm
 
 **Figure 60**: Field of the booster QS quadrupole model.
 
+<br />
+
 ##### Fieldmap Analysis
 
-There will be two types of quadrupoles: QF and QD. QF quadrupoles are longer, 212-mm, whereas QD quadrupoles are shorter: 85-mm long. While QF magnets power supply is planed to be monopolar, the power supply for the QD family will be dipolar. 3D magnetic models for both QD and QF quadrupoles were analyzed. Nominal quadrupole field component in the booster dipoles provide most necessary defocusing for the optics and hence QD quadrupoles are installed in the lattice for optics correction purposes.
+There will be two types of quadrupoles: QF and QD. QF quadrupoles are longer, 212-mm, whereas QD quadrupoles are shorter: 85-mm long. While QF magnets power supply is planed to be monopolar, the power supply for the QD family will be dipolar. 3D magnetic models for both QD and QF quadrupoles [were analyzed](/home/Groups/FAC/fieldmap_analysis). Nominal quadrupole field component in the booster dipoles provide most necessary defocusing for the optics and hence QD quadrupoles are installed in the lattice for optics correction purposes.
 
 **QF at Ejection Energy**
 
@@ -2600,6 +2752,8 @@ A summary of the analysis can be found in analysis.txt at [this folder](https://
 **QS at Ejection Energy**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-quadrupoles-qs/tree/master/links-official-3gev). 
+
+<br />
 
 ##### Segmented Model
 
@@ -2641,6 +2795,8 @@ Currently booster quadrupoles are being modelled as a single segment within the 
 
 **Table 53**: BO QS quadrupole segmented model (maximum current). 
 
+<br />
+
 #### BO Quadrupole Magnet Measurements
 
 The magnetic measurement results for Booster QF quadrupoles at high current, I=130 A, are shown in Figure 64 and Figure 65. The rotating coil measurement files can be found at [this folder](https://github.com/lnls-ima/bo-quadrupoles-qf/tree/master/model-06/measurement/magnetic/rotcoil).
@@ -2653,9 +2809,7 @@ The magnetic measurement results for Booster QF quadrupoles at high current, I=1
 
 **Figure 65**: Rotating coil measurements of the Booster QF quadrupoles at high current (130 A).
 
-
 The magnetic measurement results for Booster QD quadrupoles at high current, I=32 A, are shown in Figure 66 and Figure 67. The rotating coil measurement files can be found at [this folder](https://github.com/lnls-ima/bo-quadrupoles-qd/tree/master/model-02/measurement/magnetic/rotcoil).
-
 
 ![](/img/machine/magnets/BOMA_BQD_align_32A.png)
 
@@ -2664,6 +2818,8 @@ The magnetic measurement results for Booster QD quadrupoles at high current, I=3
 ![](/img/machine/magnets/BOMA_BQD_excit_32A.png)
 
 **Figure 67**: Rotating coil measurements of the Booster QD quadrupoles at high current (32 A).
+
+<br />
 
 ### Booster Sextupoles
 
@@ -2688,6 +2844,8 @@ The magnetic measurement results for Booster QD quadrupoles at high current, I=3
 
 **Table 54**: Booster sextupole main parameters 
 
+<br />
+
 ##### Electric Parameters
 
 | | BS| units |
@@ -2698,6 +2856,8 @@ The magnetic measurement results for Booster QD quadrupoles at high current, I=3
 |Magnet inductance| 0.10| mH |
 
 **Table 55**: Booster sextupole electric parameters
+
+<br />
 
 ##### Multipole Errors
 
@@ -2718,6 +2878,8 @@ Multipole error| Systematic¹| Random Normal | Random Skew |
 
 **Table 56**: Booster sextupole multipole errors. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ. 
 
+<br />
+
 ##### Alignment and Excitation Errors
 
 |  | Sextupoles|  |
@@ -2727,6 +2889,8 @@ Multipole error| Systematic¹| Random Normal | Random Skew |
 |Excitation error (static or low frequency)| 0.3|  %  |
 
 **Table 57**: Maximum absolute value of random alignment and excitation errors for the Booster Sextupoles. The errors are generated with a Gaussian distribution truncated at ±1σ. 
+
+<br />
 
 #### BO Sextupole 3D Model
 
@@ -2738,9 +2902,11 @@ Multipole error| Systematic¹| Random Normal | Random Skew |
 
 **Figure 69**: Field of the booster sextupole model.
 
+<br />
+
 ##### Fieldmap Analysis
 
-There will be 25 focusing sextupoles (SF) and 10 defocusing sextupoles (SD) in the booster for chromaticity control. A 105-mm long 3D magnetic model for both SF and SD sextupoles was analyzed. SF family of magnets will be excited with a monopolar power supply whereas SD sextupoles family will be excited with a bipolar power supply. Analysis has been done for fieldmaps corresponding to injection and extraction energy currents. Since the magnetic field is very linear with the excitation current the two results are virtually identical with respect to field quality.
+There will be 25 focusing sextupoles (SF) and 10 defocusing sextupoles (SD) in the booster for chromaticity control. A 105-mm long 3D magnetic model for both SF and SD sextupoles was [analyzed](/home/Groups/FAC/fieldmap_analysis). SF family of magnets will be excited with a monopolar power supply whereas SD sextupoles family will be excited with a bipolar power supply. Analysis has been done for fieldmaps corresponding to injection and extraction energy currents. Since the magnetic field is very linear with the excitation current the two results are virtually identical with respect to field quality.
 
 **SD/SF at Ejection Energy**
 
@@ -2749,6 +2915,8 @@ A summary of the analysis can be found in analysis.txt at [this folder](https://
 **SD/SF at Injection Energy**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-sextupoles/tree/master/links-official-150mev). 
+
+<br />
 
 ##### Segmented Model
 
@@ -2766,6 +2934,8 @@ Currently booster sextupoles are being modelled as a single segment within the h
 
 **Table 58**: BO S sextupole segmented model (maximum current). 
 
+<br />
+
 #### BO Sextupole Magnet Measurements
 
 The magnetic measurement results for Booster sextupoles at high current, I=150 A, are shown in Figure 71 and Figure 72. The rotating coil measurement files can be found at [this folder](https://github.com/lnls-ima/bo-sextupoles/tree/master/model-03/measurement/magnetic/rotcoil).
@@ -2777,6 +2947,8 @@ The magnetic measurement results for Booster sextupoles at high current, I=150 A
 ![](/img/machine/magnets/BOMA_BS_excit_150A.png)
 
 **Figure 72**: Rotating coil measurements of the Booster sextupoles at high current (150 A).
+
+<br />
 
 ### Booster Correctors
 
@@ -2798,6 +2970,8 @@ The magnetic measurement results for Booster sextupoles at high current, I=150 A
 
 **Table 59**: Booster corrector main parameters 
 
+<br />
+
 ##### Electric parameters
 
 || CH/CV| units |
@@ -2809,9 +2983,13 @@ The magnetic measurement results for Booster sextupoles at high current, I=150 A
 
 **Table 60**: Booster corrector electric parameters 
 
+<br />
+
 ##### Multipole Errors
 
 The impact of residual multipole errors of reasonable correctors on the booster beam parameters is expected to be negligible and therefore no specification had been defined. The designed 3D model of these correctors showed acceptable multipole erros.
+
+<br />
 
 #### BO Corrector 3D Model
 
@@ -2825,6 +3003,8 @@ Orbit correctors for the booster use a single model for both horizontal and vert
 
 **Figure 74**: Field of the booster orbit correctors model.
 
+<br />
+
 ##### Fieldmap Analysis
 
 There will be 25 horizontal and 25 vertical orbit correctors in the booster for orbit control. There will be one magnet model for both corrector types. Vertical corrector magnets are the same as horizontal correctors rotated by 90 degrees. The following are the [analysis][link]summaries created with [fma-analysis.py](https://github.com/lnls-fac/fieldmaptrack/blob/master/scripts/fma-analysis.py)
@@ -2836,6 +3016,8 @@ A summary of the analysis can be found in analysis.txt at [this folder](https://
 **CV at Ejection Energy**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-correctors/tree/master/links-official-cv-3gev). 
+
+<br />
 
 ##### Segmented Model
 
@@ -2853,6 +3035,8 @@ Currently the hard-edge approximation is being used to model all booster correct
 
 **Table 61**: BO correctors half segmented model (maximum strength). 
 
+<br />
+
 #### BO Corrector Magnet Measurements
 
 The magnetic measurement results for Booster corrector at I=10 A are shown in Figure 76. The rotating coil measurement files can be found at [this folder](https://github.com/lnls-ima/bo-correctors/tree/master/model-02/measurement/magnetic/rotcoil).
@@ -2860,6 +3044,8 @@ The magnetic measurement results for Booster corrector at I=10 A are shown in Fi
 ![](/img/machine/magnets/BOMA_BC_excit_10A.png)
 
 **Figure 76**: Rotating coil measurements of the Booster correctors at I=10 A.
+
+<br />
 
 ### Booster Magnets Ramping Curve
 
@@ -2877,6 +3063,8 @@ For beam energy ramping in the Booster from 0.15 GeV to 3.0 GeV, the booster mai
 ![](/img/machine/magnets/BO_ramping_curve.png)
 
 **Figure 77**: Scaled ramping curve for Booster magnets with extraction current set to 1 A. The top graph shows the current vs time where the maximum current is 5% higher than the current at extraction energy. The curve is defined by the points (+) with either linear or cubic interpolations between them. The bottom graph shows the time derivative of the current.
+
+<br />
 
 ### Booster Magnets Installation
 
@@ -2990,6 +3178,8 @@ For beam energy ramping in the Booster from 0.15 GeV to 3.0 GeV, the booster mai
 
 **Table 63**: Booster magnets installation. 
 
+<br />
+
 ## TB Transfer Line Magnets
 
 ### TB Dipoles and septum
@@ -3018,6 +3208,8 @@ The TB dipoles and septum main parameters are shown in Table 64.
 
 **Table 65**: TB dipole electric parameters.
 
+<br />
+
 ### TB Dipole Magnet 3D Model
 
 ![](/img/machine/magnets/TB_magnet_dipole_drawing.png)
@@ -3027,6 +3219,8 @@ The TB dipoles and septum main parameters are shown in Table 64.
 ![](/img/machine/magnets/TB_magnet_dipole_field.png)
 
 **Figure 79**: Field of the TB dipole model.
+
+<br />
 
 #### Fieldmap Analysis
 
@@ -3059,9 +3253,13 @@ Table with segmented dipole model
 
 Constructed from simulated fieldmap at nominal energy
 
+<br />
+
 ### TB Dipole Magnet Measurements
 
 A summary of magnet field measurements will eventually be documented here.
+
+<br />
 
 ### TB Quadrupoles
 
@@ -3105,6 +3303,8 @@ dB/dx [T/m] @ E=150 MeV
 
 **Table 69**: Quadrupole configuration for TB transfer line modes.
 
+<br />
+
 ### TB Quadrupole Magnet 3D Model
 
 ![](/img/machine/magnets/TB_magnet_quadrupole_drawing.png)
@@ -3115,9 +3315,13 @@ dB/dx [T/m] @ E=150 MeV
 
 **Figure 82**: Field of the TB quadrupole model.
 
+<br />
+
 #### Fieldmap Analysis
 
-A 3D magnetic model has been created and its fieldmap analyzed. A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/tb-quadrupoles/tree/master/links-official). 
+A 3D magnetic model has been created and its [fieldmap analyzed](/home/Groups/FAC/fieldmap_analysis). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/tb-quadrupoles/tree/master/links-official). 
+
+<br />
 
 #### Segmented Model
 
@@ -3139,13 +3343,19 @@ Constructed from simulated fieldmap at maximum excitation current.
 
 **Table 70**: TB quadrupole segmented model.
 
+<br />
+
 ### TB Quadrupole Magnet Measurements
 
 A summary of magnet field measurements will eventually be documented here.
 
+<br />
+
 ### TB Correctors
 
 The main TB corrector parameters are shown in Table 71.
+
+<br />
 
 #### TB Corrector Magnet Specifications
 
@@ -3159,6 +3369,8 @@ The main TB corrector parameters are shown in Table 71.
 
 **Table 71**: Main parameters for LTB transfer line correctors. 
 
+<br />
+
 #### TB Corrector Magnet 3D Model
 
 ![](/img/machine/magnets/TB_magnet_corrector_drawing.png)
@@ -3169,6 +3381,8 @@ The main TB corrector parameters are shown in Table 71.
 
 **Figure 85**: Field of the TB corrector model with its CH coils excited.
 
+<br />
+
 ##### Fieldmap Analysis
 
 **CH**
@@ -3178,6 +3392,8 @@ A summary of the analysis can be found in analysis.txt at [this folder](https://
 **CV**
 
 A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/tb-correctors/tree/master/links-official-cv). 
+
+<br />
 
 ##### Segmented Model
 
@@ -3194,6 +3410,8 @@ Currently the hard-edge approximation is being used to model TB correctors.
 *K=B'/(Bρ), S=B"/(2Bρ) 
 
 **Table 72**: TB corrector half segmented model (maximum strength). 
+
+<br />
 
 #### TB Corrector Magnet Measurements
 
@@ -3227,6 +3445,8 @@ The TS dipoles are mechanically the same as the Booster dipoles but the deflecti
 
 **Table 74**: TS dipole electric parameters.
 
+<br />
+
 #### TS Dipole Magnet 3D Model
 
 Same model as for BO dipoles.
@@ -3239,9 +3459,13 @@ Same model as for BO dipoles.
 
 **Figure 88**: Field of the booster dipole model.
 
+<br />
+
 #### Fieldmap Analysis
 
-A 3D magnetic model has been created and its [fieldmap analyzed][link] A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/ts-dipoles/tree/master/links-official). 
+A 3D magnetic model has been created and its [fieldmap analyzed](/home/Groups/FAC/fieldmap_analysis). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/ts-dipoles/tree/master/links-official). 
+
+<br />
 
 #### Segmented Model
 
@@ -3267,6 +3491,8 @@ Table with segmented dipole model
 *K=B'/(Bρ), S=B"/(2Bρ)
 
 **Table 75**: TS dipole segmented model.
+
+<br />
 
 ### TS Quadrupoles
 
@@ -3297,6 +3523,8 @@ dB/dx [T/m] @ E=3 GeV
 
 **Table 77**: BTS transfer line quadrupole configuration for modes M1 and M2
 
+<br />
+
 ### TS Correctors
 
 Table 78 lists main specifications for TS correctors
@@ -3311,6 +3539,8 @@ Table 78 lists main specifications for TS correctors
 |Maximum field (E=3 GeV)| ± 3.50E-03| T.m  |
 
 **Table 78**: Main parameters for BTS transfer line correctors.
+
+<br />
 
 ## Magnet Colors
 

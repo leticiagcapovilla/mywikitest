@@ -2,39 +2,47 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-02-29T16:05:46.147Z
+date: 2024-03-05T15:45:08.747Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T13:34:03.079Z
+dateCreated: 2024-03-04T20:05:48.087Z
 ---
 
 # Machine: Storage Ring
 
+<br />
+
 ## Introduction
+
 Sirius is a 3 GeV synchrotron light source that is being built by the Brazilian Synchrotron Light Laboratory (LNLS). The storage ring uses the multi-bend-achromat design approach (5BA in this case) to achieve a very low beam emittance of 0.25 nmÂ·rad. The 518 m circumference contains 20 straight sections of alternating 6.5 and 7.5 meters in length, to be used for insertion devices as well as injection and RF systems. The central dipole of the 5BA cell is a permanent magnet with transverse and longitudinal field gradients to reduce the emittance and provide a hard X-ray radiation source. The thin high field section at its center of approximately 3.2 T provides radiation with critical energy of 19 keV with a modest contribution to the total energy loss. The other low field dipoles (0.56 T), responsible for the main beam deflection, will be electromagnetic. Many challenges are associated with this kind of lattice, including both in beam dynamics and accelerator engineering, that require R&D on new techniques.
 
 The Sirius 5BA lattice design comprises a 5-fold symmetric configuration with alternating high and low horizontal betatron functions that has been optimized in the presence of nonlinear and perturbation effects. Most of the subsystems components are presently either under production or prototyping phase and the Sirius site is already being prepared. The earthwork is concluded and the building construction has started at the end of 2014.
 
 Links below point to drawings with family names of lattice elements for each accelerator section
 
-* AS - Accelerator System drawing PDF file (sectors split in PDF files)
-* SI - Storage Ring drawing PDF file
-* TS - Booster to Storage Ring transport line drawing PDF file
-* BO - Booster drawing PDF file
-* TB - Linac to Booster transport line drawing PDF file
-* LI - Linac drawing PDF file
+* [AS - Accelerator System drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-AS.pdf) PDF file [(sectors split in PDF files)](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings)
+* [SI - Storage Ring drawing]((https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-SI.pdf)) PDF file
+* [TS - Booster to Storage Ring transport line drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-TS.pdf) PDF file
+* [BO - Booster drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-BO.pdf) PDF file
+* [TB - Linac to Booster transport line drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-TB.pdf) PDF file
+* [LI - Linac drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-LI.pdf) PDF file
+
+<br />
 
 ## General Layout
+
 Sirius will be comprised of an injection system and a 3 GeV electron storage ring. The injection system is composed of a 150 MeV linear accelerator (LINAC) and a full energy booster ring, providing top-up electron filling to the main storage ring. The booster and the storage ring will be concentric and will share the same tunnel. 
 
 ![SIRIUS LAYOUT](/img/machine/storage_ring/sr_sirius_layout.jpg)
 
 **Figure 1**: Layout of the Sirius accelerator complex. The experimental hall will be able to accommodate beamlines up to 100 m in length. The requirement for longer beamlines (up to 450 m) is also anticipated and the possibility of a future extension of the building is left open.
 
+<br />
 
 ## Lattice and basic parameters 
 
 ### Design parameters
+
 Several different types of magnetic lattices have been studied for Sirius over the past few years. The final choice is a 20-cell five-bend-achromat (5BA) with natural emittance of 0.25 nmÂ·rad at 3 GeV. The circumference is 518.4 m and there are 20 dispersion-free straight sections of alternating 7.5-m and 6.5-m in length for insertion devices and machine utilities (see Figure 2). Among the lattices studied, this lattice showed the best compromise in terms of low emittance and large number of insertion device straight sections for a given constraint in the ring circumference. In addition, the lattice optics, that showed signs of good nonlinear behavior since the beginning, was indeed optimized to a robust dynamic aperture and momentum acceptance, allowing for conventional off-axis injection and large beam lifetime of about 10 hours with realistic error tolerances and insertion device effects. The nonlinear optimization is a continuous process that is still ongoing but already shows excellent results.
 
 The low emittance is mainly achieved with the MBA approach, with M equal to 5. Besides the total number, other dipole magnet parameters have also been optimized to reduce the emittance: transverse field gradient is added to increase the horizontal damping partition number as well as to match the optics, low bending field and achromatic condition in the straight sections are used to enhance the effect of insertion devices on emittance reduction, different dipole lengths in the cell are used to minimize the weight of the end dipoles, where the dispersion function is matched to the achromatic condition and not to minimum emittance condition, and a simple longitudinal field gradient is introduced in the center dipole. This longitudinal field gradient is created by sandwiching a thin high-field permanent magnet dipole of 3.2 Tesla in the center of the low field main deflection dipole of 0.56 Tesla. In addition to reducing the emittance, these thin dipoles will also produce hard x-rays of critical photon energy of 19.2 keV, and thus usable flux up to about 115 keV, in just a small horizontal angular fan, keeping the overall dipole radiation power at low level. The option for a relatively low dipole field also favors a smaller beam energy spread.
@@ -55,6 +63,8 @@ In the arc sections the dispersion function reaches a maximum of 8 cm. A pair of
 
  The main parameters of the Sirius storage ring are shown in the tables below. 
 
+<br />
+
 #### Beam
 
 | Parameter | Value | Unit |
@@ -62,6 +72,8 @@ In the arc sections the dispersion function reaches a maximum of 8 cm. A pair of
 | Energy (top up) | 3 | GeV |
 | Gamma factor | 5871 |  |
 | Current | 350 | mA |
+
+<br />
 
 #### Lattice
 
@@ -98,6 +110,8 @@ In the arc sections the dispersion function reaches a maximum of 8 cm. A pair of
 | Beam divergence @ center of SS-B | 12.9 | 1.3 | Î¼rad |
 | Beam divergence @ center of BC | 27.1 | 0.7 | Î¼rad |
 
+<br />
+
 #### Equilibrium Parameters
 
 | Parameter | Value | Unit |
@@ -112,10 +126,13 @@ In the arc sections the dispersion function reaches a maximum of 8 cm. A pair of
 | Radiation power from IDS | 200.0 | kW |
 | Total radiation power | 435.5 | kW |
 
+
 | Parameter | Horizontal | Vertical | Longitudinal | Unit |
 | --- | --- | --- | --- | --- |
 | Damping partition number | 1.30 | 1.00 | 1.70 |  |
 | Damping time (dipoles only) | 16.92 | 22.03 | 12.97 | ms |
+
+<br />
 
 #### RF Parameters (with IDs)
 
@@ -129,6 +146,8 @@ In the arc sections the dispersion function reaches a maximum of 8 cm. A pair of
 | Synchrotron frequency | 2.69 | kHz |
 | Energy acceptance | 5.1 |  % |
 
+<br />
+
 #### Low Field Dipoles
 
 | Parameter | Value | Unit |
@@ -137,11 +156,14 @@ In the arc sections the dispersion function reaches a maximum of 8 cm. A pair of
 | Bending radius | 17.738 | m |
 | Critical energy | 3.38 | keV |
 
+
 | Parameter | B1 | B2 | BC_LF | Unit |
 | --- | --- | --- | --- | --- |
 | Number of dipoles | 40 | 40 | 40 |  |
 | Hard-edge length of dipoles | 0.8530 | 1.2630 | 0.4020 | m |
 | Deflection angle | 2.76 | 4.10 | 1.58 | Â° |
+
+<br />
 
 #### High Field Dipoles
 
@@ -151,12 +173,18 @@ In the arc sections the dispersion function reaches a maximum of 8 cm. A pair of
 | Bending radius @ peak | 3.127 | m |
 | Critical energy @ peak | 19.15 | keV |
 
+
 | Parameter | BC_HF | Unit |
 | --- | --- | --- |
 | Number of dipoles | 20 |  |
 | Deflection angle | 1.14 | Â° |
 
+**Table 1**: Sirius SR main parameters. 
+
+<br />
+
 ### Measured parameters
+
 Linear optics measurements can be performed by manipulating the stored beam. The dispersion function can be measured at BPMs by changing the RF frequency and measuring the corresponding variation in the closed orbit. The beta functions at quadrupole can be obtained by changing a quadrupole strength individually and measuring the corresponding variation in the betatron tune. Another method of measuring the beta functions is exciting betatron oscillations with a pinger and reading the turn-by-turn (TbT) beam positions over many turns with BPMs. Applying Principal Component Analysis (PCA) in the TbT data, it is possible to obtain the beta functions at BPMs. The lattice model can be calibrated to fit the measured orbit response matrix, which may provide information regarding the linear optics in the actual storage ring. The method of model calibration with orbit response matrix is called LOCO (Linear Optics from Closed Orbits). With the results obtained by performing the aforementioned beam-based measurements, one can characterize the machine linear optics and basic parameters and compare with the design values.
 
 Based on the measurements performed in Sirius storage ring during the machine studies, the status of Sirius lattice parameters in March 2021 is:
@@ -174,10 +202,12 @@ Based on the measurements performed in Sirius storage ring during the machine st
 | [mm] | 0.8 | 0.7 | -1.1 | -0.2 | 1.6 | -0.0 | -2.0 | 0.1 | 3.3 | 0.1 | -0.7 | -0.3 | -0.1 | 0.3 | 0.1 | -0.4 | -0.1 | 0.7 | 0.9 | 0.0 |
 | [mrad] | -0.2 | 0.3 | 0.1 | -0.4 | -0.3 | 0.6 | 0.1 | -1.7 | -0.2 | 0.4 | 0.2 | 0.2 | -0.1 | 0.0 | 0.3 | 0.1 | -0.1 | 0.1 | -0.5 | 0.0 |
 
-**Table 1**: Vertical dispersion function and its derivative at center of straight sections 
+**Table 2**: Vertical dispersion function and its derivative at center of straight sections 
 
+<br />
 
 ## Beam stay clear 
+
 The beam stay clear (BSC) is defined here as the free aperture required for the beam as measured from its central orbit. In linear approximation, the BSC is symmetric about this orbit.
 
 We have considered two contributions for the BSC requirement:
@@ -206,17 +236,19 @@ $BSCH (s) = max (BSC_b^x (s), BSC_e^x (s))$
 
 **Figure 4**: Beam-stay-clear for Sirius. The vertical acceptance is limited by a 2-m long in-vacuum undulator with 4.5 mm full gap installed at the center of the low beta straight section. The horizontal acceptance is limited by the vacuum chamber (12 mm inner radius) at the high beta section.
 
+<br />
 
 ### Beam stay clear at ID straight sections
+
 The values of the beta functions and beam-stay-clear presented in this table are considered to be the specification values for SIRIUS beam-stay-clear. For this reason, the beta function shown here may be different from other tables, which will be in accordance with the latest storage ring model. 
 
-| Straight Type | $\beta_x$[m] | BSCx [mm] | $\beta_y$[m] | BSCy [mm] |
+| Straight Type | $\beta_x$ [m] | BSCx [mm] | $\beta_y$ [m] | BSCy [mm] |
 | --- | --- | --- | --- | --- |
 | SA | 17.78 | ±11.54 | 3.57 | ±2.84 |
 | SB | 1.36 | ±3.20 | 1.60 | ±1.90 |
 | SP | 1.36 | ±3.20 | 1.60 | ±1.90 |
 
-**Table 2**: Beam Stay Clear at the center of Sirius straight sections. 
+**Table 3**: Beam Stay Clear at the center of Sirius straight sections. 
 
 From the table above is possible to calculate the Beam Stay Clear at a position away from the center of the straight section, remembering that: 
 
@@ -228,18 +260,25 @@ where $\beta _0$ is the value of the betatron function at the center of the stra
 
 **Figure 5**: Beam-stay-clear for Sirius at all three types of straight sections.
 
+<br />
 
 ### Nonlinear beam stay clear from tracking
 
 ![NONLIN BSC](/img/machine/storage_ring/nonlinear_beam_sc.svg)
 
-**Figure 6**: Beam-stay-clear calculated from tracking simulations including nonlinear elements for SI.V14.C03. Note the asymmetry introduced by the optimization method, in which the negative side of the dynamic aperture is maximized at the high straight sections to improve the injection process.
+**Figure 6**: Beam-stay-clear calculated from tracking simulations including nonlinear elements for SI.V14.C03. Note the asymmetry introduced by the optimization method, in which the negative side of the dynamic aperture is maximized at the high $\beta_x$ straight sections to improve the injection process.
+
+<br />
 
 ## Error tolerance specifications 
-After optimization of the bare lattice, errors are introduced in the model to study their influence on the beam stability and quality. This is accomplished with the flexible AcceleratorToolbox (AT) in MATLAB. Aftwerwards these imperfect machine models are exported as flat-lattice files and used in a home-developed tracking code based on AT/TracyIII for performance optimization. From these tracking simulations, which are presented in the subsequent sections, the following error tolerance specifications were determined to be acceptable: 
+
+After optimization of the bare lattice, errors are introduced in the model to study their influence on the beam stability and quality. This is accomplished with the flexible [AcceleratorToolbox (AT)](/home/Groups/FAC/matlab_at) in MATLAB. Aftwerwards these imperfect machine models are exported as flat-lattice files and used in a home-developed tracking code based on AT/TracyIII for performance optimization. From these tracking simulations, which are presented in the subsequent sections, the following error tolerance specifications were determined to be acceptable: 
+
+<br />
 
 ### Multipole errors
-We have simulated higher-order systematic and random multipole errors in all dipoles, quadrupoles, sextupoles and corrector magnets. The systematic multipole components for these magnets are taken from approved 3D magnetic models. Normal and skew random errors were chosen such that, at x = 12 mm from the reference orbit, their total residual fields deviate 100 and 30 ppm from their nominal values, respectively. Table 5, Table 4, Table 7, Table 6 shows the sets of systematic and random multipole errors used in the tracking simulations. The effects of higher-order multipoles associated with insertion device modeling are introduced separately in the form of non-linear kick maps for each device. 
+
+We have simulated higher-order systematic and random multipole errors in all dipoles, quadrupoles, sextupoles and corrector magnets. The systematic multipole components for these magnets are taken from approved 3D magnetic models. Normal and skew random errors were chosen such that, at x = 12 mm from the reference orbit, their total residual fields deviate 100 and 30 ppm from their nominal values, respectively. Table 4, Table 3, Table 7, Table 6 shows the sets of systematic and random multipole errors used in the tracking simulations. The effects of higher-order multipoles associated with insertion device modeling are introduced separately in the form of non-linear kick maps for each device. 
 
 |  Multipole error | Q14 <br />Systematic<br /> Normal<br />| Q20 <br />Systematic<br /> Normal<br /> | Q30 <br />Systematic<br />Normal<br /> | <br />Random <br />Normal | <br />Random <br />Skew|
 | --- | --- | --- | --- |--- |--- |
@@ -251,7 +290,7 @@ We have simulated higher-order systematic and random multipole errors in all dip
 | B13/B1 (20-pole) | -8.0×10⁻⁴ | -7.7×10⁻⁴ | -8.1×10⁻⁴ | |  |
 | B17/B1 (20-pole) | +8.5×10⁻⁵ | +5.9×10⁻⁵ | +7.2×10⁻⁵ | | | 
 
-**Table 3**: Storage ring quadrupole multipole errors. Contribution of multipolar components relative to main quadrupolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
+**Table 4**: Storage ring quadrupole multipole errors. Contribution of multipolar components relative to main quadrupolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
 
 |  Multipole error | Systematic <br />Normal| Random <br />Normal | Random <br />Skew|
 | --- | --- | --- |--- |
@@ -261,20 +300,20 @@ We have simulated higher-order systematic and random multipole errors in all dip
 | B5/B0 (12-pole) | 6.7×10⁻⁵ | 1.5×10⁻⁴ | 0.5×10⁻⁴ |
 | B6/B0 (14-pole) | 3.8×10⁻⁴ | - | - 
 
-**Table 4**: Storage ring dipole multipole errors. Contribution of multipolar components relative to main dipolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
+**Table 5**: Storage ring dipole multipole errors. Contribution of multipolar components relative to main dipolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
 
 | Systematic multipole error | CHS (normal) | CVS (skew) | QS (skew) |
 | --- | --- | --- |--- |
-| B3/B0 (decapole) | | | -5.8×10-1 |
-| B4/B0 (decapole) | +3.1×10-1 | -2.9×10-1 |  |
-| B6/B0 (14-pole) | +3.3×10-2 | -3.5×10-3 |  |
-| B7/B0 (16-pole) | | | +2.7×10-2 |
-| B8/B0 (18-pole) | -4.8×10-2 | +5.5×10-2 |  |
-| B9/B0 (20-pole) | | | +8.0×10-2 |
-| B10/B0 (22-pole) | +1.4×10-2 | -1.1×10-2 |  |
-| B13/B0 (28-pole) | | | +2.4×10-3 |
+| B3/B0 (decapole) | | | -5.8×10⁻¹ |
+| B4/B0 (decapole) | +3.1×10⁻¹ | -2.9×10⁻¹ |  |
+| B6/B0 (14-pole) | +3.3×10⁻² | -3.5×10⁻³ |  |
+| B7/B0 (16-pole) | | | +2.7×10⁻² |
+| B8/B0 (18-pole) | -4.8×10⁻² | +5.5×10⁻² |  |
+| B9/B0 (20-pole) | | | +8.0×10⁻² |
+| B10/B0 (22-pole) | +1.4×10⁻² | -1.1×10⁻² |  |
+| B13/B0 (28-pole) | | | +2.4×10⁻³ |
 
-**Table 5**: Storage ring horizontal, vertical and skew corrector magnets systematic multipole errors. Contribution of multipolar components relative to main field at x = 12 mm. 
+**Table 6**: Storage ring horizontal, vertical and skew corrector magnets systematic multipole errors. Contribution of multipolar components relative to main field at x = 12 mm. 
 
 |  Multipole error | Systematic <br />Normal| Random <br />Normal | Random <br />Skew|
 | --- | --- | --- | --- |
@@ -285,12 +324,14 @@ We have simulated higher-order systematic and random multipole errors in all dip
 | B8/B2 (18-pole) | -2.4×10⁻³ | |  |
 | B14/B2 (30-pole) | +1.4×10⁻³ | | 
 
-**Table 6**: Storage ring sextupole multipole errors. Contribution of multipolar components relative to main sextupolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
+**Table 7**: Storage ring sextupole multipole errors. Contribution of multipolar components relative to main sextupolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
 
 ¹ These spec values have been updated in 2018-04-23 after rotating coil measurements. They have been validated by beam dynamics calculations.
 
+<br />
 
 ### Alignment and excitation errors
+
 Tracking calculations have shown that the misalignment errors of the magnets are the dominating source of dynamical aperture reduction. We performed a statistical study using simulated machines with random Gaussian misalignments of all their magnets. Standard deviations of 30, 40 and 50 μm were tested with acceptance cutoff at 1-σ. Table 8 shows the final specifications for misalignment, rotation and excitation lattice errors. The nominal tolerance for the misalignment error being considered is 40 μm. 
 
 | | Dipole Unit Blocks | Quadrupoles | Sextupoles | Girders | BPMs |  |
@@ -300,23 +341,31 @@ Tracking calculations have shown that the misalignment errors of the magnets are
 | Strength error (static or low frequency) | 0.05 | 0.05 | 0.05 | -- | -- |  % |
 | Dipole Gradient error | 0.1 | -- | -- | -- | -- |  % |
 
-**Table 7**: Maximum absolute value of random alignment and excitation errors. The errors are generated with a Gaussian distribution truncated at ±1σ. 
+**Table 8**: Maximum absolute value of random alignment and excitation errors. The errors are generated with a Gaussian distribution truncated at ±1σ. 
 
+<br />
 
 ### High frequency errors
+
 We analyzed the effect of high frequency (> 1 kHz) magnet vibration and power supply ripple errors on the beam stability. These high frequency perturbations cannot be compensated by the presently available fast feedback systems and thus, in this case, the amplitude of the perturbations must be limited at the source. To estimate the effects of these perturbations we resort to the definition of the orbit amplification factor. The expected rms value for the orbit distortion at any observation point due to a Gaussian distribution of quadrupole misalignments with standard deviation $\sigma _{quad}$ is given by
 
-${\sqrt{\langle \mathcal{u}² (s_0) \rangle} = A_{\mathcal{u}} \sigma_{quad} = \sqrt{\beta_{\mathcal{u}} (s_0)} {\space} \overline{A}_{\mathcal{u}} \sigma_{quad}}$
+$$
+{\sqrt{\langle \mathcal{u}² (s_0) \rangle} = A_{\mathcal{u}} \sigma_{quad} = \sqrt{\beta_{\mathcal{u}} (s_0)} {\space} \overline{A}_{\mathcal{u}} \sigma_{quad}}
+$$
 
 where represents either x or y and $A_{\mathcal{u}}$ is the corresponding orbit amplification factor. We can define an orbit amplification factor $\overline{A}_{\mathcal{u}}$ normalized to $\sqrt{\beta _{\mathcal{u}} (s_0)}$ at the observation point: 
 
-${\overline{A}_{\mathcal{u}} = \frac{A_{\mathcal{u}}}{\sqrt{\beta _{\mathcal{u}} (s_0)}} = \frac{1}{2 \sqrt{2} sin(\pi \nu _{\mathcal{u}})} (\sum_{i=1}^{all quads}(KL)_i ^2 \beta _{\mathcal{u}}(s_i))^{1/2}}$
+$$
+{\overline{A}_{\mathcal{u}} = \frac{A_{\mathcal{u}}}{\sqrt{\beta _{\mathcal{u}} (s_0)}} = \frac{1}{2 \sqrt{2} sin(\pi \nu _{\mathcal{u}})} (\sum_{i=1}^{all quads}(KL)_i ^2 \beta _{\mathcal{u}}(s_i))^{1/2}}
+$$
 
 The tolerance for these high frequency vibration amplitudes that cannot be compensated by the feedback system is related to the orbit stability goal (usually 10% of beam size) in the vertical plane by: 
 
-$\Delta \mathcal{y} _{quad,vibration} < 0.1 \frac{\sqrt{\epsilon _y}}{\overline{A}_y}$
+$$
+\Delta \mathcal{y} _{quad,vibration} < 0.1 \frac{\sqrt{\epsilon _y}}{\overline{A}_y}
+$$
 
-where $\epsilon _y = \epsilon _0 \kappa / (1 + \kappa)$ is the vertical emittance expressed as a function of the coupling factor $\kappa$ and the natural emittance $\epsilon _0$. Using the expressions above the tolerances for uncorrelated high frequency errors have been determined as shown in Table 8.
+where $\epsilon _y = \epsilon _0 \kappa / (1 + \kappa)$ is the vertical emittance expressed as a function of the coupling factor $\kappa$ and the natural emittance $\epsilon _0$. Using the expressions above the tolerances for uncorrelated high frequency errors have been determined as shown in Table 9.
 
 | | Dipoles | Quadrupoles | Sextupoles |  |
  --- | --- | --- | --- |--- |
@@ -325,13 +374,15 @@ where $\epsilon _y = \epsilon _0 \kappa / (1 + \kappa)$ is the vertical emittanc
 
 **Table 8**: Standard deviation for ripple and vibration errors. 
 
+<br />
 
 ## Closed-orbit correction and coupling control
+
 The Sirius closed-orbit correction system will consist of a Slow Orbit Feedback (SOFB) and a Fast Orbit Feedback (FOFB) systems. The SOFB system will make use of all 160 BPMs, and of 120 horizontal and 160 vertical slow correctors located in sextupole magnets. Only a vertical corrector close to BC dipole will not be combined to a sextupole. On the other hand, the FOFB system uses 80 horizontal and 80 vertical air coils located upstream and downstream of each of the 18 ID straight sections and 20 superbend sources. A subset of BPMs, the ones on either side of the radiation sources, will be used for local compensation of fast perturbations. These fast corrector coils will be placed at special sections with 0.3 mm thick stainless steel vacuum chambers. Both feedback systems will run at the same time, the SOFB system compensating for long term perturbations using a global correction algorithm based on SVD; and the FOFB system compensating for short term perturbations based on a local correction scheme. Tests performed at other laboratories like Soleil show that it is possible to have both systems working simultaneously without dead bands and without having them fighting each other. The implementation has to be such that the FOFB system does not correct around the golden orbit, but around the SOFB residual closed orbit, which is updated before each step of the SOFB; and the SOFB feedback corrects both for the orbit distortion read on BPMs and the orbit reconstructed by unloading the DC part of the fast correctors avoiding their saturation.
 
 For coupling correction and control, independently powered skew quadrupole correctors are provided. They consist of additional coil windings in the sextupole families SF1J and SF1K (dispersive skews),and SDA and SDB (non-dispersive skews). The dispersive skew quadrupoles SF1 will be used to minimize the vertical dispersion created by alignments errors, and the non-dispersive ones will be used to correct coupling by minimizing the off-diagonal elements in the orbit response-matrix. This results typically in 0.02% residual emittance coupling in simulations. After this correction, the vertical beam size can be increased by controlling the overall coupling using the non-dispersive skews. For beam size and lifetime calculation purposes we consider setting the emittance coupling to 1%. 
 
-Figure 7 shows the distribution of correctors and BPMs in one superperiod of the storage ring for the closed-orbit and coupling correction systems, and Tables 9 and 10 shows some parameters for the elements used in these systems. The tolerances for alignment and excitation errors used in the simulations are shown in Table 7. 
+Figure 7 shows the distribution of correctors and BPMs in one superperiod of the storage ring for the closed-orbit and coupling correction systems, and Tables 9 and 10 shows some parameters for the elements used in these systems. The tolerances for alignment and excitation errors used in the simulations are shown in Table 8. 
 
 ![SR LAYOUT2](/img/machine/storage_ring/sr_ring_layout2.png)
 
@@ -342,6 +393,7 @@ Figure 7 shows the distribution of correctors and BPMs in one superperiod of the
 | Number of BPMs | 160 |  |
 | Number of skew quadrupoles | 80 (+ 10 QS in fast corrector)* |  |
 | Skew quadrupole maximum integrated strength | 0.100 | T  |
+
 
 | Parameter | Horizontal v. | Vertical v. | Unit |
 | --- | --- | --- | --- |
@@ -358,7 +410,7 @@ Figure 7 shows the distribution of correctors and BPMs in one superperiod of the
 
 The simulations show that the set of errors considered in Table 7, if uncorrected, result in large orbit distortions that cause many of the generated random machines to be unstable. To avoid these unstable machines, the orbit is initially corrected with the sextupoles turned off. Then, with a small residual orbit distortion, the sextupoles can be turned on again in steps without inducing instabilities. At each step, the orbit is further corrected iteratively until convergence.
 
-Figure 8 shows the closed orbit for the simulated random machines without correction and with the sextupoles turned off. Figure 9 shows the residual orbit after global correction with respect to the ideal orbit, that is defined by the absolute zero of the reference system, including errors in the BPM offsets and considering that they are fixed to the girders; and Figure 10 shows the residual orbit with no BPM offset errors and no girder alignment errors. In this case the BPMs are centered around the ideal orbit. Table 11 presents the statistics of the orbit correction for 20 random machines.
+Figure 8 shows the closed orbit for the simulated random machines without correction and with the sextupoles turned off. Figure 9 shows the residual orbit after global correction with respect to the ideal orbit, that is defined by the absolute zero of the reference system, including errors in the BPM offsets and considering that they are fixed to the girders; and Figure 10 shows the residual orbit with no BPM offset errors and no girder alignment errors. In this case the BPMs are centered around the ideal orbit. Tables 11 and 12 present the statistics of the orbit correction for 20 random machines.
 
 ![ORBIT BEFORE CORRECTION](/img/machine/storage_ring/uncorrected_hor_vert.svg)
 
@@ -376,6 +428,7 @@ Figure 8 shows the closed orbit for the simulated random machines without correc
 
 **Figure 11**: Fast orbit feedback. Correction with 80 BPMs, 80 FCH (fast horizontal) and 80 FCV (fast vertical corrector). The 80 BPMs are enclosing the 40 source points, 20 IDs and 20 BCs.
 
+<br />
 
 #### Orbit
 
@@ -386,6 +439,8 @@ Figure 8 shows the closed orbit for the simulated random machines without correc
 | rms H orbit @ BPMs | 11 | 50 | 20 |
 | rms V orbit @ BPMs | 5.7 | 49 | 22 
 
+<br />
+
 #### Correctors
 
 | Parameter | H (μrad) | V (μrad) |
@@ -395,47 +450,56 @@ Figure 8 shows the closed orbit for the simulated random machines without correc
 
 **Tables 11 and 12**: Orbit correction statistics over 20 random seeds for the storage ring.
 
+<br />
 
 ## Dynamic and momentum aperture 
+
 For Sirius, the target dynamic aperture to assure a safe and high efficiency injection process is about 8 mm in the inner horizontal side of the ring at injection point. As for the momentum aperture, the goal is to reach a beam lifetime around 10 hours. 
 
+<br />
+
 ### Bare lattice
+
 The bare lattice is the lattice that contains only sextupoles as non-linear elements and that does not include misalignment or multipoles errors. Figure 12 and Figure 13 shows diffusion and frequency maps and Figure 14 shows the phase space for the best result obtained up to now. It should be mentioned that this is an ongoing optimization work. 
 
 ![DIFF MAP LONG](/img/machine/storage_ring/dif_map1.png)
 
-**Figure 12**: Diffusion map (bottom) and corresponding frequency map (top) for Sirius at the center of the long straight section. Particles were tracked for 1032 turns with AT for the bare lattice. On-momentum particles with transverse distribution x-z are shown.
+**Figure 12**: Diffusion map (bottom) and corresponding frequency map (top) for Sirius at the center of the long straight section. Particles were tracked for 1032 turns [with AT](/home/Groups/FAC/matlab_at) for the bare lattice. On-momentum particles with transverse distribution x-z are shown.
 
 
 ![DIFF MAP 7MM](/img/machine/storage_ring/dif_map2.png)
 
-**Figure 13**: Diffusion map (bottom) and corresponding frequency map (top) for Sirius at the center of the 7-m straight section. Particles were tracked for 1032 turns with AT for the bare lattice. Coordinate-momentum distribution (x-dp) at initial vertical coordinate z=0.5 mm is shown.
+**Figure 13**: Diffusion map (bottom) and corresponding frequency map (top) for Sirius at the center of the 7-m straight section. Particles were tracked for 1032 turns [with AT](/home/Groups/FAC/matlab_at) for the bare lattice. Coordinate-momentum distribution (x-dp) at initial vertical coordinate z=0.5 mm is shown.
 
 ![STORAGE RING PHASE](/img/machine/storage_ring/ring_phase.svg)
 
-**Figure 14**: Sirius storage ring SI.V14.C03 phase space. Particles tracked for 500 turns, using AT. Blue/red dots refers to on-momentum horizontal/vertical scan of initial positions while keeping the vertical/horizontal initial position fixed at 0.1mm. Cyan dots refer to momentum scan up to 5% keeping transverse initial positions at 0.1mm.
+**Figure 14**: Sirius storage ring SI.V14.C03 phase space. Particles tracked for 500 turns, using AT. Blue/red dots refers to on-momentum horizontal/vertical scan of initial positions while keeping the vertical/horizontal initial position fixed at 0.1mm. Cyan dots refer to momentum scan up to $\pm$ 5% keeping transverse initial positions at 0.1mm.
+
+<br />
 
 ### Multipole, excitation and alignment errors
 
 ![ONOFF MOMENTUM1](/img/machine/storage_ring/on_off_momentum1.png)
 
-**Figure 15**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with alignment and multipole errors, orbit, tune and coupling corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring.
+**Figure 15**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with alignment and multipole errors, orbit, tune and coupling corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with [Trackcpp](/home/Groups/FAC/trackcpp); 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring.
 
 ![MOMENTUM APERTURE1](/img/machine/storage_ring/momentum_aperture1.svg)
 
-**Figure 16**: Momentum aperture for one superperiod of the ring for 20 machines with alignment and multipole errors, orbit, tune and coupling corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring. Black lines represent the normalized loss rate for each machine, showing the dipoles as the main source of particle loss due to Touschek scattering.
+**Figure 16**: Momentum aperture for one superperiod of the ring for 20 machines with alignment and multipole errors, orbit, tune and coupling corrections. For this calculation, the following configuration was used: 6D tracking with [Trackcpp](/home/Groups/FAC/trackcpp); 2000 turns; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring. Black lines represent the normalized loss rate for each machine, showing the dipoles as the main source of particle loss due to Touschek scattering.
 
+<br />
 
 ### Optics symmetrization
+
 Optics symmetrization consists in using individual quadrupoles to correct for the β-beating introduced by orbit errors in sextupoles and excitation errors in quadrupoles. 
 
 ![ONOFF MOMENTUM2](/img/machine/storage_ring/on_off_momentum2.png)
 
-**Figure 17**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with alignment and multipole errors, orbit, tune, coupling and optics corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring.
+**Figure 17**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with alignment and multipole errors, orbit, tune, coupling and optics corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring.
 
 ![MOMENTUM APERTURE2](/img/machine/storage_ring/momentum_aperture2.svg)
 
-**Figure 18**: Momentum aperture for one superperiod of the ring for 20 machines with alignment and multipole errors, orbit, tune, coupling and optics corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring. Black lines represent the normalized loss rate for each machine, showing the dipoles as the main source of particle loss due to Touschek scattering.
+**Figure 18**: Momentum aperture for one superperiod of the ring for 20 machines with alignment and multipole errors, orbit, tune, coupling and optics corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring. Black lines represent the normalized loss rate for each machine, showing the dipoles as the main source of particle loss due to Touschek scattering.
 
 ![DAXY](/img/machine/storage_ring/daxy.svg)
 
@@ -449,13 +513,18 @@ Optics symmetrization consists in using individual quadrupoles to correct for th
 
 **Figure 21**: Momentum Aperture increase due to symmetrization of the linear optics. Solid lines represent the average aperture of 20 machines with random multipole, alignment and excitation errors and dashed lines the average plus or minus one rms.
 
+<br />
+
 ### Impact of insertion devices
+
 Insertion devices change the beam equilibrium properties through modifications of radiation integrals due to their alternating field (???). They also introduce focusing in the beam dynamics due to their intrinsic field roll-offs. This additional focusing is mitigated with appropriate tweaking of the lattice quadrupole magnets, specially the flanking ones. All quadrupole families are re-tuned in order to restore the optics symmetries, original tunes, and dispersion-free straights that the lattice had before the introduction of the IDs.
 
 
 The list of IDs for Sirius is still being studied and developed. The devices planned to be used at this point are described in ???. ??? shows the impact of these devices on the equilibrium parameters of the beam.
 
 Traditional elliptically polarizing undulators have strong horizontal field roll-offs when the light produced is vertically polarized. These roll-offs would have a prohibitive detrimental effect on the beam dynamics if the ID was allowed in without active compensations. Active compensation of these intrinsic roll-offs are being studied. Double helical superconductor undulators are also being studied and may provide an alternative to the traditional EPUs. 
+
+<br />
 
 #### plots below are out-of-date 
 
@@ -475,13 +544,16 @@ With additional optics symmetrization the dynamical and momentum apertures are a
 
 ![ONOFF MOMENTUM3](/img/machine/storage_ring/on_off_momentum3.png)
 
-**Figure 25**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with the IDS for phase2 and alignment and multipole errors, orbit, tune, coupling and optics corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring.
+**Figure 25**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with the IDS for phase2 and alignment and multipole errors, orbit, tune, coupling and optics corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring.
 
 ![MA SUPERPERIOD](/img/machine/storage_ring/ma_superperiod.svg)
 
-**Figure 26**: Momentum aperture for one superperiod of the ring for 20 machines with the IDS for phase 2 plus alignment and multipole errors, orbit, tune, coupling and optics corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring.
+**Figure 26**: Momentum aperture for one superperiod of the ring for 20 machines with the IDS for phase 2 plus alignment and multipole errors, orbit, tune, coupling and optics corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring.
+
+<br />
 
 ## Operation Phases
+
 In this section the operation phases for Sirius from commissioning to maximum current and full insertion devices usage are described. The parameters for each phase, shown in Table 13, will be used in the following sections to estimate beam lifetime and instability thresholds and also to make an assessment of the operation conditions of the storage ring. In the commissioning phase (Phase 0) the energy loss is due only to dipoles and no insertion device is restricting the vertical acceptance of the machine. The RF voltage is provided by two super conducting cavities (SC) and the target stored current is 100 mA, distributed in a uniform-filling pattern. In the initial users mode (Phase 1), the first 12 beamlines described in the next section are included. The IDs for these beam lines include four in-vacuum undulators with 4.5 mm minimum gap (IVU19), two in-vacuum undulators with 8.0 mm minimum gap (IVU25) and four EPUs. All those insertion devices add about 145 keV to the energy loss/turn and cause a reduction in the natural emittance from 0.24 to 0.20 nm rad. The same RF cavities and stored current of the commissioning phase are assumed. The IDs for the final scenario (Phase 2) are not defined yet and it is therefore more difficult to estimate their impact on the beam parameters. It was then considered filling all low-beta sections with IVUs and the high-beta ones with EPUs, adding another 230 keV to the energy loss/turn. For the purpose of lifetime calculation and machine subsystems design, such as vacuum and RF, a maximum current of 500 mA is being considered. In this case, to have a reasonable lifetime, it is necessary a third-harmonic cavity (3HC) to flatten the potential in the RF bucket. This is essential both to increase the bunch length and the synchrotron tune spread. The former improves beam lifetime by reducing the charge density, and the latter increases beam stability by adding Landau damping. A factor of about five increase in bunch length can be achieved for a uniform bunch filling pattern. 
 
 | Parameter | Phase 0 <br />(commissioning)| Phase 1 <br />(initial user mode)| Phase 2 <br />(final user mode)|
@@ -500,8 +572,10 @@ In this section the operation phases for Sirius from commissioning to maximum cu
 
 **Table 13**: Sirius operation phases for beam lifetime and instability threshold calculations. 
 
+<br />
 
 ## Intra-beam Scattering (IBS)
+
 Given the scenarios presented in the previous section it is important to calculate the effect of intra-beam scattering (IBS) on the beam, since it can spoil the emittance and the storage ring performance. Another similar effect that cause beam blow-up is the microwave instability, which acts mostly in the longitudinal plane, causing an additional dilution of the density in the longitudinal phase space. Both effects can be harmful especially when operating in a hybrid fill mode, where a high current single-bunch is filled in the center of a small gap of empty buckets (about 5 to 10% of the total circumference), for time resolved experiments. To estimate the final parameters of the single bunch distribution, such as the emittance and energy spread, we iterated the calculation of IBS growth times using CIMP (Completely Integrated Modified Piwinski) and Bane formalisms. Some results are shown in Table 14. For the single bunch case in Phase 2, the IBS calculations are extended for single bunch currents up to 3 mA for Phase 2 are in Figure 27 to Figure 30. 
 
 | Parameter | Phase 0 <br />(commissioning)| Phase 1 <br />(initial user mode)| Phase 2 <br />(final user mode)| Phase 2 <br />(high current)| Phase 2<br />(single bunch) |  |
@@ -531,7 +605,10 @@ Given the scenarios presented in the previous section it is important to calcula
 
 **Figure 30**: IBS effect (CIMP and Bane formalisms) on bunch length as a function of current per bunch. Calculation for Phase 1 (no 3HC) and Phase 2 (with 3HC).
 
+<br />
+
 ## Lifetime
+
 The beam lifetime is also a key performance parameter for a light source. Various processes can lead to the loss of electrons from the beam; the most important ones are the collisions with residual gas molecules (gas scattering lifetime) and between two electrons with large momentum transfer (Touschek lifetime). Given the very low emittance of the machine, care has been taken to include IBS effects (using Bane model) in the calculations. For the elastic and inelastic lifetimes, a simulated pressure profile assuming accumulated charge of 10000Ah was used. Concerning Touschek lifetime, it is import to note that the natural emittance of Sirius is already in the regime where there is an exponential increase in Touschek lifetime towards lower emittances, as can be seen in Figure 32. From the plot it is clear that the inclusion of IDs in the machine, further reducing the emittance, is beneficial for the lifetime. In this regime the lifetime also shows a strong dependence on the energy acceptance. It is thus very important to optimize the lattice to have the largest possible energy acceptance. Table 15 shows results from lifetime calculations for uniform fill for different scenarios. For all cases the total lifetime is between 8 and 11 h. For Sirius there are users also interested in time-resolved experiments and thus an estimate for single bunch lifetime is needed. Calculations of lifetime for a single bunch were performed using parameters from Phase 1 and 2 and are included in Table 15 and show in Figure 31. 
 
 | Parameter | Phase 0 <br />(commissioning)| Phase 1 <br />(initial user mode)| Phase 2 <br />(final user mode)| Phase 2 <br />(high current)| Phase 2 <br />(single bunch)|  |
@@ -553,11 +630,13 @@ The beam lifetime is also a key performance parameter for a light source. Variou
 
 **Figure 32**: Variation of the Touschek lifetime component as a function of horizontal emittance (keeping all other factors, like vertical emittance and energy spread, constant) for Phase 1, Phase 2 with 350 mA (in final user mode) and 500 mA (high current case) scenarios. IBS effects are not considered in this calculation.
 
+<br />
 
 ## Impedance budget and instabilities 
 
 ### Impedance budget
-The beam-environment interaction can be described by the impedance concept, where each structure is modelled by a frequency dependent complex function. The Sirius impedance budget may be divided into two types: the resistive wall and the geometric impedances. The first kind was estimated using analytical formulas and the second with 2 and 3D numerical codes. See Impedance Budget for more details regarding the modelling of each component. Figure 35, Figure 33 and Figure 34 shows the impedance budget used so far for instability thresholds calculation for phase 2 and Table 16 shows the summary of its effect on the beam. 
+
+The beam-environment interaction can be described by the impedance concept, where each structure is modelled by a frequency dependent complex function. The Sirius impedance budget may be divided into two types: the resistive wall and the geometric impedances. The first kind was estimated using analytical formulas and the second with 2 and 3D numerical codes. See [Impedance Budget](/home/Machine/impedance_budget) for more details regarding the modelling of each component. Figure 35, Figure 33 and Figure 34 shows the impedance budget used so far for instability thresholds calculation for phase 2 and Table 16 shows the summary of its effect on the beam. 
 
 
 | Element | $K_{loss}$  <br />[mV/pC] | P  <br />[mW] | Quantity | Total $K_{loss}$  <br />[mV/pC] | Total P  <br />[W] | $\beta _x K_x$  <br />[kV/pC] | $\beta _y K_y$  <br />[kV/pC] |
@@ -586,8 +665,11 @@ The beam-environment interaction can be described by the impedance concept, wher
 
 **Figure 35**: Longitudinal Impedance for phase 2. Dashed lines represent negative data.
 
+<br />
+
 ### Collective Instabilities
-With the impedance budget presented above, collective instability thresholds for Sirius have been calculated for the various operation scenarios described in Operation Phases, for coupled bunch and single bunch effects.
+
+With the impedance budget presented above, collective instability thresholds for Sirius have been calculated for the various operation scenarios described in [Operation Phases](/home/Machine/storage_ring#operation-phases), for coupled bunch and single bunch effects.
 
 Regarding the coupled bunch (CB) instabilities, the transverse planes will be unstable, due to resistive wall instability (see Table 17) and the longitudinal plane will be stable, given that there is no narrow band impedances in our model. the instabilities in the tansverse plane could be controlled by increasing the chromaticity, because of the strong head-tail damping of the azimuthal mode zero (see Figure 36 and Figure 37). However, this behaviour depends strongly on the strength of the broadband impedance and for the sake of safety a transverse feedback system will be installed in the machine from the beginning. 
 
@@ -609,6 +691,8 @@ Regarding the coupled bunch (CB) instabilities, the transverse planes will be un
 **Figure 37**: Vertical Coupled Bunch Instabilities for phase 2.
 
 Table 18 shows the current thresholds for single bunch instabilities. Even for Phase 1 which presents the lowest thresholds (see Figure 38, Figure 39 and Figure 40), the operation current is well below the thresholds calculated for all three planes. For Phase 2, because of the third harmonic cavity, the bunches will not be Gaussian anymore which breaks the assumptions made in the theoretical models we have used for instability calculations. However, the operational current per bunch for this phase is still well below the calculated thresholds, resulting in a large safety margin. 
+
+<br />
 
 #### Current threshold [mA] 
 
@@ -635,18 +719,25 @@ Table 18 shows the current thresholds for single bunch instabilities. Even for P
 A hybrid filling pattern with an empty gap and a high current single bunch for time resolved experiments is planned for Sirius. In this mode, the bunch lengthening provided by the harmonic cavity can be smaller and non-uniform. For the single bunch in the middle of the gap, even with optimum lengthening, the threshold current for mode coupling (see Table 18, Phase 2) is already below the nominal value of 2 mA. A tracking code that includes the effects of the harmonic cavity with uniform and non-uniform filling as well as broadband impedances is being developed to study the hybrid filling mode more carefully. 
 
 ## Diagnostic Beamlines 
+
 Here is a summary of the main features and specifications of each diagnostic beam line for the Storage ring in the Sirius project. 
 
+<br />
+
 ### General Idea
+
 Since Sirius will be a project mainly devoted to the production of soft and hard x-rays and due to the strong focusing nature of its lattice, the apertures available for beam lines are small. Bearing this in mind and the development of diagnostics equipment in the later years the natural choice is to use x-ray to image the beam in the diagnostic beamlines, and not vis-UV or visible radiation. Another issue is that on the new low emittance machines, impedances can represent a limiting factor and introducing vacuum chamber tapers, steps or strange geometries has to be a well thought process not to impact on the instability limits. Using x-rays to image the beam doesn't change the vacuum chamber current project and thus don't imply changes in the impedances on the overall machine. Also, making the design of the beam lines compatible with the overall machine design won't limit the number of diagnostic beamlines that can be built, if in the future this need arrises. For quick longitudinal profile measurements and filling pattern determination a streak camera and a BPM or Fast Current Transformer (FCT) will be used, thus a visible beaming is needed, however this line doesn't need extreme resolution for the vertical profiles and can use the available aperture in the machine without further modification on the vacuum chamber projects. Here is a summary of all the measurements that should be possible with the diagnostic beamlines:
 
 * Beam size and thus emittance in transverse plane (horizontal and vertical);
 * Energy spread (and for that it is necessary to have 2 beam lines, one with zero and one with significant dispersion -> B1 and B2 beam lines);
 * Bunch length and longitudinal profiles (using visible light + streak camera);
 * Filling pattern (visible diagnostics);
-* Transverse turn-by-turn mode (for injection studies, instabilities, etc.) by using a fast camera with enhanced sensitivity in any on of the beam lines measuring transverse sizes ([1], [2] and [3]).
+* Transverse turn-by-turn mode (for injection studies, instabilities, etc.) by using a fast camera with enhanced sensitivity in any on of the beam lines measuring transverse sizes ([1](http://www.stanfordcomputeroptics.com/applications/metrology/synchrotron-beam-profile-measurement.html), [2](http://www.stanfordcomputeroptics.com/applications/metrology/synchrotron-beam-diagnostics.html) and [3](http://www.stanfordcomputeroptics.com/applications/metrology/injected-beam-profile-at-synchrotron.html)).
+
+<br />
 
 ### Available sources points
+
 There will be three possible sources available for diagnostics, light from B1 and B2 and also BC. Given the actual lattice the beam sizes in each of those sources are: 
 
 | Source | $\beta _x [m]$ | $\beta _y [m]$ | $\alpha _x [rad]$ | $\alpha _y [rad]$ | $\gamma _x [1/m]$ | $\gamma _y [1/m]$ | $\eta _x [mm]$ | $\eta ' _x [mrad]$ | $\sigma _{x,b} [\mu m]$ | $\sigma _x [\mu m]$ | $\sigma _y [\mu m]$ | $\sigma' _{x,b} [\mu rad]$ | $\sigma' _x [\mu rad]$ | $\sigma' _y [\mu rad]$ |
@@ -666,25 +757,39 @@ The available source points around the storage ring are (so far): the B1 and B2 
 
 **Figure 41**: Figure show the extraction path from dipole B2. The yellow line is the extraction of light from the beginning of the dipole, which cannot be realised due to mechanical constraints in the vacuum chamber production. The available extration point is them moved 19 mrad into the dipole and is represented by the green line in the picture. According to preliminary ray-tracing, this beamline won't colide with any magnet.
 
-### Techniques and limutations 
+<br />
+
+### Techniques and limitations 
+
 In this section we describe a few techniques that can be used to measure the beam sizes in the Storage ring in Sirius. 
 
+<br />
+
 #### Pinholes
+
 This is the most classical way for measuring beam sizes. The beam line would be composed of: a cooled monochromator followed by a set of attenuators and filters, a pinhole with array with 10, 15, 20 and 25 µm pinholes (explanation to follow), a phosphor screen and a CCD camera with pixel size of the order of 4 µm (of-the-shelf component, to reduce costs). The total magnification would be around 5 for B1 and 4.5 for B2. The image formed on the camera is the convolution of the source profile and the point spread function (PSF) of the system, i.e., the beamline. Consequently, the convolved PSF determines the smallest image size measurable by the imaging system. To calculate the PSF of the system we will, in a first approximation, assume to be in the far-field region. This is true when the distance between the pinhole and the screen in which the light is observed is significantly greater than A²/λ, where λ is the wavelength and A is the pinhole diameter. In the regime in which Fraunhofer optics are valid, the PSF can be approximated by a Gaussian function and in this case the rms Gaussian size of the image of the electron beam Σ fulfills: 
 
-$\Sigma ² = S ² + \Sigma _0 ² + \Sigma _1 ²$
+$$
+\Sigma ² = S ² + \Sigma _0 ² + \Sigma _1 ²
+$$
 
 where S is the rms size of the image of the photon beam at a distance d from the pinhole, Σ0² is the point spread function of the system and Σ1² accounts for effects of blurring caused by the phosphor screen and also the CCD camera resolution. For monochromatic radiation the pinhole contribution to the PSF can be further decomposed into two contributions: 
 
-${\Sigma _0 ² = S²_{aperture} + S²_{diff}}$
+$$
+{\Sigma _0 ² = S²_{aperture} + S²_{diff}}
+$$
 
 $S_{aperture}$ is the geometrical projection of the pinhole opening. A point source of light illuminating a hole at a distance d, will project a spot of light on the scintillator screen. The size of this spot is A(D+d)/d, where A is the pinhole diameter and D is the distance from the pinhole to the screen. The camera geometric magnification is M=D/d, and the corresponding rms size of this contribution to the total measured beam size is: 
 
-${S_{aperture} = \frac{A}{\sqrt{12}} \frac{D + d}{d}}$
+$$
+{S_{aperture} = \frac{A}{\sqrt{12}} \frac{D + d}{d}}
+$$
 
 where the factor √12 is due to the conversion of the width of the rectangular profile to an rms value. S accounts for the pinhole diffraction, which in the regime of Fraunhofer diffraction is described by a Bessel function of first order, for a circular pinhole. If the Bessel function of first order is approximated by a Gaussian function, the rms size of the diffraction contribution to the total beam size is: 
 
-${S_{diff} = 0.42 \frac{\lambda D}{A}}$
+$$
+{S_{diff} = 0.42 \frac{\lambda D}{A}}
+$$
 
 Thus, pinholes with large apertures will lead to image blurring due to geometrical shadowing while pinholes with small apertures have strong diffraction effects. The total contribution from the pinholes to the PSF as a function of the photon energy for the different pinhole apertures is shown in Figure 42 as well as a plot of the optimum aperture as a function of photon energy in Figure 43. For Sirius we considered that the pinholes are 3.5 m away from the source and that the beam line has a magnification of 5 for a beam line in dipole B1. From the plots we can see that there is no gain in having pinholes smaller than 10 µm and having an array with 10, 15 and 20 µm pinholes would cover the optimum size for a broad range of wavelengths. In Figure 44 is the result from a SRW simulation for the pinholes in Sirius, notice that for most cases the Fraunhoffer approximation is still valid and the diffraction pattern can be fitted by a Gaussian. 
 
@@ -702,6 +807,8 @@ Thus, pinholes with large apertures will lead to image blurring due to geometric
 
 The imaging system contribution to the PSF (Σ1) can be further decomposed into two contributions; S accounts for the blurring of the final image due to the thickness and grain size of the phosphor screen (≈ 6- 10 µm), and $S_{CCD}$ is the rms spatial resolution of the camera, which can be approximated by the pixel size divided by the magnification. The pixel size of a standard CCD camera is 4.65 µm thus $S_{CCD}$ ≈ 1 μm. Gathering those two contributions we have that Σ1 ≈ 6 μm (on average). Putting together all the contributions the total point spread function of the system as a function of pinhole size and photon energy is given in the Table 19. So form this table we can see that it is a viable technique for measuring horizontal beam sizes ≥ 20 µm, however for vertical beam sizes it is not optimum since the PSF is of the same size as the beam height for Sirius. 
 
+<br />
+
 #### PSF ($\mu m$)
 
 | Pinhole Size | 20 keV | 30 keV | 40 keV | 50 keV |
@@ -712,11 +819,14 @@ The imaging system contribution to the PSF (Σ1) can be further decomposed into 
 
 **Table 20**: Total PSF at the source point for the B1 case.
 
+<br />
 
 #### Toroidal Mirror
+
 Given the results for the pinhole it is possible to notice that a accurate measurement of for the vertical beam size is not possible. In order to b able to measure vertical and horizontal beam size we are now studying the use of a toroidal X-ray mirror. The optics is much like the one used in the SAX beam line in the current machine, the UVX. A series of calculations using SHADOW are begin done to evaluate this possibility. 
 
 ### Bunch length and Filling pattern measurements
+
 In order to measure the bunch length the idea is to move the streak camera from the old light source (UVX) to the new one. The streak camera is a Hammamatsu with dual sweep unit running at a frequency of 1/4th of the RF frequency. In the old machine the RF frequency is 476.066 MHZ and thus the sincroscran frequency is about 119 MHz. It will be necessary to ship the unit to Japan in order to have the frequency changed to accommodate the 500 MHz, which is the nominal RF frequency from Sirius. The principle of operation of the streak camera is explained in Figure 45 , bellow. 
 
 ![STREAK CAM OPERATION](/img/machine/storage_ring/streak_cam_schema.png)
@@ -733,8 +843,10 @@ Since the frequency of the whole acceleration chain is based on 500 MHZ (the Lin
 
 In order to digitize and process the data from the filling pattern monitors it is necessary a minimum sampling rate of ~ 1 GS/s (for 500 MHZ signals). Since the bunch length in the booster and storage ring are about 40 ps and 10 ps (or ~40 with a 3rd Harmonic Cavity) respectively and given the bandwidth of the monitors in each machine, the actually measured signal will the broadened to ~ 1 ns in the case of the Booster and to ~ 100 ps for the Storage Ring. In order to be able to measure both signals a digitizer capable of 4GS/s for the booster should be enough (4 sample points for each bunch) but for the storage ring a much better one is needed for the storage ring, with at least 10 times the capability, i.e., 40 GS/s. In the case of the booster and transport lines those equipment are ready available (either scopes of High-Speed Digitizers) and for the storage reign special oscilloscopes are also available in the market, however they are high-end equipment. Either way, digitizer or oscilloscopes, both are able to communicate with EPCIS and an interface with the control system should not be an issue. 
 
+<br />
 
 ## Injection into the Storage Ring 
+
 The injection point in the storage ring is, by definition, the physical end of the thin septum. 
 
 ![RING INJECTION](/img/machine/storage_ring/ring_inject.svg)
@@ -744,6 +856,8 @@ The injection point in the storage ring is, by definition, the physical end of t
 ![TRASNVERSE SECTION](/img/machine/storage_ring/ring_transverse_cross.svg)
 
 **Figure 47**: Schematic representation of the transverse cross section at the storage ring injection point.
+
+<br />
 
 ### Injection with Nonlinear Kicker (InjNLKckr)
 
@@ -755,12 +869,15 @@ The injection point in the storage ring is, by definition, the physical end of t
 
 **Figure 49**: Phase space at the Pulsed Multipole Magnet (PMM) position. The green curve represents the injected beam (±4σx) inside the storage ring acceptance (red curve) after the PMM non-linear kick. The black curve is plotted against the right axis and represents the magnetic field of the PMM.
 
+<br />
 
 ### On-axis injection (InjDpKckr)
 
 ![ON AXIS INJECTION](/img/machine/storage_ring/onaxis_inject_ring.png)
 
 **Figure 50**: On-axis injection into the storage ring with a on-axis dipole kicker. The trajectory of the injected beam centroid in the horizontal plane is shown in solid red curve. The dashed curves represent ±3σx beam envelope.
+
+<br />
 
 ## Straight sections allocation
 

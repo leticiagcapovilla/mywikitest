@@ -2,13 +2,15 @@
 title: Insertion Devices
 description: 
 published: 1
-date: 2024-02-28T19:02:56.862Z
+date: 2024-03-05T16:25:45.720Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T16:57:00.067Z
+dateCreated: 2024-03-04T20:05:24.918Z
 ---
 
 # Machine: Insertion Devices
+
+<br />
 
 ## Beamline Insertion Devices Specifications
 The main specifications for Sirius beamline sources are shown in Table 1. 
@@ -28,6 +30,8 @@ The main specifications for Sirius beamline sources are shown in Table 1.
 
 ¹ Scanning of the transverse position of the electron beam at the undulator for fast photon beam position scanning.
 
+<br />
+
 ## Phase 1 Beamlines Insertion Devices
 Table 2 lists Sirius Phase 1 insertion devices.
 
@@ -43,6 +47,8 @@ Table 2 lists Sirius Phase 1 insertion devices.
 | Sapucaia | | |  |
 
 **Table 2**: Sirius beamline IDs for Phase 1 
+
+<br />
 
 ## Final Undulators
 
@@ -69,8 +75,10 @@ Table 2 lists Sirius Phase 1 insertion devices.
 | Maximum Field | 1.0 | T |
 | Maximum K | 2.1 | |
 
+<br />
 
 ## Commissioning Undulators 
+
 Five planar unduladors (APUs) were purchased from Kyma to be installed in the storage ring for the commisioning phase of some beamlines. Table 3 shows the relation of the IDs used in each beamline and their main parameters 
 
 | Beamline | ID name | ID Type | Straight Section | ID code |
@@ -114,6 +122,8 @@ Five planar unduladors (APUs) were purchased from Kyma to be installed in the st
 
 The analysis of the magnetic and beam measurements for these undulators are shown below: 
 
+<br />
+
 ### 1991a (SI-07SP:ID-APU22 for the Cateretê beamline)
 
 ![](/img/machine/insertion_devices/1991a_ID_excitation_curve_at_x00_y00mm.svg)
@@ -128,8 +138,9 @@ The analysis of the magnetic and beam measurements for these undulators are show
 
 **Figure 3**:
 
-### 1991b (SI-09SA:ID-APU22 for the Manacá beamline)
+<br />
 
+### 1991b (SI-09SA:ID-APU22 for the Manacá beamline)
 
 ![](/img/machine/insertion_devices/1991b_ID_excitation_curve_at_x00_y00_mm.svg)
 
@@ -159,9 +170,9 @@ The analysis of the magnetic and beam measurements for these undulators are show
 
 **Figure 10**: Field Integrals for undulator 1991b measured with the coil system as function of x for several phases for y=+01.0mm
 
+<br />
 
 ### 1991c (SI-06SB:ID-APU22 for the Carnaúba beamline)
-
 
 ![](/img/machine/insertion_devices/1991c_ID_excitation_curve_at_x00_yp01mm.svg)
 
@@ -191,6 +202,7 @@ The analysis of the magnetic and beam measurements for these undulators are show
 
 **Figure 17**: Field Integrals for undulator 1991c measured with the coil system as function of x for several phases for y=+01.0mm
 
+<br />
 
 ### 1991d (SI-08SB:ID-APU22 for the Ema beamline)
 
@@ -234,9 +246,9 @@ The analysis of the magnetic and beam measurements for these undulators are show
 
 **Figure 27**: Field Integrals for undulator 1991d measured with the hall system as function of x for several phases for y=+01.0mm
 
+<br />
 
 ### 1995 (SI-11SP:ID-APU58 for the Ipê beamline)
-
 
 ![](/img/machine/insertion_devices/1995_ID_excitation_curve_at_x00_yp01mm.svg)
 
