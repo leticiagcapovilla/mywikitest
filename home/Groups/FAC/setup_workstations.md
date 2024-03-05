@@ -2,7 +2,7 @@
 title: Setup workstations for sirius
 description: 
 published: 1
-date: 2024-03-05T21:04:51.299Z
+date: 2024-03-05T21:07:50.772Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T20:57:59.965Z
@@ -145,81 +145,110 @@ sudo ln -f -s /usr/local/bin/python3.6 /usr/bin/python-sirius
 
 Clone the sirius repository which makes the installation and install:
 
- cd /home/fac_files/lnls-sirius/
- git clone ssh://git@github.com/lnls-sirius/epics-dev.git
- cd epics-dev/
- git checkout base-3.15
- ./run-all.sh -a no -e yes -x no -s yes -i -o -c
+```
+cd /home/fac_files/lnls-sirius/
+git clone ssh://git@github.com/lnls-sirius/epics-dev.git
+cd epics-dev/
+git checkout base-3.15
+./run-all.sh -a no -e yes -x no -s yes -i -o -c
+```
 
 To add the binaries to the path and define useful environment variables, install the bashrc-sirius as described above.
 
 ## pcaspy and pyepics
 
 Install pcaspy and pyepics:
+
+```
  sudo -H pip3.6 install pyepics
  sudo apt-get install swig
  sudo -HE pip3.6 install pcaspy
+```
 
-=Download and install Qt=
- cd ~/Downloads
- wget http://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
- chmod +x qt-unified-linux-x64-online.run
- sudo ./qt-unified-linux-x64-online.run 
+## Download and install Qt
+
+```
+cd ~/Downloads
+wget http://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
+chmod +x qt-unified-linux-x64-online.run
+sudo ./qt-unified-linux-x64-online.run 
+```
 
 Follow the instructions and install version 5.10.1.
 
- sudo ln -s /opt/Qt/5.10.1/gcc_64/bin/designer /usr/local/bin/designer-qt5
+`sudo ln -s /opt/Qt/5.10.1/gcc_64/bin/designer /usr/local/bin/designer-qt5`
 
-=SIP and PyQt5.10=
+## SIP and PyQt5.10
+
 First install the package:
- sudo apt-get install libgl1-mesa-dev
-Now isntall SIP and PyQt5.10
- cd ~/Downloads
- wget https://sourceforge.net/projects/pyqt/files/sip/sip-4.19.8/sip-4.19.8.tar.gz
- tar -xvf sip-4.19.8.tar.gz
- cd sip-4.19.8
- python3.6 configure.py
- make -j32
- sudo make install
- cd ../
- wget https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.10/PyQt5_gpl-5.10.tar.gz
- tar xzf PyQt5_gpl-5.10.tar.gz
- cd PyQt5_gpl-5.10/
- sudo mkdir /opt/Qt/5.10.1/gcc_64/plugins/PyQt5
- python3.6 configure.py --qmake=/opt/Qt/5.10.1/gcc_64/bin/qmake \
-                        --sip-incdir=/usr/local/include/python3.6m \
-                        --designer-plugindir=/opt/Qt/5.10.1/gcc_64/plugins/designer \
-                        --qml-plugindir=/opt/Qt/5.10.1/gcc_64/plugins/PyQt5 \
-                        --confirm-license \
-                        --assume-shared
- make -j32
- sudo make install
 
-=Install FAC Codes=
+`sudo apt-get install libgl1-mesa-dev`
+
+Now isntall SIP and PyQt5.10
+
+```
+cd ~/Downloads
+wget https://sourceforge.net/projects/pyqt/files/sip/sip-4.19.8/sip-4.19.8.tar.gz
+tar -xvf sip-4.19.8.tar.gz
+cd sip-4.19.8
+python3.6 configure.py
+make -j32
+sudo make install
+cd ../
+wget https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.10/PyQt5_gpl-5.10.tar.gz
+tar xzf PyQt5_gpl-5.10.tar.gz
+cd PyQt5_gpl-5.10/
+sudo mkdir /opt/Qt/5.10.1/gcc_64/plugins/PyQt5
+python3.6 configure.py --qmake=/opt/Qt/5.10.1/gcc_64/bin/qmake \
+                       --sip-incdir=/usr/local/include/python3.6m \
+                       --designer-plugindir=/opt/Qt/5.10.1/gcc_64/plugins/designer \
+                       --qml-plugindir=/opt/Qt/5.10.1/gcc_64/plugins/PyQt5 \
+                       --confirm-license \
+                       --assume-shared
+make -j32
+sudo make install
+```
+
+## Install FAC Codes
 
 In this tutorial we will install the python packages in python3.6, if is is also desired to have them installed in the native python version all the commands must be executed again, replacing python3.6 with python3.
 
-##  Basic python packages:
+##  Basic python packages
+
+```
  sudo apt-get install libffi6 libffi-dev libfreetype6 \
                       libfreetype6-dev libpng3 nmap dvipng
  sudo -H pip3.6 install python-nmap wakeonlan pyepics requests pyqtgraph pandas \
                      psutil termcolor sh cairocffi matplotlib scipy jupyter
+```
 
 change backend of matplotlib to Qt5Agg
- sudo vi /usr/local/lib/python3.6/site-packages/matplotlib/mpl-data/matplotlibrc
+
+`sudo vi /usr/local/lib/python3.6/site-packages/matplotlib/mpl-data/matplotlibrc`
 
 ## Essential repositories
 
 ### MML
- cd /home/fac_files/lnls-fac/
- git clone ssh://git@github.com/lnls-fac/MatlabMiddleLayer.git
+
+```
+cd /home/fac_files/lnls-fac/
+git clone ssh://git@github.com/lnls-fac/MatlabMiddleLayer.git
+```
+
 Open matlab as sudo
- sudo matlab
+
+`sudo matlab`
+ 
 and edit the path to include the folder
- /home/fac_files/lnls-fac/MatlabMiddleLayer/Release/lnls/startup_scripts
+
+`/home/fac_files/lnls-fac/MatlabMiddleLayer/Release/lnls/startup_scripts`
+ 
 close matlab. Open matlab again without sudo:
- matlab
+
+`matlab`
+ 
 And compile the .mex files in matlab:
+
  >> sirius;
  >> atmexall;
  >> naff_cc;
