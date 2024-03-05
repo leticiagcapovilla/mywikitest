@@ -2,7 +2,7 @@
 title: PRUserial485
 description: 
 published: 1
-date: 2024-03-05T19:37:41.909Z
+date: 2024-03-05T19:39:57.288Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:13:29.040Z
@@ -14,13 +14,16 @@ dateCreated: 2024-03-05T19:13:29.040Z
  
 ## Introduction
 
-[[File:PRU ICSS block diag.png|250px|thumb|PRU-SS, from Texas Instruments]]
+![PRU_ICSS_block_diag.png](/img/groups/con/pruserial485/PRU_ICSS_block_diag.png)
 
+**Figure 1**: PRU-SS, from Texas Instruments
 
 PRUserial485 is a high-performance RS-485 serial interface developed for the embedded single board computer BeagleBone Black (BBB), an open-hardware platform based on Texas Instruments AM335x SoC. Running a Debian image, BBBs are the main distributed nodes for Sirius Control System.
 
 
 The PRUserial485, as its name may predict, has been designed to run at one of the two programmable real-time units (PRUs) available at the SoC. They are a dedicated RISC processor, which only executes a binary file at once, with a 200 MHz clock (5 ns instruction time).
+
+ <br />
 
 ## Motivation and main features
 
@@ -40,7 +43,7 @@ The steps below are mandatory to project development and understanding. They wil
 * Carrier library
 * Memory mapping
 
- <br />
+<br />
 
 ### Synchronous operation mode: a particularity
 
