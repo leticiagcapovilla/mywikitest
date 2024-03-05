@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T14:23:12.128Z
+date: 2024-03-05T14:27:45.839Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T14:05:27.623Z
@@ -305,7 +305,7 @@ Mode | S05.01 |  |
 
 |Sector |  | Long Straight (SA, SB, SP) | M2 | B2 | BC | C4 Straight |
 | --- | --- | --- | --- | --- | --- | --- |
-| 01 | SA | ${\color{red}{TuneShkrH ScrapH ScrapV InjDpKckr InjNLKckr}}$ | | CARCARÁ (B1) | |  |
+| 01 | SA | ${\color{red}T_1}$ TuneShkrH ScrapH ScrapV InjDpKckr InjNLKckr$ | | CARCARÁ (B1) | |  |
 | 02 | SB | (Petra7) {3HCav} | | | |  |
 | 03 | SP | {2 x SRFCav} | | | |  |
 | 04 | SB | TIMBÓ | | | HIBISCO |  |
@@ -329,37 +329,20 @@ Mode | S05.01 |  |
 **Tabela x**: Allocation of Beamlines and Diagnostics Equipments in the Storage Ring
 
 BbBKckrH  : H BbB (Bunch-by-Bunch) Kicker
-
 BbBKckrV  : V BbB Kicker 
-
 BbBKckrL  : L BbB Kicker 
-
 BbBPkup   : BbB Pickup
-
 TuneShkrH : H Tune Shaker
-
 TuneShkrV : V Tune Shaker
-
 TunePkupH : H Tune Pickup
-
 TunePkupV : V Tune Pickup
-
 GBPM      : Extra BPM
-
 GSL07     : Generic Stripline (λ/8)
-
 GSL15     : Generic Stripline (λ/4)
-
 InjDpKckr : Dipole Kicker for on-axis injection
-
 InjNLKckr : Nonlinear Kicker
-
 SRFCav    : Superconducting RF Cavity
-
 3HCav     : 3rd Harmonic Cavity
-
 DCCT      : DC Current Transformer
-
 PingH     : Horizontal Pinger
-
 PingV     : Vertical Pinger
