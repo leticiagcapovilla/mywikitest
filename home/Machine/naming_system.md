@@ -2,23 +2,15 @@
 title: Naming System
 description: 
 published: 1
-date: 2024-03-05T20:44:45.091Z
+date: 2024-03-05T20:45:44.002Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:33.231Z
 ---
 
----
-title: Naming System
-description: 
-published: 1
-date: 2024-02-29T15:44:10.573Z
-tags: 
-editor: markdown
-dateCreated: 2024-02-28T20:37:36.486Z
----
-
 # Machine: Naming System
+
+<br />
 
 ## Introduction
 
@@ -29,9 +21,13 @@ The Naming service and other support services can be accessed through the [EPICS
 
 The wiki page for the outdated previous naming convention can be [accessed here]
 
+<br />
+
 ## PV Naming Specification
 
 ![](/img/machine/naming_system/SIRIUS_naming_convention.png)
+
+<br />
 
 ### PV Name
 
@@ -42,6 +38,8 @@ sec-sub:dis-dev\[-idx\]:propty\[.field\]
 | Area | • sec  <br>(=Section)   <br>  <br>• sub  <br>(=Subsection) | • Accelerator Section comprising the machine (e.g, Storage Ring, Booster, Linac, Transport Lines, etc)   <br>  <br>• Accelerator Subsection within a specific Section (e.g., First Sector, First Chromatic Section = 01C1, 02C2, 01M2, 01M1, etc) |
 | Device | • dis  <br>(=Discipline)   <br>  <br>• dev  <br>(=Device)   <br>  <br>• idx  <br>(=Index) | • Branch of knowledge indicating the context in which a device is used (e.g, VAC, DIG, etc)   <br>  <br>• Physical device or indirect controlled device (needs to be unique only inside the same Discipline) (e.g., BPM, PS, Shaker, BBB, temperature sensor, fan, etc)   <br>  <br>• Distinsgish between same Devices in the same Subsection and Discipline (e.g., 010, 020, 1, 2, 3, R1C2, etc). |
 | PField | • propty  <br>(=Property)   <br>  <br>• field  <br>(=Field) | • A particular property of the accelerator system (e.g., Current, Position, Temperature).   <br>  <br>  <br>• A particular attribute of the property (an EPICS record field). |
+
+<br />
 
 ### Rationale
 
@@ -58,6 +56,8 @@ three levels:
 -   Level 2. Section (Sec)
 -   Level 3. Subsection (Sub)
 
+<br />
+
 #### DEVICE
 
 Any equipment that serves a particular function and is connected to the Control System is modelled as a device.
@@ -73,6 +73,8 @@ The hierarchy can instead be found in the configuration database or in other sys
 -   Level 2. Category: Not part of the naming convention.
 -   Level 3. Device Type (Dev)
 
+<br />
+
 #### PROPERTY
 
 Naming convention users prefer to use generic device type as device identifier in names.  
@@ -85,6 +87,8 @@ the signal part are therefore sorted under a separate configuration structure:
 -   Level 1 Specific Device Type: Not part of the naming convention.
 -   Level 2 Property (Property)
 -   Level 3 Field (FIELD)
+
+<br />
 
 ### Naming Rules
 
