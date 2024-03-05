@@ -2,7 +2,7 @@
 title: Coordinate System and Conventions
 description: 
 published: 1
-date: 2024-03-05T13:19:04.890Z
+date: 2024-03-05T15:10:23.919Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:12.126Z
@@ -34,7 +34,7 @@ The direction of $B_y$ for different kinds of magnets in the Sirius coordinate s
 
 **Figure 4**: Cross BPM Coordinate System.      
 
-The Beam Position Monitors Coordinate System is as shown on Figure 3. The antennas A, B, C and D are displayed, along with the beam direction (going outside of the figure). For further information, see [DIG:Beam Position Calculation.](http://10.39.50.85:3000/en/home/Groups/DIG/beam_position_calc)
+The Beam Position Monitors Coordinate System is as shown on Figure 3. The antennas A, B, C and D are displayed, along with the beam direction (going outside of the figure). For further information, see [DIG:Beam Position Calculation.](/home/Groups/DIG/beam_position_calc)
 
 | | Direction | Origin | + |
 | --- | --- | --- | --- |
