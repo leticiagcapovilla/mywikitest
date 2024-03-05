@@ -2,13 +2,15 @@
 title: Coordinate System and Conventions
 description: 
 published: 1
-date: 2024-03-05T15:10:23.919Z
+date: 2024-03-05T15:41:30.312Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:12.126Z
 ---
 
 # Machine: Coordinate System and Conventions
+
+<br />
 
 ## Machine Coordinate System
 
@@ -23,6 +25,8 @@ The direction of $B_y$ for different kinds of magnets in the Sirius coordinate s
 ![](/img/machine/coord_systs_and_conventions/magnets_direction.svg)
 
 **Figure 2**: $B_y$ direction for different kinds of magnets for electrons circulating clockwise. $\hat{x}$ points to the outside of the storage ring.
+
+<br />
 
 ## BPM Coordinate System
 
@@ -40,6 +44,8 @@ The Beam Position Monitors Coordinate System is as shown on Figure 3. The antenn
 | --- | --- | --- | --- |
 | x-axis | Horizontal, perpendicular to beam prolongation | Centre of beam | To the left, outward the storage ring |
 | y-axis | Vertical, perpendicular to beam prolongation | Centre of beam | Upwards 
+
+<br />
 
 ## Beamline Coordinate System
 
