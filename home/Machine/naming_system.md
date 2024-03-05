@@ -2,7 +2,7 @@
 title: Naming System
 description: 
 published: 1
-date: 2024-03-05T20:36:07.469Z
+date: 2024-03-05T20:37:02.202Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:33.231Z
@@ -25,9 +25,9 @@ dateCreated: 2024-02-28T20:37:36.486Z
 In the sections below the naming convention for Sirius is defined. It should be used to name device types, signals (properties) and machine slots.  
 Moreover, the infrastructure of EPICS support applications that should be used to help managing lists of named objects for Sirius is described.
 
-The Naming service and other support services can be accessed through the EPICS Support Applications \[link\] menu
+The Naming service and other support services can be accessed through the [EPICS Support Applications](/home/Machine/epics_support_apps) menu
 
-The wiki page for the outdated previous naming convention can be accessed here \[link\]
+The wiki page for the outdated previous naming convention can be [accessed here]
 
 ## PV Naming Specification
 
