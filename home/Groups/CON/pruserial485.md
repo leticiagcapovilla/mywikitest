@@ -2,7 +2,7 @@
 title: PRUserial485
 description: 
 published: 1
-date: 2024-03-05T19:46:54.430Z
+date: 2024-03-05T20:00:18.718Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:13:29.040Z
@@ -203,14 +203,16 @@ It is a 12kbyte RAM, embedded on the SoC, shared with main core and both PRUs. F
 
 #### DDR Memory
 
-
 While enabling PRU kernel module, an argument is needed to reserve a piece of DDR external memory (in this case, 0x200000 bytes will be reserved)
 
- $ ''modprobe uio_pruss '''extram_pool_sz=0x200000''' ''
+` $ modprobe uio_pruss extram_pool_sz=0x200000`
 
 Once this is performed, a system file will be created, indicating starting address and size for reserved region. They are located at
- /sys/class/uio/uio0/maps/map1/addr
- /sys/class/uio/uio0/maps/map1/size
+
+`/sys/class/uio/uio0/maps/map1/addr`
+`/sys/class/uio/uio0/maps/map1/size`
+
+<br />
 
 As a project definition, it has been set to have:
 
@@ -218,54 +220,68 @@ As a project definition, it has been set to have:
  2. Each block will store four curves, one for each power supply (total: 16 curves)
  3. Each curve can have up to 6250 points (floating values, ie, 25000 bytes)
 
+<br />
+
 Here, dealing with up to four curves is justified that Power Supplies can be allocated in crate with up to four of them in the same crate (FBP model) and there is a BSMP command that adjusts all their currents at once.
 
-
 Inside DDR memory, data is allocated according to the table below.
-<center>
-{| class="wikitable" style="text-align: center;"
-|+ DDR mapping for PRUserial485 
-|-
-! Curve Block !! Offset (decimal) !! Curve point !! !! Curve Block !! Offset (decimal) !! Curve point
-|-
-| rowspan="9" | 0 || 00000 .. 00003 || curve0_0[0] || rowspan="18"|      || rowspan="9" | 1 || 10000 .. 10003 || curve0_1[0]
-|-
-| 00004 .. 00007 || curve1_0[0] || 10004 .. 10007 || curve1_1[0]
-|-
-| 00008 .. 00011 || curve2_0[0] || 10008 .. 10011 || curve2_1[0]
-|-
-| 00012 .. 00015 || curve3_0[0] || 10012 .. 10015 || curve3_1[0]
-|-
-| ... || ... || ... || ...
-|-
-| 09984 .. 09987 || curve0_0[6249] || 19984 .. 19987 || curve0_1[6249]
-|-
-| 09988 .. 09991 || curve1_0[6249] || 19988 .. 19991 || curve1_1[6249]
-|-
-| 09992 .. 09995 || curve2_0[6249] || 19992 .. 19995 || curve2_1[6249]
-|-
-| 09996 .. 09999 || curve3_0[6249] || 19996 .. 19999 || curve3_1[6249]
-|-
-| rowspan="9" | 2 || 20000 .. 20003 || curve0_2[0] || rowspan="9" | 3 || 30000 .. 30003 || curve0_3[0]
-|-
-| 20004 .. 20007 || curve1_2[0] || 30004 .. 30007 || curve1_3[0]
-|-
-| 20008 .. 20011 || curve2_2[0] || 30008 .. 30011 || curve2_3[0]
-|-
-| 20012 .. 20015 || curve3_2[0] || 30012 .. 30015 || curve3_3[0]
-|-
-| ... || ... || ... || ...
-|-
-| 29984 .. 29987 || curve0_2[6249] || 39984 .. 39987 || curve0_3[6249]
-|-
-| 29988 .. 29991 || curve1_2[6249] || 39988 .. 39991 || curve1_3[6249]
-|-
-| 29992 .. 29995 || curve2_2[6249] || 39992 .. 39995 || curve2_3[6249]
-|-
-| 29996 .. 29999 || curve3_2[6249] || 39996 .. 39999 || curve3_3[6249]
-|}
 
-</center>
+**Curve Block 0**
+
+| Offset (decimal) | Curve point |
+| --- | --- |
+| 00000 .. 00003 | curve0_0[0] |
+| 00004 .. 00007 | curve1_0[0] |
+| 00008 .. 00011 | curve2_0[0] |
+| 00012 .. 00015 | curve3_0[0] |
+| ... | ... |
+| 09984 .. 09987 | curve0_0[6249] |
+| 09988 .. 09991 | curve1_0[6249] |
+| 09992 .. 09995 | curve2_0[6249] |
+| 09996 .. 09999 | curve3_0[6249] |
+
+**Curve Block 1**
+
+| Offset (decimal) | Curve point |
+| --- | --- |
+| 10000 .. 10003 | curve0_1[0] |
+| 10004 .. 10007 | curve1_1[0] |
+| 10008 .. 10011 | curve2_1[0] |
+| 10012 .. 10015 | curve3_1[0] |
+| ... | ... |
+| 19984 .. 19987 | curve0_1[6249] |
+| 19988 .. 19991 || curve1_1[6249] |
+| 19992 .. 19995 || curve2_1[6249] |
+| 19996 .. 19999 || curve3_1[6249] |
+
+**Curve Block 2**
+
+
+| Offset (decimal) | Curve point |
+| --- | --- |
+| 20000 .. 20003 | curve0_2[0] |
+| 20004 .. 20007 | curve1_2[0] |
+| 20008 .. 20011 | curve2_2[0] |
+| 20012 .. 20015 | curve3_2[0] |
+| ... | ... |
+| 29984 .. 29987 | curve0_2[6249] |
+| 29988 .. 29991 | curve1_2[6249] |
+| 29992 .. 29995 | curve2_2[6249] |
+| 29996 .. 29999 | curve3_2[6249] |
+
+**Curve Block 3**
+
+| Offset (decimal) | Curve point |
+| --- | --- |
+| 30000 .. 30003 || curve0_3[0] |
+| 30004 .. 30007 || curve1_3[0] |
+| 30008 .. 30011 || curve2_3[0] |
+| 30012 .. 30015 || curve3_3[0] |
+| ... || ... |
+| 39984 .. 39987 || curve0_3[6249] |
+| 39988 .. 39991 || curve1_3[6249] |
+| 39992 .. 39995 || curve2_3[6249] |
+| 39996 .. 39999 || curve3_3[6249] |
 
  <br />
 
