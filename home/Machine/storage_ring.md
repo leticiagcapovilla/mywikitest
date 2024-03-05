@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T13:49:14.058Z
+date: 2024-03-05T13:51:34.139Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:48.087Z
@@ -268,14 +268,14 @@ We have simulated higher-order systematic and random multipole errors in all dip
 
 | Systematic multipole error | CHS (normal) | CVS (skew) | QS (skew) |
 | --- | --- | --- |--- |
-| B3/B0 (decapole) | | | -5.8×10-1 |
-| B4/B0 (decapole) | +3.1×10-1 | -2.9×10-1 |  |
-| B6/B0 (14-pole) | +3.3×10-2 | -3.5×10-3 |  |
-| B7/B0 (16-pole) | | | +2.7×10-2 |
-| B8/B0 (18-pole) | -4.8×10-2 | +5.5×10-2 |  |
-| B9/B0 (20-pole) | | | +8.0×10-2 |
-| B10/B0 (22-pole) | +1.4×10-2 | -1.1×10-2 |  |
-| B13/B0 (28-pole) | | | +2.4×10-3 |
+| B3/B0 (decapole) | | | -5.8×10⁻¹ |
+| B4/B0 (decapole) | +3.1×10⁻¹ | -2.9×10⁻¹ |  |
+| B6/B0 (14-pole) | +3.3×10⁻² | -3.5×10⁻³ |  |
+| B7/B0 (16-pole) | | | +2.7×10⁻² |
+| B8/B0 (18-pole) | -4.8×10⁻² | +5.5×10⁻² |  |
+| B9/B0 (20-pole) | | | +8.0×10⁻² |
+| B10/B0 (22-pole) | +1.4×10⁻² | -1.1×10⁻² |  |
+| B13/B0 (28-pole) | | | +2.4×10⁻³ |
 
 **Table 5**: Storage ring horizontal, vertical and skew corrector magnets systematic multipole errors. Contribution of multipolar components relative to main field at x = 12 mm. 
 
