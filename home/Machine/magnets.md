@@ -2,7 +2,7 @@
 title: Magnets
 description: 
 published: 1
-date: 2024-03-05T15:58:33.436Z
+date: 2024-03-05T16:02:36.200Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:29.287Z
@@ -170,51 +170,7 @@ In order to take into account the s-dependent field profile of the BC dipoles a 
 
 **Table 6**: SI BC dipole segmented model.
 
-![](/img/machine/magnets/SI_magnet_dipole_B1_drawing.png)
-
-**Figure 4**: 3D drawing of the B1 dipole model.
-
-![](/img/machine/magnets/SI_magnet_dipole_B1_field.png)
-
-**Figure 5**: Field of the B1 dipole half model.
-
 <br />
-
-###### Fieldmap Analysis
-
-Nominally B1 dipoles should deflect the beam in 2.7553 Â°. So far a preliminary 3D model of B1 has been analyzed and approved. Field map corresponding to the nominal excited field has been considered. The latest analyzed fieldmap can be [accessed here](https://github.com/lnls-ima/si-dipoles-b1/tree/master/links-official/fieldmap-file.txt). A summary of the analysis can be found in analysis.txt at [accessed this folder](https://github.com/lnls-ima/si-dipoles-bc/tree/master/links-official).
-
-<br />
-
-###### Segmented Model
-
-In order to take into account the s-dependent field profile of the B1 dipoles a symmetric model was created with 15 segments at each side of the magnet. Their segmentation points were chosen in a way to minimize the difference between integrals of the squared profile between for the model and the field on the Runge-Kutta trajectory.
-
-![](/img/machine/magnets/segmented_model_B1.svg)
-
-**Figure 6**: Field profile of segmented B1 dipole model
-
-|Segment#| Length [m]| Deflection [deg.]| Field [T]| K [m⁻²] *| S [m⁻³] * |
-| --- | --- | --- | --- | --- | --- |
-|01| 0.0020| 0.006| -0.562| -0.753| -0.297 |
-|02| 0.0030| 0.010| -0.562| -0.756| -0.245 |
-|03| 0.0050| 0.016| -0.564| -0.762| -0.117 |
-|04| 0.0050| 0.016| -0.566| -0.770| -0.015 |
-|05| 0.0050| 0.016| -0.567| -0.774| +0.004 |
-|06| 0.0100| 0.033| -0.568| -0.775| -0.003 |
-|07| 0.0400| 0.130| -0.567| -0.774| +0.019 |
-|08| 0.1500| 0.483| -0.563| -0.773| +0.055 |
-|09| 0.1000| 0.322| -0.563| -0.773| +0.076 |
-|10| 0.0500| 0.162| -0.565| -0.774| +0.008 |
-|11| 0.0340| 0.105| -0.540| -0.777| -0.159 |
-|12| 0.0160| 0.033| -0.363| -0.428| -2.230 |
-|13| 0.0400| 0.033| -0.143| -0.085| -1.960 |
-|14| 0.0400| 0.008| -0.034| -0.009| -0.428 |
-|15| 0.0500| 0.005| -0.016| -0.001| -0.102 |
-
-*K=B'/(Bρ), S=B"/(2Bρ)
-
-**Table 7**: SI B1 dipole segmented model.
 
 ##### B1
 
