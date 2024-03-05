@@ -2,7 +2,7 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-03-05T15:24:07.546Z
+date: 2024-03-05T15:24:33.392Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:21.285Z
@@ -1014,9 +1014,7 @@ The requirements for the 3 GeV kickers and septa flat-top and pulse-to-pulse rep
 
 If we suppose these effects add in quadrature and have the same weight, the tolerance for each contribution becomes: 
 
-$$
-\Delta x < 60 \mu m {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' < 20 \mu rad
-$$
+$\Delta x < 60 \mu m {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' < 20 \mu rad$
 
 1) Booster extraction kickers (bek): A variation in the bek kick (same kick in both kickers) affects the position and angle at the NLK according to: 
 
