@@ -2,13 +2,28 @@
 title: Naming System
 description: 
 published: 1
-date: 2024-03-05T20:33:00.641Z
+date: 2024-03-05T20:35:13.326Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:33.231Z
 ---
 
-\# Machine: Naming System ## Introduction In the sections below the naming convention for Sirius is defined. It should be used to name device types, signals (properties) and machine slots. Moreover, the infrastructure of EPICS support applications that should be used to help managing lists of named objects for Sirius is described. The Naming service and other support services can be accessed through the EPICS Support Applications \\\[link\\\] menu The wiki page for the outdated previous naming convention can be accessed here \\\[link\\\] ## PV Naming Specification !\[\](/img/machine/naming\_system/SIRIUS\_naming\_convention.png) ### PV Name sec-sub:dis-dev\\\[-idx\\\]:propty\\\[.field\\\] | | | | | --- | --- | --- | | Area | • sec  
+# Machine: Naming System
+
+<br />
+
+## Introduction
+
+In the sections below the naming convention for Sirius is defined. It should be used to name device types, signals (properties) and machine slots. Moreover, the infrastructure of EPICS support applications that should be used to help managing lists of named objects for Sirius is described.
+
+The Naming service and other support services can be accessed through the [EPICS Support Applications](/home/Machine/epics_support_apps) menu
+The wiki page for the outdated previous naming convention can be [accessed here]
+
+<br />
+
+## PV Naming Specification
+
+!\[\](/img/machine/naming\_system/SIRIUS\_naming\_convention.png) ### PV Name sec-sub:dis-dev\\\[-idx\\\]:propty\\\[.field\\\] | | | | | --- | --- | --- | | Area | • sec  
 (=Section)   
   
 • sub  
