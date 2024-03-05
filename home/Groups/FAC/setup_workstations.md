@@ -303,211 +303,294 @@ test with:
 
 ### pyaccel
 
- cd /home/fac_files/lnls-fac/
- git clone ssh://git@github.com/lnls-fac/pyaccel.git
- cd pyaccel/ 
- python3.6 setup.py build
- sudo python3.6 setup.py develop
+```
+cd /home/fac_files/lnls-fac/
+git clone ssh://git@github.com/lnls-fac/pyaccel.git
+cd pyaccel/ 
+python3.6 setup.py build
+sudo python3.6 setup.py develop
+```
 
 ### pymodels
 
- cd /home/fac_files/lnls-fac/
- git clone ssh://git@github.com/lnls-fac/pymodels.git
- cd pymodels/ 
- python3.6 setup.py build
- sudo python3.6 setup.py develop
+```
+cd /home/fac_files/lnls-fac/
+git clone ssh://git@github.com/lnls-fac/pymodels.git
+cd pymodels/ 
+python3.6 setup.py build
+sudo python3.6 setup.py develop
+```
 
 ### Control System Constants
 
- cd /home/fac_files/lnls-sirius/
- git clone ssh://git@github.com/lnls-sirius/control-system-constants.git
+```
+cd /home/fac_files/lnls-sirius/
+git clone ssh://git@github.com/lnls-sirius/control-system-constants.git
+```
 
 ### dev-packages
 
- cd /home/fac_files/lnls-sirius/
- git clone ssh://git@github.com/lnls-sirius/dev-packages.git
- cd dev-packages/siriuspy/
- python3.6 setup.py build
- sudo python3.6 setup.py develop
- cd ../siriusdm
- python3.6 setup.py build
- sudo python3.6 setup.py develop
+```
+cd /home/fac_files/lnls-sirius/
+git clone ssh://git@github.com/lnls-sirius/dev-packages.git
+cd dev-packages/siriuspy/
+python3.6 setup.py build
+sudo python3.6 setup.py develop
+cd ../siriusdm
+python3.6 setup.py build
+sudo python3.6 setup.py develop
+```
 
 ### pydm
 
- cd /home/fac_files/lnls-sirius/
- git clone ssh://git@github.com/lnls-sirius/pydm.git
- cd pydm/ 
- sudo pip3.6 install requests scipy numpy pyqtgraph
- python3.6 setup.py build
- sudo python3.6 setup.py develop
+```
+cd /home/fac_files/lnls-sirius/
+git clone ssh://git@github.com/lnls-sirius/pydm.git
+cd pydm/ 
+sudo pip3.6 install requests scipy numpy pyqtgraph
+python3.6 setup.py build
+sudo python3.6 setup.py develop
+```
 
 ### hla
 
- cd /home/fac_files/lnls-sirius/
- git clone ssh://git@github.com/lnls-sirius/hla.git
- cd hla/pyqt-apps/
- python3.6 setup.py build
- sudo python3.6 setup.py develop
+```
+cd /home/fac_files/lnls-sirius/
+git clone ssh://git@github.com/lnls-sirius/hla.git
+cd hla/pyqt-apps/
+python3.6 setup.py build
+sudo python3.6 setup.py develop
+```
 
 ### machine-applications
 
- cd /home/fac_files/lnls-sirius/
- git clone ssh://git@github.com/lnls-sirius/machine-applications.git
+```
+cd /home/fac_files/lnls-sirius/
+git clone ssh://git@github.com/lnls-sirius/machine-applications.git
+```
 
 ### Virtual Accelerator
 
- cd /home/fac_files/lnls-fac/
- git clone ssh://git@github.com/lnls-fac/va.git
- cd va/ 
- python3.6 setup.py build
- sudo python3.6 setup.py develop
+```
+cd /home/fac_files/lnls-fac/
+git clone ssh://git@github.com/lnls-fac/va.git
+cd va/ 
+python3.6 setup.py build
+sudo python3.6 setup.py develop
+```
 
 ### Job Manager
 
 First install the package psutil
- sudo apt-get install python3-pip
- sudo pip3 install psutil
+
+```
+sudo apt-get install python3-pip
+sudo pip3 install psutil
+```
+
 and then, install the package
- cd /home/fac_files/lnls-fac/
- git clone ssh://git@github.com/lnls-fac/job_manager.git
- cd job_manager/apps
- sudo make install
- cd ../
- sudo ./install_services.py
+
+```
+cd /home/fac_files/lnls-fac/
+git clone ssh://git@github.com/lnls-fac/job_manager.git
+cd job_manager/apps
+sudo make install
+cd ../
+sudo ./install_services.py
+```
+
 the last command will finish with errors, but if you run:
- sudo systemctl start pyjob_run.service
+
+`sudo systemctl start pyjob_run.service`
+
 it will work.
 
 At this point your terminal will be locked, in order to gain its control again type CRTL+z and then type
- bg
+
+`bg`
+
 to continue running the service in background.
 
 ## Other packages (Optional)
 
 ### collective effects
 
- sudo apt-get install libfftw3-3 libfftw3-dev
- cd /home/fac_files/lnls-fac/
- git clone ssh://git@github.com/lnls-fac/collective_effects.git
- cd collective_effects/cppcolleff/
- make -j32 PYTHON=python3.6
- sudo make install PYTHON=python3.6
- cd ../pycolleff/
- python3.6 setup.py build
- sudo python3.6 setup.py develop
- cd ../scripts/
- sudo make develop
+```
+sudo apt-get install libfftw3-3 libfftw3-dev
+cd /home/fac_files/lnls-fac/
+git clone ssh://git@github.com/lnls-fac/collective_effects.git
+cd collective_effects/cppcolleff/
+make -j32 PYTHON=python3.6
+sudo make install PYTHON=python3.6
+cd ../pycolleff/
+python3.6 setup.py build
+sudo python3.6 setup.py develop
+cd ../scripts/
+sudo make develop
+```
 
 ### FieldMapTrack
 
- cd /home/fac_files/lnls-fac/
- git clone ssh://git@github.com/lnls-fac/fieldmaptrack.git
- cd fieldmaptrack/
- python3.6 setup.py build
- sudo python3.6 setup.py develop
+```
+cd /home/fac_files/lnls-fac/
+git clone ssh://git@github.com/lnls-fac/fieldmaptrack.git
+cd fieldmaptrack/
+python3.6 setup.py build
+sudo python3.6 setup.py develop
+```
 
 ### CS-Studio LNLS
 
- cd ~/Downloads
- wget https://github.com/lnls-sirius/lnls-studio/releases/download/4.5.2/lnls-studio-4.5.2-SNAPSHOT-linux.gtk.x86_64.tar.gz
- tar -xvf lnls-studio-4.5.2-SNAPSHOT-linux.gtk.x86_64.tar.gz
- sudo mv lnls-studio /opt/
- cd /opt/lnls-studio
- sudo ln -s /opt/lnls-studio/lnls-csstudio /usr/bin/
+```
+cd ~/Downloads
+wget https://github.com/lnls-sirius/lnls-studio/releases/download/4.5.2/lnls-studio-4.5.2-SNAPSHOT-linux.gtk.x86_64.tar.gz
+tar -xvf lnls-studio-4.5.2-SNAPSHOT-linux.gtk.x86_64.tar.gz
+sudo mv lnls-studio /opt/
+cd /opt/lnls-studio
+sudo ln -s /opt/lnls-studio/lnls-csstudio /usr/bin/
+```
 
 ### Windows Applications
 
 There are some windows applications for beam dynamics which are very usefull such as OPA MAD8 and ECHO. You can copy a folder with all them from the computer lnls210-linux:
- scp -r lnls210-linux:/home/fac_files/windows_applications /home/fac_files
+
+`scp -r lnls210-linux:/home/fac_files/windows_applications /home/fac_files`
+
 then, you need to install wine
- sudo apt-get install wine
+
+`sudo apt-get install wine`
+
 and finally, create links to the executables:
- sudo ln -s /home/fac_files/windows_applications/ECHO/Linux_MPI/ECHO /usr/bin/echo2d
- sudo ln -s /home/fac_files/windows_applications/ECHO/Release2D_v_2_1a/Codes/Windows/ECHOz1.exe /usr/bin/echoz1
- sudo ln -s /home/fac_files/windows_applications/ECHO/Release2D_v_2_1a/Codes/Windows/ECHOz2.exe /usr/bin/echoz2
- sudo ln -s /home/fac_files/windows_applications/ECHO/Release2D_v_2_1a/Codes/Windows/ECHOzR.exe /usr/bin/echozr
- sudo ln -s /home/fac_files/windows_applications/MAD8/mad8.exe /usr/bin/MAD8
- sudo ln -s /home/fac_files/windows_applications/OPA_versao_3.32/opa.exe /usr/bin/OPA
+
+```
+sudo ln -s /home/fac_files/windows_applications/ECHO/Linux_MPI/ECHO /usr/bin/echo2d
+sudo ln -s /home/fac_files/windows_applications/ECHO/Release2D_v_2_1a/Codes/Windows/ECHOz1.exe /usr/bin/echoz1
+sudo ln -s /home/fac_files/windows_applications/ECHO/Release2D_v_2_1a/Codes/Windows/ECHOz2.exe /usr/bin/echoz2
+sudo ln -s /home/fac_files/windows_applications/ECHO/Release2D_v_2_1a/Codes/Windows/ECHOzR.exe /usr/bin/echozr
+sudo ln -s /home/fac_files/windows_applications/MAD8/mad8.exe /usr/bin/MAD8
+sudo ln -s /home/fac_files/windows_applications/OPA_versao_3.32/opa.exe /usr/bin/OPA
+```
 
 ## Data Repositories=
-Create the folder structure:
- cd /home/fac_files
- mkdir -p data/sirius/beam_dynamics
- cd data/sirius/
-Clone the collective_effects data repository:
- git clone lnls350-linux:/home/fac_files/repo/collective_effects.git
-The Insertion devices data repository:
- git clone lnls350-linux:/home/fac_files/repo/insertion_devices.git
-the latest accelerators models' data:
- cd beam_dynamics
- git clone lnls350-linux:/home/fac_files/repo/beam_dynamics/bo.v02.03.git
- git clone lnls350-linux:/home/fac_files/repo/beam_dynamics/si.v22.01.git
- git clone lnls350-linux:/home/fac_files/repo/beam_dynamics/ts.v03.02.git
- git clone lnls350-linux:/home/fac_files/repo/beam_dynamics/tb.v01.02.git
-and the electromagnetic simulations data repository:
- cd /home/fac_files/data
- git clone lnls350-linux:/home/fac_files/repo/em_simulations.git
 
-=Other useful applications (Optional)=
+Create the folder structure:
+
+```
+cd /home/fac_files
+mkdir -p data/sirius/beam_dynamics
+cd data/sirius/
+```
+
+Clone the collective_effects data repository:
+
+`git clone lnls350-linux:/home/fac_files/repo/collective_effects.git`
+
+The Insertion devices data repository:
+
+`git clone lnls350-linux:/home/fac_files/repo/insertion_devices.git`
+
+the latest accelerators models' data:
+
+```
+cd beam_dynamics
+git clone lnls350-linux:/home/fac_files/repo/beam_dynamics/bo.v02.03.git
+git clone lnls350-linux:/home/fac_files/repo/beam_dynamics/si.v22.01.git
+git clone lnls350-linux:/home/fac_files/repo/beam_dynamics/ts.v03.02.git
+git clone lnls350-linux:/home/fac_files/repo/beam_dynamics/tb.v01.02.git
+```
+
+and the electromagnetic simulations data repository:
+
+```
+cd /home/fac_files/data
+git clone lnls350-linux:/home/fac_files/repo/em_simulations.git
+```
+
+## Other useful applications (Optional)=
 
 Applications available with apt-get:
- sudo apt-get install htop
- sudo apt-get install doxygen
- sudo apt-get install inkscape
- sudo apt-get install texlive-latex-extra texlive-fonts-recommended
- sudo apt-get install kile
- sudo apt-get install okular
- sudo apt-get install flashplugin-*
+
+```
+sudo apt-get install htop
+sudo apt-get install doxygen
+sudo apt-get install inkscape
+sudo apt-get install texlive-latex-extra texlive-fonts-recommended
+sudo apt-get install kile
+sudo apt-get install okular
+sudo apt-get install flashplugin-*
+```
 
 ## Oracle Virtualbox
+
 If you already have a previous version of virtualbox installed, remove it with:
- sudo apt-get purge virtualbox*
+
+`sudo apt-get purge virtualbox*`
+
 You may have to reboot to unload the old kernel modules.
 
 Next, add the repository to your sources
- sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"
+
+`sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"`
 
 Add public keys to verify downloads
- wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
- wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+
+`wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -`
+`wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -`
 
 Now update to complete the process of adding the repository
- sudo apt-get update
+
+`sudo apt-get update`
 
 Install dkms if you haven't already
- sudo apt-get install dkms
+
+`sudo apt-get install dkms`
 
 Install virtualbox:
- sudo apt-get install virtualbox
+
+`sudo apt-get install virtualbox`
 
 ## Openbox
- sudo apt-get install openbox obconf numlockx gmrun suckless-tools
+
+`sudo apt-get install openbox obconf numlockx gmrun suckless-tools`
 
 Configure openbox creating the folder: 
- mkdir ~/.config/openbox
+
+`mkdir ~/.config/openbox`
+
 and then create the autostart file, the rc.xml file and the menu.xml file (you can start from a copy of the global files in /etc/xdg/openbox).
 logout and login
 
 ## Atom Editor
- sudo add-apt-repository ppa:webupd8team/atom
- sudo apt-get update
- sudo apt-get install atom
+
+```
+sudo add-apt-repository ppa:webupd8team/atom
+sudo apt-get update
+sudo apt-get install atom
+```
 
 Atom has some useful packages that can be installed:
+
+```
 #Sublime-Style-Column-Selection: for column selection and edition
 #language-matlab: to recognize and highlight matlab codes
 #linter-pylama: python module that points out syntax bugs and good practices violations (pep8)
 #autocomplete-python: autocomplete with installed packages attributes, methods, modules...
 #gitplus: Additional git tools.
+```
 
 ## Google Chrome
+
+```
  wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
- sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
- sudo apt-get update
- sudo apt-get install google-chrome-stable
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo apt-get update
+sudo apt-get install google-chrome-stable
+```
 
 ## Mendeley Desktop
- cd ~/Downloads
- wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
- sudo dpkg -i mendeleydesktop-latest
+
+```
+cd ~/Downloads
+wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
+sudo dpkg -i mendeleydesktop-latest
+```
