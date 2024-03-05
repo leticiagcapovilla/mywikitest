@@ -2,7 +2,7 @@
 title: PRUserial485
 description: 
 published: 1
-date: 2024-03-05T20:16:30.743Z
+date: 2024-03-05T20:23:58.391Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:13:29.040Z
@@ -421,8 +421,8 @@ Send data through RS485 network.
 
 ####  Receive data from serial 
 
-***Python:** bytes PRUserial485_read(uint32_t nbytes = 0)
-***C:**  int recv_data_PRU(uint8_t *data, uint32_t *tamanho, uint32_t bytes2read)
+***Python:** bytes PRUserial485_read(uint32_t nbytes = 0)*
+***C:**  int recv_data_PRU(uint8_t *data, uint32_t *tamanho, uint32_t bytes2read)*
  
 *PARAMETERS*
 *nbytes/bytes2read: number of bytes to be read from the input buffer. Default value is 0 (entire buffer).*
@@ -439,8 +439,8 @@ Receiving data through RS485 network
 
 #### Flush input buffer
 
-***Python:** int PRUserial485_read_flush()
-***C:**  int recv_flush()
+***Python:** int PRUserial485_read_flush()*
+***C:**  int recv_flush()*
 
 Flush receive FIFO buffer.
 
@@ -450,8 +450,8 @@ Flush receive FIFO buffer.
 
 ####  Loading a curve 
 
-***Python:** int PRUserial485_curve(int block, [float_list curve1, float_list curve2, float_list curve3, float_list curve4])
-***C:**  int loadCurve(float *curve1, float *curve2, float *curve3, float *curve4, uint32_t CurvePoints, uint8_t block)
+***Python:** int PRUserial485_curve(int block, [float_list curve1, float_list curve2, float_list curve3, float_list curve4])*
+***C:**  int loadCurve(float *curve1, float *curve2, float *curve3, float *curve4, uint32_t CurvePoints, uint8_t block)*
  
 *PARAMETERS*
 *curveX: Python float list/C vector containing curve points, up to 6250 points. Curves must all have same length.*
@@ -465,8 +465,8 @@ Storing curves into memory. Each curve correspond to a power supply in the crate
 <br />
 
 #### Selecting curve block to be performed
-***Python:** void PRUserial485_set_curve_block(int block)
-***C:** void set_curve_block(uint8_t block)
+***Python:** void PRUserial485_set_curve_block(int block)*
+***C:** void set_curve_block(uint8_t block)*
 
 *PARAMETERS*
 *block: Identification of block (0 to 3)*
@@ -477,23 +477,22 @@ Selection of block which will be performed in next cycle. Default value is 0.
 
 #### Get curve block that will be performed
 
-***Python:** int PRUserial485_read_curve_block()
-***C:**  uint8_t read_curve_block()
+***Python:** int PRUserial485_read_curve_block()*
+***C:**  uint8_t read_curve_block()*
  
- RETURN
- Block identification (0 to 3)
+*RETURN*
+*Block identification (0 to 3)*
 
 Read block identification which will be performed in next cycle.
 
 <br />
 
 #### Select a point to be performed
-***Python:** void PRUserial485_set_curve_pointer(int next_point)
-***C:**  void set_curve_pointer(uint32_t new_pointer)
+***Python:** void PRUserial485_set_curve_pointer(int next_point)*
+***C:**  void set_curve_pointer(uint32_t new_pointer)*
  
- PARAMETER
- ''next_point/new_pointer:'' index of next point (0 to (len(curve)-1))
-
+*PARAMETER*
+*next_point/new_pointer: index of next point (0 to (len(curve)-1))*
 
 Selection of point of curve that will be performed after the next sync pulse.
 
@@ -501,103 +500,102 @@ Selection of point of curve that will be performed after the next sync pulse.
 
 #### Read which point will be performed
 
-***Python:** int PRUserial485_read_curve_pointer()
-***C:** int uint32_t read_curve_pointer()
+***Python:** int PRUserial485_read_curve_pointer()*
+***C:** int uint32_t read_curve_pointer()*
  
- RETURN
- Index of next point (0 to (len(curve)-1))
+*RETURN*
+*Index of next point (0 to (len(curve)-1))*
 
 Read curve index (point) which will be sent in next sync pulse.
 
- <br />
+<br />
 
 ### Sync Operation
 
 #### PRUserial485_sync_start(int sync_mode, float delay, int sync_address)
 
-***Python:** void PRUserial485_sync_start(int sync_mode, float delay, int sync_address)
-***C:** void set_sync_start_PRU(uint8_t sync_mode, uint32_t delay_us, uint8_t sync_address)
+***Python:** void PRUserial485_sync_start(int sync_mode, float delay, int sync_address)*
+***C:** void set_sync_start_PRU(uint8_t sync_mode, uint32_t delay_us, uint8_t sync_address)*
  
- PARAMETERS
- ''sync_mode: '' operation category of synchronous mode:
-             - 0x51 Single curve sequence & Intercalated read messages
-             - 0x5E Single curve sequence & Read messages at End of curve
-             - 0xC1 Continuous curve sequence & Intercalated read messages  
-             - 0xCE Continuous curve sequence & Read messages at End of curve
-             - 0x5B Single Sequence - Single Broadcast Function command
- ''delay/delay_us:'' time between end of sync serial message and start of a normal message, when sending normal commands after sync pulses.
- ''sync_address:'' PS Controller address to which setpoints will be addressed to. Parameter only needed if sync_mode != 0x5B
+*PARAMETERS*
+*sync_mode: operation category of synchronous mode:*
+             *- 0x51 Single curve sequence & Intercalated read messages*
+             *- 0x5E Single curve sequence & Read messages at End of curve*
+             *- 0xC1 Continuous curve sequence & Intercalated read messages  *
+             *- 0xCE Continuous curve sequence & Read messages at End of curve*
+             *- 0x5B Single Sequence - Single Broadcast Function command*
+*delay/delay_us: time between end of sync serial message and start of a normal message, when sending normal commands after sync pulses.*
+*sync_address: PS Controller address to which setpoints will be addressed to. Parameter only needed if sync_mode != 0x5B*
 
 Synchronous mode operation.
 
- <br />
+<br />
 
 #### Stop sync mode and return to normal operation
-***Python:** void PRUserial485_sync_stop()
-***C:**  void set_sync_stop_PRU()
+***Python:** void PRUserial485_sync_stop()*
+***C:**  void set_sync_stop_PRU()*
 
 Stops sync operation mode.
 
- <br />
+<br />
 
 #### Verify sync status
 
-***Python:** bool PRUserial485_sync_status()
-***C:** int sync_status()
+***Python:** bool PRUserial485_sync_status()*
+***C:** int sync_status()*
  
- RETURN
- ''True/1:'' waiting for sync pulse
- ''False/0:'' not waiting for sync pulse
-
+*RETURN*
+*True/1: waiting for sync pulse*
+*False/0: not waiting for sync pulse*
 
 Verifies whether PRU is waiting for a sync pulse or not
 
- <br />
+<br />
 
 #### Reading pulse count register
 
-***Python:** int PRUserial485_read_pulse_count_sync()
-***C:**  uint32_t read_pulse_count_sync()
+***Python:** int PRUserial485_read_pulse_count_sync()*
+***C:**  uint32_t read_pulse_count_sync()*
  
- RETURN
- counting value (0 to 4294967295)
+*RETURN*
+*counting value (0 to 4294967295)*
 
 Read number of sync pulses already received.
 
- <br />
+<br />
 
 #### Clear pulse counting register
 
-***Python:** int PRUserial485_clear_pulse_count_sync()
-***C:**  int clear_pulse_count_sync()
+***Python:** int PRUserial485_clear_pulse_count_sync()*
+***C:**  int clear_pulse_count_sync()*
  
- RETURN
- 0 if succeeded.
+*RETURN
+0 if succeeded.*
 
 Clears pulse counting registers. Action is only performed if sync mode is disabled.
 
- <br />
+<br />
 
 ##  Intrinsic timing constraints 
 
 Software delays are real and in the case of high performance applications, they must be considered. For library version 1.3.3, some of them were quantified, as shown below:
 
- <br />
+<br />
 
-###  Sync Mode - PRU level 
+**Sync Mode - PRU level**
 
 * Lattency of sync message regarding sync pulse 
-::''Broadcast command: '''1.02 μs'''''
-::''Curve setpoint command: '''2.12 μs'''''
-* Sync message jitter: '''13.45 ns'''
+  * Broadcast command: 1.02 μs
+  * Curve setpoint command: 2.12 μs
+* Sync message jitter: 13.45 ns
 * Returning to waiting for next pulse, after sending a
-::''Sync message: '''3.1 μs'''''
-::''Normal message, without waiting for its answer: '''4 μs'''''
-::''Normal message, receive the answer immediately (no response delay) and store its 64 bytes: '''48 μs'''''
+  * Sync message: 3.1 μs
+  * Normal message, without waiting for its answer: 4 μs
+  * Normal message, receive the answer immediately (no response delay) and store its 64 bytes: 48 μs
 
  <br />
 
-###  Sync Mode - Processor level 
+**Sync Mode - Processor level**
 
 * Load curve into memory: '''29 ms'''
 * Start sync mode: '''14 μs'''
@@ -605,14 +603,14 @@ Software delays are real and in the case of high performance applications, they 
 
  <br />
 
-###  Normal Mode - Processor level 
+**Normal Mode - Processor level**
 
 * Initialize PRUserial485: '''1.4 ms'''
 * Complete message sending, without waiting for an answer
-::''5-byte message: '''50 μs'''''
-::''50-byte message: '''165 μs'''''
-::''100-byte message: '''250 μs'''''
+  * 5-byte message: 50 μs
+  * 50-byte message: 165 μs
+  * 100-byte message: 250 μs
 * Complete message sending, receiving the answer immediately (no response delay) and store its 64 bytes:
-::''5-byte message: '''120 μs'''''
-::''50-byte message: '''215 μs'''''
-::''100-byte message: '''305 μs'''''
+  * 5-byte message: 120 μs
+  * 50-byte message: 215 μs
+  * 100-byte message: 305 μs
