@@ -2,16 +2,17 @@
 title: Beam Diagnostics and Feedback System
 description: 
 published: 1
-date: 2024-02-29T15:29:17.269Z
+date: 2024-03-05T18:43:15.228Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T20:27:15.655Z
+dateCreated: 2024-03-04T20:05:07.657Z
 ---
 
 # Machine: Beam Diagnostics and Feedback System
 
 Beam diagnostics and feedback systems are essential in synchrotron light sources to monitor and control a variety of electron and photon beam parameters. Adequate diagnostics helps to reduce the light source commissioning time and is fundamental to provide a high level of reliability to the accelerators. Feedback systems, in turn, improve the machine performance thus improving the photon beam quality delivered to the light source users.
 
+<br />
 
 ## Diagnostic Devices
 
@@ -40,9 +41,13 @@ Table 1 summarizes the diagnostic devices planned for the accelerators and trans
 |Beam scrapers (H/V)| 1/1| 			 |
 |Transverse feedback driver| 2| 			 |
 |Transverse feedback pick-up| 1| 			 |
-|Pinger magnet (H/V)| 1/1| 			 |				
+|Pinger magnet (H/V)| 1/1| 			 |		
+
+**Table 1**: Diagnostic devices.
 
 The Linac diagnostics listed above are preliminary and may vary depending on the chosen external supplier. 
+
+<br />
 
 ### RF BPMs
 
@@ -50,9 +55,13 @@ The Linac diagnostics listed above are preliminary and may vary depending on the
 
 Storage ring and booster RF BPMs will use button pick-ups.
 
+<br />
+
 #### Stripline BPM Pick-ups
 
 The pulsed RF-BPMs (single-pass) for Linac and transport lines will use stripline pick-ups.
+
+<br />
 
 #### BPM Electronics
 
@@ -78,13 +87,19 @@ The main performance goals are given in Figure 2.
 |First-turn resolution (RMS)| 500| µm |
 |Horizontal/Vertical plane coupling| 1| % |
 
+**Table 2**: RF BPM electronics requirements.
+
+<br />
+
 ##### Hardware
 
 Due to its hardware modularity, different variants of the RF BPM electronics could be obtained by redesigning the RF front-end and keeping the FPGA and digitizer boards. For instance, single-pass BPM electronics for Linac and transport lines and lower cost BPM electronics for the booster would require redesigning the digitizer module and possibly eliminating the need of a separate RF front-end.
 
+<br />
+
 ##### Firmware
 
-See also: [Beam Position Calculation][link]
+See also: [Beam Position Calculation](/home/Groups/DIG/beam_position_calc)
 
 The core digital signal processing of the RF BPM electronics is shown in Figure 2. Amplitude and phase information of the RF signal coming from each BPM antenna is downconverted from the intermediate frequency, produced on the sampling process, to baseband.
 
@@ -93,6 +108,8 @@ The core digital signal processing of the RF BPM electronics is shown in Figure 
 **Figure 2**: RF-BPM digital downconversion chain.
 
 Considering all [[Beam Position Calculation|beam position calculation algorithms]] studied, the Partial Delta/Sigma as chosen as the default due to its acceptable accuracy, cheap cost of processing and mathematical cancellation of the equipment line gain.
+
+<br />
 
 ##### Software
 
@@ -103,6 +120,8 @@ Considering all [[Beam Position Calculation|beam position calculation algorithms
 The installation of two blade photon BPMs, 7 meters apart one from the other, in every high field dipole front-end is foreseen. Special care will be taken to support these monitors in a robust and stable way. For soft X-ray beamlines, photoemission BPMs could also be employed, although a recent development carried out by NSLS-2 will be evaluated, where diamond blades with thin metal coating give the possibility of selecting a smaller portion of the beam spectrum thus reducing the background contamination effects.
 
 The strategy for monitoring the photon beam positions at the insertion devices front-ends was defined. Experience from several light sources shows that the systematic errors cannot be reduced more than about 20 µm. Fluorescent based X-ray BPMs used in some accelerators, SSRL for instance, were recently improved and tested at APS and minimize the errors caused by background photons. The new concept is called GRID XBPM (GRazing Incident Insertion Device XBPM) and combines the functionalities of front-end photon masks and XBPMs. In-vacuum undulators front-ends will count on XBPMs based on this device. The use of X-ray area detectors instead of the traditional pin diodes can provide real imaging of the beam footprint and this proposal has been evaluated by the LNLS Detectors Group.
+
+<br />
 
 ## Feedback Systems
 
@@ -119,6 +138,8 @@ Table 3 gives the orbit stability performance target to be achieved with FOFB as
 |Overall closed-loop latency| < 75| μs |
 |Fast orbit corrector -3dB bandwidth (small signal)| > 10| kHz  |
 
+**Table 3**: Fast orbit feedback performance targets.
+
 The fast orbit correctors will be located over stainless steel 0.3 mm orbit corrector vacuum chamber providing -3 dB bandwidth above 10 kHz. The design of the fast dipole magnet and power supply will exploit the entire bandwidth provided by the vacuum chamber for small signals.
 
 The fundamental limiting factor of closed-loop latency was found to be the accelerator-wide sensors and actuators data distribution. Detailed calculations has shown that the use of multigigabit communication through FPGAs and efficient network topologies allows a theoretical minimum latency of approximately 5.3 μs, out of which approximately 2.5 μs would come from light propagation through several optical fibers along half storage ring circumference. The calculations considered data packet overheads such as frame headers and checksums as well as FPGA logic pipeline delay and a factor of 2 for fiber lengths. The BPM latency, typically dominated by decimation filters group delay, should be ideally made comparable to the data distribution latency so as to not dominate the latency. A preliminary performance goal of 10 μs BPM group delay has been considered, requiring a FOFB update rate of the order of 100 kHz.
@@ -129,9 +150,13 @@ Figure 3 shows the general BPM, orbit correctors and skew quadrupoles layout in 
 
 **Figure 3**: Distribution of corrector magnets and BPMs for the global and local closed-orbit correction system. Skew quadrupoles (QS) are implemented as additional coil windings in the sextupole families SFA0, SDB0, SDP0, SDx2(C1), SDx3(C3) while slow horizontal and vertical orbit correctors (CH and CV) are implemented in SDA0, SFB0, SFP0, SDx1, SFx2 and SDA0, SFB0, SFP0, SDx1, SDx3, SFx2(C3) families respectively. An additional skew corrector QS is implemented as an extra coil in the fast corrector next to BC, and a stand-alone vertical corrector CV is placed before dipole BC. Fast correctors (FCH and FCV) are located at special sections with 0.3 mm thick stainless steel vacuum chambers.
 
+<br />
+
 #### Photon BPMs in the loop
 
 Besides the RF-BPMs used for the slow and fast orbit correction loops, effort has been made to allow the integration of photon BPM readings in the feedback loop with compatible data rate, latency and communication interface.
+
+<br />
 
 ### Fast Coupling Feedback
 

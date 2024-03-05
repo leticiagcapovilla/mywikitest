@@ -2,13 +2,15 @@
 title: Pulsed Magnets
 description: 
 published: 1
-date: 2024-02-28T18:56:33.288Z
+date: 2024-03-05T16:43:39.912Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T16:57:06.388Z
+dateCreated: 2024-03-04T20:05:40.300Z
 ---
 
 # Machine: Pulsed Magnets
+
+<br />
 
 ## Septa
 
@@ -37,6 +39,8 @@ The septa geometric and magnetic field quality specifications parameters are giv
 
 **Table 1**: Main parameters for Sirius septa.
 
+<br />
+
 ### Magnetic Parameters
 
 #### Core material: FeSi E233
@@ -58,6 +62,8 @@ where:
 BO = Booster
 SR = Storage Ring
 
+<br />
+
 ### Geometrical Parameters
 
 | Parameters | BO Injection | BO Extraction | ST Thick | SR Thin | Unit |
@@ -68,6 +74,8 @@ SR = Storage Ring
 |Length | 0.5 | 0.577 | 0.577 | 0.5 | m |
 
 **Table 3**: Septa design geometrical parameters
+
+<br />
 
 ### Pulser Parameters
 
@@ -86,6 +94,8 @@ SR = Storage Ring
 |Repetition Rate | 2 | 2 | 2 | 2 | Hz |
 
 **Table 4**: Septa design pulser parameters
+
+<br />
 
 ## Kickers/NLK
 The kicker geometric and magnetic field quality specifications parameters are given in Table 5 and the design parameters for the magnet and pulser are shown in [[Table:Kickers design parameters|<xr id="tab:kickers design parameters"/>]].
@@ -113,6 +123,8 @@ The kicker geometric and magnetic field quality specifications parameters are gi
 
 **Table 5**: Main parameters for Sirius kickers.
 
+<br />
+
 ### Magnetic Parameters
 
 #### Core material: FERRITE CMD5005
@@ -127,6 +139,7 @@ The kicker geometric and magnetic field quality specifications parameters are gi
 
 **Table 6**:
 
+<br />
 
 #### Core material: HIBRID
 
@@ -142,6 +155,8 @@ The kicker geometric and magnetic field quality specifications parameters are gi
 
 **Table 7**:
 
+<br />
+
 ### Geometrical Parameters
 
 |Parameter | BO Injection | BO Extraction | On-Axis | NLK | Pinger Vert. | Pinger Hor. | Unit |
@@ -154,6 +169,7 @@ The kicker geometric and magnetic field quality specifications parameters are gi
 
 **Table 8**:
 
+<br />
 
 ### Pulser Parameters
 

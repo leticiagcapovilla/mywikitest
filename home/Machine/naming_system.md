@@ -2,26 +2,32 @@
 title: Naming System
 description: 
 published: 1
-date: 2024-02-29T15:44:10.573Z
+date: 2024-03-05T20:45:44.002Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T20:37:36.486Z
+dateCreated: 2024-03-04T20:05:33.231Z
 ---
 
 # Machine: Naming System
+
+<br />
 
 ## Introduction
 
 In the sections below the naming convention for Sirius is defined. It should be used to name device types, signals (properties) and machine slots.  
 Moreover, the infrastructure of EPICS support applications that should be used to help managing lists of named objects for Sirius is described.
 
-The Naming service and other support services can be accessed through the EPICS Support Applications \[link\] menu
+The Naming service and other support services can be accessed through the [EPICS Support Applications](/home/Machine/epics_support_apps) menu
 
-The wiki page for the outdated previous naming convention can be accessed here \[link\]
+The wiki page for the outdated previous naming convention can be [accessed here]
+
+<br />
 
 ## PV Naming Specification
 
 ![](/img/machine/naming_system/SIRIUS_naming_convention.png)
+
+<br />
 
 ### PV Name
 
@@ -32,6 +38,8 @@ sec-sub:dis-dev\[-idx\]:propty\[.field\]
 | Area | • sec  <br>(=Section)   <br>  <br>• sub  <br>(=Subsection) | • Accelerator Section comprising the machine (e.g, Storage Ring, Booster, Linac, Transport Lines, etc)   <br>  <br>• Accelerator Subsection within a specific Section (e.g., First Sector, First Chromatic Section = 01C1, 02C2, 01M2, 01M1, etc) |
 | Device | • dis  <br>(=Discipline)   <br>  <br>• dev  <br>(=Device)   <br>  <br>• idx  <br>(=Index) | • Branch of knowledge indicating the context in which a device is used (e.g, VAC, DIG, etc)   <br>  <br>• Physical device or indirect controlled device (needs to be unique only inside the same Discipline) (e.g., BPM, PS, Shaker, BBB, temperature sensor, fan, etc)   <br>  <br>• Distinsgish between same Devices in the same Subsection and Discipline (e.g., 010, 020, 1, 2, 3, R1C2, etc). |
 | PField | • propty  <br>(=Property)   <br>  <br>• field  <br>(=Field) | • A particular property of the accelerator system (e.g., Current, Position, Temperature).   <br>  <br>  <br>• A particular attribute of the property (an EPICS record field). |
+
+<br />
 
 ### Rationale
 
@@ -48,6 +56,8 @@ three levels:
 -   Level 2. Section (Sec)
 -   Level 3. Subsection (Sub)
 
+<br />
+
 #### DEVICE
 
 Any equipment that serves a particular function and is connected to the Control System is modelled as a device.
@@ -63,6 +73,8 @@ The hierarchy can instead be found in the configuration database or in other sys
 -   Level 2. Category: Not part of the naming convention.
 -   Level 3. Device Type (Dev)
 
+<br />
+
 #### PROPERTY
 
 Naming convention users prefer to use generic device type as device identifier in names.  
@@ -76,38 +88,41 @@ the signal part are therefore sorted under a separate configuration structure:
 -   Level 2 Property (Property)
 -   Level 3 Field (FIELD)
 
+<br />
+
 ### Naming Rules
 
 **R01** Instance index (Idx) shall be alphanumeric. I.e., only upper and lower case alphanumeric characters (a-z, A-Z, 0-9) are allowed.
 
-**R02** The device names Sec-Sub:Dis-Dev-Idx shall be distinguishable, which means that names shall be unique irrespective of:  
-:: Letter case  
-:: Letters I, l and number 1  
-:: Letter O and number 0  
-:: Letters V and W  
-:: Leading zeros, i.e., number 0 immediately following a non-numerical character  
-: '''R03''' The maximum length of instance index (Idx) is 6 characters.  
-: '''R04''' Properties like temperature, current, voltage etc., will be used for many different device types.  
-:: Therefore, the signal property shall follow the LNLS Signal-Property Standard. Users of the naming  
-:: convention are strongly encouraged to update this list.
+* **R02** The device names Sec-Sub:Dis-Dev-Idx shall be distinguishable, which means that names shall be unique irrespective of:  
+  * Letter case  
+  * Letters I, l and number 1  
+  * Letter O and number 0  
+  * Letters V and W  
+  * Leading zeros, i.e., number 0 immediately following a non-numerical character  
+* **R03** The maximum length of instance index (Idx) is 6 characters.  
+* **R04** Properties like temperature, current, voltage etc., will be used for many different device types.  
+  * Therefore, the signal property shall follow the LNLS Signal-Property Standard. Users of the naming convention are strongly encouraged to update this list.
 
-**R05** A signal, which is intended only for debugging or for other private purposes, shall include a lowercase i as prefix (iProperty).
+* **R05** A signal, which is intended only for debugging or for other private purposes, shall include a lowercase i as prefix (iProperty).
 
-**R06** To distinguish identical signals of the same device, suffices shall be appended to the property as  
-:: PropertySuffix. Users shall refer to the LNLS Signal-Property Standard, where common suffices are listed,  
-:: before inventing new ones for standard types such as read (Rd) and set (Set).
+* **R06** To distinguish identical signals of the same device, suffices shall be appended to the property as  
+ * PropertySuffix. Users shall refer to the LNLS Signal-Property Standard, where common suffices are listed,  
+ * before inventing new ones for standard types such as read (Rd) and set (Set).
 
-**R07** Units must not be entered in the names. The record field for engineering units (EGU) handles this.
+* **R07** Units must not be entered in the names. The record field for engineering units (EGU) handles this.
 
-**R08** Each part of the PV name must have the following number of characters:  
-:: Sec >= 1 && Sec <= 6  
-:: Sub >= 1 && Sub <= 6  
-:: Dis >= 1 && Dis <= 6  
-:: Dev >= 1 && Dev <= 12  
-:: Idx >= 0 && Idx <= 12  
-:: Prop >= 1
+* **R08** Each part of the PV name must have the following number of characters:  
+ * Sec >= 1 && Sec <= 6  
+ * Sub >= 1 && Sub <= 6  
+ * Dis >= 1 && Dis <= 6  
+ * Dev >= 1 && Dev <= 12  
+ * Idx >= 0 && Idx <= 12  
+ * Prop >= 1
 
-**R09** Characters '-' (dash), '.' (dot) and ':' (colon) are reserved and should not be used in Sec, Sub, Dis, Dev, Idx, Property or FIELD fields. The exception to this rule is in the use of suffixes, as defined by table \[\[Table:Naming\_System\_Property\_Domains|Suffixes Table\]\]
+* **R09** Characters '-' (dash), '.' (dot) and ':' (colon) are reserved and should not be used in Sec, Sub, Dis, Dev, Idx, Property or FIELD fields. The exception to this rule is in the use of suffixes, as defined by table \[\[Table:Naming\_System\_Property\_Domains|Suffixes Table\]\]
+
+<br />
 
 ### Abbreviation Tables
 
@@ -210,6 +225,8 @@ the signal part are therefore sorted under a separate configuration structure:
 | UPS | Uninterruptible Power Supply |
 
 **Table 1**: Device Names Table.
+
+<br />
 
 #### Property Names \[link\]
 
@@ -318,6 +335,8 @@ the signal part are therefore sorted under a separate configuration structure:
 
 **Table 2**: Properties Table.
 
+<br />
+
 ##### Property Domains (suffixes) \[link\]
 
 | Suffix | Read/Write | Description |
@@ -331,6 +350,8 @@ the signal part are therefore sorted under a separate configuration structure:
 | \-Mon | read | Monitor non-enumerated or enumerated device property variable |
 
 **Table 3**: Suffixes for non Setpoint/Readback device properties.
+
+<br />
 
 #### General Names \[link\]
 
@@ -368,34 +389,33 @@ the signal part are therefore sorted under a separate configuration structure:
 
 **Table 4**: General Table.
 
+<br />
+
 #### Guidelines
 
 Device names should use index suffixes (-H/-V) to differentiate between two equal devices (e.g., TuneAmp-H/TuneAmp-V). The exception to this guideline should be only for historical reasons, such as horizontal/vertical correctors that use H/V as prefixes (e.g., CH/CV).
 
 Properties should use X/Y sufixes without "-" (e.g., MonitX/MonitY) for X and Y directions.
 
+<br />
+
 ### Examples of PV Names
 
 01) SI-Glob:AP-SOFB:Mode-Sel
-
 02) SI-13SA:DI-TuneSh:ExcAmp
-
 03) SI-Glob:AP-TuneM:TuneX-Mon
-
 04) SI-01M2:DI-BPM:PosX-Mon
-
 05) SI-02M1:PS-QFB:Current-SP
-
 06) LI-01:TI-STDMOE:TrigDelayCh01 (sending signal to LI-01:EG-EGun)
-
 07) SI-Fam:PS-B1B2-1:Current-RB
-
 08) SI-13SA:DI-DCCT:BbBCurrent-Mon
-
 09) SI-01SA:TI-SOE:TrigDelayCh02 (sending signal to SI-01SA:PU-InjDpK)
+
+<br />
 
 ### ABNF grammar for PV naming
 
+```
 ; ABNF grammar (conforming to http://www.ietf.org/rfc/rfc4234.txt)  
 ; for LNLS EPICS naming convention, candidate 2  
   
@@ -471,6 +491,9 @@ inner-separator    = "-"
 suffix-separator   = "-"  
 group-separator    = ":"  
 record-separator   = "."
+```
+
+<br />
 
 ## Drawings with Names of Lattice Elements
 
@@ -482,6 +505,8 @@ Links bellow point to drawings with family names of lattice elements for each ac
 -   [BO - Booster drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-BO.pdf) PDF file
 -   [TB - Linac to Booster transport line drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-TB.pdf) PDF file
 -   [LI - Linac drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-LI.pdf) PDF file
+
+<br />
 
 ## Reference
 
