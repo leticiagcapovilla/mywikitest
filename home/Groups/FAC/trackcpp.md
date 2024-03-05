@@ -2,7 +2,7 @@
 title: Trackcpp
 description: 
 published: 1
-date: 2024-03-05T14:56:41.795Z
+date: 2024-03-05T14:57:06.448Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T14:53:32.984Z
@@ -315,6 +315,8 @@ It is assumed that the executable `trackcpp` is in the bash path. Usually there 
 will calculate the xy dynamical aperture within the regular grid of 30 horizontal points from -10 mm to +10 mm, 20 vertical points from 0 mm to 5 mm, for 5000 turns and energy offset of 1%. It will use 4 parallel threads. 
 
 ## PyAccel
+
+see [FAC: Pyaccel][link]
 
 ## Todo list
 
