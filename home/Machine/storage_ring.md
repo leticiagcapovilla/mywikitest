@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T13:57:23.501Z
+date: 2024-03-05T13:58:50.987Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:48.087Z
@@ -342,7 +342,7 @@ The Sirius closed-orbit correction system will consist of a Slow Orbit Feedback 
 
 For coupling correction and control, independently powered skew quadrupole correctors are provided. They consist of additional coil windings in the sextupole families SF1J and SF1K (dispersive skews),and SDA and SDB (non-dispersive skews). The dispersive skew quadrupoles SF1 will be used to minimize the vertical dispersion created by alignments errors, and the non-dispersive ones will be used to correct coupling by minimizing the off-diagonal elements in the orbit response-matrix. This results typically in 0.02% residual emittance coupling in simulations. After this correction, the vertical beam size can be increased by controlling the overall coupling using the non-dispersive skews. For beam size and lifetime calculation purposes we consider setting the emittance coupling to 1%. 
 
-Figure 7 shows the distribution of correctors and BPMs in one superperiod of the storage ring for the closed-orbit and coupling correction systems, and Tables 9 and 10 shows some parameters for the elements used in these systems. The tolerances for alignment and excitation errors used in the simulations are shown in Table 7. 
+Figure 7 shows the distribution of correctors and BPMs in one superperiod of the storage ring for the closed-orbit and coupling correction systems, and Tables 9 and 10 shows some parameters for the elements used in these systems. The tolerances for alignment and excitation errors used in the simulations are shown in Table 8. 
 
 ![SR LAYOUT2](/img/machine/storage_ring/sr_ring_layout2.png)
 
