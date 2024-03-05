@@ -2,10 +2,10 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-02-28T19:00:43.632Z
+date: 2024-03-05T15:13:16.669Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T14:30:29.180Z
+dateCreated: 2024-03-04T20:05:21.285Z
 ---
 
 # Machine: Injection System
@@ -127,6 +127,7 @@ The booster main parameters are summarized in Table 1 and Table 2, and the optic
 
 
 ### Tune correction
+
 Tune correction in the Sirius Booster will be performed with QF and QD families: 
 
 $$
@@ -140,6 +141,7 @@ where $\nu$ is the tune and $Q [m^{-1}]$ is the integrated quadrupole strength.
 
 
 ### Chromaticity Correction
+
 Chromaticity correction in the Sirius Booster will be performed with SF and SD families. 
 
 $$
@@ -155,6 +157,7 @@ To specify the maximum SD integrated strength, we considered, among others, the 
 
 
 ### Error Tolerance Specifications 
+
 Assumed multipole errors for Booster dipoles, quadrupoles and sextupoles are shown in Table 3, Table 4 and Table 5 
 
 #### Booster Magnets Multipole Errors
@@ -230,6 +233,7 @@ Assumed multipole errors for Booster dipoles, quadrupoles and sextupoles are sho
 **Table 11**: Booster magnets high frequency errors. 
 
 ### Closed orbit correction system
+
 The specification for the closed orbit correction system for the Sirius booster is in Table 12 and its distribution along the ring is shown in Figure 4. To calculate corrector kicks and estimate residual orbit displacements, we have simulated static orbit distortions due to random alignment and excitation errors in all magnets in the lattice (see Table 10). These are relaxed error tolerances, we expect better results for the real machine. The implicit safety margin that is assumed should account for the dynamic effects during energy ramping that were not taken into account in these calculations. The closed orbit before correction is shown in Figure 5 and the residual closed orbit distortion after correction is shown in Figure 6. The corrector strengths are listed in Table 13
 
 ![BOOSTER LATTICE](/img/machine/injection_system/bo_lattice.svg)
