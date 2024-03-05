@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers
 description: 
 published: 1
-date: 2024-03-05T19:11:44.219Z
+date: 2024-03-05T19:24:02.631Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:07:44.396Z
@@ -71,17 +71,16 @@ After that, set the system time zone to "America/Sao_Paulo" with ''dpkg-reconfig
 
 `# dpkg-reconfigure tzdata`
 
-Disabling BeagleBone Black HDMI interface is mandatory. Some AM335x HDMI pins may be configured for other funcionalities, but this can only be done after disabling the video. [[CON:PRUserial485|PRUserial485]] serial interface PRU software, for instance, uses the same pins as the HDMI interface for communication. So, if HDMI video is not disabled, [[CON:PRUserial485|PRUserial485]] will not work. Moreover, we will never plug a video monitor to a BeagleBone Black. Skip this step if you are configuring a Beaglebone Green, once it does not have HDMI interface. To disable HDMI video, execute:
+Disabling BeagleBone Black HDMI interface is mandatory. Some AM335x HDMI pins may be configured for other funcionalities, but this can only be done after disabling the video. [PRUserial485](/home/Groups/CON/pruserial485) serial interface PRU software, for instance, uses the same pins as the HDMI interface for communication. So, if HDMI video is not disabled, [PRUserial485](/home/Groups/CON/pruserial485) will not work. Moreover, we will never plug a video monitor to a BeagleBone Black. Skip this step if you are configuring a Beaglebone Green, once it does not have HDMI interface. To disable HDMI video, execute:
 
- # nano /boot/uEnv.txt
+`# nano /boot/uEnv.txt`
 
 Then uncomment the following line at the file and reboot the board:
 
- #cape_disable=capemgr.disable_partno=BB-BONELT-HDMI,BB-BONELT-HDMIN
+`# cape_disable=capemgr.disable_partno=BB-BONELT-HDMI,BB-BONELT-HDMIN`
+`# reboot`
 
- # reboot
-
-After performing previous steps, it's time to install some software intended to support applications. All software installed from now on is used by one or more [[Machine:Control_System|Sirius control system]] server-side software, so installing all packages listed below results in a BeagleBone Black/Green ready for use in any network node.
+After performing previous steps, it's time to install some software intended to support applications. All software installed from now on is used by one or more [Sirius control system](/home/Machine/control_system) server-side software, so installing all packages listed below results in a BeagleBone Black/Green ready for use in any network node.
 
 <br />
 
@@ -89,6 +88,7 @@ After performing previous steps, it's time to install some software intended to 
 
 Download and build EPICS Base with:
 
+```
  # apt-get -y install libreadline-gplv2-dev
  # cd
  # wget --no-check-certificate <nowiki>https://epics.anl.gov/download/base/base-3.15.5.tar.gz</nowiki>
@@ -96,17 +96,20 @@ Download and build EPICS Base with:
  # rm base-3.15.5.tar.gz
  # cd base-3.15.5
  # make
+```
 
 It's convenient to add EPICS binaries directory to the system path and set other two environment variables. Edit ''/root/.bashrc'', adding at the end of the file:
 
+```
  export PATH=/root/base-3.15.5/bin/linux-arm:$PATH
  export EPICS_BASE="/root/base-3.15.5"
  export EPICS_HOST_ARCH="linux-arm"
  export EPICS_CA_MAX_ARRAY_BYTES=1048576
+```
 
 To apply these settings to the current session:
 
- # source /root/.bashrc
+`# source /root/.bashrc`
 
 <br />
 
@@ -114,6 +117,7 @@ To apply these settings to the current session:
 
 asynDriver is an useful EPICS module for communication to control hardware. Installing it is very simple:
 
+```
  # cd
  # wget --no-check-certificate <nowiki>https://epics.anl.gov/download/modules/asyn4-33.tar.gz</nowiki>
  # tar -xvzf asyn4-33.tar.gz
@@ -121,6 +125,7 @@ asynDriver is an useful EPICS module for communication to control hardware. Inst
  # sed -i -e '3,4s/^/#/' -e '8s/^/#/' -e '11s/^/#/' -e '14cEPICS_BASE=/root/base-3.15.5' asyn4-33/configure/RELEASE
  # cd asyn4-33
  # make
+```
 
 <br />
 
@@ -130,46 +135,56 @@ We don't install Python modules available at Debian repositories or with pip in 
 
 pySerial allows Python code to access serial ports. Currently we are using version 3.4 (latest release) of this module.
 
+```
  # cd
  # git clone <nowiki>https://github.com/pyserial/pyserial.git</nowiki>
  # cd pyserial
  # git checkout c54c81d933b847458d465cd77e96cd702ff2e7be
  # python setup.py install
+```
 
 requests is a Python library for handling HTTP requests easily. The steps below are required for requests 2.9.1 installation, the same version we use on desktop workstations with Ubuntu Linux:
 
+```
  # cd
  # git clone <nowiki>https://github.com/requests/requests.git</nowiki>
  # cd requests
  # git checkout 1108058626450b863d154bb74d669754b480caa4
  # python setup.py install
+```
 
 pcaspy is a module for building EPICS Channel Access servers. Its latest version (0.7.1) can be installed with:
 
+```
  # cd
  # git clone <nowiki>https://github.com/paulscherrerinstitute/pcaspy.git</nowiki>
  # cd pcaspy
  # git checkout 9b09c54a5a066dfaf9d6fea7a06c07c46226b92c
  # python setup.py install
+```
 
 pyepics is a Channel Access (CA) client for EPICS-based control systems. We work with the latest release of pyepics (3.3.1):
 
+```
  # cd
  # git clone <nowiki>https://github.com/pyepics/pyepics.git</nowiki>
  # cd pyepics
  # git checkout b9c25433b85661728e0bf60bef2dfecc4db7bfba
  # NOLIBCA=1 python setup.py install
+```
 
 It is necessary to tell pyepics where EPICS libraries are installed. This can be done adding the following line at the end of ''/root/.bashrc'' file:
 
- export PYEPICS_LIBCA=/root/base-3.15.5/lib/linux-arm/libca.so
+`export PYEPICS_LIBCA=/root/base-3.15.5/lib/linux-arm/libca.so`
 
 Adafruit_BBIO is a library to interface with built-in peripherals in Beaglebone's SoC, such as GPIOs, PWMs and SPI. It can be installed with:
 
+```
  # git clone <nowiki>https://github.com/adafruit/adafruit-beaglebone-io-python.git</nowiki>
  # cd adafruit-beaglebone-io-python
  # sed -i -e 's/\"-Wno-unit_address_vs_reg\", //g' overlays/builder.py
  # python setup.py install
+```
 
 <br />
 
@@ -177,14 +192,16 @@ Adafruit_BBIO is a library to interface with built-in peripherals in Beaglebone'
 
 [[CON:PRUserial485|PRUserial485]] software should be installed on BeagleBone Black with the commands below (the Git repository is available only on the internal network).
 
+```
  # cd
  # git clone <nowiki>http://git.cnpem.br/patricia.nallin/PRUserial485.git</nowiki>
  # cd PRUserial485/src
  # ./library_build.sh
+```
 
 In order to load [[CON:PRUserial485|PRUserial485]] device tree overlay, run the following command. This script must be executed after every system reboot.
 
- # ./overlay.sh
+`# ./overlay.sh`
 
 Any USB/UART bridge based on the FTDI FT232RL IC should work without any additional software installation. For instance, [[CON:SERIALxxCON|SERIALxxCON]] has a serial interface of this type. Note that BeagleBone Black may not recognize the device if you plug it after system boot. So make sure to plug the USB/UART bridge before turnig on the single-board computer.
 
@@ -213,7 +230,7 @@ Section under construction.
 
 ## BeagleBone Green
 
-A few years ago, [[CON:CON|Controls Group]] started working with BeagleBone Black. More recently, [https://beagleboard.org/green BeagleBone Green] was released. It is almost the same as BeagleBone Black, from which it derives. BeagleBone Green doesn't have the HDMI interface, a feature that is not used by any of our applications. Beside that, it costs a few dollars less than BeagleBone Black, which is, indeed, a real advantage.
+A few years ago, [[CON:CON|Controls Group]] started working with BeagleBone Black. More recently, [BeagleBone Green](https://beagleboard.org/green) was released. It is almost the same as BeagleBone Black, from which it derives. BeagleBone Green doesn't have the HDMI interface, a feature that is not used by any of our applications. Beside that, it costs a few dollars less than BeagleBone Black, which is, indeed, a real advantage.
 
 BeagleBone Green is being used as a cheaper substitute for BeagleBone Black in some designs. From a software perspective, there is no difference between these boards. So Linux images, configuration procedures and applications will work the same way in both of them. But there are some hardware differences between BeagleBone Black and BeagleBone Green. The lack of a barrel jack connector in BeagleBone Green for power supply is the most significant for us.
 
@@ -221,7 +238,7 @@ BeagleBone Green is being used as a cheaper substitute for BeagleBone Black in s
 
 ## Other BeagleBoard.org boards
 
-Other BeagleBoard.org boards may be useful for control system designs in the future. Aimed at wireless systems, [https://beagleboard.org/black-wireless BeagleBone Black Wireless] and [https://beagleboard.org/green-wireless BeagleBone Green Wireless] are counterparts of their wired Ethernet versions. Another option for embedded designs is [https://beagleboard.org/x15 BeagleBoard-x15], the most powerful board from the BeagleBoard.org pool.
+Other BeagleBoard.org boards may be useful for control system designs in the future. Aimed at wireless systems, [BeagleBone Black Wireless](https://beagleboard.org/black-wireless) and [BeagleBone Green Wireless](https://beagleboard.org/green-wireless) are counterparts of their wired Ethernet versions. Another option for embedded designs is [BeagleBoard-x15](https://beagleboard.org/x15), the most powerful board from the BeagleBoard.org pool.
 
 We have bought a few units of the three single-board computers cited in the previous paragraph for some experiments.
 
@@ -229,8 +246,9 @@ We have bought a few units of the three single-board computers cited in the prev
 
 ### Wi-Fi configuration for CNPEM campus wireless network
 
-While developing some prototypes with BeagleBone Black Wireless or BeagleBone Green Wireless, the reader may want to connect the board to CNPEM campus wireless network. In order to do that, create a file named ''Proteu.config'' at the directory ''/var/lib/connman'' and add the following content to it, replacing <user> and <password> by the CNPEM credentials.
+While developing some prototypes with BeagleBone Black Wireless or BeagleBone Green Wireless, the reader may want to connect the board to CNPEM campus wireless network. In order to do that, create a file named *Proteu.config* at the directory */var/lib/connman* and add the following content to it, replacing `<user>` and `<password>` by the CNPEM credentials.
 
+```
  [service_Proteu]
  Type=wifi
  Name=Proteu
@@ -239,6 +257,7 @@ While developing some prototypes with BeagleBone Black Wireless or BeagleBone Gr
  Identity=<user>
  Passphrase=<password>
  Timeservers=pool.ntp.br
+```
 
 After saving the file, the system will connect to the campus wireless network in a while. An IP will be obtained through DHCP.
 
@@ -246,4 +265,4 @@ After saving the file, the system will connect to the campus wireless network in
 
 ## External links
 
-*[https://beagleboard.org/black BeagleBone Black web site]
+* [BeagleBone Black web site](https://beagleboard.org/black)
