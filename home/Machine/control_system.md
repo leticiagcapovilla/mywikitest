@@ -2,7 +2,7 @@
 title: Control System
 description: 
 published: 1
-date: 2024-03-05T19:03:24.155Z
+date: 2024-03-05T20:27:11.287Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T18:55:00.249Z
@@ -28,7 +28,7 @@ The figure below shows a conceptual overview of the control system architecture.
 
 Next to the accelerator components, there are various types of hardware that interact with them, collecting information or providing configuration parameters and setpoints. These hardware entities consists of in-house developments or commercial equipments, and will implement all fast closed-loop controls. They will communicate to upper levels of the control system through serial interfaces (RS-485, RS-232) or Ethernet.
 
-The serial communication to low-level hardware will be performed by [[CON:Sirius_control_system_SBCs|single-board computers (SBCs)]], each of them controlling one or more devices. By now, our choice of single-board computer model is BeagleBone Black, a low-cost SBC with real-time capabilities that runs Linux operating system. These boards will execute EPICS server applications, which will interoperate between the EPICS Channel Access protocol (over Ethernet) and hardware communication protocols (over RS-485 or RS-232).
+The serial communication to low-level hardware will be performed by [single-board computers (SBCs)](/home/Groups/CON/csc_single_board_comps), each of them controlling one or more devices. By now, our choice of single-board computer model is BeagleBone Black, a low-cost SBC with real-time capabilities that runs Linux operating system. These boards will execute EPICS server applications, which will interoperate between the EPICS Channel Access protocol (over Ethernet) and hardware communication protocols (over RS-485 or RS-232).
 
 Some local hardware interfaces, like the LINAC control hardware, will have an Ethernet connection available with a built-in EPICS Input/Output Controller (IOC). There may be also devices with only Ethernet as a communication interface, but without bult-in EPICS software. For them, a Linux-powered SBC or workstation, located anywhere at the building, will run a corresponding EPICS server application.
 
@@ -40,7 +40,7 @@ A high-performance computer network infrastructure will connect all SBCs and oth
 
 ## In-house hardware design
 
-Some groups at LNLS are developing hardware solutions for Sirius. In order to standardize communication to all these hardware, [[CON:CON|CON]] developed a lightweight application layer protocol named [[CON:Basic_Small_Messages_Protocol_(BSMP)|Basic Small Messages Protocol (BSMP)]]. It may be used over several communication links (current uses are over RS-485 and Ethernet).
+Some groups at LNLS are developing hardware solutions for Sirius. In order to standardize communication to all these hardware, CON developed a lightweight application layer protocol named [[CON:Basic_Small_Messages_Protocol_(BSMP)|Basic Small Messages Protocol (BSMP)]]. It may be used over several communication links (current uses are over RS-485 and Ethernet).
 
 [[CON:CON|Controls group]] is responsible for the development of [[CON:PUC|general-purpose analog and digital hardware control interfaces]], an [[CON:CON_Serial_Cape|adapter board with UARTs for BeagleBone Black]] and a [[CON:MBTemp|module for reading temperature data from Pt100 sensors]].
 
