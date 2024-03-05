@@ -1,25 +1,29 @@
 ---
-sidebar_position: 4
-# Name that goes on the sidebar:
 title: Linac to booster transport line
+description: 
+published: 1
+date: 2024-03-05T14:34:51.286Z
+tags: 
+editor: markdown
+dateCreated: 2024-03-05T14:05:25.486Z
 ---
 
 # Machine: Linac to booster transport line
 
-## 1 Tables
+## Tables
 
-### 1.1 Twiss functions
+### Twiss functions
 
-(link)
+There is currently no text in this page.
 
-### 1.2 Main parameters
+### Main parameters
 
-(link)
+There is currently no text in this page.
 
-### 1.3 Dipoles parameters
+### Dipoles parameters
 
-(link)
+There is currently no text in this page.
 
-### 1.4 Quadrupoles parameters
+### Quadrupoles parameters
 
-(link)
+There is currently no text in this page.
