@@ -2,7 +2,7 @@
 title: PRUserial485
 description: 
 published: 1
-date: 2024-03-05T20:23:58.391Z
+date: 2024-03-05T20:26:21.264Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:13:29.040Z
@@ -367,7 +367,7 @@ python-sirius setup.py install
 
 ### General Purpose Commands
 
-####  Open serial interface 
+**Open serial interface**
 
 ***Python:** int PRUserial485_open(int baudrate, byte mode)*
 ***C:** int init_start_PRU(int baudrate, char mode*)
@@ -380,7 +380,7 @@ PRU initialization. Shared memory configuration and loading binaries into PRU. I
 
 <br />
 
-#### Hardware physical address
+**Hardware physical address**
 
 ***Python:** int PRUserial485_address()*
 ***C:** uint8_t hardware_address_serialPRU()*
@@ -392,7 +392,7 @@ Gets SERIALxxCON board address (hardware defined). For SERIALxxCON board, defaul
 
 <br />
 
-#### Close serial interface
+**Close serial interface**
 
 ***Python:** int PRUserial485_close()*
 ***C:** void close_PRU()*
@@ -401,7 +401,7 @@ Closes PRUs and memory mapping.
 
 <br />
 
-#### Send data through RS-485
+**Send data through RS-485**
 
 ***Python:** int PRUserial485_write(data, float timeout)*
 ***C:** int send_data_PRU(uint8_t *data, uint32_t *size, float timeout_ms)*
@@ -419,7 +419,7 @@ Send data through RS485 network.
 
  <br />
 
-####  Receive data from serial 
+**Receive data from serial**
 
 ***Python:** bytes PRUserial485_read(uint32_t nbytes = 0)*
 ***C:**  int recv_data_PRU(uint8_t *data, uint32_t *tamanho, uint32_t bytes2read)*
@@ -437,7 +437,7 @@ Receiving data through RS485 network
 
 <br />
 
-#### Flush input buffer
+**Flush input buffer**
 
 ***Python:** int PRUserial485_read_flush()*
 ***C:**  int recv_flush()*
@@ -464,7 +464,7 @@ Storing curves into memory. Each curve correspond to a power supply in the crate
 
 <br />
 
-#### Selecting curve block to be performed
+**Selecting curve block to be performed**
 ***Python:** void PRUserial485_set_curve_block(int block)*
 ***C:** void set_curve_block(uint8_t block)*
 
@@ -475,7 +475,7 @@ Selection of block which will be performed in next cycle. Default value is 0.
 
 <br />
 
-#### Get curve block that will be performed
+**Get curve block that will be performed**
 
 ***Python:** int PRUserial485_read_curve_block()*
 ***C:**  uint8_t read_curve_block()*
@@ -487,7 +487,7 @@ Read block identification which will be performed in next cycle.
 
 <br />
 
-#### Select a point to be performed
+**Select a point to be performed**
 ***Python:** void PRUserial485_set_curve_pointer(int next_point)*
 ***C:**  void set_curve_pointer(uint32_t new_pointer)*
  
@@ -498,7 +498,7 @@ Selection of point of curve that will be performed after the next sync pulse.
 
 <br />
 
-#### Read which point will be performed
+**Read which point will be performed**
 
 ***Python:** int PRUserial485_read_curve_pointer()*
 ***C:** int uint32_t read_curve_pointer()*
@@ -512,7 +512,7 @@ Read curve index (point) which will be sent in next sync pulse.
 
 ### Sync Operation
 
-#### PRUserial485_sync_start(int sync_mode, float delay, int sync_address)
+**PRUserial485_sync_start(int sync_mode, float delay, int sync_address)**
 
 ***Python:** void PRUserial485_sync_start(int sync_mode, float delay, int sync_address)*
 ***C:** void set_sync_start_PRU(uint8_t sync_mode, uint32_t delay_us, uint8_t sync_address)*
@@ -531,7 +531,7 @@ Synchronous mode operation.
 
 <br />
 
-#### Stop sync mode and return to normal operation
+**Stop sync mode and return to normal operation**
 ***Python:** void PRUserial485_sync_stop()*
 ***C:**  void set_sync_stop_PRU()*
 
@@ -539,7 +539,7 @@ Stops sync operation mode.
 
 <br />
 
-#### Verify sync status
+**Verify sync status**
 
 ***Python:** bool PRUserial485_sync_status()*
 ***C:** int sync_status()*
@@ -552,7 +552,7 @@ Verifies whether PRU is waiting for a sync pulse or not
 
 <br />
 
-#### Reading pulse count register
+**Reading pulse count register**
 
 ***Python:** int PRUserial485_read_pulse_count_sync()*
 ***C:**  uint32_t read_pulse_count_sync()*
@@ -564,7 +564,7 @@ Read number of sync pulses already received.
 
 <br />
 
-#### Clear pulse counting register
+**Clear pulse counting register**
 
 ***Python:** int PRUserial485_clear_pulse_count_sync()*
 ***C:**  int clear_pulse_count_sync()*
@@ -593,7 +593,7 @@ Software delays are real and in the case of high performance applications, they 
   * Normal message, without waiting for its answer: 4 μs
   * Normal message, receive the answer immediately (no response delay) and store its 64 bytes: 48 μs
 
- <br />
+<br />
 
 **Sync Mode - Processor level**
 
@@ -601,7 +601,7 @@ Software delays are real and in the case of high performance applications, they 
 * Start sync mode: '''14 μs'''
 * Close sync mode and recover normal operation: '''517 μs'''
 
- <br />
+<br />
 
 **Normal Mode - Processor level**
 
