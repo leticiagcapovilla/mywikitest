@@ -1,14 +1,18 @@
 ---
-sidebar_position: 2
-# Name that goes on the sidebar:
 title: Booster
+description: 
+published: 1
+date: 2024-03-05T14:30:12.816Z
+tags: 
+editor: markdown
+dateCreated: 2024-03-05T14:05:18.596Z
 ---
 
 # Machine: Booster parameters
 
-## 1 Tables
+## Tables
 
-### 1.1 Major parameters
+### Major parameters
 
 | Parameter | Value | Unit |
 | --- | --- | ---|
@@ -35,7 +39,7 @@ title: Booster
 
 **Table 1**: Major Sirius BO main parameters.
 
-### 1.2 RF parameters
+### RF parameters
 
 | Parameter | Value | Unit |
 | --- | --- | ---|
@@ -64,7 +68,7 @@ title: Booster
 
 **Table 2**: Parameters used to design the booster RF system. 
 
-### 1.3 Global closed orbit and coupling correction system
+### Global closed orbit and coupling correction system
 
 | Parameter | Value | Unit |
 | --- | --- | ---|
@@ -76,9 +80,9 @@ title: Booster
 
 **Table 3**: Parameters of the global closed orbit and coupling correction system for the Booster.  
 
-### 1.4 Alignment and excitation errors
+### Alignment and excitation errors
 
-| Parameter | Dipoles | Quadrupoles | Sextupoles | BPMs |  |
+| Parameter | Dipoles | Quadrupoles | Sextupoles | BPMs | Unit |
 | --- | --- | --- | --- | ---|
 | Transverse position, x, y| 160 | 160 | 160 | 300 | Î¼m |
 | Rotation around longitudinal axis | 0.8 | 0.8 | 0.8 | -- | mrad |
