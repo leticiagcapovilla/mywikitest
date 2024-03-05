@@ -2,7 +2,7 @@
 title: Setup workstations for sirius
 description: 
 published: 1
-date: 2024-03-05T21:07:50.772Z
+date: 2024-03-05T21:09:55.052Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T20:57:59.965Z
@@ -249,32 +249,45 @@ close matlab. Open matlab again without sudo:
  
 And compile the .mex files in matlab:
 
+```
  >> sirius;
  >> atmexall;
  >> naff_cc;
+```
 
 ### apsuite
- cd /home/fac_files/lnls-fac/
- git clone ssh://git@github.com/lnls-fac/apsuite.git
- cd apsuite/ 
- python3.6 setup.py build
- sudo python3.6 setup.py develop
+
+```
+cd /home/fac_files/lnls-fac/
+git clone ssh://git@github.com/lnls-fac/apsuite.git
+cd apsuite/ 
+python3.6 setup.py build
+sudo python3.6 setup.py develop
+```
 
 ### lnls
- cd /home/fac_files/lnls-fac/
- git clone ssh://git@github.com/lnls-fac/lnls.git
- cd lnls/ 
- python3.6 setup.py build
- sudo python3.6 setup.py develop
+
+```
+cd /home/fac_files/lnls-fac/
+git clone ssh://git@github.com/lnls-fac/lnls.git
+cd lnls/ 
+python3.6 setup.py build
+sudo python3.6 setup.py develop
+```
 
 ### mathphys
+
+```
  cd /home/fac_files/lnls-fac/
  git clone ssh://git@github.com/lnls-fac/mathphys.git
  cd mathphys/ 
  python3.6 setup.py build
  sudo python3.6 setup.py develop
+```
 
 ### trackcpp
+
+```
  cd /home/fac_files/lnls-fac/
  git clone ssh://git@github.com/lnls-fac/trackcpp.git
  cd trackcpp/
@@ -282,10 +295,14 @@ And compile the .mex files in matlab:
  sudo apt-get install libpython3.5-dev libpython3.5
  make -j32 PYTHON=python3.6 PYTHON_VERSION=python3.6
  sudo make develop PYTHON=python3.6 PYTHON_VERSION=python3.6
+```
+
 test with:
- trackcpp
+
+`trackcpp`
 
 ### pyaccel
+
  cd /home/fac_files/lnls-fac/
  git clone ssh://git@github.com/lnls-fac/pyaccel.git
  cd pyaccel/ 
@@ -293,6 +310,7 @@ test with:
  sudo python3.6 setup.py develop
 
 ### pymodels
+
  cd /home/fac_files/lnls-fac/
  git clone ssh://git@github.com/lnls-fac/pymodels.git
  cd pymodels/ 
@@ -300,10 +318,12 @@ test with:
  sudo python3.6 setup.py develop
 
 ### Control System Constants
+
  cd /home/fac_files/lnls-sirius/
  git clone ssh://git@github.com/lnls-sirius/control-system-constants.git
 
 ### dev-packages
+
  cd /home/fac_files/lnls-sirius/
  git clone ssh://git@github.com/lnls-sirius/dev-packages.git
  cd dev-packages/siriuspy/
@@ -314,6 +334,7 @@ test with:
  sudo python3.6 setup.py develop
 
 ### pydm
+
  cd /home/fac_files/lnls-sirius/
  git clone ssh://git@github.com/lnls-sirius/pydm.git
  cd pydm/ 
@@ -322,6 +343,7 @@ test with:
  sudo python3.6 setup.py develop
 
 ### hla
+
  cd /home/fac_files/lnls-sirius/
  git clone ssh://git@github.com/lnls-sirius/hla.git
  cd hla/pyqt-apps/
@@ -334,6 +356,7 @@ test with:
  git clone ssh://git@github.com/lnls-sirius/machine-applications.git
 
 ### Virtual Accelerator
+
  cd /home/fac_files/lnls-fac/
  git clone ssh://git@github.com/lnls-fac/va.git
  cd va/ 
@@ -341,6 +364,7 @@ test with:
  sudo python3.6 setup.py develop
 
 ### Job Manager
+
 First install the package psutil
  sudo apt-get install python3-pip
  sudo pip3 install psutil
@@ -362,6 +386,7 @@ to continue running the service in background.
 ## Other packages (Optional)
 
 ### collective effects
+
  sudo apt-get install libfftw3-3 libfftw3-dev
  cd /home/fac_files/lnls-fac/
  git clone ssh://git@github.com/lnls-fac/collective_effects.git
@@ -375,6 +400,7 @@ to continue running the service in background.
  sudo make develop
 
 ### FieldMapTrack
+
  cd /home/fac_files/lnls-fac/
  git clone ssh://git@github.com/lnls-fac/fieldmaptrack.git
  cd fieldmaptrack/
@@ -382,6 +408,7 @@ to continue running the service in background.
  sudo python3.6 setup.py develop
 
 ### CS-Studio LNLS
+
  cd ~/Downloads
  wget https://github.com/lnls-sirius/lnls-studio/releases/download/4.5.2/lnls-studio-4.5.2-SNAPSHOT-linux.gtk.x86_64.tar.gz
  tar -xvf lnls-studio-4.5.2-SNAPSHOT-linux.gtk.x86_64.tar.gz
@@ -403,7 +430,7 @@ and finally, create links to the executables:
  sudo ln -s /home/fac_files/windows_applications/MAD8/mad8.exe /usr/bin/MAD8
  sudo ln -s /home/fac_files/windows_applications/OPA_versao_3.32/opa.exe /usr/bin/OPA
 
-=Data Repositories=
+## Data Repositories=
 Create the folder structure:
  cd /home/fac_files
  mkdir -p data/sirius/beam_dynamics
