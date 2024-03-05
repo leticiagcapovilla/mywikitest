@@ -2,7 +2,7 @@
 title: Magnets
 description: 
 published: 1
-date: 2024-03-05T16:02:36.200Z
+date: 2024-03-05T16:19:51.667Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:29.287Z
@@ -269,7 +269,7 @@ In order to take into account the s-dependent field profile of the B2 dipoles a 
 |17| 0.0320| 0.005| -0.029| -0.005| -0.359 |
 |18| 0.0325| 0.004| -0.022| -0.001| -0.149 |
 
-* K=B'/(Bρ), S=B"/(2Bρ)
+*K=B'/(Bρ), S=B"/(2Bρ)
 
 **Table 8**: SI B2 dipole segmented model.
 
@@ -319,7 +319,6 @@ The values used to calculate the difference to model were:
 Deflection angle: 2.1483 deg
 
 KL: - 0.31267 1/m
-
 SL: -0.35037 1/m²
 
 <br />
@@ -450,7 +449,6 @@ The values used to calculate the difference to model were:
 Deflection angle: 2.0482 deg
 
 KL: -0.47982 1/m
-
 SL: -0.09868 1/m²
 
 <br />
@@ -1537,7 +1535,7 @@ Multipole errors from skew quadrupole excitation
 
 ##### Fieldmap Analysis
 
-A 3D model of multifunctional sextupole magnet has been [[FAC:Fieldmap analysis|analyzed]] and approved. Fieldmap analysis for each function has been performed with maximum excitation currents, when residual multipoles are expected to be worse. For the analysis of horizontal and vertical orbit corrector fields, as well as for the skew quadrupole corrector field, the sextupolar function was also excited in order to guarantee fast convergence of the magnetic solution.
+A 3D model of multifunctional sextupole magnet has been [analyzed](/home/Groups/FAC/fieldmap_analysis) and approved. Fieldmap analysis for each function has been performed with maximum excitation currents, when residual multipoles are expected to be worse. For the analysis of horizontal and vertical orbit corrector fields, as well as for the skew quadrupole corrector field, the sextupolar function was also excited in order to guarantee fast convergence of the magnetic solution.
 
 **Sextupolar function**
 
@@ -1705,9 +1703,9 @@ A summary of magnet field measurements of SI S15 sextupoles.
 
 **Figure 44**: Horizontal magnet center of S15 magnets.
 
-##### Vertical Magnetic Ce
 <br />
-nter
+
+##### Vertical Magnetic Center
 
 ![](/img/machine/magnets/si-sextupoles-s15-ycenter.svg)
 
@@ -2543,7 +2541,7 @@ Actual designed dipole model shows numbers are that in accordance with these spe
 
 ##### Fieldmap Analysis
 
-Each dipole in the booster deflects the beam in 7.2 Â° nominally. A 3D magnetic model has been created and its [fieldmap analyzed][link] for a excitation current corresponding to 3.0 GeV. The model has been optimized in a way that the beam trajectory is roughly centered at the good-field region of the magnet, corresponding to the axis x = 0 mm. At the longitudinal center of the magnet the trajectory starts at x = 9.045 mm. The reference point, defined as the interception of the straight lines asymptotically tangent to the up and downstream trajectory branches, is located at x = 28.572 mm, at the longitudinal center of the magnet. Multipoles from fieldmap analysis are all very well within specifications. A summary of the analysis for extraction energy can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-dipoles/tree/master/links-official-3gev). As for low energy, the corresponding file can be found in [here](https://github.com/lnls-ima/bo-dipoles/tree/master/links-official-150mev). 
+Each dipole in the booster deflects the beam in 7.2 Â° nominally. A 3D magnetic model has been created and its [fieldmap analyzed](/home/Groups/FAC/fieldmap_analysis) for a excitation current corresponding to 3.0 GeV. The model has been optimized in a way that the beam trajectory is roughly centered at the good-field region of the magnet, corresponding to the axis x = 0 mm. At the longitudinal center of the magnet the trajectory starts at x = 9.045 mm. The reference point, defined as the interception of the straight lines asymptotically tangent to the up and downstream trajectory branches, is located at x = 28.572 mm, at the longitudinal center of the magnet. Multipoles from fieldmap analysis are all very well within specifications. A summary of the analysis for extraction energy can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-dipoles/tree/master/links-official-3gev). As for low energy, the corresponding file can be found in [here](https://github.com/lnls-ima/bo-dipoles/tree/master/links-official-150mev). 
 
 <br />
 
@@ -2733,7 +2731,7 @@ quadrupoles @r = 17.5 mm
 
 ##### Fieldmap Analysis
 
-There will be two types of quadrupoles: QF and QD. QF quadrupoles are longer, 212-mm, whereas QD quadrupoles are shorter: 85-mm long. While QF magnets power supply is planed to be monopolar, the power supply for the QD family will be dipolar. 3D magnetic models for both QD and QF quadrupoles were analyzed. Nominal quadrupole field component in the booster dipoles provide most necessary defocusing for the optics and hence QD quadrupoles are installed in the lattice for optics correction purposes.
+There will be two types of quadrupoles: QF and QD. QF quadrupoles are longer, 212-mm, whereas QD quadrupoles are shorter: 85-mm long. While QF magnets power supply is planed to be monopolar, the power supply for the QD family will be dipolar. 3D magnetic models for both QD and QF quadrupoles [were analyzed](/home/Groups/FAC/fieldmap_analysis). Nominal quadrupole field component in the booster dipoles provide most necessary defocusing for the optics and hence QD quadrupoles are installed in the lattice for optics correction purposes.
 
 **QF at Ejection Energy**
 
@@ -2908,7 +2906,7 @@ Multipole error| Systematic¹| Random Normal | Random Skew |
 
 ##### Fieldmap Analysis
 
-There will be 25 focusing sextupoles (SF) and 10 defocusing sextupoles (SD) in the booster for chromaticity control. A 105-mm long 3D magnetic model for both SF and SD sextupoles was analyzed. SF family of magnets will be excited with a monopolar power supply whereas SD sextupoles family will be excited with a bipolar power supply. Analysis has been done for fieldmaps corresponding to injection and extraction energy currents. Since the magnetic field is very linear with the excitation current the two results are virtually identical with respect to field quality.
+There will be 25 focusing sextupoles (SF) and 10 defocusing sextupoles (SD) in the booster for chromaticity control. A 105-mm long 3D magnetic model for both SF and SD sextupoles was [analyzed](/home/Groups/FAC/fieldmap_analysis). SF family of magnets will be excited with a monopolar power supply whereas SD sextupoles family will be excited with a bipolar power supply. Analysis has been done for fieldmaps corresponding to injection and extraction energy currents. Since the magnetic field is very linear with the excitation current the two results are virtually identical with respect to field quality.
 
 **SD/SF at Ejection Energy**
 
@@ -3321,7 +3319,7 @@ dB/dx [T/m] @ E=150 MeV
 
 #### Fieldmap Analysis
 
-A 3D magnetic model has been created and its fieldmap analyzed. A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/tb-quadrupoles/tree/master/links-official). 
+A 3D magnetic model has been created and its [fieldmap analyzed](/home/Groups/FAC/fieldmap_analysis). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/tb-quadrupoles/tree/master/links-official). 
 
 <br />
 
@@ -3465,7 +3463,7 @@ Same model as for BO dipoles.
 
 #### Fieldmap Analysis
 
-A 3D magnetic model has been created and its [fieldmap analyzed][link] A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/ts-dipoles/tree/master/links-official). 
+A 3D magnetic model has been created and its [fieldmap analyzed](/home/Groups/FAC/fieldmap_analysis). A summary of the analysis can be found in analysis.txt at [this folder](https://github.com/lnls-ima/ts-dipoles/tree/master/links-official). 
 
 <br />
 
