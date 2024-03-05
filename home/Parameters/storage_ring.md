@@ -1,7 +1,11 @@
 ---
-sidebar_position: 1
-# Name that goes on the sidebar:
 title: Storage Ring
+description: 
+published: 1
+date: 2024-03-05T14:15:57.957Z
+tags: 
+editor: markdown
+dateCreated: 2024-03-05T14:05:27.623Z
 ---
 
 # Machine: Storage ring parameters
@@ -116,13 +120,11 @@ title: Storage Ring
 | Magnetic peak field | 3.2 | T |
 | Bending radius @ peak | 3.127 | m |
 | Critical energy @ peak | 19.15 | keV |
-
-| Parameter | BC_HF | Unit |
-| --- | --- | --- |
+|  | BC_HF |  |
 | Number of dipoles | 20 |  |
 | Deflection angle | 1.14 | Â° |
 
-### 1.3 RF system
+### RF system
 
 | Parameter | Value | Unit |
 | --- | --- | --- |
@@ -145,13 +147,14 @@ title: Storage Ring
 | Natural bunch length | 8.2 | ps |
 | RF energy acceptance | 5.13 |  % |
 
-### 1.4 Global closed orbit and coupling correction system
+### Global closed orbit and coupling correction system
 
 | Parameter | Value | Unit |
 | --- | --- | --- |
 | Number of BPMs | 160 |  |
 | Number of skew quadrupoles | 80 (+ 10 QS in fast corrector)* |  |
 | Skew quadrupole maximum integrated strength | 0.100 | T |
+
 
 | Parameter | Horizontal | Vertical | Unit |
 | --- | --- | --- | --- |
@@ -164,14 +167,15 @@ title: Storage Ring
 
 **140 vertical corrector are implemented as additional coils in sextupole magnets and 20 vertical correctors are separated magnets. 
 
-### 1.5 Optics
-
+### Optics
 
 | Parameter | Value | Unit |
 | --- | --- | --- |
 Mode | S05.01 |  |
-| Horizontal tune | betatron frequency | 49.096 | 55.6 | | kHz |
-| Vertical tune | betatron frequency | 14.152 | 87.9 | | kHz |
+| Horizontal tune | 49.096 | kHz |
+| Horizontal betatron frequency | 55.6 | kHz |
+| Vertical tune | 14.152 | kHz |
+| Vertical betatron frequency | 87.9 | kHz |
 | Linear momentum compaction | 1.64×10⁻⁴ |  |
 | Natural horizontal linear chromaticity | -118.9 |  |
 | Natural vertical linear chromaticity | -81.2 | 
@@ -197,14 +201,18 @@ Mode | S05.01 |  |
 | Radiation integral I2 | 0.41301 | m-1 |
 | Emittance | 0.250 | nmÂ·rad |
 | Energy spread | 0.084 |  % |
-| Bunch length | duration | 2.460 | 8.206 | mm | ps |
+| Bunch length | 2.460 | mm |
+| Bunch duration | 8.206 | ps |
 | Horizontal damping time | 16.9 | ms |
 | Vertical damping time | 22.0 | ms |
 | Longitudinal damping time | 13.0 | ms |
 | Corrected coupling | 1.0 |  % |
-| Beamsize at SS-A center, horizontal | vertical | 65.272149810093 | 2.9884050638169 | Î¼m |
-| Beamsize at SS-B center, horizontal | vertical | 19.273973463465 | 1.8854271114087 | Î¼m |
-| Beamsize at BC center, horizontal | vertical | 9.1512788185879 | 3.6425632011872 | Î¼m 
+| Beamsize at SS-A center, horizontal | 65.272149810093 | Î¼m |
+| Beamsize at SS-A center, vertical | 2.9884050638169 | Î¼m |
+| Beamsize at SS-B center, horizontal | 19.273973463465 | Î¼m |
+| Beamsize at SS-B center, vertical | 1.8854271114087 | Î¼m |
+| Beamsize at BC center, horizontal | 9.1512788185879 | Î¼m |
+| Beamsize at BC center, vertical | 3.6425632011872 | Î¼m |
 
 ### 1.6 Alignment and excitation errors
 
