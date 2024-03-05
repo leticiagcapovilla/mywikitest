@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers
 description: 
 published: 1
-date: 2024-03-05T19:24:02.631Z
+date: 2024-03-05T19:25:12.147Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:07:44.396Z
@@ -230,7 +230,7 @@ Section under construction.
 
 ## BeagleBone Green
 
-A few years ago, [[CON:CON|Controls Group]] started working with BeagleBone Black. More recently, [BeagleBone Green](https://beagleboard.org/green) was released. It is almost the same as BeagleBone Black, from which it derives. BeagleBone Green doesn't have the HDMI interface, a feature that is not used by any of our applications. Beside that, it costs a few dollars less than BeagleBone Black, which is, indeed, a real advantage.
+A few years ago, Controls Group [out of date] started working with BeagleBone Black. More recently, [BeagleBone Green](https://beagleboard.org/green) was released. It is almost the same as BeagleBone Black, from which it derives. BeagleBone Green doesn't have the HDMI interface, a feature that is not used by any of our applications. Beside that, it costs a few dollars less than BeagleBone Black, which is, indeed, a real advantage.
 
 BeagleBone Green is being used as a cheaper substitute for BeagleBone Black in some designs. From a software perspective, there is no difference between these boards. So Linux images, configuration procedures and applications will work the same way in both of them. But there are some hardware differences between BeagleBone Black and BeagleBone Green. The lack of a barrel jack connector in BeagleBone Green for power supply is the most significant for us.
 
