@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T13:51:34.139Z
+date: 2024-03-05T13:57:23.501Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:48.087Z
@@ -159,6 +159,8 @@ In the arc sections the dispersion function reaches a maximum of 8 cm. A pair of
 | Number of dipoles | 20 |  |
 | Deflection angle | 1.14 | Â° |
 
+**Table 1**: Sirius SR main parameters. 
+
 ### Measured parameters
 Linear optics measurements can be performed by manipulating the stored beam. The dispersion function can be measured at BPMs by changing the RF frequency and measuring the corresponding variation in the closed orbit. The beta functions at quadrupole can be obtained by changing a quadrupole strength individually and measuring the corresponding variation in the betatron tune. Another method of measuring the beta functions is exciting betatron oscillations with a pinger and reading the turn-by-turn (TbT) beam positions over many turns with BPMs. Applying Principal Component Analysis (PCA) in the TbT data, it is possible to obtain the beta functions at BPMs. The lattice model can be calibrated to fit the measured orbit response matrix, which may provide information regarding the linear optics in the actual storage ring. The method of model calibration with orbit response matrix is called LOCO (Linear Optics from Closed Orbits). With the results obtained by performing the aforementioned beam-based measurements, one can characterize the machine linear optics and basic parameters and compare with the design values.
 
@@ -177,7 +179,7 @@ Based on the measurements performed in Sirius storage ring during the machine st
 | [mm] | 0.8 | 0.7 | -1.1 | -0.2 | 1.6 | -0.0 | -2.0 | 0.1 | 3.3 | 0.1 | -0.7 | -0.3 | -0.1 | 0.3 | 0.1 | -0.4 | -0.1 | 0.7 | 0.9 | 0.0 |
 | [mrad] | -0.2 | 0.3 | 0.1 | -0.4 | -0.3 | 0.6 | 0.1 | -1.7 | -0.2 | 0.4 | 0.2 | 0.2 | -0.1 | 0.0 | 0.3 | 0.1 | -0.1 | 0.1 | -0.5 | 0.0 |
 
-**Table 1**: Vertical dispersion function and its derivative at center of straight sections 
+**Table 2**: Vertical dispersion function and its derivative at center of straight sections 
 
 
 ## Beam stay clear 
@@ -219,7 +221,7 @@ The values of the beta functions and beam-stay-clear presented in this table are
 | SB | 1.36 | ±3.20 | 1.60 | ±1.90 |
 | SP | 1.36 | ±3.20 | 1.60 | ±1.90 |
 
-**Table 2**: Beam Stay Clear at the center of Sirius straight sections. 
+**Table 3**: Beam Stay Clear at the center of Sirius straight sections. 
 
 From the table above is possible to calculate the Beam Stay Clear at a position away from the center of the straight section, remembering that: 
 
@@ -242,7 +244,7 @@ where $\beta _0$ is the value of the betatron function at the center of the stra
 After optimization of the bare lattice, errors are introduced in the model to study their influence on the beam stability and quality. This is accomplished with the flexible [AcceleratorToolbox (AT)](http://10.39.50.85:3000/en/home/Groups/FAC/matlab_at) in MATLAB. Aftwerwards these imperfect machine models are exported as flat-lattice files and used in a home-developed tracking code based on AT/TracyIII for performance optimization. From these tracking simulations, which are presented in the subsequent sections, the following error tolerance specifications were determined to be acceptable: 
 
 ### Multipole errors
-We have simulated higher-order systematic and random multipole errors in all dipoles, quadrupoles, sextupoles and corrector magnets. The systematic multipole components for these magnets are taken from approved 3D magnetic models. Normal and skew random errors were chosen such that, at x = 12 mm from the reference orbit, their total residual fields deviate 100 and 30 ppm from their nominal values, respectively. Table 5, Table 4, Table 7, Table 6 shows the sets of systematic and random multipole errors used in the tracking simulations. The effects of higher-order multipoles associated with insertion device modeling are introduced separately in the form of non-linear kick maps for each device. 
+We have simulated higher-order systematic and random multipole errors in all dipoles, quadrupoles, sextupoles and corrector magnets. The systematic multipole components for these magnets are taken from approved 3D magnetic models. Normal and skew random errors were chosen such that, at x = 12 mm from the reference orbit, their total residual fields deviate 100 and 30 ppm from their nominal values, respectively. Table 4, Table 3, Table 7, Table 6 shows the sets of systematic and random multipole errors used in the tracking simulations. The effects of higher-order multipoles associated with insertion device modeling are introduced separately in the form of non-linear kick maps for each device. 
 
 |  Multipole error | Q14 <br />Systematic<br /> Normal<br />| Q20 <br />Systematic<br /> Normal<br /> | Q30 <br />Systematic<br />Normal<br /> | <br />Random <br />Normal | <br />Random <br />Skew|
 | --- | --- | --- | --- |--- |--- |
@@ -254,7 +256,7 @@ We have simulated higher-order systematic and random multipole errors in all dip
 | B13/B1 (20-pole) | -8.0×10⁻⁴ | -7.7×10⁻⁴ | -8.1×10⁻⁴ | |  |
 | B17/B1 (20-pole) | +8.5×10⁻⁵ | +5.9×10⁻⁵ | +7.2×10⁻⁵ | | | 
 
-**Table 3**: Storage ring quadrupole multipole errors. Contribution of multipolar components relative to main quadrupolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
+**Table 4**: Storage ring quadrupole multipole errors. Contribution of multipolar components relative to main quadrupolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
 
 |  Multipole error | Systematic <br />Normal| Random <br />Normal | Random <br />Skew|
 | --- | --- | --- |--- |
@@ -264,7 +266,7 @@ We have simulated higher-order systematic and random multipole errors in all dip
 | B5/B0 (12-pole) | 6.7×10⁻⁵ | 1.5×10⁻⁴ | 0.5×10⁻⁴ |
 | B6/B0 (14-pole) | 3.8×10⁻⁴ | - | - 
 
-**Table 4**: Storage ring dipole multipole errors. Contribution of multipolar components relative to main dipolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
+**Table 5**: Storage ring dipole multipole errors. Contribution of multipolar components relative to main dipolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
 
 | Systematic multipole error | CHS (normal) | CVS (skew) | QS (skew) |
 | --- | --- | --- |--- |
@@ -277,7 +279,7 @@ We have simulated higher-order systematic and random multipole errors in all dip
 | B10/B0 (22-pole) | +1.4×10⁻² | -1.1×10⁻² |  |
 | B13/B0 (28-pole) | | | +2.4×10⁻³ |
 
-**Table 5**: Storage ring horizontal, vertical and skew corrector magnets systematic multipole errors. Contribution of multipolar components relative to main field at x = 12 mm. 
+**Table 6**: Storage ring horizontal, vertical and skew corrector magnets systematic multipole errors. Contribution of multipolar components relative to main field at x = 12 mm. 
 
 |  Multipole error | Systematic <br />Normal| Random <br />Normal | Random <br />Skew|
 | --- | --- | --- | --- |
@@ -288,7 +290,7 @@ We have simulated higher-order systematic and random multipole errors in all dip
 | B8/B2 (18-pole) | -2.4×10⁻³ | |  |
 | B14/B2 (30-pole) | +1.4×10⁻³ | | 
 
-**Table 6**: Storage ring sextupole multipole errors. Contribution of multipolar components relative to main sextupolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
+**Table 7**: Storage ring sextupole multipole errors. Contribution of multipolar components relative to main sextupolar field at x = 12 mm. Standard deviation for random multipole errors; simulations assume Gaussian distribution truncated at ±2σ.
 
 ¹ These spec values have been updated in 2018-04-23 after rotating coil measurements. They have been validated by beam dynamics calculations.
 
@@ -303,23 +305,29 @@ Tracking calculations have shown that the misalignment errors of the magnets are
 | Strength error (static or low frequency) | 0.05 | 0.05 | 0.05 | -- | -- |  % |
 | Dipole Gradient error | 0.1 | -- | -- | -- | -- |  % |
 
-**Table 7**: Maximum absolute value of random alignment and excitation errors. The errors are generated with a Gaussian distribution truncated at ±1σ. 
+**Table 8**: Maximum absolute value of random alignment and excitation errors. The errors are generated with a Gaussian distribution truncated at ±1σ. 
 
 
 ### High frequency errors
 We analyzed the effect of high frequency (> 1 kHz) magnet vibration and power supply ripple errors on the beam stability. These high frequency perturbations cannot be compensated by the presently available fast feedback systems and thus, in this case, the amplitude of the perturbations must be limited at the source. To estimate the effects of these perturbations we resort to the definition of the orbit amplification factor. The expected rms value for the orbit distortion at any observation point due to a Gaussian distribution of quadrupole misalignments with standard deviation $\sigma _{quad}$ is given by
 
-${\sqrt{\langle \mathcal{u}² (s_0) \rangle} = A_{\mathcal{u}} \sigma_{quad} = \sqrt{\beta_{\mathcal{u}} (s_0)} {\space} \overline{A}_{\mathcal{u}} \sigma_{quad}}$
+$$
+{\sqrt{\langle \mathcal{u}² (s_0) \rangle} = A_{\mathcal{u}} \sigma_{quad} = \sqrt{\beta_{\mathcal{u}} (s_0)} {\space} \overline{A}_{\mathcal{u}} \sigma_{quad}}
+$$
 
 where represents either x or y and $A_{\mathcal{u}}$ is the corresponding orbit amplification factor. We can define an orbit amplification factor $\overline{A}_{\mathcal{u}}$ normalized to $\sqrt{\beta _{\mathcal{u}} (s_0)}$ at the observation point: 
 
-${\overline{A}_{\mathcal{u}} = \frac{A_{\mathcal{u}}}{\sqrt{\beta _{\mathcal{u}} (s_0)}} = \frac{1}{2 \sqrt{2} sin(\pi \nu _{\mathcal{u}})} (\sum_{i=1}^{all quads}(KL)_i ^2 \beta _{\mathcal{u}}(s_i))^{1/2}}$
+$$
+{\overline{A}_{\mathcal{u}} = \frac{A_{\mathcal{u}}}{\sqrt{\beta _{\mathcal{u}} (s_0)}} = \frac{1}{2 \sqrt{2} sin(\pi \nu _{\mathcal{u}})} (\sum_{i=1}^{all quads}(KL)_i ^2 \beta _{\mathcal{u}}(s_i))^{1/2}}
+$$
 
 The tolerance for these high frequency vibration amplitudes that cannot be compensated by the feedback system is related to the orbit stability goal (usually 10% of beam size) in the vertical plane by: 
 
-$\Delta \mathcal{y} _{quad,vibration} < 0.1 \frac{\sqrt{\epsilon _y}}{\overline{A}_y}$
+$$
+\Delta \mathcal{y} _{quad,vibration} < 0.1 \frac{\sqrt{\epsilon _y}}{\overline{A}_y}
+$$
 
-where $\epsilon _y = \epsilon _0 \kappa / (1 + \kappa)$ is the vertical emittance expressed as a function of the coupling factor $\kappa$ and the natural emittance $\epsilon _0$. Using the expressions above the tolerances for uncorrelated high frequency errors have been determined as shown in Table 8.
+where $\epsilon _y = \epsilon _0 \kappa / (1 + \kappa)$ is the vertical emittance expressed as a function of the coupling factor $\kappa$ and the natural emittance $\epsilon _0$. Using the expressions above the tolerances for uncorrelated high frequency errors have been determined as shown in Table 9.
 
 | | Dipoles | Quadrupoles | Sextupoles |  |
  --- | --- | --- | --- |--- |
