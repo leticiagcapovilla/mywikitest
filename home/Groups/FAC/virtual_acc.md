@@ -2,7 +2,7 @@
 title: Virtual accelerator
 description: 
 published: 1
-date: 2024-03-05T21:50:53.503Z
+date: 2024-03-05T21:51:23.088Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T21:50:53.503Z
@@ -27,7 +27,7 @@ The VA can be started by running the `sirius-vaca.py` script, optionally passing
 * [Start the virtual accelerator](/home/Groups/FAC/cookbook#start-the-virtual-accelerator)
 * [Set Channel Access environment variables](/home/Groups/FAC/cookbook#set-channel-access-environment-variables)
 
-Development and testing environment
+~~**Development and testing environment**~~
 
-The hla-vagrant repository contains files for setting up a development and testing environment for the VA and clients using Vagrant and SaltStack (see Setting up the development and testing environment.) 
+~~The hla-vagrant repository contains files for setting up a development and testing environment for the VA and clients using Vagrant and SaltStack (see Setting up the development and testing environment.) ~~
 
