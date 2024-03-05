@@ -2,7 +2,7 @@
 title: Beam Diagnostics and Feedback System
 description: 
 published: 1
-date: 2024-03-05T18:41:11.975Z
+date: 2024-03-05T18:43:15.228Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:07.657Z
@@ -41,7 +41,9 @@ Table 1 summarizes the diagnostic devices planned for the accelerators and trans
 |Beam scrapers (H/V)| 1/1| 			 |
 |Transverse feedback driver| 2| 			 |
 |Transverse feedback pick-up| 1| 			 |
-|Pinger magnet (H/V)| 1/1| 			 |				
+|Pinger magnet (H/V)| 1/1| 			 |		
+
+**Table 1**: Diagnostic devices.
 
 The Linac diagnostics listed above are preliminary and may vary depending on the chosen external supplier. 
 
@@ -84,6 +86,8 @@ The main performance goals are given in Figure 2.
 |Filling pattern dependence| 5| µm |
 |First-turn resolution (RMS)| 500| µm |
 |Horizontal/Vertical plane coupling| 1| % |
+
+**Table 2**: RF BPM electronics requirements.
 
 <br />
 
@@ -133,6 +137,8 @@ Table 3 gives the orbit stability performance target to be achieved with FOFB as
 |Disturbance rejection 0 dB crossover frequency| > 1| kHz |
 |Overall closed-loop latency| < 75| μs |
 |Fast orbit corrector -3dB bandwidth (small signal)| > 10| kHz  |
+
+**Table 3**: Fast orbit feedback performance targets.
 
 The fast orbit correctors will be located over stainless steel 0.3 mm orbit corrector vacuum chamber providing -3 dB bandwidth above 10 kHz. The design of the fast dipole magnet and power supply will exploit the entire bandwidth provided by the vacuum chamber for small signals.
 
