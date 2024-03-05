@@ -2,7 +2,7 @@
 title: Naming System
 description: 
 published: 1
-date: 2024-03-05T20:43:06.462Z
+date: 2024-03-05T20:44:45.091Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:33.231Z
@@ -222,6 +222,8 @@ the signal part are therefore sorted under a separate configuration structure:
 
 **Table 1**: Device Names Table.
 
+<br />
+
 #### Property Names \[link\]
 
 | Abbreviation | Property Name |
@@ -329,6 +331,8 @@ the signal part are therefore sorted under a separate configuration structure:
 
 **Table 2**: Properties Table.
 
+<br />
+
 ##### Property Domains (suffixes) \[link\]
 
 | Suffix | Read/Write | Description |
@@ -342,6 +346,8 @@ the signal part are therefore sorted under a separate configuration structure:
 | \-Mon | read | Monitor non-enumerated or enumerated device property variable |
 
 **Table 3**: Suffixes for non Setpoint/Readback device properties.
+
+<br />
 
 #### General Names \[link\]
 
@@ -379,34 +385,33 @@ the signal part are therefore sorted under a separate configuration structure:
 
 **Table 4**: General Table.
 
+<br />
+
 #### Guidelines
 
 Device names should use index suffixes (-H/-V) to differentiate between two equal devices (e.g., TuneAmp-H/TuneAmp-V). The exception to this guideline should be only for historical reasons, such as horizontal/vertical correctors that use H/V as prefixes (e.g., CH/CV).
 
 Properties should use X/Y sufixes without "-" (e.g., MonitX/MonitY) for X and Y directions.
 
+<br />
+
 ### Examples of PV Names
 
 01) SI-Glob:AP-SOFB:Mode-Sel
-
 02) SI-13SA:DI-TuneSh:ExcAmp
-
 03) SI-Glob:AP-TuneM:TuneX-Mon
-
 04) SI-01M2:DI-BPM:PosX-Mon
-
 05) SI-02M1:PS-QFB:Current-SP
-
 06) LI-01:TI-STDMOE:TrigDelayCh01 (sending signal to LI-01:EG-EGun)
-
 07) SI-Fam:PS-B1B2-1:Current-RB
-
 08) SI-13SA:DI-DCCT:BbBCurrent-Mon
-
 09) SI-01SA:TI-SOE:TrigDelayCh02 (sending signal to SI-01SA:PU-InjDpK)
+
+<br />
 
 ### ABNF grammar for PV naming
 
+```
 ; ABNF grammar (conforming to http://www.ietf.org/rfc/rfc4234.txt)  
 ; for LNLS EPICS naming convention, candidate 2  
   
@@ -482,6 +487,9 @@ inner-separator    = "-"
 suffix-separator   = "-"  
 group-separator    = ":"  
 record-separator   = "."
+```
+
+<br />
 
 ## Drawings with Names of Lattice Elements
 
@@ -493,6 +501,8 @@ Links bellow point to drawings with family names of lattice elements for each ac
 -   [BO - Booster drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-BO.pdf) PDF file
 -   [TB - Linac to Booster transport line drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-TB.pdf) PDF file
 -   [LI - Linac drawing](https://github.com/lnls-sirius/control-system-constants/tree/master/documentation/drawings/devnames-LI.pdf) PDF file
+
+<br />
 
 ## Reference
 
