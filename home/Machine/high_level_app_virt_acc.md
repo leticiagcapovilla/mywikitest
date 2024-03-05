@@ -2,7 +2,7 @@
 title: High Level Applications and Virtual Accelerator
 description: 
 published: 1
-date: 2024-03-05T21:26:14.083Z
+date: 2024-03-05T21:42:45.306Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:16.484Z
@@ -132,7 +132,7 @@ Tool integration must also be addressed; applications must provide ways of impor
 
 ### Visual Style Guide
 
-The visual style guide for Sirius defines guidelines for building graphical user interfaces. (see [Machine:High Level Applications Visual Style Guide][link]) 
+The visual style guide for Sirius defines guidelines for building graphical user interfaces. (see [Machine:High Level Applications Visual Style Guide](/home/Machine/hla_visual_guide)) 
 
 <br />
 
@@ -169,13 +169,22 @@ The lnls-fac package dependencies are shown in the figure below, where an arrow 
 
 Makefiles must be provided, with targets *all* and *install* for compiling and installing C/C++ applications, respectively. On Linux, the *install* target must install files on `/usr/local/<bin|include|lib>`. Additionally, a *develop* target may be provided; this should install symbolic links to the files in the development directory, so that any changes made are immediately available for development and testing purposes.
 
+<br />
+
 #### Python
+
 Packages must include a `setup.py` file, using [setuptools](https://bitbucket.org/pypa/setuptools). Dependencies must not be defined in this file for automatic download and installation, but be listed in the INSTALL file instead.
 
+<br />
+
 #### Matlab
-Installation of Matlab on a few computers are planned using, maybe, network licenses. [MML][link] will be used primarily for machine studies.
+
+Installation of Matlab on a few computers are planned using, maybe, network licenses. [MML](/home/Groups/FAC/matlab_middle_layer) will be used primarily for machine studies.
+
+<br />
 
 ### Infrastructure
+
 We need to discuss how to store and retrieve data such as excitation curves. A DBMS may also be necessary for archiving and other applications (the EPICS Archiver Appliance, for example, uses MySQL).
 
 <br />
