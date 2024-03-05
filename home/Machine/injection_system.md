@@ -2,7 +2,7 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-03-05T15:24:33.392Z
+date: 2024-03-05T15:27:11.402Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:21.285Z
@@ -1018,19 +1018,27 @@ $\Delta x < 60 \mu m {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' < 20 \mu rad$
 
 1) Booster extraction kickers (bek): A variation in the bek kick (same kick in both kickers) affects the position and angle at the NLK according to: 
 
-$\Delta x [mm] = 11.1 \Delta \theta _{bek} [mrad] and \Delta x' = 3.4 \Delta \theta _{bek} {\;} {\;}$ , thus $ \Delta \theta _{bek} < 5.4 \mu rad  or  \Delta \theta _{bek} / \theta _{bek} < 0.3%$
+$\Delta x [mm] = 11.1 \Delta \theta _{bek} [mrad] and \Delta x' = 3.4 \Delta \theta _{bek} {\;} {\;}$ , thus 
+
+$\Delta \theta _{bek} < 5.4 \mu rad  or  \Delta \theta _{bek} / \theta _{bek} < 0.3%$
 
 2) Booster extraction septa (bes): A variation in the bes kick (same kick in both septa) affects the position and angle at the NLK according to: 
 
-$\Delta x [mm] = 13.9 \Delta \theta _{bes} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = 0.5 \Delta \theta _{bes} {\;} {\;}$ , thus ${\;} {\;} \Delta \theta _{bes} < 4.3 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bes} / \theta _{bes} < 0.006\%$ 
+$\Delta x [mm] = 13.9 \Delta \theta _{bes} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = 0.5 \Delta \theta _{bes} {\;} {\;}$ , thus
+
+$\Delta \theta _{bes} < 4.3 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{bes} / \theta _{bes} < 0.006\%$ 
 
 3) Storage ring thick injection septum (stk): A variation in the stk kick affects the position and angle at the NLK according to: 
 
-$\Delta x [mm] = 5.3 \Delta \theta _{stk} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = \Delta \theta _{stk} {\;} {\;}$ , thus ${\;} {\;} \Delta \theta _{stk} < 11.4 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{stk} / \theta _{stk} < 0.01\%$ 
+$\Delta x [mm] = 5.3 \Delta \theta _{stk} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = \Delta \theta _{stk} {\;} {\;}$ , thus
+
+${\;} {\;} \Delta \theta _{stk} < 11.4 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{stk} / \theta _{stk} < 0.01\%$ 
 
 4) Storage ring thin injection septum (stn): A variation in the stn kick affects the position and angle at the NLK according to: 
 
-$\Delta x [mm] = 3.7 \Delta \theta _{stn} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = \Delta \theta _{stn} {\;} {\;}$ , thus ${\;} {\;} \Delta \theta _{stn} < 16.2 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{stn} / \theta _{stn} < 0.019\%$ 
+$\Delta x [mm] = 3.7 \Delta \theta _{stn} [mrad] {\;} {\;} {\;} and {\;} {\;} {\;} \Delta x' = \Delta \theta _{stn} {\;} {\;}$ , thus
+
+${\;} {\;} \Delta \theta _{stn} < 16.2 \mu rad {\;} {\;} {\;} or {\;} {\;} {\;} \Delta \theta _{stn} / \theta _{stn} < 0.019\%$ 
 
 <br />
 5) Storage ring NLKckr (pmm): 
