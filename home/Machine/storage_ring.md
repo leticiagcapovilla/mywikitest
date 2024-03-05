@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T13:58:50.987Z
+date: 2024-03-05T14:41:33.080Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:48.087Z
@@ -354,6 +354,7 @@ Figure 7 shows the distribution of correctors and BPMs in one superperiod of the
 | Number of skew quadrupoles | 80 (+ 10 QS in fast corrector)* |  |
 | Skew quadrupole maximum integrated strength | 0.100 | T  |
 
+
 | Parameter | Horizontal v. | Vertical v. | Unit |
 | --- | --- | --- | --- |
 | Number of slow dipole correctors | 120 | 160** |  |
@@ -369,7 +370,7 @@ Figure 7 shows the distribution of correctors and BPMs in one superperiod of the
 
 The simulations show that the set of errors considered in Table 7, if uncorrected, result in large orbit distortions that cause many of the generated random machines to be unstable. To avoid these unstable machines, the orbit is initially corrected with the sextupoles turned off. Then, with a small residual orbit distortion, the sextupoles can be turned on again in steps without inducing instabilities. At each step, the orbit is further corrected iteratively until convergence.
 
-Figure 8 shows the closed orbit for the simulated random machines without correction and with the sextupoles turned off. Figure 9 shows the residual orbit after global correction with respect to the ideal orbit, that is defined by the absolute zero of the reference system, including errors in the BPM offsets and considering that they are fixed to the girders; and Figure 10 shows the residual orbit with no BPM offset errors and no girder alignment errors. In this case the BPMs are centered around the ideal orbit. Table 11 presents the statistics of the orbit correction for 20 random machines.
+Figure 8 shows the closed orbit for the simulated random machines without correction and with the sextupoles turned off. Figure 9 shows the residual orbit after global correction with respect to the ideal orbit, that is defined by the absolute zero of the reference system, including errors in the BPM offsets and considering that they are fixed to the girders; and Figure 10 shows the residual orbit with no BPM offset errors and no girder alignment errors. In this case the BPMs are centered around the ideal orbit. Tables 11 and 12 present the statistics of the orbit correction for 20 random machines.
 
 ![ORBIT BEFORE CORRECTION](/img/machine/storage_ring/uncorrected_hor_vert.svg)
 
@@ -430,7 +431,7 @@ The bare lattice is the lattice that contains only sextupoles as non-linear elem
 
 ![ONOFF MOMENTUM1](/img/machine/storage_ring/on_off_momentum1.png)
 
-**Figure 15**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with alignment and multipole errors, orbit, tune and coupling corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring.
+**Figure 15**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with alignment and multipole errors, orbit, tune and coupling corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring.
 
 ![MOMENTUM APERTURE1](/img/machine/storage_ring/momentum_aperture1.svg)
 
