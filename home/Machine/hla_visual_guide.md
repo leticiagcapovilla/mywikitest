@@ -2,7 +2,7 @@
 title: High Level Applications Visual Style Guide
 description: 
 published: 1
-date: 2024-03-05T21:39:20.590Z
+date: 2024-03-05T21:39:42.255Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T21:32:40.665Z
@@ -42,3 +42,5 @@ Figure 1 shows a monitoring screen for general light source status. It illustrat
   * Graph scale text: Monitor Graph Scale
 
  ![](/img/machine/hla_visual_guide/hla_opi_light_source_status.png)
+ 
+ **Figure 1**: Light source status monitoring screen.
