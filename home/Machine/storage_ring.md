@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T14:41:33.080Z
+date: 2024-03-05T14:59:10.663Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:48.087Z
@@ -416,38 +416,39 @@ The bare lattice is the lattice that contains only sextupoles as non-linear elem
 
 ![DIFF MAP LONG](/img/machine/storage_ring/dif_map1.png)
 
-**Figure 12**: Diffusion map (bottom) and corresponding frequency map (top) for Sirius at the center of the long straight section. Particles were tracked for 1032 turns with AT for the bare lattice. On-momentum particles with transverse distribution x-z are shown.
+**Figure 12**: Diffusion map (bottom) and corresponding frequency map (top) for Sirius at the center of the long straight section. Particles were tracked for 1032 turns [with AT](http://10.39.50.85:3000/en/home/Groups/FAC/matlab_at) for the bare lattice. On-momentum particles with transverse distribution x-z are shown.
 
 
 ![DIFF MAP 7MM](/img/machine/storage_ring/dif_map2.png)
 
-**Figure 13**: Diffusion map (bottom) and corresponding frequency map (top) for Sirius at the center of the 7-m straight section. Particles were tracked for 1032 turns with AT for the bare lattice. Coordinate-momentum distribution (x-dp) at initial vertical coordinate z=0.5 mm is shown.
+**Figure 13**: Diffusion map (bottom) and corresponding frequency map (top) for Sirius at the center of the 7-m straight section. Particles were tracked for 1032 turns [with AT](http://10.39.50.85:3000/en/home/Groups/FAC/matlab_at) for the bare lattice. Coordinate-momentum distribution (x-dp) at initial vertical coordinate z=0.5 mm is shown.
 
 ![STORAGE RING PHASE](/img/machine/storage_ring/ring_phase.svg)
 
-**Figure 14**: Sirius storage ring SI.V14.C03 phase space. Particles tracked for 500 turns, using AT. Blue/red dots refers to on-momentum horizontal/vertical scan of initial positions while keeping the vertical/horizontal initial position fixed at 0.1mm. Cyan dots refer to momentum scan up to 5% keeping transverse initial positions at 0.1mm.
+**Figure 14**: Sirius storage ring SI.V14.C03 phase space. Particles tracked for 500 turns, using AT. Blue/red dots refers to on-momentum horizontal/vertical scan of initial positions while keeping the vertical/horizontal initial position fixed at 0.1mm. Cyan dots refer to momentum scan up to $\pm$ 5% keeping transverse initial positions at 0.1mm.
 
 ### Multipole, excitation and alignment errors
 
 ![ONOFF MOMENTUM1](/img/machine/storage_ring/on_off_momentum1.png)
 
-**Figure 15**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with alignment and multipole errors, orbit, tune and coupling corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring.
+**Figure 15**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with alignment and multipole errors, orbit, tune and coupling corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with [Trackcpp](/home/Groups/FAC/trackcpp); 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring.
 
 ![MOMENTUM APERTURE1](/img/machine/storage_ring/momentum_aperture1.svg)
 
-**Figure 16**: Momentum aperture for one superperiod of the ring for 20 machines with alignment and multipole errors, orbit, tune and coupling corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring. Black lines represent the normalized loss rate for each machine, showing the dipoles as the main source of particle loss due to Touschek scattering.
+**Figure 16**: Momentum aperture for one superperiod of the ring for 20 machines with alignment and multipole errors, orbit, tune and coupling corrections. For this calculation, the following configuration was used: 6D tracking with [Trackcpp](/home/Groups/FAC/trackcpp); 2000 turns; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring. Black lines represent the normalized loss rate for each machine, showing the dipoles as the main source of particle loss due to Touschek scattering.
 
 
 ### Optics symmetrization
+
 Optics symmetrization consists in using individual quadrupoles to correct for the β-beating introduced by orbit errors in sextupoles and excitation errors in quadrupoles. 
 
 ![ONOFF MOMENTUM2](/img/machine/storage_ring/on_off_momentum2.png)
 
-**Figure 17**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with alignment and multipole errors, orbit, tune, coupling and optics corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring.
+**Figure 17**: On-momentum (left) off-momentum (right) dynamic apertures at the center of the 7-m straight section for 20 machines with alignment and multipole errors, orbit, tune, coupling and optics corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum particles and 3500 turns for off-momentum apertures; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring.
 
 ![MOMENTUM APERTURE2](/img/machine/storage_ring/momentum_aperture2.svg)
 
-**Figure 18**: Momentum aperture for one superperiod of the ring for 20 machines with alignment and multipole errors, orbit, tune, coupling and optics corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (12x12 mm2) and the IDS at minimum gap aperture (12x2.25 mm2 at low beta straight sections and 12x4 mm2 at high beta straight sections) are considered along the ring. Black lines represent the normalized loss rate for each machine, showing the dipoles as the main source of particle loss due to Touschek scattering.
+**Figure 18**: Momentum aperture for one superperiod of the ring for 20 machines with alignment and multipole errors, orbit, tune, coupling and optics corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (12x12 mm²) and the IDS at minimum gap aperture (12x2.25 mm² at low beta straight sections and 12x4 mm² at high beta straight sections) are considered along the ring. Black lines represent the normalized loss rate for each machine, showing the dipoles as the main source of particle loss due to Touschek scattering.
 
 ![DAXY](/img/machine/storage_ring/daxy.svg)
 
