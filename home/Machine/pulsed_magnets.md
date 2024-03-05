@@ -2,7 +2,7 @@
 title: Pulsed Magnets
 description: 
 published: 1
-date: 2024-03-05T16:42:28.147Z
+date: 2024-03-05T16:43:39.912Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:40.300Z
