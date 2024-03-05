@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T14:15:57.957Z
+date: 2024-03-05T14:23:12.128Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T14:05:27.623Z
@@ -214,7 +214,7 @@ Mode | S05.01 |  |
 | Beamsize at BC center, horizontal | 9.1512788185879 | Î¼m |
 | Beamsize at BC center, vertical | 3.6425632011872 | Î¼m |
 
-### 1.6 Alignment and excitation errors
+### Alignment and excitation errors
 
 | Parameter | Dipole Unit Blocks | Quadrupoles | Sextupoles | Girders | BPMs | Unit |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -225,10 +225,9 @@ Mode | S05.01 |  |
 
 **Table x**: Maximum absolute value of random alignment and excitation errors. The errors are generated with a Gaussian distribution truncated at ±1σ.
 
-### 1.7 Orbit correction statistics
+### Orbit correction statistics
 
 #### Orbit
-
 
 | Parameter | before correction (mm)  | after correction (μm) <br /> wrt to ideal orbit <br /> | after correction (μm) <br /> wrt to BPMs <br />  |
 | --- | --- | --- |--- |
@@ -246,7 +245,7 @@ Mode | S05.01 |  |
 | rms corrector strength | 52 | 78 |
 | Max. corrector strength | 147 ± 26 | 264 ± 47 
 
-### 1.8 Multipole errors
+### Multipole errors
 
 #### Dipoles
 
@@ -289,7 +288,7 @@ Mode | S05.01 |  |
 
 ¹ These spec values have been updated in 2018-04-23 after rotating coil measurements. They have been validated by beam dynamics calculations. 
 
-### 1.9 Sirius beamlines
+### Sirius beamlines
 
 | Beamline | Commissioning ID | Prototype ID | Final ID |
 | --- | --- | --- | --- |
@@ -302,11 +301,11 @@ Mode | S05.01 |  |
 | Sabiá | EPU50 | Delta52 |  |
 | Sapucaia | | | 
 
-### 1.10 Straight sections allocation
+### Straight sections allocation
 
 |Sector |  | Long Straight (SA, SB, SP) | M2 | B2 | BC | C4 Straight |
 | --- | --- | --- | --- | --- | --- | --- |
-| 01 | SA | TuneShkrH ScrapH ScrapV InjDpKckr InjNLKckr | | CARCARÁ (B1) | |  |
+| 01 | SA | ${\color{red}{TuneShkrH ScrapH ScrapV InjDpKckr InjNLKckr}}$ | | CARCARÁ (B1) | |  |
 | 02 | SB | (Petra7) {3HCav} | | | |  |
 | 03 | SP | {2 x SRFCav} | | | |  |
 | 04 | SB | TIMBÓ | | | HIBISCO |  |
