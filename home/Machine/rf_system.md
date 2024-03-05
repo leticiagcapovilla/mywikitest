@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-05T16:45:56.218Z
+date: 2024-03-05T16:51:20.069Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -174,8 +174,13 @@ Currently, we are going to use in the storage ring, since the conditioning phase
 
 **Table 2**: CESR cavity SRF module parameters.
 
-The Figure 2 and Figure 3 shows, for the phase 2 of operation, the RF forward and reflected power as a function of stored beam current and external cavity Q. The black dashed line in the diagram represents the ideal situation (minimum reflected power). Note that using
-$Q_{ext}$ ~ 1.6*10⁵ (ideal value for the nominal operation current of 350 mA) results in a reflected power of about 5 kW per cavity at 500 mA. The Table 2  shows some RF parameters calculated for each phase of operation using cavities with $Q_{ext}$ optimized for this nominal operation phase with 350 mA. The Table 3 shows some RF parameters calculated for all phases of operation using cavities with $Q_{ext}$ optimized for the phase 2 with 350 mA.
+The Figure 2 and Figure 3 shows, for the phase 2 of operation, the RF forward and reflected power as a function of stored beam current and external cavity Q. The black dashed line in the diagram represents the ideal situation (minimum reflected power).
+
+> Note that using $Q_{ext}$ ~ 1.6*10⁵ (ideal value for the nominal operation current of 350 mA) results in a reflected power of about 5 kW per cavity at 500 mA.
+{.is-info}
+
+
+Table 2  shows some RF parameters calculated for each phase of operation using cavities with $Q_{ext}$ optimized for this nominal operation phase with 350 mA. Table 3 shows some RF parameters calculated for all phases of operation using cavities with $Q_{ext}$ optimized for the phase 2 with 350 mA.
 
 Until now we only have some estimates about the energy loss per turn from IDs. The Figure 4 and Figure 5 show the reflected power within a range of energy loss from IDs in the oparation pahse 1 and phase 2.
 
@@ -392,38 +397,56 @@ A two cell SC-3HC like the one built for the NSLS-2 light source would perfectly
 
 To calculate the bunch length using the harmonic cavities we need understand the equations of longitudinal motion of a single electron given by
 
-$\frac{dz}{dt} = \alpha c \epsilon,$
+$$
+\frac{dz}{dt} = \alpha c \epsilon,
+$$
 
-$\frac{d \epsilon}{dt} = \frac{1}{ET_0}(eV(z)-U(\epsilon)),$
+$$
+\frac{d \epsilon}{dt} = \frac{1}{ET_0}(eV(z)-U(\epsilon)),
+$$
 
 where <b>z</b> is the longitudinal coordinate of the electron; <b>ε</b> is the fractional energy deviation from a synchronous electron; <b>α</b> is the momentum compaction; <b>E</b> is the energy. The combined voltage from the main and harmonic RF system is
 
-$V(z) = V_{RF} \left[ \cos \left( \frac{\omega_{RF} }{c} z+ \frac{\pi}{2} -\phi_s \right) - r \cos \left( \frac{m \omega_{RF} }{c} z +\psi_h \right) \right]$
+$$
+V(z) = V_{RF} \left[ \cos \left( \frac{\omega_{RF} }{c} z+ \frac{\pi}{2} -\phi_s \right) - r \cos \left( \frac{m \omega_{RF} }{c} z +\psi_h \right) \right]
+$$
 
 where <b>r</b> is the relative harmonic voltage to the main voltage; <b>φ<sub>s</sub></b> is the synchronous phase; <b>ψ<sub>h</sub></b> is the harmonic tuning angle; <b>m</b> is the harmonic number. The potential well is given by
 
-$\Phi (z) = \frac{\alpha}{EC} \int_{0}^{z} [eV(z')-U_0]\, dz'$
+$$
+\Phi (z) = \frac{\alpha}{EC} \int_{0}^{z} [eV(z')-U_0]\, dz'
+$$
 
 where <b>C</b> is the ring circumference; <b>U<sub>0</sub></b> is the energy loss/turn. And the charge density distribution can be calculated by
 
-$\rho (z) = \rho_0  \exp { \left( \frac{ -\Phi (z)}{ \alpha^2 \sigma_e^2 } \right)}$
+$$
+\rho (z) = \rho_0  \exp { \left( \frac{ -\Phi (z)}{ \alpha^2 \sigma_e^2 } \right)}
+$$
 
 where <b>ρ<sub>0</sub></b> is a normalization constant.
 
 So the longitudinal bunch distribution can be shaped by varying the relative voltage and phase of the harmonic voltage. These parameters should be adjusted to cancel the slope of main RF voltage at the bunch center. The main RF voltage is perfectly canceled when the potential and its first two derivatives are zero. At this condition we have
 
-$r= \sqrt{ \frac{1}{m^2}-\frac{1}{m^2-1} \left( \frac{U_0}{eV_{RF}} \right)^2}$
+$$
+r= \sqrt{ \frac{1}{m^2}-\frac{1}{m^2-1} \left( \frac{U_0}{eV_{RF}} \right)^2}
+$$
 
-$\tan (\psi_h) = \frac{1}{m} \frac{eV_{RF}}{U_0} \sqrt{(m^2-1)^2 - \left( \frac{m^2U_0}{eV_{RF}} \right)^2}$
+$$
+\tan (\psi_h) = \frac{1}{m} \frac{eV_{RF}}{U_0} \sqrt{(m^2-1)^2 - \left( \frac{m^2U_0}{eV_{RF}} \right)^2}
+$$
 
 and the new synchronous phase is given by
 
-$\sin(\phi_s) = \frac{m^2}{m^2-1} \frac{U_0}{eV_{RF}}.$
+$$
+\sin(\phi_s) = \frac{m^2}{m^2-1} \frac{U_0}{eV_{RF}}.
+$$
 
 
 For passive harmonic cavity, the gap harmonic voltage is a function of beam loading effect
 
-$r = \frac{2I_bR_hF \cos (\psi_h)}{V_{RF}}$
+$$
+r = \frac{2I_bR_hF \cos (\psi_h)}{V_{RF}}
+$$
 
 where <b>R<sub>h</sub></b> is the harmonic cavity shunt impedance; <b>I<sub>b</sub></b> is the beam current; <b>F</b> is the form factor.
 
