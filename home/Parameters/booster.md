@@ -2,7 +2,7 @@
 title: Booster
 description: 
 published: 1
-date: 2024-03-05T14:30:56.619Z
+date: 2024-03-05T14:32:30.487Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T14:05:18.596Z
@@ -91,7 +91,7 @@ dateCreated: 2024-03-05T14:05:18.596Z
 
 **Table 4**: Maximum absolute value of random alignment and excitation errors for the Booster. The errors are generated with a Gaussian distribution truncated at ±1σ.
 
-### 1.5 Orbit correction statistics
+### Orbit correction statistics
 
 | Parameter | Horizontal | Vertical | Unit |
 | --- | --- | --- | --- |
@@ -102,79 +102,71 @@ dateCreated: 2024-03-05T14:05:18.596Z
 
 **Table 5**: Statistics of orbit correction in the Booster for 20 random machines. 
 
-### 1.6 Straight sections allocation
+### Straight sections allocation
 
 | Sector | U (upstream of QF) | D (downstream of QF) |
 | --- | --- | --- |
 | 01 | InjSept | InjKckr, Scrn-1, Scrn-2 |
 | 02 | Scrn | QS, TuneShkr |
-| 03 | | chicane |
+| 03 | | `chicane` |
 | 04 | TunePkup | GSL |
 | 05 | | P5Cav |
 | 06 | |  |
 | 07 | |  |
-| 08 | | chicane |
+| 08 | | `chicane` |
 | 09 | |  |
 | 10 | |  |
 | 11 | |  |
 | 12 | |  |
-| 13 | | chicane |
+| 13 | | `chicane` |
 | 14 | |  |
 | 15 | |  |
 | 16 | |  |
 | 17 | |  |
-| 18 | | chicane |
+| 18 | | `chicane` |
 | 19 | |  |
 | 20 | |  |
 | 21 | |  |
 | 22 | |  |
-| 23 | | chicane |
+| 23 | | `chicane` |
 | 24 | |  |
 | 25 | |  |
 | 26 | |  |
 | 27 | |  |
-| 28 | | chicane |
+| 28 | | `chicane` |
 | 29 | |  |
 | 30 | |  |
 | 31 | |  |
 | 32 | |  |
-| 33 | | chicane |
+| 33 | | `chicane` |
 | 34 | |  |
 | 35 | | DCCT |
 | 36 | |  |
 | 37 | |  |
-| 38 | | chicane |
+| 38 | | `chicane` |
 | 39 | |  |
 | 40 | |  |
 | 41 | |  |
 | 42 | |  |
-| 43 | | chicane |
+| 43 | | `chicane` |
 | 44 | |  |
 | 45 | |  |
 | 46 | |  |
-| 47 | | chicane |
+| 47 | | `chicane` |
 | 48 | | EjeKckr |
 | 49 | EjeSeptF |  |
 | 50 | | 
 
-
 QS = Skew Quadrupole
-
 GSL = Generic Stripline
-
 TunePkup = Tune Pickup
-
 TuneShkr = Tune Shaker
-
 InjKckr = Injection Kicker
-
 InjSept = Injection Septum
-
 EjeKckr = Ejection Kicker
-
 Scrn = Fluorescent Screen 
 
-### 1.7 Booster RF cavity
+### Booster RF cavity
 
 | Parameter | Value | Unit |
 | --- | --- | ---|
