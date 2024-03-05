@@ -2,7 +2,7 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-03-05T15:27:11.402Z
+date: 2024-03-05T15:28:03.654Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:21.285Z
@@ -1050,7 +1050,9 @@ For the other pulsed magnets:
 1) Storage ring on-axis injection kicker (sik): The tolerance is calculated by requiring that the injected beam oscillation amplitude be limited to $\Delta x _{max}$ < 0.5 mm along the storage ring horizontal plane. The trajectory of the electron beam after a residual kick at sik is: 
 
 $\Delta x (s) = \Delta \theta _{sik} [\beta _{x , sik} \beta _{x , max}] ^{1/2} sin(\Delta \varphi)$
+
 $\Delta x _{max}$ is limited if
+
 $\Delta \theta _{sik} < \Delta x _{max} / [\beta _{x , sik} \beta _{x , max}] ^{1/2}$
 
 Using $\beta _{x , sik}=18.6$ m and $\beta _{x , max}=19.3$ m, we have 
