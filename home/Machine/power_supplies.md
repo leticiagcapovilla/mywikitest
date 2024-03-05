@@ -2,7 +2,7 @@
 title: Power Supplies
 description: 
 published: 1
-date: 2024-03-05T16:39:08.595Z
+date: 2024-03-05T16:39:52.771Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:36.912Z
@@ -52,8 +52,7 @@ The Power Supplies (PS) are used to feed the magnets of all accelerators and tra
 5. [[ELP:Table of memory addresses for power supplies Scope Source]]
 
 ## Operation Manuals
-
-## PSCommands (Test, Turn On and Turn Off procedures)
+1. [PSCommands (Test, Turn On and Turn Off procedures)](https://cnpemcamp.sharepoint.com/:b:/s/Comissionamento/EQCxIhA6GShAkEJbe4KKDgUBayx3xv0_wAYxhTTrRQlRhA?e=UZ0KIk)
 
 ## The Digital Regulation System (DRS)
 
