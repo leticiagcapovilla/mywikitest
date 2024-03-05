@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers
 description: 
 published: 1
-date: 2024-03-05T19:09:16.576Z
+date: 2024-03-05T19:11:44.219Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:07:44.396Z
@@ -20,21 +20,23 @@ Currently we are working with BeagleBone Black Revision C (the last hardware ver
 
 With an "out of the box" BeagleBone Black/Green, first of all we write the latest operating system (OS) image to the board. Our OS choice is Debian Linux 7 (Wheezy). In a Linux desktop machine running Ubuntu (just as [[CON:CON|Controls Group]] workstations), download the image with:
 
- $ wget <nowiki>https://debian.beagleboard.org/images/rcn-ee.net/rootfs/bb.org/release/2016-06-15/console/bone-debian-7.11-console-armhf-2016-06-15-2gb.img.xz</nowiki>
+`$ wget https://debian.beagleboard.org/images/rcn-ee.net/rootfs/bb.org/release/2016-06-15/console/bone-debian-7.11-console-armhf-2016-06-15-2gb.img.xz`
 
 There are two options of BeagleBone Black/Green official Debian 7 images. A minimal one ("console image") and another with several software packages included ("LXDE image"). The last comes with LXDE (Lightweight X11 Desktop Environment), a graphical environment, among other software that absolutely aren't useful for our purposes.
 
 Insert a microSD card into the computer and run GNOME Disks, in order to write the downloaded image to the card:
 
- $ gnome-disks
+`$ gnome-disks`
 
 Select the inserted device, click on the "More actions" button and choose "Restore Disk Image...". Then indicate the previously downloaded image file and click on "Start Restoring...". It might require superuser permission.
 
 After the process has been completed, it is possible to run Debian 7.11 from this microSD card. In order to flash the image into your Beaglebone's eMMC, edit the file ''uEnv.txt'' with sudo permission:
- $ sudo nano /PATH_TO_YOUR_MEDIA/boot/uEnv.txt
+`
+$ sudo nano /PATH_TO_YOUR_MEDIA/boot/uEnv.txt`
 
 And uncomment the following line at the end of the file:
- #cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3.sh
+
+`# cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3.sh`
 
 Unmout the device and insert it into BeagleBone Black microSD card slot (the board must be powered off). Then, without any other cable or cape plugged, connect a 5V power supply to the board. Wait until D2, D3, D4 and D5 blue LEDs start to blink in sequence.
 
@@ -46,28 +48,28 @@ Plug the BeagleBone Black/Green to a PC with a USB cable and wait some time unti
 
 All instructions presented here must be executed from a desktop machine in a SSH terminal:
 
- $ ssh root@192.168.7.2
+`$ ssh root@192.168.7.2`
 
 It is appropriate to update all installed software:
 
- # apt-get update
+`# apt-get update`
 
 It is also recommended to install and configure Locales framework, which switches between multiple languages and allow users to use their configurations (language, country, characters, etc).
  
- $ apt-get install locales
- $ dpkg­-reconfigure locales
+`$ apt-get install locales`
+`$ dpkg­-reconfigure locales`
 
 Generate, at least, these locales: ''en_US.UTF-8 UTF-8'' and ''pt_BR.UTF-8 UTF-8''. Select them from the list. OK. Define ''english'' as default locale for the system environment. OK. Wait until locales are generated and, finally, upgrade all installed software:
 
- # apt-get upgrade
+`# apt-get upgrade`
 
 BeagleBone Black/Green Debian "console image" is minimal. We need several other software packages from now on:
 
- # apt-get -y install acpid acpi-support-base am335x-pru-package build-essential device-tree-compiler git man-db ntp perl picocom procserv python python-dev python-numpy swig telnet usbutils
+`# apt-get -y install acpid acpi-support-base am335x-pru-package build-essential device-tree-compiler git man-db ntp perl picocom procserv python python-dev python-numpy swig telnet usbutils`
 
 After that, set the system time zone to "America/Sao_Paulo" with ''dpkg-reconfigure'' utility:
 
- # dpkg-reconfigure tzdata
+`# dpkg-reconfigure tzdata`
 
 Disabling BeagleBone Black HDMI interface is mandatory. Some AM335x HDMI pins may be configured for other funcionalities, but this can only be done after disabling the video. [[CON:PRUserial485|PRUserial485]] serial interface PRU software, for instance, uses the same pins as the HDMI interface for communication. So, if HDMI video is not disabled, [[CON:PRUserial485|PRUserial485]] will not work. Moreover, we will never plug a video monitor to a BeagleBone Black. Skip this step if you are configuring a Beaglebone Green, once it does not have HDMI interface. To disable HDMI video, execute:
 
