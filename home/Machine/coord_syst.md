@@ -2,19 +2,19 @@
 title: Coordinate System and Conventions
 description: 
 published: 1
-date: 2024-02-27T21:10:32.172Z
+date: 2024-03-05T13:19:04.890Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-27T16:41:47.879Z
+dateCreated: 2024-03-04T20:05:12.126Z
 ---
 
 # Machine: Coordinate System and Conventions
 
 ## Machine Coordinate System
 
-The stored electrons in Sirius will be circulating in clockwise direction (as seen from the top). The motion of an electron is described in terms of coordinates related to the machine ideal orbit. Any position is specified in an orthogonal, right-handed coordinate system that follows the ideal particle traveling along the ideal path. is the coordinate along the ideal orbit and points in the direction of the particle velocity, that is tangent to the ideal orbit. The transverse coordinates and measure the horizontal and vertical deviations from the ideal orbit, with pointing to the outside of the ring and pointing upward. See Figure 1. The vectorial cross product holds.
+The stored electrons in Sirius will be circulating in clockwise direction (as seen from the top). The motion of an electron is described in terms of coordinates related to the machine ideal orbit. Any position is specified in an orthogonal, right-handed coordinate system $(x,y, z)$ that follows the ideal particle traveling along the ideal path. $s$ is the coordinate along the ideal orbit and $\hat{s}$ points in the direction of the particle velocity, that is tangent to the ideal orbit. The transverse coordinates $x$ and $y$ measure the horizontal and vertical deviations from the ideal orbit, with $\hat{x}$ pointing to the outside of the ring and $\hat{y}$ pointing upward. See Figure 1. The vectorial cross product $\hat{s} = \hat{x} \times \hat{y}$ holds.
 
-The direction of for different kinds of magnets in the Sirius coordinate system are shown in Figure 2, where the term 'focusing' refers, by convention, to the plane of the orbit. The direction of the electron velocity is given by .
+The direction of $B_y$ for different kinds of magnets in the Sirius coordinate system are shown in Figure 2, where the term 'focusing' refers, by convention, to the plane of the orbit. The direction of the electron velocity is given by $\hat{s}$.
 
 ![](/img/machine/coord_systs_and_conventions/ideal_orbit.svg)
 
@@ -22,7 +22,7 @@ The direction of for different kinds of magnets in the Sirius coordinate system 
 
 ![](/img/machine/coord_systs_and_conventions/magnets_direction.svg)
 
-**Figure 2**: By direction for different kinds of magnets for electrons circulating clockwise. x^ points to the outside of the storage ring.
+**Figure 2**: $B_y$ direction for different kinds of magnets for electrons circulating clockwise. $\hat{x}$ points to the outside of the storage ring.
 
 ## BPM Coordinate System
 
@@ -34,7 +34,7 @@ The direction of for different kinds of magnets in the Sirius coordinate system 
 
 **Figure 4**: Cross BPM Coordinate System.      
 
-The Beam Position Monitors Coordinate System is as shown on Figure 3. The antennas A, B, C and D are displayed, along with the beam direction (going outside of the figure). For further information, see DIG:Beam Position Calculation. 
+The Beam Position Monitors Coordinate System is as shown on Figure 3. The antennas A, B, C and D are displayed, along with the beam direction (going outside of the figure). For further information, see [DIG:Beam Position Calculation.](http://10.39.50.85:3000/en/home/Groups/DIG/beam_position_calc)
 
 | | Direction | Origin | + |
 | --- | --- | --- | --- |
