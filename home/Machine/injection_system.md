@@ -2,7 +2,7 @@
 title: Injection System
 description: 
 published: 1
-date: 2024-03-05T15:13:16.669Z
+date: 2024-03-05T15:17:13.657Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:21.285Z
@@ -290,18 +290,19 @@ The chromaticity correction sextupoles, multipole components in dipoles and quad
 
 ![BOOSTER MULTICOD TUNE DAXY](/img/machine/injection_system/bo_multi_cod_tune_daxy.png)
 
-**Figure 8**: On-momentum dynamic aperture at the center of quadrupole QF for 20 machines with alignment and multipole errors, orbit and tune corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum and off-momentum apertures; The vacuum chamber physical aperture (17.5x17.5 mm2 in the straights and 12x12 mm2 in the dipoles) is considered along the ring.
+**Figure 8**: On-momentum dynamic aperture at the center of quadrupole QF for 20 machines with alignment and multipole errors, orbit and tune corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 5000 turns for on-momentum and off-momentum apertures; The vacuum chamber physical aperture (17.5x17.5 mm² in the straights and 12x12 mm² in the dipoles) is considered along the ring.
 
 ![BOOSTER MULTICOD TUNE DAEX](/img/machine/injection_system/bo_multi_cod_tune_daex.png)
 
-**Figure 9**: Off-momentum dynamic aperture at the center of quadrupole QF for 20 machines with alignment and multipole errors, orbit and tune corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 3500 turns for on-momentum and off-momentum apertures; The vacuum chamber physical aperture (17.5x17.5 mm2 in the straights and 12x12 mm2 in the dipoles) is considered along the ring.
+**Figure 9**: Off-momentum dynamic aperture at the center of quadrupole QF for 20 machines with alignment and multipole errors, orbit and tune corrections. The color scale represents the percentage of machines in which a given point of the grid is stable. For these calculations, the following configuration was used: 6D tracking with Trackcpp; 3500 turns for on-momentum and off-momentum apertures; The vacuum chamber physical aperture (17.5x17.5 mm² in the straights and 12x12 mm² in the dipoles) is considered along the ring.
 
 ![MA BOOSTER MULTICOD](/img/machine/injection_system/bo_multi_cod_tune_Tous_LT.svg)
 
-**Figure 10**: Momentum aperture for 1/10 of the Booster for 20 machines with alignment and multipole errors, orbit and tune corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (17.5x17.5 mm2 in the straights and 12x12 mm2 in the dipoles) is considered along the ring. Black lines represent the loss rate.
+**Figure 10**: Momentum aperture for 1/10 of the Booster for 20 machines with alignment and multipole errors, orbit and tune corrections. For this calculation, the following configuration was used: 6D tracking with Trackcpp; 2000 turns; The vacuum chamber physical aperture (17.5x17.5 mm² in the straights and 12x12 mm² in the dipoles) is considered along the ring. Black lines represent the loss rate.
 
 
 ### Booster injection
+
 The 150 MeV electron beam from the Linac is injected on axis into the booster. The injection septum and the on-axis injection kicker are shown in Figure 43, the horizontal trajectory of the injected beam in Figure 12 and a cross section at the injection point in Figure 13. The injection point at the booster is defined at the physical end of the injection septum. 
 
 ![BOOSTER INJECTION SECTION LAYOUT](/img/machine/injection_system/bo_inject_sec_layout.svg)
@@ -318,6 +319,7 @@ The 150 MeV electron beam from the Linac is injected on axis into the booster. T
 
 
 ### Booster extraction
+
 Two kickers are used to extract the beam from the booster. They deflect the beam towards the extraction septum, passing through a defocusing dipole and a tune corrector quadrupole along the way. The nominal strength for this quadrupole is zero, it will only be used for small tune corrections. The arrangement of the booster extraction system elements is shown in Figure 14. 
 
 ![BOOSTER EXTRACTION LAYOUT](/img/machine/injection_system/bo_extract_layout.svg)
@@ -345,6 +347,7 @@ The extracted beam horizontal trajectory is shown in Figure 15. Due to the large
 **Figure 16**: Schematic representation of transverse cross section at booster extraction point.
 
 ### Booster RF system
+
 Table:Booster RF parameters shows the design parameters of the RF system for the booster. The value of the Peak RF voltage presented in the table was calculated assuming the energy spread of the beam could be 90% larger than the expected value, also present in the table, and the momentum compaction could be 30% higher than the value in the table. These are very pessimistic scenarios for the system design, being the nominal 
 
 | Parameter | Value | Unit |
@@ -380,51 +383,51 @@ Table:Booster RF parameters shows the design parameters of the RF system for the
 | --- | --- | --- |
 | 01 | InjSept | InjKckr, Scrn-1, Scrn-2 |
 | 02 | Scrn | QS, TuneShkr |
-| 03 | | chicane |
+| 03 | | `chicane` |
 | 04 | TunePkup | GSL |
 | 05 | | P5Cav |
 | 06 | |  |
 | 07 | |  |
-| 08 | | chicane |
+| 08 | | `chicane` |
 | 09 | |  |
 | 10 | |  |
 | 11 | |  |
 | 12 | |  |
-| 13 | | chicane |
+| 13 | | `chicane` |
 | 14 | |  |
 | 15 | |  |
 | 16 | |  |
 | 17 | |  |
-| 18 | | chicane |
+| 18 | | `chicane` |
 | 19 | |  |
 | 20 | |  |
 | 21 | |  |
 | 22 | |  |
-| 23 | | chicane |
+| 23 | | `chicane` |
 | 24 | |  |
 | 25 | |  |
 | 26 | |  |
 | 27 | |  |
-| 28 | | chicane |
+| 28 | | `chicane` |
 | 29 | |  |
 | 30 | |  |
 | 31 | |  |
 | 32 | |  |
-| 33 | | chicane |
+| 33 | | `chicane` |
 | 34 | |  |
 | 35 | | DCCT |
 | 36 | |  |
 | 37 | |  |
-| 38 | | chicane |
+| 38 | | `chicane` |
 | 39 | |  |
 | 40 | |  |
 | 41 | |  |
 | 42 | |  |
-| 43 | | chicane |
+| 43 | | `chicane` |
 | 44 | |  |
 | 45 | |  |
 | 46 | |  |
-| 47 | | chicane |
+| 47 | | `chicane` |
 | 48 | | EjeKckr |
 | 49 | EjeSeptF |  |
 | 50 | | 
@@ -441,6 +444,7 @@ EjeKckr = Ejection Kicker
 Scrn = Fluorescent Screen 
 
 ## Linac 
+
 The Sirius 150 MeV Linac is a 'turn-key' system provided by SSRF/SINAP. The Linac design parameters are specified in Table 17. 
 
 | Parameter | Multi-bunch | Single-bunch | Unit |
@@ -481,6 +485,7 @@ The Sirius 150 MeV Linac is a 'turn-key' system provided by SSRF/SINAP. The Lina
 
 
 ## Linac to booster transport line (LTB) 
+
 The Linac-to-Booster transport line (LTB - naming initials TB), transports the 150 MeV electron beam from the end of the Linac (by definition, just after the last accelerating section) to the booster injection point, just after the injection septum. A general view of the LTB transport line is shown in Figure 24. A schematic diagram of the LTB elements with their names is shown in Figure 25. The main parameters are shown in Table 18. 
 
 ![LTB INJECTION LAYOUT](/img/machine/injection_system/ltb_inject_layout.svg)
@@ -500,6 +505,7 @@ The Linac-to-Booster transport line (LTB - naming initials TB), transports the 1
 **Table 18**: Main parameters of the LTB transfer line. 
 
 ### LTB Lattice
+
 The LTB lattice is composed of two chromatic sections separated by an achromatic section. In the first chromatic section just after the Linac the dispersion function is negative, created by two negative deflection dipoles. The first dipole is also a beam energy spectrometer for the Linac. An energy slit is placed in this section at the position where the energy resolution is maximum, i.e., where the relation ηx/βx is maximum. In the achromatic section, the LTB line goes through a shielding wall separating the Linac from the storage ring tunnel. In the last chromatic section the dispersion is positive and the optical functions are matched to the Booster's functions. The beam is injected on-axis into the Booster. 
 
 Since the optical functions at the Linac exit are not precisely known, we have considered 6 different initial condition modes (M1, ... , M6) for the transport line and looked for solutions that are flexible enough to accommodate all modes. The initial Twiss functions for the modes are shown in Table 19, where several different combinations of initial αx and αy are covered. The corresponding optical functions are shown in Table 16. 
@@ -514,6 +520,7 @@ Since the optical functions at the Linac exit are not precisely known, we have c
 
 
 ### LTB Beam Size and Aperture Requirement
+
 The figures below show the horizontal and vertical beam sizes along LTB for the different modes M1 to M6. The beam parameters at the Linac end are: emittance: εx = εy = 170 nm.rad; rms energy spread: δ=0.5%. 
 
 ![LTB BEAMSIZE HOR](/img/machine/injection_system/ltb_beamsize_hor.png)
@@ -548,6 +555,7 @@ The calculated horizontal and vertical BSC for LTB transport line modes are show
 **Figure 29**: Vertical beam stay clear (BSC) for LTB transfer line. The BSC can accommodate the residual orbit distortion and trajectory variations due to pulse to pulse differences in launching conditions (position and angle) described in Table 18. The vacuum chamber inner half-aperture is represented by the solid black curve.
 
 ### LTB Orbit Correction
+
 The LTB orbit correction parameters are shown in Table 19 and the magnet alignment and excitation error tolerances assumed for orbit correction studies in the LTB transport line are shown in Table 20. The trajectory correction statistics are shown in Table 25 and the orbits before and after correction for all modes are shown in Table 26. The correction system uses a beam position measurement station with integrated fluorescent screens and striplines. The injection septum is used as corrector to adjust horizontal position and angle at the booster injection point. 
 
 | Parameter | Value | Unit |
