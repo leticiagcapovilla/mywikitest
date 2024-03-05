@@ -2,7 +2,7 @@
 title: Setup workstations for sirius
 description: 
 published: 1
-date: 2024-03-05T21:02:28.600Z
+date: 2024-03-05T21:04:51.299Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T20:57:59.965Z
@@ -63,7 +63,9 @@ git config --global user.name "Your Name"
 ```
 
 Open the [https://www.github.com github] website and add the ssh key of your computer:
- cat ~/.ssh/id_rsa.pub
+ 
+`cat ~/.ssh/id_rsa.pub`
+ 
 to the list of authorized keys.
 
 ## Create fac_files folder
@@ -85,44 +87,61 @@ mkdir lnls-fac lnls-sirius lnls-ima
 ## Install the scripts repository
 
 The sirius-bashrc file is useful for compiling and using some of the packages below, as it defines environment variables and add binaries to the path. First clone the [https://github.com/lnls-fac/scripts scripts] repository with
- cd /home/fac_files/lnls-fac
- git clone ssh://git@github.com/lnls-fac/scripts
+
+```
+cd /home/fac_files/lnls-fac
+git clone ssh://git@github.com/lnls-fac/scripts
+```
+
 Then install bashrc-sirius and binaries:
- sudo apt-get install -y make
- cd scripts
- sudo make develop
+
+```
+sudo apt-get install -y make
+cd scripts
+sudo make develop
+```
+
 Finally, source bashrc-sirius in your .bashrc file, adding the following lines to it (at the beggining of the file):
- sed -i -e '5i #Sirius bashrc' ~/.bashrc
- sed -i -e '6i SIRIUSBASHRC=/usr/local/etc/bashrc-sirius' ~/.bashrc
- sed -i -e '7i if [ -f "$SIRIUSBASHRC" ] ; then' ~/.bashrc
- sed -i -e '8i \ \ \ \ source "$SIRIUSBASHRC"' ~/.bashrc
- sed -i -e '9i fi\n' ~/.bashrc
+
+```
+sed -i -e '5i #Sirius bashrc' ~/.bashrc
+sed -i -e '6i SIRIUSBASHRC=/usr/local/etc/bashrc-sirius' ~/.bashrc
+sed -i -e '7i if [ -f "$SIRIUSBASHRC" ] ; then' ~/.bashrc
+sed -i -e '8i \ \ \ \ source "$SIRIUSBASHRC"' ~/.bashrc
+sed -i -e '9i fi\n' ~/.bashrc
+```
 
 Load the new bashrc file:
- source ~/.bashrc
 
-=Append useful aliases to /etc/hosts=
+`source ~/.bashrc`
 
- sudo chown fac.fac /etc/hosts && sudo chmod g+wr /etc/hosts
- fac-hosts-update.py
+## Append useful aliases to /etc/hosts
 
-= Install Python3.6 =
+```
+sudo chown fac.fac /etc/hosts && sudo chmod g+wr /etc/hosts
+fac-hosts-update.py
+```
+
+## Install Python3.6
+
 We defined to use python 3.6 as the default version of python to run our applications. Considering that the native version of Ubuntu 16.04 is python3.5, it is necessary to install python3.6 as an alternate version. The link bellow has the instruction for compiling python3.6.
 
- sudo apt-get install build-essential checkinstall libreadline-gplv2-dev libncursesw5-dev \
-                      libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev 
- cd ~/Downloads
- wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz
- tar xzf Python-3.6.1.tgz
- cd Python-3.6.1/
- ./configure --enable-shared --with-ensurepip=install
- make -j32
- make -j32 test
- sudo make altinstall
- sudo ldconfig
- sudo ln -f -s /usr/local/bin/python3.6 /usr/bin/python-sirius
+```
+sudo apt-get install build-essential checkinstall libreadline-gplv2-dev libncursesw5-dev \
+                     libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev 
+cd ~/Downloads
+wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz
+tar xzf Python-3.6.1.tgz
+cd Python-3.6.1/
+./configure --enable-shared --with-ensurepip=install
+make -j32
+make -j32 test
+sudo make altinstall
+sudo ldconfig
+sudo ln -f -s /usr/local/bin/python3.6 /usr/bin/python-sirius
+```
 
-=Install Epics=
+## Install Epics
 
 Clone the sirius repository which makes the installation and install:
 
