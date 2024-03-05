@@ -2,7 +2,7 @@
 title: High Level Applications and Virtual Accelerator
 description: 
 published: 1
-date: 2024-03-05T21:20:29.906Z
+date: 2024-03-05T21:23:57.180Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:16.484Z
@@ -61,7 +61,7 @@ The environment for developing and testing high level applications will be base 
 
 #### Setting up the development and testing environment
 
-This [wiki page][link] describes the installation process of all libraries necessary for the HLA development.
+This [wiki page](/home/Groups/FAC/setup_workstations) describes the installation process of all libraries necessary for the HLA development.
 
 <br />
 
@@ -73,9 +73,9 @@ We have created a [LNLS distribution of CS-Studio](https://github.com/lnls-siriu
 
 ####  Soft IOCs and CASs
 
-Templates are available for creating IOCs (EPICS-provided) and CASs (in [hla](https://github.com/lnls-fac/hla)). Usage instructions are available in the [FAC:Cookbook][link]:
-* [Creating empty IOC from template][link]
-* [Creating empty PCASPy CAS][link]
+Templates are available for creating IOCs (EPICS-provided) and CASs (in [hla](https://github.com/lnls-fac/hla)). Usage instructions are available in the [Cookbook](/home/Groups/FAC/cookbook):
+* [Creating empty IOC from template](/home/Groups/FAC/cookbook#create-empty-ioc-from-template)
+* [Creating empty PCASPy CAS](/home/Groups/FAC/cookbook#create-empty-pcaspy-channel-access-server)
 
 <br />
 
