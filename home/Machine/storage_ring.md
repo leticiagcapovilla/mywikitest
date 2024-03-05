@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T15:00:21.363Z
+date: 2024-03-05T15:02:07.819Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:48.087Z
@@ -517,6 +517,7 @@ In this section the operation phases for Sirius from commissioning to maximum cu
 
 
 ## Intra-beam Scattering (IBS)
+
 Given the scenarios presented in the previous section it is important to calculate the effect of intra-beam scattering (IBS) on the beam, since it can spoil the emittance and the storage ring performance. Another similar effect that cause beam blow-up is the microwave instability, which acts mostly in the longitudinal plane, causing an additional dilution of the density in the longitudinal phase space. Both effects can be harmful especially when operating in a hybrid fill mode, where a high current single-bunch is filled in the center of a small gap of empty buckets (about 5 to 10% of the total circumference), for time resolved experiments. To estimate the final parameters of the single bunch distribution, such as the emittance and energy spread, we iterated the calculation of IBS growth times using CIMP (Completely Integrated Modified Piwinski) and Bane formalisms. Some results are shown in Table 14. For the single bunch case in Phase 2, the IBS calculations are extended for single bunch currents up to 3 mA for Phase 2 are in Figure 27 to Figure 30. 
 
 | Parameter | Phase 0 <br />(commissioning)| Phase 1 <br />(initial user mode)| Phase 2 <br />(final user mode)| Phase 2 <br />(high current)| Phase 2<br />(single bunch) |  |
@@ -547,6 +548,7 @@ Given the scenarios presented in the previous section it is important to calcula
 **Figure 30**: IBS effect (CIMP and Bane formalisms) on bunch length as a function of current per bunch. Calculation for Phase 1 (no 3HC) and Phase 2 (with 3HC).
 
 ## Lifetime
+
 The beam lifetime is also a key performance parameter for a light source. Various processes can lead to the loss of electrons from the beam; the most important ones are the collisions with residual gas molecules (gas scattering lifetime) and between two electrons with large momentum transfer (Touschek lifetime). Given the very low emittance of the machine, care has been taken to include IBS effects (using Bane model) in the calculations. For the elastic and inelastic lifetimes, a simulated pressure profile assuming accumulated charge of 10000Ah was used. Concerning Touschek lifetime, it is import to note that the natural emittance of Sirius is already in the regime where there is an exponential increase in Touschek lifetime towards lower emittances, as can be seen in Figure 32. From the plot it is clear that the inclusion of IDs in the machine, further reducing the emittance, is beneficial for the lifetime. In this regime the lifetime also shows a strong dependence on the energy acceptance. It is thus very important to optimize the lattice to have the largest possible energy acceptance. Table 15 shows results from lifetime calculations for uniform fill for different scenarios. For all cases the total lifetime is between 8 and 11 h. For Sirius there are users also interested in time-resolved experiments and thus an estimate for single bunch lifetime is needed. Calculations of lifetime for a single bunch were performed using parameters from Phase 1 and 2 and are included in Table 15 and show in Figure 31. 
 
 | Parameter | Phase 0 <br />(commissioning)| Phase 1 <br />(initial user mode)| Phase 2 <br />(final user mode)| Phase 2 <br />(high current)| Phase 2 <br />(single bunch)|  |
@@ -572,7 +574,8 @@ The beam lifetime is also a key performance parameter for a light source. Variou
 ## Impedance budget and instabilities 
 
 ### Impedance budget
-The beam-environment interaction can be described by the impedance concept, where each structure is modelled by a frequency dependent complex function. The Sirius impedance budget may be divided into two types: the resistive wall and the geometric impedances. The first kind was estimated using analytical formulas and the second with 2 and 3D numerical codes. See Impedance Budget for more details regarding the modelling of each component. Figure 35, Figure 33 and Figure 34 shows the impedance budget used so far for instability thresholds calculation for phase 2 and Table 16 shows the summary of its effect on the beam. 
+
+The beam-environment interaction can be described by the impedance concept, where each structure is modelled by a frequency dependent complex function. The Sirius impedance budget may be divided into two types: the resistive wall and the geometric impedances. The first kind was estimated using analytical formulas and the second with 2 and 3D numerical codes. See [Impedance Budget](/home/Machine/impedance_budget) for more details regarding the modelling of each component. Figure 35, Figure 33 and Figure 34 shows the impedance budget used so far for instability thresholds calculation for phase 2 and Table 16 shows the summary of its effect on the beam. 
 
 
 | Element | $K_{loss}$  <br />[mV/pC] | P  <br />[mW] | Quantity | Total $K_{loss}$  <br />[mV/pC] | Total P  <br />[W] | $\beta _x K_x$  <br />[kV/pC] | $\beta _y K_y$  <br />[kV/pC] |
