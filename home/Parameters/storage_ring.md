@@ -2,7 +2,7 @@
 title: Storage Ring
 description: 
 published: 1
-date: 2024-03-05T14:28:26.817Z
+date: 2024-03-07T00:00:32.514Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T14:05:27.623Z
@@ -10,9 +10,9 @@ dateCreated: 2024-03-05T14:05:27.623Z
 
 # Machine: Storage ring parameters
 
-## 1 Tables
+## Tables
 
-### 1.1 Electron beam
+### Electron beam
 
 | Parameter | Value | Unit |
 | --- | --- | ---|
@@ -23,7 +23,7 @@ dateCreated: 2024-03-05T14:05:27.623Z
 |  Magnetic rigidity  |  10.0069  |  TÂ·m  |
 |  Nominal current  |  350.0  | mA |
 
-### 1.2 Main parameters
+### Main parameters
 
 #### Beam
 
