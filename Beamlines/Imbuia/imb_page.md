@@ -2,10 +2,10 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-02-27T21:26:16.119Z
+date: 2024-03-08T18:46:51.890Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-27T21:18:35.165Z
+dateCreated: 2024-03-04T20:05:53.880Z
 ---
 
 # The IMBUIA beamline project
@@ -17,7 +17,7 @@ dateCreated: 2024-02-27T21:18:35.165Z
 
 ## Introduction
 
-IMBUIA, an acronym for Infrared Micro- and nano-spectroscopy Beamline for Ultra-resolved Imaging Applications, is the first infrared (IR) beamline to operate in the new brazilian accelerator Sirius. This beamline will serve the worldwide community on multiscale chemical and optical analysis of multidisciplinary materials. For that, this beamline comprises two experimental stations: the IMBUIA-micro, dedicated to chemical mapping of microscale materials and the IMBUIA-nano, that will approach optical and vibrational analysis of materials at the nanoscale. Designed to continuously cover the mid-IR range with synchrotron radiation (SR) combined to narrowband lasers, this beamline is ready to approach urgent open questions in a variety of modern themes, including drug delivery to biosystems, energy harvesting materials, optics and chemistry of quantum materials, biomedicine, *in-situ* chemical monitoring of electrochemical reactions, in-liquid biochemical analysis and many others.  
+IMBUIA, an acronym for Infrared Micro- and nano-spectroscopy Beamline for Ultra-resolved Imaging Applications, is the first infrared (IR) beamline to operate in the new brazilian accelerator Sirius. This beamline will serve the worldwide community on multiscale chemical and optical analysis of multidisciplinary materials. For that, this beamline comprises two experimental stations: the IMBUIA-micro, dedicated to chemical mapping of microscale materials and the IMBUIA-nano, that will approach optical and vibrational analysis of materials at the nanoscale. Designed to continuously cover the mid-IR range with synchrotron radiation (SR) combined to narrowband lasers, this beamline is ready to approach urgent open questions in a variety of modern themes, including drug delivery to biosystems, energy harvesting materials, optics and chemistry of quantum materials, biomedicine, *in-situ* chemical monitoring of electrochemical reactions, in-liquid biochemical analysis and many others. Commit test...  
 
 ## Radiation extraction and source details
 
