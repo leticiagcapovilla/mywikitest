@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-08T22:53:59.261Z
+date: 2024-03-11T16:40:33.278Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -12,18 +12,18 @@ dateCreated: 2024-03-04T20:05:53.880Z
 
 ## Introduction
 
-|     |     |
+IMBUIA, an acronym for Infrared Micro- and nano-spectroscopy Beamline for Ultra-resolved Imaging Applications, is the first infrared (IR) beamline to operate in the new brazilian accelerator Sirius. This beamline will serve the worldwide community on multiscale chemical and optical analysis of multidisciplinary materials. For that, this beamline comprises two experimental stations: the IMBUIA-micro, dedicated to chemical mapping of microscale materials and the IMBUIA-nano, that will approach optical and vibrational analysis of materials at the nanoscale. Designed to continuously cover the mid-IR range with synchrotron radiation (SR) combined to narrowband lasers, this beamline is ready to approach urgent open questions in a variety of modern themes, including drug delivery to biosystems, energy harvesting materials, optics and chemistry of quantum materials, biomedicine, *in-situ* chemical monitoring of electrochemical reactions, in-liquid biochemical analysis and many others.
+
+| ![](/img/sirius1.jpg) |     |
 | --- | --- |
-| Energies, wavenumbers, wavelengths  <br>and frequencies. | 62 meV to 1.9 eV  <br>500 cm^\-1^ to 15384 cm^\-1^   <br>40 µm to 650 nm  <br>15 THz to 461 THz |
-| Beam power at end stations | IR+VIS = 550 µW  <br>mid-IR (900-2000cm-1) = 14 µW |
+| Energies, wavenumbers, wavelengths   <br>and frequencies. | 62 meV to 1.9 eV   <br>500 cm^\-1^ to 15384 cm^\-1^    <br>40 µm to 650 nm   <br>15 THz to 461 THz |
+| Beam power at end stations | IR+VIS = 550 µW   <br>mid-IR (900-2000cm-1) = 14 µW |
 | Flux at end stations | ∼10^11^ ph/s/0.1%bw @ 10 µm |
 | Brilliance at end stations | ∼10^14^ ph/s/0.1%bw/mm^2^ @ 10 µm |
 | Location | Sirius experiment floor, axis 43 |
 | Coordinator | Raul Freitas |
-| website | https://lnls.cnpem.br/facilities/imbuia-en/ |
-| Contacts | Coordination: 5060  <br>Specialist: 5047  <br>IMB-nano station: 5020  <br>IMB-micro station: 5030 |
-
-IMBUIA, an acronym for Infrared Micro- and nano-spectroscopy Beamline for Ultra-resolved Imaging Applications, is the first infrared (IR) beamline to operate in the new brazilian accelerator Sirius. This beamline will serve the worldwide community on multiscale chemical and optical analysis of multidisciplinary materials. For that, this beamline comprises two experimental stations: the IMBUIA-micro, dedicated to chemical mapping of microscale materials and the IMBUIA-nano, that will approach optical and vibrational analysis of materials at the nanoscale. Designed to continuously cover the mid-IR range with synchrotron radiation (SR) combined to narrowband lasers, this beamline is ready to approach urgent open questions in a variety of modern themes, including drug delivery to biosystems, energy harvesting materials, optics and chemistry of quantum materials, biomedicine, *in-situ* chemical monitoring of electrochemical reactions, in-liquid biochemical analysis and many others.
+| website | [https://lnls.cnpem.br/facilities/imbuia-en/](https://lnls.cnpem.br/facilities/imbuia-en/) |
+| Contacts | Coordination: 5060   <br>Specialist: 5047   <br>IMB-nano station: 5020   <br>IMB-micro station: 5030 |
 
 ## Radiation extraction and source details
 
