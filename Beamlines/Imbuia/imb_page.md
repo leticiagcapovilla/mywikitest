@@ -2,19 +2,17 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-13T16:28:21.144Z
+date: 2024-03-13T16:30:38.202Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
 ---
 
-# The IMBUIA beamline project
-
-## Introduction
+# Introduction
 
 IMBUIA, an acronym for Infrared Micro- and nano-spectroscopy Beamline for Ultra-resolved Imaging Applications, is the first infrared (IR) beamline to operate in the new brazilian accelerator Sirius. This beamline will serve the worldwide community on multiscale chemical and optical analysis of multidisciplinary materials. For that, this beamline comprises two experimental stations: the IMBUIA-micro, dedicated to chemical mapping of microscale materials and the IMBUIA-nano, that will approach optical and vibrational analysis of materials at the nanoscale. Designed to continuously cover the mid-IR range with synchrotron radiation (SR) combined to narrowband lasers, this beamline is ready to approach urgent open questions in a variety of modern themes, including drug delivery to biosystems, energy harvesting materials, optics and chemistry of quantum materials, biomedicine, *in-situ* chemical monitoring of electrochemical reactions, in-liquid biochemical analysis and many others.
 
-## Radiation extraction and source details
+# Radiation extraction and source details
 
 The 5-bend-achromat (5BA) cell of Sirius is comprised of 4 low-field (0.56 T) magnets, named B1 and B2, one super-bend (BC, peak field 3.2 T) and one straight section, as illustrated in Fig. 1a. The IMBUIA beamline source is located in the Sector 7 of the storage ring, inside the first B2 dipole downstream the straight section. The source is defined by an extraction port (originally designed for visible photons diagnostics) centered at 3.01 ==deg== from the electrons orbit (Fig. 1b) and longitudinally located at 295 mm upstream the dipole center. A radiation mask of 7.07 ×\\times× 6.00 mm^2^ located in the pumping station of the B2 dipole (1137 mm from the source) defines a radiation extraction of 5.57 ×\\times× 5.27 mrad^2^ (Fig. 1c).
 
@@ -98,7 +96,7 @@ Table 4 shows the specifications optical-vacuum windows of the beamline
 
 **Table 4**: Summary of specifications for the optical/vacuum windows of the IMBUIA primary optics. L = longitudinal distance from the source origin.
 
-## Vacuum layout
+# Vacuum layout
 
 The vacuum concept have two main objectives: *i)* to be compatible to the requirements of the storage ring since the first optical element almost inside the B2 pumping station and *ii)* to offer a humidity-free path for the IR radiation. Despite UHV is not required, the use of ion pumps is mandatory as it avoids extra mechanical noise in the station. The sketch in Figure 9 presents the main idea for the vacuum components for this beamline.
 
@@ -138,15 +136,15 @@ Table 5 lists all the vacuum components of the IMBUIA beamline followed by their
 
 **Table 5**: Summary of specifications for the optical/vacuum windows of the IMBUIA primary optics. L = longitudinal distance from the source origin.
 
-## Radiation protection
+# Radiation protection
 
 ![imbuia-rad.png](/img/beamlines/imbuia/imbuia-rad.png)
 
 **Figure 11**: IMBUIA vacuum layout. Up to the first window (W1), the vacuum of the beamline is shared with the storage ring and is connected to the pre-frontend of the Caterê beamline. After the shielding wall, the vacuum path is extended to the two experimental station of the beamline (IMBUIA-nano and IMBUIA-micro stations).
 
-## Experimental stations
+# Experimental stations
 
-### IMBUIA-nano
+## IMBUIA-nano
 
 Brief explanation of the s-SNOM technique and its combination with SR.
 
@@ -193,92 +191,92 @@ Lasers: cables/connectors/switches
   
  
 
-### IMBUIA-micro
+## IMBUIA-micro
 
 ![commissioning.png](/img/beamlines/imbuia/commissioning.png)
 
 The IMBUIA-micro station is still under technical commissioning. This section will be added as soon as it starts operation with synchrotron radiation.
 
-## Beam and experiment diagnostics
+# Beam and experiment diagnostics
 
-### M1 camera and temperature readings
+## M1 camera and temperature readings
 
-### Secondary source
+## Secondary source
 
-### Collimation
+## Collimation
 
-### Synchrotron power, near-field signal levels and spectral response
+## Synchrotron power, near-field signal levels and spectral response
 
-### DFG laser power, near-field signal levels and spectral response
+## DFG laser power, near-field signal levels and spectral response
 
-### QCL laser: standard PsHet imaging
+## QCL laser: standard PsHet imaging
 
-## Control interfaces
+# Control interfaces
 
-### Hvac
+## Hvac
 
-### Vacuum sensors and power supplies
+## Vacuum sensors and power supplies
 
-### Shutter operation
+## Shutter operation
 
-### Primary optics mirrors
+## Primary optics mirrors
 
-### Compressed air and nitrogen flow control
+## Compressed air and nitrogen flow control
 
-### Beamline cameras
+## Beamline cameras
 
-### Remote access: beamline IHM
+## Remote access: beamline IHM
 
-### IMBUIA archiver
+## IMBUIA archiver
 
-### Remote access: Neasnom client
+## Remote access: Neasnom client
 
-## Data storage and processing
+# Data storage and processing
 
-### Accessing and saving data in the Ibira storage
+## Accessing and saving data in the Ibira storage
 
-### Browsing data in the Neasnom server
+## Browsing data in the Neasnom server
 
-### Visualization and post-processing data with Orange
+## Visualization and post-processing data with Orange
 
-### Visualization and post-processing data NeaPlot
+## Visualization and post-processing data NeaPlot
 
-## Safety guidelines
+# Safety guidelines
 
-### Liquid nitrogen handling
+## Liquid nitrogen handling
 
-### Laser beams risks
+## Laser beams risks
 
-### Monitoring the oxygen level in the hutch
+## Monitoring the oxygen level in the hutch
 
-### In case of emergency
+## In case of emergency
 
-### Allowed chemicals in the hutch
+## Allowed chemicals in the hutch
 
-## Recommended lab practices and procedures
+# Recommended lab practices and procedures
 
-### Semi-clean room dress code
+## Semi-clean room dress code
 
-### Watch out for sensitive optical components
+## Watch out for sensitive optical components
 
-### Samples handling
+## Samples handling
 
-### AFM tips replacement
+## AFM tips replacement
 
-### Mind the acoustic noise level in the hutch
+## Mind the acoustic noise level in the hutch
 
-### Do not speak over the samples or optical elements
+## Do not speak over the samples or optical elements
 
-### Keep it clean and neat
+## Keep it clean and neat
 
-## Troubleshooting
+# Troubleshooting
 
-### What to do in case of power failure?
+## What to do in case of power failure?
 
-### How to re-open the photon shutter?
+## How to re-open the photon shutter?
 
-### How to reset the oxygen sensor alarm?
+## How to reset the oxygen sensor alarm?
 
-### My spectrum is weak or null, what do I do?
+## My spectrum is weak or null, what do I do?
 
 > Written with [StackEdit](https://stackedit.io/).
