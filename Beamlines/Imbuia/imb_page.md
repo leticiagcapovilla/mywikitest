@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-13T16:43:05.094Z
+date: 2024-03-13T16:49:10.747Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -20,7 +20,7 @@ The 5-bend-achromat (5BA) cell of Sirius is comprised of 4 low-field (0.56 T) ma
 
 Simulations of IR intensity at the radiation mask are presented in Fig. 2. The maps were calculated using the code Synchrotron Radiation Workshop ([SRW](http://www.esrf.eu/Accelerators/Groups/InsertionDevices/Software/SRW)) for an observation window located at the radiation mask of the pumping station of the B2 dipole and for 350 mA stored current. The intensity maps show that the horizontal polarization is dominant as the wavelengths get longer. For instance, for 1 µm wavelength, the 6 mm vertical aperture of the mask allows a fair portion of vertically polarized radiation to be collected, while, for a wavelength of 20 µm, very little of this radiation can exit the port.
 
-![extraction](/img/beamlines/imbuia/fig_1_wiki.pdf =500x)
+![extraction](/img/beamlines/imbuia/fig_1_wiki.pdf)
 
 **Figure 2**: SRW simulation of the flux at the radiation mask of the B2 pumping station for several wavelengths. Intensity maps simulated for a stored current of 350 mA.
 
@@ -172,12 +172,9 @@ Power outlets
 No-break system  
 Controllers cabling and connections  
 Neasnom server: cables/connectors/switches  
-Lasers: cables/connectors/switches  
-  
-  
- 
+Lasers: cables/connectors/switches
 
-| ![](/img/beamlines/imbuia/imbuia_overview.png)<br><br>IMBUIA overview |     |
+| ![](/img/beamlines/imbuia/imbuia_overview.png)  <br>  <br>IMBUIA overview |     |
 | --- | --- |
 | Energy coverage | 62 meV to 1.9 eV   <br>500 cm^\-1^ to 15384 cm^\-1^    <br>40 µm to 650 nm   <br>15 THz to 461 THz |
 | Power at end stations | IR+VIS = 550 µW   <br>mid-IR (900-2000cm-1) = 14 µW |
@@ -187,9 +184,6 @@ Lasers: cables/connectors/switches
 | Coordinator | Raul Freitas - [raul.freitas@lnls.br](raul.freitas@lnls.br) |
 | website | [https://lnls.cnpem.br/facilities/imbuia-en/](https://lnls.cnpem.br/facilities/imbuia-en/) |
 | Contacts | Coordination: 5060   <br>Specialist: 5047   <br>IMB-nano station: 5020   <br>IMB-micro station: 5030 |
-
-  
- 
 
 ## IMBUIA-micro
 
