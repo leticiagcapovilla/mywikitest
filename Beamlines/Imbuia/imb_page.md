@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-13T16:39:39.372Z
+date: 2024-03-13T16:43:05.094Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -20,7 +20,7 @@ The 5-bend-achromat (5BA) cell of Sirius is comprised of 4 low-field (0.56 T) ma
 
 Simulations of IR intensity at the radiation mask are presented in Fig. 2. The maps were calculated using the code Synchrotron Radiation Workshop ([SRW](http://www.esrf.eu/Accelerators/Groups/InsertionDevices/Software/SRW)) for an observation window located at the radiation mask of the pumping station of the B2 dipole and for 350 mA stored current. The intensity maps show that the horizontal polarization is dominant as the wavelengths get longer. For instance, for 1 µm wavelength, the 6 mm vertical aperture of the mask allows a fair portion of vertically polarized radiation to be collected, while, for a wavelength of 20 µm, very little of this radiation can exit the port.
 
-![extraction](/img/beamlines/imbuia/fig_1_wiki.pdf){width=500px}
+![extraction](/img/beamlines/imbuia/fig_1_wiki.pdf =500x)
 
 **Figure 2**: SRW simulation of the flux at the radiation mask of the B2 pumping station for several wavelengths. Intensity maps simulated for a stored current of 350 mA.
 
