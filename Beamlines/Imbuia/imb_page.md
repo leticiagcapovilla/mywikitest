@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-11T16:40:33.278Z
+date: 2024-03-13T16:28:21.144Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -14,28 +14,15 @@ dateCreated: 2024-03-04T20:05:53.880Z
 
 IMBUIA, an acronym for Infrared Micro- and nano-spectroscopy Beamline for Ultra-resolved Imaging Applications, is the first infrared (IR) beamline to operate in the new brazilian accelerator Sirius. This beamline will serve the worldwide community on multiscale chemical and optical analysis of multidisciplinary materials. For that, this beamline comprises two experimental stations: the IMBUIA-micro, dedicated to chemical mapping of microscale materials and the IMBUIA-nano, that will approach optical and vibrational analysis of materials at the nanoscale. Designed to continuously cover the mid-IR range with synchrotron radiation (SR) combined to narrowband lasers, this beamline is ready to approach urgent open questions in a variety of modern themes, including drug delivery to biosystems, energy harvesting materials, optics and chemistry of quantum materials, biomedicine, *in-situ* chemical monitoring of electrochemical reactions, in-liquid biochemical analysis and many others.
 
-| ![](/img/sirius1.jpg) |     |
-| --- | --- |
-| Energies, wavenumbers, wavelengths   <br>and frequencies. | 62 meV to 1.9 eV   <br>500 cm^\-1^ to 15384 cm^\-1^    <br>40 µm to 650 nm   <br>15 THz to 461 THz |
-| Beam power at end stations | IR+VIS = 550 µW   <br>mid-IR (900-2000cm-1) = 14 µW |
-| Flux at end stations | ∼10^11^ ph/s/0.1%bw @ 10 µm |
-| Brilliance at end stations | ∼10^14^ ph/s/0.1%bw/mm^2^ @ 10 µm |
-| Location | Sirius experiment floor, axis 43 |
-| Coordinator | Raul Freitas |
-| website | [https://lnls.cnpem.br/facilities/imbuia-en/](https://lnls.cnpem.br/facilities/imbuia-en/) |
-| Contacts | Coordination: 5060   <br>Specialist: 5047   <br>IMB-nano station: 5020   <br>IMB-micro station: 5030 |
-
 ## Radiation extraction and source details
 
 The 5-bend-achromat (5BA) cell of Sirius is comprised of 4 low-field (0.56 T) magnets, named B1 and B2, one super-bend (BC, peak field 3.2 T) and one straight section, as illustrated in Fig. 1a. The IMBUIA beamline source is located in the Sector 7 of the storage ring, inside the first B2 dipole downstream the straight section. The source is defined by an extraction port (originally designed for visible photons diagnostics) centered at 3.01 ==deg== from the electrons orbit (Fig. 1b) and longitudinally located at 295 mm upstream the dipole center. A radiation mask of 7.07 ×\\times× 6.00 mm^2^ located in the pumping station of the B2 dipole (1137 mm from the source) defines a radiation extraction of 5.57 ×\\times× 5.27 mrad^2^ (Fig. 1c).
-
-![extraction.png](/img/beamlines/imbuia/extraction.png)
 
 **Figure 1**: IR extraction port. a) Magnetic lattice of the sector 7 of the accelerator with indication of the bending magnet source (B2, 0.57 T). b) Top-view section of the B2 dipole chamber highlighting the electrons orbit, SR extraction port and source origin. c) Pumping station after the dipole with radiation mask of 5.57 ×\\times× 5.27 mrad^2^ for SR extraction.
 
 Simulations of IR intensity at the radiation mask are presented in Fig. 2. The maps were calculated using the code Synchrotron Radiation Workshop ([SRW](http://www.esrf.eu/Accelerators/Groups/InsertionDevices/Software/SRW)) for an observation window located at the radiation mask of the pumping station of the B2 dipole and for 350 mA stored current. The intensity maps show that the horizontal polarization is dominant as the wavelengths get longer. For instance, for 1 µm wavelength, the 6 mm vertical aperture of the mask allows a fair portion of vertically polarized radiation to be collected, while, for a wavelength of 20 µm, very little of this radiation can exit the port.
 
-![flux-at-mask.png](/img/beamlines/imbuia/flux-at-mask.png)
+![extraction.png](/img/beamlines/imbuia/extraction.png)
 
 **Figure 2**: SRW simulation of the flux at the radiation mask of the B2 pumping station for several wavelengths. Intensity maps simulated for a stored current of 350 mA.
 
@@ -187,7 +174,24 @@ Power outlets
 No-break system  
 Controllers cabling and connections  
 Neasnom server: cables/connectors/switches  
-Lasers: cables/connectors/switches
+Lasers: cables/connectors/switches  
+  
+  
+ 
+
+| ![](/img/beamlines/imbuia/imbuia_overview.png)<br><br>IMBUIA overview |     |
+| --- | --- |
+| Energy coverage | 62 meV to 1.9 eV   <br>500 cm^\-1^ to 15384 cm^\-1^    <br>40 µm to 650 nm   <br>15 THz to 461 THz |
+| Power at end stations | IR+VIS = 550 µW   <br>mid-IR (900-2000cm-1) = 14 µW |
+| Flux at end stations | ∼10^11^ ph/s/0.1%bw @ 10 µm |
+| Brilliance at end stations | ∼10^14^ ph/s/0.1%bw/mm^2^ @ 10 µm |
+| Location | Sirius experiment floor, axis 43 |
+| Coordinator | Raul Freitas - [raul.freitas@lnls.br](raul.freitas@lnls.br) |
+| website | [https://lnls.cnpem.br/facilities/imbuia-en/](https://lnls.cnpem.br/facilities/imbuia-en/) |
+| Contacts | Coordination: 5060   <br>Specialist: 5047   <br>IMB-nano station: 5020   <br>IMB-micro station: 5030 |
+
+  
+ 
 
 ### IMBUIA-micro
 
