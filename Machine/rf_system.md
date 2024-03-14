@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T17:35:24.731Z
+date: 2024-03-14T17:40:46.334Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -186,13 +186,10 @@ Table 2  shows some RF parameters calculated for each phase of operation using c
 
 Until now we only have some estimates about the energy loss per turn from IDs. The Figure 4 and Figure 5 show the reflected power within a range of energy loss from IDs in the oparation pahse 1 and phase 2.
 
-![](/img/machine/rf_system/CESR_RF_forward_power.png =400x)
+|![](/img/machine/rf_system/CESR_RF_forward_power.png =400x)|![](/img/machine/rf_system/CESR_RF_reflected_power.png =400x)|
+|---|---|
+|**Figure 2**: RF forward power as a function of the storage beam current and external cavity Q.|**Figure 3**: RF reflected power as a function of the storage beam current and external cavity Q.|
 
-**Figure 2**: RF forward power as a function of the storage beam current and external cavity Q.
-
-![](/img/machine/rf_system/CESR_RF_reflected_power.png =400x)
-
-**Figure 3**: RF reflected power as a function of the storage beam current and external cavity Q.
 
 |Parameter|Phase 0 <br />(commissioning)|Phase 1 <br />(initial user mode)| Phase 2 <br />(final user mode)|Phase 2 <br />(high current)|
  --- | --- | --- | --- | --- |
