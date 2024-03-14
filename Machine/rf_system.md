@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T16:40:47.483Z
+date: 2024-03-14T16:44:08.237Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -499,7 +499,7 @@ In this section we studied the dependence of some parameters with the total volt
 
 **Figure 12**: Lifetime ratio versus total RF voltage with 3HC.
 
-![](/img/machine/rf_system/SI_power_loss_NSLS_2_HC.svg =400x)
+![](/img/machine/rf_system/SI_power_loss_NSLS_2_HC.svg "teste de texto" =400x)
 
 **Figure 13**: Power loss by the beam (@Ib=500 mA) in the NSLS-2 harmonic cavity.
 
