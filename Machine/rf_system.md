@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T17:47:49.606Z
+date: 2024-03-14T17:48:35.933Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -499,7 +499,7 @@ Using the NSLS-2 3HC in Sirius we have an improvement in the ratio of lifetime b
 
 In this section we studied the dependence of some parameters with the total voltage in the main RF system: The Figure 11 shows the dependence of RF acceptance, Figure 12 the ratio of lifetime and Fig 5 shows the power loss by the beam in the harmonic cavity.
 
-|![](/img/machine/rf_system/SI_energy_acceptance_HC.svg =400x)|![](/img/machine/rf_system/SI_lifetime_ratio_HC.svg =400x)|![](/img/machine/rf_system/SI_power_loss_NSLS_2_HC.svg "teste de texto" =400x)|
+|![](/img/machine/rf_system/SI_energy_acceptance_HC.svg =400x)|![](/img/machine/rf_system/SI_lifetime_ratio_HC.svg =500x)|![](/img/machine/rf_system/SI_power_loss_NSLS_2_HC.svg "teste de texto" =300x)|
 |---|---|---|
 |**Figure 11**: RF acceptance versus total RF voltage with and without 3HC.|**Figure 12**: Lifetime ratio versus total RF voltage with 3HC.|**Figure 13**: Power loss by the beam (@Ib=500 mA) in the NSLS-2 harmonic cavity.|
 
