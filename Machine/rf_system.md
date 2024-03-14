@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T16:28:49.521Z
+date: 2024-03-14T16:30:44.061Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -156,7 +156,7 @@ As already mentioned the beam lifetime with only three NC cavities and without b
 
 ### Superconducting cavity
 
-Currently, we are going to use in the storage ring, since the conditioning phase, two SC cavities CESR type (Figure 1). The Table 2 lists some of the main parameters of this cavity. In CESR cavity the coupling between the waveguide and the cavity is done through a hole located in Round Beam Tube (RBT). The geometry and dimensions of this hole are determined from the specification of the external Q of the cavity ($Q_{ext}$). To determine the ideal $Q_{ext}$, in which the RF power reflected is minimal, we have to know some ring operating parameters such as the stored current, energy lost per turn by electrons and some parameters of the harmonic cavity[¹] 
+Currently, we are going to use in the storage ring, since the conditioning phase, two SC cavities CESR type (Figure 1). The Table 2 lists some of the main parameters of this cavity. In CESR cavity the coupling between the waveguide and the cavity is done through a hole located in Round Beam Tube (RBT). The geometry and dimensions of this hole are determined from the specification of the external Q of the cavity ($Q_{ext}$). To determine the ideal $Q_{ext}$, in which the RF power reflected is minimal, we have to know some ring operating parameters such as the stored current, energy lost per turn by electrons and some parameters of the harmonic cavity[^1] 
 
 ![](/img/machine/rf_system/CESR_cavity_SRF_module.png)
 
@@ -464,7 +464,7 @@ Using these equation above is possible calculate the longitudinal density distri
 
 ### Touschek lifetime
 
-To calculate the improvement in Touschek lifetime, consider the expression for the Touschek loss rate[²].
+To calculate the improvement in Touschek lifetime, consider the expression for the Touschek loss rate[^2].
 
 $$
 \dot{N} = \overline{\upsilon \sigma} \int_{V}^{} \rho^2 \, dV
@@ -513,6 +513,6 @@ The control system for the harmonic cavity is basically a tune control loop. Sin
 
 ## References
 
-[¹]: We are assuming to use the harmonic cavity type NSLS-II which the main parameters are represents at [link]
+[^1]: We are assuming to use the harmonic cavity type NSLS-II which the main parameters are represents at [link]
 
-[²]: Byrd, J. M. and Georgsson, M., Phys. Rev. ST Accel. Beams 4, 030701 (2001).
+[^2]: Byrd, J. M. and Georgsson, M., Phys. Rev. ST Accel. Beams 4, 030701 (2001).
