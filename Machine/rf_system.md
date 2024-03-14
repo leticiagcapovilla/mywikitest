@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T16:55:02.999Z
+date: 2024-03-14T17:34:00.157Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -157,6 +157,8 @@ As already mentioned the beam lifetime with only three NC cavities and without b
 ### Superconducting cavity
 
 Currently, we are going to use in the storage ring, since the conditioning phase, two SC cavities CESR type (Figure 1). The Table 2 lists some of the main parameters of this cavity. In CESR cavity the coupling between the waveguide and the cavity is done through a hole located in Round Beam Tube (RBT). The geometry and dimensions of this hole are determined from the specification of the external Q of the cavity ($Q_{ext}$). To determine the ideal $Q_{ext}$, in which the RF power reflected is minimal, we have to know some ring operating parameters such as the stored current, energy lost per turn by electrons and some parameters of the harmonic cavity[^1] 
+
+[^1]: We are assuming to use the harmonic cavity type NSLS-II which the main parameters are represents at [link]
 
 ![](/img/machine/rf_system/CESR_cavity_SRF_module.png)
 
@@ -462,6 +464,8 @@ Using these equation above is possible calculate the longitudinal density distri
 
 To calculate the improvement in Touschek lifetime, consider the expression for the Touschek loss rate[^2].
 
+[^2]: Byrd, J. M. and Georgsson, M., Phys. Rev. ST Accel. Beams 4, 030701 (2001).
+
 $$
 \dot{N} = \overline{\upsilon \sigma} \int_{V}^{} \rho^2 \, dV
 $$
@@ -486,7 +490,6 @@ Using the NSLS-2 3HC in Sirius we have an improvement in the ratio of lifetime b
 
 In this section we studied the dependence of some parameters with the total voltage in the main RF system: The Figure 11 shows the dependence of RF acceptance, Figure 12 the ratio of lifetime and Fig 5 shows the power loss by the beam in the harmonic cavity.
 
-
 ![](/img/machine/rf_system/SI_energy_acceptance_HC.svg =400x)
 
 **Figure 11**: RF acceptance versus total RF voltage with and without 3HC.
@@ -508,7 +511,3 @@ The control system for the harmonic cavity is basically a tune control loop. Sin
 <br />
 
 ## References
-
-[^1]: We are assuming to use the harmonic cavity type NSLS-II which the main parameters are represents at [link]
-
-[^2]: Byrd, J. M. and Georgsson, M., Phys. Rev. ST Accel. Beams 4, 030701 (2001).
