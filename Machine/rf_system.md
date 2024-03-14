@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T16:30:44.061Z
+date: 2024-03-14T16:35:51.585Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -158,7 +158,7 @@ As already mentioned the beam lifetime with only three NC cavities and without b
 
 Currently, we are going to use in the storage ring, since the conditioning phase, two SC cavities CESR type (Figure 1). The Table 2 lists some of the main parameters of this cavity. In CESR cavity the coupling between the waveguide and the cavity is done through a hole located in Round Beam Tube (RBT). The geometry and dimensions of this hole are determined from the specification of the external Q of the cavity ($Q_{ext}$). To determine the ideal $Q_{ext}$, in which the RF power reflected is minimal, we have to know some ring operating parameters such as the stored current, energy lost per turn by electrons and some parameters of the harmonic cavity[^1] 
 
-![](/img/machine/rf_system/CESR_cavity_SRF_module.png)
+![CESR_cavity_SRF_module teste](/img/machine/rf_system/CESR_cavity_SRF_module.png)
 
 **Figure 1**: Cut view of the CESR cavity SRF module.
 
