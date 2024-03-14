@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T17:40:46.334Z
+date: 2024-03-14T17:43:52.303Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -54,6 +54,7 @@ The design parameters for the RF system consider a maximum beam current of 500 m
 |Momentum compaction factor | 1.6×10-4 |  |
 |Natural bunch length | 8.2 | ps |
 |RF energy acceptance | 5.13 |  %  |
+{.dense}
 
 **Table 1**: Main SI RF System Parameters
 
@@ -67,6 +68,7 @@ The specifications of the RF system are dictated by the beam stability requireme
 | --- | --- |
 |Phase Jitter | 0.1° |
 |Momentum Jitter (Δp/p) | 5×10⁻⁵ |
+{.dense}
 
 For the other beamlines and techniques, such as timing experiments, the tolerances can be more relaxed. In addition, the installation of harmonic cavities to stretch the electron bunches will slack the tolerances even more. For the natural bunch length, which is about 9 ps, the tolerances are still tight but with the harmonic cavities they will not be determined by timing experiments anymore:
 
@@ -74,6 +76,7 @@ For the other beamlines and techniques, such as timing experiments, the toleranc
 | --- | --- |
 |Phase Jitter | 0.5° |
 |Momentum Jitter (Δp/p) | 2×10⁻⁴ |
+{.dense}
 
 <br />
 
@@ -90,6 +93,7 @@ In addition to stability considerations there are other aspects that should be t
 |Less expensive to install | Efficient HOM damping |
 |Experience with the technology | Demands less RF power |
 Smaller number of RF plants  |
+{.dense}
 
 **Cons**
 
@@ -100,6 +104,7 @@ Smaller number of RF plants  |
 |Larger number of amplifiers | Dedicated cryogenic group |
 |Requires large water cooling capacity | Maintenance intensive |
 |Larger impact on tunnel temperature control | Expensive spare cavity  |
+{.dense}
 
 **?**
 
@@ -107,6 +112,7 @@ Smaller number of RF plants  |
 | --- | --- |
 |Sufficient HOM damping | May require longer shutdowns |
 |May need feedback |  |
+{.dense}
 
 The main advantages of the SC system are the reduced number of RF plants and high power amplifiers needed to run the system, and the great beam dynamics performance due to the efficient suppression of beam driven higher order modes (HOM) that can be achieved in the SC cavities. The high shunt impedance of these cavities minimizes the number of necessary RF plants leading to an overall simplification of the RF system. However, the SC system is more expensive than the NC one, requiring a cryogenic infrastructure that is at the same time also expensive and complex. The initial investment required for the installation of the SC system is much higher than the one required for the NC system. The DAMPY cavity also features an efficient suppression of the HOM and it is much less expensive. However these cavities have much lower shunt impedance and many of them are needed to establish the necessary total gap voltage, each one requiring its own RF plant, which is also an expensive component of the system. In the case of SC cavities only two RF plants are necessary to supply the RF power required to maintain the beam stored in the machine. In its final configuration the output power of each RF plant will be the combination the output power of four solid state amplifiers. On the other hand, a NC system with six DAMPY cavities will require a total of six RF plants, although each plant will include the combination of just two solid state amplifiers. In both cases the RF system will be able to maintain the nominal beam current of 350 mA.
 
@@ -132,6 +138,7 @@ According to the cavity type:
 |Beam lifetime @100mA (w/o 3HC) | 6 | 11 | 13 | 12 | h |
 |Beam lifetime @100mA (with 3HC) | 14 | 18 | 19 | 19 | h |
 |Maximum beam current | 200 | 300 | 500 | 600 | mA |
+{.dense}
 
 If the decision falls on the NC cavities there is no need to have all six cavities from the start.  It is also possible to start the commissioning with only three RF cavities and add the other cavities as the operation of the machine requires more gap voltage and available RF power. However, to reach the nominal gap voltage it would require an upgrade with the addition of at least two other cavities.
 
@@ -149,6 +156,7 @@ If the decision falls on the NC cavities there is no need to have all six caviti
 |Total RF power available | 360 | 360 | 480 | 600 | 720 | kW |
 |Power lost in the cavity walls | 120 | 160 | 220 | 270 | 230 | kW |
 |Maximum sustainable beam current | 300 | 200 | 300 | 300 | 450 | mA  |
+{.dense}
 
 As already mentioned the beam lifetime with only three NC cavities and without bunch lengthening is just about 7 hours. In order to raise the beam lifetime to more than 10 hours it would be necessary to either install a 3HC or to install an additional cavity (4 NC cavities). Notice that in order to reach 500 mA with NC conducting cavities with a total gap voltage of 3.0 MV would require either the installation of an extra cavity or designing the amplifiers to deliver more RF power, 70 kW for example. With such higher output power it would be possible to reach the design specifications even with five cavities.
 
@@ -173,6 +181,8 @@ Currently, we are going to use in the storage ring, since the conditioning phase
 |Shunt impedance | 44500 | MΩ |
 |External Q | 1.5 - 2.5 ± 0.3 × 10⁵ | - |
 |Power forward (TW mode) | 250 | kW  |
+{.dense}
+
 
 **Table 2**: CESR cavity SRF module parameters.
 
