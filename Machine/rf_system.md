@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T17:34:00.157Z
+date: 2024-03-14T17:35:24.731Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -216,13 +216,9 @@ Until now we only have some estimates about the energy loss per turn from IDs. T
 
 **Table 3**: Storage ring RF parameters for each operation phase.
 
-![](/img/machine/rf_system/Reflected_power_phase1.png =400x)
-
-**Figure 4**: RF reflected power per cavity at oparation phase 1.
-
-![](/img/machine/rf_system/RF_forward_power_phase2.png =400x)
-
-**Figure 5**: RF forward power per cavity at oparation phase 2.
+|![](/img/machine/rf_system/Reflected_power_phase1.png =400x)|![](/img/machine/rf_system/RF_forward_power_phase2.png =400x)|
+|---|---|
+|**Figure 4**: RF reflected power per cavity at oparation phase 1.|**Figure 5**: RF forward power per cavity at oparation phase 2.|
 
 <br />
 
