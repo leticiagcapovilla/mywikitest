@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T17:43:52.303Z
+date: 2024-03-14T17:44:43.727Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -220,6 +220,7 @@ Until now we only have some estimates about the energy loss per turn from IDs. T
 |Harmonic cavity voltage (kV) | - | - | 946.9 | 946.9 |
 |Bunch length (ps) | 8.1 | 8.2 | 37.7 | 37.7 |
 |RF energy acceptance (%) | 5.0 | 4.7 | 4.9 | 4.9  |
+{.dense}
 
 **Table 3**: Storage ring RF parameters for each operation phase.
 
@@ -283,6 +284,7 @@ The storage ring and the booster synchrotron will share the same tunnel. The boo
 |Energy acceptance | 0.79 |  % |
 |Quantum lifetime | 4267 | s |
 |Linac to Booster phase stability @500MHz | 5.0 | °  |
+{.dense}
 
 **Table 4**: Parameters used to design the booster RF system.
 
@@ -309,6 +311,7 @@ In order to obtain the necessary gap voltage using just one RF plant a 5-cell PE
 |Total length between flanges | 1,800 | mm |
 |Beam tube aperture | 120 | mm |
 |Beam height | 1,400 | mm  |
+{.dense}
 
 **Table 5**: Parameters of the Booster RF cavity.
 
@@ -368,6 +371,7 @@ A two cell SC-3HC like the one built for the NSLS-2 light source would perfectly
 |Momentum compaction factor | 1.6×10⁻⁴ |  |
 |Natural bunch length | 8.2 | ps |
 |RF energy acceptance | 5.13 |  % |
+{.dense}
 
 **Table 1**: Main SI RF System Parameters.
 
@@ -380,6 +384,7 @@ A two cell SC-3HC like the one built for the NSLS-2 light source would perfectly
 |Optimum tuning angle | 83.54 | ° |
 |New synchronous phase | 161.26 | ° |
 |Power loss in the 3HC | 53.5 | kW |
+{.dense}
 
 **Table 6**: Sirius SR optics parameters.
 
@@ -393,6 +398,7 @@ A two cell SC-3HC like the one built for the NSLS-2 light source would perfectly
 |Integrated voltage | 0.5 | MV/cell |
 |Operating temperature | 4.5 | K |
 |New synchronous phase | 163.41 | °  |
+{.dense}
 
 **Table 7**: NSLS-2 SC-3HC parameters.
 
