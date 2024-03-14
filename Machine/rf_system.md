@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T17:49:13.483Z
+date: 2024-03-14T17:52:44.574Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -168,9 +168,10 @@ Currently, we are going to use in the storage ring, since the conditioning phase
 
 [^1]: We are assuming to use the harmonic cavity type NSLS-II which the main parameters are represents at [link]
 
-![](/img/machine/rf_system/CESR_cavity_SRF_module.png)
+|![](/img/machine/rf_system/CESR_cavity_SRF_module.png)|
+|-|
+|**Figure 1**: Cut view of the CESR cavity SRF module.|
 
-**Figure 1**: Cut view of the CESR cavity SRF module.
 
 | Parameter | Value | Unit |
 | --- | --- | --- |
@@ -197,7 +198,7 @@ Table 2  shows some RF parameters calculated for each phase of operation using c
 Until now we only have some estimates about the energy loss per turn from IDs. The Figure 4 and Figure 5 show the reflected power within a range of energy loss from IDs in the oparation pahse 1 and phase 2.
 
 |![](/img/machine/rf_system/CESR_RF_forward_power.png =400x)|![](/img/machine/rf_system/CESR_RF_reflected_power.png =400x)|
-|---|---|
+|-|-|
 |**Figure 2**: RF forward power as a function of the storage beam current and external cavity Q.|**Figure 3**: RF reflected power as a function of the storage beam current and external cavity Q.|
 
 
@@ -225,7 +226,7 @@ Until now we only have some estimates about the energy loss per turn from IDs. T
 **Table 3**: Storage ring RF parameters for each operation phase.
 
 |![](/img/machine/rf_system/Reflected_power_phase1.png =400x)|![](/img/machine/rf_system/RF_forward_power_phase2.png =400x)|
-|---|---|
+|-|-|
 |**Figure 4**: RF reflected power per cavity at oparation phase 1.|**Figure 5**: RF forward power per cavity at oparation phase 2.|
 
 <br />
@@ -234,9 +235,9 @@ Until now we only have some estimates about the energy loss per turn from IDs. T
 
 The RF plants of Sirius RF system are being designed to operate with high power solid state amplifiers. Each high power amplifier will supply at least 60 kW at maximum output power. For the NC cavities the plants will use a combination of the output power of two amplifiers and will be able to supply up to 120 kW per cavity. The same set of amplifiers could also be used to start the SC system and even with such reduced power it would be possible to operate the machine at 300 mA, considering the initial set of IDs planned to be installed in the machine (230 keV energy loss). After the installation of the SC RF system it would be possible to upgrade the output power of the plants by combining the output power of four amplifiers. This increase in output power is necessary to reach the design beam current and meets the power requirements for a possible future upgrade of the beam current to 500 mA. The experience with the two amplifiers of the UVX RF system has shown that working in a relaxed condition results in increased reliability. After four years there has not been a single beam loss caused by failures in the amplifier modules. In this period very few of them have failed and that happened without any impact on the beam. Besides, no degradation of the modules has been observed whatsoever. As much as possible, the amplifiers should be designed to operate not too close to the maximum output power of the modules. So, for the SC system there is plenty of power coming from the 60 kW amplifiers. For NC cavities it would be advisable to have more output power coming from each amplifier.
 
-![](/img/machine/rf_system/Amplificador.jpg =700x)
-
-**Figure 6**: Schematic view of the module combination topology for the 60 kW high power solid state amplifier.
+|![](/img/machine/rf_system/Amplificador.jpg =700x)|
+|-|
+|**Figure 6**: Schematic view of the module combination topology for the 60 kW high power solid state amplifier.|
 
 The topology of the high power solid state amplifiers is expected to be similar to the one adopted for the amplifiers designed and built for the UVX storage ring. The UVX amplifiers operate at 476 MHz and combine the output power of 160 modules in order to reach 50 kW. The amplifier modules for the Sirius high power amplifiers use a new generation of MOSFET that can reach higher output power. By combining the output power of 128 modules the amplifier will be able to deliver up to 60 kW at 500 MHz. The figure on the right shows a schematic view of the module combination structure of the high power amplifier. In addition to the modules in the combining grid other four modules are used as pre-amplifiers summing up 132 modules per amplifier. A set of power dividers, combiners and power couplers for different power levels is used in the assembly. Each module has its own power supply and they are both attached to a water cooled bar that provides mechanical fixation and cooling. Each bar houses up to 17 modules. The power supplies are DC-DC converters that are combined to supply the 1 kW needed by the module. A high power DC power supply is used to drive the DC-DC converters.
 
@@ -318,7 +319,7 @@ In order to obtain the necessary gap voltage using just one RF plant a 5-cell PE
 This same model is used in many machines to drive the injection booster. The cavity is being purchased from an external supplier.
 
 |![](/img/machine/rf_system/SSA_RFBooster_Sirius.jpg =350x)|
-|---|
+|-|
 |**Figure 7**: Schematic view of the 50 kW high power solid state amplifier for the booster synchrotron.|
 
 <br />
@@ -463,9 +464,9 @@ where <b>R<sub>h</sub></b> is the harmonic cavity shunt impedance; <b>I<sub>b</s
 
 Using these equation above is possible calculate the longitudinal density distribution of the bunch. The Figure 8 shows the potential well and the density distribution for three different situations: without 3HC, with optimum 3HC and with NSLS-2 3HC. The Figure 9 shows, in more detail, the density distribution and the bunch length for each case. Is noted that using the 3HC increases the bunch length by a factor of ~5.
 
-| | |
-|---|---|
-|![](/img/machine/rf_system/SI_potential_well_HC.svg =400x) <br />**Figure 8**: Potential well distortion and charge distribution with 3HC. |![](/img/machine/rf_system/SI_charge_distribution_HC.svg =400x) <br />**Figure 9**: Charge distribution and bunch length with 3HC.|
+|![](/img/machine/rf_system/SI_potential_well_HC.svg =400x)| ![](/img/machine/rf_system/SI_charge_distribution_HC.svg =400x)|
+|-|-|
+|**Figure 8**: Potential well distortion and charge distribution with 3HC.|**Figure 9**: Charge distribution and bunch length with 3HC.|
 
 <br />
 
@@ -491,9 +492,9 @@ where <b>ε<sub>hc</sub></b> is the RF acceptance with harmonic cavity; <b>ρ<su
 
 Using the NSLS-2 3HC in Sirius we have an improvement in the ratio of lifetime by a factor of 5. The Figure 10 shows the separatrices for each case studied.
 
-![](/img/machine/rf_system/SI_separatrix_HC.svg =400x)
-
-**Figure 10**: RF bucket with and without 3HC.
+|![](/img/machine/rf_system/SI_separatrix_HC.svg =400x)|
+|-|
+|**Figure 10**: RF bucket with and without 3HC.|
 
 ### Dependence of RF voltage
 
