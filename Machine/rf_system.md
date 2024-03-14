@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T16:52:29.248Z
+date: 2024-03-14T16:55:02.999Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -309,9 +309,9 @@ In order to obtain the necessary gap voltage using just one RF plant a 5-cell PE
 
 This same model is used in many machines to drive the injection booster. The cavity is being purchased from an external supplier.
 
-![](/img/machine/rf_system/SSA_RFBooster_Sirius.jpg =350x)
-
-**Figure 7**: Schematic view of the 50 kW high power solid state amplifier for the booster synchrotron.
+|![](/img/machine/rf_system/SSA_RFBooster_Sirius.jpg =350x)|
+|---|
+|**Figure 7**: Schematic view of the 50 kW high power solid state amplifier for the booster synchrotron.|
 
 <br />
 
