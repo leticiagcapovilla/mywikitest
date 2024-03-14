@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T16:44:08.237Z
+date: 2024-03-14T16:52:29.248Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -452,13 +452,9 @@ where <b>R<sub>h</sub></b> is the harmonic cavity shunt impedance; <b>I<sub>b</s
 
 Using these equation above is possible calculate the longitudinal density distribution of the bunch. The Figure 8 shows the potential well and the density distribution for three different situations: without 3HC, with optimum 3HC and with NSLS-2 3HC. The Figure 9 shows, in more detail, the density distribution and the bunch length for each case. Is noted that using the 3HC increases the bunch length by a factor of ~5.
 
-![](/img/machine/rf_system/SI_potential_well_HC.svg =400x)
-
-**Figure 8**: Potential well distortion and charge distribution with 3HC.
-
-![](/img/machine/rf_system/SI_charge_distribution_HC.svg =400x)
-
-**Figure 9**: Charge distribution and bunch length with 3HC.
+| | |
+|---|---|
+|![](/img/machine/rf_system/SI_potential_well_HC.svg =400x) <br />**Figure 8**: Potential well distortion and charge distribution with 3HC. |![](/img/machine/rf_system/SI_charge_distribution_HC.svg =400x) <br />**Figure 9**: Charge distribution and bunch length with 3HC.|
 
 <br />
 
