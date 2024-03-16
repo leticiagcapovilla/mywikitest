@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T19:11:51.865Z
+date: 2024-03-16T19:12:15.745Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -93,7 +93,7 @@ Simulations of IR intensity at the radiation mask are presented in Fig. 2. The m
 
 
 
-![extraction](/img/beamlines/imbuia/IMBUIA_FluxAtMask.pdf =800x)
+![fluxmask](/img/beamlines/imbuia/IMBUIA_FluxAtMask.pdf =800x)
 **Figure 2**: SRW simulation of the flux at the radiation mask of the B2 pumping station for several wavelengths. Intensity maps simulated for a stored current of 350 mA.
 
 An important figure to be considered in the designing of SR probes is the source size. Fig.3 presents the simulation of the IR source for the wavelengths of 1, 10 and 20 µm. Since the source is inside the magnetic fields of a B2 dipole, most of the numerical codes do not allow a direct visualisation of the source. Therefore, we used a 1:1 magnification system based on thin lens of the SRW (top row diagram of Fig.3) to simulate the source at its origin. The FWHM of the IR intensity distribution at the origin are 0.22 µm, 1.82 µm and 3.53 µm for the wavelengths of 1, 10 and 20 µm, respectively.
