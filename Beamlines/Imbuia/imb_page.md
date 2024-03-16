@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T20:01:38.575Z
+date: 2024-03-16T20:07:29.353Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -130,9 +130,9 @@ The choice for the Glidcop substrate was based on the simulation study that comp
 
 The optical layout of IMBUIA is comprised of 4 mirrors in vacuum that delivers the broadband IR beam to either the IMBUIA-nano station or the IMBUIA-micro station (Fig. 4a). The bending magnet IR radiation is first collected by a custom- designed water-cooled Au/Glidcop flat mirror (M1, Fig. 3) that directs the beam towards a periscope made of two Au/glass 2- inches flat mirrors (M2 and M3). Before the periscope, a 1-inch diameter and 500 nm thick CVD diamond window (W1) separates the storage ring and beamline vacuum environments. Flowing downstream, the IR beam crosses the X-rays beam from the neighbor undulator beamline, a concept that avoids extra reflections and makes the beam path as shorter as possible. Then a BaF2 window (W2) separates UHV and open-air environments downstream M3.
 
-![optics.png](/img/beamlines/imbuia/optics.png)
-
-**Figure 6**: IMBUIA optical layout: three flat mirrors (M1, M2 and M3) deliver the VIS-IR broadband beam to the IMBUIA-nano station. A movable parabolic mirror (M4) collimates and directs the beam towards the IMBUIA-micro station on demand.
+![optics](/img/beamlines/imbuia/optics.pdf =650x)
+- <span style="color:grey">**Figure 6**: IMBUIA optical layout: three flat mirrors (M1, M2 and M3) deliver the VIS-IR broadband beam to the IMBUIA-nano station. A movable parabolic mirror (M4) collimates and directs the beam towards the IMBUIA-micro station on demand.</span>
+{.grid-list}
 
 Yet on the optical table in air environment, a custom designed Au/Aluminum toroidal mirror (M5) collects the naturally divergent IR beam and focuses it 419 mm downstream, producing a secondary source (SS). Using a regular CCD and a band pass filter centered at λ=980 nm, we imaged the SS as showed in (Fig. 4e), whose shape and dimen- sions (FWHM ∼\\sim∼ 20 μm) are consistent to the SRW numerical simulation of the SS (FWHM ∼\\sim∼ 33 μm at λ=1.24 μm) depicted in Fig. 4d. The small discrepancy between experiment and simulation regarding the FWHM is associated to the slightly different wavelengths and exposure parameters. We used different wavelengths since we could not match available bandpass filters with the minimum energy that SRW can simulate. By positioning a screen at the M5 position and using a 633 nm band pass filter, we could image the beam cross-section (Fig. 4c) with horizontal ×\\times× vertical dimensions of 26 ×\\times× 23 mm^2^, respectively, and with good agreement with the numerical prediction (Fig. 4b). A structure of rings is observed in both experiment and simulation for λ=633 (Fig. 4b,c) nm and it is understood here as diffraction fringes from the bending magnet extraction port, previously presented in Fig. 1c. An intense curved feature was observed (white arrow in Fig. 4c) and is interpreted as an internal reflection from the dipole chamber. Inside the UHV periscope, a custom-designed Au/Aluminum parabolic mirror (M4) is mounted on a long travel linear stage that enables beam selection to the IMBUIA-micro station.
 
