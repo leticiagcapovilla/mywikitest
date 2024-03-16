@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-16T02:58:01.101Z
+date: 2024-03-16T03:07:20.639Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -10,12 +10,6 @@ dateCreated: 2024-03-04T20:05:53.880Z
 
 # Introduction
 IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accelerator Sirius. This beamline will serve the worldwide community on multiscale chemical and optical analysis of multidisciplinary materials. For that, this beamline comprises two experimental stations: the IMBUIA-micro, dedicated to chemical mapping of microscale materials and the IMBUIA-nano, that will approach optical and vibrational analysis of materials at the nanoscale.
-| |     |
-| --- | --- |
-| Location | Sirius experiment floor, axis 43 |
-| Coordinator | Raul Freitas - [raul.freitas@lnls.br](raul.freitas@lnls.br) |
-| website | [https://lnls.cnpem.br/facilities/imbuia-en/](https://lnls.cnpem.br/facilities/imbuia-en/) |
-| Contacts | Coordination: 5060   <br>Specialist: 5047   <br>IMB-nano station: 5020   <br>IMB-micro station: 5030 |
 
 - <kbd>IMBUIA</kbd> = **I**nfrared **M**icro- and nano-spectroscopy **B**eamline for **U**ltra-resolved **I**maging **A**pplications
 - Website: [https://lnls.cnpem.br/facilities/imbuia-en/](https://lnls.cnpem.br/facilities/imbuia-en/)
@@ -64,15 +58,18 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 - mid-IR filter UDR8 (Agilent Technologies, Inc.): 900-2000 cm^\-1^
 
 #### Location and contacts
-|| |
-| --- | --- |
-| Location | Sirius experiment floor, axis 43 |
-| Coordinator | Raul Freitas - [raul.freitas@lnls.br](raul.freitas@lnls.br) |
-| website | [https://lnls.cnpem.br/facilities/imbuia-en/](https://lnls.cnpem.br/facilities/imbuia-en/) |
-| Contacts | Coordination: 5060   <br>Specialist: 5047   <br>IMB-nano station: 5020   <br>IMB-micro station: 5030 |
+|Contact|email|extension|
+| --- | --- |---|
+| Coordinator | Raul Freitas - [raul.freitas@lnls.br](raul.freitas@lnls.br) |5060|
+| Staff scientist | Francisco Maia - [francisco.maia@lnls.br](francisco.maia@lnls.br)|5047|
+| Staff scientist | Ohanna Menezes - [ohanna.costa@lnls.br](ohanna.costa@lnls.br)|5020|
+| Staff scientist | Lucyano Macedo - [lucyano.macedo@lnls.br](lucyano.macedo@lnls.br)|5030|
+| Specialist | Thiago Santos - [thiago.santos@lnls.br](thiago.santos@lnls.br)|5030|
+| IMBUIA-nano station | [imbuia@lnls.br](imbuia@lnls.br)|5030|
+| IMBUIA-micro station | [imbuia@lnls.br](imbuia@lnls.br)|5030|
 
 **Notes**:
-- The database must already be created. Wiki.js will **not** create it for you.
+- Location: Sirius experiment floor, axis 43 
 
 
 
