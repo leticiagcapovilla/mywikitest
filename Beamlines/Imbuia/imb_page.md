@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-16T02:53:58.750Z
+date: 2024-03-16T02:58:01.101Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -18,8 +18,8 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 | Contacts | Coordination: 5060   <br>Specialist: 5047   <br>IMB-nano station: 5020   <br>IMB-micro station: 5030 |
 
 - <kbd>IMBUIA</kbd> = **I**nfrared **M**icro- and nano-spectroscopy **B**eamline for **U**ltra-resolved **I**maging **A**pplications
+- Website: [https://lnls.cnpem.br/facilities/imbuia-en/](https://lnls.cnpem.br/facilities/imbuia-en/)
 {.grid-list}
-
 
 **Basic information**
 
@@ -63,7 +63,8 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 - Beam measured at the endstation (after windows and optics) using an Ophir power meter
 - mid-IR filter UDR8 (Agilent Technologies, Inc.): 900-2000 cm^\-1^
 
-#### Coordination and contact
+#### Location and contacts
+|| |
 | --- | --- |
 | Location | Sirius experiment floor, axis 43 |
 | Coordinator | Raul Freitas - [raul.freitas@lnls.br](raul.freitas@lnls.br) |
