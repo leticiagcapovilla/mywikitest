@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T20:23:49.400Z
+date: 2024-03-16T20:27:02.182Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -142,11 +142,11 @@ Yet on the optical table in air environment, a custom designed Au/Aluminum toroi
 
 Figure 8 shows the supports and stages for the primary optical elements for IMBUIA. The first element M1 is mounted on a custom long travel linear stage (150 mm in vertical) that will be used in special situations when M1 cannot be exposed to the full synchrotron beam (vacuum or thermal failures). M1 stage should not be used for beam alignment purposes. M2, M3 are be mounted on commercial 2-axis (Rx, Ry) kinematic mounts driven by picomotors. M4 is mounted on two commercial stages: *i)* a long travel Z-stage (103 mm) that allows the selection of the beam to the IMBUIA-micro station and *ii* a 5-axis stage (Rx, Ry, XYZ) for alignment and collimation purposes of the beam towards the W3 window. All the stages in Figure 8 are ultra-high vacuum (UHV) compatible and controlled by either step motors or piezo drivers.
 
-![mirrors-mounts.png](/img/beamlines/imbuia/mirrors-mounts.png)
+![mirrors-mounts.png](/img/beamlines/imbuia/mirrors-mounts.png =850x)
+- <span style="color:grey">**Figure 8**: UHV mirrors mounts and stages. From left to right: M1 long travel vertical stage (Y), 2-axis (Rx, Ry) kinematic mount for M2 and M3, long travel linear stage (Z) and 5-axes stage (Rx, Ry, XYZ) for positioning M4.</span>
+{.grid-list}
 
-**Figure 8**: UHV mirrors mounts and stages. From left to right: M1 long travel vertical stage (Y), 2-axis (Rx, Ry) kinematic mount for M2 and M3, long travel linear stage (Z) and 5-axes stage (Rx, Ry, XYZ) for positioning M4.
-
-Table 3 shows the complete list os specifications of the mirrors and respective positioning mechanisms.
+Table 2 shows the complete list os specifications of the mirrors and respective positioning mechanisms.
 
 | Optical element | L \[mm\] | Substrate | Reflecting surface | Manufacturer (Model) | Surface quality | Surface shape | RFL \[mm\] | Mounts & stages | Degrees of freedom | Environment |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -156,18 +156,19 @@ Table 3 shows the complete list os specifications of the mirrors and respective 
 | M4  | 4117 | Aluminum | Gold | Zeiss, custom | ρ < 100 Å, RWE < λ/4@633 nm (RMS) | Paraboloid | 4071 | Smaract (SLS-92152), Newport (8081M-UHV) | Rx,Ry (±70 mrad), XYZ (±3 mm), Z (103 mm) | Ultra-high vacuum |
 | M5  | 5200 | Aluminum | Gold | Zeiss, custom | ρ < 100 Å, RWE < λ/4@633 nm (RMS) | Ellipsoid | 5200, 539 | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Air |
 | M6  | 5893 | Aluminum | Gold | Thorlabs, MPD169-M03 | ρ < 100 Å, RWE < λ/4@633 nm (RMS) | Paraboloid | 154 | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Air |
+- <span style="color:grey">**Table 2**: Summary of specifications for the primary optical elements of IMBUIA. Coordinates system based on the general conventions for [Sirius](https://wiki-sirius.lnls.br/mediawiki/index.php/Machine:Coordinate_System_and_Conventions). L = longitudinal distance from the source origin, ρ = roughness, RFL = reflected focal length, RWE = reflected wavefront error, // = parallelism and ⏥ = flatness.</span>
+{.grid-list}
 
-**Table 3**: Summary of specifications for the primary optical elements of IMBUIA. Coordinates system based on the general conventions for [Sirius](https://wiki-sirius.lnls.br/mediawiki/index.php/Machine:Coordinate_System_and_Conventions). L = longitudinal distance from the source origin, ρ = roughness, RFL = reflected focal length, RWE = reflected wavefront error, // = parallelism and ⏥ = flatness.
-
-Table 4 shows the specifications optical-vacuum windows of the beamline
+Table 3 shows the specifications optical-vacuum windows of the beamline
 
 | Optical window | L \[mm\] | Window material | Thickness \[µm\] | Manufacturer, Model | Transmission range | Environment |
 | --- | --- | --- | --- | --- | --- | --- |
 | W1  | 1621 | Diamond CVD | 500 | Diamond Materials, 25 mm | THz to UV | UHV-UHV |
 | W2  | 4934 | KRS5 | 4000 | Crystran, 50 mm | 500 nm to 30 µm | HV-Air |
 | W3  | 14199 | KRS5 | 4000 | Crystran, 50 mm | 500 nm to 30 µm | HV-Air |
+- <span style="color:grey">**Table 3**: Summary of specifications for the optical/vacuum windows of the IMBUIA primary optics. L = longitudinal distance from the source origin.</span>
+{.grid-list}
 
-**Table 4**: Summary of specifications for the optical/vacuum windows of the IMBUIA primary optics. L = longitudinal distance from the source origin.
 
 # Vacuum layout
 
