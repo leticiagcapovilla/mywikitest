@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T18:55:51.172Z
+date: 2024-03-16T19:11:51.865Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -80,23 +80,20 @@ IMBUIA, an acronym for Infrared Micro- and nano-spectroscopy Beamline for Ultra-
 
 # Radiation extraction and source details
 
-The 5-bend-achromat (5BA) cell of Sirius is comprised of 4 low-field (0.56 T) magnets named B1 and B2, one super-bend (BC, peak field 3.2 T) and one straight section, as illustrated in [Fig. 1a](fig:design). The IMBUIA beamline source is located in the Sector 7 of the storage ring, inside the first B2 dipole downstream the straight section. The source is defined by an extraction port (originally designed for visible photons diagnostics) centered at 3.01 ==deg== from the electrons orbit (Fig. 1b) and longitudinally located at 295 mm upstream the dipole center. A radiation mask of 7.07 ×\\times× 6.00 mm^2^ located in the pumping station of the B2 dipole (1137 mm from the source) defines a radiation extraction of 5.57 ×\\times× 5.27 mrad^2^ (Fig. 1c).
-
-This is a link in markdown: [Cockett, 2022](https://doi.org/10.5281/zenodo.6476040).
-
-An edited excerpt from _Impaired speed encoding and grid cell periodicity in a mouse model of tauopathy_
-{cite:p}`10.7554/eLife.59045`. The authors used Matlab (<rrid:SCR_001622>) in their analysis.
+The 5-bend-achromat (5BA) cell of Sirius is comprised of 4 low-field (0.56 T) magnets named B1 and B2, one super-bend (BC, peak field 3.2 T) and one straight section, as illustrated in Fig. 1a. The IMBUIA beamline source is located in the Sector 7 of the storage ring, inside the first B2 dipole downstream the straight section. The source is defined by an extraction port (originally designed for visible photons diagnostics) centered at 3.01$^\circ$ from the electrons orbit (Fig. 1b) and longitudinally located at 295 mm upstream the dipole center. A radiation mask of 7.07 $\times$ 6.00 mm^2^ located in the pumping station of the B2 dipole (1137 mm from the source) defines a radiation extraction of 5.57 $\times$ 5.27 mrad^2^ (Fig. 1c).
 
 
-
-
-[](fig:design)![extraction](/img/beamlines/imbuia/fig_1_wiki.pdf =600x)
+![extraction](/img/beamlines/imbuia/extraction.pdf =600x)
 **Figure 1**:  IR extraction port. a) Magnetic lattice of the sector 7 of the accelerator with indication of the bending magnet source (B2, 0.57 T). b) Top-view section of the B2 dipole chamber highlighting the electrons orbit, SR extraction port and source origin. c) Pumping station after the dipole with radiation mask of 5.57 ×\\times× 5.27 mrad^2^ for SR extraction.
-[](#target)
+
 
 Simulations of IR intensity at the radiation mask are presented in Fig. 2. The maps were calculated using the code Synchrotron Radiation Workshop ([SRW](http://www.esrf.eu/Accelerators/Groups/InsertionDevices/Software/SRW)) for an observation window located at the radiation mask of the pumping station of the B2 dipole and for 350 mA stored current. The intensity maps show that the horizontal polarization is dominant as the wavelengths get longer. For instance, for 1 µm wavelength, the 6 mm vertical aperture of the mask allows a fair portion of vertically polarized radiation to be collected, while, for a wavelength of 20 µm, very little of this radiation can exit the port.
 
 
+
+
+
+![extraction](/img/beamlines/imbuia/IMBUIA_FluxAtMask.pdf =800x)
 **Figure 2**: SRW simulation of the flux at the radiation mask of the B2 pumping station for several wavelengths. Intensity maps simulated for a stored current of 350 mA.
 
 An important figure to be considered in the designing of SR probes is the source size. Fig.3 presents the simulation of the IR source for the wavelengths of 1, 10 and 20 µm. Since the source is inside the magnetic fields of a B2 dipole, most of the numerical codes do not allow a direct visualisation of the source. Therefore, we used a 1:1 magnification system based on thin lens of the SRW (top row diagram of Fig.3) to simulate the source at its origin. The FWHM of the IR intensity distribution at the origin are 0.22 µm, 1.82 µm and 3.53 µm for the wavelengths of 1, 10 and 20 µm, respectively.
