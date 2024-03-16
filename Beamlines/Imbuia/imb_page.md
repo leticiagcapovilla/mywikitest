@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T21:23:15.269Z
+date: 2024-03-16T21:26:55.877Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -101,6 +101,8 @@ An important figure to be considered in the designing of SR probes is the source
 ![source](/img/beamlines/imbuia/imbuia_source.pdf =600x)
 - <span style="color:grey">**Figure 3**: SRW simulation of the IMBUIA source produced by an imaging optical scheme with magnification 1. Simulations performed for 100 mA stored current.</span>
 {.grid-list}
+
+# Flux, Polarization, Brilliance and Irradiance from far- to mid-IR
 
 The size of the source is directly proportional to the wavelength, therefore, it is a diffraction-limited point source in the infrared range. In the other hand, the maximum value for the flux density does not follow the same proportion law as it influenced by the maximum collection angle of the port. To illustrate this in depth, we calculated the spectral flux (Fig. 4a), polarization portions (Fig. 4b), spectral brilliance (Fig. 4c) and irradiance (Fig. 4d). By observing the flux trend (Fig. 4a), it is clear that longer wavelengths are hardly penalized by the small vertical aperture of the port, as the curve drops fast above 1 μm wavelengths. Moreover, the extracted radiation is dominated by horizontal polarization, as the total polarization flux is just slightly above the h-polarized flux. This is confirmed by the polarization study in Fig. 4b, where the h-polarized portion correspond to more than 75% of the total. For longer wavelengths (>20 μm) the polarization becomes mainly horizontal (above 90%), confirming that a very small central portion of the far-IR/THz beam is passing through the extraction port.
 
