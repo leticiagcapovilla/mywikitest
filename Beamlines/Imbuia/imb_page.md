@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-16T02:33:16.232Z
+date: 2024-03-16T02:40:56.792Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -10,13 +10,22 @@ dateCreated: 2024-03-04T20:05:53.880Z
 
 # Introduction
 IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accelerator Sirius. This beamline will serve the worldwide community on multiscale chemical and optical analysis of multidisciplinary materials. For that, this beamline comprises two experimental stations: the IMBUIA-micro, dedicated to chemical mapping of microscale materials and the IMBUIA-nano, that will approach optical and vibrational analysis of materials at the nanoscale.
-
+| |     |
+| --- | --- |
+| Energy coverage | 62 meV to 1.9 eV   <br>500 cm^\-1^ to 15384 cm^\-1^    <br>40 µm to 650 nm   <br>15 THz to 461 THz |
+| Power at end stations | IR+VIS = 550 µW   <br>mid-IR (900-2000cm-1) = 14 µW |
+| Flux at end stations | ∼10^11^ ph/s/0.1%bw @ 10 µm |
+| Brilliance at end stations | ∼10^14^ ph/s/0.1%bw/mm^2^ @ 10 µm |
+| Location | Sirius experiment floor, axis 43 |
+| Coordinator | Raul Freitas - [raul.freitas@lnls.br](raul.freitas@lnls.br) |
+| website | [https://lnls.cnpem.br/facilities/imbuia-en/](https://lnls.cnpem.br/facilities/imbuia-en/) |
+| Contacts | Coordination: 5060   <br>Specialist: 5047   <br>IMB-nano station: 5020   <br>IMB-micro station: 5030 |
 
 - <kbd>IMBUIA</kbd> = **I**nfrared **M**icro- and nano-spectroscopy **B**eamline for **U**ltra-resolved **I**maging **A**pplications
 {.grid-list}
 
 
-Basic parameters
+**Basic parameters**
 
 ### Tabset {.tabset}
 
@@ -33,20 +42,17 @@ Basic parameters
 - The database must already be created. Wiki.js will **not** create it for you.
 - If your database requires an SSL connection, check the [Database over SSL](#database-over-ssl) section.
 
-#### MySQL
+#### Flux and Brilliance
 
-```yml
-db:
-  type: mysql
-  host: localhost
-  port: 3306
-  user: wikijs
-  pass: wikijsrocks
-  db: wiki
-```
+|Parameter | value |
+| --- | --- |
+| Flux | ∼10^11^ ph/s/0.1%bw @ 10 µm|
+| Brilliance | ∼10^14^ ph/s/0.1%bw/mm^2^ @ 10 µm|
 **Notes**:
-- The database must already be created. Wiki.js will **not** create it for you.
-- If your database requires an SSL connection, check the [Database over SSL](#database-over-ssl) section.
+
+- Flux calculation used SRW code.
+- Storage ring current: 100 mA
+- Values for the beam at the endstation (after windows and optics)
 
 #### MariaDB
 
