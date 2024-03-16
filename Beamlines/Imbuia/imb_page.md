@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-16T02:13:20.444Z
+date: 2024-03-16T02:18:28.250Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -21,13 +21,13 @@ Basic parameters
 
 #### Energy ranges
 
-| ![](/img/beamlines/imbuia/imbuia_overview.png)  <br>  <br>IMBUIA overview |     |
+|Parameter | value |
 | --- | --- |
-| Energy coverage | 62 meV to 1.9 eV   <br>500 cm^\-1^ to 15384 cm^\-1^    <br>40 µm to 650 nm   <br>15 THz to 461 THz |
-| Power at end stations | IR+VIS = 550 µW   <br>mid-IR (900-2000cm-1) = 14 µW |
-| Flux at end stations | ∼10^11^ ph/s/0.1%bw @ 10 µm |
-| Brilliance at end stations | ∼10^14^ ph/s/0.1%bw/mm^2^ @ 10 µm |
-| Location | Sirius experiment floor, axis 43 |
+| Energy | 62 meV to 1.9 eV|
+| Wavenumber | 500 cm^\-1^ to 15384 cm^\-1^ |
+| Wavelength | 40 µm to 650 nm |
+| Frequency |15 THz to 461 THz|
+
 **Notes**:
 - The database must already be created. Wiki.js will **not** create it for you.
 - If your database requires an SSL connection, check the [Database over SSL](#database-over-ssl) section.
