@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T19:59:14.340Z
+date: 2024-03-16T20:01:38.575Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -123,7 +123,7 @@ The choice for the Glidcop substrate was based on the simulation study that comp
 | CuCrZr @ 26 °C | 81  | 0.0024 | 65  |
 | GlidCop @ 21 °C | 130  | 0.0012 | 72|
 | Si @ -150 °C | \-118 | 7.9E-6 | 1 |
-- <span style="color:grey">**Table 1**: Simulation results of the considered options for the mirror substrate cooled at room temperature or cryogenic conditions.</span>
+- <span style="color:grey">**Table 1**: Main results on numerical simulations using Ansys code for the mirror substrates options at room temperature or at cryogenic conditions. All results were calculated for 350 mA.</span>
 {.grid-list}
 
 ## Beamline optics and in-vacuum optomechanics
