@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T03:15:10.945Z
+date: 2024-03-16T03:16:09.069Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -57,7 +57,7 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 - Beam measured at the endstation (after windows and optics) using an Ophir power meter
 - mid-IR filter UDR8 (Agilent Technologies, Inc.): 900-2000 cm^\-1^
 
-#### Location and contacts
+#### Contacts
 |Contact|Name|email|Extension|
 |---|---|---|---|
 | Coordinator | Raul Freitas|[raul.freitas@lnls.br](raul.freitas@lnls.br) |5060|
