@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T20:39:33.980Z
+date: 2024-03-16T20:44:00.481Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -174,20 +174,20 @@ Table 3 shows the specifications optical-vacuum windows of the beamline
 
 The vacuum concept have two main objectives: *i)* to be compatible to the requirements of the storage ring since the first optical element almost inside the B2 pumping station and *ii)* to offer a humidity-free path for the IR radiation. Despite UHV is not required, the use of ion pumps is mandatory as it avoids extra mechanical noise in the station. The sketch in Figure 9 presents the main idea for the vacuum components for this beamline.
 
-![vacuum-layout-sketch.png](/img/beamlines/imbuia/vacuum-layout-sketch.png)
-
-**Figure 9**: Whiteboard with preliminary thoughts for the vacuum setup for the IMBUIA beamline. Credits: Thiago Miguel, Gustavo Rodrigues and Rafael Molena.
+![vacuum-layout-sketch.png](/img/beamlines/imbuia/vacuum-layout-sketch.png =600x)
+- <span style="color:grey">**Figure 9**: Whiteboard with preliminary thoughts for the vacuum setup for the IMBUIA beamline. Credits: Thiago Miguel, Gustavo Rodrigues and Rafael Molena.</span>
+{.grid-list}
 
 Figure 10 shows the actual vacuum layout installed in the IMBUIA beamline. The first gate valve (GV1) is responsible for isolating the vacuum environment of the storage ring from the M1 chamber when it is in retracted position (case of failure of M1). Bellow the M1 mirror, a non evaporable getter (NEG) cartridge is installed for enhancing the vacuum in the nearby volume. GV2 and GV3 gate valves are responsible for isolating the vacuum paths of the IMBUIA and CATERETÊ beamlines. A CVD diamond window (W1) is installed right after GV3 for isolating the storage ring vacuum from the experimental stations vacuum environments. Before the shielding wall, an ion pump (PMP1) is installed in the gamma shutter chamber together with a pressure sensor (VPS1) and pre-vacuum all-metal angle valve (AV1). A gate valve (GV4) is the last vacuum component inside the accelerator tunnel. Right after the wall, a mirror box (M2-M4) is responsible for delivering the beam to the experimental stations, where a pressure sensor (VPS2) and pre-vacuum all-metal angle valve (AV2) are installed. Towards the IMBUIA-nano station, a KRS5 IR window (W2) separates UHV and air environments. Towards the IMBUIA-micro station, a pair of ion pumps (PMP2 and PMP3) and gate valves (GV5 and GV6) keep an ultra low pressure in a ∼\\sim∼ 10 m beam path. Finally, a pressure sensor (VPS3) and pre-vacuum all-metal angle valve (AV3) allow monitoring and pumping the volume right before a KRS5 IR window (W3).
 
-![imbuia-vac-full-layout.png](/img/beamlines/imbuia/imbuia-vac-full-layout.png)
+![imbuia-vac-full-layout.png](/img/beamlines/imbuia/imbuia-vac-full-layout.png =600x)
+- <span style="color:grey">**Figure 10**: IMBUIA vacuum layout. Up to the first window (W1), the vacuum of the beamline is shared with the storage ring and is connected to the pre-frontend of the Caterê beamline. After the shielding wall, the vacuum path is extended to the two experimental station of the beamline (IMBUIA-nano and IMBUIA-micro stations).</span>
+{.grid-list}
 
-**Figure 10**: IMBUIA vacuum layout. Up to the first window (W1), the vacuum of the beamline is shared with the storage ring and is connected to the pre-frontend of the Caterê beamline. After the shielding wall, the vacuum path is extended to the two experimental station of the beamline (IMBUIA-nano and IMBUIA-micro stations).
-
-Table 5 lists all the vacuum components of the IMBUIA beamline followed by their main specifications.
+Table 4 lists all the vacuum components of the IMBUIA beamline followed by their main specifications.
 
 | Element | L \[mm\] | Description | Model | Manufacturer | Actuator/control |
-| --- | --- | --- | --- | --- | --- |
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | GV1 | 1200 | All-metal gate valve CF40 + angle valve CF16 bypass | series 481 + series 541 | VAT | Manual |
 | NEG1 | 1200 | NEG cartridge | Z200 | Saes Group | \-  |
 | GV2 | 1338 | All-metal gate valve CF16 | series 481 | VAT | Pneumatic |
@@ -208,7 +208,8 @@ Table 5 lists all the vacuum components of the IMBUIA beamline followed by their
 | AV3 | 14047 | All-metal angle valve CF63 | series 541 | VAT | Manual |
 | W3  | 14199 | KRS5 window - 50 mm | HV window | Crystran | \-  |
 
-**Table 5**: Summary of specifications for the optical/vacuum windows of the IMBUIA primary optics. L = longitudinal distance from the source origin.
+- <span style="color:grey">**Table 4**: Summary of specifications for the optical/vacuum windows of the IMBUIA primary optics. L = longitudinal distance from the source origin.</span>
+{.grid-list}
 
 # Radiation protection
 
