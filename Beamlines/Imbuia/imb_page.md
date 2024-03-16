@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-16T02:07:59.474Z
+date: 2024-03-16T02:11:02.378Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -15,15 +15,89 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 > 62 meV to 1.9 eV, 500 cm-1 to 15384 cm-1,40 µm to 650 nm,15 THz to 461 THz
 {.is-success}
 
-# In-place Upgrade
+## Database
 
-Select your platform:
+Wiki.js requires one of the many [supported database engines](/install/requirements#database).
 
-## Platforms {.tabset}
+### Tabset {.tabset}
 
-### Docker <i class="mdi mdi-docker"></i>
+#### PostgreSQL
 
-#### Standalone Container
+> **PostgreSQL** is the recommended engine for best performance, features and future compatibility.
+{.is-success}
+
+```yml
+db:
+  type: postgres
+  host: localhost
+  port: 5432
+  user: wikijs
+  pass: wikijsrocks
+  db: wiki
+```
+**Notes**:
+- The database must already be created. Wiki.js will **not** create it for you.
+- If your database requires an SSL connection, check the [Database over SSL](#database-over-ssl) section.
+
+#### MySQL
+
+```yml
+db:
+  type: mysql
+  host: localhost
+  port: 3306
+  user: wikijs
+  pass: wikijsrocks
+  db: wiki
+```
+**Notes**:
+- The database must already be created. Wiki.js will **not** create it for you.
+- If your database requires an SSL connection, check the [Database over SSL](#database-over-ssl) section.
+
+#### MariaDB
+
+```yml
+db:
+  type: mariadb
+  host: localhost
+  port: 3306
+  user: wikijs
+  pass: wikijsrocks
+  db: wiki
+```
+**Notes**:
+- The database must already be created. Wiki.js will **not** create it for you.
+- If your database requires an SSL connection, check the [Database over SSL](#database-over-ssl) section.
+
+#### MS SQL Server
+
+```yml
+db:
+  type: mssql
+  host: localhost
+  port: 1433
+  user: wikijs
+  pass: wikijsrocks
+  db: wiki
+```
+
+**Notes**:
+- The database must already be created. Wiki.js will **not** create it for you.
+
+#### SQLite
+
+> **SQLite** is not recommended for production use. It is only provided for low-end systems and development purposes.
+{.is-warning}
+
+```yml
+db:
+  type: sqlite
+  storage: db.sqlite
+```
+
+The `storage` value is a path to the file where the database will be saved. This path must be **writable** by the Wiki.js node process. It can be either an absolute path or relative to the Wiki.js directory.
+
+
 
 
 
