@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-16T02:52:11.369Z
+date: 2024-03-16T02:53:58.750Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -63,35 +63,15 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 - Beam measured at the endstation (after windows and optics) using an Ophir power meter
 - mid-IR filter UDR8 (Agilent Technologies, Inc.): 900-2000 cm^\-1^
 
-#### MS SQL Server
-
-```yml
-db:
-  type: mssql
-  host: localhost
-  port: 1433
-  user: wikijs
-  pass: wikijsrocks
-  db: wiki
-```
+#### Coordination and contact
+| --- | --- |
+| Location | Sirius experiment floor, axis 43 |
+| Coordinator | Raul Freitas - [raul.freitas@lnls.br](raul.freitas@lnls.br) |
+| website | [https://lnls.cnpem.br/facilities/imbuia-en/](https://lnls.cnpem.br/facilities/imbuia-en/) |
+| Contacts | Coordination: 5060   <br>Specialist: 5047   <br>IMB-nano station: 5020   <br>IMB-micro station: 5030 |
 
 **Notes**:
 - The database must already be created. Wiki.js will **not** create it for you.
-
-#### SQLite
-
-> **SQLite** is not recommended for production use. It is only provided for low-end systems and development purposes.
-{.is-warning}
-
-```yml
-db:
-  type: sqlite
-  storage: db.sqlite
-```
-
-The `storage` value is a path to the file where the database will be saved. This path must be **writable** by the Wiki.js node process. It can be either an absolute path or relative to the Wiki.js directory.
-
-
 
 
 
