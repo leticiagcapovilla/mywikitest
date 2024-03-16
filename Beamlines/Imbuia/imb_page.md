@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-16T02:18:28.250Z
+date: 2024-03-16T02:33:16.232Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -12,8 +12,9 @@ dateCreated: 2024-03-04T20:05:53.880Z
 IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accelerator Sirius. This beamline will serve the worldwide community on multiscale chemical and optical analysis of multidisciplinary materials. For that, this beamline comprises two experimental stations: the IMBUIA-micro, dedicated to chemical mapping of microscale materials and the IMBUIA-nano, that will approach optical and vibrational analysis of materials at the nanoscale.
 
 
-> 62 meV to 1.9 eV, 500 cm-1 to 15384 cm-1,40 µm to 650 nm,15 THz to 461 THz
-{.is-success}
+- <kbd>IMBUIA</kbd> = **I**nfrared **M**icro- and nano-spectroscopy **B**eamline for **U**ltra-resolved **I**maging **A**pplications
+{.grid-list}
+
 
 Basic parameters
 
