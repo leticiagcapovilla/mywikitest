@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T20:53:08.137Z
+date: 2024-03-16T20:59:14.692Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -143,18 +143,18 @@ Yet on the optical table in air environment, a custom designed Au/Aluminum toroi
 Figure 8 shows the supports and stages for the primary optical elements for IMBUIA. The first element M1 is mounted on a custom long travel linear stage (150 mm in vertical) that will be used in special situations when M1 cannot be exposed to the full synchrotron beam (vacuum or thermal failures). M1 stage should not be used for beam alignment purposes. M2, M3 are be mounted on commercial 2-axis (Rx, Ry) kinematic mounts driven by picomotors. M4 is mounted on two commercial stages: *i)* a long travel Z-stage (103 mm) that allows the selection of the beam to the IMBUIA-micro station and *ii* a 5-axis stage (Rx, Ry, XYZ) for alignment and collimation purposes of the beam towards the W3 window. All the stages in Figure 8 are ultra-high vacuum (UHV) compatible and controlled by either step motors or piezo drivers.
 
 ![mirrors-mounts.png](/img/beamlines/imbuia/mirrors-mounts.png =850x)
-- <span style="color:grey">**Figure 8**: UHV mirrors mounts and stages. From left to right: M1 long travel vertical stage (Y), 2-axis (Rx, Ry) kinematic mount for M2 and M3, long travel linear stage (Z) and 5-axes stage (Rx, Ry, XYZ) for positioning M4.</span>
+- <span style="color:grey">**Figure 8**: Mirrors mounts and stages. a) M1 long travel vertical stage (Y) manufactured by UHV Design Ltd. b) 2-axis (Rx, Ry) kinematic mount for M2 and M3 manufactured by Newport. c) Long travel linear stage (Z) manufactured by Smaract and d) 5-axes stage (Rx, Ry, XYZ) for positioning M4 manufactured by Newport.</span>
 {.grid-list}
 
 Table 2 shows the complete list os specifications of the mirrors and respective positioning mechanisms.
 
 | Optical element | L \[mm\] | Substrate | Reflecting surface | Manufacturer (Model) | Surface quality | Surface shape | RFL \[mm\] | Mounts & stages | Degrees of freedom | Environment |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| M1  | 1200 | GlidCop® | Gold | Thales SESO <br>custom | // ⩽ 3 arcmin <br> ⏥ < λ/10 @ 633 nm (RMS) | Plane | \-  | UHV Design Ltd (PLSMT38) | Y (100 mm) | Ultra-high vacuum |
-| M2  | 3790 | UV Fused Silica | Gold | Thorlabs <br> PF20-03-M03 | // ⩽ 3 arcmin <br> ⏥ < λ/10 @ 633 nm (RMS) | Plane | \-  | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Ultra-high vacuum |
-| M3  | 4160 | UV Fused Silica | Gold | Thorlabs <br> PF20-03-M03 | // ⩽ 3 arc-min <br> ⏥ < λ/10 @ 633 nm (RMS) | Plane | \-  | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Ultra-high vacuum |
-| M4  | 4250 | Aluminum | Gold | Thales SESO <br>custom | ρ < 100 Å, RWE < λ/4 @ 633 nm (RMS) | Paraboloid | 4071 | Smaract (SLS-92152), Newport (8081M-UHV) | Rx,Ry (±70 mrad), XYZ (±3 mm), Z (103 mm) | Ultra-high vacuum |
-| M5  | 5200 | Aluminum | Gold | Thales SESO <br>custom | ρ < 100 Å, RWE < λ/4 @ 633 nm (RMS) | Ellipsoid | 5200, 539 | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Air/N~2~ |
+| M1  | 1200 | GlidCop® | Gold | Thales SESO <br>custom | // ⩽ 3 arcmin <br> ⏥ < λ/10 @ 633 nm (RMS) | Plane | \-  | UHV Design Ltd (PLSMT38, Fig.8a) | Y (100 mm) | Ultra-high vacuum |
+| M2  | 3790 | UV Fused Silica | Gold | Thorlabs <br> PF20-03-M03 | // ⩽ 3 arcmin <br> ⏥ < λ/10 @ 633 nm (RMS) | Plane | \-  | Newport (8822-AC-UHV, Fig.8b) | Rx,Ry (±40 mrad) | Ultra-high vacuum |
+| M3  | 4160 | UV Fused Silica | Gold | Thorlabs <br> PF20-03-M03 | // ⩽ 3 arc-min <br> ⏥ < λ/10 @ 633 nm (RMS) | Plane | \-  | Newport (8822-AC-UHV, Fig.8b) | Rx,Ry (±40 mrad) | Ultra-high vacuum |
+| M4  | 4250 | Aluminum | Gold | Thales SESO <br>custom | ρ < 100 Å, RWE < λ/4 @ 633 nm (RMS) | Paraboloid | 4071 | Smaract (SLS-92152, Fig.8c), Newport (8081M-UHV, Fig.8d) | Rx,Ry (±70 mrad), XYZ (±3 mm), Z (103 mm) | Ultra-high vacuum |
+| M5  | 5200 | Aluminum | Gold | Thales SESO <br>custom | ρ < 100 Å, RWE < λ/4 @ 633 nm (RMS) | Ellipsoid | 5200, 539 | Newport (8822-AC-UHV, Fig.8b) | Rx,Ry (±40 mrad) | Air/N~2~ |
 | M6  | 6040 | Aluminum | Gold | Thorlabs <br> MPD169-M03 | ρ < 100 Å, RWE < λ/4 @ 633 nm (RMS) | Paraboloid | 154 | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Air/N~2~ |
 - <span style="color:grey">**Table 2**: Summary of specifications for the primary optical elements of IMBUIA. Coordinates system based on the general conventions for [Sirius](https://wiki-sirius.lnls.br/mediawiki/index.php/Machine:Coordinate_System_and_Conventions). L = longitudinal distance from the source origin, ρ = roughness, RFL = reflected focal length, RWE = reflected wavefront error, // = parallelism and ⏥ = flatness.</span>
 {.grid-list}
