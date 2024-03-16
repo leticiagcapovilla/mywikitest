@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T21:10:31.515Z
+date: 2024-03-16T21:15:01.574Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -212,9 +212,9 @@ Table 4 lists all the vacuum components of the IMBUIA beamline followed by their
 
 # Radiation protection
 
-![imbuia-rad.png](/img/beamlines/imbuia/imbuia-rad.png)
-
-**Figure 11**: IMBUIA vacuum layout. Up to the first window (W1), the vacuum of the beamline is shared with the storage ring and is connected to the pre-frontend of the Caterê beamline. After the shielding wall, the vacuum path is extended to the two experimental station of the beamline (IMBUIA-nano and IMBUIA-micro stations).
+![imbuia-rad.png](/img/beamlines/imbuia/imbuia-rad.png =850x)
+- <span style="color:grey">**Figure 11**: IMBUIA vacuum layout. Up to the first window (W1), the vacuum of the beamline is shared with the storage ring and is connected to the pre-frontend of the Caterê beamline. After the shielding wall, the vacuum path is extended to the two experimental station of the beamline (IMBUIA-nano and IMBUIA-micro stations).</span>
+{.grid-list}
 
 # Experimental stations
 
@@ -229,14 +229,14 @@ Brief explanation of the s-SNOM technique and its combination with SR.
 Environmental conditions
 
 | Parameter | Value |
-| --- | --- |
-| Average temperature (hutch) | 22 ∘^\\circ∘C |
-| Temperature variation (hutch) | ±\\pm± 0.5 ∘^\\circ∘C/h |
+|:---:|:---:|
+| Average temperature (hutch) | 22 $^\circ$C |
+| Temperature variation (hutch) | $\pm$ 0.5 $^\circ$C/h |
 | Particles density (hutch) | 1000 particles/m^3^ |
 | Typical acoustic noise level (hutch) | < 10 dB |
-| Average temperature (box) | 22 ∘^\\circ∘C |
-| Temperature variation (box) | ±\\pm± 0.5 ∘^\\circ∘C/h |
-| Relative humidity (box) | < 3% |
+| Average temperature (instrument box) | 22 $^\circ$C |
+| Temperature variation (instrument box) | $\pm$ 0.5 $^\circ$C/h |
+| Relative humidity (instrument box) | < 3% |
 
 \==Topics to be added:==
 
