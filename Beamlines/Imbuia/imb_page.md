@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T20:27:02.182Z
+date: 2024-03-16T20:29:50.467Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -149,8 +149,8 @@ Figure 8 shows the supports and stages for the primary optical elements for IMBU
 Table 2 shows the complete list os specifications of the mirrors and respective positioning mechanisms.
 
 | Optical element | L \[mm\] | Substrate | Reflecting surface | Manufacturer (Model) | Surface quality | Surface shape | RFL \[mm\] | Mounts & stages | Degrees of freedom | Environment |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| M1  | 1200 | GlidCop® | Gold | Zeiss, custom | // ⩽3 arcmin, ⏥ < λ/10@633 nm (RMS) | Plane | \-  | UHV Design Ltd (PLSMT38) | Y (100 mm) | Ultra-high vacuum |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| M1  | 1200 | GlidCop® | Gold | Zeiss, custom | // ⩽ 3 arcmin <br> ⏥ < λ/10 @ 633 nm (RMS) | Plane | \-  | UHV Design Ltd (PLSMT38) | Y (100 mm) | Ultra-high vacuum |
 | M2  | 3752 | UV Fused Silica | Gold | Thorlabs, PF20-03-M03 | // ⩽3 arcmin, ⏥ < λ/10@633 nm (RMS) | Plane | \-  | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Ultra-high vacuum |
 | M3  | 4040 | UV Fused Silica | Gold | Thorlabs, PF20-03-M03 | // ⩽3 arc-min, ⏥ < λ/10@633 nm (RMS) | Plane | \-  | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Ultra-high vacuum |
 | M4  | 4117 | Aluminum | Gold | Zeiss, custom | ρ < 100 Å, RWE < λ/4@633 nm (RMS) | Paraboloid | 4071 | Smaract (SLS-92152), Newport (8081M-UHV) | Rx,Ry (±70 mrad), XYZ (±3 mm), Z (103 mm) | Ultra-high vacuum |
