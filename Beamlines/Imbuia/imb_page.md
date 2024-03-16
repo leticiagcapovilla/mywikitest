@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T20:59:14.692Z
+date: 2024-03-16T21:02:55.131Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -142,7 +142,7 @@ Yet on the optical table in air environment, a custom designed Au/Aluminum toroi
 
 Figure 8 shows the supports and stages for the primary optical elements for IMBUIA. The first element M1 is mounted on a custom long travel linear stage (150 mm in vertical) that will be used in special situations when M1 cannot be exposed to the full synchrotron beam (vacuum or thermal failures). M1 stage should not be used for beam alignment purposes. M2, M3 are be mounted on commercial 2-axis (Rx, Ry) kinematic mounts driven by picomotors. M4 is mounted on two commercial stages: *i)* a long travel Z-stage (103 mm) that allows the selection of the beam to the IMBUIA-micro station and *ii* a 5-axis stage (Rx, Ry, XYZ) for alignment and collimation purposes of the beam towards the W3 window. All the stages in Figure 8 are ultra-high vacuum (UHV) compatible and controlled by either step motors or piezo drivers.
 
-![mirrors-mounts.png](/img/beamlines/imbuia/mirrors-mounts.png =850x)
+![mirrors-mounts](/img/beamlines/imbuia/mirrors_mounts.pdf =850x)
 - <span style="color:grey">**Figure 8**: Mirrors mounts and stages. a) M1 long travel vertical stage (Y) manufactured by UHV Design Ltd. b) 2-axis (Rx, Ry) kinematic mount for M2 and M3 manufactured by Newport. c) Long travel linear stage (Z) manufactured by Smaract and d) 5-axes stage (Rx, Ry, XYZ) for positioning M4 manufactured by Newport.</span>
 {.grid-list}
 
