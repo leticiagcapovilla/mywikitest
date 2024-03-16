@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T21:26:55.877Z
+date: 2024-03-16T21:29:17.353Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -110,6 +110,7 @@ The size of the source is directly proportional to the wavelength, therefore, it
 - <span style="color:grey">**Figure 4**: Calculated spectral flux, polarization degree, brilliance and irradiance in the visible-to-IR ranges considering the extraction port described in Fig. 1 at 100 mA. All simulations were done using SRW.</span>
 {.grid-list}
 
+# Radiation extraction element (M1 mirror)
 For radiation collection, we designed a vertically-supported flat mirror (M1) installed in front of the extraction port illustrated in Fig. 1c. The full white beam from the bending magnet illuminates the Au-coated Glidcop flat surface that absorbs most of the high energy portion (X-rays) and reflects the lower energy portion (UV, visible and IR), as illustrated in Fig. 5a. As a safety requirement, the entire M1 shaft can move vertically in case the mirror needs to be removed from the beam path, which is the only degree of freedom of M1. Most of the heat load from the white beam is absorbed by the M1, which corresponds to $\sim$ 140 W. Hence, a water-cooling system operates to drain this large power and to reduce M1 surface deformations. For that, a coaxial concept flows cold water (21$^\circ$ C, 150 ml/min) towards the illuminated area guided by an inner pipe which returns warmer through the outer gap, as schemed in Fig. 5b. The maximum temperature of the mirror surface is about 130$^\circ$ C predicted for 350 mA (maximum storage ring current), as depicted in Fig. 5c (left panel). Given the total heat load and illumination area of the beam over M1, we calculated the deformation in the X direction (thermal bump quasi-normal to the surface) whose maximum is near 1.24 μm, as displayed in Fig. 5c (middle panel) sided by the equivalent stress that peaks at 72 MPa (Fig. 5c, right panel).
 
 ![m1](/img/beamlines/imbuia/m1.pdf =600x)
@@ -128,7 +129,7 @@ The choice for the Glidcop substrate was based on the simulation study that comp
 - <span style="color:grey">**Table 1**: Main results on numerical simulations using Ansys code for the mirror substrates options at room temperature or at cryogenic conditions. All results were calculated for 350 mA. GlidCop was the best choice in the study.</span>
 {.grid-list}
 
-## Beamline optics and in-vacuum optomechanics
+# Beamline optics and optomechanics
 
 The optical layout of IMBUIA is comprised of 4 mirrors in vacuum that delivers the broadband IR beam to either the IMBUIA-nano station or the IMBUIA-micro station (Fig. 4a). The bending magnet IR radiation is first collected by a custom- designed water-cooled Au/Glidcop flat mirror (M1, Fig. 3) that directs the beam towards a periscope made of two Au/glass 2- inches flat mirrors (M2 and M3). Before the periscope, a 1-inch diameter and 500 nm thick CVD diamond window (W1) separates the storage ring and beamline vacuum environments. Flowing downstream, the IR beam crosses the X-rays beam from the neighbor undulator beamline, a concept that avoids extra reflections and makes the beam path as shorter as possible. Then a BaF2 window (W2) separates UHV and open-air environments downstream M3.
 
