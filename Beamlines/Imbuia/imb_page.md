@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T20:16:40.695Z
+date: 2024-03-16T20:17:25.693Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -92,13 +92,13 @@ The 5-bend-achromat (5BA) cell of Sirius is comprised of 4 low-field (0.56 T) ma
 Simulations of IR intensity at the radiation mask are presented in Fig. 2. The maps were calculated using the code Synchrotron Radiation Workshop ([SRW](http://www.esrf.eu/Accelerators/Groups/InsertionDevices/Software/SRW)) for an observation window located at the radiation mask of the pumping station of the B2 dipole and for 350 mA stored current. The intensity maps show that the horizontal polarization is dominant as the wavelengths get longer. For instance, for 1 µm wavelength, the 6 mm vertical aperture of the mask allows a fair portion of vertically polarized radiation to be collected, while, for a wavelength of 20 µm, very little of this radiation can exit the port.
 
 
-![fluxmask](/img/beamlines/imbuia/imbuia_fluxatmask.pdf =1300x)
+![fluxmask](/img/beamlines/imbuia/imbuia_fluxatmask.pdf =1500x)
 - <span style="color:grey">**Figure 2**: SRW simulation of the flux at the radiation mask of the B2 pumping station for several wavelengths. Intensity maps simulated for a stored current of 350 mA.</span>
 {.grid-list}
 
 An important figure to be considered in the designing of SR probes is the source size. Fig.3 presents the simulation of the IR source for the wavelengths of 1, 10 and 20 µm. Since the source is inside the magnetic fields of a B2 dipole, most of the numerical codes do not allow a direct visualisation of the source. Therefore, we used a 1:1 magnification system based on thin lens of the SRW (top row diagram of Fig.3) to simulate the source at its origin. The FWHM of the IR intensity distribution at the origin are 0.22 µm, 1.82 µm and 3.53 µm for the wavelengths of 1, 10 and 20 µm, respectively.
 
-![source](/img/beamlines/imbuia/imbuia_source.pdf =1300x)
+![source](/img/beamlines/imbuia/imbuia_source.pdf =600x)
 - <span style="color:grey">**Figure 3**: SRW simulation of the IMBUIA source produced by an imaging optical scheme with magnification 1. Simulations performed for 100 mA stored current.</span>
 {.grid-list}
 
