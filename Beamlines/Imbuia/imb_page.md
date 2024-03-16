@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T19:33:36.184Z
+date: 2024-03-16T19:40:21.791Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -105,9 +105,9 @@ An important figure to be considered in the designing of SR probes is the source
 
 The size of the source is directly proportional to the wavelength, therefore, it is a diffraction-limited point source in the infrared range. In the other hand, the maximum value for the flux density does not follow the same proportion law as it influenced by the maximum collection angle of the port. To illustrate this in depth, we calculated the spectral flux (Fig. 4a), polarization portions (Fig. 4b), spectral brilliance (Fig. 4c) and irradiance (Fig. 4d). By observing the flux trend (Fig. 4a), it is clear that longer wavelengths are hardly penalized by the small vertical aperture of the port, as the curve drops fast above 1 μm wavelengths. Moreover, the extracted radiation is dominated by horizontal polarization, as the total polarization flux is just slightly above the h-polarized flux. This is confirmed by the polarization study in Fig. 4b, where the h-polarized portion correspond to more than 75% of the total. For longer wavelengths (>20 μm) the polarization becomes mainly horizontal (above 90%), confirming that a very small central portion of the far-IR/THz beam is passing through the extraction port.
 
-![figures-merit.png](/img/beamlines/imbuia/figures-merit.png)
-
-**Figure 4**: Calculated spectral flux, polarization degree, brilliance and irradiance in the visible-to-IR ranges considering the extraction port described in Fig. 1 at 100 mA. All simulations were done using SRW.
+![figures-merit](/img/beamlines/imbuia/flux_brilliance.pdf =600x)
+- <span style="color:grey">**Figure 4**: Calculated spectral flux, polarization degree, brilliance and irradiance in the visible-to-IR ranges considering the extraction port described in Fig. 1 at 100 mA. All simulations were done using SRW.</span>
+{.grid-list}
 
 For radiation collection, we designed a vertically-supported flat mirror (M1) installed in front of the extraction port illustrated in Fig. 1c. The full white beam from the bending magnet illuminates the Au-coated Glidcop flat surface that absorbs most of the high energy portion (X-rays) and reflects the lower energy portion (UV, visible and IR), as illustrated in Fig. 5a. As a safety requirement, the entire M1 shaft can move vertically in case the mirror needs to be removed from the beam path, which is the only degree of freedom of M1. Most of the heat load from the white beam is absorbed by the M1, which corresponds to ∼\\sim∼ 150 W. Hence, a water-cooling system operates to drain this large power and to reduce M1 surface deformations. For that, a coaxial concept flows cold water (∼\\sim∼ 19∘^\\circ∘ C) towards the illuminated area guided by an inner pipe which returns warmer through the outer gap, as schemed in Fig. 5b. The maximum temperature of the mirror surface is about 62∘^\\circ∘ C predicted for 350 mA (maximum storage ring current), as depicted in Fig. 5c (left panel). Given the total heat load and illumination area of the beam over M1, we calculated the deformation in the X direction (thermal bump quasi-normal to the surface) whose maximum is near 1.9 μm, as displayed in Fig. 5c (middle panel) sided by the equivalent stress that peaks at 54 MPa (Fig. 5c, right panel).
 
