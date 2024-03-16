@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T19:49:45.824Z
+date: 2024-03-16T19:55:30.711Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -118,12 +118,12 @@ For radiation collection, we designed a vertically-supported flat mirror (M1) in
 
 The choice for the Glidcop substrate was based on the simulation study that compared 4 different substrates cooled at room temperature or cryogenic conditions (Table 2). Gladcop is the one with the lowest values for surface temperature, deformation and stress when operating cooled near room temperature.
 
-| Material | Max. Temp. \[∘^\\circ∘C\] | Max. Deformation \[mm\] | Max. Stress \[MPa\] |
+| Material | Max. Temp. [°C] | Max. Deformation [mm] | Max. Stress [MPa] |
 | --- | --- | --- | --- |
 | Al @ 24 °C | 220 | 0.0128 | 199 |
 | CuCrZr @ 26 °C | 81  | 0.0024 | 65  |
-| GlidCop @ 21 °C | 62  | 0.0019 | 54  |
-| Si @ -150 °C | \-118 | 7.9E-6 | 1   |
+| GlidCop @ 21 °C | 130  | 0.0012 | 72|
+| Si @ -150 °C | \-118 | 7.9E-6 | 1 |
 
 **Table 2**: Simulation results of the considered options for the mirror substrate cooled at room temperature or cryogenic conditions.
 
