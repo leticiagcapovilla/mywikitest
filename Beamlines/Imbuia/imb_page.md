@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T21:15:01.574Z
+date: 2024-03-16T21:19:46.016Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -226,7 +226,6 @@ Brief explanation of the s-SNOM technique and its combination with SR.
 
 **Figure 12**: Overview of the IMBUIA-nano station.
 
-Environmental conditions
 
 | Parameter | Value |
 |:---:|:---:|
@@ -237,16 +236,20 @@ Environmental conditions
 | Average temperature (instrument box) | 22 $^\circ$C |
 | Temperature variation (instrument box) | $\pm$ 0.5 $^\circ$C/h |
 | Relative humidity (instrument box) | < 3% |
+- <span style="color:grey">**Table 5**: Station environmental conditions.</span>
+{.grid-list}
 
-\==Topics to be added:==
 
-Clean nitrogen line  
-Compressed air  
-Power outlets  
-No-break system  
-Controllers cabling and connections  
-Neasnom server: cables/connectors/switches  
-Lasers: cables/connectors/switches
+> **Topics to be added**
+{.is-warning}
+- [x] Environmental conditions
+- [ ] Clean nitrogen line  
+- [ ] Compressed air  
+- [ ] Power outlets  
+- [ ] No-break system  
+- [ ] Controllers cabling and connections  
+- [ ] Neasnom server: cables/connectors/switches  
+- [ ] Lasers: cables/connectors/switches
 
 ## IMBUIA-micro
 
