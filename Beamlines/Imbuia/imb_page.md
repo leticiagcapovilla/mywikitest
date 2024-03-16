@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T21:06:48.157Z
+date: 2024-03-16T21:08:48.965Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -197,7 +197,7 @@ Table 4 lists all the vacuum components of the IMBUIA beamline followed by their
 | AV1 | 2032 | All-metal angle valve CF63 | series 541 | VAT | Manual |
 | PMP1 | 2032 | Ion pump 100 l | 100L-CV-8S-SC-220-N | Gamma Vacuum | \-  |
 | GV4 | 2233 | All-metal gate valve CF63 | series 482 | VAT | Pneumatic |
-| W2  | 4943 | KRS5 window - 50 mm | HV window | Crystran | \-  |
+| W2  | 4943 | BaF~2~ window - 50 mm | HV window | Hositrad | \-  |
 | VPS2 | 4117 | Cold cathode pressure sensor | 422 | MKS | \-  |
 | AV2 | 4117 | All-metal angle valve CF63 | series 541 | VAT | Manual |
 | PMP2 | 5168 | Ion pump 200 l | 200L-CV-8D-SC-220-N | Gamma Vacuum | \-  |
@@ -206,8 +206,7 @@ Table 4 lists all the vacuum components of the IMBUIA beamline followed by their
 | GV6 | 13877 | Gate valve CF63 | series 108 | VAT | Pneumatic |
 | VPS3 | 14047 | Cold cathode pressure sensor | 422 | MKS | \-  |
 | AV3 | 14047 | All-metal angle valve CF63 | series 541 | VAT | Manual |
-| W3  | 14199 | KRS5 window - 50 mm | HV window | Crystran | \-  |
-
+| W3  | 14199 | BaF~2~ window - 50 mm | HV window | Hositrad | \-  |
 - <span style="color:grey">**Table 4**: Summary of specifications for the optical/vacuum windows of the IMBUIA primary optics. L = longitudinal distance from the source origin.</span>
 {.grid-list}
 
