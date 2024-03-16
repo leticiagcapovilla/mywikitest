@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T20:35:16.295Z
+date: 2024-03-16T20:39:33.980Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -154,18 +154,18 @@ Table 2 shows the complete list os specifications of the mirrors and respective 
 | M2  | 3790 | UV Fused Silica | Gold | Thorlabs <br> PF20-03-M03 | // ⩽ 3 arcmin <br> ⏥ < λ/10 @ 633 nm (RMS) | Plane | \-  | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Ultra-high vacuum |
 | M3  | 4160 | UV Fused Silica | Gold | Thorlabs <br> PF20-03-M03 | // ⩽ 3 arc-min <br> ⏥ < λ/10 @ 633 nm (RMS) | Plane | \-  | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Ultra-high vacuum |
 | M4  | 4250 | Aluminum | Gold | Thales SESO <br>custom | ρ < 100 Å, RWE < λ/4 @ 633 nm (RMS) | Paraboloid | 4071 | Smaract (SLS-92152), Newport (8081M-UHV) | Rx,Ry (±70 mrad), XYZ (±3 mm), Z (103 mm) | Ultra-high vacuum |
-| M5  | 5200 | Aluminum | Gold | Thales SESO <br>custom | ρ < 100 Å, RWE < λ/4 @ 633 nm (RMS) | Ellipsoid | 5200, 539 | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Air/N$_2$ |
-| M6  | 6040 | Aluminum | Gold | Thorlabs <br> MPD169-M03 | ρ < 100 Å, RWE < λ/4 @ 633 nm (RMS) | Paraboloid | 154 | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Air/N$_2$ |
+| M5  | 5200 | Aluminum | Gold | Thales SESO <br>custom | ρ < 100 Å, RWE < λ/4 @ 633 nm (RMS) | Ellipsoid | 5200, 539 | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Air/N~2~ |
+| M6  | 6040 | Aluminum | Gold | Thorlabs <br> MPD169-M03 | ρ < 100 Å, RWE < λ/4 @ 633 nm (RMS) | Paraboloid | 154 | Newport (8822-AC-UHV) | Rx,Ry (±40 mrad) | Air/N~2~ |
 - <span style="color:grey">**Table 2**: Summary of specifications for the primary optical elements of IMBUIA. Coordinates system based on the general conventions for [Sirius](https://wiki-sirius.lnls.br/mediawiki/index.php/Machine:Coordinate_System_and_Conventions). L = longitudinal distance from the source origin, ρ = roughness, RFL = reflected focal length, RWE = reflected wavefront error, // = parallelism and ⏥ = flatness.</span>
 {.grid-list}
 
 Table 3 shows the specifications optical-vacuum windows of the beamline
 
 | Optical window | L \[mm\] | Window material | Thickness \[µm\] | Manufacturer, Model | Transmission range | Environment |
-| --- | --- | --- | --- | --- | --- | --- |
-| W1  | 1621 | Diamond CVD | 500 | Diamond Materials, 25 mm | THz to UV | UHV-UHV |
-| W2  | 4934 | KRS5 | 4000 | Crystran, 50 mm | 500 nm to 30 µm | HV-Air |
-| W3  | 14199 | KRS5 | 4000 | Crystran, 50 mm | 500 nm to 30 µm | HV-Air |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| W1  | 1621 | Diamond CVD | 500 | Diamond Materials, ø25 mm | THz to UV | UHV-UHV |
+| W2  | 4934 | BaF~2~ | 4000 | Hositrad, ø50 mm | 500 nm to 30 µm | HV-Air |
+| W3  | 14199 | BaF~2~ | 4000 | Hositrad, ø50 mm | 500 nm to 30 µm | HV-Air |
 - <span style="color:grey">**Table 3**: Summary of specifications for the optical/vacuum windows of the IMBUIA primary optics. L = longitudinal distance from the source origin.</span>
 {.grid-list}
 
