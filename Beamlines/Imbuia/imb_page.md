@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T03:16:09.069Z
+date: 2024-03-16T03:20:55.254Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -13,6 +13,7 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 
 - <kbd>IMBUIA</kbd> = **I**nfrared **M**icro- and nano-spectroscopy **B**eamline for **U**ltra-resolved **I**maging **A**pplications
 - Website: [https://lnls.cnpem.br/facilities/imbuia-en/](https://lnls.cnpem.br/facilities/imbuia-en/)
+- Location: Sirius experiment floor, **axis 43**
 {.grid-list}
 
 **Basic information**
@@ -69,7 +70,7 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 |Beamline| IMBUIA-micro station | [imbuia@lnls.br](imbuia@lnls.br)|5030|
 
 **Notes**:
-- Location: Sirius experiment floor, **axis 43**
+
 
 <!--- 
 IMBUIA, an acronym for Infrared Micro- and nano-spectroscopy Beamline for Ultra-resolved Imaging Applications, is the first infrared (IR) beamline to operate in the new brazilian accelerator Sirius. This beamline will serve the worldwide community on multiscale chemical and optical analysis of multidisciplinary materials. For that, this beamline comprises two experimental stations: the IMBUIA-micro, dedicated to chemical mapping of microscale materials and the IMBUIA-nano, that will approach optical and vibrational analysis of materials at the nanoscale. Designed to continuously cover the mid-IR range with synchrotron radiation (SR) combined to narrowband lasers, this beamline is ready to approach urgent open questions in a variety of modern themes, including drug delivery to biosystems, energy harvesting materials, optics and chemistry of quantum materials, biomedicine, *in-situ* chemical monitoring of electrochemical reactions, in-liquid biochemical analysis and many others.
