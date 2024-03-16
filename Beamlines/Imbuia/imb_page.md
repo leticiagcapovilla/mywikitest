@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-16T02:40:56.792Z
+date: 2024-03-16T02:43:19.725Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -39,8 +39,8 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 | Frequency |15 THz to 461 THz|
 
 **Notes**:
-- The database must already be created. Wiki.js will **not** create it for you.
-- If your database requires an SSL connection, check the [Database over SSL](#database-over-ssl) section.
+- Despite the beamline delivers a broader range, the current coverage is limitted by the detector sensitivity and optical windows transmission.
+
 
 #### Flux and Brilliance
 
@@ -52,6 +52,7 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 
 - Flux calculation used SRW code.
 - Storage ring current: 100 mA
+- Brilliance calculation ...
 - Values for the beam at the endstation (after windows and optics)
 
 #### MariaDB
