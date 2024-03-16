@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T19:58:17.636Z
+date: 2024-03-16T19:59:14.340Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -73,10 +73,6 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 > In case of emergency, call **(19) 35149686** or the extension <kbd>686</kbd>
 {.is-warning}
 
-- <span style="color:grey">**Table 1**: General information regarding IMBUIA.</span>
-{.grid-list}
-
-
 <!--- 
 IMBUIA, an acronym for Infrared Micro- and nano-spectroscopy Beamline for Ultra-resolved Imaging Applications, is the first infrared (IR) beamline to operate in the new brazilian accelerator Sirius. This beamline will serve the worldwide community on multiscale chemical and optical analysis of multidisciplinary materials. For that, this beamline comprises two experimental stations: the IMBUIA-micro, dedicated to chemical mapping of microscale materials and the IMBUIA-nano, that will approach optical and vibrational analysis of materials at the nanoscale. Designed to continuously cover the mid-IR range with synchrotron radiation (SR) combined to narrowband lasers, this beamline is ready to approach urgent open questions in a variety of modern themes, including drug delivery to biosystems, energy harvesting materials, optics and chemistry of quantum materials, biomedicine, *in-situ* chemical monitoring of electrochemical reactions, in-liquid biochemical analysis and many others.
 --->
@@ -127,8 +123,7 @@ The choice for the Glidcop substrate was based on the simulation study that comp
 | CuCrZr @ 26 °C | 81  | 0.0024 | 65  |
 | GlidCop @ 21 °C | 130  | 0.0012 | 72|
 | Si @ -150 °C | \-118 | 7.9E-6 | 1 |
-
-- <span style="color:grey">**Table 2**: Simulation results of the considered options for the mirror substrate cooled at room temperature or cryogenic conditions.</span>
+- <span style="color:grey">**Table 1**: Simulation results of the considered options for the mirror substrate cooled at room temperature or cryogenic conditions.</span>
 {.grid-list}
 
 ## Beamline optics and in-vacuum optomechanics
