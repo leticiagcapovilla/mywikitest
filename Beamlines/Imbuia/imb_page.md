@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T20:44:00.481Z
+date: 2024-03-16T20:53:08.137Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -134,7 +134,7 @@ The optical layout of IMBUIA is comprised of 4 mirrors in vacuum that delivers t
 - <span style="color:grey">**Figure 6**: IMBUIA optical layout: three flat mirrors (M1, M2 and M3) deliver the VIS-IR broadband beam to the IMBUIA-nano station. A movable parabolic mirror (M4) collimates and directs the beam towards the IMBUIA-micro station on demand.</span>
 {.grid-list}
 
-Yet on the optical table in air environment, a custom designed Au/Aluminum toroidal mirror (M5) collects the naturally divergent IR beam and focuses it 419 mm downstream, producing a secondary source (SS). Using a regular CCD and a band pass filter centered at λ=980 nm, we imaged the SS as showed in (Fig. 4e), whose shape and dimen- sions (FWHM ∼\\sim∼ 20 μm) are consistent to the SRW numerical simulation of the SS (FWHM ∼\\sim∼ 33 μm at λ=1.24 μm) depicted in Fig. 4d. The small discrepancy between experiment and simulation regarding the FWHM is associated to the slightly different wavelengths and exposure parameters. We used different wavelengths since we could not match available bandpass filters with the minimum energy that SRW can simulate. By positioning a screen at the M5 position and using a 633 nm band pass filter, we could image the beam cross-section (Fig. 4c) with horizontal ×\\times× vertical dimensions of 26 ×\\times× 23 mm^2^, respectively, and with good agreement with the numerical prediction (Fig. 4b). A structure of rings is observed in both experiment and simulation for λ=633 (Fig. 4b,c) nm and it is understood here as diffraction fringes from the bending magnet extraction port, previously presented in Fig. 1c. An intense curved feature was observed (white arrow in Fig. 4c) and is interpreted as an internal reflection from the dipole chamber. Inside the UHV periscope, a custom-designed Au/Aluminum parabolic mirror (M4) is mounted on a long travel linear stage that enables beam selection to the IMBUIA-micro station.
+Yet on the optical table in air environment, a custom designed Au/Aluminum toroidal mirror (M5) collects the naturally divergent IR beam and focuses it 419 mm downstream, producing a secondary source (SS). Using a regular CCD and a band pass filter centered at $\lambda$=980 nm, we imaged the SS as showed in (Fig. 4e), whose shape and dimen- sions (FWHM ∼\\sim∼ 20 μm) are consistent to the SRW numerical simulation of the SS (FWHM $\sim$ 33 μm at $\lambda$=1.24 μm) depicted in Fig. 4d. The small discrepancy between experiment and simulation regarding the FWHM is associated to the slightly different wavelengths and exposure parameters. We used different wavelengths since we could not match available bandpass filters with the minimum energy that SRW can simulate. By positioning a screen at the M5 position and using a 633 nm band pass filter, we could image the beam cross-section (Fig. 4c) with horizontal $\times$ vertical dimensions of 26 $\times$ 23 mm^2^, respectively, and with good agreement with the numerical prediction (Fig. 4b). A structure of rings is observed in both experiment and simulation for $\lambda$=633 (Fig. 4b,c) nm and it is understood here as diffraction fringes from the bending magnet extraction port, previously presented in Fig. 1c. An intense curved feature was observed (white arrow in Fig. 4c) and is interpreted as an internal reflection from the dipole chamber. Inside the UHV periscope, a custom-designed Au/Aluminum parabolic mirror (M4) is mounted on a long travel linear stage that enables beam selection to the IMBUIA-micro station.
 
 ![beam-profiles](/img/beamlines/imbuia/beam_diagnostics.pdf =850x)
 - <span style="color:grey">**Figure 7**: a,b) Simulated and experimental beam cross-section at the M5 position for 633 nm wavelength. Scale bars represent 10 mm. c,d) Simulation and experiment of the secondary source (SS) after the elliptical focusing mirror (M5) at 1.24 μm and 980 nm wavelengths, respectively.</span>
@@ -178,7 +178,7 @@ The vacuum concept have two main objectives: *i)* to be compatible to the requir
 - <span style="color:grey">**Figure 9**: Whiteboard with preliminary thoughts for the vacuum setup for the IMBUIA beamline. Credits: Thiago Miguel, Gustavo Rodrigues and Rafael Molena.</span>
 {.grid-list}
 
-Figure 10 shows the actual vacuum layout installed in the IMBUIA beamline. The first gate valve (GV1) is responsible for isolating the vacuum environment of the storage ring from the M1 chamber when it is in retracted position (case of failure of M1). Bellow the M1 mirror, a non evaporable getter (NEG) cartridge is installed for enhancing the vacuum in the nearby volume. GV2 and GV3 gate valves are responsible for isolating the vacuum paths of the IMBUIA and CATERETÊ beamlines. A CVD diamond window (W1) is installed right after GV3 for isolating the storage ring vacuum from the experimental stations vacuum environments. Before the shielding wall, an ion pump (PMP1) is installed in the gamma shutter chamber together with a pressure sensor (VPS1) and pre-vacuum all-metal angle valve (AV1). A gate valve (GV4) is the last vacuum component inside the accelerator tunnel. Right after the wall, a mirror box (M2-M4) is responsible for delivering the beam to the experimental stations, where a pressure sensor (VPS2) and pre-vacuum all-metal angle valve (AV2) are installed. Towards the IMBUIA-nano station, a KRS5 IR window (W2) separates UHV and air environments. Towards the IMBUIA-micro station, a pair of ion pumps (PMP2 and PMP3) and gate valves (GV5 and GV6) keep an ultra low pressure in a ∼\\sim∼ 10 m beam path. Finally, a pressure sensor (VPS3) and pre-vacuum all-metal angle valve (AV3) allow monitoring and pumping the volume right before a KRS5 IR window (W3).
+Figure 10 shows the actual vacuum layout installed in the IMBUIA beamline. The first gate valve (GV1) is responsible for isolating the vacuum environment of the storage ring from the M1 chamber when it is in retracted position (case of failure of M1). Bellow the M1 mirror, a non evaporable getter (NEG) cartridge is installed for enhancing the vacuum in the nearby volume. GV2 and GV3 gate valves are responsible for isolating the vacuum paths of the IMBUIA and CATERETÊ beamlines. A CVD diamond window (W1) is installed right after GV3 for isolating the storage ring vacuum from the experimental stations vacuum environments. Before the shielding wall, an ion pump (PMP1) is installed in the gamma shutter chamber together with a pressure sensor (VPS1) and pre-vacuum all-metal angle valve (AV1). A gate valve (GV4) is the last vacuum component inside the accelerator tunnel. Right after the wall, a mirror box (M2-M4) is responsible for delivering the beam to the experimental stations, where a pressure sensor (VPS2) and pre-vacuum all-metal angle valve (AV2) are installed. Towards the IMBUIA-nano station, a BaF~2~ IR window (W2) separates UHV and air environments. Towards the IMBUIA-micro station, a pair of ion pumps (PMP2 and PMP3) and gate valves (GV5 and GV6) keep an ultra low pressure in a $\sim$ 10 m beam path. Finally, a pressure sensor (VPS3) and pre-vacuum all-metal angle valve (AV3) allow monitoring and pumping the volume right before a BaF~2~ IR window (W3).
 
 ![imbuia-vac-full-layout.png](/img/beamlines/imbuia/imbuia-vac-full-layout.png =600x)
 - <span style="color:grey">**Figure 10**: IMBUIA vacuum layout. Up to the first window (W1), the vacuum of the beamline is shared with the storage ring and is connected to the pre-frontend of the Caterê beamline. After the shielding wall, the vacuum path is extended to the two experimental station of the beamline (IMBUIA-nano and IMBUIA-micro stations).</span>
@@ -249,20 +249,9 @@ Controllers cabling and connections
 Neasnom server: cables/connectors/switches  
 Lasers: cables/connectors/switches
 
-| ![](/img/beamlines/imbuia/imbuia_overview.png)  <br>  <br>IMBUIA overview |     |
-| --- | --- |
-| Energy coverage | 62 meV to 1.9 eV   <br>500 cm^\-1^ to 15384 cm^\-1^    <br>40 µm to 650 nm   <br>15 THz to 461 THz |
-| Power at end stations | IR+VIS = 550 µW   <br>mid-IR (900-2000cm-1) = 14 µW |
-| Flux at end stations | ∼10^11^ ph/s/0.1%bw @ 10 µm |
-| Brilliance at end stations | ∼10^14^ ph/s/0.1%bw/mm^2^ @ 10 µm |
-| Location | Sirius experiment floor, axis 43 |
-| Coordinator | Raul Freitas - [raul.freitas@lnls.br](raul.freitas@lnls.br) |
-| website | [https://lnls.cnpem.br/facilities/imbuia-en/](https://lnls.cnpem.br/facilities/imbuia-en/) |
-| Contacts | Coordination: 5060   <br>Specialist: 5047   <br>IMB-nano station: 5020   <br>IMB-micro station: 5030 |
-
 ## IMBUIA-micro
 
-![commissioning.png](/img/beamlines/imbuia/commissioning.png)
+![commissioning.png](/img/beamlines/imbuia/commissioning.png =300x)
 
 The IMBUIA-micro station is still under technical commissioning. This section will be added as soon as it starts operation with synchrotron radiation.
 
