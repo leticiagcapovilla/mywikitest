@@ -2,7 +2,7 @@
 title: Imbuia page
 description: 
 published: 1
-date: 2024-03-16T03:07:20.639Z
+date: 2024-03-16T03:10:34.026Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -58,18 +58,18 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 - mid-IR filter UDR8 (Agilent Technologies, Inc.): 900-2000 cm^\-1^
 
 #### Location and contacts
-|Contact|email|extension|
-| --- | --- |---|
-| Coordinator | Raul Freitas - [raul.freitas@lnls.br](raul.freitas@lnls.br) |5060|
-| Staff scientist | Francisco Maia - [francisco.maia@lnls.br](francisco.maia@lnls.br)|5047|
-| Staff scientist | Ohanna Menezes - [ohanna.costa@lnls.br](ohanna.costa@lnls.br)|5020|
-| Staff scientist | Lucyano Macedo - [lucyano.macedo@lnls.br](lucyano.macedo@lnls.br)|5030|
-| Specialist | Thiago Santos - [thiago.santos@lnls.br](thiago.santos@lnls.br)|5030|
-| IMBUIA-nano station | [imbuia@lnls.br](imbuia@lnls.br)|5030|
-| IMBUIA-micro station | [imbuia@lnls.br](imbuia@lnls.br)|5030|
+|Contact|Name|email|Extension|
+|---|---|---|---|
+| Coordinator | Raul Freitas|[raul.freitas@lnls.br](raul.freitas@lnls.br) |5060|
+| Staff scientist | Francisco Maia | [francisco.maia@lnls.br](francisco.maia@lnls.br)|5047|
+| Staff scientist | Ohanna Menezes | [ohanna.costa@lnls.br](ohanna.costa@lnls.br)|5020|
+| Staff scientist | Lucyano Macedo | [lucyano.macedo@lnls.br](lucyano.macedo@lnls.br)|5030|
+| Specialist | Thiago Santos | [thiago.santos@lnls.br](thiago.santos@lnls.br)|5030|
+|Beamline| IMBUIA-nano station | [imbuia@lnls.br](imbuia@lnls.br)|5030|
+|Beamline| IMBUIA-micro station | [imbuia@lnls.br](imbuia@lnls.br)|5030|
 
 **Notes**:
-- Location: Sirius experiment floor, axis 43 
+- Location: Sirius experiment floor, <kbd>axis 43</kbd> 
 
 
 
