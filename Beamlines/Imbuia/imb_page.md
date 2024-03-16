@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-03-16T19:27:59.249Z
+date: 2024-03-16T19:33:36.184Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -99,9 +99,9 @@ Simulations of IR intensity at the radiation mask are presented in Fig. 2. The m
 
 An important figure to be considered in the designing of SR probes is the source size. Fig.3 presents the simulation of the IR source for the wavelengths of 1, 10 and 20 µm. Since the source is inside the magnetic fields of a B2 dipole, most of the numerical codes do not allow a direct visualisation of the source. Therefore, we used a 1:1 magnification system based on thin lens of the SRW (top row diagram of Fig.3) to simulate the source at its origin. The FWHM of the IR intensity distribution at the origin are 0.22 µm, 1.82 µm and 3.53 µm for the wavelengths of 1, 10 and 20 µm, respectively.
 
-![source.png](/img/beamlines/imbuia/source.png)
-
-**Figure 3**: SRW simulation of the IMBUIA source produced by an imaging optical scheme with magnification 1. Simulations performed for 100 mA stored current.
+![source](/img/beamlines/imbuia/imbuia_source.pdf =1300x)
+- <span style="color:grey">**Figure 3**: SRW simulation of the IMBUIA source produced by an imaging optical scheme with magnification 1. Simulations performed for 100 mA stored current.</span>
+{.grid-list}
 
 The size of the source is directly proportional to the wavelength, therefore, it is a diffraction-limited point source in the infrared range. In the other hand, the maximum value for the flux density does not follow the same proportion law as it influenced by the maximum collection angle of the port. To illustrate this in depth, we calculated the spectral flux (Fig. 4a), polarization portions (Fig. 4b), spectral brilliance (Fig. 4c) and irradiance (Fig. 4d). By observing the flux trend (Fig. 4a), it is clear that longer wavelengths are hardly penalized by the small vertical aperture of the port, as the curve drops fast above 1 μm wavelengths. Moreover, the extracted radiation is dominated by horizontal polarization, as the total polarization flux is just slightly above the h-polarized flux. This is confirmed by the polarization study in Fig. 4b, where the h-polarized portion correspond to more than 75% of the total. For longer wavelengths (>20 μm) the polarization becomes mainly horizontal (above 90%), confirming that a very small central portion of the far-IR/THz beam is passing through the extraction port.
 
