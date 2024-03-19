@@ -2,7 +2,7 @@
 title: Content Guide
 description: 
 published: 1
-date: 2024-03-19T15:33:25.484Z
+date: 2024-03-19T15:35:26.239Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T14:26:06.874Z
@@ -23,7 +23,18 @@ Easily find the content you want
 - [Power Supplies *Power supplies designed for Sirius magnets*](/Machine/power_supplies)
 - [RF System *System responsible for supplying energy to the electrons*](/Machine/rf_system)
 
+<br />
+
 ## Beamlines
 
 - [IMBUIA](/Beamlines/Imbuia/imb_page)
+{.links-list}
+
+<br />
+
+## Groups Documentation (deprecated)
+
+- CON
+- DIG
+- FAC
 {.links-list}
