@@ -2,7 +2,7 @@
 title: FAC Documentation
 description: 
 published: 1
-date: 2024-03-19T18:44:35.759Z
+date: 2024-03-19T18:49:31.391Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T15:38:12.312Z
@@ -451,3 +451,45 @@ The UVX beam size calculation system, located at the DFX beamline, consists of a
 
 - We need to get another film to be able to convert X-ray into visible light. The one we have right now is damaged.
 - We need to recalibrate the new camera.
+
+### Beam dynamics codes
+
+**MAD**
+
+MAD is a beam dynamics code used in the accelerator physics group at LNLS mainly for creation of new lattices from afresh and for parameter match. Our current version is MAD8 which runs under Microsoft Windows.
+
+**Matlab**
+
+Currently the accelerator physics group uses MATLAB as a platform for both simulations and high level machine control of the UVX storage ring. The main packages used are **MML** and **AT**. Various packages have been written in-house around these main two for studying beam dynamics for Sirius and for the existing UVX storage rings. Below we describe very succinctly all these packages. Matlab library path has to be configured so that the main function of MML and AT are accesible within its workspace. When this configuration is done all, relevant paths can be loaded into matlab prompt executing the global script `lnls_setpath_mml_at`
+
+**Accelerator Toolbox**
+
+Accelerator Toolbox (**AT**) is a Matlab package [developed at SLAC](http://www.slac.stanford.edu/pubs/slacpubs/8000/slac-pub-8732.html) that implements a number of functions (scripts) that help in modeling elements, calculating optics in transport lines and storage rings and performing tracking simulations. A non-exhaustive list with help for available scripts can be obtained with the command `athelp`. Since AT is composed of a very large number of scripts there is no single document that describes every of its functionalities. The best documentation happens to be the source code of the scripts, which can looked at with matlab editor. (see AT page)
+
+**MatlabMiddleLayer**
+
+MatlabMiddleLayer (**MML**) is a Matlab package containing a set of scripts and data structures that are used to 1) map an AT simulation model into the real machine and 2) perform process variable readouts and setpoint modifications. It is a software layer between the machine control system (LNLS1Link for UVX, EPICS for Sirius) on the bottom and high-level machine study algorithms or routine operations on the top. MML's basic data structures can be accessed from Matlab workspace through two functions: `getao` (accelerator object) and `getad` (accelerator data). Parametrization of these two structures is done through other scripts which have to be tailored for each machine in particular. (see [MML page](http://10.39.50.85:3000/en/Machine/Groups/FAC/matlab_middle_layer))
+
+`lattice_errors` **package**
+
+A set of scripts to generate machines with random errors and to correct the optics. From the resulting corrected models flat files are generated and imported from Tracy3 for dynamical aperture calculation.
+
+> revise how we implement rotation errors in bending magnets!!!
+{.is-warning}
+
+`magnet_modelling` **package**
+
+A set of scripts that take field maps from 3D magnetostatic calculations and perform Runge-Kutta trajectory integrations to calculate important field parameters such as integrated nominals and error multipoles. A segmented model of the magnet can be generated using theses scripts.
+
+`insertion_devices` **package**
+
+Another set of script which defines which insertion devices are to be included in Sirius lattice, load their Radia kicktables, and does focusing compensation and tune adjustements.
+
+`lnls_at2tracy_flatfile` **script**
+
+The script lnls_at2tracy_flatfile generates tracy-like output flat files from the AT lattice model. It is mainly used to prepare tracy input run data from `lattice_errors`.
+
+`tracy3_*` **package**
+
+This is a set of scripts used to analyze and plot output results of Tracy runs. 
+
