@@ -2,13 +2,13 @@
 title: Accessing configuration database
 description: 
 published: 1
-date: 2024-03-19T20:03:00.621Z
+date: 2024-03-19T20:05:28.987Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T20:03:00.621Z
 ---
 
-# FAC:Accessing configuration database
+# FAC: Accessing configuration database
 
 ## Mongo
 
