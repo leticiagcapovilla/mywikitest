@@ -39,43 +39,51 @@ Operator interfaces for reading and setting parameter values, and high level phy
 * Operations manager (configuration)
 
 For specific machine subsystem parameters, a hierarchical structure, such as in the current UVX operations program, could be used. This contains:
-* Storage ring
-  * Magnets
-  * Pulsed magnets (including PMM)
-** Electrodes
-** Optics
-*** Mode (including single bunch)
-*** Tune control
-*** Chromaticity control
-*** Position and angle
-** Gamma shutter control
-** Storage ring access light
-** Orbit correction (SOFB (?) and high level interface to FOFB)
-** RF cavities
-** Scrapers
-* Booster
-** Magnets
-** Pulsed magnets
-** Electrodes
-** Optics
-*** Tune control
-*** Chromaticity control
-*** Position and angle
-** Ramping
-** Orbit correction
-** RF cavities
-* Transport line
-** Magnets
-** Monitors
-** Optics
-*** Position and angle
-**** Storage ring injection
-**** Booster injection
-* Linac
-** Magnets
-** Gun
-** Monitors
-** RF
+
+**Storage ring**
+
+* Magnets
+* Pulsed magnets (including PMM)
+* Electrodes
+* Optics
+  * Mode (including single bunch)
+  * Tune control
+  * Chromaticity control
+  * Position and angle
+* Gamma shutter control
+* Storage ring access light
+* Orbit correction (SOFB (?) and high level interface to FOFB)
+* RF cavities
+* Scrapers
+
+**Booster**
+
+* Magnets
+* Pulsed magnets
+* Electrodes
+* Optics
+  * Tune control
+  * Chromaticity control
+  * Position and angle
+* Ramping
+* Orbit correction
+* RF cavities
+
+**Transport line**
+
+* Magnets
+* Monitors
+* Optics
+  * Position and angle
+    * Storage ring injection
+    * Booster injection
+
+**Linac**
+
+* Magnets
+* Gun
+* Monitors
+* RF
 
 ## Data archiving, visualisation and analysis
 This category includes applications for archiving, visualising and analysing machine parameters.
