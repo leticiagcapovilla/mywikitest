@@ -2,7 +2,7 @@
 title: FAC Documentation
 description: 
 published: 1
-date: 2024-03-19T18:49:31.391Z
+date: 2024-03-19T18:55:28.297Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T15:38:12.312Z
@@ -493,3 +493,172 @@ The script lnls_at2tracy_flatfile generates tracy-like output flat files from th
 
 This is a set of scripts used to analyze and plot output results of Tracy runs. 
 
+`trackcpp_*` **package**
+
+This is a set of scripts used to analyze and plot output results of Trackcpp runs.
+
+**Pyjob**
+
+Pyjob is a job manager written in python created to distribute several tracking requests among the hosts available for use.
+
+FAC:Pyjob (see pyjob page)
+
+**Tracy3LNLS**
+
+Modified version of Soleil's Tracy3. Tracking code used for dynamical aperture calculations
+
+**Trackcpp**
+
+Tracking code library written in C++ to calculate beam optics and dynamical apertures. It is supposed to be used as a library to be linked with other C++ codes, as a python module to be imported or a script-driven command-line tool that reads input files and writes output data. The code is at [GitHub trackcpp repository](https://github.com/lnls-fac/trackcpp) (see [Trackcpp](/Machine/Groups/FAC/trackcpp)
+
+**Pyaccel**
+
+Python package for beam dynamics calculations. (see PyAccel)
+
+**OPA**
+
+GUI for DA optimization. It is based on perturbation theory of driving resonance terms. Good starting point for sextupole optimizations.
+
+**Elegant/MOGA**
+
+Tracking code used for numerical dynamical aperture optimizations 
+
+### Whiteboard (ideas)
+
+**Infrastructure**
+
+- we should mature the idea of preparing image files for large distribution over the LNLS computing infrastructure for beam dynamics calculations. (Roque ok'ed it on 2014-08-05). start from minimal ubuntu dist (no x-windows, etc) and install packages as needed.
+- tracking code with CUDA
+- parallel FPGA implementation of tracking code (we should ask Daniel for help with simple tests...)
+- define a cleaner flatfile format to be used in all beam dynamics codes
+
+**UVX**
+
+**Excitation curves for dipoles**
+
+    we have to implement biunivocal calibration curves for the dipoles at UVX to prevent the slow drift in current dipole as normalized configurations are saved and loaded.
+
+**LOCO symmetrization and calibration**
+
+    should we import bpms and correctors gains fitted with LOCO into the UVX control system (Paradox tables)?
+    generalize LOCO to fit more than one optical mode at the same time (using same set of bpm and corrector gain)
+
+**Optics Improvements**
+
+    Optics mode tabulation: varying QF,QD,QFC and look for a 'long beam lifetime mode' with small emittance.
+
+**SIRIUS**
+
+**Initial List of High level Applications**
+
+**General Applications**
+
+    Controls building access, gamma shutter, etc
+    Timing: settings and control of timing system
+    Power Supply Diagnostics: Run-time comparison of Current-SP and RB for all PS
+    Power Supply Cicling: perform cycling procedure of selected PS
+    Power Supply Test: check if selected PSs are responding to Current-SP
+    Operation Manager: controls shifts, etc
+    Configuration Manager: save and retrieve
+    Vacuum pressure monitoring: display vacuum pressures
+    Vacuum valves: open and close commands
+    Interlock monitoring
+    Rad. protection display
+    Injection efficiency (LI -> BO -> SI)
+    Beam loss monitors
+    Water leak monitors
+    HLS monitors
+
+**Storage Ring Applications**
+
+    Storage ring status: display info such as current, lifetime, operator messages, etc.
+    DC Magnets: full monitoring control
+    Pulsed Magnets: full monitoring and control
+    Optics: tune setting, chromaticity setting
+    Lifetime: lifetime calculation
+    RF: full monitoring and control
+    Scrapers
+    SOFB
+    Beam image
+    Configuration manager: normalized configuration control (interpolation, tune adjustment, etc)
+    migration
+    
+**Booster Applications**
+
+    Booster status:
+    DC Magnets: full monitoring control
+    Pulsed Magnets: full monitoring and control
+    Optics: tune setting, chromaticity setting
+    Lifetime: lifetime calculation
+    RF: full monitoring and control
+    Orbit correction
+    Beam image
+    Configuration manager: normalized configuration control (interpolation, tune adjustment, etc)
+    Energy ramping: magnets and RF
+
+**Transport Line Applications**
+
+    DC Magnets: full monitoring control
+    Pulsed Magnets: full monitoring and control
+    Screen and BPM
+    Orbit correction: correctors + screen control
+    Position and angle control at septum
+    Energy slit
+    ICT, FTC
+
+**LINAC Applications**
+
+    E-Gun
+    Buncher parameters
+    Lens parameters
+    Solenoid parameters
+    Triplet parameters
+    Modulators and klystrons
+    Orbit control, screens and BPMs
+    Spectrometer parameters
+    ICTs, FCTs
+    Emittance measurement, energy measurement
+
+<br />
+
+#### Diagnostics elements
+    
+**COD-finder algorithm**
+
+    To write an algorithm that uses oscilloscope or libera brilliance turn-by-turn data to find closed-orbit automatically by varying the correctors strengths (moga-like or simulated-annealing like)
+    Multiobjetive functions: maximizing signal above noise from bpms readout along turn1, tune2, etc... and trying to bring correctors strengths rms to exptected values.
+    Look at comissioning data for the UVX booster (centaurus FAC) in order to have a feeling of the noise, signal, etc.
+    Implement the algorithm using AT model and realistic delay times for readouts and correctors response times for setpoint changes.
+    Try the algorithm at UVX.
+    Try the algorithm at MAX-IV?
+
+**High coupling mode**
+
+    Study a new optics with high betatron coupling (revise the idea of using dispersion waves for coupling control at Sirius).
+    The advantages include lower horizontal emittance, increase in the 'roundness' of the beam, increase in Tousckek beam lifetime.
+    The difficulties are related to the optimization of the horizontal dynamic aperture: with high coupling, the small vertical physical restrictions coming from in-vacuum undulators translate into small horizontal apertures.
+    One idea to be studied to overcome the difficulties described above is to create an 'amplitude-dependent coupling', where the coupling is high at low amplitudes but small at large amplitudes.
+    Additonal skew quadrupoles can be introduced in the lattice without a big impact. All sextupoles will already have skew quad coils available and the power supplies needed are simple and inexpensive (I=+/-10A).
+
+**High level applications integration for experiments**
+
+    Evaluate possibilities for integration between operator interfaces and experiment data archiving and logbook.
+
+<br />
+
+### Log
+
+Log file with current and pending activities.
+
+<br />
+
+### Meetings
+
+    2014-09-12 JobManager
+    2014-08-22 High level aplications and infrastructure for Sirius control system
+    2014-08-15 JobManager and Sirius Diagnostic elements
+    2014-08-08 FAC infrastructure
+
+<br />
+
+### Publications
