@@ -2,13 +2,13 @@
 title: Setup workstations for sirius
 description: 
 published: 1
-date: 2024-03-05T21:09:55.052Z
+date: 2024-03-19T15:43:14.486Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T20:57:59.965Z
 ---
 
-# FAC:Setup workstations for sirius
+# FAC: Setup workstations for sirius
 
 ## Create Users
 
