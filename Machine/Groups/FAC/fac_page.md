@@ -536,7 +536,7 @@ Tracking code used for numerical dynamical aperture optimizations
 
 **Excitation curves for dipoles**
 
-    we have to implement biunivocal calibration curves for the dipoles at UVX to prevent the slow drift in current dipole as normalized configurations are saved and loaded.
+we have to implement biunivocal calibration curves for the dipoles at UVX to prevent the slow drift in current dipole as normalized configurations are saved and loaded.
 
 **LOCO symmetrization and calibration**
 
@@ -545,7 +545,7 @@ Tracking code used for numerical dynamical aperture optimizations
 
 **Optics Improvements**
 
-    Optics mode tabulation: varying QF,QD,QFC and look for a 'long beam lifetime mode' with small emittance.
+- Optics mode tabulation: varying QF,QD,QFC and look for a 'long beam lifetime mode' with small emittance.
 
 **SIRIUS**
 
@@ -553,71 +553,71 @@ Tracking code used for numerical dynamical aperture optimizations
 
 **General Applications**
 
-    Controls building access, gamma shutter, etc
-    Timing: settings and control of timing system
-    Power Supply Diagnostics: Run-time comparison of Current-SP and RB for all PS
-    Power Supply Cicling: perform cycling procedure of selected PS
-    Power Supply Test: check if selected PSs are responding to Current-SP
-    Operation Manager: controls shifts, etc
-    Configuration Manager: save and retrieve
-    Vacuum pressure monitoring: display vacuum pressures
-    Vacuum valves: open and close commands
-    Interlock monitoring
-    Rad. protection display
-    Injection efficiency (LI -> BO -> SI)
-    Beam loss monitors
-    Water leak monitors
-    HLS monitors
+Controls building access, gamma shutter, etc
+Timing: settings and control of timing system
+Power Supply Diagnostics: Run-time comparison of Current-SP and RB for all PS
+Power Supply Cicling: perform cycling procedure of selected PS
+Power Supply Test: check if selected PSs are responding to Current-SP
+Operation Manager: controls shifts, etc
+Configuration Manager: save and retrieve
+Vacuum pressure monitoring: display vacuum pressures
+Vacuum valves: open and close commands
+Interlock monitoring
+Rad. protection display
+Injection efficiency (LI -> BO -> SI)
+Beam loss monitors
+Water leak monitors
+HLS monitors
 
 **Storage Ring Applications**
 
-    Storage ring status: display info such as current, lifetime, operator messages, etc.
-    DC Magnets: full monitoring control
-    Pulsed Magnets: full monitoring and control
-    Optics: tune setting, chromaticity setting
-    Lifetime: lifetime calculation
-    RF: full monitoring and control
-    Scrapers
-    SOFB
-    Beam image
-    Configuration manager: normalized configuration control (interpolation, tune adjustment, etc)
-    migration
+- Storage ring status: display info such as current, lifetime, operator messages, etc.
+- DC Magnets: full monitoring control
+- Pulsed Magnets: full monitoring and control
+- Optics: tune setting, chromaticity setting
+- Lifetime: lifetime calculation
+- RF: full monitoring and control
+- Scrapers
+- SOFB
+- Beam image
+- Configuration manager: normalized configuration control (interpolation, tune adjustment, etc)
+- migration
     
 **Booster Applications**
 
-    Booster status:
-    DC Magnets: full monitoring control
-    Pulsed Magnets: full monitoring and control
-    Optics: tune setting, chromaticity setting
-    Lifetime: lifetime calculation
-    RF: full monitoring and control
-    Orbit correction
-    Beam image
-    Configuration manager: normalized configuration control (interpolation, tune adjustment, etc)
-    Energy ramping: magnets and RF
+- Booster status:
+- DC Magnets: full monitoring control
+- Pulsed Magnets: full monitoring and control
+- Optics: tune setting, chromaticity setting
+- Lifetime: lifetime calculation
+- RF: full monitoring and control
+- Orbit correction
+- Beam image
+- Configuration manager: normalized configuration control (interpolation, tune adjustment, etc)
+- Energy ramping: magnets and RF
 
 **Transport Line Applications**
 
-    DC Magnets: full monitoring control
-    Pulsed Magnets: full monitoring and control
-    Screen and BPM
-    Orbit correction: correctors + screen control
-    Position and angle control at septum
-    Energy slit
-    ICT, FTC
+- DC Magnets: full monitoring control
+- Pulsed Magnets: full monitoring and control
+- Screen and BPM
+- Orbit correction: correctors + screen control
+- Position and angle control at septum
+- Energy slit
+- ICT, FTC
 
 **LINAC Applications**
 
-    E-Gun
-    Buncher parameters
-    Lens parameters
-    Solenoid parameters
-    Triplet parameters
-    Modulators and klystrons
-    Orbit control, screens and BPMs
-    Spectrometer parameters
-    ICTs, FCTs
-    Emittance measurement, energy measurement
+- E-Gun
+- Buncher parameters
+- Lens parameters
+- Solenoid parameters
+- Triplet parameters
+- Modulators and klystrons
+- Orbit control, screens and BPMs
+- Spectrometer parameters
+- ICTs, FCTs
+- Emittance measurement, energy measurement
 
 <br />
 
@@ -625,24 +625,24 @@ Tracking code used for numerical dynamical aperture optimizations
     
 **COD-finder algorithm**
 
-    To write an algorithm that uses oscilloscope or libera brilliance turn-by-turn data to find closed-orbit automatically by varying the correctors strengths (moga-like or simulated-annealing like)
-    Multiobjetive functions: maximizing signal above noise from bpms readout along turn1, tune2, etc... and trying to bring correctors strengths rms to exptected values.
-    Look at comissioning data for the UVX booster (centaurus FAC) in order to have a feeling of the noise, signal, etc.
-    Implement the algorithm using AT model and realistic delay times for readouts and correctors response times for setpoint changes.
-    Try the algorithm at UVX.
-    Try the algorithm at MAX-IV?
+- To write an algorithm that uses oscilloscope or libera brilliance turn-by-turn data to find closed-orbit automatically by varying the correctors strengths (moga-like or simulated-annealing like)
+- Multiobjetive functions: maximizing signal above noise from bpms readout along turn1, tune2, etc... and trying to bring correctors strengths rms to exptected values.
+- Look at comissioning data for the UVX booster (centaurus FAC) in order to have a feeling of the noise, signal, etc.
+- Implement the algorithm using AT model and realistic delay times for readouts and correctors response times for setpoint changes.
+- Try the algorithm at UVX.
+- Try the algorithm at MAX-IV?
 
 **High coupling mode**
 
-    Study a new optics with high betatron coupling (revise the idea of using dispersion waves for coupling control at Sirius).
-    The advantages include lower horizontal emittance, increase in the 'roundness' of the beam, increase in Tousckek beam lifetime.
-    The difficulties are related to the optimization of the horizontal dynamic aperture: with high coupling, the small vertical physical restrictions coming from in-vacuum undulators translate into small horizontal apertures.
-    One idea to be studied to overcome the difficulties described above is to create an 'amplitude-dependent coupling', where the coupling is high at low amplitudes but small at large amplitudes.
-    Additonal skew quadrupoles can be introduced in the lattice without a big impact. All sextupoles will already have skew quad coils available and the power supplies needed are simple and inexpensive (I=+/-10A).
+- Study a new optics with high betatron coupling (revise the idea of using dispersion waves for coupling control at Sirius).
+- The advantages include lower horizontal emittance, increase in the 'roundness' of the beam, increase in Tousckek beam lifetime.
+- The difficulties are related to the optimization of the horizontal dynamic aperture: with high coupling, the small vertical physical restrictions coming from in-vacuum undulators translate into small horizontal apertures.
+- One idea to be studied to overcome the difficulties described above is to create an 'amplitude-dependent coupling', where the coupling is high at low amplitudes but small at large amplitudes.
+- Additonal skew quadrupoles can be introduced in the lattice without a big impact. All sextupoles will already have skew quad coils available and the power supplies needed are simple and inexpensive (I=+/-10A).
 
 **High level applications integration for experiments**
 
-    Evaluate possibilities for integration between operator interfaces and experiment data archiving and logbook.
+- Evaluate possibilities for integration between operator interfaces and experiment data archiving and logbook.
 
 <br />
 
@@ -654,10 +654,10 @@ Log file with current and pending activities.
 
 ### Meetings
 
-    2014-09-12 JobManager
-    2014-08-22 High level aplications and infrastructure for Sirius control system
-    2014-08-15 JobManager and Sirius Diagnostic elements
-    2014-08-08 FAC infrastructure
+- 2014-09-12 JobManager
+- 2014-08-22 High level aplications and infrastructure for Sirius control system
+- 2014-08-15 JobManager and Sirius Diagnostic elements
+- 2014-08-08 FAC infrastructure
 
 <br />
 
