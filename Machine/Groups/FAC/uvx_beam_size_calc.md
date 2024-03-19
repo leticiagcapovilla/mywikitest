@@ -2,13 +2,13 @@
 title: UVX beam size calculation
 description: 
 published: 1
-date: 2024-03-19T19:34:27.607Z
+date: 2024-03-19T19:34:56.209Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T19:34:27.607Z
 ---
 
-# FAC:UVX beam size calculation
+# FAC: UVX beam size calculation
 
 The UVX beam size calculation system, located at the DFX beamline, consists of an Ethernet camera connected to a desktop computer running the Dimfei Delphi application. Dimfei uses DLLs to communicate with the camera and perform the beam size calculation.
 
