@@ -2,7 +2,7 @@
 title: Sirius lattice versions
 description: 
 published: 1
-date: 2024-03-19T19:27:50.828Z
+date: 2024-03-19T19:28:21.262Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T19:18:05.571Z
@@ -10,7 +10,7 @@ dateCreated: 2024-03-19T19:18:05.571Z
 
 # FAC: Sirius lattice versions
 
-In the course of the Sirius project's history, each submachine has been tagged with a version string identification. This identification consists in a two-letter initial indicating the submachine, a lattice version and, optionally, an identification of the optics of the lattice. Letters SI refer to the storage ring, TS refers to the booster to storage ring transport line, BO to the booster, TB refers to the linac to booster transport line and finally, LI refers to the linac.
+In the course of the Sirius project's history, each submachine has been tagged with a version string identification. This identification consists in a two-letter initial indicating the submachine, a lattice version and, optionally, an identification of the optics of the lattice. Letters **SI** refer to the storage ring, **TS** refers to the booster to storage ring transport line, **BO** to the booster, **TB** refers to the linac to booster transport line and finally, **LI** refers to the linac.
 
 ## Storage ring
 
