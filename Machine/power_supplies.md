@@ -2,7 +2,7 @@
 title: Power Supplies
 description: 
 published: 1
-date: 2024-03-05T16:39:52.771Z
+date: 2024-03-19T15:21:04.303Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:36.912Z
@@ -14,7 +14,11 @@ dateCreated: 2024-03-04T20:05:36.912Z
 
 ## Introduction
 
-The Power Supplies (PS) are used to feed the magnets of all accelerators and transport lines, working as current sources. Due to their parameters, the PS were divided in three families: 1. Low Power Supplies (FBP): bipolar PS, with output up to 10A/10V, used to feed steering magnets, skew quadrupoles, quadrupole trim coils, etc. 2. High Power Supplies (FAP): unipolar PS, with ouput up to 350A/460V, used to feed Dipoles, Quadrupoles and Sextupoles of Storage Ring and other magnets. 3. AC Power Supplies (FAC): bipolar PS which will follow a 2-Hz reference, with output up to 1.1kA/800V, used to feed Dipoles, Quadrupoles and Sextupoles of Booster. All the PS will be controlled by the same digital hardware, called Digital Regulation System (DRS), but with different firmwares. The main parameters of the Sirius storage ring power supplies are shown in Table 1.
+The Power Supplies (PS) are used to feed the magnets of all accelerators and transport lines, working as current sources. Due to their parameters, the PS were divided in three families:
+
+1. Low Power Supplies (FBP): bipolar PS, with output up to 10A/10V, used to feed steering magnets, skew quadrupoles, quadrupole trim coils, etc.
+2. High Power Supplies (FAP): unipolar PS, with ouput up to 350A/460V, used to feed Dipoles, Quadrupoles and Sextupoles of Storage Ring and other magnets.
+3. AC Power Supplies (FAC): bipolar PS which will follow a 2-Hz reference, with output up to 1.1kA/800V, used to feed Dipoles, Quadrupoles and Sextupoles of Booster. All the PS will be controlled by the same digital hardware, called Digital Regulation System (DRS), but with different firmwares. The main parameters of the Sirius storage ring power supplies are shown in Table 1.
 
 | Magnet kind | Dipole B1 | Dipole B2 | Quadrupole Q30  (QFB, QFP) | Quadrupole Q20  (QFA, Q1, Q2, Q3, Q4) | Quadrupole Q14  (QDA, QDB1, QDB2, QDP1, QDP2) | Sextupoles |
 | --- | --- | --- | --- | --- | --- | --- |
