@@ -2,13 +2,13 @@
 title: Low-alpha optics mode
 description: 
 published: 1
-date: 2024-02-29T13:46:37.411Z
+date: 2024-03-19T15:41:57.879Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T20:58:11.223Z
+dateCreated: 2024-03-04T20:06:16.437Z
 ---
 
-# FAC:Low-alpha optics mode
+# FAC: Low-alpha optics mode
 
 The idea in this optics mode is to generate a very short beam for terahertz experiments. This is accomplished by reducing the linear compaction factor $\alpha _{1}$ as much as possible. 
 
