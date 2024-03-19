@@ -2,13 +2,13 @@
 title: Matlab Accelerator Toolbox
 description: 
 published: 1
-date: 2024-03-05T13:48:08.300Z
+date: 2024-03-19T15:42:22.081Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T13:48:08.300Z
 ---
 
-# FAC:Matlab Accelerator Toolbox
+# FAC: Matlab Accelerator Toolbox
 
 Accelerator Toolbox (AT) is a Matlab package [developed at SLAC](http://www.slac.stanford.edu/pubs/slacpubs/8000/slac-pub-8732.html) that implements a number of functions (scripts) that help in modeling elements, calculating optics in transport lines and storage rings and performing tracking simulations. A non-exhaustive list with help for available scripts can be obtained with the command `athelp`. Since AT is composed of a very large number of scripts there is no single document that describes every of its functionalities. The best documentation happens to be the source code of the scripts, which can looked at with matlab editor.
 
