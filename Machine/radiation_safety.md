@@ -2,15 +2,13 @@
 title: Radiation Safety
 description: 
 published: 1
-date: 2024-02-29T16:01:18.608Z
+date: 2024-03-19T15:29:12.717Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-28T20:47:45.216Z
+dateCreated: 2024-03-04T20:05:42.796Z
 ---
 
 # Machine: Radiation Safety
-
-*Sirius has a radiological protection program committed to ensuring radiological safety in all areas. Engineering, administrative controls, as well as training, are used to prevent exposure to radiation by employees, members of the public and the environment. Our monitoring systems operate continuously and cover all areas of Sirius to ensure that the premises of radioprotection are met at all times. Any location that presents potential exposure is identified with warnings and strictly controlled. Our radiological protection program follows national and international standards, being even stricter than those recommended. No accessible area of the facility offers radiological risk to employees or visitors. **If you would like more information regarding our Sirius Radiation Protection Program, please contact us:** [rad@cnpem.br](https://wiki-sirius.lnls.br/mediawiki/index.php/RAD:RAD)
 
 ## Segurança Radiológica
 
