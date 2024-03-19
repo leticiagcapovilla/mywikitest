@@ -2,7 +2,7 @@
 title: UVX beam size calculation
 description: 
 published: 1
-date: 2024-03-19T19:34:56.209Z
+date: 2024-03-19T19:51:13.584Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T19:34:27.607Z
@@ -57,7 +57,7 @@ When installing in a new computer or after hardware changes, it might be necessa
 
 ## Development
 
-To be able to compile the Dimfei application, use the [same configurations][link] as for the UVX control system high level applications in general. The source code for the DLLs is supplied as Visual Studio solutions, and some additional requirements must be fulfilled:
+To be able to compile the Dimfei application, use the [same configurations](/Machine/Groups/FAC/uvx_control_system_hl_app) as for the UVX control system high level applications in general. The source code for the DLLs is supplied as Visual Studio solutions, and some additional requirements must be fulfilled:
 
 - acqimg depends on the Basler SDK.
 - dimfei depends on [LAPACKE](http://www.netlib.org/lapack/index.html#_lapack_for_windows).
