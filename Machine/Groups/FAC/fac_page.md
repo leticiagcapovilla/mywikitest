@@ -2,7 +2,7 @@
 title: FAC Documentation
 description: 
 published: 1
-date: 2024-03-19T16:02:23.675Z
+date: 2024-03-19T18:44:35.759Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T15:38:12.312Z
@@ -255,65 +255,199 @@ The idea in this optics mode is to generate a very short beam for terahertz expe
 
 **UVX - Low-emittance with Insertion Devices mode (BEDI)**
 
-Realizamos estudos no modo BEDI para controlar instabilidades coletivas longitudinais e transversais com o sistema de feedback. Também tentamos otimizar o tempo de vida desse modo alterando a tensão de GAP das cavidades de RF, sem sucesso e atualmente estamos trabalhando para gerar um modo similar ao BEDI que possua tempo de vida mais elevado. A vantagens desses modos de baixa emitância é que eles possuem feixes de elétrons menores, o que melhora a qualidade da luz síncrotron gerada. Assim, tornar um desses modos adequado para a operação do UVX seria benéfico para os usuários da máquina. Ainda, aprender a usar equipamentos avançados, como o sistema de feedback, serve como treinamento para a operação futura do sírius, onde tais ferramentas serão essenciais para o funcionamento da máquina. (see FAC:Project BEDI optics mode)
+Realizamos estudos no modo BEDI para controlar instabilidades coletivas longitudinais e transversais com o sistema de feedback. Também tentamos otimizar o tempo de vida desse modo alterando a tensão de GAP das cavidades de RF, sem sucesso e atualmente estamos trabalhando para gerar um modo similar ao BEDI que possua tempo de vida mais elevado. A vantagens desses modos de baixa emitância é que eles possuem feixes de elétrons menores, o que melhora a qualidade da luz síncrotron gerada. Assim, tornar um desses modos adequado para a operação do UVX seria benéfico para os usuários da máquina. Ainda, aprender a usar equipamentos avançados, como o sistema de feedback, serve como treinamento para a operação futura do sírius, onde tais ferramentas serão essenciais para o funcionamento da máquina. (see FAC:Project BEDI optics mode)(link)
 
-UVX - LNLSLink
+**UVX - LNLSLink**
 
 This is a Delphi client running at the OPR1 computer that communicates with UVX control system IDPM server. It is a process variable server whose rôle is to allow high level applications to read machine parameters and change set-points. It communicates with other clients through a simple in-home defined ASCII-stream protocol. For example, a string "A2QF01_SP,112.5," received through port number 53131 will set the power supply A2QF01 to the value of 112.5 A. The string "AMP01A_AM,AMP01B_AM,", on the other hand, will return the string "AMP01AH_AM,-2.345,AMP01BH_AM,-1.823,", for example, which contains the horizontal readout values of -2.345 mm and -1.823 mm for the AMP01A and AMP01B bpms, respectively.
 
 At this moment not all but most of the storage ring and booster parameters are implemented in LNLSLink. The main client that uses LNLSLink is the MML at MATLAB for beam dynamics machine experiments, routine corrector cycling and periodical optics measurements.
-SIRIUS - Lattice versions
+
+**SIRIUS - Lattice versions**
 
 In the course of the Sirius project's history, each submachine has been tagged with a version string identification. This identification consists in a two-letter initial indicating the submachine, a lattice version and, optionally, an identification of the optics of the lattice. Letters SI refer to the storage ring, TS refers to the booster to storage ring transport line, BO to the booster, TB refers to the linac to booster transport line and finally, LI refers to the linac. (see FAC:Sirius lattice versions)
-SIRIUS - Parameter specifications
+
+**SIRIUS - Parameter specifications**
 
 The Accelerator Physics Group is responsible for defining a large number of parameters which are critical in design various subsystems in the Sirius project.
-SIRIUS - Fieldmap analysis
 
-Field specification of every 3D nominal model of magnets is checked. This is accomplished by having its 3D-field map sampled on the mid-plane (at y = 0 mm) and analyzed. It can be demonstrated that knowledge of the 3D magnetic field on any plane, and on the mid-plane in particular, is enough for the reconstruction of the 3D field over the entire gap region. Apart from the discreteness of the fieldmap grid on the xz plane, numerical trajectories with arbitrary precision can be computed using standard Runge-Kutta integration algorithms. Multipoles around these trajectories can then be calculated and compared to specifications. (see Fieldmap analysis)
+**SIRIUS - Fieldmap analysis**
+
+Field specification of every 3D nominal model of magnets is checked. This is accomplished by having its 3D-field map sampled on the mid-plane (at y = 0 mm) and analyzed. It can be demonstrated that knowledge of the 3D magnetic field on any plane, and on the mid-plane in particular, is enough for the reconstruction of the 3D field over the entire gap region. Apart from the discreteness of the fieldmap grid on the xz plane, numerical trajectories with arbitrary precision can be computed using standard Runge-Kutta integration algorithms. Multipoles around these trajectories can then be calculated and compared to specifications. (see [Fieldmap analysis](/Machine/Groups/FAC/fieldmap_analysis))
 SIRIUS - Magnets measurement
 
 Accelerator Physics Group should closely interact with the Magnet Group for the definition of the characterization benches (Hall Probe, Rotating coil) and for magnetic measurements of magnet prototype and serial production elements.
 
-    we have created a set of python scripts to analyze data from rotating coil measurements. These scripts are in the directory <ROOT>/code/python/BobinaGirante. These scripts are being superseded by a corresponding set developed at the Magnets group
+> we have created a set of python scripts to analyze data from rotating coil measurements. These scripts are in the directory `<ROOT>/code/python/BobinaGirante`. These scripts are being superseded by a corresponding set developed at the Magnets group
+{.is-info}
 
-SIRIUS - Diagnostics beamlines
-SIRIUS - Wiki
+
+**SIRIUS - Diagnostics beamlines**
+
+**SIRIUS - Wiki**
 
 This wiki is maintained for listing and discussing machine parameters and subsystems, alongside with a tutorial. The Parameters extension available at tools is used to retrieve parameter values from a MySQL database. tions).
-Parameters extension
+
+**Parameters extension**
 
 There are three tables in the parameters mySQL database in order to manage Sirius parameters. By default, these tables are accessed by user prm_editor using password prm0.
 
-parameter: six-column table (name,team,symbol,units,is_derived,value).
+**parameter**: six-column table (name,team,symbol,units,is_derived,value).
 
-dependency: two-column table (name, dependency). Each line has a A = f(B) dependency. In this example A goes in the first column and B goes in the second column. A formula A = B + C, for example, generates two rows in this table.
+**dependency**: two-column table (name, dependency). Each line has a A = f(B) dependency. In this example A goes in the first column and B goes in the second column. A formula A = B + C, for example, generates two rows in this table.
 
-expression: two-column table (name, expression). Expression is a string.
+**expression**: two-column table (name, expression). Expression is a string.
 
-    A new version of the extension is available to be installed.
+> A new version of the extension is available to be installed.
+{.is-info}
 
-Wiki maintenance
+
+**Wiki maintenance**
 
 Currently, wiki administration is done by the SOL group. For help with wiki maintenance tasks, look at the FAC:Cookbook page. The following recipes are available:
 
-    Access MySQL parameter tables
-    Perform tests with the fac-wiki virtual machine
-    Install the Parameters MediaWiki extension
-    Reset user password
+- [Access MySQL parameter tables](/Machine/Groups/FAC/cookbook#access-mysql-parameter-tables)
+- [Perform tests with the fac-wiki virtual machine](/Machine/Groups/FAC/cookbook#perform-tests-with-the-fac-wiki-virtual-machine)
+- [Install the Parameters MediaWiki extension](/Machine/Groups/FAC/cookbook#install-the-parameters-mediawiki-extension)
+- [Reset user password](/Machine/Groups/FAC/cookbook#reset-user-password)
 
-Figures
+**Figures**
 
 Figures generated for the Sirius Wiki by the Accelerator Physics group members should, in general, be uploaded the group's SharePoint Library, in the sirius_wiki_figures directory; this allows future modification for updates. Figures automatically generated by scripts and analysis programs do not need to be uploaded.
-SIRIUS - High Level Applications
 
-The high level applications for the Sirius control system comprise software for monitoring and controlling parameters; parameter data archiving, visualisation and analysis; and the operations and maintenance management systems. (see Machine:High Level Applications and Virtual Accelerator)
-SIRIUS - Fluka/Flair support
+**SIRIUS - High Level Applications**
+
+The high level applications for the Sirius control system comprise software for monitoring and controlling parameters; parameter data archiving, visualisation and analysis; and the operations and maintenance management systems. (see [Machine: High Level Applications and Virtual Accelerator](/Machine/high_level_app_virt_acc)
+
+**SIRIUS - Fluka/Flair support**
 
 FAC has been involved in providing installation support of Fluka/Flair package used for radiation dose calculations:
 
-FLUKA is a fully integrated particle physics MonteCarlo simulation package. It has many applications in high energy experimental physics and engineering, shielding, detector and telescope design, cosmic ray studies, dosimetry, medical physics and radio-biology. It is an application that is run from the command-line.
+**FLUKA** is a fully integrated particle physics MonteCarlo simulation package. It has many applications in high energy experimental physics and engineering, shielding, detector and telescope design, cosmic ray studies, dosimetry, medical physics and radio-biology. It is an application that is run from the command-line.
 
-FLAIR is an advanced user friendly interface for FLUKA to facilitate the editing of FLUKA input files, execution of the code and visualization of the output files. It is based entirely on python and Tkinter.
+**FLAIR** is an advanced user friendly interface for FLUKA to facilitate the editing of FLUKA input files, execution of the code and visualization of the output files. It is based entirely on python and Tkinter.
 
-GEOVIEWER is a C++ library for visualization of 3D geometries used in post-processing. 
+**GEOVIEWER** is a C++ library for visualization of 3D geometries used in post-processing. 
+
+```
+Download
+--------
+
+00.	From https://www.fluka.org/fluka.php?id=download&sub=packages
+	User Name: fuid-5457
+	Password: <see /home/ximenes/fluka-flair/README.txt at lnls208-linux>
+
+	download three files:
+
+- fluka2011.2b-linux-gfor64bitAA.tar.gz
+- flair-2.0-3.tgz
+- flair-geoviewer-2.0-3.tgz
+
+into folder a ~/flukaflair-installation
+```
+
+```
+NEW INSTALLATION
+================
+
+Required packages
+-----------------
+
+01. sudo apt-get install gcc
+02. sudo apt-get install g++
+03. sudo apt-get install gfortran
+04. sudo apt-get install tcl
+05. sudo apt-get install tcl-dev
+06. sudo apt-get install tk
+07. sudo apt-get install tk-dev
+08. sudo apt-get install python-dev
+09. sudo apt-get install gnuplot
+10. sudo apt-get install gnuplot-x11
+11. sudo apt-get install make
+
+Fluka
+-----
+
+12. add 'export FLUPRO=~/fluka' and 'export FLUFOR=gfortran' into .bashrc
+13. source ~/.bashrc
+14. unzip fluka2011.2b-linux-gfor64bitAA.tar.gz into <FLUPRO> dir (~/fluka)
+15. cd $FLUPRO; make
+
+Flair
+-----
+
+16. copy flair-2.0-3.tgz to ~/ and unzip it (look at README file for flair and flair-geoviewer installation)
+
+
+Flair-geoviewer
+---------------
+
+17. tar xzf flair-geoviewer-2.0-3.tgz in ~/flair-2.0
+18. cd ~/flair-2.0
+19. make
+20. make DESTDIR=~/flair-2.0 install
+
+
+flair configuration
+-------------------
+
+21. configure flair to set gnuplot terminal to 'x11'.
+```
+
+```
+NEW VERSION UPDATING
+====================
+
+-- fluka --
+
+01. open gnome-terminal
+02. go to user home ( 'cd ~' )
+03. move old fluka folder to system temporary folder ( 'mv fluka /tmp/' )
+04. move old flair folder to system temporary folder ( 'mv flair-2.0 /tmp/' )
+05. create fluka folder ( 'mkdir fluka' )
+06. copy all 3 files to ~/fluka
+07. cd ~/fluka
+08. tar xzf fluka2011.2c-linux-gfor64bitAA.tar.gz (or newer version)
+09. compile fluka ( 'make' )
+10. check if file 'flukahp' is created
+
+-- flair --
+
+11. copy flair-2.0-8.tgz (or newer version) to ~/
+12. cd ~
+13. tar xzf flair-2.0-8.tgz
+
+-- geoviewer --
+
+14. cd ~/fluka
+15. tar xzf flair-geoviewer-2.0-8.tgz (or newer version)
+16. cd flair--geoviewer-2.0
+17. make
+18. make install DESTDIR=~/flair-2.0 install
+```
+
+**SIRIUS - Beam Dynamics Studies**
+
+1. Amplification Factors and Magnet Tolerances: In this section the alignment and excitation error tolerances for the Sirius storage ring magnets will be studied by the analysis of their orbit and optics distortion amplification factors.
+2. Girder Possibilities: We have performed a study where several possible girder configurations have been considered and analyzed. In this study amplification factors are defined and calculated, serving as a way to quickly estimate the statistical effects of misalignment errors on the beam optics. Amplification factors are calculated for free and corrected beam oscillations in the Sirius storage ring.
+3. Segmented and Rectangular Sirius Dipole Models: AT this point the Sirius dipoles are supposed to be rectangular but with curved poles. We have studied feasibility of different dipole models for the Sirius storage ring. The first model studied is that of a rectangular dipole in which the pole is also rectangular, that is, with constant field and gradient in the rectangular coordinate system. In this case the field varies along the trajectory of the beam. We analyzed the impact of this varying field on the beam optics and equilibrium parameters in order to ascertain the feasibility of the model. The second model studied was that of breaking Sirius dipoles into a composition of basic segments: B1 dipoles would be made of two identical segments, B2 dipoles would be made of three segments and B3 dipoles are made of a single segment. In this case we analyzed the impact of independent alignment of the segments on the alignment tolerance, due to the impact on the beam optics.
+
+<br />
+
+### Activities
+
+**UVX control system high level applications**
+
+The UVX control system high level applications run on Windows and are mostly written in Delphi. The source code is available in repositories in the lnls82-linux workstation. (see FAC:UVX control system high level applications)(link)
+
+- Add ion pump (LOCOMUX R5N6, module 7) to archiving system.
+- Fix alarm threshold persistence in operations program in OPR1.
+- Add FOFB disabled as an alarm in operations program in OPR1.
+- Evaluate possibility of aborting undulator motion commands from beamline.
+
+**UVX beam size calculation**
+
+The UVX beam size calculation system, located at the DFX beamline, consists of an Ethernet camera connected to a desktop computer running the Dimfei Delphi application. Dimfei uses DLLs to communicate with the camera and perform the beam size calculation. (see FAC:UVX beam size calculation)(link)
+
+- We need to get another film to be able to convert X-ray into visible light. The one we have right now is damaged.
+- We need to recalibrate the new camera.
