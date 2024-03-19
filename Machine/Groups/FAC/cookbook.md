@@ -2,7 +2,7 @@
 title: Cookbook
 description: 
 published: 1
-date: 2024-03-19T18:31:34.316Z
+date: 2024-03-19T18:38:06.176Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:06:02.609Z
@@ -179,6 +179,30 @@ $ SHOW TABLES;
 $ SELECT * FROM parameter;
 $ SELECT * FROM parameter WHERE NAME LIKE "SI optics radiation%";
 ```
+
+### ~~Perform tests with the fac-wiki virtual machine~~
+
+~~When performing tests with the old VirtualBox `fac-wiki` virtual machine, first make a copy from `/home/virtualmachines/fac-wiki-old/` at lnls82-linux, then using the VirtualBox GUI:~~
+
+- ~~Add the virtual machine from the copied directory~~
+- ~~Change the MAC address of the network adapter to prevent collisions~~
+- ~~Bring fac-wiki up~~
+
+~~Inside the virtual machine, change user to `root`:~~
+
+~~su root # use control room password~~
+
+~~and get the new machine IP address with ifconfig. The old server IP address must be substituted by it in the following files:~~
+
+- ~~`/var/www/mediawiki-1.23.1/LocalSettings.php`~~
+- ~~`/var/www/mediawiki-1.23.1/extensions/Parameters/FacTable.php`~~
+- ~~`/etc/mysql/my.cnf`~~
+
+~~Then, restart the MySQL server with~~
+
+~~service mysql restart~~
+
+~~After this procedure, the wiki can be accessed by entering the server IP address in a web browser.~~
 
 ### Install the Parameters MediaWiki extension
 
