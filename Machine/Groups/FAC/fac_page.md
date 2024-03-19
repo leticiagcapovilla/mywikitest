@@ -2,7 +2,7 @@
 title: FAC Documentation
 description: 
 published: 1
-date: 2024-03-19T18:55:28.297Z
+date: 2024-03-19T19:04:48.683Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T15:38:12.312Z
@@ -553,21 +553,21 @@ we have to implement biunivocal calibration curves for the dipoles at UVX to pre
 
 **General Applications**
 
-Controls building access, gamma shutter, etc
-Timing: settings and control of timing system
-Power Supply Diagnostics: Run-time comparison of Current-SP and RB for all PS
-Power Supply Cicling: perform cycling procedure of selected PS
-Power Supply Test: check if selected PSs are responding to Current-SP
-Operation Manager: controls shifts, etc
-Configuration Manager: save and retrieve
-Vacuum pressure monitoring: display vacuum pressures
-Vacuum valves: open and close commands
-Interlock monitoring
-Rad. protection display
-Injection efficiency (LI -> BO -> SI)
-Beam loss monitors
-Water leak monitors
-HLS monitors
+- Controls building access, gamma shutter, etc
+- Timing: settings and control of timing system
+- Power Supply Diagnostics: Run-time comparison of Current-SP and RB for all PS
+- Power Supply Cicling: perform cycling procedure of selected PS
+- Power Supply Test: check if selected PSs are responding to Current-SP
+- Operation Manager: controls shifts, etc
+- Configuration Manager: save and retrieve
+- Vacuum pressure monitoring: display vacuum pressures
+- Vacuum valves: open and close commands
+- Interlock monitoring
+- Rad. protection display
+- Injection efficiency (LI -> BO -> SI)
+- Beam loss monitors
+- Water leak monitors
+- HLS monitors
 
 **Storage Ring Applications**
 
