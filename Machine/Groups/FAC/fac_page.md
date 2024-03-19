@@ -2,7 +2,7 @@
 title: FAC Documentation
 description: 
 published: 1
-date: 2024-03-19T20:08:50.212Z
+date: 2024-03-19T20:09:31.303Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T15:38:12.312Z
@@ -26,7 +26,7 @@ Accelerator Physics Group main wiki page. This page contains a list of the group
 - [Low-alpha optics mode](/Machine/Groups/FAC/low-alpha_optics_mode)
 - [Matlab Accelerator Toolbox](/Machine/Groups/FAC/matlab_at)
 - [Matlab Middle Layer](/Machine/Groups/FAC/matlab_middle_layer)
-- [Meetings](#/Machine/Groups/FAC/fac_page#Meetings)
+- [Meetings](/Machine/Groups/FAC/fac_page#Meetings)
 - [Project BEDI optics mode](/Machine/Groups/FAC/proj_bedi_opt_mode)
 - [Pyaccel](/Machine/Groups/FAC/pyaccel)
 - [Sirius diagnostics elements](/Machine/Groups/FAC/diagnostics_elements)
