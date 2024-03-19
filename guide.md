@@ -2,7 +2,7 @@
 title: Content Guide
 description: 
 published: 1
-date: 2024-03-19T15:37:40.775Z
+date: 2024-03-19T15:39:00.277Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T14:26:06.874Z
@@ -36,5 +36,5 @@ Easily find the content you want
 
 - CON
 - DIG
-- [FAC]
+- [FAC *FAC group documentation*](/Machine/Groups/FAC/fac_page)
 {.links-list}
