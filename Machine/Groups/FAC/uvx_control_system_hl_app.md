@@ -2,7 +2,7 @@
 title: UVX control system high level applications
 description: 
 published: 1
-date: 2024-03-19T19:40:12.027Z
+date: 2024-03-19T19:40:47.667Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T19:40:12.027Z
