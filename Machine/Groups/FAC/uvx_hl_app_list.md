@@ -2,7 +2,7 @@
 title: UVX high level application list
 description: 
 published: 1
-date: 2024-03-19T19:54:57.198Z
+date: 2024-03-19T19:55:37.126Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T19:52:26.730Z
@@ -40,8 +40,8 @@ Operator interfaces for reading and setting parameter values, and high level phy
 
 For specific machine subsystem parameters, a hierarchical structure, such as in the current UVX operations program, could be used. This contains:
 * Storage ring
-** Magnets
-** Pulsed magnets (including PMM)
+  * Magnets
+  * Pulsed magnets (including PMM)
 ** Electrodes
 ** Optics
 *** Mode (including single bunch)
