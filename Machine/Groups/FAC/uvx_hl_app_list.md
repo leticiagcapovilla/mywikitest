@@ -2,13 +2,13 @@
 title: UVX high level application list
 description: 
 published: 1
-date: 2024-03-19T19:55:37.126Z
+date: 2024-03-19T20:00:04.448Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T19:52:26.730Z
 ---
 
-# FAC:UVX high level application list
+# FAC: UVX high level application list
 
 ## Monitoring and control
 This category includes applications for monitoring, manually setting and automatically controlling machine parameters; alarms and machine snapshots are also included.
