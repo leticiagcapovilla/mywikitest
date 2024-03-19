@@ -21,32 +21,32 @@ dateCreated: 2024-03-19T20:03:00.621Z
 
 #### Log into Docker container running the mongo server
 
-* List of active containers: <code>docker container ls</code>
+* List of active containers: `docker container ls`
 * Get container name
-* Run bash in existing container: <code>docker container exec -it {CONTAINER_NAME} bash</code>
-* Inside the container issue <code>mongo</code> to access the mongo shell.
+* Run bash in existing container: `docker container exec -it {CONTAINER_NAME} bash`
+* Inside the container issue `mongo` to access the mongo shell.
 
 #### Mongo Shell
 
-* Issue <code>show dbs</code> to show existing dbs and their names.
-* In order to use a secific db issue: <code>use {DB_NAME}</code>.
-* Issuing <code>show collections</code> will show a list of the collections available for the db currently being used.
+* Issue `show dbs` to show existing dbs and their names.
+* In order to use a secific db issue: `use {DB_NAME}`.
+* Issuing `show collections` will show a list of the collections available for the db currently being used.
 
 ### Managing Documents
 
 #### Finding documents
   
-<code>db.configs.find()</code>: This command will return all documents in the ''configs'' collection.
+`db.configs.find()`: This command will return all documents in the ''configs'' collection.
   
 Optionally you may supply a constraint document in order to filter the selected documents.
   
 E.g.: 
-* <code>db.configs.find( {discarded: true} )</code> will return all documents in which the field ''discarded'' is ''true''.
-* <code>db.configs.find( {name: /.*beam.*/} )</code> will return all documents in which the field ''name'' has the '''beam''' substring.
+* `db.configs.find( {discarded: true} )` will return all documents in which the field ''discarded'' is ''true''.
+* `db.configs.find( {name: /.*beam.*/} )` will return all documents in which the field ''name'' has the '''beam''' substring.
 
 Another useful parameter the ''find'' method accepts is a projection document of fields.
   
-E.g.: <code>db.configs.find( {discarded: true}, {name: true} )</code> will return all documents in which the field ''discarded'' is ''true''. However, the documents returned will contain only '''_id''' and '''name''' fields. Note that the '''_id''' field will always be present, unless you explicitly remove it in the projection document (e.g.: <code>{_id: false, name: true}</code>).
+E.g.: `db.configs.find( {discarded: true}, {name: true} )` will return all documents in which the field ''discarded'' is ''true''. However, the documents returned will contain only '''_id''' and '''name''' fields. Note that the '''_id''' field will always be present, unless you explicitly remove it in the projection document (e.g.: `{_id: false, name: true}`).
 
 #### Deleting documents
 
@@ -54,24 +54,24 @@ There are two methods available:
 * deleteOne
 * deleteMany
 
-<code>db.configs.deleteMany({})</code> will delete all documents from the ''configs'' collection. BE CAREFUL!!
+`db.configs.deleteMany({})` will delete all documents from the ''configs'' collection. BE CAREFUL!!
 
 Just like the ''find'' method you can supply a constraint document.
 
-<code>db.configs.deleteMany( {discarded: True} )</code> will delete all documents in which the field ''discarded'' is ''true''.
+`db.configs.deleteMany( {discarded: True} )` will delete all documents in which the field ''discarded'' is ''true''.
 
 Be careful! Always check your constraint list issuing a ''find'' first.
     
 E.g.: If you want to delete all documents that have the ''discarded'' field set to ''true'' first run a ''find'':
-* <code>db.configs.find( {discarded: True} )</code> or
-* <code>db.configs.find( {discarded: True} ).pretty()</code> or yet
-* <code>db.configs.find( {discarded: True} ).count()</code> which returns the number of documents matched. 
+* `db.configs.find( {discarded: True} )` or
+* `db.configs.find( {discarded: True} ).pretty()` or yet
+* `db.configs.find( {discarded: True} ).count()` which returns the number of documents matched. 
 
 After you are certain that these are the documents you wish to remove from the database you may proceed to delete.
 
 For more check mongo documentation: 
-* [https://docs.mongodb.com/manual/tutorial/query-documents/ Query Documents]
-* [https://docs.mongodb.com/manual/tutorial/remove-documents/ Delete Documents]
+* [Query Documents](https://docs.mongodb.com/manual/tutorial/query-documents/)
+* [Delete Documents](https://docs.mongodb.com/manual/tutorial/remove-documents/)
 
 ### Restoring the database
 
@@ -83,7 +83,7 @@ In order to restore the database, the ''sirius-configdb-restore.sh'' script shou
 
 Three parameters must be supplied:
 * The path for one of the backup files.
-* The container name that is running the Mongo server database (usually config-db, <code>docker container ls</code> can be issued to check it).
-* The docker network in which the container is running. (the name being used is config-service, you can check issuing <code>docker network ls</code>).
+* The container name that is running the Mongo server database (usually config-db, `docker container ls` can be issued to check it).
+* The docker network in which the container is running. (the name being used is config-service, you can check issuing `docker network ls`).
 
 Note that the container that runs the Mongo server should be running.
