@@ -2,7 +2,7 @@
 title: FAC Documentation
 description: 
 published: 1
-date: 2024-03-19T20:11:13.371Z
+date: 2024-03-19T20:13:29.613Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T15:38:12.312Z
@@ -38,6 +38,15 @@ Accelerator Physics Group main wiki page. This page contains a list of the group
 - [New Workstations Setup](/Machine/Groups/FAC/setup_workstations)
 - [Configuration Database](/Machine/Groups/FAC/access_config_db)
 {.links-list}
+
+<br />
+
+## Members
+
+- Ximenes Rocha Resende
+- Fernando de Sá
+- Murilo Barbosa Alves
+
 
 <br />
 
