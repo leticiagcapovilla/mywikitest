@@ -2,13 +2,13 @@
 title: Project BEDI optics mode
 description: 
 published: 1
-date: 2024-03-19T19:07:38.384Z
+date: 2024-03-19T19:07:52.536Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T19:07:38.384Z
 ---
 
-# FAC:Project BEDI optics mode
+# FAC: Project BEDI optics mode
 
 ## Introduction
 
