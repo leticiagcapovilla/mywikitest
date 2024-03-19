@@ -2,7 +2,7 @@
 title: FAC Documentation
 description: 
 published: 1
-date: 2024-03-19T19:17:15.118Z
+date: 2024-03-19T19:43:05.548Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T15:38:12.312Z
@@ -29,8 +29,10 @@ Accelerator Physics Group main wiki page. This page contains a list of the group
 - [Project BEDI optics mode](/Machine/Groups/FAC/proj_bedi_opt_mode)
 - [Pyaccel](/Machine/Groups/FAC/pyaccel)
 - [Sirius diagnostics elements](/Machine/Groups/FAC/diagnostics_elements)
+- [Sirius lattice versions](/Machine/Groups/FAC/lattice_versions)
 - [New Workstations Setup](/Machine/Groups/FAC/setup_workstations)
 - [Trackcpp](/Machine/Groups/FAC/trackcpp)
+- [UVX beam size calculation](/Machine/Groups/FAC/uvx_beam_size_calc)
 - [Virtual accelerator](/Machine/Groups/FAC/virtual_acc)
 {.links-list}
 
