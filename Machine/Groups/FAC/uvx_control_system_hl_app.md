@@ -2,7 +2,7 @@
 title: UVX control system high level applications
 description: 
 published: 1
-date: 2024-03-19T19:50:04.189Z
+date: 2024-03-19T19:53:28.173Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T19:40:12.027Z
@@ -122,7 +122,7 @@ TIMEOUT: TRUE
 <br />
 
 #### Applications
-Applications must be installed in `C:\Arq\Controle\Projetos` (See [[FAC:UVX high level application list]][link].)
+Applications must be installed in `C:\Arq\Controle\Projetos` (See [UVX high level application list][Machine/Groups/FAC/uvx_hl_app_list].)
 
 <br />
 
