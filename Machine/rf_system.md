@@ -2,7 +2,7 @@
 title: RF System
 description: 
 published: 1
-date: 2024-03-14T18:00:47.314Z
+date: 2024-03-20T17:41:44.071Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:45.041Z
@@ -164,7 +164,7 @@ As already mentioned the beam lifetime with only three NC cavities and without b
 
 ### Superconducting cavity
 
-Currently, we are going to use in the storage ring, since the conditioning phase, two SC cavities CESR type (Figure 1). The Table 2 lists some of the main parameters of this cavity. In CESR cavity the coupling between the waveguide and the cavity is done through a hole located in Round Beam Tube (RBT). The geometry and dimensions of this hole are determined from the specification of the external Q of the cavity ($Q_{ext}$). To determine the ideal $Q_{ext}$, in which the RF power reflected is minimal, we have to know some ring operating parameters such as the stored current, energy lost per turn by electrons and some parameters of the harmonic cavity[^1] 
+Currently, we are going to use in the storage ring, since the conditioning phase, two SC cavities CESR type (Figure 1). The Table 2 lists some of the main parameters of this cavity. In CESR cavity the coupling between the waveguide and the cavity is done through a hole located in Round Beam Tube (RBT). The geometry and dimensions of this hole are determined from the specification of the external Q of the cavity ($Q_{ext}$). To determine the ideal $Q_{ext}$, in which the RF power reflected is minimal, we have to know some ring operating parameters such as the stored current, energy lost per turn by electrons and some parameters of the harmonic cavity[^1]
 
 [^1]: We are assuming to use the harmonic cavity type NSLS-II which the main parameters are represents at [link]
 
@@ -477,12 +477,12 @@ To calculate the improvement in Touschek lifetime, consider the expression for t
 [^2]: Byrd, J. M. and Georgsson, M., Phys. Rev. ST Accel. Beams 4, 030701 (2001).
 
 $$
-\dot{N} = \overline{\upsilon \sigma} \int_{V}^{} \rho^2 \, dV
+\dot{N} = \bar{\upsilon \sigma} \int_{V}^{} \rho^2 \, dV
 $$
 
-where $\overline{\upsilon \sigma}$ is the probability for scattering beyond the RF acceptance <b>ε<sub>RF</sub></b>; <b>ρ</b> is the volume charge density.
+where $\bar{\upsilon \sigma}$ is the probability for scattering beyond the RF acceptance <b>ε<sub>RF</sub></b>; <b>ρ</b> is the volume charge density.
 
-The scattering probability $\overline{\upsilon \sigma}$ is proportional to <b>1/ε<sub>RF</sub><sup>2</sup></b>, so it is necessary to include the effect of the harmonic voltage on the RF acceptance <b>ε<sub>RF</sub></b>. The ratio of lifetime with and without harmonic voltage can be found from
+The scattering probability $\bar{\upsilon \sigma}$ is proportional to <b>1/ε<sub>RF</sub><sup>2</sup></b>, so it is necessary to include the effect of the harmonic voltage on the RF acceptance <b>ε<sub>RF</sub></b>. The ratio of lifetime with and without harmonic voltage can be found from
 
 $$
 R = \frac{\tau_{hc}}{\tau} = \frac{\epsilon_{hc}^2}{\epsilon_{RF}^2}\frac{\int \rho^2(z)\,dz}{\int \rho_{hc}^2(z)\,dz}
