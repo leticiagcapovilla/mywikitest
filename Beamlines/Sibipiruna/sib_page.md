@@ -2,7 +2,7 @@
 title: SIBIPIRUNA
 description: Soft X-rays tomography beamline at Orion
 published: 1
-date: 2024-04-17T11:24:22.793Z
+date: 2024-04-17T11:24:35.876Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-08T20:19:17.974Z
