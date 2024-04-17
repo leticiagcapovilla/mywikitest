@@ -2,7 +2,7 @@
 title: Compras
 description: Protótipo que será usado para apresentação 18/04/2024
 published: 1
-date: 2024-04-17T17:45:39.815Z
+date: 2024-04-17T17:48:55.175Z
 tags: compras, gpp
 editor: markdown
 dateCreated: 2024-04-17T16:36:58.628Z
@@ -44,5 +44,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo sit amet m
 
 
 ### Tarefas
+- [X] Validação com Milena sobre andamento da SC [544668](https://fluig.cnpem.br/portal/p/1/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID=327001) - Troca de fonte
 - [ ] Criação da Revisão orçamentária [^1]
-- [ ] Validação com Milena sobre andamento da SC [544668](https://fluig.cnpem.br/portal/p/1/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID=327001) - Troca de fonte
+[^1]: [Modelos de revisões anteriores](https://app.smartsheet.com/reports/m5crq3R3F7q77HX5C7ccwcRhXPpjGPWHF4Pcf8m1?view=grid)
