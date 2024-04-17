@@ -2,7 +2,7 @@
 title: Compras
 description: Protótipo que será usado para apresentação 18/04/2024
 published: 1
-date: 2024-04-17T16:48:41.745Z
+date: 2024-04-17T16:49:11.001Z
 tags: compras, gpp
 editor: markdown
 dateCreated: 2024-04-17T16:36:58.628Z
@@ -13,18 +13,19 @@ dateCreated: 2024-04-17T16:36:58.628Z
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo sit amet mauris iaculis elementum. Sed vestibulum dui a mi sollicitudin, id convallis libero laoreet. In auctor condimentum egestas. Nam et placerat ipsum. Donec at velit non libero dignissim iaculis et et purus. Morbi at ex vel diam pellentesque interdum ut in augue. Cras varius, quam vel sodales cursus, quam nulla consectetur massa, vel vestibulum dolor nulla id felis. Aliquam a purus a dolor venenatis gravida id nec lectus. Ut a turpis at odio molestie euismod. Suspendisse ac lacus nisl.
 
 ## Documentos
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo sit amet mauris iaculis elementum.
 [planilha do smartsheet](https://app.smartsheet.com/reports/6FqVc5MwFqpj98p4g2Pjhwfm54M9VGvP7G3C8H91?view=grid)  
 
 planilha do excel?
 
 ### SC e PC
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo sit amet mauris iaculis elementum.
 [Processo completo](https://cnpemcamp.sharepoint.com/:b:/r/sites/lnls/gpp/SiteAssets/SitePages/Home-%20Aquisi%C3%A7%C3%B5es/Modelo-do-Processo-de-Compras.pdf?csf=1&web=1&e=1qiDve)  
 ![Imagem de algo importante](https://img.freepik.com/vetores-premium/importante-escrito-na-etiqueta-vermelha-sinal-de-publicidade-ilustracao-em-vetor-das-acoes_100456-4190.jpg?w=1380)  
 Teste de uma imagem que poderiamos utilizar
 
 ### Responsáveis
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo sit amet mauris iaculis elementum.
 
 | Funcionário | Função |
 | --- | --- |
@@ -34,4 +35,5 @@ Teste de uma imagem que poderiamos utilizar
 | [Mauri P. S. Júnior](mauri.junior@lnls.br) | Power B.I |
 
 ### Relatórios
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo sit amet mauris iaculis elementum.
 [Compras por Fornecedor](https://portalbi.cnpem.br/Organization/1cc69a46-9b90-4e06-87df-190d4b140426/Report/4d21bcae-1a46-4fa9-aa7a-b20fa80ba93c)  
