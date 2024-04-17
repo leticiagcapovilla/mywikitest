@@ -2,7 +2,7 @@
 title: SIBIPIRUNA
 description: Soft X-rays tomography beamline at Orion
 published: 1
-date: 2024-04-17T11:24:35.876Z
+date: 2024-04-17T11:50:23.456Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-08T20:19:17.974Z
@@ -44,41 +44,41 @@ Aprovações
 
 # Table of Contents [table-of-contents]
 
-[1. Introdução [1](#introdução)](#introdução)
+[1. Introdução [6](#introdução)](#introdução)
 
-[Orçamento: [1](#_Toc164234301)](#_Toc164234301)
+[Orçamento: [11](#_Toc164235204)](#_Toc164235204)
 
-[1.1. Estágios do Ciclo de Vida: [1](#_Toc164234302)](#_Toc164234302)
+[1.1. Estágios do Ciclo de Vida: [11](#_Toc164235205)](#_Toc164235205)
 
-[1.1.1. Conceitual: [1](#_Toc164234303)](#_Toc164234303)
+[1.1.1. Conceitual: [11](#_Toc164235206)](#_Toc164235206)
 
-[1.1.2. Desenvolvimento: [1](#_Toc164234304)](#_Toc164234304)
+[1.1.2. Desenvolvimento: [17](#_Toc164235207)](#_Toc164235207)
 
-[1.1.3. Produção: [1](#_Toc164234305)](#_Toc164234305)
+[1.1.3. Produção: [17](#_Toc164235208)](#_Toc164235208)
 
-[1.1.4. Utilização e Suporte [1](#_Toc164234306)](#_Toc164234306)
+[1.1.4. Utilização e Suporte [18](#_Toc164235209)](#_Toc164235209)
 
-[1.1.5. Desfazimento: [1](#_Toc164234307)](#_Toc164234307)
+[1.1.5. Desfazimento: [18](#_Toc164235210)](#_Toc164235210)
 
-[1.2. Conclusão [1](#conclusão)](#conclusão)
+[1.2. Conclusão [19](#conclusão)](#conclusão)
 
-[2. Estudos de viabilidade e Sistemas Interoperacionais [1](#estudos-de-viabilidade-e-sistemas-interoperacionais)](#estudos-de-viabilidade-e-sistemas-interoperacionais)
+[2. Estudos de viabilidade e Sistemas Interoperacionais [20](#estudos-de-viabilidade-e-sistemas-interoperacionais)](#estudos-de-viabilidade-e-sistemas-interoperacionais)
 
-[2.1. Fluxo e Sistemas de Preparo de Amostras [1](#fluxo-e-sistemas-de-preparo-de-amostras)](#fluxo-e-sistemas-de-preparo-de-amostras)
+[2.1. Fluxo e Sistemas de Preparo de Amostras [20](#fluxo-e-sistemas-de-preparo-de-amostras)](#fluxo-e-sistemas-de-preparo-de-amostras)
 
-[2.1.1. Otimização do processo de vitrificação e manipulação de amostras [1](#otimização-do-processo-de-vitrificação-e-manipulação-de-amostras)](#otimização-do-processo-de-vitrificação-e-manipulação-de-amostras)
+[2.1.1. Otimização do processo de vitrificação e manipulação de amostras [25](#otimização-do-processo-de-vitrificação-e-manipulação-de-amostras)](#otimização-do-processo-de-vitrificação-e-manipulação-de-amostras)
 
-[2.2. Sistema de Microscopia de Luz Visível Fluorescente Criogênico [1](#sistema-de-microscopia-de-luz-visível-fluorescente-criogênico)](#sistema-de-microscopia-de-luz-visível-fluorescente-criogênico)
+[2.2. Sistema de Microscopia de Luz Visível Fluorescente Criogênico [27](#sistema-de-microscopia-de-luz-visível-fluorescente-criogênico)](#sistema-de-microscopia-de-luz-visível-fluorescente-criogênico)
 
-[2.2.1. Introdução [1](#introdução-1)](#introdução-1)
+[2.2.1. Introdução [27](#introdução-1)](#introdução-1)
 
-[2.2.2. Desenvolvimento do microscópio de super-resolução criogênico da SIBIPIRUNA [1](#desenvolvimento-do-microscópio-de-super-resolução-criogênico-da-sibipiruna)](#desenvolvimento-do-microscópio-de-super-resolução-criogênico-da-sibipiruna)
+[2.2.2. Desenvolvimento do microscópio de super-resolução criogênico da SIBIPIRUNA [31](#desenvolvimento-do-microscópio-de-super-resolução-criogênico-da-sibipiruna)](#desenvolvimento-do-microscópio-de-super-resolução-criogênico-da-sibipiruna)
 
-[2.2.3. Módulo criogênico para o microscópio DMi8 [1](#módulo-criogênico-para-o-microscópio-dmi8)](#módulo-criogênico-para-o-microscópio-dmi8)
+[2.2.3. Módulo criogênico para o microscópio DMi8 [37](#módulo-criogênico-para-o-microscópio-dmi8)](#módulo-criogênico-para-o-microscópio-dmi8)
 
-[2.2.4. Módulo de iluminação estruturada para microscópio DMi8 [1](#módulo-de-iluminação-estruturada-para-microscópio-dmi8)](#módulo-de-iluminação-estruturada-para-microscópio-dmi8)
+[2.2.4. Módulo de iluminação estruturada para microscópio DMi8 [38](#módulo-de-iluminação-estruturada-para-microscópio-dmi8)](#módulo-de-iluminação-estruturada-para-microscópio-dmi8)
 
-[3. Referências [1](#referências)](#referências)
+[3. Referências [50](#referências)](#referências)
 
 Acrônimos
 
@@ -115,15 +115,15 @@ No contexto do Orion, alguns objetivos científicos foram criados, sendo um dele
 
 <img src="media/image3.png" style="width:4.94005in;height:3.72856in" alt="A diagram of a diagram Description automatically generated" />
 
-Para o desenvolvimento da Capacidade 1.2, foi identificada a necessidade de um componente para posicionar a amostra no foco da linha de luz e realizar o movimento de tomografia. Ainda, devido ao fato de a amostra estar em estado criogênico, este componente também demandará um Sistema de Gestão de Temperatura Criogênico com a função de manter a amostra em temperatura criogênica. A partir disso, optou-se por desenvolver um Sistema de Porta-Amostras Criogênico (PACRIO), que deverá possuir as funções descritas conforme [Figura 2](#_Ref163029232).
+Para o desenvolvimento da Capacidade 1.2, foi identificada a necessidade de um componente chamado de *Manipulador* para posicionar a amostra, montada a um *Suporte de Amostra*, no foco da linha de luz e realizar o movimento de tomografia. Ainda, devido ao fato de a amostra estar em estado criogênico, a solução também demandará um *Sistema de Refrigeração* para gestão térmica com a função de manter a amostra em temperatura criogênica. A partir disso, optou-se por desenvolver um Sistema de Porta-Amostras Criogênico (PACRIO), que deverá possuir as funções descritas conforme [Figura 2](#_Ref163029232).
 
 <img src="media/image4.png" style="width:6.34771in;height:4.6235in" alt="A diagram of a computer Description automatically generated" />
 
-Este documento irá abordar o status de desenvolvimento do componente PACRIO, bem como da Capacidade 1.1, visto que essa capacidade em associação com a 1.2 possibilita a Capacidade 1.1.1. Logo as operações de 1.1 e 1.2 deverão ser compatíveis entre si para que 1.1.1 seja atingida. Estudos de viabilidade técnica dos métodos tradicionais de preparo de amostras e congelamento também serão apresentados neste documento, uma vez que são pré-requisitos para a solução de porta-amostra a ser implementado no instrumento
+Este documento irá abordar o status de desenvolvimento do componente PACRIO, bem como da Capacidade 1.1, visto que essa capacidade em associação com a 1.2 possibilita a Capacidade 1.1.1. Logo as operações de 1.1 e 1.2 deverão ser compatíveis entre si para que a 1.1.1 seja atingida. Estudos de viabilidade técnica dos métodos tradicionais para um *Sistema* *de* *Preparo de* *Amostras* com congelamento também serão apresentados neste documento, assim como um *Sistema de Transferência de Amostras*, uma vez que são pré-requisitos para a solução de porta-amostra (Figura 3).
 
 <img src="media/image5.png" style="width:9.61437in;height:5.09006in" alt="A screenshot of a computer Description automatically generated" />
 
-<span id="_Toc164234301" class="anchor"></span>Orçamento: as aquisições desse projeto vêm ocorrendo através do centro de custo referente ao PACRIO, com um montante total previsto de R\$4.500.000,00. Na [Tabela 1](#_Ref162941169) são detalhados os montantes destinados às aquisições para cada um dos subsistemas e a data prevista para compra.
+<span id="_Toc164235204" class="anchor"></span>Orçamento: as aquisições desse projeto vêm ocorrendo através do centro de custo referente ao PACRIO, com um montante total previsto de R\$4.500.000,00. Na [Tabela 1](#_Ref162941169) são detalhados os montantes destinados às aquisições para cada um dos subsistemas e a data prevista para compra.
 
 | PACRIO | Subsistema          | Total Área      | Fase A        | Fase B        | Fase C        | Previsão de compra Fase A |
 |-------|-------------|-----------|-----------|-----------|-----------|-----------|
@@ -134,7 +134,7 @@ Este documento irá abordar o status de desenvolvimento do componente PACRIO, be
 
 <span id="_Ref163037455" class="anchor"></span>Tabela 2 - Estágios do ciclo de vida do PACRIO
 
-1.  <span id="_Toc164234302" class="anchor"></span>Estágios do Ciclo de Vida: a tabela abaixo apresenta os estágios do ciclo de vida do PACRIO em uma escala temporal de trimestres. Nos capítulos posteriores serão descritas as atividades específicas para cada um desses estágios.
+1.  <span id="_Toc164235205" class="anchor"></span>Estágios do Ciclo de Vida: a tabela abaixo apresenta os estágios do ciclo de vida do PACRIO em uma escala temporal de trimestres. Nos capítulos posteriores serão descritas as atividades específicas para cada um desses estágios.
 
 |               | Conceitual | Desenvolvimento | Produção | Utilização | Suporte | Desfazimento |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
@@ -151,7 +151,7 @@ Este documento irá abordar o status de desenvolvimento do componente PACRIO, be
 
 <span id="_Ref163035977" class="anchor"></span>Figura 4 - Manipulador da amostra e Sistema Gerenciamento Térmico. A) vista isométrica da parte interna (exposta às amostras e ciclos de descontaminação mais frequentes), e B) vista isométrica da parte externa (em ambiente de vácuo separado da amostra).
 
-1.  <span id="_Toc164234303" class="anchor"></span>Conceitual: a etapa Conceitual consiste em estudos de avaliação das soluções, observando o entendimento do problema, requisitos e performance. Esta etapa se encerra a partir da aprovação de uma das soluções propostas, na qual será avaliado o conceito proposto para cinemática, dinâmica, gerenciamento térmico, minimização da exposição a área de descontaminação e viabilidade de manutenção.
+1.  <span id="_Toc164235206" class="anchor"></span>Conceitual: a etapa Conceitual consiste em estudos de avaliação das soluções, observando o entendimento do problema, requisitos e performance. Esta etapa se encerra a partir da aprovação de uma das soluções propostas, na qual será avaliado o conceito proposto para cinemática, dinâmica, gerenciamento térmico, minimização da exposição a área de descontaminação e viabilidade de manutenção.
 
 Na etapa conceitual, representada pelo CDR da estação experimental, foram identificados os requisitos de baixo nível para o sistema de movimentação. Estes requisitos abrangem capacidades essenciais que o sistema deve possuir para alcançar os objetivos finais do projeto. É importante ressaltar que a análise de viabilidade desses conceitos, assim como a validação de sua capacidade em atender totalmente aos requisitos mapeados, representa um passo subsequente. Esse processo envolverá a atuação das equipes de engenharia na modelagem e prototipagem. Assim, embora os conceitos aqui apresentados ainda não tenham passado por uma validação final, eles demonstram potencial para atender aos requisitos em uma avaliação preliminar. A lista de requisitos (LLR, de *low-level requirement*) pertinentes ao projeto do estágio do porta-amostras criogênico é apresentada abaixo.
 
@@ -211,13 +211,13 @@ O perímetro da área hachurada apresentado na [Figura 8](#_Ref163719203) B repr
 
 O cenário apresentado na [Figura 9](#_Ref163719790) A demonstra que o curso necessário excede o curso nominal dos atuadores para um espaçamento de 3,5 mm entre os grids, entretanto, ao considerar um espaçamento de 3 mm entre os grids, tem-se que o curso é suficiente ([Figura 9](#_Ref163719790) B). Outras modificações geométricas também têm impacto no curso necessário, porém não foram demonstradas pois este estudo se caracteriza apenas como uma avaliação preliminar, podendo ser estendido no futuro.
 
-1.  <span id="_Toc164234304" class="anchor"></span>Desenvolvimento: a etapa de desenvolvimento consiste na evolução de projeto detalhada do SoI. Esse estágio se encerra após uma validação analítica da dinâmica, cinemática, térmica e mecânica do PACRIO. Além disso, espera-se que os elementos e a operação do PACRIO sejam validados sob a ação de um agente de esterilização a ser utilizado na SIBIPIRUNA.
+1.  <span id="_Toc164235207" class="anchor"></span>Desenvolvimento: a etapa de desenvolvimento consiste na evolução de projeto detalhada do SoI. Esse estágio se encerra após uma validação analítica da dinâmica, cinemática, térmica e mecânica do PACRIO. Além disso, espera-se que os elementos e a operação do PACRIO sejam validados sob a ação de um agente de esterilização a ser utilizado na SIBIPIRUNA.
 
-2.  <span id="_Toc164234305" class="anchor"></span>Produção: o estágio de produção se inicia a partir da tradução de todas as informações do desenvolvimento em elementos do SoI. Durante essa etapa é esperada uma grande integração entre o MEP e o grupo de Gestão de Projetos, por ser uma fase com elevado número de aquisições através fornecedores externos. Além disso, é esperado um grande esforço por parte do MEP na tradução das especificações do desenvolvimento em documentação técnica para que fornecedores e grupos internos forneçam os componentes e serviços que atendam corretamente às especificações. Atividades relacionadas ao registro e gestão de problemas também são esperadas, e será necessário estimar um tempo de execução que leve em conta esses retrabalhos. Essa fase será encerrada quando o equipamento estiver montado, integrado e com todas as funções validadas em consonância com os parâmetros determinados na etapa de Desenvolvimento. Conforme a [Tabela 2 - Estágios do ciclo de vida do PACRIO](#_Ref163037455), a data prevista para início e conclusão da etapa de Produção será entre 01/2025 e 06/2025.
+2.  <span id="_Toc164235208" class="anchor"></span>Produção: o estágio de produção se inicia a partir da tradução de todas as informações do desenvolvimento em elementos do SoI. Durante essa etapa é esperada uma grande integração entre o MEP e o grupo de Gestão de Projetos, por ser uma fase com elevado número de aquisições através fornecedores externos. Além disso, é esperado um grande esforço por parte do MEP na tradução das especificações do desenvolvimento em documentação técnica para que fornecedores e grupos internos forneçam os componentes e serviços que atendam corretamente às especificações. Atividades relacionadas ao registro e gestão de problemas também são esperadas, e será necessário estimar um tempo de execução que leve em conta esses retrabalhos. Essa fase será encerrada quando o equipamento estiver montado, integrado e com todas as funções validadas em consonância com os parâmetros determinados na etapa de Desenvolvimento. Conforme a [Tabela 2 - Estágios do ciclo de vida do PACRIO](#_Ref163037455), a data prevista para início e conclusão da etapa de Produção será entre 01/2025 e 06/2025.
 
-3.  <span id="_Toc164234306" class="anchor"></span>Utilização e Suporte: o estágio de Utilização e Suporte é caracterizado por atividades nas quais o SoI entrará em operação em seu ambiente de uso, a partir disso o objetivo da missão será alcançado. Esse estágio se encerra quando o SoI gerar informações capazes de suportar a tomada de decisão sobre a viabilidade da sua operação em um contexto real da linha de luz SIBIPIRUNA. A tomada de decisão deverá possuir 2 possibilidades, sendo elas: otimizar o SoI mantendo seu conceito atual ou reprojetar o SoI a partir de um novo conceito.
+3.  <span id="_Toc164235209" class="anchor"></span>Utilização e Suporte: o estágio de Utilização e Suporte é caracterizado por atividades nas quais o SoI entrará em operação em seu ambiente de uso, a partir disso o objetivo da missão será alcançado. Esse estágio se encerra quando o SoI gerar informações capazes de suportar a tomada de decisão sobre a viabilidade da sua operação em um contexto real da linha de luz SIBIPIRUNA. A tomada de decisão deverá possuir 2 possibilidades, sendo elas: otimizar o SoI mantendo seu conceito atual ou reprojetar o SoI a partir de um novo conceito.
 
-4.  <span id="_Toc164234307" class="anchor"></span>Desfazimento: O estágio de Desfazimento consiste das atividades planejadas para o encerramento do ciclo de vida do SoI. Para o PACRIO é esperado que, quando a sua utilidade seja esgotada, seus componentes sejam encaminhados para a estação experimental da linha SIBIPIRUNA, tanto quanto possível, ou desmontados e armazenados em condições adequadas, para que possam vir a ser reutilizados ou realocados em outros projetos.
+4.  <span id="_Toc164235210" class="anchor"></span>Desfazimento: O estágio de Desfazimento consiste das atividades planejadas para o encerramento do ciclo de vida do SoI. Para o PACRIO é esperado que, quando a sua utilidade seja esgotada, seus componentes sejam encaminhados para a estação experimental da linha SIBIPIRUNA, tanto quanto possível, ou desmontados e armazenados em condições adequadas, para que possam vir a ser reutilizados ou realocados em outros projetos.
 
 ## Conclusão
 
