@@ -2,7 +2,7 @@
 title: Compras
 description: Protótipo que será usado para apresentação 18/04/2024
 published: 1
-date: 2024-04-17T16:48:14.752Z
+date: 2024-04-17T16:48:41.745Z
 tags: compras, gpp
 editor: markdown
 dateCreated: 2024-04-17T16:36:58.628Z
@@ -15,7 +15,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo sit amet m
 ## Documentos
 
 [planilha do smartsheet](https://app.smartsheet.com/reports/6FqVc5MwFqpj98p4g2Pjhwfm54M9VGvP7G3C8H91?view=grid)  
-[link do power embedded](https://portalbi.cnpem.br/Organization/1cc69a46-9b90-4e06-87df-190d4b140426/Report/4d21bcae-1a46-4fa9-aa7a-b20fa80ba93c)  
+
 planilha do excel?
 
 ### SC e PC
@@ -34,3 +34,4 @@ Teste de uma imagem que poderiamos utilizar
 | [Mauri P. S. Júnior](mauri.junior@lnls.br) | Power B.I |
 
 ### Relatórios
+[Compras por Fornecedor](https://portalbi.cnpem.br/Organization/1cc69a46-9b90-4e06-87df-190d4b140426/Report/4d21bcae-1a46-4fa9-aa7a-b20fa80ba93c)  
