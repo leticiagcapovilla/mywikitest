@@ -2,7 +2,7 @@
 title: New Page
 description: 
 published: 1
-date: 2024-04-17T20:02:34.223Z
+date: 2024-04-17T20:03:04.276Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-17T13:21:04.917Z
@@ -29,4 +29,4 @@ Testando rodapé [^1]
 
 [^1]: Prazer, rodapé🤝
 
-Testando grifar ==algumas palavras==
+Testando grifar ==algumas palavras==(Não funciona na hora da página)
