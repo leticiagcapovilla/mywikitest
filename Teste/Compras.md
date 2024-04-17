@@ -2,7 +2,7 @@
 title: Compras
 description: Protótipo que será usado para apresentação 18/04/2024
 published: 1
-date: 2024-04-17T17:42:21.992Z
+date: 2024-04-17T17:45:39.815Z
 tags: compras, gpp
 editor: markdown
 dateCreated: 2024-04-17T16:36:58.628Z
@@ -41,3 +41,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo sit amet m
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo sit amet mauris iaculis elementum.  
 [Compras por Fornecedor](https://portalbi.cnpem.br/Organization/1cc69a46-9b90-4e06-87df-190d4b140426/Report/4d21bcae-1a46-4fa9-aa7a-b20fa80ba93c)
+
+
+### Tarefas
+- [ ] Criação da Revisão orçamentária [^1]
+- [ ] Validação com Milena sobre andamento da SC [544668](https://fluig.cnpem.br/portal/p/1/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID=327001) - Troca de fonte
