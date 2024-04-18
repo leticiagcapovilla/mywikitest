@@ -2,7 +2,7 @@
 title: Compras
 description: Protótipo que será usado para apresentação 18/04/2024
 published: 1
-date: 2024-04-18T11:10:14.393Z
+date: 2024-04-18T11:22:27.133Z
 tags: compras, gpp
 editor: markdown
 dateCreated: 2024-04-17T16:36:58.628Z
@@ -24,7 +24,7 @@ planilha do excel?
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo sit amet mauris iaculis elementum.  
 
 [Processo completo](https://cnpemcamp.sharepoint.com/:b:/r/sites/lnls/gpp/SiteAssets/SitePages/Home-%20Aquisi%C3%A7%C3%B5es/Modelo-do-Processo-de-Compras.pdf?csf=1&web=1&e=1qiDve)  
-
+[Teste de imagem local - Não deu certo]("https://cnpemcamp.sharepoint.com/:b:/r/sites/lnls/gpp/SiteAssets/SitePages/Home-%20Aquisi%C3%A7%C3%B5es/Modelo-do-Processo-de-Compras.pdf?csf=1&web=1&e=oIPWer")
 Teste de uma imagem que poderiamos utilizar
 
 ### Responsáveis
@@ -46,8 +46,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo sit amet m
 ### Tarefas
 
 -   [ ]  Validação com Milena sobre andamento da SC [544668](https://fluig.cnpem.br/portal/p/1/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID=327001) - Troca de fonte
--   [ ]  Criação da Revisão orçamentária ^[\[1\]](#fn1)^
+-   [ ]  Criação da Revisão orçamentária [^1]
 
 ---
 
-1.  [Modelos de revisões anteriores](https://app.smartsheet.com/reports/m5crq3R3F7q77HX5C7ccwcRhXPpjGPWHF4Pcf8m1?view=grid) [↩︎](#fnref1)
+[^1]:  [Modelos de revisões anteriores](https://app.smartsheet.com/reports/m5crq3R3F7q77HX5C7ccwcRhXPpjGPWHF4Pcf8m1?view=grid)
