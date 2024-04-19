@@ -2,7 +2,7 @@
 title: SIBIPIRUNA
 description: Soft X-rays tomography beamline at Orion
 published: 1
-date: 2024-04-19T14:23:47.682Z
+date: 2024-04-19T14:25:15.730Z
 tags: teste
 editor: markdown
 dateCreated: 2024-04-08T20:19:17.974Z
@@ -18,7 +18,7 @@ No contexto do Orion, alguns objetivos científicos foram criados, sendo um dele
 
 ![](/home/Beamlines/2.png)
 
-<a name="Figura2">Figura 2</a>: Diagrama de arquitetura do Porta-Amostras Criogênico, especificando os componentes, subcomponentes, funções e informações/matéria/energia trocada entre as funções
+<a id="Figura2"/> Figura 2: Diagrama de arquitetura do Porta-Amostras Criogênico, especificando os componentes, subcomponentes, funções e informações/matéria/energia trocada entre as funções
 
 Para o desenvolvimento da Capacidade 1.2, foi identificada a necessidade de um componente chamado de *Manipulador* para posicionar a amostra, montada a um *Suporte de Amostra*, no foco da linha de luz e realizar o movimento de tomografia. Ainda, devido ao fato de a amostra estar em estado criogênico, a solução também demandará um *Sistema de Refrigeração* para gestão térmica com a função de manter a amostra em temperatura criogênica. A partir disso, optou-se por desenvolver um Sistema de Porta-Amostras Criogênico (PACRIO), que deverá possuir as funções descritas conforme Figura 2.
 
