@@ -2,7 +2,7 @@
 title: Content Guide
 description: 
 published: 1
-date: 2024-03-20T17:52:26.437Z
+date: 2024-04-19T11:56:10.556Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T14:26:06.874Z
@@ -28,6 +28,7 @@ Easily find the content you want
 ## Beamlines
 
 - [IMBUIA](/Beamlines/Imbuia/imb_page)
+- [SIBIPIRUNA](/Beamlines/Imbuia/sib_page)
 {.links-list}
 
 <br />
