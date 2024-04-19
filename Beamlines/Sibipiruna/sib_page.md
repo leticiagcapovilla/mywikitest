@@ -2,7 +2,7 @@
 title: SIBIPIRUNA
 description: Soft X-rays tomography beamline at Orion
 published: 1
-date: 2024-04-19T14:29:28.912Z
+date: 2024-04-19T17:41:39.011Z
 tags: teste
 editor: markdown
 dateCreated: 2024-04-08T20:19:17.974Z
@@ -12,13 +12,13 @@ dateCreated: 2024-04-08T20:19:17.974Z
 
 ![](/home/Beamlines/1.png)
 
-<a id= "fig-1"></a>Figura 1: Missão e Capacidades da linha de luz SIBIPIRUNA
+Figura 1: Missão e Capacidades da linha de luz SIBIPIRUNA
 
 No contexto do Orion, alguns objetivos científicos foram criados, sendo um deles o de gerar imagens 3D com resolução nanométrica de células ex-vivo infectadas com agentes de nível 4 de biossegurança (BSL4) em estado quase nativo. Para isso a linha de luz SIBIPIRUNA foi criada, possuindo como capacidade fundamental a utilização de raios-X moles (*soft X-rays*) para gerar tomografia 3D de células isoladas. Esta capacidade necessariamente demanda que a célula esteja em estado criogênico, assim possibilitando que a célula tanto mantenha sua geometria quanto resista às doses de radiação dos raios-X ao longo das medidas. Além disso, com o intuito de ampliar as capacidades científicas do instrumento com um maior volume de informações das características da célula, concluiu-se ser necessário complementar as imagens de raios-X com uma técnica de imagem correlativa, criando-se assim uma plataforma de microscopia fluorescente de luz visível e tomografia de raios-X (CLXT do inglês *correlative light and X-ray tomography*). Dessa forma, a técnica de microscopia fluorescente também poderá ser empregada nas amostras estudadas na SIBIPIRUNA. A [Figura 1](#fig-1) traz uma síntese do processo de análise e decisão do objetivo científico, onde é apresentado um diagrama de Missão e Capacidades, sendo que letra ’M’ define a Missão, que nesse caso representa o objetivo científico proposto, e ‘C’ as Capacidades a serem desempenhadas para que o objetivo da Missão seja alcançado. Além disso, a figura ainda apresenta uma estrutura hierárquica onde as Capacidades são derivadas, a partir da representação das letras ‘i’ e ‘e’ sobre as setas, que representam inclusão e extensão, respectivamente.
 
 ![](/home/Beamlines/2.png)
 
-<a id= "fig-2"></a>Figura 2: Diagrama de arquitetura do Porta-Amostras Criogênico, especificando os componentes, subcomponentes, funções e informações/matéria/energia trocada entre as funções
+Figura 2: Diagrama de arquitetura do Porta-Amostras Criogênico, especificando os componentes, subcomponentes, funções e informações/matéria/energia trocada entre as funções
 
 Para o desenvolvimento da Capacidade 1.2, foi identificada a necessidade de um componente chamado de *Manipulador* para posicionar a amostra, montada a um *Suporte de Amostra*, no foco da linha de luz e realizar o movimento de tomografia. Ainda, devido ao fato de a amostra estar em estado criogênico, a solução também demandará um *Sistema de Refrigeração* para gestão térmica com a função de manter a amostra em temperatura criogênica. A partir disso, optou-se por desenvolver um Sistema de Porta-Amostras Criogênico (PACRIO), que deverá possuir as funções descritas conforme Figura 2.
 
@@ -35,9 +35,9 @@ Tabela 1: Orçamento para o SoI
 |     | Subsistema | Total Área | Fase A | Fase B | Fase C | Previsão de compra Fase A |
 | --- | --- | --- | --- | --- | --- | --- |
 | PACRIO | TXM Imaging | R$1.505.000,00 | R$559.500,00 | R$644.500,00 | R$301.000,00 | 01/03/2024 |
-| Sample transfer | R$800.000,00 | R$240.000,00 | R$400.000,00 | R$160.000,00 |
-| Correlative Imaging | R$885.000,00 | R$419.500,00 | R$288.500,00 | R$177.000,00 |
-| Sample preparation | R$1.310.000,00 | R$393.000,00 | R$655.000,00 | R$262.000,00 |
+| Sample transfer | R$800.000,00 | R$240.000,00 | R$400.000,00 | R$160.000,00 |     |     |
+| Correlative Imaging | R$885.000,00 | R$419.500,00 | R$288.500,00 | R$177.000,00 |     |     |
+| Sample preparation | R$1.310.000,00 | R$393.000,00 | R$655.000,00 | R$262.000,00 |     |     |
 
 ## Estágios do ciclo de vida
 
@@ -87,21 +87,18 @@ Embora o sistema NSAU possua encoders internos, muitas vezes é preferível medi
 
 Uma outra característica distintiva do design atual é a utilização de um acoplamento flexível para a transferência de calor por condução, conectando um criostato à região de interesse do estágio. Isso possibilita que o sistema de refrigeração, a saber, um criostato do tipo pulse tube (PT) ou Joule-Thomson (JT), também esteja localizado em outro ambiente. Para simplificar esse acoplamento e reduzir as cargas no sistema de rotação, um pequeno goniômetro operando em condições criogênicas pode ser empregado, sendo responsável unicamente pela movimentação do pino de amostras, que terá sua massa limitada a poucos gramas. Atualmente, existem diversas opções de goniômetros criogênicos que podem ser utilizados na aplicação, sendo o Attocube ANR240 e o JPE CSR1 opções candidatas (Figura 5).
 
-![A diagram of a machine
-Description automatically generated](5.png)
+![A diagram of a machineDescription automatically generated](5.png)
 
 Figura 5: Componentes principais do Manipulador de Amostra
 
 Foi elaborado um modelo teórico do conceito apresentado na Figura 4, utilizando como base o esquema apresentado na Figura 6. Neste esquemático é possível verificar uma abstração do conceito proposto, bem como os principais parâmetros geométricos que impactam a análise de viabilidade. Dentre eles, pode-se citar a distância dos atuadores com relação ao centro R e à altura do pino de amostras com relação ao ponto de articulação do mecanismo h.
 
-![Interface gráfica do usuário
-Descrição gerada automaticamente](6.png)
+![Interface gráfica do usuárioDescrição gerada automaticamente](6.png)
 
 Figura 6: Representação esquemática do conceito proposto. A) Vista posterior do mecanismo de movimentação, destacando as folded leaf springs FL e os atuadores X. B) Vista lateral do mecanismo, destacando novamente as folded leaf springs FL e o pino de amostras indicado por 1
 
 O conceito apresentado na Figura 4 foi validado por simulação de maneira preliminar por meio da determinação da tensão máxima nas *folded leaf springs* (Figura 6), que atuam como guias elásticos no mecanismo quando estas são deslocadas pelo atuador. Desta análise (Figura 7), percebe-se que é factível o emprego de *folded leaf springs* de certas ligas de titânio e aço, que podem atingir tensão de escoamento de até cerca de 900 – 1000 GPa.
 
-![Gráfico
-Descrição gerada automaticamente](7.png)
+![GráficoDescrição gerada automaticamente](7.png)
 
 Figura 7: Tensão máxima teórica em função dos parâmetros geométricos. A) Desenho esquemático da folded leaf spring e suas propriedades geométricas, sendo b a largura da chapa, L os comprimentos, t a espessura e ∆X1 o movimento imposto pelo atuador na ponta da flexure. B) O gráfico apresenta o comportamento da tensão em uma folded leaf spring com as propriedades geométricas apresentadas no gráfico quando sujeita a um deslocamento de 10,00 mm em sua extremidade
