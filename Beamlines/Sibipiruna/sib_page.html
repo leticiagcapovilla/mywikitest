@@ -2,14 +2,14 @@
 title: SIBIPIRUNA
 description: Soft X-rays tomography beamline at Orion
 published: 1
-date: 2024-04-19T13:57:12.448Z
+date: 2024-04-19T13:59:29.696Z
 tags: teste
 editor: ckeditor
 dateCreated: 2024-04-08T20:19:17.974Z
 -->
 
-<h1>Introdução</h1>
-<figure class="image image_resized image-style-align-right" style="width:46.45%;"><img src="/home/Beamlines/1.png">
+<h1 class="toc-header" id="introdução"> Introdução</h1>
+<figure style="width:46.45%;" class="image image_resized image-style-align-right"><img src="/home/Beamlines/1.png">
   <figcaption>Figura 1: Missão e Capacidades da linha de luz SIBIPIRUNA</figcaption>
 </figure>
 <p>No contexto do Orion, alguns objetivos científicos foram criados, sendo um deles o de gerar imagens 3D com resolução nanométrica de células ex-vivo infectadas com agentes de nível 4 de biossegurança (BSL4) em estado quase nativo. Para isso a linha de luz SIBIPIRUNA foi criada, possuindo como capacidade fundamental a utilização de raios-X moles (<i>soft X-rays</i>) para gerar tomografia 3D de células isoladas. Esta capacidade necessariamente demanda que a célula esteja em estado criogênico, assim possibilitando que a célula tanto mantenha sua geometria quanto resista às doses de radiação dos raios-X ao longo das medidas. Além disso, com o intuito de ampliar as capacidades científicas do instrumento com um maior volume de informações das características da célula, concluiu-se ser necessário complementar as imagens de raios-X com uma técnica de imagem correlativa, criando-se assim uma plataforma de microscopia fluorescente de luz visível e tomografia de raios-X (CLXT do inglês <i>correlative light and X-ray tomography</i>). Dessa forma, a técnica de microscopia fluorescente também poderá ser empregada nas amostras estudadas na SIBIPIRUNA. A Figura 1 traz uma síntese do processo de análise e decisão do objetivo científico, onde é apresentado um diagrama de Missão e Capacidades, sendo que letra ’M’ define a Missão, que nesse caso representa o objetivo científico proposto, e ‘C’ as Capacidades a serem desempenhadas para que o objetivo da Missão seja alcançado. Além disso, a figura ainda apresenta uma estrutura hierárquica onde as Capacidades são derivadas, a partir da representação das letras ‘i’ e ‘e’ sobre as setas, que representam inclusão e extensão, respectivamente.</p>
@@ -20,7 +20,7 @@ dateCreated: 2024-04-08T20:19:17.974Z
 <p>Este documento irá abordar o status de desenvolvimento do componente PACRIO, bem como da Capacidade 1.1, visto que essa capacidade em associação com a 1.2 possibilita a Capacidade 1.1.1. Logo as operações de 1.1 e 1.2 deverão ser compatíveis entre si para que a 1.1.1 seja atingida. Estudos de viabilidade técnica dos métodos tradicionais para um <i>Sistema de Preparo de Amostras</i> com congelamento também serão apresentados neste documento, assim como um <i>Sistema de Transferência de Amostras</i>, uma vez que são pré-requisitos para a solução de porta-amostra (Figura 3).</p>
 <p>&nbsp;</p>
 <p>Figura 3: Diagrama de arquitetura e capacidade principal da linha de luz SIBIPIRUNA</p>
-<h2>Orçamento</h2>
+<h2 class="toc-header" id="orçamento"> Orçamento</h2>
 <p>As aquisições desse projeto vêm ocorrendo através do centro de custo referente ao PACRIO, com um montante total previsto de R$4.500.000,00. Na Tabela 1 são detalhados os montantes destinados às aquisições para cada um dos subsistemas e a data prevista para compra.</p>
 <p>Tabela 1: Orçamento para o SoI</p>
 <figure class="table">
@@ -70,7 +70,7 @@ dateCreated: 2024-04-08T20:19:17.974Z
     </tbody>
   </table>
 </figure>
-<h2>Estágios do ciclo de vida</h2>
+<h2 class="toc-header" id="estágios-do-ciclo-de-vida"> Estágios do ciclo de vida</h2>
 <p>A Tabela 2 apresenta os estágios do ciclo de vida do PACRIO em uma escala temporal de trimestres. Nos capítulos posteriores serão descritas as atividades específicas para cada um desses estágios.</p>
 <p>Tabela 2: Estágios do ciclo de vida do PACRIO</p>
 <figure class="table">
@@ -180,7 +180,7 @@ dateCreated: 2024-04-08T20:19:17.974Z
     </tbody>
   </table>
 </figure>
-<h3>Conceitual</h3>
+<h3 class="toc-header" id="conceitual"> Conceitual</h3>
 <p>A etapa conceitual consiste em estudos de avaliação das soluções, observando o entendimento do problema, requisitos e performance. Esta etapa se encerra a partir da aprovação de uma das soluções propostas, na qual será avaliado o conceito proposto para cinemática, dinâmica, gerenciamento térmico, minimização da exposição a área de descontaminação e viabilidade de manutenção.</p>
 <p>Na etapa conceitual, representada pelo CDR da estação experimental, foram identificados os requisitos de baixo nível para o sistema de movimentação. Estes requisitos abrangem capacidades essenciais que o sistema deve possuir para alcançar os objetivos finais do projeto. É importante ressaltar que a análise de viabilidade desses conceitos, assim como a validação de sua capacidade em atender totalmente aos requisitos mapeados, representa um passo subsequente. Esse processo envolverá a atuação das equipes de engenharia na modelagem e prototipagem. Assim, embora os conceitos aqui apresentados ainda não tenham passado por uma validação final, eles demonstram potencial para atender aos requisitos em uma avaliação preliminar. A lista de requisitos (LLR, de <i>low-level requirement</i>) pertinentes ao projeto do estágio do porta-amostras criogênico é apresentada abaixo.</p>
 <ul>
@@ -201,17 +201,17 @@ dateCreated: 2024-04-08T20:19:17.974Z
 <p>Conceitos de atuadores foram explorados para o estágio em questão. O nano-posicionador NSAU, da JPE, surgiu como um candidato promissor, devido ao seu curso de movimentação e força necessários, além de um design completamente hermético, selado em um encapsulamento metálico e equipado com um sistema de feedback de posicionamento (encoder) integrado. No design atual, é viável isolar totalmente os componentes eletrônicos de precisão e os sistemas de movimentação dos atuadores do ambiente de amostra, minimizando a exposição desses componentes a agentes de descontaminação que podem causar corrosão e desgaste.</p>
 <p>Embora o sistema NSAU possua encoders internos, muitas vezes é preferível medir a posição o mais próximo possível da região de interesse. Assim, o conceito atual incorpora um sistema de interferometria para a metrologia na posição imediatamente antes da amostra, permitindo que os elementos interferométricos sejam posicionados fora do ambiente de amostra e transmitindo o sinal através de três janelas ópticas. A viabilidade deste conceito será explorada, com foco na validação dos cursos de movimentação e na aplicabilidade dos interferômetros em um sistema com um grande desvio angular natural.</p>
 <p>Uma outra característica distintiva do design atual é a utilização de um acoplamento flexível para a transferência de calor por condução, conectando um criostato à região de interesse do estágio. Isso possibilita que o sistema de refrigeração, a saber, um criostato do tipo pulse tube (PT) ou Joule-Thomson (JT), também esteja localizado em outro ambiente. Para simplificar esse acoplamento e reduzir as cargas no sistema de rotação, um pequeno goniômetro operando em condições criogênicas pode ser empregado, sendo responsável unicamente pela movimentação do pino de amostras, que terá sua massa limitada a poucos gramas. Atualmente, existem diversas opções de goniômetros criogênicos que podem ser utilizados na aplicação, sendo o Attocube ANR240 e o JPE CSR1 opções candidatas (Figura 5).</p>
-<figure class="image"><img src="5.png" alt="A diagram of a machine
+<figure class="image"><img alt="A diagram of a machine
 
-Description automatically generated"></figure>
+Description automatically generated" src="5.png"></figure>
 <p>Figura 5: Componentes principais do Manipulador de Amostra</p>
 <p>Foi elaborado um modelo teórico do conceito apresentado na Figura 4, utilizando como base o esquema apresentado na Figura 6. Neste esquemático é possível verificar uma abstração do conceito proposto, bem como os principais parâmetros geométricos que impactam a análise de viabilidade. Dentre eles, pode-se citar a distância dos atuadores com relação ao centro R e à altura do pino de amostras com relação ao ponto de articulação do mecanismo h.</p>
-<figure class="image"><img src="6.png" alt="Interface gráfica do usuário
+<figure class="image"><img alt="Interface gráfica do usuário
 
-Descrição gerada automaticamente"></figure>
+Descrição gerada automaticamente" src="6.png"></figure>
 <p>Figura 6: Representação esquemática do conceito proposto. A) Vista posterior do mecanismo de movimentação, destacando as folded leaf springs FL e os atuadores X. B) Vista lateral do mecanismo, destacando novamente as folded leaf springs FL e o pino de amostras indicado por 1</p>
 <p>O conceito apresentado na Figura 4 foi validado por simulação de maneira preliminar por meio da determinação da tensão máxima nas <i>folded leaf springs </i>(Figura 6), que atuam como guias elásticos no mecanismo<i> </i>quando estas<i> </i>são deslocadas pelo atuador. Desta análise (Figura 7), percebe-se que é factível o emprego de <i>folded leaf springs</i> de certas ligas de titânio e aço, que podem atingir tensão de escoamento de até cerca de 900 – 1000 GPa.</p>
-<figure class="image"><img src="7.png" alt="Gráfico
+<figure class="image"><img alt="Gráfico
 
-Descrição gerada automaticamente"></figure>
+Descrição gerada automaticamente" src="7.png"></figure>
 <p>Figura 7: Tensão máxima teórica em função dos parâmetros geométricos. A) Desenho esquemático da folded leaf spring e suas propriedades geométricas, sendo b a largura da chapa, L os comprimentos, t a espessura e ∆X1 o movimento imposto pelo atuador na ponta da flexure. B) O gráfico apresenta o comportamento da tensão em uma folded leaf spring com as propriedades geométricas apresentadas no gráfico quando sujeita a um deslocamento de 10,00 mm em sua extremidade</p>
