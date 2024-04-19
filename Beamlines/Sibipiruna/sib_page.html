@@ -2,7 +2,7 @@
 title: SIBIPIRUNA
 description: Soft X-rays tomography beamline at Orion
 published: 1
-date: 2024-04-19T19:06:14.950Z
+date: 2024-04-19T19:09:51.050Z
 tags: teste
 editor: ckeditor
 dateCreated: 2024-04-08T20:19:17.974Z
@@ -197,8 +197,10 @@ dateCreated: 2024-04-08T20:19:17.974Z
   <li style="text-align:justify;">LLR-5.15: O estágio de rotação deverá permitir pelo menos 180° de rotação, com a opção de 360° para correção da orientação da amostra.</li>
 </ul>
 <p style="text-align:justify;">A partir das definições básicas dos requisitos para o estágio do Manipulador de Amostras da SIBIPIRUNA, pode-se desenvolver um design conceitual. Prezando por diretrizes de isolamento da região da amostra em relação ao restante da linha de luz por questões de biossegurança, impondo simplificações nas interfaces mecânicas, e possibilitando o uso de tecnologias já validadas no Sirius/LNLS, o design atual aplica os conceitos de um <i>Tripod</i>, que utiliza cinemática paralela para movimentação cartesiana. Acoplado a ele, um estágio rotativo pode ser utilizado para o eixo de tomografia (Figura 4).</p>
-<figure class="image"><img src="4.png"></figure>
-<p style="text-align:justify;">Figura 4: Manipulador da amostra e Sistema Gerenciamento Térmico. A) vista isométrica da parte interna (exposta às amostras e ciclos de descontaminação mais frequentes), e B) vista isométrica da parte externa (em ambiente de vácuo separado da amostra)</p>
+<figure class="image image_resized" style="width:100%;"><img src="/home/Beamlines/4.png">
+  <figcaption><strong>Figura 4: Manipulador da amostra e Sistema Gerenciamento Térmico. A) vista isométrica da parte interna (exposta às amostras e ciclos de descontaminação mais frequentes), e B) vista isométrica da parte externa (em ambiente de vácuo separado da amostra)</strong></figcaption>
+</figure>
+<p style="text-align:justify;">&nbsp;</p>
 <p style="text-align:justify;">Conceitos de atuadores foram explorados para o estágio em questão. O nano-posicionador NSAU, da JPE, surgiu como um candidato promissor, devido ao seu curso de movimentação e força necessários, além de um design completamente hermético, selado em um encapsulamento metálico e equipado com um sistema de feedback de posicionamento (encoder) integrado. No design atual, é viável isolar totalmente os componentes eletrônicos de precisão e os sistemas de movimentação dos atuadores do ambiente de amostra, minimizando a exposição desses componentes a agentes de descontaminação que podem causar corrosão e desgaste.</p>
 <p style="text-align:justify;">Embora o sistema NSAU possua encoders internos, muitas vezes é preferível medir a posição o mais próximo possível da região de interesse. Assim, o conceito atual incorpora um sistema de interferometria para a metrologia na posição imediatamente antes da amostra, permitindo que os elementos interferométricos sejam posicionados fora do ambiente de amostra e transmitindo o sinal através de três janelas ópticas. A viabilidade deste conceito será explorada, com foco na validação dos cursos de movimentação e na aplicabilidade dos interferômetros em um sistema com um grande desvio angular natural.</p>
 <p style="text-align:justify;">Uma outra característica distintiva do design atual é a utilização de um acoplamento flexível para a transferência de calor por condução, conectando um criostato à região de interesse do estágio. Isso possibilita que o sistema de refrigeração, a saber, um criostato do tipo pulse tube (PT) ou Joule-Thomson (JT), também esteja localizado em outro ambiente. Para simplificar esse acoplamento e reduzir as cargas no sistema de rotação, um pequeno goniômetro operando em condições criogênicas pode ser empregado, sendo responsável unicamente pela movimentação do pino de amostras, que terá sua massa limitada a poucos gramas. Atualmente, existem diversas opções de goniômetros criogênicos que podem ser utilizados na aplicação, sendo o Attocube ANR240 e o JPE CSR1 opções candidatas (Figura 5).</p>
