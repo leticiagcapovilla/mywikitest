@@ -2,7 +2,7 @@
 title: Compras
 description: Protótipo que será usado para apresentação 18/04/2024
 published: 1
-date: 2024-04-18T11:22:27.133Z
+date: 2024-04-23T11:11:54.563Z
 tags: compras, gpp
 editor: markdown
 dateCreated: 2024-04-17T16:36:58.628Z
@@ -24,7 +24,7 @@ planilha do excel?
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at justo sit amet mauris iaculis elementum.  
 
 [Processo completo](https://cnpemcamp.sharepoint.com/:b:/r/sites/lnls/gpp/SiteAssets/SitePages/Home-%20Aquisi%C3%A7%C3%B5es/Modelo-do-Processo-de-Compras.pdf?csf=1&web=1&e=1qiDve)  
-[Teste de imagem local - Não deu certo]("https://cnpemcamp.sharepoint.com/:b:/r/sites/lnls/gpp/SiteAssets/SitePages/Home-%20Aquisi%C3%A7%C3%B5es/Modelo-do-Processo-de-Compras.pdf?csf=1&web=1&e=oIPWer")
+![Teste de imagem local - Não deu certo]("https://professorluizroberto.com/wp-content/uploads/2021/04/ciclo-Compras-5-min.jpg")
 Teste de uma imagem que poderiamos utilizar
 
 ### Responsáveis
