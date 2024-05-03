@@ -2,7 +2,7 @@
 title: SIBIPIRUNA
 description: Soft X-rays tomography beamline at Orion
 published: 1
-date: 2024-04-25T11:46:08.299Z
+date: 2024-05-03T11:46:42.717Z
 tags: teste
 editor: markdown
 dateCreated: 2024-04-08T20:19:17.974Z
@@ -19,7 +19,7 @@ No contexto do Orion, alguns objetivos científicos foram criados, sendo um dele
 
 Para o desenvolvimento da Capacidade 1.2, foi identificada a necessidade de um componente chamado de *Manipulador* para posicionar a amostra, montada a um *Suporte de Amostra*, no foco da linha de luz e realizar o movimento de tomografia. Ainda, devido ao fato de a amostra estar em estado criogênico, a solução também demandará um *Sistema de Refrigeração* para gestão térmica com a função de manter a amostra em temperatura criogênica. A partir disso, optou-se por desenvolver um Sistema de Porta-Amostras Criogênico (PACRIO), que deverá possuir as funções descritas conforme Figura 2.
 
-![](/home/Beamlines/2.png)
+![](/home/Beamlines/2.png) |
 |-|
 | **Figura 2: Diagrama de arquitetura do Porta-Amostras Criogênico, especificando os componentes, subcomponentes, funções e informações/matéria/energia trocada entre as funções** |
 
@@ -94,6 +94,9 @@ Na etapa conceitual, representada pelo CDR da estação experimental, foram iden
 
 
 A partir das definições básicas dos requisitos para o estágio do Manipulador de Amostras da SIBIPIRUNA, pode-se desenvolver um design conceitual. Prezando por diretrizes de isolamento da região da amostra em relação ao restante da linha de luz por questões de biossegurança, impondo simplificações nas interfaces mecânicas, e possibilitando o uso de tecnologias já validadas no Sirius/LNLS, o design atual aplica os conceitos de um *Tripod*, que utiliza cinemática paralela para movimentação cartesiana. Acoplado a ele, um estágio rotativo pode ser utilizado para o eixo de tomografia (Figura 4).
+|![](/home/Beamlines/4.png) |
+|-|
+| **Figura 5: Manipulador da Amostra e Sistema Gerenciamento Térmico do PACRIO. A) vista isométrica da parte interna (exposta às amostras e ciclos de descontaminação mais frequentes), e B) vista isométrica da parte externa (em ambiente de vácuo separado da amostra).** |
 
 Conceitos de atuadores foram explorados para o estágio em questão. O nano-posicionador NSAU, da JPE, surgiu como um candidato promissor, devido ao seu curso de movimentação e força necessários, além de um design completamente hermético, selado em um encapsulamento metálico e equipado com um sistema de feedback de posicionamento (encoder) integrado. No design atual, é viável isolar totalmente os componentes eletrônicos de precisão e os sistemas de movimentação dos atuadores do ambiente de amostra, minimizando a exposição desses componentes a agentes de descontaminação que podem causar corrosão e desgaste.
 
@@ -105,29 +108,29 @@ Uma outra característica distintiva do design atual é a utilização de um aco
 |-|
 | **Figura 5: Componentes principais do Manipulador de Amostra** |
 
-![](/home/Beamlines/6.png)
-
-**Figura 6: Representação esquemática do conceito proposto. A) Vista posterior do mecanismo de movimentação, destacando as folded leaf springs FL e os atuadores X. B) Vista lateral do mecanismo, destacando novamente as folded leaf springs FL e o pino de amostras indicado por 1**
-
 Foi elaborado um modelo teórico do conceito apresentado na Figura 4, utilizando como base o esquema apresentado na Figura 6. Neste esquemático é possível verificar uma abstração do conceito proposto, bem como os principais parâmetros geométricos que impactam a análise de viabilidade. Dentre eles, pode-se citar a distância dos atuadores com relação ao centro R e à altura do pino de amostras com relação ao ponto de articulação do mecanismo h.
 
 O conceito apresentado na Figura 4 foi validado por simulação de maneira preliminar por meio da determinação da tensão máxima nas *folded leaf springs* (Figura 6), que atuam como guias elásticos no mecanismo quando estas são deslocadas pelo atuador. Desta análise (Figura 7), percebe-se que é factível o emprego de *folded leaf springs* de certas ligas de titânio e aço, que podem atingir tensão de escoamento de até cerca de 900 – 1000 GPa.
 
-![](/home/Beamlines/7.png)
+|![](/home/Beamlines/6.png) |
+|-|
+| **Figura 6: Representação esquemática do conceito proposto. A) Vista posterior do mecanismo de movimentação, destacando as folded leaf springs FL e os atuadores X. B) Vista lateral do mecanismo, destacando novamente as folded leaf springs FL e o pino de amostras indicado por 1** |
 
-**Figura 7: Tensão máxima teórica em função dos parâmetros geométricos. A) Desenho esquemático da folded leaf spring e suas propriedades geométricas, sendo b a largura da chapa, L os comprimentos, t a espessura e ∆X1 o movimento imposto pelo atuador na ponta da flexure. B) O gráfico apresenta o comportamento da tensão em uma folded leaf spring com as propriedades geométricas apresentadas no gráfico quando sujeita a um deslocamento de 10,00 mm em sua extremidade**
-
-![](/home/Beamlines/8.png)
-
-**Figura 8: A) Vista frontal do pino de amostras, sendo 1,2 e 3 os grids e 4 o pino de amostras. B) Representação do pino de amostras, a área hachurada representa a área a ser analisada, delimitada por um perímetro na forma de um oblongo, a variável r representa o raio dos grids, a representa o espaçamento entre eles e θ representa um parâmetro da curva que descreve o perímetro**
+![](/home/Beamlines/7.png) |
+|-|
+| **Figura 7: Tensão máxima teórica em função dos parâmetros geométricos. A) Desenho esquemático da folded leaf spring e suas propriedades geométricas, sendo b a largura da chapa, L os comprimentos, t a espessura e ∆X1 o movimento imposto pelo atuador na ponta da flexure. B) O gráfico apresenta o comportamento da tensão em uma folded leaf spring com as propriedades geométricas apresentadas no gráfico quando sujeita a um deslocamento de 10,00 mm em sua extremidade** |
 
 Além da determinação da tensão máxima foi feito um estudo para a avaliação do volume que este conceito é capaz de varrer. A Figura 8 apresenta uma esquematização deste volume com base no pino de amostras considerado no conceito apresentado na Figura 4.
 
+![](/home/Beamlines/8.png) |
+|-|
+| **Figura 8: A) Vista frontal do pino de amostras, sendo 1,2 e 3 os grids e 4 o pino de amostras. B) Representação do pino de amostras, a área hachurada representa a área a ser analisada, delimitada por um perímetro na forma de um oblongo, a variável r representa o raio dos grids, a representa o espaçamento entre eles e θ representa um parâmetro da curva que descreve o perímetro** |
+
 O perímetro da área hachurada apresentado na Figura 8B representa a região mais externa a qual o estágio deve ser capaz de levar as amostras. Assim, para avaliar o comportamento dos 3 atuadores, a curva que descreve este perímetro foi parametrizada em função de um ângulo θ. Deste modo, para cada valor de θ tem-se os valores de x e y que satisfazem a curva que descreve o perímetro. Os pontos descritos por x e y por sua vez são inseridos nas matrizes de cinemática possibilitando assim a determinação do movimento que cada atuador deve realizar, estes resultados são apresentados na Figura 9.
 
-![](/home/Beamlines/9.png)
-
-**Figura 9: Resultados obtidos por meio da análise cinemática preliminar. A) Curso necessário considerando a não superposição dos grids. B) Curso necessário considerando a superposição dos grids**
+|![](/home/Beamlines/9.png) |
+|-|
+| **Figura 9: Resultados obtidos por meio da análise cinemática preliminar. A) Curso necessário considerando a não superposição dos grids. B) Curso necessário considerando a superposição dos grids** |
 
 O cenário apresentado na Figura 9A demonstra que o curso necessário excede o curso nominal dos atuadores para um espaçamento de 3,5 mm entre os grids, entretanto, ao considerar um espaçamento de 3 mm entre os grids, tem-se que o curso é suficiente. Outras modificações geométricas também têm impacto no curso necessário, porém não foram demonstradas pois este estudo se caracteriza apenas como uma avaliação preliminar, podendo ser estendido no futuro.
 
@@ -162,15 +165,15 @@ A partir dessas demandas, frentes de trabalho paralelas e iterativas com PACRIO 
 
 A evolução da criomicroscopia, especialmente no contexto da microscopia de raios-X moles, marcou uma transição significativa na forma como os espécimes biológicos são preparados e analisados. Esse avanço centra-se no processo de vitrificação (ou criofixação), uma técnica que substitui os métodos tradicionais de fixação química usados na microscopia eletrônica. A vitrificação, como evidenciado pela pesquisa de criomicroscopia eletrônica, é fundamental para minimizar alterações morfológicas que poderiam comprometer a representatividade e a precisão dos resultados (Figura 10). Além disso, a análise de amostras vitrificadas em estado criogênico não apenas garante sua excelente preservação, mas também proporciona uma estabilidade robusta contra danos por radiação na microscopia de raios-X moles. Consequentemente, esses avanços na criomicroscopia de espécimes biológicos têm relevância para o projeto SIBIPIRUNA, que pretende utilizar a criofixação para examinar amostras biológicas em condições que representem de perto seu estado natural, visando uma representação imparcial e detalhada das estruturas biológicas envolvidas nos processos de infecção viral.
 
-![](/home/Beamlines/10.png)
-
-**Figura 10: Seções virtuais de tomogramas de raios-X moles de fibroblastos vitrificados, secos ao ar e secos por CPD, indicando nucléolos, gotículas de lipídio e mitocôndrias. A célula seca ao ar na grade mostra contração. Barra de escala: 10 μm (Adaptado de Chatzimpinou et al. (2023)) (2) Micrografias eletrônicas comparando tecidos de testículos de N. lamellosa processados por fixação química e vitrificação seguida de inclusão em resina. Espécimes quimicamente fixados mostram coagulação da membrana e encolhimento entre células (adaptado de Martens et al. (2009)) (3) Comparação de preparações do vírus Vaccinia: fixação química, congelamento em alta pressão/substituição por congelamento e microscopia eletrônica criogênica. A fixação química leva ao colapso das camadas do vírus (Adaptado de Chlanda et al. (2009)​). (4) Micrografias comparativas de envelopes celulares de M. smegmatis: fixação química e vitrificação seguida de inclusão em resina. A vitrificação resulta em menor largura do envelope celular (Adaptado de ​​Bleck et al. (2010)). (5) Comparação de tomogramas de raios-X moles em linfócitos B humanos nativos e fixados da linhagem GM12878. As células fixadas apresentam morfologia distorcida e gotículas de lipídio (Adaptado de Loconte et al. (2021)​).** 
-
-![](/home/Beamlines/11.png)
-
-**Figura 11: Fluxo de trabalho proposto para a preparação de amostras para análise celular dentro do framework da linha de luz SIBIPIRUNA. Inicialmente, (1) as grades ou membranas passam por uma descarga de plasma para melhorar a hidrofilicidade, um pré-requisito para uma aderência eficaz das amostras. Em seguida, (2) é realizada a litografia de padrões de adesão nas grades usando os sistemas PRIMO & DMi8, garantindo a adesão celular direcionada. A preparação continua com (3) a deposição de cultura de células ou suspensão nas grades. Em certos casos, (7) nanopartículas de ouro são depositadas como marcadores fiduciais para análise tomográfica. As amostras são então submetidas a (4) triagem em temperatura ambiente com o DMi8 para verificação antes do (8) blotting com o dispositivo Leica GP2. Posteriormente, as amostras são (9) imersas em etano, uma etapa crucial para sua preservação morfológica. O fluxo de trabalho continua à medida que as amostras são carregadas em uma (10) GridBox, transferidas criogenicamente para um (11) módulo de carregamento de amostras (VCM) e fixadas usando o sistema (12) AutoGrid. Após a (13) transferência criogênica para o criomicroscópio para imagens de super-resolução por iluminação estruturada (SIM), elas podem passar por (14) microscopia correlativa sobre o criomicroscópio SIM. As amostras são então (15) retornadas ao VCM criogenicamente, (16) carregadas em um suporte de amostra e colocadas em um (17) cartucho de transferência. Este cartucho é então carregado no sistema (18) VCT500, que finalmente leva à (19) transferência para a linha de luz para imagens de tomografia de raios-X moles (SXT). Essa sequência abrangente garante que as amostras sejam meticulosamente preparadas e preservadas para análises de alta resolução.**
+|![](/home/Beamlines/10.png)|
+|-|
+| **Figura 10: Seções virtuais de tomogramas de raios-X moles de fibroblastos vitrificados, secos ao ar e secos por CPD, indicando nucléolos, gotículas de lipídio e mitocôndrias. A célula seca ao ar na grade mostra contração. Barra de escala: 10 μm (Adaptado de Chatzimpinou et al. (2023)) (2) Micrografias eletrônicas comparando tecidos de testículos de N. lamellosa processados por fixação química e vitrificação seguida de inclusão em resina. Espécimes quimicamente fixados mostram coagulação da membrana e encolhimento entre células (adaptado de Martens et al. (2009)) (3) Comparação de preparações do vírus Vaccinia: fixação química, congelamento em alta pressão/substituição por congelamento e microscopia eletrônica criogênica. A fixação química leva ao colapso das camadas do vírus (Adaptado de Chlanda et al. (2009)​). (4) Micrografias comparativas de envelopes celulares de M. smegmatis: fixação química e vitrificação seguida de inclusão em resina. A vitrificação resulta em menor largura do envelope celular (Adaptado de ​​Bleck et al. (2010)). (5) Comparação de tomogramas de raios-X moles em linfócitos B humanos nativos e fixados da linhagem GM12878. As células fixadas apresentam morfologia distorcida e gotículas de lipídio (Adaptado de Loconte et al. (2021)​).** |
 
 Como apresentado na Figura 11, para a linha SIBIPIRUNA será empregado um fluxo de trabalho criogênico completo de células congeladas e hidratadas (vitrificadas) em substratos finos (e possivelmente também em capilares). Embora essa abordagem traga vantagens substanciais para a qualidade dos dados de tomografia e a abordagem científica, ela impõe desafios significativos para o projeto do fluxo de trabalho de preparação e manuseio de amostras. Isso se torna ainda mais complexo no contexto do ambiente BSL3/4, onde o uso de EPIs pode reduzir a mobilidade e destreza do usuário. Com isso em mente, o fluxo de trabalho atual está sendo projetado para minimizar o número de interações manuais do usuário com a amostra e reduzir a quantidade de equipamentos dentro da chamada "zona quente". Uma frente de trabalho específica foi criada para tratar do fluxo de trabalho para otimização do processo de vitrificação de células, que será abordado em detalhes no capítulo posterior.
+
+|![](/home/Beamlines/11.png)|
+|-|
+|**Figura 11: Fluxo de trabalho proposto para a preparação de amostras para análise celular dentro do framework da linha de luz SIBIPIRUNA. Inicialmente, (1) as grades ou membranas passam por uma descarga de plasma para melhorar a hidrofilicidade, um pré-requisito para uma aderência eficaz das amostras. Em seguida, (2) é realizada a litografia de padrões de adesão nas grades usando os sistemas PRIMO & DMi8, garantindo a adesão celular direcionada. A preparação continua com (3) a deposição de cultura de células ou suspensão nas grades. Em certos casos, (7) nanopartículas de ouro são depositadas como marcadores fiduciais para análise tomográfica. As amostras são então submetidas a (4) triagem em temperatura ambiente com o DMi8 para verificação antes do (8) blotting com o dispositivo Leica GP2. Posteriormente, as amostras são (9) imersas em etano, uma etapa crucial para sua preservação morfológica. O fluxo de trabalho continua à medida que as amostras são carregadas em uma (10) GridBox, transferidas criogenicamente para um (11) módulo de carregamento de amostras (VCM) e fixadas usando o sistema (12) AutoGrid. Após a (13) transferência criogênica para o criomicroscópio para imagens de super-resolução por iluminação estruturada (SIM), elas podem passar por (14) microscopia correlativa sobre o criomicroscópio SIM. As amostras são então (15) retornadas ao VCM criogenicamente, (16) carregadas em um suporte de amostra e colocadas em um (17) cartucho de transferência. Este cartucho é então carregado no sistema (18) VCT500, que finalmente leva à (19) transferência para a linha de luz para imagens de tomografia de raios-X moles (SXT). Essa sequência abrangente garante que as amostras sejam meticulosamente preparadas e preservadas para análises de alta resolução.**|
 
 Além de a SIBIPIRUNA ser projetada para a capacidade de TXM confiável, segura e de alto desempenho, com uma integração direta com o ambiente BLS4 do Orion para imagens 3D de células infectadas com patógenos de nível 3 e 4, pesquisas e colaborações com especialistas de outros síncrotrons (como cientistas da linha B24, no Diamond Light Source) demonstraram que o uso de outras técnicas baseadas em microscopia de luz para imageamento de proteínas e pequenas moléculas fluorescentes acopladas ou intercaladas a organelas específicas podem fornecer um contexto celular adicional importante. Em certo sentido, as imagens de microscopia de fluorescência podem ajudar os cientistas a compreender melhor a localização e discernir estruturas subcelulares quando sobrepostas aos dados tomográficos de cryo-TXM, o que é feito a partir de técnicas matemáticas de registro de imagens. Com isso em mente, o atual fluxo de trabalho criogênico está sendo projetado para também incorporar um criomicroscópio de fluorescência 3D de super-resolução com base em um microscópio de iluminação estruturada (SIM).
 
@@ -191,13 +194,11 @@ Atualmente, o equipamento Vitrojet da CryoSol, o único da lista com vitrificaç
 
 ## Sistema de Microscopia de Luz Visível Fluorescente Criogênico
 
-### Introdução
-
-![](/home/Beamlines/12.jpeg)
-
-**Figura 12: Layout óptico do microscópio cryo-SIM da B24. Retirado de Phillips et al. (2020).**
-
 Para viabilização de microscopia correlativa na linha de luz SIBIPIRUNA, será desenvolvido um criomicroscópio de fluorescência de super-resolução por iluminação estruturada (SIM), que deverá se adequar às necessidades específicas de biossegurança e robustez, além de ser projetado especificamente para o suporte de amostra da estação experimental. Esse microscópio será desenvolvido com base em outros designs ópticos já comprovados. Nesse sentido, um dos designs estudados é o microscópio cryo-SIM B24, desenvolvido para a linha de luz B24 do Diamond Light Source ​(Phillips et al. 2020). Em uma visão geral, o sistema emprega quatro lasers de excitação de comprimentos de onda distintos — 405, 488, 561 e 647 nm — para gerar padrões de iluminação estruturada através de um modulador de luz espacial (SLM — *Spatial Light Modulator*). Esses padrões são o núcleo do SIM, pois induzem franjas de moiré que codificam informações da amostra que não seriam observadas em um microscópio convencional devido ao limite de difração da lente objetiva. Se o padrão de iluminação for conhecido, é possível utilizar métodos matemáticos de reconstrução para recuperar a estrutura original da amostra com até o dobro da resolução originalmente limitada pela objetiva.
+
+|![](/home/Beamlines/12.jpeg)|
+|-|
+|**Figura 12: Layout óptico do microscópio cryo-SIM da B24. Retirado de Phillips et al. (2020).**|
 
 # Referências
 
