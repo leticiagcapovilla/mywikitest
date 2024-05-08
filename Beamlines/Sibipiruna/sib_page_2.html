@@ -2,28 +2,28 @@
 title: SIBIPIRUNA 2
 description: 
 published: 1
-date: 2024-04-24T12:26:17.885Z
+date: 2024-05-08T12:10:23.280Z
 tags: 
-editor: ckeditor
+editor: code
 dateCreated: 2024-04-24T12:26:17.885Z
 -->
 
-<h1>Introdução</h1>
+<h1 class="toc-header" id="introdução"> Introdução</h1>
 <p>No contexto do Orion, alguns objetivos científicos foram criados, sendo um deles o de gerar imagens 3D com resolução nanométrica de células ex-vivo infectadas com agentes de nível 4 de biossegurança (BSL4) em estado quase nativo. Para isso a linha de luz SIBIPIRUNA foi criada, possuindo como capacidade fundamental a utilização de raios-X moles (<i>soft X-rays</i>) para gerar tomografia 3D de células isoladas. Esta capacidade necessariamente demanda que a célula esteja em estado criogênico, assim possibilitando que a célula tanto mantenha sua geometria quanto resista às doses de radiação dos raios-X ao longo das medidas. Além disso, com o intuito de ampliar as capacidades científicas do instrumento com um maior volume de informações das características da célula, concluiu-se ser necessário complementar as imagens de raios-X com uma técnica de imagem correlativa, criando-se assim uma plataforma de microscopia fluorescente de luz visível e tomografia de raios-X (CLXT do inglês <i>correlative light and X-ray tomography</i>). Dessa forma, a técnica de microscopia fluorescente também poderá ser empregada nas amostras estudadas na SIBIPIRUNA. A&nbsp;Figura 1 traz uma síntese do processo de análise e decisão do objetivo científico, onde é apresentado um diagrama de Missão e Capacidades, sendo que letra ’M’ define a Missão, que nesse caso representa o objetivo científico proposto, e ‘C’ as Capacidades a serem desempenhadas para que o objetivo da Missão seja alcançado. Além disso, a figura ainda apresenta uma estrutura hierárquica onde as Capacidades são derivadas, a partir da representação das letras ‘i’ e ‘e’ sobre as setas, que representam inclusão e extensão, respectivamente.</p>
-<figure class="image"><img src="file:///C:/Users/MAIRON~1.LIM/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg"></figure>
+<figure class="image"><img></figure>
 <p>Figura&nbsp;1: Missão e Capacidades da linha de luz SIBIPIRUNA</p>
 <p>&nbsp;</p>
 <p>Para o desenvolvimento da Capacidade 1.2, foi identificada a necessidade de um componente chamado de <i>Manipulador</i> para posicionar a amostra, montada a um <i>Suporte de Amostra</i>, no foco da linha de luz e realizar o movimento de tomografia. Ainda, devido ao fato de a amostra estar em estado criogênico, a solução também demandará um <i>Sistema de Refrigeração</i> para gestão térmica com a função de manter a amostra em temperatura criogênica. A partir disso, optou-se por desenvolver um Sistema de Porta-Amostras Criogênico (PACRIO), que deverá possuir as funções descritas conforme&nbsp;Figura 2.</p>
-<figure class="image"><img src="file:///C:/Users/MAIRON~1.LIM/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg" alt="A diagram of a computer
+<figure class="image"><img alt="A diagram of a computer
 
 Description automatically generated"></figure>
 <p>Figura&nbsp;2: Diagrama de arquitetura do Porta-Amostras Criogênico, especificando os componentes, subcomponentes, funções e informações/matéria/energia trocada entre as funções</p>
 <p>Este documento irá abordar o status de desenvolvimento do componente PACRIO, bem como da Capacidade 1.1, visto que essa capacidade em associação com a 1.2 possibilita a Capacidade 1.1.1. Logo as operações de 1.1 e 1.2 deverão ser compatíveis entre si para que a 1.1.1 seja atingida. Estudos de viabilidade técnica dos métodos tradicionais para um <i>Sistema de Preparo de Amostras</i> com congelamento também serão apresentados neste documento, assim como um <i>Sistema de Transferência de Amostras</i>, uma vez que são pré-requisitos para a solução de porta-amostra (Figura 3).</p>
-<figure class="image"><img src="file:///C:/Users/MAIRON~1.LIM/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="A screenshot of a computer
+<figure class="image"><img alt="A screenshot of a computer
 
 Description automatically generated"></figure>
 <p>Figura&nbsp;3: Diagrama de arquitetura e capacidade principal da linha de luz SIBIPIRUNA</p>
-<h1>Ciclo de vida do PACRIO</h1>
+<h1 class="toc-header" id="ciclo-de-vida-do-pacrio"> Ciclo de vida do PACRIO</h1>
 <p>Sistema de Interesse (SoI): o sistema de interesse que esse documento irá abordar será o PACRIO.&nbsp;</p>
 <p>&nbsp;</p>
 <p>Objetivo/Missão: desenvolver um sistema de Porta Amostras Criogênico (PACRIO) para linha de luz SIBIPIRUNA.</p>
@@ -31,7 +31,7 @@ Description automatically generated"></figure>
 <p>Status atual:<strong>&nbsp;</strong>o projeto do PACRIO encontra-se em fase final do seu estágio Conceitual e inicial do estágio de Desenvolvimento, tendo uma pré-aprovação do design mecatrônico e térmico sido realizada pelo grupo de Mecatrônica e Engenharia de Precisão (MEP). A fase de Desenvolvimento está sendo iniciada a partir de uma análise de tolerâncias mecânicas do PACRIO.</p>
 <p>Definindo o problema:<strong>&nbsp;</strong>conforme descrito no PDR da linha SIBIPIRUNA<a href="#_msocom_1">[RR1]</a>&nbsp;<a href="#_msocom_2">[RRG2]</a>&nbsp;, a preparação de amostras criofixadas permitiu um salto na evolução da microscopia por possibilitar a realização de trabalhos com amostras biológicas mais estáveis quando expostas a radiação, como também por preservar as amostras em seu estado quase nativo. No entanto, uma série de limitações ainda existe para a execução desse tipo de preparo e operação, desde a dependência de atividades manuais em etapas críticas até diferentes tipos de porta amostras e técnicas de vitrificação, o que exige mecanismos de transferência e soluções de gestão térmica.&nbsp;<a href="#_msocom_3">[RR3]</a>&nbsp;A título de exemplo de diferentes protocolos existentes, podemos citar as linhas de luz XM-2 e B24, no <i>Advanced Light Source&nbsp;</i>e<i>&nbsp;</i>no<i> Diamond Light Source</i>, respectivamente, que possuem a mesma técnica da linha de luz da SIBIPIRUNA (cryogenic <i>transmission soft X-rays microscopy, cryo-TXM</i>), porém com preparo e estágios de amostras inteiramente diferentes (Le Gros et al. 2014; Okolo et al. 2021). Além disso, os equipamentos de proteção individual (EPIs) a serem utilizados durante a preparação das amostras no laboratório de biossegurança nível 4 (BSL4) do Orion tendem a aumentar a dificuldade de realização do fluxo de atividades.</p>
 <p>Dessa forma, realizou-se uma análise funcional da operação da linha de luz SIBIPIRUNA a partir das suas capacidades. Essas informações são apresentadas no diagrama de arquitetura da&nbsp;Figura 3.Nota-se que o PACRIO possui funções essenciais dentro das capacidades principais da linha de luz, como parte da geração de imagens 3D da célula isolada a partir da utilização de raios-X. As funções definidas ao PACRIO estão sendo estudadas de forma sistêmica, partindo-se de uma compreensão de cenários, interfaces e requisitos, em busca de soluções viáveis e robustas para cada uma das funções. Esses estudos serão apresentados nos capítulos posteriores.</p>
-<h2>Orçamento</h2>
+<h2 class="toc-header" id="orçamento"> Orçamento</h2>
 <p>As aquisições desse projeto vêm ocorrendo através do centro de custo referente ao PACRIO, com um montante total previsto de R$4.500.000,00<a href="#_msocom_4">[RR4]</a>&nbsp;. Na&nbsp;Tabela 1 são detalhados os montantes destinados às aquisições para cada um dos subsistemas e a data prevista para compra.</p>
 <p>&nbsp;</p>
 <p>Tabela&nbsp;1: Orçamento para o SoI</p>
@@ -39,7 +39,7 @@ Description automatically generated"></figure>
   <table style="border-bottom:none;border-left:none;border-right:none;border-top:none;">
     <tbody>
       <tr>
-        <td style="border-bottom:1.0pt solid #7F7F7F;border-left:none;border-right:none;border-top:1.0pt solid #7F7F7F;height:15.0pt;padding:0cm 5.4pt;vertical-align:top;width:38.4pt;" rowspan="5">
+        <td rowspan="5" style="border-bottom:1.0pt solid #7F7F7F;border-left:none;border-right:none;border-top:1.0pt solid #7F7F7F;height:15.0pt;padding:0cm 5.4pt;vertical-align:top;width:38.4pt;">
           <p style="text-align:center;"><strong>PACRIO</strong></p>
         </td>
         <td style="border-bottom:1.0pt solid #7F7F7F;border-left:none;border-right:none;border-top:1.0pt solid #7F7F7F;height:15.0pt;padding:0cm 5.4pt;vertical-align:top;width:64.9pt;">
@@ -77,7 +77,7 @@ Description automatically generated"></figure>
         <td style="border-bottom:none;border-left:none;border-right:none;border-top:none;height:15.0pt;padding:0cm 5.4pt;vertical-align:top;width:64.3pt;">
           <p style="text-align:center;">R$301.000,00</p>
         </td>
-        <td style="border-bottom:1.0pt solid #7F7F7F;border-left:none;border-right:none;border-top:none;height:15.0pt;padding:0cm 5.4pt;width:60.3pt;" rowspan="4">
+        <td rowspan="4" style="border-bottom:1.0pt solid #7F7F7F;border-left:none;border-right:none;border-top:none;height:15.0pt;padding:0cm 5.4pt;width:60.3pt;">
           <p style="text-align:center;">01/03/2024</p>
         </td>
       </tr>
@@ -136,7 +136,7 @@ Description automatically generated"></figure>
   </table>
 </figure>
 <p>&nbsp;</p>
-<h2>Estágios do ciclo de vida</h2>
+<h2 class="toc-header" id="estágios-do-ciclo-de-vida"> Estágios do ciclo de vida</h2>
 <p>A&nbsp;Tabela 2 apresenta os estágios do ciclo de vida do PACRIO em uma escala temporal de trimestres. Nos capítulos posteriores serão descritas as atividades específicas para cada um desses estágios.</p>
 <p>&nbsp;</p>
 <p>Tabela&nbsp;2: Estágios do ciclo de vida do PACRIO</p>
@@ -310,7 +310,7 @@ Description automatically generated"></figure>
   </table>
 </figure>
 <p>&nbsp;</p>
-<h3>Conceitual</h3>
+<h3 class="toc-header" id="conceitual"> Conceitual</h3>
 <p>A etapa conceitual consiste em estudos de avaliação das soluções, observando o entendimento do problema, requisitos e performance. Esta etapa se encerra a partir da aprovação de uma das soluções propostas, na qual será avaliado o conceito proposto para cinemática, dinâmica, gerenciamento térmico, minimização da exposição a área de descontaminação e viabilidade de manutenção.</p>
 <p>Na etapa conceitual, representada pelo CDR da estação experimental, foram identificados os requisitos de baixo nível para o sistema de movimentação. Estes requisitos abrangem capacidades essenciais que o sistema deve possuir para alcançar os objetivos finais do projeto. É importante ressaltar que a análise de viabilidade desses conceitos, assim como a validação de sua capacidade em atender totalmente aos requisitos mapeados, representa um passo subsequente. Esse processo envolverá a atuação das equipes de engenharia na modelagem e prototipagem. Assim, embora os conceitos aqui apresentados ainda não tenham passado por uma validação final, eles demonstram potencial para atender aos requisitos em uma avaliação preliminar. A lista de requisitos (LLR, de <i>low-level requirement</i>) pertinentes ao projeto do estágio do porta-amostras criogênico é apresentada abaixo.</p>
 <ul>
@@ -334,54 +334,54 @@ Description automatically generated"></figure>
 <p>Embora o sistema NSAU possua encoders internos, muitas vezes é preferível medir a posição o mais próximo possível da região de interesse. Assim, o conceito atual incorpora um sistema de interferometria para a metrologia na posição imediatamente antes da amostra, permitindo que os elementos interferométricos sejam posicionados fora do ambiente de amostra e transmitindo o sinal através de três janelas ópticas. A viabilidade deste conceito será explorada, com foco na validação dos cursos de movimentação e na aplicabilidade dos interferômetros em um sistema com um grande desvio angular natural.</p>
 <p>Uma outra característica distintiva do design atual é a utilização de um acoplamento flexível para a transferência de calor por condução, conectando um criostato à região de interesse do estágio. Isso possibilita que o sistema de refrigeração, a saber, um criostato do tipo pulse tube (PT) ou Joule-Thomson (JT), também esteja localizado em outro ambiente. Para simplificar esse acoplamento e reduzir as cargas no sistema de rotação, um pequeno goniômetro operando em condições criogênicas pode ser empregado, sendo responsável unicamente pela movimentação do pino de amostras, que terá sua massa limitada a poucos gramas. Atualmente, existem diversas opções de goniômetros criogênicos que podem ser utilizados na aplicação, sendo o Attocube ANR240 e o JPE CSR1 opções candidatas (Figura 5).&nbsp;</p>
 <p>&nbsp;</p>
-<figure class="image"><img src="file:///C:/Users/MAIRON~1.LIM/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png" alt="A diagram of a machine
+<figure class="image"><img alt="A diagram of a machine
 
 Description automatically generated"></figure>
 <p>Figura&nbsp;5: Componentes principais do Manipulador de Amostra</p>
 <p>&nbsp;</p>
 <p>Foi elaborado um modelo teórico do conceito apresentado na&nbsp;Figura 4, utilizando como base o esquema apresentado na&nbsp;Figura 6. Neste esquemático é possível verificar uma abstração do conceito proposto, bem como os principais parâmetros geométricos que impactam a análise de viabilidade. Dentre eles, pode-se citar a distância dos atuadores com relação ao centro R e à altura do pino de amostras com relação ao ponto de articulação do mecanismo h.</p>
 <p>&nbsp;</p>
-<figure class="image"><img src="file:///C:/Users/MAIRON~1.LIM/AppData/Local/Temp/msohtmlclip1/01/clip_image012.png" alt="Interface gráfica do usuário
+<figure class="image"><img alt="Interface gráfica do usuário
 
 Descrição gerada automaticamente"></figure>
 <p>Figura&nbsp;6: Representação esquemática do conceito proposto. A) Vista posterior do mecanismo de movimentação, destacando as folded leaf springs FL e os atuadores X. B) Vista lateral do mecanismo, destacando novamente as folded leaf springs FL e o pino de amostras indicado por 1</p>
 <p>&nbsp;</p>
 <p>O conceito apresentado na&nbsp;Figura 4 foi validado por simulação de maneira preliminar por meio da determinação da tensão máxima nas <i>folded leaf springs&nbsp;</i>(Figura 6), que atuam como guias elásticos no mecanismo<i>&nbsp;</i>quando estas<i>&nbsp;</i>são deslocadas pelo atuador. Desta análise (Figura 7), percebe-se que é factível o emprego de <i>folded&nbsp;leaf springs</i> de certas ligas de titânio e aço, que podem atingir tensão de escoamento de até cerca de 900 – 1000 GPa.</p>
 <p>&nbsp;</p>
-<figure class="image"><img src="file:///C:/Users/MAIRON~1.LIM/AppData/Local/Temp/msohtmlclip1/01/clip_image014.png" alt="Gráfico
+<figure class="image"><img alt="Gráfico
 
 Descrição gerada automaticamente"></figure>
 <p>Figura&nbsp;7: Tensão máxima teórica em função dos parâmetros geométricos. A) Desenho esquemático da folded leaf spring e suas propriedades geométricas, sendo b a largura da chapa, L os comprimentos, t a espessura e&nbsp;∆X1 o movimento imposto pelo atuador na ponta da flexure. B) O gráfico apresenta o comportamento da tensão em uma folded leaf spring com as propriedades geométricas apresentadas no gráfico quando sujeita a um deslocamento de 10,00 mm em sua extremidade</p>
 <p>&nbsp;</p>
 <p>Além da determinação da tensão máxima foi feito um estudo para a avaliação do volume que este conceito é capaz de varrer. A&nbsp;Figura 8 apresenta uma esquematização deste volume com base no pino de amostras considerado no conceito apresentado na&nbsp;Figura 4.</p>
 <p>&nbsp;</p>
-<figure class="image"><img src="file:///C:/Users/MAIRON~1.LIM/AppData/Local/Temp/msohtmlclip1/01/clip_image016.png" alt="Diagrama
+<figure class="image"><img alt="Diagrama
 
 Descrição gerada automaticamente"></figure>
 <p>Figura&nbsp;8: A) Vista frontal do pino de amostras, sendo 1,2 e 3 os grids e 4 o pino de amostras. B) Representação do pino de amostras, a área hachurada representa a área a ser analisada, delimitada por um perímetro na forma de um oblongo, a variável r representa o raio dos grids, a representa o espaçamento entre eles e θ representa um parâmetro da curva que descreve o perímetro</p>
 <p>&nbsp;</p>
 <p>O perímetro da área hachurada apresentado na&nbsp;Figura 8B representa a região mais externa a qual o estágio deve ser capaz de levar as amostras. Assim, para avaliar o comportamento dos 3 atuadores, a curva que descreve este perímetro foi parametrizada em função de um ângulo&nbsp;θ. Deste modo, para cada valor de&nbsp;θ tem-se os valores de x e y que satisfazem a curva que descreve o perímetro. Os pontos descritos por x e y por sua vez são inseridos nas matrizes de cinemática possibilitando assim a determinação do movimento que cada atuador deve realizar, estes resultados são apresentados na&nbsp;Figura 9.</p>
 <p>.</p>
-<figure class="image"><img src="file:///C:/Users/MAIRON~1.LIM/AppData/Local/Temp/msohtmlclip1/01/clip_image018.png" alt="Uma imagem contendo Gráfico
+<figure class="image"><img alt="Uma imagem contendo Gráfico
 
 Descrição gerada automaticamente"></figure>
 <p>Figura&nbsp;9: Resultados obtidos por meio da análise cinemática preliminar. A) Curso necessário considerando a não superposição dos grids. B) Curso necessário considerando a superposição dos grids</p>
 <p>O cenário apresentado na&nbsp;Figura 9A demonstra que o curso necessário excede o curso nominal dos atuadores para um espaçamento de 3,5 mm entre os grids, entretanto, ao considerar um espaçamento de 3 mm entre os grids, tem-se que o curso é suficiente. Outras modificações geométricas também têm impacto no curso necessário, porém não foram demonstradas pois este estudo se caracteriza apenas como uma avaliação preliminar, podendo ser estendido no futuro.</p>
 <p>&nbsp;</p>
-<h3>Desenvolvimento</h3>
+<h3 class="toc-header" id="desenvolvimento"> Desenvolvimento</h3>
 <p>A etapa de desenvolvimento consiste na evolução de projeto detalhada do SoI. Esse estágio se encerra após uma validação analítica da dinâmica, cinemática, térmica e mecânica do PACRIO. Além disso, espera-se que os elementos e a operação do PACRIO sejam validados sob a ação de um agente de esterilização a ser utilizado na SIBIPIRUNA.<a href="#_msocom_5">[RRG5]</a>&nbsp;</p>
 <p>&nbsp;</p>
-<h3>Produção</h3>
+<h3 class="toc-header" id="produção"> Produção</h3>
 <p>O estágio de produção se inicia a partir da tradução de todas as informações do desenvolvimento em elementos do SoI. Durante essa etapa é esperada uma grande integração entre o MEP e o grupo de Gestão de Projetos, por ser uma fase com elevado número de aquisições de fornecedores externos. Além disso, é esperado um grande esforço por parte do MEP na tradução das especificações do desenvolvimento em documentação técnica para que fornecedores e grupos internos forneçam os componentes e serviços que atendam corretamente às especificações. Atividades relacionadas ao registro e gestão de problemas também são esperadas, e será necessário estimar um tempo de execução que leve em conta esses retrabalhos. Essa fase será encerrada quando o equipamento estiver montado, integrado e com todas as funções validadas em consonância com os parâmetros determinados na etapa de Desenvolvimento. Conforme a&nbsp;Tabela 2, a data prevista para início e conclusão da etapa de Produção será entre 01/2025 e 06/2025.<a href="#_msocom_6">[RRG6]</a>&nbsp;</p>
 <p>&nbsp;</p>
-<h3>Utilização e Suporte</h3>
+<h3 class="toc-header" id="utilização-e-suporte"> Utilização e Suporte</h3>
 <p>O estágio de Utilização e Suporte é caracterizado por atividades nas quais o SoI entrará em operação em seu ambiente de uso, durante o qual ocorrerão paralelamente atividades de manutenção.</p>
 <p>Durante essa etapa são esperadas atividades de revisão de projeto e suporte aos usuários.&nbsp;<s>O MEP ainda terá grande participação para capacitar os operadores da linha</s><a href="#_msocom_7">[RRG7]</a>&nbsp;. Além disso, será necessário estimar um tempo para correção das intercorrências que venham a ocorrer e consequentemente registro das soluções, comunicando os operadores da linha a partir de recomendações técnicas. Ao final, o objetivo a ser alcançado é da completa operação do ecossistema responsável pela operação do SoI.&nbsp;<a href="#_msocom_8">[RRG8]</a>&nbsp;</p>
 <p>&nbsp;</p>
-<h3>Desfazimento</h3>
+<h3 class="toc-header" id="desfazimento"> Desfazimento</h3>
 <p>O estágio de Desfazimento consiste das atividades planejadas para o encerramento do ciclo de vida do SoI. Para o PACRIO é esperado que, quando a sua utilidade seja esgotada, seus componentes sejam encaminhados para a própria estação experimental da linha SIBIPIRUNA, tanto quanto possível, ou desmontados e armazenados em condições adequadas, para que possam vir a ser reutilizados ou realocados em outros projetos.</p>
 <p>&nbsp;</p>
-<h1>Estudos de viabilidade e Sistemas Interoperacionais</h1>
+<h1 class="toc-header" id="estudos-de-viabilidade-e-sistemas-interoperacionais"> Estudos de viabilidade e Sistemas Interoperacionais</h1>
 <p>A operação da SIBIPIRUNA envolve a interação entre diversos sistemas, e integrar essas interfaces é uma tarefa fundamental para garantir que todos os componentes possam ser desenvolvidos e operados em conformidade. Avaliando a operação do PACRIO, é possível identificar as dependências do sistema, sendo elas listadas abaixo:</p>
 <ul>
   <li>Sistema de Preparo de Amostras: dado que a amostra será preparada e carregada em um suporte&nbsp;<a href="#_msocom_9">[RRG9]</a>&nbsp;específico e este transferido para o PACRIO, identificou-se a necessidade de incluir o preparo de amostras nessa fase de prototipagem, cobrindo principalmente questões relacionadas à vitrificação adequada das amostras criogênicas e à otimização do fluxo de trabalho e da transferência da amostra entre os sistemas;</li>
@@ -389,24 +389,24 @@ Descrição gerada automaticamente"></figure>
 </ul>
 <p>A partir dessas demandas, frentes de trabalho paralelas e iterativas com PACRIO foram iniciadas, de forma a criar um cenário que atenda ao funcionamento desses diferentes sistemas. A seguir serão listadas as frentes de trabalho e nos capítulos posteriores seus status de desenvolvimento.</p>
 <p>&nbsp;</p>
-<h2>Fluxo e Sistemas de Preparo de Amostras</h2>
+<h2 class="toc-header" id="fluxo-e-sistemas-de-preparo-de-amostras"> Fluxo e Sistemas de Preparo de Amostras</h2>
 <p>A evolução da criomicroscopia, especialmente no contexto da microscopia de raios-X moles, marcou uma transição significativa na forma como os espécimes biológicos são preparados e analisados. Esse avanço centra-se no processo de vitrificação (ou criofixação), uma técnica que substitui os métodos tradicionais de fixação química usados na microscopia eletrônica. A vitrificação, como evidenciado pela pesquisa de criomicroscopia eletrônica, é fundamental para minimizar alterações morfológicas que poderiam comprometer a representatividade e a precisão dos resultados (Figura 10). Além disso, a análise de amostras vitrificadas em estado criogênico não apenas garante sua excelente preservação, mas também proporciona uma estabilidade robusta contra danos por radiação na microscopia de raios-X moles. Consequentemente, esses avanços na criomicroscopia de espécimes biológicos têm relevância para o projeto SIBIPIRUNA, que pretende utilizar a criofixação para examinar amostras biológicas em condições que representem de perto seu estado natural, visando uma representação imparcial e detalhada das estruturas biológicas envolvidas nos processos de infecção viral.</p>
 <p>&nbsp;</p>
-<figure class="image"><img src="file:///C:/Users/MAIRON~1.LIM/AppData/Local/Temp/msohtmlclip1/01/clip_image020.png" alt="A collage of images of different types of cells
+<figure class="image"><img alt="A collage of images of different types of cells
 
 Description automatically generated"></figure>
 <p>Figura&nbsp;10:&nbsp;Seções virtuais de tomogramas de raios-X moles de fibroblastos vitrificados, secos ao ar e secos por CPD, indicando nucléolos, gotículas de lipídio e mitocôndrias. A célula seca ao ar na grade mostra contração. Barra de escala: 10 μm (Adaptado de&nbsp;Chatzimpinou et al. (2023)) (2) Micrografias eletrônicas comparando tecidos de testículos de N. lamellosa<a href="#_msocom_10"><strong>[GA10]</strong></a><strong>&nbsp;</strong> processados por fixação química e vitrificação seguida de inclusão em resina. Espécimes quimicamente fixados mostram coagulação da membrana e encolhimento entre células (adaptado de&nbsp;Martens et al. (2009)) (3) Comparação de preparações do vírus Vaccinia: fixação química, congelamento em alta pressão/substituição por congelamento e microscopia eletrônica criogênica. A fixação química leva ao colapso das camadas do vírus (Adaptado de&nbsp;Chlanda et al. (2009)​). (4) Micrografias comparativas de envelopes celulares de M. smegmatis: fixação química e vitrificação seguida de inclusão em resina. A vitrificação resulta em menor largura do envelope celular (Adaptado de&nbsp;​​Bleck et al. (2010)). (5) Comparação de tomogramas de raios-X moles em linfócitos B humanos nativos e fixados da linhagem GM12878. As células fixadas apresentam morfologia distorcida e gotículas de lipídio (Adaptado de&nbsp;Loconte et al. (2021)​).&nbsp;</p>
 <p>&nbsp;</p>
 <p>Como apresentado na&nbsp;Figura 11, para a linha SIBIPIRUNA será empregado um fluxo de trabalho criogênico completo de células congeladas e hidratadas (vitrificadas) em substratos finos (e possivelmente também em capilares). Embora essa abordagem traga vantagens substanciais para a qualidade dos dados de tomografia e a abordagem científica, ela impõe desafios significativos para o projeto do fluxo de trabalho de preparação e manuseio de amostras. Isso se torna ainda mais complexo no contexto do ambiente BSL3/4, onde o uso de EPIs pode reduzir a mobilidade e destreza do usuário. Com isso em mente, o fluxo de trabalho atual está sendo projetado para minimizar o número de interações manuais do usuário com a amostra e reduzir a quantidade de equipamentos dentro da chamada "zona quente".&nbsp;Uma frente de trabalho específica foi criada para tratar do fluxo de trabalho para otimização do processo de vitrificação de células, que será abordado em detalhes no capítulo posterior.&nbsp;</p>
 <p>&nbsp;</p>
-<figure class="image"><img src="file:///C:/Users/MAIRON~1.LIM/AppData/Local/Temp/msohtmlclip1/01/clip_image022.png" alt="A computer screen shot of a diagram
+<figure class="image"><img alt="A computer screen shot of a diagram
 
 Description automatically generated"></figure>
 <p>Figura&nbsp;11: Fluxo de trabalho proposto para a preparação de amostras para análise celular dentro do framework da linha de luz SIBIPIRUNA. Inicialmente, (1) as grades ou membranas passam por uma descarga de plasma para melhorar a hidrofilicidade, um pré-requisito para uma aderência eficaz das amostras. Em seguida, (2) é realizada a litografia de padrões de adesão nas grades usando os sistemas PRIMO &amp; DMi8, garantindo a adesão celular direcionada. A preparação continua com (3) a deposição de cultura de células ou suspensão nas grades. Em certos casos, (7) nanopartículas de ouro são depositadas como marcadores fiduciais para análise tomográfica. As amostras são então submetidas a (4) triagem em temperatura ambiente com o DMi8 para verificação antes do (8) blotting com o dispositivo Leica GP2. Posteriormente, as amostras são (9) imersas em etano, uma etapa crucial para sua preservação morfológica. O fluxo de trabalho continua à medida que as amostras são carregadas em uma (10) GridBox, transferidas criogenicamente para um (11) módulo de carregamento de amostras (VCM) e fixadas usando o sistema (12) AutoGrid. Após a (13) transferência criogênica para o criomicroscópio para imagens de super-resolução por iluminação estruturada (SIM), elas podem passar por (14) microscopia correlativa sobre o criomicroscópio SIM. As amostras são então (15) retornadas ao VCM criogenicamente, (16) carregadas em um suporte de amostra e colocadas em um (17) cartucho de transferência. Este cartucho é então carregado no sistema (18) VCT500, que finalmente leva à (19) transferência para a linha de luz para imagens de tomografia de raios-X moles (SXT). Essa sequência abrangente garante que as amostras sejam meticulosamente preparadas e preservadas para análises de alta resolução.</p>
 <p>&nbsp;</p>
 <p>Além de a SIBIPIRUNA ser projetada para a capacidade de TXM confiável, segura e de alto desempenho, com uma integração direta com o ambiente BLS4 do Orion para imagens 3D de células infectadas com patógenos de nível 3 e 4, pesquisas e colaborações com especialistas de outros síncrotrons (como cientistas da linha B24, no Diamond Light Source) demonstraram que o uso de outras técnicas baseadas em microscopia de luz para imageamento de proteínas e pequenas moléculas fluorescentes acopladas ou intercaladas a organelas específicas podem fornecer um contexto celular adicional importante. Em certo sentido, as imagens de microscopia de fluorescência podem ajudar os cientistas a compreender melhor a localização e discernir estruturas subcelulares quando sobrepostas aos dados tomográficos de cryo-TXM, o que é feito a partir de técnicas matemáticas de registro de imagens. Com isso em mente, o atual fluxo de trabalho criogênico está sendo projetado para também incorporar um criomicroscópio de fluorescência 3D de super-resolução com base em um microscópio de iluminação estruturada (SIM).</p>
 <p>&nbsp;</p>
-<h2>Otimização do processo de vitrificação e manipulação de amostras</h2>
+<h2 class="toc-header" id="otimização-do-processo-de-vitrificação-e-manipulação-de-amostras"> Otimização do processo de vitrificação e manipulação de amostras</h2>
 <p>Para otimização do processo de vitrificação, foi feita uma revisão bibliográfica a respeito dos métodos e equipamentos comerciais existentes para essa finalidade. Foram avaliados 4 equipamentos, sendo eles o Vitrobot da Thermo Fisher&nbsp;(“Vitrobot Mark IV System - BR”, s.d.), o EM GP2 da Leica&nbsp;(“EM GP2 Automatic Plunge Freezing”, s.d.), o Cryogenium da Linkam&nbsp;(“Cryogenium”, s.d.) e o VitroJet da CryoSol&nbsp;(Cryosol-World, s.d.). A&nbsp;Tabela 3 apresenta uma comparação entre eles.</p>
 <p>&nbsp;</p>
 <p>Tabela&nbsp;3: Comparação entre principais equipamentos de vitrificação de amostra</p>
@@ -455,16 +455,16 @@ Description automatically generated"></figure>
 <p>&nbsp;</p>
 <p>Atualmente, o equipamento Vitrojet da CryoSol, o único da lista com vitrificação pelo processo recente e patenteado conhecido como <i>jet freezing</i>,apresenta-se como o candidato preferível para aplicação dentro do fluxo de trabalho da SIBIPIRUNA, por permitir um nível de automação maior e ser, em teoria, mais robusto e repetitivo em termos da qualidade de vitrificação. No entanto, o equipamento comercial foi originalmente desenvolvido para preparo das chamadas <i>single particles</i>, exigindo que customizações e validações sejam realizadas para<i>&nbsp;</i>células isoladas, que é o caso de interesse para a SIBIPIRUNA.<i>&nbsp;</i>Portanto, planeja-se a realização de colaborações técnicas, prototipagem e testes de validação para a tecnologia de <i>jet freezing&nbsp;</i>dentro das condições de contorno da SIBIPIRUNA no futuro próximo. Até lá, uma primeira rota mais conhecida, via <i>plunge freezing</i>,<i>&nbsp;</i>está sendo colocada em prática para validação antecipada do maior número possível de equipamentos e etapas do fluxo de trabalho (Figura 11), a partir da qual primeiros estudos sobre a qualidade da vitrificação e dos passos de manipulação das amostras podem ser conduzidos.<a href="#_msocom_11">[RRG11]</a>&nbsp;</p>
 <p>&nbsp;</p>
-<h2>Sistema de Microscopia de Luz Visível Fluorescente Criogênico</h2>
-<h3>Introdução</h3>
+<h2 class="toc-header" id="sistema-de-microscopia-de-luz-visível-fluorescente-criogênico"> Sistema de Microscopia de Luz Visível Fluorescente Criogênico</h2>
+<h3 class="toc-header" id="introdução-1"> Introdução</h3>
 <p>Para viabilização de microscopia correlativa na linha de luz SIBIPIRUNA<a href="#_msocom_12">[RRG12]</a>&nbsp;, será desenvolvido um criomicroscópio de fluorescência de super-resolução por iluminação estruturada (SIM), que deverá se adequar às necessidades específicas de biossegurança e robustez, além de ser projetado especificamente para o suporte de amostra da estação experimental. Esse microscópio será desenvolvido com base em outros designs ópticos já comprovados. Nesse sentido, um dos designs estudados é o microscópio cryo-SIM B24<a href="#_msocom_13">[RRG13]</a>&nbsp;, desenvolvido para a linha de luz B24 do Diamond Light Source ​(Phillips et al. 2020). Em uma visão geral, o sistema emprega quatro lasers de excitação de comprimentos de onda distintos — 405, 488, 561 e 647 nm — para gerar padrões de iluminação estruturada através de um modulador de luz espacial (SLM — <i>Spatial Light Modulator</i>). Esses padrões são o núcleo do SIM, pois induzem franjas de moiré que codificam informações da amostra que não seriam observadas em um microscópio convencional devido ao limite de difração da lente objetiva. Se o padrão de iluminação for conhecido, é possível utilizar métodos matemáticos de reconstrução para recuperar a estrutura original da amostra com até o dobro da resolução originalmente limitada pela objetiva.</p>
 <p>&nbsp;</p>
-<figure class="image"><img src="file:///C:/Users/MAIRON~1.LIM/AppData/Local/Temp/msohtmlclip1/01/clip_image024.jpg" alt="A diagram of a diagram of a diagram
+<figure class="image"><img alt="A diagram of a diagram of a diagram
 
 Description automatically generated with medium confidence"></figure>
 <p style="text-align:center;">Figura 12: Layout óptico do microscópio cryo-SIM da B24. Retirado de&nbsp;Phillips et al. (2020).</p>
 <p>&nbsp;</p>
-<h1>Referências</h1>
+<h1 class="toc-header" id="referências"> Referências</h1>
 <p>Bleck, C.k.e., A. Merz, M.g. Gutierrez, P. Walther, J. Dubochet, B. Zuber, e G. Griffiths.&nbsp;2010. “Comparison of Different Methods for Thin Section EM Analysis of Mycobacterium Smegmatis”. <i>Journal of Microscopy</i> 237 (1): 23–38. https://doi.org/10.1111/j.1365-2818.2009.03299.x.</p>
 <p>Chatzimpinou, Anthoula, Charlotta Funaya, David Rogers, Stephen O’Connor, Sergey Kapishnikov, Paul Sheridan, Kenneth Fahy, e Venera Weinhardt. 2023. “Dehydration as Alternative Sample Preparation for Soft X-Ray Tomography”. <i>Journal of Microscopy</i> 291 (3): 248–55. https://doi.org/10.1111/jmi.13214.</p>
 <p>Chlanda, Petr, Maria Alejandra Carbajal, Marek Cyrklaff, Gareth Griffiths, e Jacomine Krijnse-Locker. 2009. “Membrane Rupture Generates Single Open Membrane Sheets during Vaccinia Virus Assembly”. <i>Cell Host &amp; Microbe</i> 6 (1): 81–90. https://doi.org/10.1016/j.chom.2009.05.021.</p>
