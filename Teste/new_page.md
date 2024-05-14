@@ -2,7 +2,7 @@
 title: New Page
 description: 
 published: 1
-date: 2024-05-14T21:57:09.870Z
+date: 2024-05-14T22:00:29.252Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-17T13:21:04.917Z
@@ -30,8 +30,6 @@ Testando rodapé [^\[1\]^](#fn1)
 
 Testando grifar algumas palavras(Não funciona na hora da página)
 Testando grifar algumas palavras(Não funciona na hora da página)
-
-<iframe src="https://www.google.com/" title="Compras aqui"></iframe>
 
 ---
 
