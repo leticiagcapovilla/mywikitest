@@ -1,8 +1,8 @@
 ---
-title: Home
+title: Main Page
 description: 
 published: 1
-date: 2024-03-04T21:43:09.231Z
+date: 2024-03-08T12:17:47.323Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:47:40.502Z
