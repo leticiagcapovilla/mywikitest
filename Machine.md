@@ -1,8 +1,8 @@
 ---
-title: Machine home
+title: Machine
 description: 
 published: 1
-date: 2024-05-15T19:46:13.088Z
+date: 2024-05-15T19:56:48.230Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T19:46:13.088Z
