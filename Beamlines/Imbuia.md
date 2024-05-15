@@ -10,5 +10,6 @@ dateCreated: 2024-05-15T19:41:16.657Z
 
 # IMB content (WIP)
 
-## Links
-[About IMBUIA beamline]()
+## Useful Links
+
+[IMBUIA Intro](/Beamlines/Imbuia/imb_intro.md)

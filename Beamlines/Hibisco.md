@@ -10,3 +10,7 @@ dateCreated: 2024-05-15T21:12:52.896Z
 
 # HIB content (WIP)
 Your content here
+
+## Useful links
+
+[HIBISCO Intro](/Beamlines/Hibisco/hib_intro.md)

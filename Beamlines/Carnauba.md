@@ -10,3 +10,7 @@ dateCreated: 2024-05-15T20:28:26.408Z
 
 # CNB content (WIP)
 Your content here
+
+## Useful links
+
+[CARNAUBA Intro](/Beamlines/Carnauba/cnb_intro.md)

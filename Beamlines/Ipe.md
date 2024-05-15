@@ -10,3 +10,7 @@ dateCreated: 2024-05-15T20:41:28.908Z
 
 # IPE content (WIP)
 Your content here
+
+## Useful Links
+
+[IPE Intro](/Beamlines/Ipe/ipe_intro.md)

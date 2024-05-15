@@ -10,3 +10,7 @@ dateCreated: 2024-05-15T20:45:05.406Z
 
 # CED content (WIP)
 Your content here
+
+## Useful links
+
+[CEDRO Intro](Beamlines/Cedro/ced_intro.md)

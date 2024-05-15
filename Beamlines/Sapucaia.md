@@ -10,3 +10,7 @@ dateCreated: 2024-05-15T21:07:58.197Z
 
 # SPU content (WIP)
 Your content here
+
+## Useful Links
+
+[SAPUCAIA Intro](/Beamlines/Sapucaia/spu_intro.md)
