@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2024-05-15T19:41:16.657Z
 ---
 
-# Header (WIP)
+# IMB content (WIP)
 
 ## Links
 [About IMBUIA beamline]()
