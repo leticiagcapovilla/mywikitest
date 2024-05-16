@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [SAPUCAIA Wiki](/Beamlines/Sapucaia/spu_intro)
-- [SAPUCAIA Site](https://lnls.cnpem.br/grupos/sapucaia/)
+- [SAPUCAIA Site](https://lnls.cnpem.br/grupos/sapucaia/){target=_blank}
 {.links-list}

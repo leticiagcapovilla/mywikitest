@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [MOGNO Wiki](/Beamlines/Mogno/mgn_intro)
-- [MOGNO Site](https://lnls.cnpem.br/grupos/mogno/)
+- [MOGNO Site](https://lnls.cnpem.br/grupos/mogno/){target=_blank}
 {.links-list}

@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [CATERETE Wiki](/Beamlines/Caterete/cat_intro)
-- [CATERETE Site](https://lnls.cnpem.br/grupos/caterete/)
+- [CATERETE Site](https://lnls.cnpem.br/grupos/caterete/){target=_blank}
 {.links-list}

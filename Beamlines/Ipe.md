@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [IPE Wiki](/Beamlines/Ipe/ipe_intro)
-- [IPE Site](https://lnls.cnpem.br/grupos/ipe/)
+- [IPE Site](https://lnls.cnpem.br/grupos/ipe/){target=_blank}
 {.links-list}

@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [EMA Wiki](/Beamlines/EMA/ema_intro)
-- [EMA Site](https://lnls.cnpem.br/grupos/ema/)
+- [EMA Site](https://lnls.cnpem.br/grupos/ema/){target=_blank}
 {.links-list}

@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [MANACA Wiki](/Beamlines/Manaca/mnc_intro)
-- [MANACA Site](https://lnls.cnpem.br/grupos/manaca/)
+- [MANACA Site](https://lnls.cnpem.br/grupos/manaca/){target=_blank}
 {.links-list}
