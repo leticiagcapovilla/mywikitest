@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [SUSSUARANA Wiki](/Beamlines/Sussuarana/ssu_intro)
-- [SUSSUARANA Site]()
+- [SUSSUARANA External Site]()
 {.links-list}

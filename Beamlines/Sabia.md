@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [SABIA Wiki](/Beamlines/Sabia/sab_intro)
-- [SABIA Site](https://lnls.cnpem.br/grupos/sabia/){target=_blank}
+- [SABIA External Site](https://lnls.cnpem.br/grupos/sabia/){target=_blank}
 {.links-list}

@@ -15,5 +15,5 @@ dateCreated: 2024-05-16T16:50:59.482Z
 ## Useful links
 
 - [IMBUIA Wiki](/Beamlines/Imbuia/imb_intro)
-- [IMBUIA Site](https://lnls.cnpem.br/grupos/imbuia/){target=_blank}
+- [IMBUIA External Site](https://lnls.cnpem.br/grupos/imbuia/){target=_blank}
 {.links-list}

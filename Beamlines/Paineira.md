@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [PAINEIRA Wiki](/Beamlines/Paineira/pnr_intro)
-- [PAINEIRA Site](https://lnls.cnpem.br/grupos/paineira/){target=_blank}
+- [PAINEIRA External Site](https://lnls.cnpem.br/grupos/paineira/){target=_blank}
 {.links-list}

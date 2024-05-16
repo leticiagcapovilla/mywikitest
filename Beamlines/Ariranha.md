@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [ARIRANHA Wiki](/Beamlines/Ariranha/ari_intro)
-- [ARIRANHA Site]()
+- [ARIRANHA External Site]()
 {.links-list}

@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [TIMBO Wiki](/Beamlines/Timbo/tib_intro)
-- [TIMBO Site]()
+- [TIMBO External Site]()
 {.links-list}

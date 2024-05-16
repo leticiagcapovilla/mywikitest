@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [SAPE Wiki](/Beamlines/Sape/spe_intro)
-- [SAPE Site](https://lnls.cnpem.br/grupos/sape/){target=_blank}
+- [SAPE External Site](https://lnls.cnpem.br/grupos/sape/){target=_blank}
 {.links-list}

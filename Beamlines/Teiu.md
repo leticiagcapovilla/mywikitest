@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [TEIU Wiki](/Beamlines/Teiu/tei_intro)
-- [TEIU Site]()
+- [TEIU External Site]()
 {.links-list}

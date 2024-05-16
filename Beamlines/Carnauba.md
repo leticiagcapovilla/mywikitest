@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [CARNAUBA Wiki](/Beamlines/Carnauba/cnb_intro)
-- [CARNAUBA Site](https://lnls.cnpem.br/grupos/carnauba){target=_blank}
+- [CARNAUBA External Site](https://lnls.cnpem.br/grupos/carnauba){target=_blank}
 {.links-list}

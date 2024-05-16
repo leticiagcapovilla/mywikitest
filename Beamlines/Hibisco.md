@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [HIBISCO Wiki](/Beamlines/Hibisco/hib_intro)
-- [HIBISCO Site]()
+- [HIBISCO External Site]()
 {.links-list}

@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [TATU Wiki](/Beamlines/Tatu/tat_intro)
-- [TATU Site]()
+- [TATU External Site]()
 {.links-list}

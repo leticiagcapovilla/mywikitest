@@ -14,5 +14,5 @@ Your content here
 ## Useful links
 
 - [JATOBA Wiki](/Beamlines/Jatoba/jat_intro)
-- [JATOBA Site]()
+- [JATOBA External Site]()
 {.links-list}
