@@ -2,28 +2,37 @@
 title: Projeto Data
 description: 
 published: 1
-date: 2024-05-16T14:03:56.757Z
+date: 2024-05-16T16:58:42.329Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-14T14:19:38.055Z
 ---
 
-# DATA
-Data Access Through Automation
+## Projeto DATA
+##### Data Access Through Automation (Acesso a Dados Através da Automação)
 
-O projeto surgiu com a necessidade de implementar, documentar e automatizar o sistema de criação de relatórios e consulta de dados de diversas naturezas. Realizando desde a Arquitetura de Dados, Engenharia, Ciência e Análise de Dados, fazendo o processo, *pipeline*, completo dos Dados.
-
+O projeto surgiu da necessidade de implementar, documentar e automatizar o sistema de criação de relatórios e consulta de dados de diversas naturezas. Abrange desde a Arquitetura de Dados até a Engenharia, Ciência e Análise de Dados, realizando o processo, ou seja, o pipeline, completo dos Dados.
 
 ## Arquitetura de Dados
 #### Categorias
-Os dados serão mapeados de sua origem, seja ela de domínio próprio do GPP, como o Smartsheet. Também podem ser de terceiros, que os mesmos realizam o armazenamento e manutenção dos dados. E por último, temos os dados que são fornecidos a nós, porém seu armazenamento é de nossa responsabilidade. Sendo assim, dividos em três categorias: Próprias, Consultadas e Fornecidas.
+Os dados serão mapeados desde sua origem, seja ela de domínio próprio do GPP, como o Smartsheet, ou de terceiros, que realizam o armazenamento e manutenção dos dados. Além disso, temos os dados que são fornecidos a nós, mas cujo armazenamento é de nossa responsabilidade. Sendo assim, são divididos em três categorias: Próprias, Consultadas e Fornecidas.
 
 #### Armazenamento
-Após o mapeamento, os dados serão salvos em CSV no Ibirá, para backup e por conta do formato deles poderemos, se necessário realizar uma migração dos dados. Outra consequência do mapeamento, é a movimentação destes dados para uma máquina virtual, onde nela executamos scripts em python e um banco de dados, que assim centralizamos todas as três categorias de dados em uma fonte só, sendo mais importante para a próxima etapa.
+Após o mapeamento, os dados serão salvos em formato CSV no Ibirá para backup. Devido ao formato, poderemos realizar uma migração dos dados, se necessário. Outra consequência do mapeamento é a transferência desses dados para uma máquina virtual, onde executamos scripts em Python e um banco de dados. Assim, centralizamos todas as três categorias de dados em uma única fonte, o que é crucial para a próxima etapa.
 
 ## Engenharia de Dados
 #### Modelo
-Visto como as técnicas estão evoluindo cada vez mais, optamos por ELT(Extract, Load and Transform) ao invés de ETL(Extract, Transform and Load). Este modelo é mais benéfico para nós ao visarmos as especificidades dos dados e redundância dos mesmos.
+Considerando a evolução constante das técnicas, optamos pelo modelo ELT (Extract, Load and Transform) em vez do ETL (Extract, Transform and Load). Este modelo é mais benéfico para nós, pois leva em conta as especificidades e a redundância dos dados.
 
 #### Extração
-Através dos serviços Python
+Por meio dos serviços Python executados na máquina virtual, faremos a extração dos dados de diversas fontes diferentes, como Smartsheet, Excel, Jira, etc., com uma frequência diária.
+
+#### Carga
+Após a extração, os dados serão armazenados no banco de dados MariaDB.
+
+#### Transformação
+A partir do MariaDB, começaremos a processar os dados. Teremos tanto uma tabela bruta (raw) quanto tabelas pré-processadas, onde usaremos SQL para economizar processamento. Após a transformação dos dados, realizaremos uma conexão via Fluxo de Dados (Dataflow) para preparar os dados para disponibilização ao Analista de Dados. Assim, geramos uma conexão através de um gateway para os dados na nuvem.
+
+## Análise e Ciência de Dados
+#### Combinação
+Nesta última etapa, se necessário, será feita a junção de dados do Dataflow, a criação de colunas que atendam a necessidades específicas e a preparação final para a carga no Power B.I. Depois disso, o usuário poderá conectar seu relatório, notebook para Aprendizado de Máquina (A.M), ou qualquer outra necessidade que precise ser atendida.
