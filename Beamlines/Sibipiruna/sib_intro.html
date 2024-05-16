@@ -2,7 +2,7 @@
 title: SIBIPIRUNA
 description: Soft X-rays tomography beamline at Orion
 published: 1
-date: 2024-05-16T21:39:48.330Z
+date: 2024-05-16T21:41:34.859Z
 tags: teste
 editor: ckeditor
 dateCreated: 2024-04-08T20:19:17.974Z
@@ -10,9 +10,11 @@ dateCreated: 2024-04-08T20:19:17.974Z
 
 <h1>Introdução</h1>
 <p>No contexto do Orion, alguns objetivos científicos foram criados, sendo um deles o de gerar imagens 3D com resolução nanométrica de células ex-vivo infectadas com agentes de nível 4 de biossegurança (BSL4) em estado quase nativo. Para isso a linha de luz SIBIPIRUNA foi criada, possuindo como capacidade fundamental a utilização de raios-X moles (<i>soft X-rays</i>) para gerar tomografia 3D de células isoladas. Esta capacidade necessariamente demanda que a célula esteja em estado criogênico, assim possibilitando que a célula tanto mantenha sua geometria quanto resista às doses de radiação dos raios-X ao longo das medidas. Além disso, com o intuito de ampliar as capacidades científicas do instrumento com um maior volume de informações das características da célula, concluiu-se ser necessário complementar as imagens de raios-X com uma técnica de imagem correlativa, criando-se assim uma plataforma de microscopia fluorescente de luz visível e tomografia de raios-X (CLXT do inglês <i>correlative light and X-ray tomography</i>). Dessa forma, a técnica de microscopia fluorescente também poderá ser empregada nas amostras estudadas na SIBIPIRUNA. A Figura 1 traz uma síntese do processo de análise e decisão do objetivo científico, onde é apresentado um diagrama de Missão e Capacidades, sendo que letra ’M’ define a Missão, que nesse caso representa o objetivo científico proposto, e ‘C’ as Capacidades a serem desempenhadas para que o objetivo da Missão seja alcançado. Além disso, a figura ainda apresenta uma estrutura hierárquica onde as Capacidades são derivadas, a partir da representação das letras ‘i’ e ‘e’ sobre as setas, que representam inclusão e extensão, respectivamente.</p>
+<p>&nbsp;</p>
 <figure class="image image_resized" style="width:56.5%;"><img src="/img/beamlines/sibipiruna/1.png" alt="">
   <figcaption><strong>Figura 1: Missão e Capacidades da linha de luz SIBIPIRUNA</strong></figcaption>
 </figure>
+<p>&nbsp;</p>
 <p>Para o desenvolvimento da Capacidade 1.2, foi identificada a necessidade de um componente chamado de <i>Manipulador</i> para posicionar a amostra, montada a um <i>Suporte de Amostra</i>, no foco da linha de luz e realizar o movimento de tomografia. Ainda, devido ao fato de a amostra estar em estado criogênico, a solução também demandará um <i>Sistema de Refrigeração</i> para gestão térmica com a função de manter a amostra em temperatura criogênica. A partir disso, optou-se por desenvolver um Sistema de Porta-Amostras Criogênico (PACRIO), que deverá possuir as funções descritas conforme Figura 2.</p>
 <p>&nbsp;</p>
 <figure class="image"><img src="/img/beamlines/sibipiruna/2.png" alt="">
@@ -24,14 +26,17 @@ dateCreated: 2024-04-08T20:19:17.974Z
 <figure class="image"><img src="/img/beamlines/sibipiruna/3.png" alt="">
   <figcaption><strong>Figura 3: Diagrama de arquitetura e capacidade principal da linha de luz SIBIPIRUNA</strong></figcaption>
 </figure>
+<p>&nbsp;</p>
 <h1>Ciclo de vida do PACRIO</h1>
 <p>Sistema de Interesse (SoI): o sistema de interesse que esse documento irá abordar será o PACRIO.</p>
 <p>Objetivo/Missão: desenvolver um sistema de Porta Amostras Criogênico (PACRIO) para linha de luz SIBIPIRUNA.</p>
 <p>Status atual: o projeto do PACRIO encontra-se em fase final do seu estágio Conceitual e inicial do estágio de Desenvolvimento, tendo uma pré-aprovação do design mecatrônico e térmico sido realizada pelo grupo de Mecatrônica e Engenharia de Precisão (MEP). A fase de Desenvolvimento está sendo iniciada a partir de uma análise de tolerâncias mecânicas do PACRIO.</p>
 <p>Definindo o problema: conforme descrito no PDR da linha SIBIPIRUNA, a preparação de amostras criofixadas permitiu um salto na evolução da microscopia por possibilitar a realização de trabalhos com amostras biológicas mais estáveis quando expostas a radiação, como também por preservar as amostras em seu estado quase nativo. No entanto, uma série de limitações ainda existe para a execução desse tipo de preparo e operação, desde a dependência de atividades manuais em etapas críticas até diferentes tipos de porta amostras e técnicas de vitrificação, o que exige mecanismos de transferência e soluções de gestão térmica. A título de exemplo de diferentes protocolos existentes, podemos citar as linhas de luz XM-2 e B24, no <i>Advanced Light Source</i> e no <i>Diamond Light Source</i>, respectivamente, que possuem a mesma técnica da linha de luz da SIBIPIRUNA (cryogenic <i>transmission soft X-rays microscopy, cryo-TXM</i>), porém com preparo e estágios de amostras inteiramente diferentes (Le Gros et al. 2014; Okolo et al. 2021). Além disso, os equipamentos de proteção individual (EPIs) a serem utilizados durante a preparação das amostras no laboratório de biossegurança nível 4 (BSL4) do Orion tendem a aumentar a dificuldade de realização do fluxo de atividades.</p>
 <p>Dessa forma, realizou-se uma análise funcional da operação da linha de luz SIBIPIRUNA a partir das suas capacidades. Essas informações são apresentadas no diagrama de arquitetura da Figura 3.Nota-se que o PACRIO possui funções essenciais dentro das capacidades principais da linha de luz, como parte da geração de imagens 3D da célula isolada a partir da utilização de raios-X. As funções definidas ao PACRIO estão sendo estudadas de forma sistêmica, partindo-se de uma compreensão de cenários, interfaces e requisitos, em busca de soluções viáveis e robustas para cada uma das funções. Esses estudos serão apresentados nos capítulos posteriores.</p>
+<p>&nbsp;</p>
 <h2>Orçamento</h2>
 <p>As aquisições desse projeto vêm ocorrendo através do centro de custo referente ao PACRIO, com um montante total previsto de R$4.500.000,00. Na Tabela 1 são detalhados os montantes destinados às aquisições para cada um dos subsistemas e a data prevista para compra.</p>
+<p>&nbsp;</p>
 <p><strong>Tabela 1: Orçamento para o SoI</strong></p>
 <figure class="table">
   <table>
@@ -86,8 +91,10 @@ dateCreated: 2024-04-08T20:19:17.974Z
     </tbody>
   </table>
 </figure>
+<p>&nbsp;</p>
 <h2>Estágios do ciclo de vida</h2>
 <p>A Tabela 2 apresenta os estágios do ciclo de vida do PACRIO em uma escala temporal de trimestres. Nos capítulos posteriores serão descritas as atividades específicas para cada um desses estágios.</p>
+<p>&nbsp;</p>
 <p><strong>Tabela 2: Estágios do ciclo de vida do PACRIO</strong></p>
 <figure class="table">
   <table>
@@ -199,6 +206,7 @@ dateCreated: 2024-04-08T20:19:17.974Z
 <h3><br>Conceitual</h3>
 <p>A etapa conceitual consiste em estudos de avaliação das soluções, observando o entendimento do problema, requisitos e performance. Esta etapa se encerra a partir da aprovação de uma das soluções propostas, na qual será avaliado o conceito proposto para cinemática, dinâmica, gerenciamento térmico, minimização da exposição a área de descontaminação e viabilidade de manutenção.</p>
 <p>Na etapa conceitual, representada pelo CDR da estação experimental, foram identificados os requisitos de baixo nível para o sistema de movimentação. Estes requisitos abrangem capacidades essenciais que o sistema deve possuir para alcançar os objetivos finais do projeto. É importante ressaltar que a análise de viabilidade desses conceitos, assim como a validação de sua capacidade em atender totalmente aos requisitos mapeados, representa um passo subsequente. Esse processo envolverá a atuação das equipes de engenharia na modelagem e prototipagem. Assim, embora os conceitos aqui apresentados ainda não tenham passado por uma validação final, eles demonstram potencial para atender aos requisitos em uma avaliação preliminar. A lista de requisitos (LLR, de <i>low-level requirement</i>) pertinentes ao projeto do estágio do porta-amostras criogênico é apresentada abaixo.</p>
+<p>&nbsp;</p>
 <ul>
   <li>LLR-4.1: A temperatura da amostra preservada não deverá exceder 110K em todo o fluxo de trabalho.</li>
   <li>LLR-4.6: Um manipulador de amostras criogênicas com quatro graus de liberdade deverá ser incluído na Estação SIBIPIRUNA.</li>
@@ -211,6 +219,7 @@ dateCreated: 2024-04-08T20:19:17.974Z
   <li>LLR-5.14: O sistema de Estágio de Amostra deverá realizar um alinhamento rotacional preciso em torno de pelo menos um eixo que intersecta a região de imagem alvo.</li>
   <li>LLR-5.15: O estágio de rotação deverá permitir pelo menos 180° de rotação, com a opção de 360° para correção da orientação da amostra.</li>
 </ul>
+<p>&nbsp;</p>
 <p>A partir das definições básicas dos requisitos para o estágio do Manipulador de Amostras da SIBIPIRUNA, pode-se desenvolver um design conceitual. Prezando por diretrizes de isolamento da região da amostra em relação ao restante da linha de luz por questões de biossegurança, impondo simplificações nas interfaces mecânicas, e possibilitando o uso de tecnologias já validadas no Sirius/LNLS, o design atual aplica os conceitos de um <i>Tripod</i>, que utiliza cinemática paralela para movimentação cartesiana. Acoplado a ele, um estágio rotativo pode ser utilizado para o eixo de tomografia (Figura 4).</p>
 <p>&nbsp;</p>
 <figure class="image"><img src="/img/beamlines/sibipiruna/4.png" alt="">
