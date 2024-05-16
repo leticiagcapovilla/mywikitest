@@ -2,14 +2,17 @@
 title: Machine
 description: 
 published: 1
-date: 2024-05-15T19:56:48.230Z
+date: 2024-05-16T16:06:54.062Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T19:46:13.088Z
 ---
 
-# Header (WIP)
-Your content here
+# Machine Documentation
+
+LINAC, Booster and Storage Ring accelerators documentation
+
+</br>
 
 - [Beam Diagnostics and Feedback System *Monitor and control electron beam parameters for reliability*](/Machine/beam_diag_feedback_syst)
 - [Building and Utilities](/Machine/building_utilities)
@@ -32,7 +35,9 @@ Your content here
 - [Timing System](/Machine/timing_system)
 {.links-list}
 
-## Previous groups documentation
+</br>
+
+## Previous groups documentation (WIP)
 
 - [CON](/Machine/Groups/CON.md)
 - [DIG](/Machine/Groups/DIG.md)
