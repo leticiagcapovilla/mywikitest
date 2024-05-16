@@ -8,9 +8,6 @@ editor: markdown
 dateCreated: 2024-05-15T19:41:16.657Z
 ---
 
-<<<<<<< Updated upstream
-\# IMB content (WIP) ## Useful Links \[IMBUIA Intro\](/Beamlines/Imbuia/imb\_intro.md)
-=======
 # IMB content (WIP)
 
 ## Useful links
@@ -18,4 +15,3 @@ dateCreated: 2024-05-15T19:41:16.657Z
 - [IMBUIA Wiki](/Beamlines/Imbuia/imb_intro)
 - [IMBUIA Site]()
 {.links-list}
->>>>>>> Stashed changes
