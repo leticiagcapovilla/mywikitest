@@ -2,14 +2,15 @@
 title: Machine
 description: 
 published: 1
-date: 2024-05-16T16:04:11.067Z
+date: 2024-05-16T16:06:08.817Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T19:46:13.088Z
 ---
 
-# Header (WIP)
-Your content here
+# Machine Documentation
+
+LINAC, Booster and Storage Ring accelerators documentation
 
 </br>
 
