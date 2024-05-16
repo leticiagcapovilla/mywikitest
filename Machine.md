@@ -2,7 +2,7 @@
 title: Machine
 description: 
 published: 1
-date: 2024-05-16T16:06:08.817Z
+date: 2024-05-16T16:06:54.062Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T19:46:13.088Z
@@ -37,7 +37,7 @@ LINAC, Booster and Storage Ring accelerators documentation
 
 </br>
 
-## Previous groups documentation
+## Previous groups documentation (WIP)
 
 - [CON](/Machine/Groups/CON.md)
 - [DIG](/Machine/Groups/DIG.md)
