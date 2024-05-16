@@ -11,6 +11,8 @@ dateCreated: 2024-05-15T21:04:00.302Z
 # QUA content (WIP)
 Your content here
 
-## Useful Links
+## Useful links
 
-[QUATI Intro](/Beamlines/Quati/qua_intro.md)
+- [QUATI Wiki](/Beamlines/Quati/qua_intro)
+- [QUATI Site](https://lnls.cnpem.br/grupos/quati/)
+{.links-list}

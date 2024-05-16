@@ -11,6 +11,8 @@ dateCreated: 2024-05-15T19:58:07.051Z
 # SIB content (WIP)
 Your content here
 
-## Useful Links
+## Useful links
 
-[SIBIPIRUNA Intro](/Beamlines/Sibipiruna/sib_intro.html)
+- [SIBIPIRUNA Wiki](/Beamlines/Sibipiruna/sib_intro)
+- [SIBIPIRUNA Site]()
+{.links-list}

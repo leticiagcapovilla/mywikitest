@@ -13,4 +13,6 @@ Your content here
 
 ## Useful links
 
-[HIBISCO Intro](/Beamlines/Hibisco/hib_intro.md)
+- [HIBISCO Wiki](/Beamlines/Hibisco/hib_intro)
+- [HIBISCO Site]()
+{.links-list}

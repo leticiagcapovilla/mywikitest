@@ -11,6 +11,8 @@ dateCreated: 2024-05-15T21:09:56.211Z
 # TMB content (WIP)
 Your content here
 
-## Useful Links
+## Useful links
 
-[TIMBO Intro](/Beamlines/Timbo/tib_intro.md)
+- [TIMBO Wiki](/Beamlines/Timbo/tib_intro)
+- [TIMBO Site]()
+{.links-list}
