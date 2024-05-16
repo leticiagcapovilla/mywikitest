@@ -2,16 +2,13 @@
 title: Beamlines
 description: 
 published: 1
-date: 2024-05-15T19:56:04.445Z
+date: 2024-05-16T22:07:47.254Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T19:46:57.400Z
 ---
 
-# Header (WIP)
-Your content here
-
-## Sirius Beamlines
+# Sirius Beamlines
 
 - [ARIRANHA](/Beamlines/Ariranha)
 - [CARNAUBA](/Beamlines/Carnauba.md)
@@ -31,11 +28,4 @@ Your content here
 - [SUSSUARANA](/Beamlines/Sussuarana)
 - [TATU](/Beamlines/Tatu.md)
 - [TEIU](/Beamlines/Teiu)
-{.links-list}
-
-## Orion Beamlines
-
-- [HIBISCO](/Beamlines/Hibisco.md)
-- [SIBIPIRUNA](/Beamlines/Sibipiruna.md)
-- [TIMBO](/Beamlines/Timbo.md)
 {.links-list}
