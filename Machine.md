@@ -2,7 +2,7 @@
 title: Machine
 description: 
 published: 1
-date: 2024-05-16T16:04:01.440Z
+date: 2024-05-16T16:04:11.067Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T19:46:13.088Z
@@ -12,7 +12,6 @@ dateCreated: 2024-05-15T19:46:13.088Z
 Your content here
 
 </br>
-teste
 
 - [Beam Diagnostics and Feedback System *Monitor and control electron beam parameters for reliability*](/Machine/beam_diag_feedback_syst)
 - [Building and Utilities](/Machine/building_utilities)
