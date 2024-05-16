@@ -2,15 +2,11 @@
 title: Projeto Data
 description: 
 published: 1
-date: 2024-05-16T17:15:31.582Z
+date: 2024-05-16T17:15:51.258Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-14T14:19:38.055Z
 ---
-
-## Projeto DATA
-
-  
 
 ##### Data Access Through Automation (Acesso a Dados Através da Automação)
 
