@@ -2,7 +2,7 @@
 title: Projeto Data
 description: 
 published: 1
-date: 2024-05-16T17:11:29.137Z
+date: 2024-05-16T17:12:54.508Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-14T14:19:38.055Z
