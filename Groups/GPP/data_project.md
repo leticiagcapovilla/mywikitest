@@ -2,13 +2,16 @@
 title: Projeto Data
 description: 
 published: 1
-date: 2024-05-16T16:58:42.329Z
+date: 2024-05-16T17:08:10.840Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-14T14:19:38.055Z
 ---
 
 ## Projeto DATA
+
+</br>
+
 ##### Data Access Through Automation (Acesso a Dados Através da Automação)
 
 O projeto surgiu da necessidade de implementar, documentar e automatizar o sistema de criação de relatórios e consulta de dados de diversas naturezas. Abrange desde a Arquitetura de Dados até a Engenharia, Ciência e Análise de Dados, realizando o processo, ou seja, o pipeline, completo dos Dados.
