@@ -2,7 +2,7 @@
 title: Projeto Data
 description: 
 published: 1
-date: 2024-05-16T13:57:11.115Z
+date: 2024-05-16T14:02:51.817Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-14T14:19:38.055Z
@@ -26,5 +26,4 @@ Após o mapeamento, os dados serão salvos em CSV no Ibirá, para backup e por c
 Visto como as técnicas estão evoluindo cada vez mais, optamos por ELT(Extract, Load and Transform) ao invés de ETL(Extract, Transform and Load). Este modelo é mais benéfico para nós ao visarmos as especificidades dos dados e redundância dos mesmos.
 
 #### Extração
-
-
+Através dos serviços Python
