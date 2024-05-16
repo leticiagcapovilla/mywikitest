@@ -2,7 +2,7 @@
 title: Machine
 description: 
 published: 1
-date: 2024-05-15T19:56:48.230Z
+date: 2024-05-16T16:04:01.440Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T19:46:13.088Z
@@ -10,6 +10,9 @@ dateCreated: 2024-05-15T19:46:13.088Z
 
 # Header (WIP)
 Your content here
+
+</br>
+teste
 
 - [Beam Diagnostics and Feedback System *Monitor and control electron beam parameters for reliability*](/Machine/beam_diag_feedback_syst)
 - [Building and Utilities](/Machine/building_utilities)
@@ -31,6 +34,8 @@ Your content here
 - [Storage Ring](/Machine/storage_ring)
 - [Timing System](/Machine/timing_system)
 {.links-list}
+
+</br>
 
 ## Previous groups documentation
 
