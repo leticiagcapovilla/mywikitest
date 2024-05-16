@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-05-15T19:38:34.682Z
+date: 2024-05-16T19:03:21.171Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -78,6 +78,8 @@ IMBUIA, an acronym for Infrared Micro- and nano-spectroscopy Beamline for Ultra-
 --->
 
 # Radiation extraction and source details
+
+lalalala
 
 The 5-bend-achromat (5BA) cell of Sirius is comprised of 4 low-field (0.56 T) magnets named B1 and B2, one super-bend (BC, peak field 3.2 T) and one straight section, as illustrated in Fig. 1a. The IMBUIA beamline source is located in the Sector 7 of the storage ring, inside the first B2 dipole downstream the straight section. The source is defined by an extraction port (originally designed for visible photons diagnostics) centered at 3.01$^\circ$ from the electrons orbit (Fig. 1b) and longitudinally located at 295 mm upstream the dipole center. A radiation mask of 7.07 $\times$ 6.00 mm^2^ located in the pumping station of the B2 dipole (1137 mm from the source) defines a radiation extraction of 5.57 $\times$ 5.27 mrad^2^ (Fig. 1c).
 
