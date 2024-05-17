@@ -1,8 +1,8 @@
 ---
-title: control_beast
+title: Alarm system
 description: 
 published: 1
-date: 2024-05-17T21:23:54.054Z
+date: 2024-05-17T21:25:29.366Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-17T21:15:24.651Z
