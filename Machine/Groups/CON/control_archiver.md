@@ -2,7 +2,7 @@
 title: control_archiver
 description: 
 published: 1
-date: 2024-05-17T21:50:30.369Z
+date: 2024-05-17T21:51:54.569Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-17T21:47:07.269Z
@@ -230,7 +230,7 @@ O *CS Studio* pode ser usado para monitorar a *appliance*. Para isso, entre em `
 
 ## Requisitando dados com *Python* 
 
-|![](/img/groups/con/control_archiver/Archiver-test.png =500px)|
+|![](/img/groups/con/control_archiver/Archiver-test.png =700x)|
 |-|
 |**Figure 2**: Gráfico gerado pela biblioteca `matplotlib` em *python*.|
 
@@ -245,13 +245,19 @@ O servidor envia todos os dados, isto é, valores e datas do respectivo evento, 
 
 Os valores transmitidos pelo arquivador podem ser desenhados em forma de gráfico a partir da biblioteca `matplotlib`, por exemplo. A figura ao lado representa um gráfico obtido pelo módulo:
 
+<br>
+
 ## Arquivador do Grupo de Controle 
 
 Temos um arquivador rodando em uma das nossas *workstations* na sala de controle. Ele pode ser acessado a partir do endereço [http://10.0.4.57](http://10.0.4.57) (acesso apenas para computadores conectados à rede interna do CNPEM). Até o momento de edição desta página, essa instância já está monitorando mais de 900 PVs.
 
+<br>
+
 ## Requisitando dados com o Jupyter Notebook 
 
 Um [projeto](https://github.com/lnls-sirius/epics-archiver-jupyter-notebook) baseado no [Jupyter Notebook](http://jupyter.org/) foi criado com o intuito de auxiliar na recuperação dos dados. Para executá-lo, siga as instruções no README do projeto.
+
+<br>
 
 ## Visualizador web para os dados do EPICS Archiver 
 
