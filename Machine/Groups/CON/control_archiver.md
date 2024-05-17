@@ -1,4 +1,16 @@
+---
+title: control_archiver
+description: 
+published: 1
+date: 2024-05-17T21:50:30.369Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-17T21:47:07.269Z
+---
+
 # CON: Control-archiver
+
+<br>
 
 ## Introdução 
 
@@ -11,6 +23,8 @@ O EPICS *Archiver Appliance*, desenvolvido pelo instituto americano *National Ac
 
 A figura ao lado esquematiza o modo de funcionamento do *EPICS Archiver Appliance*.
 
+<br>
+
 |![](/img/groups/con/control_archiver/Applarch.png)|
 |-|
 |**Figure 1**: Modo de funcionamento de uma *appliance*.|
@@ -19,9 +33,13 @@ O instituto desenvolvedor da aplicação sugere que cada módulo seja lançada e
 
 Em um ambiente composto por diversos servidores EPICS e milhares de variáveis a serem monitoradas, tal como o *Sirius*, um sistema capaz de automizar e agilizar o armazenamento e recuperação de dados se torna fundamental para o monitoramento de eventuais problemas. Sendo assim, as próximas seções são dedicadas à instalação e exploração dos recursos disponíveis nesta aplicação.
 
+<br>
+
 ## Instalação 
 
 Esta subseção é dedicada às etapas necessárias para a instalação e configuração do arquivador EPICS.
+
+<br>
 
 ### Virtualização  
 
@@ -29,9 +47,13 @@ A instalação e a configuração do *host* em que a instância do arquivador se
 
 Dado que [Docker](https://www.docker.com/what-docker) é a principal plataforma de *containers* de software do mundo, possuindo um comunidade muito ativa, essa foi a alternativa adotada por nosso grupo para o *deployment* do arquivador.
 
+<br>
+
 #### Estrutura 
 
 O arquivador necessita de cinco *containers* para ser executado: um para cada *appliance* e outro para a base de dados que armazenará as informações das variáveis, como tipo, período de amostragem etc, que estão sendo monitoradas. A comunicação entre os *containers* é garantida através de uma rede interna, provida pela própria ferramenta *Docker*.
+
+<br>
 
 #### Imagens 
 
@@ -57,9 +79,13 @@ Por último, o *script* `docker-appliance-images/tomcat-service.sh` será execut
 
 * A imagem do *container* contendo a base de dados, [epics-archiver-mysql-db](https://hub.docker.com/r/lnlscon/epics-archiver-mysql-db/), utiliza uma instância do MySQL e baseia-se em [mysql:latest](https://hub.docker.com/_/mysql/). Esta imagem foi configurada para executar o arquivo `archappl_mysql.sql` assim que for executada, populando, desta forma, o seu banco de dados com as tabelas usadas pelo arquivador.
 
+<br>
+
 #### Deployment 
 
 *Scripts* para duas ferramentas de *deployment* dos containers são disponibilizados: [Docker Compose](https://docs.docker.com/compose/) e [Kubernetes](https://kubernetes.io/). A segunda, mantida e desenvolvida pela Google, destaca-se por apresentar muito mais recursos que a primeira não implementa, como por exemplo, armazenamento distribuído pelo *cluster*, porém esperamos utilizar a solução com *Docker Compose* nos nossos servidores pela maior facilidade de configuração.
+
+<br>
 
 ##### Docker Compose 
 
@@ -84,6 +110,8 @@ make uninstall
 ```
 para desinstalá-lo.
 
+<br>
+
 ###### Debugging 
 
 O principal método para se determinar a origem de algum *bug* é consultar os arquivos de *log* de cada *container*. Para tal, o primeiro passo é entrar no ambiente do *container*, através de 
@@ -96,11 +124,17 @@ $ tail logs/arch.log4j
 $ tail logs/catalina.out
 ```
 
+<br>
+
 ##### Kubernetes 
+
+<br>
 
 ###### Configuração inicial 
 
 Um bom guia para a configuração inicial do Kubernetes pode ser encontrado a partir deste [guia](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_atomic_host/7/html/getting_started_with_kubernetes/get_started_orchestrating_containers_with_kubernetes#starting_kubernetes), disponibilizado pela Red Hat.
+
+<br>
 
 ###### Implementação 
 
@@ -132,6 +166,8 @@ $ kubernetes/kubectl-appliances.sh del pod
 $ kubernetes/kubectl-appliances.sh del service
 ```
 
+<br>
+
 ###### Debugging 
 
 Para consultar os logs dos *pods*, assim como no caso do [[CON:Control-archiver#Debugging|Docker Compose]], execute o seguinte comando para entrar no container:
@@ -147,6 +183,8 @@ $ tail logs/arch.log4j
 $ tail logs/catalina.out
 ```
 
+<br>
+
 ##### Docker Swarm 
 
 Devido ao fato de que não é possível atribuirmos endereços IP aos serviços em um cluster Swarm, tivemos que criar uma única [imagem](https://hub.docker.com/r/lnlscon/epics-archiver-single/) contendo todas as *appliances*. Para lançá-la, clone o [repositório](https://github.com/lnls-sirius/docker-epics-archiver-composed) com o arquivo  `docker-swarm.yml` e entre no diretório `swarm`. Execute então:
@@ -156,6 +194,8 @@ $ sudo docker stack deploy -c docker-swarm.yml con-archiver
 ```
 
 Siga as instruções dos arquivos README.md para configurar as variáveis de ambiente.
+
+<br>
 
 ###### Debugging 
 
@@ -178,15 +218,19 @@ $ sudo docker exec -it <ID> bash
 $ tail <appliance>/logs/arch.log4j
 ```
 
+<br>
+
 ## Uso do CS Studio no monitoramento 
 
 O *CS Studio* pode ser usado para monitorar a *appliance*. Para isso, entre em `Edit > Preferences` e acesse o item `CSS Applications > Trends > Data Browser`. No campo *Archive Data Server URLs*, adicione o endereço contido em `<data_retrieval_url>` do arquivo configurado em `lnls_appliances.xml`, substituindo o protocolo `http://` por `pbraw://`. Escreva qualquer *Server alias*. Na tabela *Default Archive Data Sources*, adicione o mesmo endereço e aperte *Ok* para salvar as alterações.
 
 É necessário alterar a perspectiva do *CS Studio*. Acesse `Windows > Open Perspective` e escolha *'Data Browser*'. Na aba *Archive Search*, escreva a *URL* configurada anteriormente e no campo *Pattern*, escreva o nome das variáveis arquivadas que deseja monitorar. Por exemplo, se escrevermos `MTTemp*`, todas as variáveis arquivadas com este início poderão ser acessadas. Clique com o botão direito na variável desejada e acesse `Process Variable > Data Browser`.
 
+<br>
+
 ## Requisitando dados com *Python* 
 
-|![](/img/groups/con/control_archiver/Archiver-test.png)|
+|![](/img/groups/con/control_archiver/Archiver-test.png =500px)|
 |-|
 |**Figure 2**: Gráfico gerado pela biblioteca `matplotlib` em *python*.|
 
