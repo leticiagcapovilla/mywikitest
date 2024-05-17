@@ -2,7 +2,7 @@
 title: control_beast
 description: 
 published: 1
-date: 2024-05-17T21:23:08.623Z
+date: 2024-05-17T21:23:54.054Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-17T21:15:24.651Z
@@ -51,7 +51,7 @@ In total, three containers were developed and compose the system. The first one 
 
 #### Docker Images
 
-The scripts which build the Docker images on which the containers are based can be obtained from three distinct ''git'' repositories, [docker-alarm-activemq](https://github.com/lnls-sirius/docker-alarm-activemq), [docker-alarm-postgres-db]https://github.com/lnls-sirius/docker-alarm-postgres-db and [docker-alarm-server](https://github.com/lnls-sirius/docker-alarm-server). Some important aspects can be highlighted about these images:
+The scripts which build the Docker images on which the containers are based can be obtained from three distinct ''git'' repositories, [docker-alarm-activemq](https://github.com/lnls-sirius/docker-alarm-activemq), [docker-alarm-postgres-db](https://github.com/lnls-sirius/docker-alarm-postgres-db) and [docker-alarm-server](https://github.com/lnls-sirius/docker-alarm-server). Some important aspects can be highlighted about these images:
 
 * All definitions used by the alarm server are stored in the file `configuration/LNLS-CON.ini` of [docker-alarm-server](https://github.com/lnls-sirius/docker-alarm-server). Between the main attributes defined in this file, we point out the parameters used by the EPICS libraries to communicate with the IOCs, the database connection properties, such as user, database name and password, and the IP address of Java Message Service. An eventual modification of this file requires a complete image rebuilding, which can be done by executing the following command in the same directory where [docker-alarm-server](https://github.com/lnls-sirius/docker-alarm-server) was cloned.
 
