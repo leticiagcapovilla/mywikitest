@@ -10,7 +10,7 @@ dateCreated: 2024-05-16T22:07:07.401Z
 
 # Orion Beamlines
 
-- [HIBISCO](/Beamlines/Hibisco.md)
-- [SIBIPIRUNA](/Beamlines/Sibipiruna.md)
-- [TIMBO](/Beamlines/Timbo.md)
+- [HIBISCO](/Orion/Hibisco)
+- [SIBIPIRUNA](/Orion/Sibipiruna)
+- [TIMBO](/Orion/Timbo)
 {.links-list}
