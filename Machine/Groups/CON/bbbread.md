@@ -2,7 +2,7 @@
 title: bbbread
 description: 
 published: 1
-date: 2024-05-20T21:26:42.588Z
+date: 2024-05-20T21:29:58.705Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-20T20:55:13.988Z
@@ -109,7 +109,7 @@ Since the name of the hash that stores the BBB information depends on the node's
 
 ### Command List
 
-Each BBB looks for it's specific command list in the Redis server, the list name is "BBB:IP:Hostname:Command". If the list exists, the BBB pops it's first value, decodes the bytes into a string and splits it into a list using a semicolon (;) as separator. The first item of this list is the command and the remaining items are the command's parameters.
+Each BBB looks for it's specific command list in the Redis server, the list name is "BBB:IP:Hostname:Command". If the list exists, the BBB pops it's first value, decodes the bytes into a string and splits it into a list using a semicolon (; ) as separator. The first item of this list is the command and the remaining items are the command's parameters.
 
 - **Reboot**
 
@@ -119,10 +119,10 @@ The reboot command is simply the number 1, taking no parameters.
 
 The number used to represent SET_IP command is 17. It also needs the following parameters, respectively: 
 
-* IP type: manual or dhcp
-* New IP (needed only for manual IP)
-* subnet mask (needed only for manual IP)
-* gateway (needed only for manual IP)
+  - IP type: manual or dhcp
+  - New IP (needed only for manual IP)
+  - subnet mask (needed only for manual IP)
+  - gateway (needed only for manual IP)
 
 After all, what needs to be sent to the list is: b"17;ip_type;new_ip;netmask;gateway"
 
