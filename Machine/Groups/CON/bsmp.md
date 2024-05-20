@@ -2,7 +2,7 @@
 title: bsmp
 description: 
 published: 1
-date: 2024-05-20T21:21:40.224Z
+date: 2024-05-20T21:22:00.770Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-20T21:00:22.711Z
@@ -63,7 +63,7 @@ In order to ease the task of BSMP client/server programming, a C library (libbsm
 ## More information
 
 The complete specification of the BSMP protocol is available in two languages:
-*[English](https://github.com/lnls-sirius/libbsmp/blob/master/doc/protocol_v2-30_en_US.pdf){target=_blank}
-*[Portuguese](https://github.com/lnls-sirius/libbsmp/blob/master/doc/protocol_v2-30_pt_BR.pdf){target=_blank}
+* [English](https://github.com/lnls-sirius/libbsmp/blob/master/doc/protocol_v2-30_en_US.pdf){target=_blank}
+* [Portuguese](https://github.com/lnls-sirius/libbsmp/blob/master/doc/protocol_v2-30_pt_BR.pdf){target=_blank}
 
 Currently we work on a revision of the protocol specification and the C library. This revision will not produce any significant changes. Its intent is mainly correct some typos at the protocol specification and fix some minor bugs at the library.
