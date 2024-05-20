@@ -2,7 +2,7 @@
 title: bsb
 description: 
 published: 1
-date: 2024-05-20T21:18:28.088Z
+date: 2024-05-20T21:18:58.324Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-20T21:11:38.464Z
@@ -76,4 +76,3 @@ Important: More than One PV can Switch a single output.
 |Maximum switching power| 60 W / 125 VA |
 |Operate time| 6 ms |
 |Release time| 4 ms  |
-| |
