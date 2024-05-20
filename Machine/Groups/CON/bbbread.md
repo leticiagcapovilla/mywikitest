@@ -2,7 +2,7 @@
 title: bbbread
 description: 
 published: 1
-date: 2024-05-20T21:29:58.705Z
+date: 2024-05-20T21:31:33.416Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-20T20:55:13.988Z
@@ -287,8 +287,6 @@ By clicking the info button after selecting any BBB this screen will provide the
 <br>
 
 ### Configuration Screen
-
-[[File:Config_screen.png|Configuration Screen|center]]
 
 |![](/img/groups/con/bbbread/Config_screen.png)|
 |-|
