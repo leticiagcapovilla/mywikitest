@@ -2,7 +2,7 @@
 title: bbbread
 description: 
 published: 1
-date: 2024-05-20T21:25:49.473Z
+date: 2024-05-20T21:26:42.588Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-20T20:55:13.988Z
@@ -70,7 +70,7 @@ Alternatively, manually install following these steps:
 
 ## Server Database
 
-All information related to BeagleBones is stored in [hashes](https://pt.wikipedia.org/wiki/Tabela_de_dispers%C3%A3o) into the server's database. Each hash contains one BBB's information, the hashes' names are formatted as "BBB:IP:Hostname".
+All information related to BeagleBones is stored in [hashes](https://pt.wikipedia.org/wiki/Tabela_de_dispers%C3%A3o){target=_blank} into the server's database. Each hash contains one BBB's information, the hashes' names are formatted as "BBB:IP:Hostname".
 
 The information stored in the hashes are:
 
