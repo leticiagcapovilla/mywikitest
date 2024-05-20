@@ -2,7 +2,7 @@
 title: Template 1
 description: 
 published: 1
-date: 2024-05-20T17:31:55.555Z
+date: 2024-05-20T17:34:52.625Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-20T17:31:55.555Z
