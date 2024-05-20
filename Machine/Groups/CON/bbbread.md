@@ -1,12 +1,26 @@
+---
+title: bbbread
+description: 
+published: 1
+date: 2024-05-20T21:25:49.473Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-20T20:55:13.988Z
+---
+
 # CON: BBBread
+
+<br>
 
 ## Introduction
 
-BBBread, BeagleBone Black - Redis Activity Display, is a python software project that stores information about Control System's nodes in a [https://redis.io/ Redis database] on the server. It also provides functions to stop/restart services on a BBB, reboot nodes and configure it's:
+BBBread, BeagleBone Black - Redis Activity Display, is a python software project that stores information about Control System's nodes in a [Redis database](https://redis.io/){target=_blank} on the server. It also provides functions to stop/restart services on a BBB, reboot nodes and configure it's:
 
 * IP
 * Hostname
 * DNS
+
+<br>
 
 ### Requirements
 
@@ -14,11 +28,13 @@ The main requirements for BBBread installation in a BBB are:
 
 * A Redis database open to local connections to port 6379
 * pyredis
-* [https://github.com/lnls-sirius/bbb-function bbb-function]
+* [bbb-function](https://github.com/lnls-sirius/bbb-function){target=_blank}
+
+<br>
 
 ### Installation
 
-* Clone [https://github.com/lnls-sirius/bbbread this repository] in BBB's root repository
+* Clone [this repository](https://github.com/lnls-sirius/bbbread){target=_blank} in BBB's root repository
 
 ```
 # cd /root
@@ -50,6 +66,8 @@ Alternatively, manually install following these steps:
 # systemctl enable bbbread
 ```
 
+<br>
+
 ## Server Database
 
 All information related to BeagleBones is stored in [hashes](https://pt.wikipedia.org/wiki/Tabela_de_dispers%C3%A3o) into the server's database. Each hash contains one BBB's information, the hashes' names are formatted as "BBB:IP:Hostname".
@@ -73,6 +91,8 @@ The information stored in the hashes are:
     - "RF": RF room
     - "Outros": Other locations, such as corporate network and pulsed magnets subnet.
 
+<br>
+
 ### Node State
 
 In the database BeagleBones can be classified in three different states:
@@ -84,6 +104,8 @@ In the database BeagleBones can be classified in three different states:
 The third state is used when a BeagleBone changes it's hostname or IP address.
 
 Since the name of the hash that stores the BBB information depends on the node's hostname and IP, if one of these changes the hash should change too. If any service changes the BBB's information or hostname, the [CON:BBBread#Pinging|Pinging Thread](link) identifies the changes and set's the "state_string" key on the original hash with the new hash's name, so the operator can identify where the information about the BBB will be stored next.
+
+<br>
 
 ### Command List
 
@@ -120,11 +142,15 @@ The number used to represent RESTART_SERVICE command is 20, it's only parameter 
 
 The number used to represent STOP_SERVICE command is 21, it's only parameter is the service name that you want to stop. The command that should be pushed to the list is: b"21;Service"
 
+<br>
+
 ### Server Thread
 
 The program running on the server looks for hashes that start with "BBB:", listing those hashes and verifying if the key ping_time was updated in the last 11 seconds, if it wasn't the server considers the node as disconnected and writes this to the "state_string" key.
 
 On the other hand, if "state_string" value is moved (starting with "BBB:") the thread does not operate any changes.
+
+<br>
 
 ## Redis Client
 
@@ -132,23 +158,33 @@ The Redis Client, updates it's corresponding hash in the server every 10 seconds
 
 The pinging thread uses the bbb.py module (used mostly on bbb-function service) to extract the nodes information, it then uses this information to update the BBB's database and the server's database.
 
+<br>
+
 ## BBBread Module
 
 Quick description of the classes and methods present on BBBread python module
+
+<br>
 
 ### Command Class
 
 A simple class used to standardize the commands and associate them to a specific integer.
 
+<br>
+
 ### Redis Server Class
 
 When initializing this class define the "log_path" parameter as where the commands sent and errors will be registered.
+
+<br>
 
 #### Listing and reading nodes
 
 The **list_connected** method is used to return a list of all BBB hashes present on the database. If 'ip' or 'hostname' parameters are provided, it looks for BBB with the provided information.
 
 With the hashname in hands, the **get_node** method can be used to read information from the hash.
+
+<br>
 
 #### Sending commands
 
@@ -173,28 +209,39 @@ The most appropriate order to send multiple commands is:
 
 Commands can also be sent manually using **send_command(ip, command, hostname="", override=False)**, where the "command" parameter is the [CON:BBBread#Command_List|previously seen byte structure](link). **Sending commands manually is NOT recommended.**
 
+<br>
+
 #### Database management
 
 Providing a hashname to **bbb_state** method returns a integer representing the state of the beaglebone: 0 (Connected), 1 (Disconnected) or 2 (Moved). This method also updates the value for 'state_string' if the hash wasn't updated for the last 15 seconds. This method is mainly used in the [CON:BBBread#Server_Thread|Server Thread](link).
 
 A hash can be deleted from the database using **delete_node** method.
 
+<br>
+
 ### Redis Client Class
 
 The Redis Client class updates the BBB local database and the remote server database and waits commands from the server.
+
+<br>
 
 #### Pinging
 
 Pinging is the act of updating the server database with the BBB information, a thread (ping_remote) does this every 10 seconds right after updating the local database with **force_update** method.
 
+<br>
+
 #### Listening
 
 The **listen** method looks for the BBB's command list on the server database every 2 seconds. If the list exists, the first value is popped and the command is processed.
 
+<br>
 
 ## Graphical User Interface
 
 This project also includes a Graphical User Interface, which provides a quick and practical way to search for BBB is the network, show their information and change it's configuration.
+
+<br>
 
 ### Basic Filter
 
@@ -206,6 +253,7 @@ This project also includes a Graphical User Interface, which provides a quick an
 
 Filters only by the node state, disconnected nodes will be shown in the color red and moved nodes will be shown in the color yellow. There is a filter present on all tabs to filter by sector/room or by name.
 
+<br>
 
 ### Advanced Filter
 
@@ -216,6 +264,7 @@ Filters only by the node state, disconnected nodes will be shown in the color re
 
 Provides more options to find a BBB, including State, IP Type and Equipment.
 
+<br>
 
 ### Service Tab
 
@@ -225,6 +274,7 @@ Provides more options to find a BBB, including State, IP Type and Equipment.
 
 This tab provides a way to stop or restart the following services: bbb-function, BBBread and PRUSerial485
 
+<br>
 
 ### Information Screen
 
@@ -234,6 +284,7 @@ This tab provides a way to stop or restart the following services: bbb-function,
 
 By clicking the info button after selecting any BBB this screen will provide the node's information.
 
+<br>
 
 ### Configuration Screen
 
