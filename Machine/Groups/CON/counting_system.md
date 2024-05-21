@@ -2,7 +2,7 @@
 title: counting_system
 description: 
 published: 1
-date: 2024-05-21T16:21:33.312Z
+date: 2024-05-21T16:55:14.176Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-21T16:04:10.891Z
@@ -117,7 +117,7 @@ There are six channels in two connectors (three channels per connector) for this
 
 * '''Connectors:''' 2 connectors
 * '''Channels/connector:''' 3 channel
-* '''Connector type:''' IDC Header 2x8 pitch 1.27mm ([http://www.cnctech.us/productdetails.asp?ID=4168 Board Header] | [http://www.cnctech.us/productdetails.asp?ID=3327 Cable Socket])
+* '''Connector type:''' IDC Header 2x8 pitch 1.27mm ([Board Header](http://www.cnctech.us/productdetails.asp?ID=4168){target=_blank} | [Cable Socket](http://www.cnctech.us/productdetails.asp?ID=3327){target=_blank})
 * '''Connector Pinout:'''
 
 |GND| 1| 2| Channel 1 |
@@ -169,7 +169,7 @@ The maximum counting rate depends on the number of active channels in each PRU. 
 
 In order to communicate with the designed hardware, firmware for PRUs and a library for user interface are needed. Also, once the project deals with PRUs and Beaglebone's general-purpose input/output, it is mandatory to configure its pins before running any code.
 
-All library files for boards in Sirius are available in [https://gitlab.cnpem.br/patricia.nallin/counting-pru/tree/master/src/v2-3 CountingPRU Gitlab page] (available only through CNPEM network).
+All library files for boards in Sirius are available in [Gitlab page](https://gitlab.cnpem.br/patricia.nallin/counting-pru/tree/master/src/v2-3 CountingPRU){target=_blank} (available only through CNPEM network).
 
 
 ### System library
@@ -204,7 +204,7 @@ Closes PRUs and memory mapping.
 
 Standard CountingPRU application is based on a TCP/IP socket on port 5000 in order to have its IOC running remotely on a server.
 
-Protocol is defined by BSMP ([https://github.com/lnls-sirius/libbsmp/ Basic Small Message Protocol]) and its variables and groups are defined below:
+Protocol is defined by BSMP ([Basic Small Message Protocol](https://github.com/lnls-sirius/libbsmp/){target=_blank}) and its variables and groups are defined below:
 
 |ID| Variable| Access| Size (bytes)| Group ID |
 |0| TimeBase| R/W| 2| --- |
