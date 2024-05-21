@@ -2,7 +2,7 @@
 title: bsb
 description: 
 published: 1
-date: 2024-05-21T20:26:19.079Z
+date: 2024-05-21T20:28:37.776Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-20T21:11:38.464Z
@@ -21,7 +21,7 @@ To access the project, [click here](https://gitlab.cnpem.br/robert.polli/basic-s
 <br>
 
 ## Hardware Overview 
-The Hardware is basically four relays controlled by digital pinouts of the BeagleBone, triggered by a transistor configured as a switch. It is used with a SerialXXCON Board, and connects to it via its [CON:SPIxxCON|SPIXXCON](link) bus, where the BBB‘s four digital pins are available.
+The Hardware is basically four relays controlled by digital pinouts of the BeagleBone, triggered by a transistor configured as a switch. It is used with a SerialXXCON Board, and connects to it via its [SPIXXCON](link) bus, where the BBB‘s four digital pins are available.
 The table below show where the outputs are connected at SPIXXCON bus as well as which BBB pinouts that controls them. 
 
 <br>
