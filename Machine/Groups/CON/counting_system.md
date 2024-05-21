@@ -2,7 +2,7 @@
 title: counting_system
 description: 
 published: 1
-date: 2024-05-21T19:45:09.233Z
+date: 2024-05-21T19:49:45.726Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-21T16:04:10.891Z
@@ -150,19 +150,21 @@ The LED on the front of the board has the function of showing the user when  Cou
 As we have both PRUs working in parallel, we separate the channels proccessing for each of them. In this way, each PRU will treat only four channels, divided according to the table below.
 
 |Type| Connector #| Channel #| Channel Naming| Treated by |
-|LNLS (Gamma)| 1| 1| LNLS1| PRU1 |
-|2| LNLS2 |
-|3| LNLS3 |
-|2| 1| LNLS4 |
-|2| LNLS5| PRU0 |
-|3| LNLS6 |
+|-|-|-|-|-|
+|<br><br><br>LNLS (Gamma)<br><br>|<br> 1<br>| 1| LNLS1| PRU1 |
+| |2| LNLS2 |
+| |3| LNLS3 |
+| |2| 1| LNLS4 |
+| |2| LNLS5| PRU0 |
+| |3| LNLS6 |
 |Commercial (BLM)| 1| 1| Commercial1 |
-|2| 1| Commercial2  |
+| |2| 1| Commercial2  |
 
 
 The maximum counting rate depends on the number of active channels in each PRU. If only one channel is used, the respective PRU can count up to 14.29MHz. However, if all the channels are used (four channels), the maximum counting rate is 10MHz.
 
 |Active Channels| Up to [MHz] |
+|-|-|
 |1| 14.29 |
 |2| 12.50 |
 |3| 11.11 |
