@@ -1,3 +1,13 @@
+---
+title: counting_system
+description: 
+published: 1
+date: 2024-05-21T16:12:50.632Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-21T16:04:10.891Z
+---
+
 # CON: CountingPRU
 
 ## Introduction
@@ -8,7 +18,7 @@ The current version is capable of counting pulses from up to 8 channels and can 
 
 ## Hardware description
 
-|![](/img/groups/con/counting_system/Diagram.jpg =250x)|
+|![](/img/groups/con/counting_system/Diagram.jpg)|
 |-|
 |**Figure 1**: Diagram of stages on CountingPRU.|
 
@@ -16,7 +26,7 @@ The hardware is based on Beaglebone's PRU, which will count received pulses and 
 When the Ethernet data cable entry on board, the first step is divide both electrical circuit and data, made at Power Supply Stage. In it, the circuit's power supply is provided by a Power Over Ethernet (POE) module that allows the electrical current needed for circuit operation to be carried over the Ethernet data cables, minimizing the number of cables required for hardware operations, without compromise the exchange of information. 
 
 Furthermore, there are two types of interface connectors, which will be connected to the external pulsed sensors (detailed in next sections). Inside CountingPRU board, the inputs coming from sensors will be conditioned to +3.3V (BBB compatible) and will trigger the pulse detectors. Once the pulse is read by the respective PRU, the PRU will reset the pulse detector.
-----
+
 
 ###  Power supply stage
 
@@ -49,7 +59,7 @@ Board typical power consumption: '''3.3 W''' (total) [[ A CONFIRMAR ]]
 The Ag9205-S module has two configures possible, the power and the output voltage. For this, resistors are connected between CP and ADJ pins and in/outputs. The maximum output Power can be adjusted from 3.84 W to 12.95 W and the output voltage, from 4.5V to 5.65V. Each configuration can be seen on datasheet of module.
 
 As 13W and 5V outputs are default values, both CP and ADJ pins haven’t been connected. As the minimum ouput power needs to be confugured, was added output load  on Silvertel Ag9205. In this configuration, the minimum power is 0.44W, therefore, the value of output load is 50Ω. The final circuit of Ag9205 can be seen on figure 04.
-----
+
 
 ###  Bergoz BLMs inputs Stage
 
@@ -87,7 +97,7 @@ There are two channels in two connectors (one channel per connector) for this to
 |6| Ground (GND) |
 |7| +5V (50mA max) |
 |8| -5V (80mA max)  |
-----
+
 
 ### LNLS Gamma inputs
 
@@ -115,17 +125,16 @@ There are six channels in two connectors (three channels per connector) for this
 |+24V| 11| 12| GND |
 |+5V| 13| 14| +5V |
 |GND| 15| 16| GND  |
-----
+
 
 ###  Hard reset
 The hard reset is responsible for ensure that, if an error occurs and the BBB doesn't respond, the system will be restarted by hardware.
 
-----
 
 ###  Heart beat
 
 The LED on the front of the board has the function of showing the user when  CountingPRU has started and it is available for counting. It is controlled by a BeagleBone GPIO (P8B28). Then it will be described what the control program looks like.
-----
+
 
 ###  Beaglebone Black
 
@@ -188,9 +197,6 @@ Returns: list of 8 itens (32-bit integer each), corresponding to a channel count
 * Close()
 Closes PRUs and memory mapping.
 
-
-----
-
 ### BSMP Socket
 
 Standard CountingPRU application is based on a TCP/IP socket on port 5000 in order to have its IOC running remotely on a server.
@@ -227,7 +233,7 @@ This program is responsible for calculating the counting averages of each gamma 
 For this, the program is based in get data of counting on Archiver View, using requests commands, filter the data from the json obtained and make the averages.
 
 The main program, as well as dockerfile and logs files are disposable in the gitlab repository, [https://gitlab.cnpem.br/robert.polli/gamma_monitoring here]
-----
+
 
 ### Operator interfaces
 
@@ -278,7 +284,6 @@ When a counter and a sensor are selected by user and the information is displaye
 
 As well as the "Counting - Archiver View", it is possible see graphs of counts averages of each gamma monitor. This function is enabled immediately after plotting a counter, using the "Pulses Averages - Archiever View" button. Once clicked, some averages will appear for the user: "Last Day", "Last Week", "Last Two Weeks" and "Last Month", then, if the user selects a check button, on the next click it will open the average in the archiever view.
 
-----
 
 ### IPs Control software
 
