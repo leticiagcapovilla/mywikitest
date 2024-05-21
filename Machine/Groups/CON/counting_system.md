@@ -2,7 +2,7 @@
 title: counting_system
 description: 
 published: 1
-date: 2024-05-21T16:55:14.176Z
+date: 2024-05-21T19:45:09.233Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-21T16:04:10.891Z
@@ -89,6 +89,7 @@ There are two channels in two connectors (one channel per connector) for this to
 * '''Connector Pinout:'''
 
 |Pin| Description |
+|-|-|
 |1| Data - |
 |2| Data + |
 |3| +24V (10mA max) |
@@ -120,6 +121,8 @@ There are six channels in two connectors (three channels per connector) for this
 * '''Connector type:''' IDC Header 2x8 pitch 1.27mm ([Board Header](http://www.cnctech.us/productdetails.asp?ID=4168){target=_blank} | [Cable Socket](http://www.cnctech.us/productdetails.asp?ID=3327){target=_blank})
 * '''Connector Pinout:'''
 
+|ID|Pin|Pin|ID|
+|-|-|-|-|
 |GND| 1| 2| Channel 1 |
 |GND| 3| 4| Channel 2 |
 |GND| 5| 6| Channel 3 |
