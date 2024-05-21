@@ -2,16 +2,18 @@
 title: counting_system
 description: 
 published: 1
-date: 2024-05-21T20:15:09.122Z
+date: 2024-05-21T20:22:28.642Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-05-21T16:04:10.891Z
 -->
 
 <h1>CON: CountingPRU</h1>
+<p>&nbsp;</p>
 <h2>Introduction</h2>
 <p><a href="/Machine/Groups/CON.md">LNLS Controls Group</a> has designed a simple hardware solution for counting trains of pulses during a pre-defined time base. Based on Beaglebone's PRU (''Processing Real-Time Unit''), the system was first designed in order to compute data from commercial Beam Loss Monitors (BLMs) and in-house Gamma Sensors that will be installed in Sirius.</p>
 <p>The current version is capable of counting pulses from up to 8 channels and can achieve the maximum rate of 14.29MHz. The main connection to Control System Network is through an Ethernet Port, where it will also get power from Power over Ethernet (PoE) standard (IEEE 802.3af).</p>
+<p>&nbsp;</p>
 <h2>Hardware description</h2>
 <figure class="table">
   <table>
@@ -31,6 +33,7 @@ dateCreated: 2024-05-21T16:04:10.891Z
 </figure>
 <p>The hardware is based on Beaglebone's PRU, which will count received pulses and make the counting available to main processor. To make it, some stages are necessary and them are showed on diagram beside:<br>When the Ethernet data cable entry on board, the first step is divide both electrical circuit and data, made at Power Supply Stage. In it, the circuit's power supply is provided by a Power Over Ethernet (POE) module that allows the electrical current needed for circuit operation to be carried over the Ethernet data cables, minimizing the number of cables required for hardware operations, without compromise the exchange of information.</p>
 <p>Furthermore, there are two types of interface connectors, which will be connected to the external pulsed sensors (detailed in next sections). Inside CountingPRU board, the inputs coming from sensors will be conditioned to +3.3V (BBB compatible) and will trigger the pulse detectors. Once the pulse is read by the respective PRU, the PRU will reset the pulse detector.</p>
+<p>&nbsp;</p>
 <h3>Power supply stage</h3>
 <figure class="table">
   <table>
@@ -53,6 +56,7 @@ dateCreated: 2024-05-21T16:04:10.891Z
 <p>After that, the silvertel’s output is connected on two DC/DC converters, already mentioned, which will convert the output to -5V and 24V. The first DC/DC (VIBLSD1-S5-S5-DIP) is a 5V/5V converter, its +VOUT output has been grounded, changing the pin from 0V to -5V. The MEV1D0512DC converter is a DC/DC that provides -12V and +12V in its output. To get +24V of its, the output -12V also has been grounded, changing the +12V pin to +24V.</p>
 <p>On both converters has been connected an output load, because to operate them efficiently and reliably is necessary an minimum output load which must not be less than 10% of maximum load (1W on both). If the actual load is less than the specified minimum load, the output ripple may increase sharply while its efficiency and reliability will reduce greatly (See figure 03).</p>
 <p>Board typical power consumption: '''3.3 W''' (total) [[ A CONFIRMAR ]]</p>
+<p>&nbsp;</p>
 <h4><i><strong>Adjustments in the Silvertel Ag9205-S</strong></i></h4>
 <figure class="table">
   <table>
@@ -88,6 +92,7 @@ dateCreated: 2024-05-21T16:04:10.891Z
 </figure>
 <p>The Ag9205-S module has two configures possible, the power and the output voltage. For this, resistors are connected between CP and ADJ pins and in/outputs. The maximum output Power can be adjusted from 3.84 W to 12.95 W and the output voltage, from 4.5V to 5.65V. Each configuration can be seen on datasheet of module.</p>
 <p>As 13W and 5V outputs are default values, both CP and ADJ pins haven’t been connected. As the minimum ouput power needs to be confugured, was added output load on Silvertel Ag9205. In this configuration, the minimum power is 0.44W, therefore, the value of output load is 50Ω. The final circuit of Ag9205 can be seen on figure 04.</p>
+<p>&nbsp;</p>
 <h3>Bergoz BLMs inputs Stage</h3>
 <figure class="table">
   <table>
@@ -108,8 +113,10 @@ dateCreated: 2024-05-21T16:04:10.891Z
 <p>The commercial BLM (Beam Loss Monitor) is produced by Bergoz Instrumentation and is based on two photodiodes that emit photons when a charged particle passes through them.</p>
 <p>At CountingPRU, the BLM’s inputs are a double RJ-45 connector which are connected on a transformer, once that the monitor has a differential output of ±2,5V, but this signals are generate by a transformer on Bergoz’s BLM without center tap, resulting in a signal with offset. To solve this, the input differential signal was converted in a single ended signal - grounding one pin of transformer - with double of initial voltage. (See figure 05).<br>After that, the pulse switch a transistor that generates a pulse down in its collector, this pulse is inverted by a logic NOT gate, and the result can be seen at figure 06.</p>
 <p>The output signal of the logic gate is sended to a Flip-Flop D and used as clock. The objetive is to obtain a pulse with voltage compatible with BeagleBone (+3,3 V) and change it to a square wave, which will be send to BBB.</p>
+<p>&nbsp;</p>
 <h4><i><strong>Calibration of BLMs</strong></i></h4>
 <p>BLM circuits are calibrated ex-factory for a spurious count rate of 10 kHz ±800 Hz. To make it, is necessary apply a voltage of +5V via a 4.7kΩ resistor to pin ‘Enable/Disable’ of each photodiode and adjust the referent potentiometer till 9.6~10.4 kHz output. The counter has two electronic switches to this purpose, switching 5V through a resistor on each ‘Enable/Disable’ pin, controlled by four BeagleBone pins (C13, C14, C15, C16 all of them on the P9 pin bus).</p>
+<p>&nbsp;</p>
 <h4><i><strong>BLMs Interface</strong></i></h4>
 <p>This interface is specified for commercial BLMs whose outputs are differential signals.<br>There are two channels in two connectors (one channel per connector) for this topology.</p>
 <ul>
@@ -118,6 +125,7 @@ dateCreated: 2024-05-21T16:04:10.891Z
   <li>'''Connector type:''' RJ45 (8P8C)</li>
   <li>'''Connector Pinout:'''</li>
 </ul>
+<p>&nbsp;</p>
 <figure class="table">
   <table>
     <thead>
@@ -162,6 +170,7 @@ dateCreated: 2024-05-21T16:04:10.891Z
     </tbody>
   </table>
 </figure>
+<p>&nbsp;</p>
 <h3>LNLS Gamma inputs</h3>
 <figure class="table">
   <table>
@@ -180,6 +189,7 @@ dateCreated: 2024-05-21T16:04:10.891Z
   </table>
 </figure>
 <p>On top of that, the CountingPRU also has inputs to up six gamma sensors developed in-house. The pulses coming from gamma detectors are +5V signals, therefore, after connector, the pulses switching a Flip-Flop D.<br>The use of FF is to change gamma detectors pulses to a square wave, change its voltage to 3,3V (compatible with BeagleBone) and protect the BBB inputs from high level voltage pulses. The figure 07 show how is the input circuit.<br>A resistor was also added to the Flip-Flop clock pin to increase the input impedance of the FF and pins of BeagleBone Black are connected on pins of both FF and buffer, to controlling them.</p>
+<p>&nbsp;</p>
 <h4><i><strong>Gamma Sensors Interface</strong></i></h4>
 <p>This interface is specified for mainly for in-house developed Gamma Sensors whose outputs are TTL compatible.<br>There are six channels in two connectors (three channels per connector) for this topology.</p>
 <ul>
@@ -188,6 +198,7 @@ dateCreated: 2024-05-21T16:04:10.891Z
   <li>'''Connector type:''' IDC Header 2x8 pitch 1.27mm (<a href="http://www.cnctech.us/productdetails.asp?ID=4168">Board Header</a> | <a href="http://www.cnctech.us/productdetails.asp?ID=3327">Cable Socket</a>)</li>
   <li>'''Connector Pinout:'''</li>
 </ul>
+<p>&nbsp;</p>
 <figure class="table">
   <table>
     <thead>
@@ -250,11 +261,15 @@ dateCreated: 2024-05-21T16:04:10.891Z
     </tbody>
   </table>
 </figure>
+<p>&nbsp;</p>
 <h3>Hard reset</h3>
 <p>The hard reset is responsible for ensure that, if an error occurs and the BBB doesn't respond, the system will be restarted by hardware.</p>
+<p>&nbsp;</p>
 <h3>Heart beat</h3>
 <p>The LED on the front of the board has the function of showing the user when CountingPRU has started and it is available for counting. It is controlled by a BeagleBone GPIO (P8B28). Then it will be described what the control program looks like.</p>
+<p>&nbsp;</p>
 <h3>Beaglebone Black</h3>
+<p>&nbsp;</p>
 <h3>Groupment in PRUs and counting rates</h3>
 <p>As we have both PRUs working in parallel, we separate the channels proccessing for each of them. In this way, each PRU will treat only four channels, divided according to the table below.</p>
 <p>&nbsp;</p>
@@ -371,6 +386,7 @@ dateCreated: 2024-05-21T16:04:10.891Z
 </figure>
 <p>&nbsp;</p>
 <p>The maximum counting rate depends on the number of active channels in each PRU. If only one channel is used, the respective PRU can count up to 14.29MHz. However, if all the channels are used (four channels), the maximum counting rate is 10MHz.</p>
+<p>&nbsp;</p>
 <figure class="table">
   <table>
     <thead>
@@ -399,21 +415,39 @@ dateCreated: 2024-05-21T16:04:10.891Z
     </tbody>
   </table>
 </figure>
+<p>&nbsp;</p>
 <h2>Software interface</h2>
 <p>In order to communicate with the designed hardware, firmware for PRUs and a library for user interface are needed. Also, once the project deals with PRUs and Beaglebone's general-purpose input/output, it is mandatory to configure its pins before running any code.</p>
-<p>All library files for boards in Sirius are available in [Gitlab page](<a href="https://gitlab.cnpem.br/patricia.nallin/counting-pru/tree/master/src/v2-3">https://gitlab.cnpem.br/patricia.nallin/counting-pru/tree/master/src/v2-3</a> CountingPRU){target=_blank} (available only through CNPEM network).</p>
+<p>All library files for boards in Sirius are available in <a href="https://gitlab.cnpem.br/patricia.nallin/counting-pru/tree/master/src/v2-3">CountingPRU Gitlab page</a> (available only through CNPEM network).</p>
+<p>&nbsp;</p>
 <h3>System library</h3>
+<p>&nbsp;</p>
 <h4>Building the library</h4>
 <p>Run the script ´library_build.sh´. This will compile PRU and host codes, install it to your Beaglebone and create a Python module to use these libraries.</p>
+<p>&nbsp;</p>
 <h4>Using the library</h4>
 <p>''Before using it''</p>
-<p>Apply the Device Tree Overlay (DTO) to configure Beaglebone pins to PRU. Run <code>DTO_CountingPRU.sh</code> script.</p>
-<p>In your python code, you can just:</p>
-<p>import CountingPRU</p>
+<ol>
+  <li>Apply the Device Tree Overlay (DTO) to configure Beaglebone pins to PRU. Run <code>DTO_CountingPRU.sh</code> script.</li>
+  <li>In your python code, you can just:</li>
+</ol>
+<p>&nbsp;</p>
+<pre><code class="language-plaintext">import CountingPRU</code></pre>
+<p>&nbsp;</p>
 <h4>Available Methods</h4>
-<p>Init()<br>PRU initialization. Shared memory configuration and loading binaries into both PRUs.</p>
-<p>Counting(time_base)<br>Starts counting during time_base period, in seconds. This method will be blocking until the end of counting.<br>Returns: list of 8 itens (32-bit integer each), corresponding to a channel counter value</p>
-<p>Close()<br>Closes PRUs and memory mapping.</p>
+<ul>
+  <li>Init()</li>
+</ul>
+<p>PRU initialization. Shared memory configuration and loading binaries into both PRUs.</p>
+<ul>
+  <li>Counting(time_base)</li>
+</ul>
+<p>Starts counting during time_base period, in seconds. This method will be blocking until the end of counting.<br>Returns: list of 8 itens (32-bit integer each), corresponding to a channel counter value</p>
+<ul>
+  <li>Close()</li>
+</ul>
+<p>Closes PRUs and memory mapping.</p>
+<p>&nbsp;</p>
 <h3>BSMP Socket</h3>
 <p>Standard CountingPRU application is based on a TCP/IP socket on port 5000 in order to have its IOC running remotely on a server.</p>
 <p>Protocol is defined by BSMP (<a href="https://github.com/lnls-sirius/libbsmp/">Basic Small Message Protocol</a>) and its variables and groups are defined below:</p>
