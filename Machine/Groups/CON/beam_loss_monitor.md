@@ -2,7 +2,7 @@
 title: beam_loss_monitor
 description: 
 published: 1
-date: 2024-05-21T20:24:48.697Z
+date: 2024-05-21T20:25:20.566Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-21T15:34:48.918Z
@@ -10,9 +10,13 @@ dateCreated: 2024-05-21T15:34:48.918Z
 
 # CON: Beam loss monitors data acquisition system
 
+<br>
+
 ## Introduction
 
 [LNLS Controls Group](/Machine/Groups/CON) is designing a simple hardware solution for data acquisition from beam loss monitors (BLMs) that will be installed at Sirius. The current prototype is capable of counting pulses from up to six sensors at a maximum rate of 15 MHz. It has an Ethernet port for connection to the control system network. This port must be connected to a power sourcing equipment (PSE) of the Power over Ethernet (PoE) standard (IEEE 802.3af).
+
+<br>
 
 ## Hardware detailed
 
@@ -27,8 +31,14 @@ The circuit's power supply is provided by a Power Over Ethernet (POE) module tha
 |-|
 |**Figure 1**: Finished *ContFóton*.|
 
+<br>
+
 ## EPICS interface
 
+<br>
+
 ### IOC
+
+<br>
 
 ### Operator interfaces
