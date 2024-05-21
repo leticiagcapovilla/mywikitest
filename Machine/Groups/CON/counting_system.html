@@ -2,7 +2,7 @@
 title: counting_system
 description: 
 published: 1
-date: 2024-05-21T20:12:12.934Z
+date: 2024-05-21T20:15:09.122Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-05-21T16:04:10.891Z
@@ -638,12 +638,16 @@ dateCreated: 2024-05-21T16:04:10.891Z
 </figure>
 <p>&nbsp;</p>
 <h3>IOC</h3>
+<p>&nbsp;</p>
 <h4>Generate Averages</h4>
 <p>This program is responsible for calculating the counting averages of each gamma monitor at Sirius and modifying epics variables to show them to users.<br>For this, the program is based in get data of counting on Archiver View, using requests commands, filter the data from the json obtained and make the averages.</p>
 <p>The main program, as well as dockerfile and logs files are disposable in the gitlab repository, <a href="https://gitlab.cnpem.br/robert.polli/gamma_monitoring">here</a></p>
+<p>&nbsp;</p>
 <h3>Operator interfaces</h3>
+<p>&nbsp;</p>
 <h4>Gamma Monitoring</h4>
 <p>The Controls Group also has been developing a simple software to show some information of the counters and their sensors, in addition to having the functionality of setting its time bases. The Gamma Detectors Monitoring is divided in two parts, first is the docker container responsible for generating the averages, already mentioned, and the second is the windows that will interact with users.<br>To run the program, go to gamma_monitoring folder, at terminal, and write:<br>pydm <a href="http://main.py">main.py</a></p>
+<p>&nbsp;</p>
 <h5><i><strong>Overview</strong></i></h5>
 <figure class="table">
   <table>
@@ -662,6 +666,7 @@ dateCreated: 2024-05-21T16:04:10.891Z
   </table>
 </figure>
 <p>When the program starts, it is possible see two types of “Overview”, Counting and Pulses Average. Each one is an epics variable data group, getting from Archiver View and update every ten seconds.<br>The “Counting – Overview” button will show the last count of all gamma sensors present at Storage Ring (in pulses per second), as well as an “'''Overview of Time Bases'''” window, which has the time base information of all detectors.<br>To see data on “Pulses Average – Overview” it is necessary, first of all, select the check buttons in “'''Pulses Average'''” section whose graph the user wants to show, after that, up to four windows will be displayed.<br>In the whole overview, when the graphs are opened, it’s necessary to select at “Control of graph” menu which detectors will be displayed in the graph.</p>
+<p>&nbsp;</p>
 <h5><i><strong>Set Time Bases</strong></i></h5>
 <figure class="table">
   <table>
@@ -680,6 +685,7 @@ dateCreated: 2024-05-21T16:04:10.891Z
   </table>
 </figure>
 <p>The counts of each gamma monitor occur within a time range defined as ‘Time Base’. While this time doesn’t end, pulses come from gamma sensors are counted by CountingPRU.<br>With Gamma Monitoring program, the user can define how long this time base will be. First, choose which counter do you want to set the Time Base, after, write the value in the box (in seconds), and then, press “Set Time Base” button. It’s also possible define all the Time Bases, just select the check button ‘Set all time bases’.</p>
+<p>&nbsp;</p>
 <h5><i><strong>Plot informations</strong></i></h5>
 <figure class="table">
   <table>
@@ -719,6 +725,7 @@ dateCreated: 2024-05-21T16:04:10.891Z
 <p>In the '''''"Gamma Detectors"''''' list, will appear all channels of counter (None means that channel it's not used) and in which is the detector selected.</p>
 <p>Below, there are two datas, the last sensor count and the name of the PV associated with the gamma monitor.</p>
 <p>Both "Time Base" and "Last Count" are configured as Epics Channel Access, in other words, it is possible reading and writing to Epics Process Variables (PVs) associated to each label, via the CA protocol, and update the Time Base and Last Count values automatically.</p>
+<p>&nbsp;</p>
 <h5><i><strong>Archiver View</strong></i></h5>
 <figure class="table">
   <table>
@@ -739,8 +746,10 @@ dateCreated: 2024-05-21T16:04:10.891Z
 <p>The Gamma Monitoring program also has some show options for the user of graphs of last pulses count and averages, opened on Archiever View.</p>
 <p>When a counter and a sensor are selected by user and the information is displayed, a button "Counting - Archiever View" is enabled and after clicking on it, a window will open with a link to archiver of the selected gamma sensor.</p>
 <p>As well as the "Counting - Archiver View", it is possible see graphs of counts averages of each gamma monitor. This function is enabled immediately after plotting a counter, using the "Pulses Averages - Archiever View" button. Once clicked, some averages will appear for the user: "Last Day", "Last Week", "Last Two Weeks" and "Last Month", then, if the user selects a check button, on the next click it will open the average in the archiever view.</p>
+<p>&nbsp;</p>
 <h3>IPs Control software</h3>
 <p>One of the programs belonging to the "BBB-functions" have the finality of defining the IPs of the counters board. This program are responsible for setting its ip to dhcp, automatically.<br>It is executed only on boot of BeagleBone, if a Counter Board is identified by it.</p>
+<p>&nbsp;</p>
 <h4>To dhcp IP</h4>
 <p>The program responsible to define the internet protocol address of counters to dynamic ip is the "key_dhcp.py". When BeagleBone is started, the inputs pins of the gamma monitors are analyzed, if them are in a specific sequence, the counter's ip is changed.<br>The sequence required to change ip is "101010", obtained by connecting an external monostable oscillator hardware that will trigger the FF of each input.</p>
 <p>If the ip has changed to dhcp, the panel led will blink quickly, wait for the stop and the board will be ready.</p>
