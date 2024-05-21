@@ -2,7 +2,7 @@
 title: counting_system
 description: 
 published: 1
-date: 2024-05-21T16:12:50.632Z
+date: 2024-05-21T16:16:53.566Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-21T16:04:10.891Z
@@ -101,7 +101,10 @@ There are two channels in two connectors (one channel per connector) for this to
 
 ### LNLS Gamma inputs
 
-[[File:GammaInput.png|thumbnail|Figure 07: Gamma sensors input pulse circuit.|250px]]
+|![](/img/groups/con/counting_system/GammaInput.png =500x)|
+|-|
+|**Figure 6**: Gamma sensors input pulse circuit.|
+
 On top of that, the CountingPRU also has inputs to up six gamma sensors developed in-house. The pulses coming from gamma detectors are +5V signals, therefore, after connector, the pulses switching a Flip-Flop D. 
 The use of FF is to change gamma detectors pulses to a square wave, change its voltage to 3,3V (compatible with BeagleBone) and protect the BBB inputs from high level voltage pulses. The figure 07 show how is the input circuit.
 A resistor was also added to the Flip-Flop clock pin to increase the input impedance of the FF and pins of BeagleBone Black are connected on pins of both FF and buffer, to controlling them.
@@ -245,7 +248,10 @@ To run the program, go to gamma_monitoring folder, at terminal, and write:
 
 ##### ***Overview***
 
-[[File:overview.png|thumbnail|Buttons of Overview function|250px]]
+|![](/img/groups/con/counting_system/Overview.png)|
+|-|
+|**Figure 7**: Buttons of Overview function.|
+
 When the program starts, it is possible see two types of “Overview”, Counting and Pulses Average. Each one is an epics variable data group, getting from Archiver View and update every ten seconds. 
 The “Counting – Overview” button will show the last count of all gamma sensors present at Storage Ring (in pulses per second), as well as an “'''Overview of Time Bases'''” window, which has the time base information of all detectors.
 To see data on “Pulses Average – Overview” it is necessary, first of all, select the check buttons in “'''Pulses Average'''” section whose graph the user wants to show, after that, up to four windows will be displayed.
@@ -253,7 +259,10 @@ In the whole overview, when the graphs are opened, it’s necessary to select at
 
 ##### ***Set Time Bases***
 
-[[File:TimeBase_v2.png|thumbnail|Set Time Bases option|250px]]
+|![](/img/groups/con/counting_system/TimeBase_v2.png)|
+|-|
+|**Figure 8**: Set Time Bases option.|
+
 The counts of each gamma monitor occur within a time range defined as ‘Time Base’. While this time doesn’t end, pulses come from gamma sensors are counted by CountingPRU. 
 With Gamma Monitoring program, the user can define how long this time base will be. First, choose which counter do you want to set the Time Base, after, write the value in the box (in seconds), and then, press “Set Time Base” button. It’s also possible define all the Time Bases, just select the check button ‘Set all time bases’.
 
