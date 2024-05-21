@@ -2,7 +2,7 @@
 title: bsb
 description: 
 published: 1
-date: 2024-05-20T21:18:58.324Z
+date: 2024-05-21T20:26:19.079Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-20T21:11:38.464Z
@@ -13,7 +13,7 @@ dateCreated: 2024-05-20T21:11:38.464Z
 <br>
 
 ## Introduction 
-The [[CON:CON|LNLS Controls Group]] has developed a simple hardware which is able to switching outputs according to the Process Variables value, previously defined by user. The Hardware is based on na adaptation of the [CON:SERIALxxCON|SerialXXCON](link) board and its outputs are controlled by some BeagleBone Blacks pinouts.
+The [LNLS Controls Group](/Machine/Groups/CON) has developed a simple hardware which is able to switching outputs according to the Process Variables value, previously defined by user. The Hardware is based on na adaptation of the [SerialXXCON](link) board and its outputs are controlled by some BeagleBone Blacks pinouts.
 To define each PV and its limits, the user writes to an “.xlsx file”, setting maximum and minimum value and which output will be switched if any PV has exceeded the values.
 
 To access the project, [click here](https://gitlab.cnpem.br/robert.polli/basic-switching/){target=_blank} and go to the gitlab page (internal network only).
