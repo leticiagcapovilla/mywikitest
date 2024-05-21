@@ -2,7 +2,7 @@
 title: counting_system
 description: 
 published: 1
-date: 2024-05-21T16:20:50.673Z
+date: 2024-05-21T16:21:33.312Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-21T16:04:10.891Z
@@ -235,7 +235,7 @@ Protocol is defined by BSMP ([https://github.com/lnls-sirius/libbsmp/ Basic Smal
 This program is responsible for calculating the counting averages of each gamma monitor at Sirius and modifying epics variables to show them to users.
 For this, the program is based in get data of counting on Archiver View, using requests commands, filter the data from the json obtained and make the averages.
 
-The main program, as well as dockerfile and logs files are disposable in the gitlab repository, [https://gitlab.cnpem.br/robert.polli/gamma_monitoring here]
+The main program, as well as dockerfile and logs files are disposable in the gitlab repository, [here](https://gitlab.cnpem.br/robert.polli/gamma_monitoring){target=_blank}
 
 
 ### Operator interfaces
