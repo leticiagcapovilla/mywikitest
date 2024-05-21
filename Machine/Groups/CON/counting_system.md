@@ -2,7 +2,7 @@
 title: counting_system
 description: 
 published: 1
-date: 2024-05-21T16:17:33.436Z
+date: 2024-05-21T16:20:50.673Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-21T16:04:10.891Z
@@ -272,7 +272,10 @@ With Gamma Monitoring program, the user can define how long this time base will 
 |-|
 |**Figure 9**: Image showing both counter and sensor selected.|
 
-[[File:plot.png|thumbnail|left|Informations about Counter and Gamma Monitor|250px]]
+
+|![](/img/groups/con/counting_system/Plot.png)|
+|-|
+|**Figure 10**: Informations about Counter and Gamma Monitor.|
 
 Fist, it is necessary select a sector of Storage Ring, on '''''Sector''''' box, choose one of 20 sectors of Sirius. After, '''''Counter''''' box will automatically filled with name of all counters from this sector. Next step is choose one of them, and then, one of '''''Gamma Detector''''' connected to it.
 When a counter and a gamma monitor is chosen, some information will automatically appear about the counter and its channel:
@@ -289,7 +292,10 @@ Both "Time Base" and "Last Count" are configured as Epics Channel Access, in oth
 
 ##### ***Archiver View***
 
-[[File:ArchiverButtons.png|thumbnail|Buttons which open the Archiver View|250px]]
+|![](/img/groups/con/counting_system/ArchiverButtons.png)|
+|-|
+|**Figure 11**: Buttons which open the Archiver View.|
+
 The Gamma Monitoring program also has some show options for the user of graphs of last  pulses count and averages, opened on Archiever View.
 
 When a counter and a sensor are selected by user and the information is displayed, a button "Counting - Archiever View" is enabled and after clicking on it, a window will open with a link to archiver of the selected gamma sensor.
