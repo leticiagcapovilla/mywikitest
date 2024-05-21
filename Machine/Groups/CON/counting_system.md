@@ -2,7 +2,7 @@
 title: counting_system
 description: 
 published: 1
-date: 2024-05-21T16:16:53.566Z
+date: 2024-05-21T16:17:33.436Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-21T16:04:10.891Z
@@ -268,7 +268,10 @@ With Gamma Monitoring program, the user can define how long this time base will 
 
 ##### ***Plot informations***
 
-[[File:ImagePlot.png|thumbnail|Image showing both counter and sensor selected|250px]]
+|![](/img/groups/con/counting_system/ImagePlot.png)|
+|-|
+|**Figure 9**: Image showing both counter and sensor selected.|
+
 [[File:plot.png|thumbnail|left|Informations about Counter and Gamma Monitor|250px]]
 
 Fist, it is necessary select a sector of Storage Ring, on '''''Sector''''' box, choose one of 20 sectors of Sirius. After, '''''Counter''''' box will automatically filled with name of all counters from this sector. Next step is choose one of them, and then, one of '''''Gamma Detector''''' connected to it.
