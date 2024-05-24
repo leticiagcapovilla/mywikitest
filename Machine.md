@@ -2,7 +2,7 @@
 title: Machine
 description: 
 published: 1
-date: 2024-05-16T16:06:54.062Z
+date: 2024-05-24T14:44:03.796Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T19:46:13.088Z
@@ -18,7 +18,7 @@ LINAC, Booster and Storage Ring accelerators documentation
 - [Building and Utilities](/Machine/building_utilities)
 - [Control System *Hardware and software solution for machine supervision, data acquisition and control*](/Machine/control_system)
 - [Coordinate System and Conventions *Coordinate system and conventions used in Sirius*](/Machine/coord_syst)
-- [EPICS Support Applications *Overview on the EPICS support applications](/Machine/epics_support_apps)
+- [EPICS Support Applications *Overview on the EPICS support applications*](/Machine/epics_support_apps)
 - [High Level Applications and Virtual Accelerator](/Machine/high_level_app_virt_acc)
 - [High Level Applications Visual Style Guide](/Machine/hla_visual_guide)
 - [Impedance Budget](/Machine/impedance_budget)
