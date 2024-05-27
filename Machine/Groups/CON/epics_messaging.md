@@ -2,7 +2,7 @@
 title: EPICS notification messaging - Telegram
 description: 
 published: 1
-date: 2024-05-27T19:13:41.026Z
+date: 2024-05-27T19:17:29.605Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T19:03:01.620Z
@@ -109,7 +109,8 @@ Example: performing a /caget to PVs:
 
 Gets archiver information for the requested PVs.
 
-Example: ```/checkstatus SomePV:Voltage```
+Example: 
+`/checkstatus SomePV:Voltage`
 
 * **/isalive**
 
@@ -119,8 +120,6 @@ Sends the state of the monitoring function, if BOT sends False means that the BO
 
 #### User
 
-[[File:Epicstel_checkme.jpeg|checkme Example|400px|thumb]]
-
 |![](/img/groups/con/epics_messaging/Epicstel_checkme.jpeg)|
 |-|
 |**Figure 3**: checkme Example.|
@@ -129,23 +128,22 @@ Sends the state of the monitoring function, if BOT sends False means that the BO
 
 Sends the user information:
 
-- Name
-
-- ChatID
-
-- Teams
-
-- PVGroups subscribed (if the user Team is subscribed to any PV Group the Team name will be in parentheses)
+-Name
+-ChatID
+-Teams
+-PVGroups subscribed (if the user Team is subscribed to any PV Group the Team name will be in parentheses)
 
 
 * **/forward** (Message)
 
 Forwards the specified message to the BOT administrators.
 
-Example: ```/forward Hello, how can I perform a ''caget''?```
+Example:
+```/forward Hello, how can I perform a ''caget''?```
 
-
-[[File:Epicstel_checkgp.jpeg|checkgp Example|400px|thumb]]
+|![](/img/groups/con/epics_messaging/Epicstel_checkgp.jpeg)|
+|-|
+|**Figure 4**: checkme Example.|
 
 <br>
 
