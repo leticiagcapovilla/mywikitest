@@ -1,8 +1,8 @@
 ---
-title: bbbread
+title: BeagleBone Black - Redis Activity Display
 description: 
 published: 1
-date: 2024-05-20T21:31:33.416Z
+date: 2024-05-27T19:05:42.689Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-20T20:55:13.988Z
