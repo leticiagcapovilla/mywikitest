@@ -1,8 +1,8 @@
 ---
-title: bsmp
+title: Basic Small Messages Protocol (BSMP)
 description: 
 published: 1
-date: 2024-05-20T21:22:00.770Z
+date: 2024-05-27T19:06:05.314Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-20T21:00:22.711Z
