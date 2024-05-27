@@ -1,8 +1,8 @@
 ---
-title: beam_loss_monitor
+title: Beam loss monitors data acquisition system - FPGA based
 description: 
 published: 1
-date: 2024-05-21T20:25:20.566Z
+date: 2024-05-27T19:06:49.346Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-21T15:34:48.918Z
