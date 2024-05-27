@@ -28,7 +28,7 @@ Each MBTemp is capable of handling up to 8 Pt100 temperature sensors (2, 3 or 4-
 
 Application layer protocol for communication to MBTemp boards is [Basic Small Messages Protocol (BSMP)](/Machine/Groups/CON/bsmp.md). Each Pt100 channel is mapped into a [BSMP]((/Machine/Groups/CON/bsmp.md)) variable. BSMP variables 0 to 7 are associated to the sensor connected to modular jack 1 to 8. These variables have 2 bytes of size, and must be interpreted as an unsigned integer of 16 bits (big-endian). The temperature measurement (in Celsius degrees) is given by:
 
-$ Temperature = \frac{(Byte[1] << 8) + Byte[0]}{100}$
+$Temperature = \frac{(Byte[1] << 8) + Byte[0]}{100}$
 
 For instance, if a [BSMP](/Machine/Groups/CON/bsmp.md) variable has a value of 2500, this corresponds to a temperature of 25.00 °C.
 
@@ -43,15 +43,15 @@ For instance, if a [BSMP](/Machine/Groups/CON/bsmp.md) variable has a value of 2
 Pt100 is a resistance temperature detector (RTD) made of platinum (Pt) having a resistance of 100 ohms at 0 °C. Basically, it is a resistor whose resistance varies according to its temperature. RTDs are more accurate and stable than thermocouples. The platinum detecting wire must be away from contamination to remain stable and there are plenty of packages available. Commercial detectors have  a temperature coefficient of resistance α  0.00385/°C, what leads to naming them as "Pt100 385".
 
 The relation between temperature and resistance is given by the Callendar-Van Dusen equation, for positive temperatures:
-:$R_T = R_0 \left[ 1 + AT + BT^2 \right] \; (0\;{}^{\circ}\mathrm{C} \leq T < 850\;{}^{\circ}\mathrm{C})$
+$R_T = R_0 \left[ 1 + AT + BT^2 \right] \; (0\;{}^{\circ}\mathrm{C} \leq T < 850\;{}^{\circ}\mathrm{C})$
 Here $R_T$ is the resistance at temperature *T*, $R_0$ is the resistance at 0 °C.
 
 the constants for a Pt100 385 are:
-:$A =  3.9083 \times 10^{-3}~^\circ\text{C}^{-1}$
-:$B = -5.775 \times 10^{-7}~^\circ\text{C}^{-2}$
+$A =  3.9083 \times 10^{-3}~^\circ\text{C}^{-1}$
+$B = -5.775 \times 10^{-7}~^\circ\text{C}^{-2}$
 
 The solution of the quadratic equation yields the following relationship between temperature and resistance:
-:$T = \frac{-A + \sqrt{A^2 - 4B\left(1 - \frac{R_T}{R_0}\right)}}{2B}$
+$T = \frac{-A + \sqrt{A^2 - 4B\left(1 - \frac{R_T}{R_0}\right)}}{2B}$
 
 
 Since *B* is relatively small, the resistance changes *almost* linearly with the temperature. Considering that most applications will be around environment temperature, a linear fit is acceptable and is what will be done by Controls Group at first.
@@ -80,7 +80,7 @@ It is important to assure that dissipated power due to the current flowing throu
 
 As an overview in this application, implementing a digital filter eliminates noise during measurements. Temperature gradient is low and data acquisition does not need to be fast. It has been chosen to filter the values digitally using the exponential moving average law:
 
-$ Temperature Average = \frac{OldTemperatureValue*\alpha + NewTemperatureValue*(1000 - \alpha)}{1000}  \;\; (0\; \leq \alpha < 1000)$
+$Temperature Average = \frac{OldTemperatureValue*\alpha + NewTemperatureValue*(1000 - \alpha)}{1000}  \;\; (0\; \leq \alpha < 1000)$
 
 
 Alpha factor is user-defined and must be an integer in the range 0 - 999.
@@ -273,7 +273,7 @@ As seen above, Pt100 temperature-resistance equation is a second-order one. Chos
 
 So, for a linear fit, it is needed to acquire the values from two different temperature points, at least. Controls Group, while calibrating the boards, takes 3 different points (usually 20, 25 and 30 °C) and 30 samples for each value. It is important to note that, for calibration and temperature reading, it is not needed to calculate what is the Pt100 current resistance. Having the ADC value is enough for calibrating and readings:
 
-$ Read Temperature = \frac{ADvalue}{k} - b$
+$Read Temperature = \frac{ADvalue}{k} - b$
 
 After calibration, **k ≈ 48** and **b ≈ 258**. They are unique for each piece of hardware.
 
@@ -351,7 +351,7 @@ Once MBTemp communication protocol is based on BSMP, data acquisition and variab
 
 Acquired temperature according to each channel. To get its value: 
 
-$ Temperature = \frac{(Byte[1] << 8) + Byte[0]}{100}$
+$Temperature = \frac{(Byte[1] << 8) + Byte[0]}{100}$
 
 <br >
 
@@ -361,7 +361,7 @@ $ Temperature = \frac{(Byte[1] << 8) + Byte[0]}{100}$
 
 Moving average factor for temperature reading (performed on board). It must be in the range 0-999.
 
-$ \alpha = (Byte[1] << 8) + Byte[0]$
+$\alpha = (Byte[1] << 8) + Byte[0]$
 
 Variables are stored three times in order to guarantee data consistency after system start up.
 Any change on any variable (ID 8, 13 or 16) will change others as well (ID 8, 13 and 16), once they refer to the same constant.
@@ -374,7 +374,7 @@ Any change on any variable (ID 8, 13 or 16) will change others as well (ID 8, 13
 
 Angular coefficient for temperature calculation according to ADC value.
 
-$ k = \frac{(Byte[1] << 8) + Byte[0]}{100}$
+$k = \frac{(Byte[1] << 8) + Byte[0]}{100}$
 
 Variables are stored three times in order to guarantee data consistency after system start up.
 Any change on any variable (ID 9, 14 or 17) will change others as well (ID 9, 14 and 17), once they refer to the same constant.
@@ -387,7 +387,7 @@ Any change on any variable (ID 9, 14 or 17) will change others as well (ID 9, 14
 
 Linear coefficient for temperature calculation according to ADC value.
 
-$ b = \frac{(Byte[1] << 8) + Byte[0]}{100}$
+$b = \frac{(Byte[1] << 8) + Byte[0]}{100}$
 
 
 Variables are stored three times in order to guarantee data consistency after system start up.
@@ -432,4 +432,4 @@ IOC deals with two variables to each channel: Temperature and Temperature-Raw
 
 Temperature-Raw (Traw) is the value acquired from the board, linear fitted. Temperature value is calculated, based on the real quadratic equation and the value obtained from the board, which leads to:
 
-:$Temperature =  \frac{-{R_0}{B}\sqrt{{R_0}^2{B}^2 - 4A{R_0}\left(0.388*{T_{raw}} + 100.03 - {R_0}\right)}}{2A{R_0}}$
+$Temperature =  \frac{-{R_0}{B}\sqrt{{R_0}^2{B}^2 - 4A{R_0}\left(0.388*{T_{raw}} + 100.03 - {R_0}\right)}}{2A{R_0}}$
