@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:43:14.916Z
+date: 2024-05-27T21:43:54.500Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -287,7 +287,7 @@ After calibration, **k ≈ 48** and **b ≈ 258**. They are unique for each piec
 
 ###  Temperature measurements 
 
-|![](/img/groups/con/mbtemp/Mbtemp-reading-flow.png|
+|![](/img/groups/con/mbtemp/Mbtemp-reading-flow.png)|
 |-|
 |**Figure 9**: |
 
