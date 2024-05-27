@@ -2,7 +2,7 @@
 title: EPICS notification messaging - Telegram
 description: 
 published: 1
-date: 2024-05-27T19:22:08.931Z
+date: 2024-05-27T19:25:29.382Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T19:03:01.620Z
@@ -311,13 +311,15 @@ Administrators also have access to the following commands
 
 Removes PV Groups that are not being used from the program files.
 
-Example: /removepvgroup Temperature-LINAC SI:01-Pressure
+Example:
+`/removepvgroup Temperature-LINAC SI:01-Pressure`
 
 * **/forward** (ChatID) (Message)
 
 If ChatID is an authorized user, forwards the specified message to the desired ChatID.
 
-Example: /forward 12345678 Hello! To perform a caget simply send '/caget' followed by the PVs you desire to acquire
+Example:
+`/forward 12345678 Hello! To perform a caget simply send '/caget' followed by the PVs you desire to acquire`
 
 * **/update**
 
@@ -327,14 +329,15 @@ Updates all dictionaries and authorized personnel according to the program files
 
 Enables disconnect monitoring and auto-pausing (maintains data, interrupts archiving) of PVs. Since PV pausing applies ''globally'', affecting all users, this must be done by an administrator (enabled by default).
 
-Example:```/enabledisconnectmon SomePV:Voltage```
+Example:
+`/enabledisconnectmon SomePV:Voltage`
 
 * **/disabledisconnectmon** (PVs)
 
 Disables disconnect monitoring and auto-pausing.
 
-Example:```/disabledisconnectmon SomePV:Voltage```
-
+Example:
+`/disabledisconnectmon SomePV:Voltage`
 
 The commands: /add, /addteam, /addpvgroup, /removepv and /addpv use the same syntax specified before, the only difference is Administrators already have permission to write on the files (''be careful!'').
 
@@ -456,8 +459,6 @@ For support, questions, suggestions or bug reports, message [Guilherme]([https:/
 
 ## EPICSTel User Interface
 
-[[File:epicstel_ui.png|EPICSTel UI's current appearance|500px|thumb]]
-
 |![](/img/groups/con/epics_messaging/Epicstel_ui.png)|
 |-|
 |**Figure 8**: EPICSTel UI's current appearance.|
@@ -476,7 +477,7 @@ Along with the [Sirius HLA CONS GUI](https://github.com/lnls-sirius/pydm-opi){ta
 An easy way of installing all three requirements (assuming you're using pip) is:
 
 ```
-pip install siriushlacon paramiko pandas**
+pip install siriushlacon paramiko pandas
 ```
 
 <br>
