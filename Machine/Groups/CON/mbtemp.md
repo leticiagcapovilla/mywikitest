@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:44:43.246Z
+date: 2024-05-27T21:45:12.313Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -442,3 +442,7 @@ This EPICS application is [CON:Stream-IOC|Stream-IOC](link), a StreamDevice-base
 IOC deals with two variables to each channel: Temperature and Temperature-Raw
 
 Temperature-Raw (Traw) is the value acquired from the board, linear fitted. Temperature value is calculated, based on the real quadratic equation and the value obtained from the board, which leads to:
+
+$$
+Temperature =  \frac{-{R_0}{B}\sqrt{{R_0}^2{B}^2 - 4A{R_0}\left(0.388*{T_{raw}} + 100.03 - {R_0}\right)}}{2A{R_0}}
+$$
