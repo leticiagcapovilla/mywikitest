@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:43:54.500Z
+date: 2024-05-27T21:44:24.408Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -384,4 +384,19 @@ Angular coefficient for temperature calculation according to ADC value.
 
 $$
 k = \frac{(Byte[1] << 8) + Byte[0]}{100}
+$$
+
+Variables are stored three times in order to guarantee data consistency after system start up.
+Any change on any variable (ID 9, 14 or 17) will change others as well (ID 9, 14 and 17), once they refer to the same constant.
+
+<br >
+
+###  Variable: Linear coefficient (IDs 10, 15 and 18) 
+
+  ID: 10, 15 and 18     Size: 2 bytes [Byte1|Byte0]     Read/Write
+
+Linear coefficient for temperature calculation according to ADC value.
+
+$$
+b = \frac{(Byte[1] << 8) + Byte[0]}{100}
 $$
