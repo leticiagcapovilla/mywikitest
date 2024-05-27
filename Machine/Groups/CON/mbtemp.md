@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:44:24.408Z
+date: 2024-05-27T21:44:43.246Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -400,3 +400,45 @@ Linear coefficient for temperature calculation according to ADC value.
 $$
 b = \frac{(Byte[1] << 8) + Byte[0]}{100}
 $$
+
+Variables are stored three times in order to guarantee data consistency after system start up.
+Any change on any variable (ID 10, 15 or 18) will change others as well (ID 10, 15 and 18), once they refer to the same constant.
+
+<br >
+
+###  Variable: AD Reading Mode (ID 11) 
+
+  ID: 11     Size: 1 byte      Read/Write
+
+In order to read temperature values, it must be 0. If, for any specific reason, user wants to read the last ADC raw value in variables 0 to 7, 1 should be written to "AD Reading Mode" variable. If it is desired to read the average from least 20 readings from one specific channel, variable value should be 2;
+
+* 0: Temperature reading (Op Mode variable (ID 12) must be 8) [DEFAULT VALUE AFTER STARTUP]
+* 1: Last ADC raw value reading
+* 2: Average from last 20 readings from one specific channel (Op Mode variable (ID 12) must not be 8)
+
+<br >
+
+###  Variable: Reading Mode (ID 12) 
+
+  ID: 12     Size: 1 byte      Read/Write
+
+This variable handles reading mode. If it is equal to 8 (default value after startup), sequential readings for all channels are performed.
+If it is between 0 and 7, readings will be performed only in the channel correlated, without temperature conversion. ADC values will be available for reading, according to variable AD Reading Mode (ID 11). Other channels may have invalid data.
+
+8 IS THE DEFAULT VALUE AFTER STARTUP.
+
+<br >
+
+## Integration to EPICS
+
+The [CON:SERIALxxCON|SERIALxxCON](link) board, based on Beaglebone Black Single Board Computer, will handle communication with up to 31 MBTemp boards. This SBC is the bridge between the hardware and the EPICS IOC, running on Controls Server, which publishes each temperature measured by a Pt100 sensor as a process variable.
+
+This EPICS application is [CON:Stream-IOC|Stream-IOC](link), a StreamDevice-based EPICS IOC developed by the Controls Group to interface to EPICS.
+
+<br >
+
+###  Linear Fit Correction 
+
+IOC deals with two variables to each channel: Temperature and Temperature-Raw
+
+Temperature-Raw (Traw) is the value acquired from the board, linear fitted. Temperature value is calculated, based on the real quadratic equation and the value obtained from the board, which leads to:
