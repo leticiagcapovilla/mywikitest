@@ -2,7 +2,7 @@
 title: EPICS notification messaging - Telegram
 description: 
 published: 1
-date: 2024-05-27T19:04:50.975Z
+date: 2024-05-27T19:11:17.268Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T19:03:01.620Z
@@ -10,19 +10,27 @@ dateCreated: 2024-05-27T19:03:01.620Z
 
 # CON: EPICS notification telegram
 
+<br>
+
 ## Introduction
 
 EpicsTel is an automated script that monitors the values of a given group of EPICS Process Variables (PVs) and notifies users in case said groups exceed it's limits, these notifications are done via [Telegram Messenger](https://telegram.org/){target=_blank} application by a [BOT](https://en.wikipedia.org/wiki/Internet_bot){target=_blank}.
 
+<br>
+
 ## Usage
 
 Setting up the application, gaining access to the BOT, BOT's structure, registering PV Groups, user Teams and subscribing to PV Notifications
+
+<br>
 
 ### Setting Up
 
 [Download Telegram Messenger in your smartphone](https://telegram.org/apps#mobile-apps){target=_blank} and register with your personal information: cellphone number, name and surname. Optional configurations include two step verification and adding a username.
 
 By now the setup is complete, it's important to know that Telegram is a cloud based messaging application, so it can also be used via Web or through your computer application (without your phone necessarily having an internet connection at the time) but this is only possible after you properly configure the application thorough your smartphone.
+
+<br>
 
 ### Gaining access
 
@@ -34,7 +42,11 @@ After properly installing and setting-up Telegram Messenger application on your 
 
 After that, contact [Controls Group](/Machine/Groups/CON) informing your name, the laboratory's group you work on and attach the credentials ***as is*** (e.g. Peter:12345678, ControlsGroup:-87654321), the BOT will then inform you when you are added to the authorized personnel.
 
+<br>
+
 ### BOT's structure
+
+<br>
 
 #### Teams
 
@@ -59,11 +71,15 @@ Teams are the groups of users allowed to use the BOT. There are 3 types of Teams
 
 **Regular Teams** are the most limited type of Teams, they are usually named after LNLS workgroups. It's users can subscribe to PV notifications and get instant values of PVs.
 
+<br>
+
 #### PV Groups
 
 PV Groups are groups of EPICS Process Variables that will be monitored with their specific limits. One PV Group can have many PVs and different limits for each PV, but only one timeout, and one PV can belong to more than one group.
 
 PV Groups are registered on demand by the BOT administrators, [[CON:EPICS_notification_telegram#PV_Groups|but you can request registration through the BOT]].
+
+<br>
 
 ### BOT Commands
 
@@ -99,6 +115,7 @@ Example: ```/checkstatus SomePV:Voltage```
 
 Sends the state of the monitoring function, if BOT sends False means that the BOT is not working properly (you can still acquire instant values of PVs but won't be notified of PVs exceeding their limits).
 
+<br>
 
 #### User
 
@@ -129,6 +146,8 @@ Example: ```/forward Hello, how can I perform a ''caget''?```
 
 
 [[File:Epicstel_checkgp.jpeg|checkgp Example|400px|thumb]]
+
+<br>
 
 #### PV Groups
 
@@ -201,6 +220,7 @@ Sends a request to the BOT administrators to register a new Team.
 
 Example: ```/addteam Peter:12345678 ENGENHARIA-SIRIUS ControlsGroup:-87654321 John:98765432```
 
+<br>
 
 #### Notification subscription
 
@@ -244,6 +264,8 @@ Example: ```/unpause SomePV:Voltage (single PV)
          /unpause SomeGroup (single group)
          /unpause SomePV:Voltage SomePV:Current SomePV:Radiation (multiple PVs)```
 
+<br>
+
 #### Team Administrator
 Team Administrators also have access to the following commands:
 
@@ -275,6 +297,7 @@ Removes the users with the specified chat_ids from the Team they manage.
 
 Example: /remove CONS 12345678
 
+<br>
 
 #### Administrator
 Administrators also have access to the following commands
@@ -310,6 +333,8 @@ Example:```/disabledisconnectmon SomePV:Voltage```
 
 The commands: /add, /addteam, /addpvgroup, /removepv and /addpv use the same syntax specified before, the only difference is Administrators already have permission to write on the files (''be careful!'').
 
+<br>
+
 ## Application
 
 The Software was written in Python3 and uses 3 modules to read .csv files that contain information about PV Groups and authorized users and using that data write an algorithm to answer properly through Telegram. These modules are:
@@ -320,14 +345,19 @@ The Software was written in Python3 and uses 3 modules to read .csv files that c
 
 * pandas - acronym for Python Data Analysis, used to read the files
 
+<br>
+
 ### Files
 
 The program generates three Comma Separated Values (CSV) files containing and one log file for errors.
 
+<br>
 
 #### Authorized Personnel CSV
 
 This file contains the user Teams authorized to use the bot. Each cell is a user's credential, Name:ChatID pair.
+
+<br>
 
 #### Groups CSV
 
@@ -335,19 +365,25 @@ This file contains the information about all PV Groups, including it's Process V
 
 PVs are divided by semicolons, their limits are also divided that way and are in the same sequence as the PVs.
 
+<br>
+
 #### Monitor Info CSV
 
 This file contains monitoring information about the PVs: PVGroup, limits and users subscribed (separeted by semicolons in ChatIDs column). It's generated by using Groups CSV file and permit monitoring.
+
+<br>
 
 #### Telegram Bot Log
 
 Registers every message that comes to the bot and many other occurences and errors.
 
-
+<br>
 
 ### Dictionaries
 
 The application uses many dictionaries to organize data about users and PVs.
+
+<br>
 
 #### PV Dictionaries
 
@@ -389,6 +425,8 @@ Where:
 
 - min_bool = trigger for minimum limit
 
+<br>
+
 #### User Dictionaries
 
 * authorized_personnel
@@ -403,9 +441,13 @@ Provides information of which team contain which users:
 
 teams = {'TeamX' : {'123456' : Name1', '987654' : Name2}, 'TeamY' : {'456123' : Name3, '987654' : Name2}}
 
+<br>
+
 ### Help
 
 For support, questions, suggestions or bug reports, message [Guilherme]([https://t.me/g_freitas){target=_blank} or [Patricia](https://t.me/patriciahn){target=_blank}. If you prefer, you could also mailto: guilherme.freitas@cnpem.br mail one of the developers directly.
+
+<br>
 
 ## EPICSTel User Interface
 
@@ -416,6 +458,8 @@ For support, questions, suggestions or bug reports, message [Guilherme]([https:/
 |**Figure 8**: EPICSTel UI's current appearance.|
 
 In order to facilitate changes to the EPICSTel database by admins, a GUI was created. Focusing on ease of use, this interface is capable of editing production databases directly (with authentication), local files or creating new databases altogether.
+
+<br>
 
 ### Requirements
 
@@ -429,6 +473,8 @@ An easy way of installing all three requirements (assuming you're using pip) is:
 ```
 pip install siriushlacon paramiko pandas**
 ```
+
+<br>
 
 ### Technical Aspects
 
