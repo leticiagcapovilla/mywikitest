@@ -31,6 +31,7 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [LLRF EPICS IOC](/Machine/Groups/CON/llrf_epics_iocs)
 - [Logging system](/Machine/Groups/CON/logging_system)
 - [Magnet power supplies EPICS interface](/Machine/Groups/CON/magnet_ps_epics_interface)
+- [MEEP @ Controls group's servers](/Machine/Groups/CON/meep_servers)
 - [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
 - [PRUserial485](/Machine/Groups/CON/pruserial485)
 {.links-list}
