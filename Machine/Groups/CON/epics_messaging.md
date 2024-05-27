@@ -1,3 +1,13 @@
+---
+title: EPICS notification messaging - Telegram
+description: 
+published: 1
+date: 2024-05-27T19:04:50.975Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-27T19:03:01.620Z
+---
+
 # CON: EPICS notification telegram
 
 ## Introduction
