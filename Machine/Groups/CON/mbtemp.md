@@ -1,8 +1,8 @@
 ---
-title: mbtemp
+title: MBTemp
 description: 
 published: 1
-date: 2024-05-27T21:45:12.313Z
+date: 2024-05-27T21:45:29.294Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
