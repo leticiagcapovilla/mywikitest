@@ -2,7 +2,7 @@
 title: EPICS notification messaging - Telegram
 description: 
 published: 1
-date: 2024-05-27T19:11:17.268Z
+date: 2024-05-27T19:12:34.711Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T19:03:01.620Z
@@ -34,7 +34,7 @@ By now the setup is complete, it's important to know that Telegram is a cloud ba
 
 ### Gaining access
 
-After properly installing and setting-up Telegram Messenger application on your smartphone, start a conversation with ''@ControlsGroupInfoBot'' sending any message to it (usually ''/start'' command). You won't have access at the first contact, the BOT will return a warning message followed by your credentials which are your first name followed by your chat id.
+After properly installing and setting-up Telegram Messenger application on your smartphone, start a conversation with *@ControlsGroupInfoBot* sending any message to it (usually */start* command). You won't have access at the first contact, the BOT will return a warning message followed by your credentials which are your first name followed by your chat id.
 
 |![](/img/groups/con/epics_messaging/Telegram_setup.jpeg)|
 |-|
