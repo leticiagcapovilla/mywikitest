@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:38:24.563Z
+date: 2024-05-27T21:39:17.796Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -59,4 +59,36 @@ A =  3.9083 \times 10^{-3}~^\circ\text{C}^{-1}
 $$
 $$
 B = -5.775 \times 10^{-7}~^\circ\text{C}^{-2}
+$$
+
+The solution of the quadratic equation yields the following relationship between temperature and resistance:
+$T = \frac{-A + \sqrt{A^2 - 4B\left(1 - \frac{R_T}{R_0}\right)}}{2B}$
+
+
+Since *B* is relatively small, the resistance changes *almost* linearly with the temperature. Considering that most applications will be around environment temperature, a linear fit is acceptable and is what will be done by Controls Group at first.
+
+<br >
+
+###  Measuring the resistance 
+
+Once Pt100 is a passive temperature sensor, it is needed to have a circuitry in order to have its value. 4-wire Pt100 sensors are recommended the most and its measurement can be seen in the following image:
+
+|![](/img/groups/con/mbtemp/Sch_pt100.png)|
+|-|
+|**Figure 2**: |
+
+One pair is used for current injection. Having a constant current flowing through a resistance, a voltage drop is generated. The other pair collects the voltage over the Pt100 resistor and makes it available for measurements or conditioning electronics. Having two pair of cables makes the measurement more reliable, once cable resistance (ie, length/section/etc) is not taken into account.
+
+It is important to assure that dissipated power due to the current flowing through Pt100 sensor, which is a resistance, does not heat the sensor itself, otherwise the final value may not correspond to the real environment.
+
+3-wire and 2-wire Pt100 can also be read using the same method. However, final values may not be equal within these three Pt100 types due to cable resistance interference.
+
+<br >
+
+###  Digital filter 
+
+As an overview in this application, implementing a digital filter eliminates noise during measurements. Temperature gradient is low and data acquisition does not need to be fast. It has been chosen to filter the values digitally using the exponential moving average law:
+
+$$
+Temperature Average = \frac{OldTemperatureValue*\alpha + NewTemperatureValue*(1000 - \alpha)}{1000}  \;\; (0\; \leq \alpha < 1000)
 $$
