@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:39:37.245Z
+date: 2024-05-27T21:40:08.444Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -95,3 +95,18 @@ As an overview in this application, implementing a digital filter eliminates noi
 $$
 Temperature Average = \frac{OldTemperatureValue*\alpha + NewTemperatureValue*(1000 - \alpha)}{1000}  \;\; (0\; \leq \alpha < 1000)
 $$
+
+Alpha factor is user-defined and must be an integer in the range 0 - 999.
+For MBTemp application, there will be some exceptions for this filter (explained on firmware section).
+
+<br >
+
+##  Hardware details 
+
+<br >
+
+###  Overview 
+
+The latest MBTemp hardware version, 2.6, was manufactured in 2018 and are currently in use at Sirius installations. This is an Eurocard-size board with a stack, dedicated for Pt100 input connectors routing.
+
+It can interface to up to 8 channels. There is only one current generator, one analog conditional circuitry, one one-channel analog-to-digital converter. It means that channels are multiplexed and read sequentially.
