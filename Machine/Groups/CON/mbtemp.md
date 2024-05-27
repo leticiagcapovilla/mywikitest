@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:24:20.059Z
+date: 2024-05-27T21:31:10.460Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -43,10 +43,13 @@ For instance, if a [BSMP](/Machine/Groups/CON/bsmp.md) variable has a value of 2
 Pt100 is a resistance temperature detector (RTD) made of platinum (Pt) having a resistance of 100 ohms at 0 °C. Basically, it is a resistor whose resistance varies according to its temperature. RTDs are more accurate and stable than thermocouples. The platinum detecting wire must be away from contamination to remain stable and there are plenty of packages available. Commercial detectors have  a temperature coefficient of resistance α  0.00385/°C, what leads to naming them as "Pt100 385".
 
 The relation between temperature and resistance is given by the Callendar-Van Dusen equation, for positive temperatures:
+
 $R_T = R_0 \left[ 1 + AT + BT^2 \right] \; (0\;{}^{\circ}\mathrm{C} \leq T < 850\;{}^{\circ}\mathrm{C})$
+
 Here $R_T$ is the resistance at temperature *T*, $R_0$ is the resistance at 0 °C.
 
 the constants for a Pt100 385 are:
+
 $A =  3.9083 \times 10^{-3}~^\circ\text{C}^{-1}$
 $B = -5.775 \times 10^{-7}~^\circ\text{C}^{-2}$
 
@@ -61,8 +64,6 @@ Since *B* is relatively small, the resistance changes *almost* linearly with the
 ###  Measuring the resistance 
 
 Once Pt100 is a passive temperature sensor, it is needed to have a circuitry in order to have its value. 4-wire Pt100 sensors are recommended the most and its measurement can be seen in the following image:
-
-[[File:Sch_pt100.png|350px]]
 
 |![](/img/groups/con/mbtemp/Sch_pt100.png)|
 |-|
@@ -98,8 +99,6 @@ The latest MBTemp hardware version, 2.6, was manufactured in 2018 and are curren
 
 It can interface to up to 8 channels. There is only one current generator, one analog conditional circuitry, one one-channel analog-to-digital converter. It means that channels are multiplexed and read sequentially.
 
-[[File:Mbtemp-up.png|500px|center]]
-
 |![](/img/groups/con/mbtemp/Mbtemp-up.png)|
 |-|
 |**Figure 3**: |
@@ -121,13 +120,11 @@ It is possible to power the board with higher voltages. **Caution: it needs a si
 <br >
 
 ###  Pt100 input connectors 
-[[File:4p4c.png|150px|thumbnail|left]] 
 
 |![](/img/groups/con/mbtemp/4p4c.png)|
 |-|
 |**Figure 4**: |
 
-[[File:Pt100-layout.png|150px|thumb|right]]
 
 |![](/img/groups/con/mbtemp/Pt100-layout.png)|
 |-|
@@ -168,8 +165,6 @@ For system optimization, there is only one channel for data acquisition. Once 8 
 Those switches are digitally controlled by the same microcontroller responsible for digital data acquisition.
 
 
-[[File:sw-mbtemp.png|600px]]
-
 |![](/img/machine/rf_system/CESR_cavity_SRF_module.png)|
 |-|
 |**Figure 6**: Cut view of the CESR cavity SRF module.|
@@ -188,8 +183,6 @@ For serial communication, the standard chosen by Controls Group is also adopted 
 
 * **Connector and Pinout**
 A 6P6C (RJ-12/RJ-25) has been chosen for Controls system as well as its pinout, as shown below. MBTemps also follow this standard.
-
-[[File:6P6C_ConnectorPinout_RS485.png|250px]]
 
 |![](/img/groups/con/mbtemp/6P6C_ConnectorPinout_RS485.png)|
 |-|
@@ -263,8 +256,6 @@ Once a character is received by the board, it enables an interruption signal whi
 MBTemps perform the reading of analog values, which are amplified to a larger and readable signal. Yet, even though specific componentes are used, they may add errors to the final output value. In general, for those purposes, it is needed to calibrate each single system, in order to guarantee correct and reliable readings for all channels.
 
 As seen above, Pt100 temperature-resistance equation is a second-order one. Chosen microcontroller is not able to perform this operations and thus, a linear fit may apply. Almost all applications will be measuring temperatures near environment temperature, so a linear fit around 25 °C does not add elevated errors to final results:
-
-[[File:Pt100-curves.png|1000px]]
 
 |![](/img/groups/con/mbtemp/Pt100-curves.png)|
 |-|
