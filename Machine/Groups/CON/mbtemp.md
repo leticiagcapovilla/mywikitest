@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:34:38.264Z
+date: 2024-05-27T21:37:10.299Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -30,6 +30,24 @@ Application layer protocol for communication to MBTemp boards is [Basic Small Me
 
 $$
 Temperature = \frac{(Byte[1] << 8) + Byte[0]}{100}
+$$
+
+For instance, if a [BSMP](/Machine/Groups/CON/bsmp.md) variable has a value of 2500, this corresponds to a temperature of 25.00 °C.
+
+<br >
+
+##  Operation principle 
+
+<br >
+
+###  Pt100 sensors 
+
+Pt100 is a resistance temperature detector (RTD) made of platinum (Pt) having a resistance of 100 ohms at 0 °C. Basically, it is a resistor whose resistance varies according to its temperature. RTDs are more accurate and stable than thermocouples. The platinum detecting wire must be away from contamination to remain stable and there are plenty of packages available. Commercial detectors have  a temperature coefficient of resistance α  0.00385/°C, what leads to naming them as "Pt100 385".
+
+The relation between temperature and resistance is given by the Callendar-Van Dusen equation, for positive temperatures:
+
+$$
+R_T = R_0 \left[ 1 + AT + BT^2 \right] \; (0\;{}^{\circ}\mathrm{C} \leq T < 850\;{}^{\circ}\mathrm{C})
 $$
 
 
