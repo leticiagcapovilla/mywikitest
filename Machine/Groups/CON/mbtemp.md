@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:37:10.299Z
+date: 2024-05-27T21:38:24.563Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -50,4 +50,13 @@ $$
 R_T = R_0 \left[ 1 + AT + BT^2 \right] \; (0\;{}^{\circ}\mathrm{C} \leq T < 850\;{}^{\circ}\mathrm{C})
 $$
 
+Here $R_T$ is the resistance at temperature *T*, $R_0$ is the resistance at 0 °C.
 
+the constants for a Pt100 385 are:
+
+$$
+A =  3.9083 \times 10^{-3}~^\circ\text{C}^{-1}
+$$
+$$
+B = -5.775 \times 10^{-7}~^\circ\text{C}^{-2}
+$$
