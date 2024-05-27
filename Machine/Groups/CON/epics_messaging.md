@@ -2,7 +2,7 @@
 title: EPICS notification messaging - Telegram
 description: 
 published: 1
-date: 2024-05-27T19:19:25.092Z
+date: 2024-05-27T19:22:08.931Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T19:03:01.620Z
@@ -249,34 +249,39 @@ Example: unsubscribing from CorrenteAnel PV Group
 
 Pauses PV monitoring for a certain PV without unsubscribing you and your team from the group (only applies to user who executed the command).
 
-Example: ```/pause SomePV:Voltage (single PV)
-         /pause SomeGroup (single group)
-         /pause SomePV:Voltage SomePV:Current SomePV:Radiation (multiple PVs)```
+Example:
+`/pause SomePV:Voltage (single PV)`
+`/pause SomeGroup (single group)`
+`/pause SomePV:Voltage SomePV:Current SomePV:Radiation (multiple PVs)`
 
 * **/unpause** (PVs/PV Groups)
 
 Unpauses PV monitoring for a certain PV, does not subscribe/re-subscribe you to the group (only applies to user who executed the command).
 
-Example: ```/unpause SomePV:Voltage (single PV)
-         /unpause SomeGroup (single group)
-         /unpause SomePV:Voltage SomePV:Current SomePV:Radiation (multiple PVs)```
+Example: 
+`/unpause SomePV:Voltage (single PV)`
+`/unpause SomeGroup (single group)`
+`/unpause SomePV:Voltage SomePV:Current SomePV:Radiation (multiple PVs)`
 
 <br>
 
 #### Team Administrator
+
 Team Administrators also have access to the following commands:
 
 * **/subscribeteam** (Team) (PV Groups)
 
 Subscribes the Team they manage to the desired PV Groups.
 
-Example: /subscribeteam CONS Temperature-LINAC SI:01-Pressure
+Example:
+`/subscribeteam CONS Temperature-LINAC SI:01-Pressure`
 
 * **/unsubscribeteam** (Team) (PV Groups)
 
 Unsubscribes the Team they manage from the desired PV Groups.
 
-Example: /unsubscribegp CONS Temperature-LINAC SI:01-Pressure
+Example:
+`/unsubscribegp CONS Temperature-LINAC SI:01-Pressure`
 
 * **/teams**
 
@@ -286,17 +291,20 @@ Sends the list of Teams registered.
 
 Sends a list of users and chat ids from the desired Team.
 
-Example: /getids CONS ADM ENGENHARIA-SIRIUS
+Example:
+`/getids CONS ADM ENGENHARIA-SIRIUS`
 
 * **/remove** (Team) (ChatIDs)
 
 Removes the users with the specified chat_ids from the Team they manage.
 
-Example: /remove CONS 12345678
+Example:
+`/remove CONS 12345678`
 
 <br>
 
 #### Administrator
+
 Administrators also have access to the following commands
 
 * **/removepvgroup** (PVGroups)
