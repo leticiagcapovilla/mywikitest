@@ -1,8 +1,18 @@
+---
+title: lnls_studio
+description: 
+published: 1
+date: 2024-05-27T13:30:57.872Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-24T15:31:57.435Z
+---
+
 # CON: Lnls-studio
 
 ##  Introduction 
 
-The [Control System Studio](https://github.com/ControlSystemStudio/cs-studio/wiki){target=_blank} is a graphical tool based on [http://www.eclipse.org/ Eclipse] which offers many features to monitor and to operate controls systems, being maintained continuously and improved by developers from many laboratories and teaching institutes. Between the projects contained in the [CSS repository](https://github.com/ControlSystemStudio){target=_blank}, one of the them allows the generation of local and customised distributions according to the needs of the respective laboratory. This project, called [org.csstudio.product](https://github.com/ControlSystemStudio/org.csstudio.product) {target=_blank}, was, therefore, extended and modified to meet only our group's needs.
+The [Control System Studio](https://github.com/ControlSystemStudio/cs-studio/wiki){target=_blank} is a graphical tool based on [Eclipse](http://www.eclipse.org/){target=_blank} which offers many features to monitor and to operate controls systems, being maintained continuously and improved by developers from many laboratories and teaching institutes. Between the projects contained in the [CSS repository](https://github.com/ControlSystemStudio){target=_blank}, one of the them allows the generation of local and customised distributions according to the needs of the respective laboratory. This project, called [org.csstudio.product](https://github.com/ControlSystemStudio/org.csstudio.product){target=_blank}, was, therefore, extended and modified to meet only our group's needs.
 
 ##  Project description 
 
