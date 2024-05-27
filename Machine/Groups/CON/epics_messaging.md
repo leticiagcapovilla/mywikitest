@@ -2,7 +2,7 @@
 title: EPICS notification messaging - Telegram
 description: 
 published: 1
-date: 2024-05-27T19:12:34.711Z
+date: 2024-05-27T19:13:41.026Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T19:03:01.620Z
@@ -77,7 +77,7 @@ Teams are the groups of users allowed to use the BOT. There are 3 types of Teams
 
 PV Groups are groups of EPICS Process Variables that will be monitored with their specific limits. One PV Group can have many PVs and different limits for each PV, but only one timeout, and one PV can belong to more than one group.
 
-PV Groups are registered on demand by the BOT administrators, [[CON:EPICS_notification_telegram#PV_Groups|but you can request registration through the BOT]].
+PV Groups are registered on demand by the BOT administrators, but you can request registration through the BOT.
 
 <br>
 
