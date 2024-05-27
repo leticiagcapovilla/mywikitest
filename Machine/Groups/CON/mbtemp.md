@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:40:08.444Z
+date: 2024-05-27T21:41:51.170Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -110,3 +110,171 @@ For MBTemp application, there will be some exceptions for this filter (explained
 The latest MBTemp hardware version, 2.6, was manufactured in 2018 and are currently in use at Sirius installations. This is an Eurocard-size board with a stack, dedicated for Pt100 input connectors routing.
 
 It can interface to up to 8 channels. There is only one current generator, one analog conditional circuitry, one one-channel analog-to-digital converter. It means that channels are multiplexed and read sequentially.
+
+|![](/img/groups/con/mbtemp/Mbtemp-up.png)|
+|-|
+|**Figure 3**: |
+
+
+[[[ FOTO DO PAINEL FRONTAL + TRASEIRO ]]]
+
+<br >
+
+###  Power input and filters 
+
+In order to power the board and have it completely functional, connect the front jack with a reliable +5V/2A power source (positive center). Controls Group recommends CUI Inc. power supply brand.
+
+Typical power consumption: **1.5 W**
+
+
+It is possible to power the board with higher voltages. **Caution: it needs a simple hardware modification on the board!**
+
+<br >
+
+###  Pt100 input connectors 
+
+|![](/img/groups/con/mbtemp/4p4c.png)|
+|-|
+|**Figure 4**: |
+
+
+|![](/img/groups/con/mbtemp/Pt100-layout.png)|
+|-|
+|**Figure 5**: |
+
+
+Modular RJ-11 (4P4C) connector has been chosen for Pt100 connectivity. Pins 1 and 2 will be connected to a Pt100 side and pins 3 and 4 will be connected to the other side. Current flow from I to GND and V+/V- is differential voltage on the sensor resistance.
+
+
+MBTemp signals:
+
+**1.** I (1 mA)
+
+**2.** V+
+
+**3.** GND
+
+**4.** V-
+
+<br >
+
+###  PIC microcontroller 
+
+A 16F-family PIC microcontroller (16F887A) is the core of the system. It is responsible for communication routine, data acquisition, coefficient storage and calculations. The code itself was written in C, compiled using MPLAB IDE (free version). More details about programming logic is described in the [CON:MBTemp#Firmware_details|specific section](link).
+
+<br >
+
+###  Power converters for conditioning circuitry 
+
+An important stage for temperature data acquisition is the power converters for the conditioning circuitry. Some devices need symetric power supply or even a power supply greater than 5V for drop-out compensation. For that purpose, this piece of hardware converts and provides +6V and -5V for analog ICs.
+
+<br >
+
+###  Analog multiplexing 
+
+For system optimization, there is only one channel for data acquisition. Once 8 channels are available, a set of multiplexing switches were added to the board, allowing each signal to be read sequentially. Current source is multiplexed as well, what is also interesting because it reduces power dissipation over a Pt100, reducing external interference.
+
+Those switches are digitally controlled by the same microcontroller responsible for digital data acquisition.
+
+
+|![](/img/machine/rf_system/CESR_cavity_SRF_module.png)|
+|-|
+|**Figure 6**: Cut view of the CESR cavity SRF module.|
+
+<br >
+
+###  Conditioning circuitry and ADC 
+
+It is mandatory to have a conditioning circuitry for temperature data acquisition. As Pt100 sensors have low resistance and a low current flows, the voltage drop is relatively small and needs a gain and offset to be acquired by the ADC. Instrumentation ICs are  used as well as high precision voltage references and resistors. Digital result is read through SPI interface.
+
+<br >
+
+###  Serial communication (RS-485) 
+
+For serial communication, the standard chosen by Controls Group is also adopted (described [CON:SERIALxxCON|here](link)).
+
+* **Connector and Pinout**
+A 6P6C (RJ-12/RJ-25) has been chosen for Controls system as well as its pinout, as shown below. MBTemps also follow this standard.
+
+|![](/img/groups/con/mbtemp/6P6C_ConnectorPinout_RS485.png)|
+|-|
+|**Figure 7**: |
+
+* **Termination**
+Termination is needed ***only in the last device connected to the multi-drop serial network*** in order to match serial transmission line. It can be activated by pulling the correspondent front panel switch on. RS-485 impedance is 120Ω.
+
+<br >
+
+###  Board ID and module address 
+
+Board ID in a unique ID that the board has received after being manufactured.
+
+On the other hand, the module address is specific for communication purpose. As it is a BSMP slave device, it will only reply commands that match their pre-configured address. It is configured through the 5-position switch front panel, binary coded. Valid value: 1 to 31.
+
+**Attention**: once the module address is modified, it is mandatory to reboot the board!
+
+<br >
+
+###  Production units 
+
+400 units have been manufactured in early 2018. They have been installed on Sirius site in several environments (tunnel, power area, RF room, instrumentation area, etc.).
+
+<br >
+
+###  More technical documentation 
+
+Detailed documents can be found at project repository at CNPEM gitlab ([click here](http://gitlab.cnpem.br/patricia.nallin/mbtemp), you must be connected through CNPEM network).
+
+<br >
+
+###  Hardware versions 
+
+Eurocard sized:
+
+* **v2.6 (latest)**
+* v2.5
+
+<br >
+
+##  Firmware details 
+
+<br >
+
+###  Brief description 
+
+Firmware running on PIC microcontrollers has one single process. Initially, it gets the board module ID from switches on the front panel, it gets all static variables (stored in its EEPROM memory): alpha, linear and angular coefficients. Also, it configures a DCDC converter in the board (which is currently not in use) and configures the modules that will be used (I2C, SPI, UART, interruption).
+
+* SPI: used for getting data from ADC;
+* I2C: communication with DC/DC converter;
+* UART: serial interface RS-485;
+* Interruption: treating incoming serial data and replying to it (if necessary).
+
+After that, a continuous loop begins, which reads all eight channels sequentially.
+
+<br >
+
+###  Serial communication 
+
+Communication through [[CON:MBTemp#BSMP_entities|BSMP protocol and entities]](link). You can have more information about variables in next section and about [BSMP protocol](/Machine/Groups/CON/bsmp) in a dedicated page.
+
+Serial communication physical layer is based on RS-485, using the pattern predefined by Controls Group, as shown above.
+
+Once a character is received by the board, it enables an interruption signal which will interrupt the continuous loop and treat the incoming message. If the board is the destination, it will reply to the message and go back to reading Pt100 sensors.
+
+<br >
+
+###  Calibration - Linear fit 
+
+MBTemps perform the reading of analog values, which are amplified to a larger and readable signal. Yet, even though specific componentes are used, they may add errors to the final output value. In general, for those purposes, it is needed to calibrate each single system, in order to guarantee correct and reliable readings for all channels.
+
+As seen above, Pt100 temperature-resistance equation is a second-order one. Chosen microcontroller is not able to perform this operations and thus, a linear fit may apply. Almost all applications will be measuring temperatures near environment temperature, so a linear fit around 25 °C does not add elevated errors to final results:
+
+|![](/img/groups/con/mbtemp/Pt100-curves.png)|
+|-|
+|**Figure 8**: |
+
+So, for a linear fit, it is needed to acquire the values from two different temperature points, at least. Controls Group, while calibrating the boards, takes 3 different points (usually 20, 25 and 30 °C) and 30 samples for each value. It is important to note that, for calibration and temperature reading, it is not needed to calculate what is the Pt100 current resistance. Having the ADC value is enough for calibrating and readings:
+
+$$
+Read Temperature = \frac{ADvalue}{k} - b
+$$
