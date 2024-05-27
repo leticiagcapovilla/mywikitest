@@ -1,3 +1,13 @@
+---
+title: EPICS training for operators and users
+description: 
+published: 1
+date: 2024-05-27T19:04:12.528Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-27T19:03:04.147Z
+---
+
 # CON: EPICS training for operators and users
 
 Between September and November 2016, Controls Group (CON) offered a first course on EPICS for some members of LNLS staff. The target audience was operators and users in general. Below is a list of topics covered:
