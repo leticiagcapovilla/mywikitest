@@ -2,7 +2,7 @@
 title: lnls_studio
 description: 
 published: 1
-date: 2024-05-27T13:30:57.872Z
+date: 2024-05-27T13:32:43.304Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-24T15:31:57.435Z
@@ -28,7 +28,7 @@ The [lnls-studio project](https://github.com/lnls-sirius/lnls-studio){target=_bl
     * `jaas.conf` - Configuration of the login method of distribution. Essential for the alarm plugin.
     * `diirt/` - Contains the hosts addresses where the PVs are being provided.
 
-`org.csstudio.product.feature`, in turn, defines which feature will be present in the distribution. Among the main features included so far this edition stand out the alarm client, the archiver's data viewer and the [https://github.com/kasemir/org.csstudio.display.builder display builder]. To add or remove features, edit the file [https://github.com/lnls-sirius/lnls-studio/blob/master/features/org.csstudio.product.feature/feature.xml `org.csstudio.product.feature/feature.xml`].
+`org.csstudio.product.feature`, in turn, defines which feature will be present in the distribution. Among the main features included so far this edition stand out the alarm client, the archiver's data viewer and the [display builder](https://github.com/kasemir/org.csstudio.display.builder){target=_blank}. To add or remove features, edit the file [`org.csstudio.product.feature/feature.xml`](https://github.com/lnls-sirius/lnls-studio/blob/master/features/org.csstudio.product.feature/feature.xml){target=_blank}.
 
 * `plugins/`: graphical definitions of the product, such as titles, icons, ''splash screen'' etc. All these definition can be found in `org.csstudio.product/`, notably in the file `plugin.xml`
 
