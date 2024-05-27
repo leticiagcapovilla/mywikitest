@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:41:51.170Z
+date: 2024-05-27T21:42:17.552Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -278,3 +278,79 @@ So, for a linear fit, it is needed to acquire the values from two different temp
 $$
 Read Temperature = \frac{ADvalue}{k} - b
 $$
+
+After calibration, **k ≈ 48** and **b ≈ 258**. They are unique for each piece of hardware.
+
+***INTERESTING NOTE: RECOVERING FROM LINEAR FIT TO REAL VALUE IS POSSIBLE IN HIGH LEVEL SYSTEMS AND IT IS DONE IN CONTROLS IOCS.***
+
+<br >
+
+###  Temperature measurements 
+
+|![](/img/groups/con/mbtemp/Mbtemp-reading-flow.png|
+|-|
+|**Figure 9**: |
+
+
+Sequential readings are done according to the flow chart above. Double ADC reading, with and without current, is performed to eliminate (or highly decrease) interference due to power network (60Hz, in Brazil).
+Also, if a temperature value is greater than 1 °C compared to last value, a new reading cycle is performed to assure this new measurement is valid.
+
+
+Range: 0 °C to ~395 °C from board (linear fit)    |    0 °C to ~420 °C from high level system (quadratic equation)
+
+<br >
+
+##  BSMP entities 
+
+Once MBTemp communication protocol is based on BSMP, data acquisition and variable handling is done using its entities, which are all variables.
+
+{| class="wikitable" style="text-align: center;"
+|-
+! ID !! Variable !! Access !! Size (bytes) !! Group ID
+|-
+| 0 || Channel 0 (Input 1) || rowspan="8" | R || rowspan="8" |2 || rowspan="8" | 0 and 1
+|-
+| 1 || Channel 1 (Input 2)
+|-
+| 2 || Channel 2 (Input 3)
+|-
+| 3 || Channel 3 (Input 4)
+|-
+| 4 || Channel 4 (Input 5)
+|-
+| 5 || Channel 5 (Input 6)
+|-
+| 6 || Channel 6 (Input 7)
+|-
+| 7 || Channel 7 (Input 8)
+|-
+| 8 || Alpha 1 (a1)|| rowspan="11" | R/W || rowspan="3" | 2 || rowspan="11" | 0 and 2
+|-
+| 9 || Angular coefficient 1 (k1)
+|-
+| 10 || Linear coefficient 1 (b1)
+|-
+| 11 || AD Reading Mode || rowspan="2" | 1 
+|-
+| 12 || Reading Mode
+|-
+| 13 || Alpha 2 (a2)|| rowspan="6" | 2
+|-
+| 14 || Angular coefficient 2 (k2)
+|-
+| 15 || Linear coefficient 2 (b2)
+|-
+| 16 || Alpha 3 (a3)
+|-
+| 17 || Angular coefficient 3 (k3)
+|-
+| 18 || Linear coefficient 3 (b3)
+|}
+
+<br >
+
+###  Variable: Temperature (Channels ID 0 -7) 
+
+  ID: 0 - 7     Size: 2 bytes [Byte1|Byte0]     Read-only 
+
+Acquired temperature according to each channel. To get its value: 
