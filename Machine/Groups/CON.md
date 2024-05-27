@@ -26,6 +26,7 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [Diagnostics Beamline Single-Board-Computers (BBB)](/Machine/Groups/CON/diag_beam_sbc)
 - [Git repository](/Machine/Groups/CON/git_repo)
 - [Heating system for vacuum chambers bake-out](/Machine/Groups/CON/heating_system)
+- [Linac control system documentation](/Machine/Groups/CON/linac_control_system)
 - [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
 - [PRUserial485](/Machine/Groups/CON/pruserial485)
 {.links-list}
