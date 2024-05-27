@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:42:52.988Z
+date: 2024-05-27T21:43:14.916Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -369,4 +369,19 @@ Moving average factor for temperature reading (performed on board). It must be i
 
 $$
 \alpha = (Byte[1] << 8) + Byte[0]
+$$
+
+Variables are stored three times in order to guarantee data consistency after system start up.
+Any change on any variable (ID 8, 13 or 16) will change others as well (ID 8, 13 and 16), once they refer to the same constant.
+
+<br >
+
+###  Variable: Angular coefficient (IDs 9, 14 and 17) 
+
+  ID: 9, 14 and 17     Size: 2 bytes [Byte1|Byte0]     Read/Write
+
+Angular coefficient for temperature calculation according to ADC value.
+
+$$
+k = \frac{(Byte[1] << 8) + Byte[0]}{100}
 $$
