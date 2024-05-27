@@ -1,8 +1,8 @@
 ---
-title: lnls_studio
+title: CS-Studio Sirius
 description: 
 published: 1
-date: 2024-05-27T13:32:43.304Z
+date: 2024-05-27T19:07:37.652Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-24T15:31:57.435Z
