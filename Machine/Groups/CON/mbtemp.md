@@ -2,7 +2,7 @@
 title: mbtemp
 description: 
 published: 1
-date: 2024-05-27T21:42:17.552Z
+date: 2024-05-27T21:42:52.988Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -354,3 +354,19 @@ Once MBTemp communication protocol is based on BSMP, data acquisition and variab
   ID: 0 - 7     Size: 2 bytes [Byte1|Byte0]     Read-only 
 
 Acquired temperature according to each channel. To get its value: 
+
+$$
+Temperature = \frac{(Byte[1] << 8) + Byte[0]}{100}
+$$
+
+<br >
+
+###  Variable: Alpha (IDs 8, 13 and 16) 
+
+  ID: 8, 13 and 16     Size: 2 bytes [Byte1|Byte0]     Read/Write
+
+Moving average factor for temperature reading (performed on board). It must be in the range 0-999.
+
+$$
+\alpha = (Byte[1] << 8) + Byte[0]
+$$
