@@ -2,7 +2,7 @@
 title: EPICS notification messaging - Telegram
 description: 
 published: 1
-date: 2024-05-27T19:17:29.605Z
+date: 2024-05-27T19:19:25.092Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T19:03:01.620Z
@@ -163,7 +163,8 @@ Sends a Comma Separated Values (CSV) file containing the PV Groups information (
 
 Sends the requested PVGroups information (PVs, maximum and minimum values).
 
-Example: ```/checkgp Temperature-LINAC SI:01-Pressure```
+Example:
+```/checkgp Temperature-LINAC SI:01-Pressure```
 
 
 * **/addpvgroup** (Group) (PVs) (Maximum Limit) (Minimum Limit) (Timeout)
@@ -178,18 +179,13 @@ The ''Timeout'' parameter is the time in minutes between two notifications of a 
 
 In this example a request is forwarded to the BOT's Administrators to add a PV group with the following specifications:
 
-- **Name**: RackMonCons
-
-- **PVs**: IA-17:CO-LM35:Temperature-Mon (Max: 30°C  Min: 20°C)
-
-- **Timeout**: 60 minutes
-
+-**Name**: RackMonCons
+-**PVs**: IA-17:CO-LM35:Temperature-Mon (Max: 30°C  Min: 20°C)
+-**Timeout**: 60 minutes
 
 * **/addpv** (Group) (PV) (Maximum Limit) (Minimum Limit)
 
 Sends a request to the BOT administrator to add a new PV to an existing PV Group or alter the maximum and minimum limits of a PV that already exists in a PV Group.
-
-[[File:Epicstel_addpv.jpeg|addpv Example|500px|thumb]]
 
 |![](/img/groups/con/epics_messaging/Epicstel_addpv.jpeg)|
 |-|
@@ -201,22 +197,27 @@ Following the previous example for ''/addpvgroup'', in the picture a new request
 
 Sends a request to the BOT administrator to remove a PV from a group. If you're an administrator, that'll remove the PV from the group it's in.
 
-Example: ```/removepv TestGroup SomePV:Voltage ```
-#### Teams
+Example:
+```/removepv TestGroup SomePV:Voltage ```
 
+<br>
+
+#### Teams
 
 * **/add** (Team) (Username:ChatID)
 
 Sends a request to the BOT administrators to add multiple users into the given Team.
 
-Example: ```/add CONS Peter:12345678 ControlsGroup:-87654321```
+Example:
+```/add CONS Peter:12345678 ControlsGroup:-87654321```
 
 
 * **/addteam** (AdminName:AdminID) (Team) (UserName:UserID)
 
 Sends a request to the BOT administrators to register a new Team.
 
-Example: ```/addteam Peter:12345678 ENGENHARIA-SIRIUS ControlsGroup:-87654321 John:98765432```
+Example:
+```/addteam Peter:12345678 ENGENHARIA-SIRIUS ControlsGroup:-87654321 John:98765432```
 
 <br>
 
@@ -228,13 +229,11 @@ Subscribes to the requested PVGroups notification **(does not work for group cha
 
 Example: Subscribing to 3 new PV groups (IA01, Temp-BO01, Linac) and to one group that the user was already subscribed (CorrenteAnel)
 
-[[File:Epicstel_subscribe.jpeg|Subscription Example|400px|thumb]]
-
 |![](/img/groups/con/epics_messaging/Epicstel_subscribe.jpeg)|
 |-|
 |**Figure 6**: Subscription Example.|
 
-[[File:Epicstel_unsubscribe.jpeg|Unsubscription Example|400px|thumb]]
+<br>
 
 |![](/img/groups/con/epics_messaging/Epicstel_unsubscribe.jpeg)|
 |-|
