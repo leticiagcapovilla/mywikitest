@@ -28,6 +28,7 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [Heating system for vacuum chambers bake-out](/Machine/Groups/CON/heating_system)
 - [Linac control system documentation](/Machine/Groups/CON/linac_control_system)
 - [Controls Group LDAP server](/Machine/Groups/CON/ldap_server)
+- [LLRF EPICS IOC](/Machine/Groups/CON/llrf_epics_iocs)
 - [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
 - [PRUserial485](/Machine/Groups/CON/pruserial485)
 {.links-list}
