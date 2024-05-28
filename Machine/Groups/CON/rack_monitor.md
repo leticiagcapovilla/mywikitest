@@ -2,7 +2,7 @@
 title: Rack Monitoring Platform
 description: 
 published: 1
-date: 2024-05-28T21:20:54.471Z
+date: 2024-05-28T21:21:28.043Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-28T21:15:58.763Z
@@ -71,6 +71,8 @@ The current version is able to process data from the following sensors:
 
 Both LM35 and DHT11 sensors are connected to the board by RJ11(4P4C) connectors.
 
+<br>
+
 #### Temperature sensor - LM35
 
 |![](/img/groups/con/rack_monitor/LM35_circuit.jpeg)|
@@ -80,6 +82,8 @@ Both LM35 and DHT11 sensors are connected to the board by RJ11(4P4C) connectors.
 LM35 is a low-cost, yet very accurate, temperature sensor that provides a 10mV variation for every degree. It is soldered to a 1-meter serial cable that is connected to the board by one of the 4P4C connectors.
 
 These small variations are amplified by one of the four operational amplifiers on LM324, working as a [non-inverting amplifier](https://en.wikipedia.org/wiki/Operational_amplifier#Non-inverting_amplifier) with an approximate 3x voltage gain, enabling getting final temperature values from 0°C up to approximately 82°C.
+
+<br>
 
 #### Temperature and humidity sensor - DHT11
 
@@ -91,9 +95,9 @@ DHT11 is a very popular low-cost digital humidity sensor designed by Aosong Elec
 
 It is capable of providing humidity values from 20% to 90% with a 5% accuracy and temperature values from 0°C to 50°C with a 2°C accuracy.
 
-#### Voltage Transformer
+<br>
 
-[[File:Voltage_circuit.jpeg|thumb|left|]]
+#### Voltage Transformer
 
 |![](/img/groups/con/rack_monitor/Voltage_circuit.jpeg)|
 |-|
