@@ -1,3 +1,13 @@
+---
+title: Heating system for vacuum chambers bake-out
+description: 
+published: 1
+date: 2024-05-28T15:52:17.634Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-27T19:50:37.728Z
+---
+
 # CON: Heating system for vacuum chambers bake-out
 
 ## Introduction
