@@ -2,7 +2,7 @@
 title: MBTemp
 description: 
 published: 1
-date: 2024-05-28T15:02:00.334Z
+date: 2024-05-28T15:06:24.768Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -232,17 +232,16 @@ Range: 0 °C to ~395 °C from board (linear fit) | 0 °C to ~420 °C from high l
 
 Once MBTemp communication protocol is based on BSMP, data acquisition and variable handling is done using its entities, which are all variables.
 
-|     |     |     |     |     |
+| ID | Variable | Access | Size (bytes) | Group ID |
 | --- | --- | --- | --- | --- |
-| **ID** | **Variable** | **Access** | **Size (bytes)** | **Group ID** |
-| 0   | Channel 0 (Input 1) | R   | 2   | 0 and 1 |
-| 1   | Channel 1 (Input 2) |
-| 2   | Channel 2 (Input 3) |
-| 3   | Channel 3 (Input 4) |
-| 4   | Channel 4 (Input 5) |
-| 5   | Channel 5 (Input 6) |
-| 6   | Channel 6 (Input 7) |
-| 7   | Channel 7 (Input 8) |
+| 0  <br> 1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 | Channel 0 (Input 1) <br> Channel 1 (Input 2) <br> Channel 2 (Input 3) <br> Channel 3 (Input 4) <br> Channel 4 (Input 5) <br> Channel 4 (Input 5) <br> Channel 5 (Input 6) <br> Channel 6 (Input 7) <br> Channel 7 (Input 8)| R   | 2   | 0 and 1 |
+| 1   |  |
+| 2   |  |
+| 3   | |
+| 4   |  |
+| 5   |  |
+| 6   |  |
+| 7   |  |
 | 8   | Alpha 1 (a1) | R/W | 2   | 0 and 2 |
 | 9   | Angular coefficient 1 (k1) |
 | 10  | Linear coefficient 1 (b1) |
