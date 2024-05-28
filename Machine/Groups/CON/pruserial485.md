@@ -2,7 +2,7 @@
 title: PRUserial485
 description: 
 published: 1
-date: 2024-05-28T21:46:05.397Z
+date: 2024-05-28T21:48:25.867Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:13:29.040Z
@@ -229,6 +229,7 @@ Here, dealing with up to four curves is justified that Power Supplies can be all
 
 Inside DDR memory, data is allocated according to the table below.
 
+
 **Curve Block 0**
 
 | Offset (decimal) | Curve point |
@@ -242,6 +243,7 @@ Inside DDR memory, data is allocated according to the table below.
 | 09988 .. 09991 | curve1_0[6249] |
 | 09992 .. 09995 | curve2_0[6249] |
 | 09996 .. 09999 | curve3_0[6249] |
+
 
 **Curve Block 1**
 
@@ -257,6 +259,7 @@ Inside DDR memory, data is allocated according to the table below.
 | 19992 .. 19995 || curve2_1[6249] |
 | 19996 .. 19999 || curve3_1[6249] |
 
+
 **Curve Block 2**
 
 | Offset (decimal) | Curve point |
@@ -270,6 +273,7 @@ Inside DDR memory, data is allocated according to the table below.
 | 29988 .. 29991 | curve1_2[6249] |
 | 29992 .. 29995 | curve2_2[6249] |
 | 29996 .. 29999 | curve3_2[6249] |
+
 
 **Curve Block 3**
 
@@ -315,7 +319,9 @@ Texas Instruments provides a compiler (pasm) for PRU devices. As a standard, Con
 
 ***Initialization***
 
-![PRUserial485-init.png](/img/groups/con/pruserial485/PRUserial485-init.png)
+|![PRUserial485-init.png](/img/groups/con/pruserial485/PRUserial485-init.png =750x)|
+|-|
+|**Figure 6**: |
 
 <br />
 
@@ -333,7 +339,9 @@ As explained on PRU section, there is a circular buffer for incoming data. At AR
 
 When invoking init function, an independent thread is launched (which is killed when closing the interface). The task performed by this thread is copying data from shared memory to a larger buffer on ARM environment as soon as it is available. This buffer is accessed by this thread an also by the function which gets PRU data (PRUserial485_read). A semaphore is implemented in this case.
 
-![PRU-thread.PNG](/img/groups/con/pruserial485/PRU-thread.PNG)
+|![PRU-thread.PNG](/img/groups/con/pruserial485/PRU-thread.PNG)|
+|-|
+|**Figure 7**: |
 
 The functions available can be divided into three main cathegories, which will be described further:
 
