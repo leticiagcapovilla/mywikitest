@@ -2,7 +2,7 @@
 title: PRUserial485
 description: 
 published: 1
-date: 2024-05-28T21:45:13.323Z
+date: 2024-05-28T21:45:42.841Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:13:29.040Z
@@ -146,7 +146,8 @@ Communication between PRU and Operating System is usually performed through memo
 <br />
 
 ### Source Codes
-Sources of PRU software (written in assembly language) and the corresponding system library for Linux (written in C) can be obtained from [PRUserial485 Github repository](https://github.com/lnls-sirius/pru-serial485).
+
+Sources of PRU software (written in assembly language) and the corresponding system library for Linux (written in C) can be obtained from [PRUserial485 Github repository](https://github.com/lnls-sirius/pru-serial485){target=_blank}.
 
 <br />
 
@@ -164,9 +165,9 @@ First, and more directly, comes the shared RAM. A PRU-dedicated, it is reserved 
 
 Also, there is the possibility of reserving a larger region of the external DDR memory and use it with PRU sub-systems. It comes to be useful when it is intended to store many long curve points and share them with PRU to perform synchronized adjustments. It will be discussed in the next sub-sections.
 
-![Memoria-PRUserial485.jpg](/img/groups/con/pruserial485/Memoria-PRUserial485.jpg)
-
-**Figure 4**:
+|![Memoria-PRUserial485.jpg](/img/groups/con/pruserial485/Memoria-PRUserial485.jpg)|
+|-|
+|**Figure 5**:|
 
 <br />
 
