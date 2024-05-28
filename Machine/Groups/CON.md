@@ -36,5 +36,6 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [NTP time servers](/Machine/Groups/CON/ntp)
 - [PRUserial485](/Machine/Groups/CON/pruserial485)
 - [Pulsed magnets EPICS interface](/Machine/Groups/CON/pulsed_magnets_epics)
+- [Rack Monitoring Platform](/Machine/Groups/CON/rack_monitor)
 - [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
 {.links-list}
