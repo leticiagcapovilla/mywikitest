@@ -2,7 +2,7 @@
 title: PRUserial485
 description: 
 published: 1
-date: 2024-05-28T21:43:13.149Z
+date: 2024-05-28T21:43:55.967Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:13:29.040Z
@@ -31,9 +31,9 @@ This was the first and largest application for BeagleBone PRU. Reaching data rat
 
 For this purpose, the PRUserial485 has been designed mainly for Sirius Power Supplies, which are digitally controlled at 6 Mbps. This interface, which is very deterministic, also includes a timing input for triggering data sending during sync operation, such as booster ramping and soft orbit correction.
 
-![Hardware-PRUserial485.jpg](/img/groups/con/pruserial485/Hardware-PRUserial485.jpg)
-
-**Figure 2**:
+|![Hardware-PRUserial485.jpg](/img/groups/con/pruserial485/Hardware-PRUserial485.jpg)|
+|-|
+|**Figure 2**:|
 
 The steps below are mandatory to project development and understanding. They will be discussed in the next sections.
 
@@ -63,7 +63,9 @@ In this case, it is possible to changes curves on-the-fly by loading them into a
 
 ## Hardware Requirements
 
-![Pruserial485-sch.png](/img/groups/con/pruserial485/Pruserial485-sch.png)
+|![Pruserial485-sch.png](/img/groups/con/pruserial485/Pruserial485-sch.png)|
+|-|
+|**Figure 3: **|
 
 The main Controls Group hardware interface designed for BeagleBone Black, [[CON:SERIALxxCON|SERIALxxCON]][link], has all the peripherals that are needed to have the PRUserial485 interface working properly.
 
