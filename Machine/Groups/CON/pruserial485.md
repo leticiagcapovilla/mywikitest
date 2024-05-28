@@ -2,7 +2,7 @@
 title: PRUserial485
 description: 
 published: 1
-date: 2024-05-28T21:45:42.841Z
+date: 2024-05-28T21:46:05.397Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:13:29.040Z
@@ -165,7 +165,7 @@ First, and more directly, comes the shared RAM. A PRU-dedicated, it is reserved 
 
 Also, there is the possibility of reserving a larger region of the external DDR memory and use it with PRU sub-systems. It comes to be useful when it is intended to store many long curve points and share them with PRU to perform synchronized adjustments. It will be discussed in the next sub-sections.
 
-|![Memoria-PRUserial485.jpg](/img/groups/con/pruserial485/Memoria-PRUserial485.jpg)|
+|![Memoria-PRUserial485.jpg](/img/groups/con/pruserial485/Memoria-PRUserial485.jpg =650x)|
 |-|
 |**Figure 5**:|
 
