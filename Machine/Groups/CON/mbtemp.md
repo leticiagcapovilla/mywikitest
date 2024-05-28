@@ -2,7 +2,7 @@
 title: MBTemp
 description: 
 published: 1
-date: 2024-05-28T15:24:50.453Z
+date: 2024-05-28T15:26:18.341Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -270,7 +270,9 @@ ID: 9, 14 and 17 Size: 2 bytes \[Byte1|Byte0\] Read/Write
 
 Angular coefficient for temperature calculation according to ADC value.
 
-k=(Byte\[1\]<<8)+Byte\[0\]100k = \\frac{(Byte\[1\] << 8) + Byte\[0\]}{100} k=100(Byte\[1\]<<8)+Byte\[0\]​
+$$
+k = \frac{(Byte[1] << 8) + Byte[0]}{100}
+$$
 
 Variables are stored three times in order to guarantee data consistency after system start up.  
 Any change on any variable (ID 9, 14 or 17) will change others as well (ID 9, 14 and 17), once they refer to the same constant.
@@ -283,7 +285,9 @@ ID: 10, 15 and 18 Size: 2 bytes \[Byte1|Byte0\] Read/Write
 
 Linear coefficient for temperature calculation according to ADC value.
 
-b=(Byte\[1\]<<8)+Byte\[0\]100b = \\frac{(Byte\[1\] << 8) + Byte\[0\]}{100} b=100(Byte\[1\]<<8)+Byte\[0\]​
+$$
+b = \frac{(Byte[1] << 8) + Byte[0]}{100}
+$$
 
 Variables are stored three times in order to guarantee data consistency after system start up.  
 Any change on any variable (ID 10, 15 or 18) will change others as well (ID 10, 15 and 18), once they refer to the same constant.
