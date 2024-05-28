@@ -2,7 +2,7 @@
 title: Rack Monitoring Platform
 description: 
 published: 1
-date: 2024-05-28T21:32:39.071Z
+date: 2024-05-28T21:34:51.705Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-28T21:15:58.763Z
@@ -483,19 +483,28 @@ In older versions, the other possible TCP/IP client developed for this project i
 The higher level of communications (TCP/IP) uses [[CON:Basic_Small_Messages_Protocol_(BSMP)|Basic Small Messages Protocol(BSMP)]].
 
 
-|ID| Variable| Size (bytes)| Access |
-|-|-|-|-|
-|0x43| Fan electric current consumption| 1| R |
+**Read access - size 1 byte**
+|ID| Variable|
+|-|-|
+|0x43| Fan electric current consumption|
 |0x54| DHT11 or DHT22 temperature |
 |0x62| Back door status |
 |0x63| Fan status |
 |0x66| Front door status   |
-| |
-| |
-|0x74| LM35 temperature| 2  |
-| |
-| |
-|0x75| Humidity| 1 |
+
+
+**Read access - size 2 bytes**
+
+|ID| Variable |
+|-|-|
+|0x74| LM35 temperature|
+
+
+**Read access - size 1 byte**
+
+|ID| Variable |
+|-|-|
+|0x75| Humidity|
 |0x76| Outlet voltage  |
 
 ### Variable: Fan current
