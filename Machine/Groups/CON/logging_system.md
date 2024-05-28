@@ -1,3 +1,13 @@
+---
+title: Logging system
+description: 
+published: 1
+date: 2024-05-28T15:50:30.543Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-27T20:46:46.491Z
+---
+
 # CON: Control-olog
 
 ##  Introduction 
