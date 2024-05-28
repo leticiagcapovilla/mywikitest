@@ -1,3 +1,13 @@
+---
+title: Diagnostics Beamline Single-Board-Computers (BBB)
+description: 
+published: 1
+date: 2024-05-28T15:53:07.574Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-27T19:40:21.192Z
+---
+
 # CON: Diagnostics Beamline BBB SBCs (Debian 9)
 
 ## Diagnostics Beamline Team
