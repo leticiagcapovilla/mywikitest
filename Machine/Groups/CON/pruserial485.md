@@ -2,7 +2,7 @@
 title: PRUserial485
 description: 
 published: 1
-date: 2024-03-05T20:26:21.264Z
+date: 2024-05-28T21:48:25.867Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:13:29.040Z
@@ -14,9 +14,9 @@ dateCreated: 2024-03-05T19:13:29.040Z
  
 ## Introduction
 
-![PRU_ICSS_block_diag.png](/img/groups/con/pruserial485/PRU_ICSS_block_diag.png)
-
-**Figure 1**: PRU-SS, from Texas Instruments
+|![PRU_ICSS_block_diag.png](/img/groups/con/pruserial485/PRU_ICSS_block_diag.png)|
+|-|
+|**Figure 1**: PRU-SS, from Texas Instruments|
 
 PRUserial485 is a high-performance RS-485 serial interface developed for the embedded single board computer BeagleBone Black (BBB), an open-hardware platform based on Texas Instruments AM335x SoC. Running a Debian image, BBBs are the main distributed nodes for Sirius Control System.
 
@@ -31,9 +31,9 @@ This was the first and largest application for BeagleBone PRU. Reaching data rat
 
 For this purpose, the PRUserial485 has been designed mainly for Sirius Power Supplies, which are digitally controlled at 6 Mbps. This interface, which is very deterministic, also includes a timing input for triggering data sending during sync operation, such as booster ramping and soft orbit correction.
 
-![Hardware-PRUserial485.jpg](/img/groups/con/pruserial485/Hardware-PRUserial485.jpg)
-
-**Figure 2**:
+|![Hardware-PRUserial485.jpg](/img/groups/con/pruserial485/Hardware-PRUserial485.jpg)|
+|-|
+|**Figure 2**:|
 
 The steps below are mandatory to project development and understanding. They will be discussed in the next sections.
 
@@ -63,7 +63,9 @@ In this case, it is possible to changes curves on-the-fly by loading them into a
 
 ## Hardware Requirements
 
-![Pruserial485-sch.png](/img/groups/con/pruserial485/Pruserial485-sch.png)
+|![Pruserial485-sch.png](/img/groups/con/pruserial485/Pruserial485-sch.png)|
+|-|
+|**Figure 3: **|
 
 The main Controls Group hardware interface designed for BeagleBone Black, [[CON:SERIALxxCON|SERIALxxCON]][link], has all the peripherals that are needed to have the PRUserial485 interface working properly.
 
@@ -114,9 +116,9 @@ For both cases, there are ''write'' and ''read'' commands to send/get data to/fr
 
 #### Synchronized configuration
 
-![Sync_pru.jpg](/img/groups/con/pruserial485/Sync_pru.jpg)
-
-**Figure 3**:
+|![Sync_pru.jpg](/img/groups/con/pruserial485/Sync_pru.jpg)|
+|-|
+|**Figure 4**:|
 
 <br />
 
@@ -128,9 +130,10 @@ PRU is the core which will be controlling the external UART (MAX3107).
 
 Some important technical references about AM335x PRUs:
 
- [AM335x PRU-ICSS Reference Guide](https://elinux.org/images/d/da/Am335xPruReferenceGuide.pdf)
- [PRU Assembly Language Tools - User's Guide](http://www.ti.com/lit/ug/spruhv6c/spruhv6c.pdf)
- [PRU Assembly Instruction User Guide](http://www.ti.com/lit/ug/spruij2/spruij2.pdf)
+- [AM335x PRU-ICSS Reference Guide](https://elinux.org/images/d/da/Am335xPruReferenceGuide.pdf){target=_blank}
+-  [PRU Assembly Language Tools - User's Guide](http://www.ti.com/lit/ug/spruhv6c/spruhv6c.pdf){target=_blank}
+- [PRU Assembly Instruction User Guide](http://www.ti.com/lit/ug/spruij2/spruij2.pdf){target=_blank}
+{.links-list}
 
 <br />
 
@@ -143,7 +146,8 @@ Communication between PRU and Operating System is usually performed through memo
 <br />
 
 ### Source Codes
-Sources of PRU software (written in assembly language) and the corresponding system library for Linux (written in C) can be obtained from [PRUserial485 Github repository](https://github.com/lnls-sirius/pru-serial485).
+
+Sources of PRU software (written in assembly language) and the corresponding system library for Linux (written in C) can be obtained from [PRUserial485 Github repository](https://github.com/lnls-sirius/pru-serial485){target=_blank}.
 
 <br />
 
@@ -161,9 +165,9 @@ First, and more directly, comes the shared RAM. A PRU-dedicated, it is reserved 
 
 Also, there is the possibility of reserving a larger region of the external DDR memory and use it with PRU sub-systems. It comes to be useful when it is intended to store many long curve points and share them with PRU to perform synchronized adjustments. It will be discussed in the next sub-sections.
 
-![Memoria-PRUserial485.jpg](/img/groups/con/pruserial485/Memoria-PRUserial485.jpg)
-
-**Figure 4**:
+|![Memoria-PRUserial485.jpg](/img/groups/con/pruserial485/Memoria-PRUserial485.jpg =650x)|
+|-|
+|**Figure 5**:|
 
 <br />
 
@@ -225,6 +229,7 @@ Here, dealing with up to four curves is justified that Power Supplies can be all
 
 Inside DDR memory, data is allocated according to the table below.
 
+
 **Curve Block 0**
 
 | Offset (decimal) | Curve point |
@@ -238,6 +243,7 @@ Inside DDR memory, data is allocated according to the table below.
 | 09988 .. 09991 | curve1_0[6249] |
 | 09992 .. 09995 | curve2_0[6249] |
 | 09996 .. 09999 | curve3_0[6249] |
+
 
 **Curve Block 1**
 
@@ -253,6 +259,7 @@ Inside DDR memory, data is allocated according to the table below.
 | 19992 .. 19995 || curve2_1[6249] |
 | 19996 .. 19999 || curve3_1[6249] |
 
+
 **Curve Block 2**
 
 | Offset (decimal) | Curve point |
@@ -266,6 +273,7 @@ Inside DDR memory, data is allocated according to the table below.
 | 29988 .. 29991 | curve1_2[6249] |
 | 29992 .. 29995 | curve2_2[6249] |
 | 29996 .. 29999 | curve3_2[6249] |
+
 
 **Curve Block 3**
 
@@ -311,7 +319,9 @@ Texas Instruments provides a compiler (pasm) for PRU devices. As a standard, Con
 
 ***Initialization***
 
-![PRUserial485-init.png](/img/groups/con/pruserial485/PRUserial485-init.png)
+|![PRUserial485-init.png](/img/groups/con/pruserial485/PRUserial485-init.png =750x)|
+|-|
+|**Figure 6**: |
 
 <br />
 
@@ -329,7 +339,9 @@ As explained on PRU section, there is a circular buffer for incoming data. At AR
 
 When invoking init function, an independent thread is launched (which is killed when closing the interface). The task performed by this thread is copying data from shared memory to a larger buffer on ARM environment as soon as it is available. This buffer is accessed by this thread an also by the function which gets PRU data (PRUserial485_read). A semaphore is implemented in this case.
 
-![PRU-thread.PNG](/img/groups/con/pruserial485/PRU-thread.PNG)
+|![PRU-thread.PNG](/img/groups/con/pruserial485/PRU-thread.PNG)|
+|-|
+|**Figure 7**: |
 
 The functions available can be divided into three main cathegories, which will be described further:
 

@@ -2,7 +2,7 @@
 title: CON
 description: 
 published: 1
-date: 2024-05-28T15:45:46.136Z
+date: 2024-05-28T21:42:23.964Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-16T15:50:47.394Z
@@ -33,6 +33,9 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [Magnet power supplies EPICS interface](/Machine/Groups/CON/magnet_ps_epics_interface)
 - [MEEP @ Controls group's servers](/Machine/Groups/CON/meep_servers)
 - [MBTemp](/Machine/Groups/CON/mbtemp)
-- [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
+- [NTP time servers](/Machine/Groups/CON/ntp)
 - [PRUserial485](/Machine/Groups/CON/pruserial485)
+- [Pulsed magnets EPICS interface](/Machine/Groups/CON/pulsed_magnets_epics)
+- [Rack Monitoring Platform](/Machine/Groups/CON/rack_monitor)
+- [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
 {.links-list}
