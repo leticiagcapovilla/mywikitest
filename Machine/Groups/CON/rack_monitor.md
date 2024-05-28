@@ -2,7 +2,7 @@
 title: Rack Monitoring Platform
 description: 
 published: 1
-date: 2024-05-28T21:16:44.610Z
+date: 2024-05-28T21:18:30.479Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-28T21:15:58.763Z
@@ -10,11 +10,14 @@ dateCreated: 2024-05-28T21:15:58.763Z
 
 # CON: Rack Monitoring Platform
 
+<br>
+
 ## Introduction
 
-|![](/img/groups/con/rack_monitor/Prototipe_v0-4.png)|
+|![](/img/groups/con/rack_monitor/Prototipe_v0-4.png =400x)|
 |-|
 |**Figure 6**: Hardware prototype version v0.4.|
+
 
 This is a hardware and software solution for Sirius cabinets monitoring designed by [[CON:CON|LNLS Controls Group (CON)]]. It's based on [[CON:SPIxxCON|SPIxxCON]](link), a Serial Peripheral Interface Protocol (SPI) bus present on [[CON:SERIALxxCON|the main node for Sirius Controls System]] and NXP's microcontroller: FRDM-KL25Z. Since version v1.6 the microcontroller was changed to LPC1768.
 
@@ -27,17 +30,21 @@ The platform's Software includes:
 
 The project's files can be found in [Rack Monitoring Platform's GitLab repository](https://gitlab.cnpem.br/vitor.santos/racks)(available only through CNPEM's network) or in [RackMon GitHub/lnls-sirius repository](https://github.com/lnls-sirius/rack-mon).
 
+<br>
+
 ## Hardware
 
 The baseboard works as a shield for NXP's development platform and is connected to [[CON:SERIALxxCON|SERIALxxCON]] through a RJ25(6P6C) connector and cable, which contains the 4 necessary SPI buses and 2 extra buses that power the cabinet monitoring platform. The most recent version also includes a adapter for LPC1768 pinout.
 
 The microcontroller works as a Slave in the SPI communication and uses the peripherals present on the baseboard to read [[CON:Rack_Monitoring_Platform#Temperature_sensor_-_LM35|temperature]](link), [[CON:Rack_Monitoring_Platform#Temperature_and_humidity_sensor_-_DHT11|humidity]](link), [[CON:Rack_Monitoring_Platform#Voltage_Transformer|voltage]](link), [[CON:Rack_Monitoring_Platform#Electric_current_sensor_-_CST1010|electric current]](link) and [[CON:Rack_Monitoring_Platform#Magnetic_sensor_-_SM1001|magnetic]](link) sensors, so it can then provide the acquired data in [ASCII](https://en.wikipedia.org/wiki/ASCII) string format to the Master of the Serial communication (SERIALxxCON).
 
+<br>
+
 ### 6P6C Connector
 
 Even though the platform box contains a power plug and a voltage transformer, they are not used to provide energy to the baseboard. To power up the platform and enable it's [[CON:Rack_Monitoring_Platform#SPI_Protocol|serial communication]] with SERIALxxCON hardware, a Printed Circuit Board(PCB) adapter connects RJ25 plug to [[CON:SPIxxCON|SPIxxCON]](link) necessary signals:
 
-|![](/img/groups/con/rack_monitor/SPIxxCON-RJ25_adapter.jpeg)|
+|![](/img/groups/con/rack_monitor/SPIxxCON-RJ25_adapter.jpeg =350x)|
 |-|
 |**Figure 6**: SPIxxCON to 6P6C adapter.|
 
