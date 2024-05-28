@@ -2,7 +2,7 @@
 title: MBTemp
 description: 
 published: 1
-date: 2024-05-28T15:24:00.033Z
+date: 2024-05-28T15:24:50.453Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -327,4 +327,5 @@ IOC deals with two variables to each channel: Temperature and Temperature-Raw
 
 Temperature-Raw (Traw) is the value acquired from the board, linear fitted. Temperature value is calculated, based on the real quadratic equation and the value obtained from the board, which leads to:
 
-Temperature=−R0BR02B2−4AR0(0.388∗Traw+100.03−R0)2AR0Temperature = \\frac{-{R\_0}{B}\\sqrt{R\_0 ^2 B^2 - 4A R\_0 (0.388\*T\_{raw} + 100.03 - R\_0)}}{2A{R\_0}} Temperature=2AR0​−R0​BR02​B2−4AR0​(0.388∗Traw​+100.03−R0​)​​
+$$Temperature =  \frac{-{R_0}{B}\sqrt{{R_0}^2{B}^2 - 4A{R_0}\left(0.388*{T_{raw}} + 100.03 - {R_0}\right)}}{2A{R_0}}
+$$ 
