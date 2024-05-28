@@ -2,7 +2,7 @@
 title: Rack Monitoring Platform
 description: 
 published: 1
-date: 2024-05-28T21:36:33.042Z
+date: 2024-05-28T21:37:58.762Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-28T21:15:58.763Z
@@ -16,7 +16,7 @@ dateCreated: 2024-05-28T21:15:58.763Z
 
 |![](/img/groups/con/rack_monitor/Prototipe_v0-4.png =400x)|
 |-|
-|**Figure 6**: Hardware prototype version v0.4.|
+|**Figure 1**: Hardware prototype version v0.4.|
 
 
 This is a hardware and software solution for Sirius cabinets monitoring designed by [[CON:CON|LNLS Controls Group (CON)]]. It's based on [[CON:SPIxxCON|SPIxxCON]](link), a Serial Peripheral Interface Protocol (SPI) bus present on [[CON:SERIALxxCON|the main node for Sirius Controls System]] and NXP's microcontroller: FRDM-KL25Z. Since version v1.6 the microcontroller was changed to LPC1768.
@@ -46,7 +46,7 @@ Even though the platform box contains a power plug and a voltage transformer, th
 
 |![](/img/groups/con/rack_monitor/SPIxxCON-RJ25_adapter.jpeg =350x)|
 |-|
-|**Figure 6**: SPIxxCON to 6P6C adapter.|
+|**Figure 2**: SPIxxCON to 6P6C adapter.|
 
 * +5V
 * GND
@@ -77,7 +77,7 @@ Both LM35 and DHT11 sensors are connected to the board by RJ11(4P4C) connectors.
 
 |![](/img/groups/con/rack_monitor/LM35_circuit.jpeg)|
 |-|
-|**Figure 6**: LM35 circuit.|
+|**Figure 3**: LM35 circuit.|
 
 LM35 is a low-cost, yet very accurate, temperature sensor that provides a 10mV variation for every degree. It is soldered to a 1-meter serial cable that is connected to the board by one of the 4P4C connectors.
 
@@ -89,7 +89,7 @@ These small variations are amplified by one of the four operational amplifiers o
 
 |![](/img/groups/con/rack_monitor/DHT11_circuit.jpeg)|
 |-|
-|**Figure 6**: DHT11 circuit.|
+|**Figure 4**: DHT11 circuit.|
 
 DHT11 is a very popular low-cost digital humidity sensor designed by Aosong Electronics, widely used in Arduino projects, even though it's not as precise as other sensors it is very good for qualitative applications. It communicates with the microcontroller through a Single-Wire half duplex serial protocol, using requests from the microcontroller and responses from the sensor. It's circuit only needs a 5kΩ Pull-Up external resistor, and since it's used to provide humidity and temperature values near the platform box, it is soldered to a 10-centimeter serial cable which is also connected to the board by a 4P4C connector.
 
@@ -101,7 +101,7 @@ It is capable of providing humidity values from 20% to 90% with a 5% accuracy an
 
 |![](/img/groups/con/rack_monitor/Voltage_circuit.jpeg)|
 |-|
-|**Figure 6**: Voltage Transformer circuit.|
+|**Figure 5**: Voltage Transformer circuit.|
 
 Using a commercial voltage transformer the board is capable of estimating with 2% accuracy voltage values from 80V to 250V.
 
@@ -127,7 +127,7 @@ CST1010 is a reliable electric current sense transformer fabricated by Triad Mag
 
 |![](/img/groups/con/rack_monitor/CST1010-Stage2_circuit.jpeg)|
 |-|
-|**Figure 6**: Stage 2 - Analog to Digital Converter (ADC).|
+|**Figure 7**: Stage 2 - Analog to Digital Converter (ADC).|
 
 
 |PTD6| PTD7| Status |
@@ -148,12 +148,12 @@ These values are created by analyzing two digital inputs , which are generated b
 
 |![](/img/groups/con/rack_monitor/Switch_mounting.jpeg =200x)|
 |-|
-|**Figure 6**: Magnetic sensor mounting.|
+|**Figure 8**: Magnetic sensor mounting.|
 
 
 |![](/img/groups/con/rack_monitor/Sm1000.jpg =300x)|
 |-|
-|**Figure 6**: SM1001 sensor and SM1000 magnet.|
+|**Figure 9**: SM1001 sensor and SM1000 magnet.|
 
 
 SM1001 is a small magnetic sensor with one normally open electrical contact manufactured by Metaltex, even though it's not as cheap as mechanical switches it's also not as easy to break or to be damaged.
@@ -255,7 +255,7 @@ Pinout in version v1.6
 
 |![](/img/groups/con/rack_monitor/WDOG_ciruit.jpeg)|
 |-|
-|**Figure 6**: WatchDog Timer circuit.|
+|**Figure 10**: WatchDog Timer circuit.|
 
 Hardware prototype v0.6 (02/2020), is the first one with a WatchDog Timer implemented via hardware.
 
@@ -270,7 +270,7 @@ The following chart illustrates the data flow along the project: every sensor is
 
 |![](/img/groups/con/rack_monitor/Data_flowchart.png)|
 |-|
-|**Figure 6**: Data flowchart.|
+|**Figure 11**: Data flowchart.|
 
 <br>
 
@@ -303,7 +303,7 @@ The firmware for KL25Z was developed through [MBED's platform and operating syst
 
 |![](/img/groups/con/rack_monitor/CS_interruption_diagram.png)|
 |-|
-|**Figure 6**:|
+|**Figure 12**:|
 
 
 When the program starts the [[CON:Rack_Monitoring_Platform#DHT_library|DHT sensor is read and a timer is initiated]](link), the mode variables are also defined. The mode variables are used to control whether the program makes an operation inside any interruption.
@@ -311,7 +311,7 @@ When the program starts the [[CON:Rack_Monitoring_Platform#DHT_library|DHT senso
 
 |![](/img/groups/con/rack_monitor/Slave_SW_flowchart.png)|
 |-|
-|**Figure 6**: Firmware modes of operation and mode control variables.|
+|**Figure 13**: Firmware modes of operation and mode control variables.|
 
 <br>
 
@@ -475,7 +475,7 @@ In older versions, the other possible TCP/IP client developed for this project i
 
 |![](/img/groups/con/rack_monitor/GUI_sr.jpeg =350x)|
 |-|
-|**Figure 6**: Rack Room screen (old version).|
+|**Figure 14**: Rack Room screen (old version).|
 
 <br>
 
