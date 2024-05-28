@@ -2,7 +2,7 @@
 title: Rack Monitoring Platform
 description: 
 published: 1
-date: 2024-05-28T21:35:32.630Z
+date: 2024-05-28T21:36:33.042Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-28T21:15:58.763Z
@@ -513,7 +513,11 @@ The higher level of communications (TCP/IP) uses [[CON:Basic_Small_Messages_Prot
 
   `ID: 0x43     Size: 1 byte     Read-only` 
 
-Value that corresponds to 100 times the real value of current (in Amperes):    $Current = \frac{Byte}{100}$
+Value that corresponds to 100 times the real value of current (in Amperes):
+
+$$
+Current = \frac{Byte}{100}
+$$
 
 
 ### Variable: DHT temperature
@@ -549,7 +553,9 @@ In instead of using whole strings to inform the fan status, the following repres
 
 Value that corresponds to 100 times the real value of temperature measured by LM35 sensor. Can be calculated by:
 
-$ Temperature = \frac{(Byte[1] << 8) + Byte[0]}{100}$
+$$
+Temperature = \frac{(Byte[1] << 8) + Byte[0]}{100}
+$$
 
 ### Variable: Humidity
 
