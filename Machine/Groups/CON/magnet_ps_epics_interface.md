@@ -1,3 +1,13 @@
+---
+title: Magnet power supplies EPICS interface
+description: 
+published: 1
+date: 2024-05-28T15:50:01.989Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-27T20:51:55.448Z
+---
+
 # CON: Magnet power supplies EPICS interface
 
 ## Introduction
