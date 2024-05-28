@@ -2,7 +2,7 @@
 title: PRUserial485
 description: 
 published: 1
-date: 2024-05-28T21:43:55.967Z
+date: 2024-05-28T21:45:13.323Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T19:13:29.040Z
@@ -116,9 +116,9 @@ For both cases, there are ''write'' and ''read'' commands to send/get data to/fr
 
 #### Synchronized configuration
 
-![Sync_pru.jpg](/img/groups/con/pruserial485/Sync_pru.jpg)
-
-**Figure 3**:
+|![Sync_pru.jpg](/img/groups/con/pruserial485/Sync_pru.jpg)|
+|-|
+|**Figure 4**:|
 
 <br />
 
@@ -130,9 +130,10 @@ PRU is the core which will be controlling the external UART (MAX3107).
 
 Some important technical references about AM335x PRUs:
 
- [AM335x PRU-ICSS Reference Guide](https://elinux.org/images/d/da/Am335xPruReferenceGuide.pdf)
- [PRU Assembly Language Tools - User's Guide](http://www.ti.com/lit/ug/spruhv6c/spruhv6c.pdf)
- [PRU Assembly Instruction User Guide](http://www.ti.com/lit/ug/spruij2/spruij2.pdf)
+- [AM335x PRU-ICSS Reference Guide](https://elinux.org/images/d/da/Am335xPruReferenceGuide.pdf){target=_blank}
+-  [PRU Assembly Language Tools - User's Guide](http://www.ti.com/lit/ug/spruhv6c/spruhv6c.pdf){target=_blank}
+- [PRU Assembly Instruction User Guide](http://www.ti.com/lit/ug/spruij2/spruij2.pdf){target=_blank}
+{.links-list}
 
 <br />
 
