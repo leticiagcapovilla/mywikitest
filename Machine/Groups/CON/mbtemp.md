@@ -2,7 +2,7 @@
 title: MBTemp
 description: 
 published: 1
-date: 2024-05-28T15:26:18.341Z
+date: 2024-05-28T15:26:43.968Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -257,7 +257,9 @@ ID: 8, 13 and 16 Size: 2 bytes \[Byte1|Byte0\] Read/Write
 
 Moving average factor for temperature reading (performed on board). It must be in the range 0-999.
 
-α=(Byte\[1\]<<8)+Byte\[0\]\\alpha = (Byte\[1\] << 8) + Byte\[0\] α=(Byte\[1\]<<8)+Byte\[0\]
+$$
+\alpha = (Byte[1] << 8) + Byte[0]
+$$
 
 Variables are stored three times in order to guarantee data consistency after system start up.  
 Any change on any variable (ID 8, 13 or 16) will change others as well (ID 8, 13 and 16), once they refer to the same constant.
