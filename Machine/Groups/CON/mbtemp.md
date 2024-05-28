@@ -2,7 +2,7 @@
 title: MBTemp
 description: 
 published: 1
-date: 2024-05-28T15:06:24.768Z
+date: 2024-05-28T15:23:16.452Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -234,25 +234,12 @@ Once MBTemp communication protocol is based on BSMP, data acquisition and variab
 
 | ID | Variable | Access | Size (bytes) | Group ID |
 | --- | --- | --- | --- | --- |
-| 0  <br> 1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 | Channel 0 (Input 1) <br> Channel 1 (Input 2) <br> Channel 2 (Input 3) <br> Channel 3 (Input 4) <br> Channel 4 (Input 5) <br> Channel 4 (Input 5) <br> Channel 5 (Input 6) <br> Channel 6 (Input 7) <br> Channel 7 (Input 8)| R   | 2   | 0 and 1 |
-| 1   |  |
-| 2   |  |
-| 3   | |
-| 4   |  |
-| 5   |  |
-| 6   |  |
-| 7   |  |
-| 8   | Alpha 1 (a1) | R/W | 2   | 0 and 2 |
-| 9   | Angular coefficient 1 (k1) |
-| 10  | Linear coefficient 1 (b1) |
-| 11  | AD Reading Mode | 1   |
-| 12  | Reading Mode |
-| 13  | Alpha 2 (a2) | 2   |
-| 14  | Angular coefficient 2 (k2) |
-| 15  | Linear coefficient 2 (b2) |
-| 16  | Alpha 3 (a3) |
-| 17  | Angular coefficient 3 (k3) |
-| 18  | Linear coefficient 3 (b3) |
+| 0  <br> 1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6  <br>7 |  Channel 0 (Input 1) <br> Channel 1 (Input 2) <br> Channel 2 (Input 3) <br> Channel 3 (Input 4) <br> Channel 4 (Input 5) <br> Channel 5 (Input 6) <br> Channel 6 (Input 7) <br> Channel 7 (Input 8)| R   | 2   | 0 and 1 |
+| 8 <br> 9 <br> 10 | Alpha 1 (a1) <br> Angular coefficient 1 (k1) <br> Linear coefficient 1 (b1) <br> | R/W | 2 | 0 and 2 |
+|11 <br> 12 | AD Reading Mode <br> Reading Mode | R/W | 1 | 0 and 2 |
+| 13 <br> 14 <br> 15 <br> 16 <br> 17 <br> 18 | Alpha 2 (a2) <br> Angular coefficient 2 (k2) <br> Linear coefficient 2 (b2) <br> Alpha 3 (a3) <br> Angular coefficient 3 (k3) <br>  Linear coefficient 3 (b3) | R/W | 2 | 0 and 2 |
+
+<br>
 
 ### Variable: Temperature (Channels ID 0 -7)
 
@@ -261,6 +248,8 @@ ID: 0 - 7 Size: 2 bytes \[Byte1|Byte0\] Read-only
 Acquired temperature according to each channel. To get its value:
 
 Temperature=(Byte\[1\]<<8)+Byte\[0\]100Temperature = \\frac{(Byte\[1\] << 8) + Byte\[0\]}{100} Temperature=100(Byte\[1\]<<8)+Byte\[0\]​
+
+<br>
 
 ### Variable: Alpha (IDs 8, 13 and 16)
 
@@ -273,6 +262,8 @@ Moving average factor for temperature reading (performed on board). It must be i
 Variables are stored three times in order to guarantee data consistency after system start up.  
 Any change on any variable (ID 8, 13 or 16) will change others as well (ID 8, 13 and 16), once they refer to the same constant.
 
+<br>
+
 ### Variable: Angular coefficient (IDs 9, 14 and 17)
 
 ID: 9, 14 and 17 Size: 2 bytes \[Byte1|Byte0\] Read/Write
@@ -283,6 +274,8 @@ k=(Byte\[1\]<<8)+Byte\[0\]100k = \\frac{(Byte\[1\] << 8) + Byte\[0\]}{100} k=100
 
 Variables are stored three times in order to guarantee data consistency after system start up.  
 Any change on any variable (ID 9, 14 or 17) will change others as well (ID 9, 14 and 17), once they refer to the same constant.
+
+<br>
 
 ### Variable: Linear coefficient (IDs 10, 15 and 18)
 
@@ -295,6 +288,8 @@ b=(Byte\[1\]<<8)+Byte\[0\]100b = \\frac{(Byte\[1\] << 8) + Byte\[0\]}{100} b=100
 Variables are stored three times in order to guarantee data consistency after system start up.  
 Any change on any variable (ID 10, 15 or 18) will change others as well (ID 10, 15 and 18), once they refer to the same constant.
 
+<br>
+
 ### Variable: AD Reading Mode (ID 11)
 
 ID: 11 Size: 1 byte Read/Write
@@ -305,6 +300,8 @@ In order to read temperature values, it must be 0. If, for any specific reason, 
 -   1: Last ADC raw value reading
 -   2: Average from last 20 readings from one specific channel (Op Mode variable (ID 12) must not be 8)
 
+<br>
+
 ### Variable: Reading Mode (ID 12)
 
 ID: 12 Size: 1 byte Read/Write
@@ -314,11 +311,15 @@ If it is between 0 and 7, readings will be performed only in the channel correla
 
 8 IS THE DEFAULT VALUE AFTER STARTUP.
 
+<br>
+
 ## Integration to EPICS
 
 The [CON:SERIALxxCON|SERIALxxCON](/Machine/Groups/CON/mbtemp/link) board, based on Beaglebone Black Single Board Computer, will handle communication with up to 31 MBTemp boards. This SBC is the bridge between the hardware and the EPICS IOC, running on Controls Server, which publishes each temperature measured by a Pt100 sensor as a process variable.
 
 This EPICS application is [CON:Stream-IOC|Stream-IOC](/Machine/Groups/CON/mbtemp/link), a StreamDevice-based EPICS IOC developed by the Controls Group to interface to EPICS.
+
+<br>
 
 ### Linear Fit Correction
 
