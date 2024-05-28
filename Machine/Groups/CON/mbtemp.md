@@ -2,6 +2,16 @@
 title: MBTemp
 description: 
 published: 1
+date: 2024-05-28T15:44:51.495Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-28T15:44:51.495Z
+---
+
+---
+title: MBTemp
+description: 
+published: 1
 date: 2024-05-28T15:32:56.520Z
 tags: 
 editor: markdown
