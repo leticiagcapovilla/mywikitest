@@ -2,7 +2,7 @@
 title: MBTemp
 description: 
 published: 1
-date: 2024-05-28T15:28:52.426Z
+date: 2024-05-28T15:29:22.584Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -48,7 +48,9 @@ B=−5.775×10−7 ∘C−2B = -5.775 \\times 10^{-7}~^\\circ\\text{C}^{-2} B=�
 
 The solution of the quadratic equation yields the following relationship between temperature and resistance:
 
-T=−A+A2−4B(1−RTR0)2BT = \\frac{-A + \\sqrt{A^2 - 4B\\left(1 - \\frac{R\_T}{R\_0}\\right)}}{2B} T=2B−A+A2−4B(1−R0​RT​​)​​
+$$
+T = \frac{-A + \sqrt{A^2 - 4B\left(1 - \frac{R_T}{R_0}\right)}}{2B}
+$$
 
 Since *B* is relatively small, the resistance changes *almost* linearly with the temperature. Considering that most applications will be around environment temperature, a linear fit is acceptable and is what will be done by Controls Group at first.
 
