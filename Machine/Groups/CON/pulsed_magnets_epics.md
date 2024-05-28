@@ -19,67 +19,67 @@ Pulsed magnets will be interfaced by two applications:
 
 ## Pulsed magnets controller unit PVs
 
-The PVs below will be associated with each of Sirius pulsed magnets controller units. "<prefix>" is the "Sec-Sub:Dis-Dev[-Idx]" part of our [PV naming system convention](/Machine/naming_system).
+The PVs below will be associated with each of Sirius pulsed magnets controller units. "<Prefix>" is the "Sec-Sub:Dis-Dev[-Idx]" part of our [PV naming system convention](/Machine/naming_system).
 
 
-**<prefix>:Voltage-SP** - high voltage power supply output (setpoint).
+**<Prefix>:Voltage-SP** - high voltage power supply output (setpoint).
 
-**<prefix>:Voltage-RB** - high voltage power supply output (readback).
+**<Prefix>:Voltage-RB** - high voltage power supply output (readback).
 
-**<prefix>:Voltage-Mon** - high voltage power supply output (monitoring).
+**<Prefix>:Voltage-Mon** - high voltage power supply output (monitoring).
 
 
 Range of these three voltage PVs depends on the pulsed magnet, and will be defined on the proper EPICS record fields.
 
 
-**<prefix>:PwrState-Sel** - one of {Off|On} (setpoint).
+**<Prefix>:PwrState-Sel** - one of {Off|On} (setpoint).
 
 
-**<prefix>:CtrlMode-Sts** - one of {Local|Remote} (monitoring).
+**<Prefix>:CtrlMode-Sts** - one of {Local|Remote} (monitoring).
 
 
-**<prefix>:Pulse-Sel** -  one of {Off|On} (setpoint); this defines if the device will accept pulses from the timing system or not.
+**<Prefix>:Pulse-Sel** -  one of {Off|On} (setpoint); this defines if the device will accept pulses from the timing system or not.
 
 
-**<prefix>:Intlk0-Mon** - interlock signal 0 ({Fail|Normal}, monitoring).
+**<Prefix>:Intlk0-Mon** - interlock signal 0 ({Fail|Normal}, monitoring).
 
-**<prefix>:Intlk1-Mon** - interlock signal 1 ({Fail|Normal}, monitoring).
+**<Prefix>:Intlk1-Mon** - interlock signal 1 ({Fail|Normal}, monitoring).
 
-**<prefix>:Intlk2-Mon** - interlock signal 2 ({Fail|Normal}, monitoring).
+**<Prefix>:Intlk2-Mon** - interlock signal 2 ({Fail|Normal}, monitoring).
 
-**<prefix>:Intlk3-Mon** - interlock signal 3 ({Fail|Normal}, monitoring).
+**<Prefix>:Intlk3-Mon** - interlock signal 3 ({Fail|Normal}, monitoring).
 
-**<prefix>:Intlk4-Mon** - interlock signal 4 ({Fail|Normal}, monitoring).
+**<Prefix>:Intlk4-Mon** - interlock signal 4 ({Fail|Normal}, monitoring).
 
-**<prefix>:Intlk5-Mon** - interlock signal 5 ({Fail|Normal}, monitoring).
+**<Prefix>:Intlk5-Mon** - interlock signal 5 ({Fail|Normal}, monitoring).
 
-**<prefix>:Intlk6-Mon** - interlock signal 6 ({Fail|Normal}, monitoring).
-
-
-**<prefix>:Intlk0Label-Cte** - interlock signal 0 label (constant): "External"
-
-**<prefix>:Intlk1Label-Cte** - interlock signal 1 label (constant): "HVPS Overvoltage"
-
-**<prefix>:Intlk2Label-Cte** - interlock signal 2 label (constant): "HVPS Overcurrent"
-
-**<prefix>:Intlk3Label-Cte** - interlock signal 3 label (constant): "Personnel protection"
-
-**<prefix>:Intlk4Label-Cte** - interlock signal 4 label (constant): "Temperature"
-
-**<prefix>:Intlk5Label-Cte** - interlock signal 5 label (constant): "AC CPFL OFF"
-
-**<prefix>:Intlk6Label-Cte** - interlock signal 6 label (constant): "Switch Module"
+**<Prefix>:Intlk6-Mon** - interlock signal 6 ({Fail|Normal}, monitoring).
 
 
-**<prefix>:Reset-Cmd** - this PV is used to reset the controller unit.
+**<Prefix>:Intlk0Label-Cte** - interlock signal 0 label (constant): "External"
+
+**<Prefix>:Intlk1Label-Cte** - interlock signal 1 label (constant): "HVPS Overvoltage"
+
+**<Prefix>:Intlk2Label-Cte** - interlock signal 2 label (constant): "HVPS Overcurrent"
+
+**<Prefix>:Intlk3Label-Cte** - interlock signal 3 label (constant): "Personnel protection"
+
+**<Prefix>:Intlk4Label-Cte** - interlock signal 4 label (constant): "Temperature"
+
+**<Prefix>:Intlk5Label-Cte** - interlock signal 5 label (constant): "AC CPFL OFF"
+
+**<Prefix>:Intlk6Label-Cte** - interlock signal 6 label (constant): "Switch Module"
+
+
+**<Prefix>:Reset-Cmd** - this PV is used to reset the controller unit.
 
 
 There will be one control hardware shared between two pulsed magnets: storage ring on-axis and non-linear kickers. For this system, a special PV determines its mode of operation:
 
 
-**<prefix>:OpMode-Sel** - one of {OnAxis|NonLinear} operation modes (setpoint).
+**<Prefix>:OpMode-Sel** - one of {OnAxis|NonLinear} operation modes (setpoint).
 
-**<prefix>:OpMode-Sts** - one of {OnAxis|NonLinear} operation modes (readback).
+**<Prefix>:OpMode-Sts** - one of {OnAxis|NonLinear} operation modes (readback).
 
 
 Each of the other pulsed magnets will have its own control hardware.
