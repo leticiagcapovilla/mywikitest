@@ -2,7 +2,7 @@
 title: MBTemp
 description: 
 published: 1
-date: 2024-05-28T15:45:08.496Z
+date: 2024-05-28T15:47:54.449Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-28T15:44:51.495Z
@@ -254,7 +254,7 @@ Once MBTemp communication protocol is based on BSMP, data acquisition and variab
 
 ### Variable: Temperature (Channels ID 0 -7)
 
-ID: 0 - 7 Size: 2 bytes \[Byte1|Byte0\] Read-only
+`ID: 0 - 7 Size: 2 bytes \[Byte1|Byte0\] Read-only`
 
 Acquired temperature according to each channel. To get its value:
 
@@ -266,7 +266,7 @@ $$
 
 ### Variable: Alpha (IDs 8, 13 and 16)
 
-ID: 8, 13 and 16 Size: 2 bytes \[Byte1|Byte0\] Read/Write
+`ID: 8, 13 and 16 Size: 2 bytes \[Byte1|Byte0\] Read/Write`
 
 Moving average factor for temperature reading (performed on board). It must be in the range 0-999.
 
@@ -281,7 +281,7 @@ Any change on any variable (ID 8, 13 or 16) will change others as well (ID 8, 13
 
 ### Variable: Angular coefficient (IDs 9, 14 and 17)
 
-ID: 9, 14 and 17 Size: 2 bytes \[Byte1|Byte0\] Read/Write
+`ID: 9, 14 and 17 Size: 2 bytes \[Byte1|Byte0\] Read/Write`
 
 Angular coefficient for temperature calculation according to ADC value.
 
@@ -295,8 +295,8 @@ Any change on any variable (ID 9, 14 or 17) will change others as well (ID 9, 14
 <br>
 
 ### Variable: Linear coefficient (IDs 10, 15 and 18)
-
-ID: 10, 15 and 18 Size: 2 bytes \[Byte1|Byte0\] Read/Write
+`
+ID: 10, 15 and 18 Size: 2 bytes \[Byte1|Byte0\] Read/Write`
 
 Linear coefficient for temperature calculation according to ADC value.
 
@@ -311,7 +311,7 @@ Any change on any variable (ID 10, 15 or 18) will change others as well (ID 10, 
 
 ### Variable: AD Reading Mode (ID 11)
 
-ID: 11 Size: 1 byte Read/Write
+`ID: 11 Size: 1 byte Read/Write`
 
 In order to read temperature values, it must be 0. If, for any specific reason, user wants to read the last ADC raw value in variables 0 to 7, 1 should be written to "AD Reading Mode" variable. If it is desired to read the average from least 20 readings from one specific channel, variable value should be 2;
 
@@ -323,7 +323,7 @@ In order to read temperature values, it must be 0. If, for any specific reason, 
 
 ### Variable: Reading Mode (ID 12)
 
-ID: 12 Size: 1 byte Read/Write
+`ID: 12 Size: 1 byte Read/Write`
 
 This variable handles reading mode. If it is equal to 8 (default value after startup), sequential readings for all channels are performed.  
 If it is between 0 and 7, readings will be performed only in the channel correlated, without temperature conversion. ADC values will be available for reading, according to variable AD Reading Mode (ID 11). Other channels may have invalid data.
