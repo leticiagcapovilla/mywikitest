@@ -2,7 +2,7 @@
 title: MBTemp
 description: 
 published: 1
-date: 2024-05-28T15:26:43.968Z
+date: 2024-05-28T15:28:52.426Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -70,7 +70,9 @@ It is important to assure that dissipated power due to the current flowing throu
 
 As an overview in this application, implementing a digital filter eliminates noise during measurements. Temperature gradient is low and data acquisition does not need to be fast. It has been chosen to filter the values digitally using the exponential moving average law:
 
-TemperatureAverage=OldTemperatureValue∗α+NewTemperatureValue∗(1000−α)1000    (0  ≤α<1000)Temperature Average = \\frac{OldTemperatureValue\*\\alpha + NewTemperatureValue\*(1000 - \\alpha)}{1000} \\;\\; (0\\; \\leq \\alpha < 1000) TemperatureAverage=1000OldTemperatureValue∗α+NewTemperatureValue∗(1000−α)​(0≤α<1000)
+$$
+Temperature Average = \frac{OldTemperatureValue*\alpha + NewTemperatureValue*(1000 - \alpha)}{1000}  \;\; (0\; \leq \alpha < 1000)
+$$
 
 Alpha factor is user-defined and must be an integer in the range 0 - 999.  
 For MBTemp application, there will be some exceptions for this filter (explained on firmware section).
@@ -247,7 +249,9 @@ ID: 0 - 7 Size: 2 bytes \[Byte1|Byte0\] Read-only
 
 Acquired temperature according to each channel. To get its value:
 
-Temperature=(Byte\[1\]<<8)+Byte\[0\]100Temperature = \\frac{(Byte\[1\] << 8) + Byte\[0\]}{100} Temperature=100(Byte\[1\]<<8)+Byte\[0\]​
+$$
+Temperature = \frac{(Byte[1] << 8) + Byte[0]}{100}
+$$
 
 <br>
 
