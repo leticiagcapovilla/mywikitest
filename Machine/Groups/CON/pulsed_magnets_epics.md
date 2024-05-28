@@ -1,3 +1,13 @@
+---
+title: Pulsed magnets EPICS interface
+description: 
+published: 1
+date: 2024-05-28T20:35:13.095Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-28T20:34:37.473Z
+---
+
 # CON: Pulsed magnets EPICS interface
 
 ## Introduction
