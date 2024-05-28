@@ -1,0 +1,789 @@
+<!--
+title: Counting System - PRU based
+description: 
+published: 1
+date: 2024-05-27T19:07:13.634Z
+tags: 
+editor: ckeditor
+dateCreated: 2024-05-21T16:04:10.891Z
+-->
+
+<h1>CON: CountingPRU</h1>
+<p>&nbsp;</p>
+<h2>Introduction</h2>
+<p><a href="/Machine/Groups/CON.md">LNLS Controls Group</a> has designed a simple hardware solution for counting trains of pulses during a pre-defined time base. Based on Beaglebone's PRU (''Processing Real-Time Unit''), the system was first designed in order to compute data from commercial Beam Loss Monitors (BLMs) and in-house Gamma Sensors that will be installed in Sirius.</p>
+<p>The current version is capable of counting pulses from up to 8 channels and can achieve the maximum rate of 14.29MHz. The main connection to Control System Network is through an Ethernet Port, where it will also get power from Power over Ethernet (PoE) standard (IEEE 802.3af).</p>
+<p>&nbsp;</p>
+<h2>Hardware description</h2>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <figure class="image"><img src="/img/groups/con/counting_system/Diagram.jpg" alt=""></figure>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Figure 1</strong>: Diagram of stages on CountingPRU.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>The hardware is based on Beaglebone's PRU, which will count received pulses and make the counting available to main processor. To make it, some stages are necessary and them are showed on diagram beside:<br>When the Ethernet data cable entry on board, the first step is divide both electrical circuit and data, made at Power Supply Stage. In it, the circuit's power supply is provided by a Power Over Ethernet (POE) module that allows the electrical current needed for circuit operation to be carried over the Ethernet data cables, minimizing the number of cables required for hardware operations, without compromise the exchange of information.</p>
+<p>Furthermore, there are two types of interface connectors, which will be connected to the external pulsed sensors (detailed in next sections). Inside CountingPRU board, the inputs coming from sensors will be conditioned to +3.3V (BBB compatible) and will trigger the pulse detectors. Once the pulse is read by the respective PRU, the PRU will reset the pulse detector.</p>
+<p>&nbsp;</p>
+<h3>Power supply stage</h3>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <figure class="image"><img src="/img/groups/con/counting_system/RJ45-Input.png" alt=""></figure>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Figure 2</strong>: Connector RJ45, Diode Bridge and XFRMR module.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>The POE used in this version is the Ag9205-S, produced by Silvertel and has 5V output and maximun 13W of power output. This board is also resposible for powering the BLMs and Gamma Sensors with +5V, -5V and +24V. These values are obtained using DC/DC converters: VIBLSD1-S5-S5-DIP and MEV1D0512DC.</p>
+<p>Initially, both Rx (3, 6) and Tx (1,2) pins, come from RJ-45 connector, are connected on a POE XFRMR module, a Gigabit Ethernet Transformer POE, which provides the output Tx+, Tx-, Rx+ and Rx- to another RJ-45 connector, that will connet on the BeagleBone Black. The another pins of input connector and centertaps of the XFRMR module are connected in two diode bridges, that provide input voltage for the Ag9205 (Vin+ and Vin-), like figure 02.</p>
+<p>After that, the silvertel’s output is connected on two DC/DC converters, already mentioned, which will convert the output to -5V and 24V. The first DC/DC (VIBLSD1-S5-S5-DIP) is a 5V/5V converter, its +VOUT output has been grounded, changing the pin from 0V to -5V. The MEV1D0512DC converter is a DC/DC that provides -12V and +12V in its output. To get +24V of its, the output -12V also has been grounded, changing the +12V pin to +24V.</p>
+<p>On both converters has been connected an output load, because to operate them efficiently and reliably is necessary an minimum output load which must not be less than 10% of maximum load (1W on both). If the actual load is less than the specified minimum load, the output ripple may increase sharply while its efficiency and reliability will reduce greatly (See figure 03).</p>
+<p>Board typical power consumption: '''3.3 W''' (total) [[ A CONFIRMAR ]]</p>
+<p>&nbsp;</p>
+<h4><i><strong>Adjustments in the Silvertel Ag9205-S</strong></i></h4>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <figure class="image"><img src="/img/groups/con/counting_system/DC-DC.png" alt=""></figure>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Figure 3</strong>: DC/DC Converters and its outputs loads.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <figure class="image"><img src="/img/groups/con/counting_system/Ag9205.png" alt=""></figure>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Figure 4</strong>: Silvertel Ag9205 hardware configuration.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>The Ag9205-S module has two configures possible, the power and the output voltage. For this, resistors are connected between CP and ADJ pins and in/outputs. The maximum output Power can be adjusted from 3.84 W to 12.95 W and the output voltage, from 4.5V to 5.65V. Each configuration can be seen on datasheet of module.</p>
+<p>As 13W and 5V outputs are default values, both CP and ADJ pins haven’t been connected. As the minimum ouput power needs to be confugured, was added output load on Silvertel Ag9205. In this configuration, the minimum power is 0.44W, therefore, the value of output load is 50Ω. The final circuit of Ag9205 can be seen on figure 04.</p>
+<p>&nbsp;</p>
+<h3>Bergoz BLMs inputs Stage</h3>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <figure class="image"><img src="/img/groups/con/counting_system/Photdiodes.png" alt=""></figure>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Figure 5</strong>: Detail of photodiodes on BLM monitor.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>The commercial BLM (Beam Loss Monitor) is produced by Bergoz Instrumentation and is based on two photodiodes that emit photons when a charged particle passes through them.</p>
+<p>At CountingPRU, the BLM’s inputs are a double RJ-45 connector which are connected on a transformer, once that the monitor has a differential output of ±2,5V, but this signals are generate by a transformer on Bergoz’s BLM without center tap, resulting in a signal with offset. To solve this, the input differential signal was converted in a single ended signal - grounding one pin of transformer - with double of initial voltage. (See figure 05).<br>After that, the pulse switch a transistor that generates a pulse down in its collector, this pulse is inverted by a logic NOT gate, and the result can be seen at figure 06.</p>
+<p>The output signal of the logic gate is sended to a Flip-Flop D and used as clock. The objetive is to obtain a pulse with voltage compatible with BeagleBone (+3,3 V) and change it to a square wave, which will be send to BBB.</p>
+<p>&nbsp;</p>
+<h4><i><strong>Calibration of BLMs</strong></i></h4>
+<p>BLM circuits are calibrated ex-factory for a spurious count rate of 10 kHz ±800 Hz. To make it, is necessary apply a voltage of +5V via a 4.7kΩ resistor to pin ‘Enable/Disable’ of each photodiode and adjust the referent potentiometer till 9.6~10.4 kHz output. The counter has two electronic switches to this purpose, switching 5V through a resistor on each ‘Enable/Disable’ pin, controlled by four BeagleBone pins (C13, C14, C15, C16 all of them on the P9 pin bus).</p>
+<p>&nbsp;</p>
+<h4><i><strong>BLMs Interface</strong></i></h4>
+<p>This interface is specified for commercial BLMs whose outputs are differential signals.<br>There are two channels in two connectors (one channel per connector) for this topology.</p>
+<ul>
+  <li>'''Connectors:''' 2 connectors</li>
+  <li>'''Channels/connector:''' 1 channel</li>
+  <li>'''Connector type:''' RJ45 (8P8C)</li>
+  <li>'''Connector Pinout:'''</li>
+</ul>
+<p>&nbsp;</p>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Pin</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Data -</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Data +</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>+24V (10mA max)</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Enable/Disable A</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Enable/Disable B</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Ground (GND)</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>+5V (50mA max)</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>-5V (80mA max)</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>&nbsp;</p>
+<h3>LNLS Gamma inputs</h3>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <figure class="image"><img src="/img/groups/con/counting_system/GammaInput.png" alt=""></figure>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Figure 6</strong>: Gamma sensors input pulse circuit.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>On top of that, the CountingPRU also has inputs to up six gamma sensors developed in-house. The pulses coming from gamma detectors are +5V signals, therefore, after connector, the pulses switching a Flip-Flop D.<br>The use of FF is to change gamma detectors pulses to a square wave, change its voltage to 3,3V (compatible with BeagleBone) and protect the BBB inputs from high level voltage pulses. The figure 07 show how is the input circuit.<br>A resistor was also added to the Flip-Flop clock pin to increase the input impedance of the FF and pins of BeagleBone Black are connected on pins of both FF and buffer, to controlling them.</p>
+<p>&nbsp;</p>
+<h4><i><strong>Gamma Sensors Interface</strong></i></h4>
+<p>This interface is specified for mainly for in-house developed Gamma Sensors whose outputs are TTL compatible.<br>There are six channels in two connectors (three channels per connector) for this topology.</p>
+<ul>
+  <li>'''Connectors:''' 2 connectors</li>
+  <li>'''Channels/connector:''' 3 channel</li>
+  <li>'''Connector type:''' IDC Header 2x8 pitch 1.27mm (<a href="http://www.cnctech.us/productdetails.asp?ID=4168">Board Header</a> | <a href="http://www.cnctech.us/productdetails.asp?ID=3327">Cable Socket</a>)</li>
+  <li>'''Connector Pinout:'''</li>
+</ul>
+<p>&nbsp;</p>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Pin</th>
+        <th>Pin</th>
+        <th>ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>GND</td>
+        <td>1</td>
+        <td>2</td>
+        <td>Channel 1</td>
+      </tr>
+      <tr>
+        <td>GND</td>
+        <td>3</td>
+        <td>4</td>
+        <td>Channel 2</td>
+      </tr>
+      <tr>
+        <td>GND</td>
+        <td>5</td>
+        <td>6</td>
+        <td>Channel 3</td>
+      </tr>
+      <tr>
+        <td>GND</td>
+        <td>7</td>
+        <td>8</td>
+        <td>GND</td>
+      </tr>
+      <tr>
+        <td>GND</td>
+        <td>9</td>
+        <td>10</td>
+        <td>GND</td>
+      </tr>
+      <tr>
+        <td>+24V</td>
+        <td>11</td>
+        <td>12</td>
+        <td>GND</td>
+      </tr>
+      <tr>
+        <td>+5V</td>
+        <td>13</td>
+        <td>14</td>
+        <td>+5V</td>
+      </tr>
+      <tr>
+        <td>GND</td>
+        <td>15</td>
+        <td>16</td>
+        <td>GND</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>&nbsp;</p>
+<h3>Hard reset</h3>
+<p>The hard reset is responsible for ensure that, if an error occurs and the BBB doesn't respond, the system will be restarted by hardware.</p>
+<p>&nbsp;</p>
+<h3>Heart beat</h3>
+<p>The LED on the front of the board has the function of showing the user when CountingPRU has started and it is available for counting. It is controlled by a BeagleBone GPIO (P8B28). Then it will be described what the control program looks like.</p>
+<p>&nbsp;</p>
+<h3>Beaglebone Black</h3>
+<p>&nbsp;</p>
+<h3>Groupment in PRUs and counting rates</h3>
+<p>As we have both PRUs working in parallel, we separate the channels proccessing for each of them. In this way, each PRU will treat only four channels, divided according to the table below.</p>
+<p>&nbsp;</p>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <p style="text-align:center;"><strong>Type</strong></p>
+        </td>
+        <td>
+          <p style="text-align:center;"><strong>Connector #</strong></p>
+        </td>
+        <td>
+          <p style="text-align:center;"><strong>Channel #</strong></p>
+        </td>
+        <td>
+          <p style="text-align:center;"><strong>Channel Naming</strong></p>
+        </td>
+        <td>
+          <p style="text-align:center;"><strong>Treated By</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="6">
+          <p style="text-align:center;">LNLS (Gamma)</p>
+        </td>
+        <td rowspan="3">
+          <p style="text-align:center;">1</p>
+        </td>
+        <td>
+          <p style="text-align:center;">1</p>
+        </td>
+        <td>
+          <p style="text-align:center;">LNLS 1</p>
+        </td>
+        <td rowspan="4">
+          <p style="text-align:center;">PRU 1</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">2</p>
+        </td>
+        <td>
+          <p style="text-align:center;">LNLS 2</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">3</p>
+        </td>
+        <td>
+          <p style="text-align:center;">LNLS 3</p>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="3">
+          <p style="text-align:center;">2</p>
+        </td>
+        <td>
+          <p style="text-align:center;">1</p>
+        </td>
+        <td>
+          <p style="text-align:center;">LNLS 4</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">2</p>
+        </td>
+        <td>
+          <p style="text-align:center;">LNLS 5</p>
+        </td>
+        <td rowspan="4">
+          <p style="text-align:center;">PRU 0</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">3</p>
+        </td>
+        <td>
+          <p style="text-align:center;">LNLS 6</p>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <p style="text-align:center;">Commercial (BLM)</p>
+        </td>
+        <td>
+          <p style="text-align:center;">1</p>
+        </td>
+        <td>
+          <p style="text-align:center;">1</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Commercial 1</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">2</p>
+        </td>
+        <td>
+          <p style="text-align:center;">1</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Commercial 2</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>&nbsp;</p>
+<p>The maximum counting rate depends on the number of active channels in each PRU. If only one channel is used, the respective PRU can count up to 14.29MHz. However, if all the channels are used (four channels), the maximum counting rate is 10MHz.</p>
+<p>&nbsp;</p>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Active Channels</th>
+        <th>Up to [MHz]</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>14.29</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>12.50</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>11.11</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>10.00</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>&nbsp;</p>
+<h2>Software interface</h2>
+<p>In order to communicate with the designed hardware, firmware for PRUs and a library for user interface are needed. Also, once the project deals with PRUs and Beaglebone's general-purpose input/output, it is mandatory to configure its pins before running any code.</p>
+<p>All library files for boards in Sirius are available in <a href="https://gitlab.cnpem.br/patricia.nallin/counting-pru/tree/master/src/v2-3">CountingPRU Gitlab page</a> (available only through CNPEM network).</p>
+<p>&nbsp;</p>
+<h3>System library</h3>
+<p>&nbsp;</p>
+<h4>Building the library</h4>
+<p>Run the script ´library_build.sh´. This will compile PRU and host codes, install it to your Beaglebone and create a Python module to use these libraries.</p>
+<p>&nbsp;</p>
+<h4>Using the library</h4>
+<p>''Before using it''</p>
+<ol>
+  <li>Apply the Device Tree Overlay (DTO) to configure Beaglebone pins to PRU. Run <code>DTO_CountingPRU.sh</code> script.</li>
+  <li>In your python code, you can just:</li>
+</ol>
+<p>&nbsp;</p>
+<pre><code class="language-plaintext">import CountingPRU</code></pre>
+<p>&nbsp;</p>
+<h4>Available Methods</h4>
+<ul>
+  <li>Init()</li>
+</ul>
+<p>PRU initialization. Shared memory configuration and loading binaries into both PRUs.</p>
+<ul>
+  <li>Counting(time_base)</li>
+</ul>
+<p>Starts counting during time_base period, in seconds. This method will be blocking until the end of counting.<br>Returns: list of 8 itens (32-bit integer each), corresponding to a channel counter value</p>
+<ul>
+  <li>Close()</li>
+</ul>
+<p>Closes PRUs and memory mapping.</p>
+<p>&nbsp;</p>
+<h3>BSMP Socket</h3>
+<p>Standard CountingPRU application is based on a TCP/IP socket on port 5000 in order to have its IOC running remotely on a server.</p>
+<p>Protocol is defined by BSMP (<a href="https://github.com/lnls-sirius/libbsmp/">Basic Small Message Protocol</a>) and its variables and groups are defined below:</p>
+<p>&nbsp;</p>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <p style="text-align:center;"><strong>ID</strong></p>
+        </td>
+        <td>
+          <p style="text-align:center;"><strong>Variable</strong></p>
+        </td>
+        <td>
+          <p style="text-align:center;"><strong>Access</strong></p>
+        </td>
+        <td>
+          <p style="text-align:center;"><strong>Size (bytes)</strong></p>
+        </td>
+        <td>
+          <p style="text-align:center;"><strong>Group ID</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">0</p>
+        </td>
+        <td>
+          <p style="text-align:center;">TimeBase</p>
+        </td>
+        <td>
+          <p style="text-align:center;">R/W</p>
+        </td>
+        <td>
+          <p style="text-align:center;">2</p>
+        </td>
+        <td>
+          <p style="text-align:center;">---</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">1</p>
+        </td>
+        <td>
+          <p style="text-align:center;">LNLS1</p>
+        </td>
+        <td rowspan="8">
+          <p style="text-align:center;">R</p>
+        </td>
+        <td rowspan="8">
+          <p style="text-align:center;">4</p>
+        </td>
+        <td rowspan="8">
+          <p style="text-align:center;">1</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">2</p>
+        </td>
+        <td>
+          <p style="text-align:center;">LNLS2</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">3</p>
+        </td>
+        <td>
+          <p style="text-align:center;">LNLS3</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">4</p>
+        </td>
+        <td>
+          <p style="text-align:center;">LNLS4</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">5</p>
+        </td>
+        <td>
+          <p style="text-align:center;">LNLS5</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">6</p>
+        </td>
+        <td>
+          <p style="text-align:center;">LNLS6</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">7</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Commercial1</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">8</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Commercial2</p>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="4">
+          <p style="text-align:center;">9</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Inhibit A1 - bit 0</p>
+        </td>
+        <td rowspan="4">
+          <p style="text-align:center;">R/W</p>
+        </td>
+        <td rowspan="4">
+          <p style="text-align:center;">1</p>
+        </td>
+        <td rowspan="4">
+          <p style="text-align:center;">---</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">Inhibit B1 - bit 1</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">Inhibit A2 - bit 2</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">Inhibit B2 - bit 3</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">11</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Serial Number LNLS1</p>
+        </td>
+        <td rowspan="8">
+          <p style="text-align:center;">R/W</p>
+        </td>
+        <td rowspan="8">
+          <p style="text-align:center;">1</p>
+        </td>
+        <td rowspan="8">
+          <p style="text-align:center;">---</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">12</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Serial Number LNLS2</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">13</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Serial Number LNLS3</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">14</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Serial Number LNLS4</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">15</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Serial Number LNLS5</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">16</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Serial Number LNLS6</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">17</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Serial Number Commercial1</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">18</p>
+        </td>
+        <td>
+          <p style="text-align:center;">Serial Number Commercial2</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>&nbsp;</p>
+<h3>IOC</h3>
+<p>&nbsp;</p>
+<h4>Generate Averages</h4>
+<p>This program is responsible for calculating the counting averages of each gamma monitor at Sirius and modifying epics variables to show them to users.<br>For this, the program is based in get data of counting on Archiver View, using requests commands, filter the data from the json obtained and make the averages.</p>
+<p>The main program, as well as dockerfile and logs files are disposable in the gitlab repository, <a href="https://gitlab.cnpem.br/robert.polli/gamma_monitoring">here</a></p>
+<p>&nbsp;</p>
+<h3>Operator interfaces</h3>
+<p>&nbsp;</p>
+<h4>Gamma Monitoring</h4>
+<p>The Controls Group also has been developing a simple software to show some information of the counters and their sensors, in addition to having the functionality of setting its time bases. The Gamma Detectors Monitoring is divided in two parts, first is the docker container responsible for generating the averages, already mentioned, and the second is the windows that will interact with users.<br>To run the program, go to gamma_monitoring folder, at terminal, and write:<br>pydm <a href="http://main.py">main.py</a></p>
+<p>&nbsp;</p>
+<h5><i><strong>Overview</strong></i></h5>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <figure class="image"><img src="/img/groups/con/counting_system/Overview.png" alt=""></figure>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Figure 7</strong>: Buttons of Overview function.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>When the program starts, it is possible see two types of “Overview”, Counting and Pulses Average. Each one is an epics variable data group, getting from Archiver View and update every ten seconds.<br>The “Counting – Overview” button will show the last count of all gamma sensors present at Storage Ring (in pulses per second), as well as an “'''Overview of Time Bases'''” window, which has the time base information of all detectors.<br>To see data on “Pulses Average – Overview” it is necessary, first of all, select the check buttons in “'''Pulses Average'''” section whose graph the user wants to show, after that, up to four windows will be displayed.<br>In the whole overview, when the graphs are opened, it’s necessary to select at “Control of graph” menu which detectors will be displayed in the graph.</p>
+<p>&nbsp;</p>
+<h5><i><strong>Set Time Bases</strong></i></h5>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <figure class="image"><img src="/img/groups/con/counting_system/TimeBase_v2.png" alt=""></figure>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Figure 8</strong>: Set Time Bases option.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>The counts of each gamma monitor occur within a time range defined as ‘Time Base’. While this time doesn’t end, pulses come from gamma sensors are counted by CountingPRU.<br>With Gamma Monitoring program, the user can define how long this time base will be. First, choose which counter do you want to set the Time Base, after, write the value in the box (in seconds), and then, press “Set Time Base” button. It’s also possible define all the Time Bases, just select the check button ‘Set all time bases’.</p>
+<p>&nbsp;</p>
+<h5><i><strong>Plot informations</strong></i></h5>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <figure class="image"><img src="/img/groups/con/counting_system/ImagePlot.png" alt=""></figure>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Figure 9</strong>: Image showing both counter and sensor selected.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <figure class="image"><img src="/img/groups/con/counting_system/Plot.png" alt=""></figure>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Figure 10</strong>: Informations about Counter and Gamma Monitor.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>Fist, it is necessary select a sector of Storage Ring, on '''''Sector''''' box, choose one of 20 sectors of Sirius. After, '''''Counter''''' box will automatically filled with name of all counters from this sector. Next step is choose one of them, and then, one of '''''Gamma Detector''''' connected to it.<br>When a counter and a gamma monitor is chosen, some information will automatically appear about the counter and its channel:</p>
+<p>In the images, it is possible see where is both selected counter and gamma sensor;</p>
+<p>On right, it's showed the name and time base of counter;</p>
+<p>In the '''''"Gamma Detectors"''''' list, will appear all channels of counter (None means that channel it's not used) and in which is the detector selected.</p>
+<p>Below, there are two datas, the last sensor count and the name of the PV associated with the gamma monitor.</p>
+<p>Both "Time Base" and "Last Count" are configured as Epics Channel Access, in other words, it is possible reading and writing to Epics Process Variables (PVs) associated to each label, via the CA protocol, and update the Time Base and Last Count values automatically.</p>
+<p>&nbsp;</p>
+<h5><i><strong>Archiver View</strong></i></h5>
+<figure class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <figure class="image"><img src="/img/groups/con/counting_system/ArchiverButtons.png" alt=""></figure>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Figure 11</strong>: Buttons which open the Archiver View.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>The Gamma Monitoring program also has some show options for the user of graphs of last pulses count and averages, opened on Archiever View.</p>
+<p>When a counter and a sensor are selected by user and the information is displayed, a button "Counting - Archiever View" is enabled and after clicking on it, a window will open with a link to archiver of the selected gamma sensor.</p>
+<p>As well as the "Counting - Archiver View", it is possible see graphs of counts averages of each gamma monitor. This function is enabled immediately after plotting a counter, using the "Pulses Averages - Archiever View" button. Once clicked, some averages will appear for the user: "Last Day", "Last Week", "Last Two Weeks" and "Last Month", then, if the user selects a check button, on the next click it will open the average in the archiever view.</p>
+<p>&nbsp;</p>
+<h3>IPs Control software</h3>
+<p>One of the programs belonging to the "BBB-functions" have the finality of defining the IPs of the counters board. This program are responsible for setting its ip to dhcp, automatically.<br>It is executed only on boot of BeagleBone, if a Counter Board is identified by it.</p>
+<p>&nbsp;</p>
+<h4>To dhcp IP</h4>
+<p>The program responsible to define the internet protocol address of counters to dynamic ip is the "key_dhcp.py". When BeagleBone is started, the inputs pins of the gamma monitors are analyzed, if them are in a specific sequence, the counter's ip is changed.<br>The sequence required to change ip is "101010", obtained by connecting an external monostable oscillator hardware that will trigger the FF of each input.</p>
+<p>If the ip has changed to dhcp, the panel led will blink quickly, wait for the stop and the board will be ready.</p>

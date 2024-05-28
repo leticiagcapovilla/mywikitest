@@ -11,6 +11,8 @@ dateCreated: 2024-05-15T21:00:54.081Z
 # JAT content (WIP)
 Your content here
 
-## Useful Links
+## Useful links
 
-[JATOBA Intro](/Beamlines/Jatoba/jat_intro.md)
+- [JATOBA Wiki](/Beamlines/Jatoba/jat_intro)
+- [JATOBA External Site]()
+{.links-list}

@@ -2,7 +2,7 @@
 title: Virtual accelerator
 description: 
 published: 1
-date: 2024-03-05T21:51:23.088Z
+date: 2024-05-17T20:36:41.057Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T21:50:53.503Z
@@ -29,5 +29,5 @@ The VA can be started by running the `sirius-vaca.py` script, optionally passing
 
 ~~**Development and testing environment**~~
 
-~~The hla-vagrant repository contains files for setting up a development and testing environment for the VA and clients using Vagrant and SaltStack (see Setting up the development and testing environment.) ~~
+~~The hla-vagrant repository contains files for setting up a development and testing environment for the VA and clients using Vagrant and SaltStack (see Setting up the development and testing environment.)~~
 

@@ -13,4 +13,6 @@ Your content here
 
 ## Useful links
 
-[CEDRO Intro](Beamlines/Cedro/ced_intro.md)
+- [CEDRO Wiki](Beamlines/Cedro/ced_intro)
+- [CEDRO External Site](https://lnls.cnpem.br/grupos/cedro/){target=_blank}
+{.links-list}

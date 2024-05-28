@@ -11,6 +11,8 @@ dateCreated: 2024-05-15T20:43:53.895Z
 # MGN content (WIP)
 Your content here
 
-## Useful Links
+## Useful links
 
-[MOGNO Intro](/Beamlines/Mogno/mgn_intro.md)
+- [MOGNO Wiki](/Beamlines/Mogno/mgn_intro)
+- [MOGNO External Site](https://lnls.cnpem.br/grupos/mogno/){target=_blank}
+{.links-list}
