@@ -2,7 +2,7 @@
 title: Rack Monitoring Platform
 description: 
 published: 1
-date: 2024-05-28T21:18:30.479Z
+date: 2024-05-28T21:19:27.928Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-28T21:15:58.763Z
@@ -57,14 +57,17 @@ Even though the platform box contains a power plug and a voltage transformer, th
 
 The board does not consume a big amount of energy, so the first 2 power buses are enough to power the microcontroller and the peripherals, including all the sensors.
 
+<br>
+
 ### Sensors
 
 The current version is able to process data from the following sensors:
-* [[CON:Rack_Monitoring_Platform#Temperature_sensor_-_LM35|LM35]](link) temperature sensor
-* [[CON:Rack_Monitoring_Platform#Temperature_and_humidity_sensor_-_DHT11|DHT11]](link) humidity and temperature sensor
-* [[CON:Rack_Monitoring_Platform#Voltage_Transformer|Voltage transformer]](link)
-* [[CON:Rack_Monitoring_Platform#Electric_current_sensor_-_CST1010|CST1010]](link) electric current transformer
-* [[CON:Rack_Monitoring_Platform#Magnetic_sensor_-_SM1001|SM1001]](link) magnetic sensor
+- [[CON:Rack_Monitoring_Platform#Temperature_sensor_-_LM35|LM35]](link) temperature sensor
+- [[CON:Rack_Monitoring_Platform#Temperature_and_humidity_sensor_-_DHT11|DHT11]](link) humidity and temperature sensor
+- [[CON:Rack_Monitoring_Platform#Voltage_Transformer|Voltage transformer]](link)
+- [[CON:Rack_Monitoring_Platform#Electric_current_sensor_-_CST1010|CST1010]](link) electric current transformer
+- [[CON:Rack_Monitoring_Platform#Magnetic_sensor_-_SM1001|SM1001]](link) magnetic sensor
+{.links-list}
 
 Both LM35 and DHT11 sensors are connected to the board by RJ11(4P4C) connectors.
 
