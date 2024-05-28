@@ -2,7 +2,7 @@
 title: Rack Monitoring Platform
 description: 
 published: 1
-date: 2024-05-28T21:34:51.705Z
+date: 2024-05-28T21:35:32.630Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-28T21:15:58.763Z
@@ -507,6 +507,8 @@ The higher level of communications (TCP/IP) uses [[CON:Basic_Small_Messages_Prot
 |0x75| Humidity|
 |0x76| Outlet voltage  |
 
+<br>
+
 ### Variable: Fan current
 
   `ID: 0x43     Size: 1 byte     Read-only` 
@@ -527,8 +529,8 @@ Exact value of integer DHT measured temperature.
 
 In instead of using whole strings to inform the door status, the following representation values are used:
 
-*0: Door open
-*1: Door closed
+* 0: Door open
+* 1: Door closed
 
 ### Variable: Fan status
 
@@ -536,10 +538,10 @@ In instead of using whole strings to inform the door status, the following repre
 
 In instead of using whole strings to inform the fan status, the following representation values are used:
 
-*0: Fan off
-*1: Fan on
-*2: Error - Invalid value
-*3: Overload - current above safe value
+* 0: Fan off
+* 1: Fan on
+* 2: Error - Invalid value
+* 3: Overload - current above safe value
 
 ### Variable: LM35 temperature
 
