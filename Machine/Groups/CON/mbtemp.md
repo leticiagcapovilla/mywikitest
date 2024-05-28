@@ -2,7 +2,7 @@
 title: MBTemp
 description: 
 published: 1
-date: 2024-05-28T15:29:22.584Z
+date: 2024-05-28T15:29:48.632Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -42,9 +42,12 @@ Here RTR\_TRT​ is the resistance at temperature *T*, R0R\_0R0​ is the resist
 
 the constants for a Pt100 385 are:
 
-A=3.9083×10−3 ∘C−1A = 3.9083 \\times 10^{-3}~^\\circ\\text{C}^{-1} A=3.9083×10−3 ∘C−1
-
-B=−5.775×10−7 ∘C−2B = -5.775 \\times 10^{-7}~^\\circ\\text{C}^{-2} B=−5.775×10−7 ∘C−2
+$$
+A =  3.9083 \times 10^{-3}~^\circ\text{C}^{-1}
+$$
+$$
+B = -5.775 \times 10^{-7}~^\circ\text{C}^{-2}
+$$
 
 The solution of the quadratic equation yields the following relationship between temperature and resistance:
 
