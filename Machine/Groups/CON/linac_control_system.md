@@ -1,3 +1,13 @@
+---
+title: Linac control system documentation
+description: 
+published: 1
+date: 2024-05-28T15:51:51.304Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-27T19:55:47.397Z
+---
+
 # CON: Linac control system documentation
 
 ## Introduction
