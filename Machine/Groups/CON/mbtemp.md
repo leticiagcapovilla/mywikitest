@@ -2,7 +2,7 @@
 title: MBTemp
 description: 
 published: 1
-date: 2024-05-28T15:30:23.417Z
+date: 2024-05-28T15:31:29.279Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -24,7 +24,9 @@ Each MBTemp is capable of handling up to 8 Pt100 temperature sensors (2, 3 or 4-
 
 Application layer protocol for communication to MBTemp boards is [Basic Small Messages Protocol (BSMP)](/Machine/Groups/CON/bsmp.md). Each Pt100 channel is mapped into a [BSMP]((/Machine/Groups/CON/bsmp.md)) variable. BSMP variables 0 to 7 are associated to the sensor connected to modular jack 1 to 8. These variables have 2 bytes of size, and must be interpreted as an unsigned integer of 16 bits (big-endian). The temperature measurement (in Celsius degrees) is given by:
 
-Temperature=(Byte\[1\]<<8)+Byte\[0\]100Temperature = \\frac{(Byte\[1\] << 8) + Byte\[0\]}{100} Temperature=100(Byte\[1\]<<8)+Byte\[0\]​
+$$
+Temperature = \frac{(Byte[1] << 8) + Byte[0]}{100}
+$$
 
 For instance, if a [BSMP](/Machine/Groups/CON/bsmp.md) variable has a value of 2500, this corresponds to a temperature of 25.00 °C.
 
