@@ -1,3 +1,13 @@
+---
+title: Controls Group LDAP server
+description: 
+published: 1
+date: 2024-05-28T15:51:25.400Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-27T20:00:56.288Z
+---
+
 # CON: LDAP server
 
 ##  Introduction
