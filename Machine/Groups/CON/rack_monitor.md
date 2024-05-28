@@ -2,7 +2,7 @@
 title: Rack Monitoring Platform
 description: 
 published: 1
-date: 2024-05-28T21:21:28.043Z
+date: 2024-05-28T21:22:03.499Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-28T21:15:58.763Z
@@ -103,13 +103,15 @@ It is capable of providing humidity values from 20% to 90% with a 5% accuracy an
 |-|
 |**Figure 6**: Voltage Transformer circuit.|
 
-
 Using a commercial voltage transformer the board is capable of estimating with 2% accuracy voltage values from 80V to 250V.
 
 The box is connected to the cabinets power outlet using a simple AC power cord that energizes the 220:9V transformer. The reduced electric voltage is rectified by a simple diode bridge, stabilized with a 100μF electrolytic capacitor and finally reduced again by a voltage divider.
 
+<br>
 
 #### Electric current sensor - CST1010
+
+<br>
 
 ##### Stage 1 - Precision rectifier
 
@@ -119,11 +121,14 @@ The box is connected to the cabinets power outlet using a simple AC power cord t
 
 CST1010 is a reliable electric current sense transformer fabricated by Triad Magnetics with a turns ratio of 1000:1 mA. Since KL25Z is not capable of detecting electric current variations, in the first stage of the circuit the alternate electric current that comes out of the transformer is used to make a voltage source using two 1kΩ in parallel.The voltage is then rectified by a [precision rectifier](https://en.wikipedia.org/wiki/Precision_rectifier) with a voltage gain of 10x (since the average fan electric current is lesser than 0,5A), made with another one of the operational amplifiers present on LM324.
 
+<br>
+
 ##### Stage 2 - Analog to Digital Converter
 
 |![](/img/groups/con/rack_monitor/CST1010-Stage2_circuit.jpeg)|
 |-|
 |**Figure 6**: Stage 2 - Analog to Digital Converter (ADC).|
+
 
 |PTD6| PTD7| Status |
 |-|-|-|
