@@ -2,7 +2,7 @@
 title: Rack Monitoring Platform
 description: 
 published: 1
-date: 2024-05-28T21:25:54.825Z
+date: 2024-05-28T21:32:39.071Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-28T21:15:58.763Z
@@ -207,9 +207,13 @@ Pinout in versions up to v0.5
 |-|-|-|
 |RControl| PTB8| WatchDog feed (or reset) control  |
 
+<br>
+
 ### LPC1768
 
 Pinout in version v1.6
+
+**Bus Type - SPI**
 
 |Bus Name| GPIO| Description |
 |-|-|-|
@@ -218,6 +222,9 @@ Pinout in version v1.6
 |CLK| p13| Clock |
 |CS| p14| Slave Select  |
 
+
+**Bus Type - Analog Input**
+
 |Bus Name| GPIO| Description |
 |-|-|-|
 |LM35| p15| Amplified voltage correspondent to LM35 temperature |
@@ -225,6 +232,7 @@ Pinout in version v1.6
 |Fan Current| p19| Amplified, rectified and stabilized voltage from CST1010 electric current sensor |
 |GPAIn| p18| General Purpose Analog Input  |
 
+**Bus Type - Digital Input**
 
 |Bus Name| GPIO| Description |
 |-|-|-|
@@ -236,10 +244,12 @@ Pinout in version v1.6
 |GPDIn| p9| General Purpose Digital Input  |
 
 
+**Bus Type - Digital Output**
 |Bus Name| GPIO| Description |
 |-|-|-|
 |RControl| p30| WatchDog feed (or reset) control  |
 
+<br>
 
 ### WatchDog Timer
 
@@ -251,20 +261,25 @@ Hardware prototype v0.6 (02/2020), is the first one with a WatchDog Timer implem
 
 This circuit was based on 74HC123 integrated circuit, which is a dual retriggerable monostable multivibrator. When KL25z or LPC1768 is working properly, a digital output feeds the watchdog circuit with a square wave. If the microcontroller stops feeding the dog, the output goes to logic zero resetting NXP's development platform.
 
+<br>
+
 ## Software
 This platform's software consists of: KL25Z's firmware (written in C), a Python3 SPI module for BeagleBone Black (BBB), a SPI-Master/TCP-IP server (written in Python3), an EPICS Input/Output Controller (IOC) which is also a TCP-IP client and a Graphical Users Interface.
 
-The following chart illustrates the data flow along the project: every sensor is read by KL25Z, which is a slave to a [[CON:Rack_Monitoring_Platform#SPI_Protocol|SPI communication]] and answers to a BBB in a SERIALxxCON node the information it requests. The BBB can them finally send the information to a TCP-IP client through sockets.
+The following chart illustrates the data flow along the project: every sensor is read by KL25Z, which is a slave to a [CON:Rack_Monitoring_Platform#SPI_Protocol|SPI communication](link) and answers to a BBB in a SERIALxxCON node the information it requests. The BBB can them finally send the information to a TCP-IP client through sockets.
 
 |![](/img/groups/con/rack_monitor/Data_flowchart.png)|
 |-|
 |**Figure 6**: Data flowchart.|
 
+<br>
 
 ### SPI Protocol
+
 [Serial Peripheral Interface or SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface) is, in few words, a full-duplex synchronous serial communication protocol used for short-distance communication. It uses a Master-Slave structure and needs 4 wires to communicate: Master Output Slave Input (MOSI), Master Input Slave Output (MISO), Clock (CLK) and Slave Select (CS).
 
 In this monitoring platform a SPI protocol is used to send the information from KL25Z (working as Slave) to the BBB (working as Master) in a request-response system, with 1 byte requests from the Master and 10 bytes responses from the Slave, each byte sent one activation of CS at a time. These bytes are [ASCII coded characters](https://en.wikipedia.org/wiki/ASCII).
+
 
 |Character| ASCII correspondent (Hexadecimal)| Request |
 |-|-|-|
@@ -280,6 +295,8 @@ In this monitoring platform a SPI protocol is used to send the information from 
 
 Every information flowing through this protocol is treated as a string and no parity bit or byte is implemented. Instead, BBB uses a filter function that verifies if the measurement unit is correct for the requested information. For example, if the request is the character 't' for LM35 temperature, it expects to get "oC"  in the end of the string that was answered.
 
+<br>
+
 ### KL25Z Firmware
 
 The firmware for KL25Z was developed through [MBED's platform and operating system](https://os.mbed.com/platforms/KL25Z/) in C programming language and is Interrupt based. It has 3 modes of operation: [[CON:Rack_Monitoring_Platform#Read_Mode|Read Mode]](link) (or idle mode), [[CON:Rack_Monitoring_Platform#Buffer_Copy|Buffer Copy]](link) and [[CON:Rack_Monitoring_Platform#Response_Mode|Response Mode]](link). It switches through these modes when an interruption happens on pin PTD4, which is electrically connected to the SPI CS bus (PTC4), in other words, it switches from mode to mode every time the Master reads or writes in the SPI protocol.
@@ -288,11 +305,15 @@ The firmware for KL25Z was developed through [MBED's platform and operating syst
 |-|
 |**Figure 6**:|
 
+
 When the program starts the [[CON:Rack_Monitoring_Platform#DHT_library|DHT sensor is read and a timer is initiated]](link), the mode variables are also defined. The mode variables are used to control whether the program makes an operation inside any interruption.
+
 
 |![](/img/groups/con/rack_monitor/Slave_SW_flowchart.png)|
 |-|
 |**Figure 6**: Firmware modes of operation and mode control variables.|
+
+<br>
 
 #### Read Mode
 
@@ -300,11 +321,15 @@ This is the main thread of the program, an unconditional loop where no arithmeti
 
 The program exits this mode when a rise interruption happens, it stores the request set by the SPI master and enters Buffer Copy.
 
+<br>
+
 #### Buffer Copy
 
 This mode of operation is a switch-case conditional inside the main thread of the program. It compares the request stored previously in Read Mode with [[|CON:Rack_Monitoring_Platform#SPI_Protocol|the known SPI requests]], case it is a valid request it reads the sensor to which the information was requested, formats this data as a string, copies the string characters to a 10-byte integer response buffer and finally enters Response Mode.
 
 Case the request stored is not a valid request it switches back to Read Mode.
+
+<br>
 
 #### Response Mode
 
@@ -312,14 +337,19 @@ Inside the rise interruption function is where this mode of operation works. It 
 
 After the whole information is sent it returns to idle mode and awaits a next request.
 
+<br>
+
 #### DHT library
 
 A public library was used to read Aosong's sensor but it needs a 5 second gap between requisitions. To prevent any troubles, a timer is used to block the sensor to be read case the 5 seconds did not pass.
 
+<br>
 
 ### LPC1768 Firmware
 
 The newest version of RackMon uses LPC1768 microcontroller in instead of KL25Z. This microcontroller was also programmed in C language using MBed development interface, but it operates with no parallel threads. WatchDog feeding, SPI command receiving, buffer copy and SPI response are all done through the main loop.
+
+<br>
 
 ### SPI-Master/TCP-IP server
 
@@ -329,27 +359,36 @@ The Python3 program running in a BBB to communicate with the baseboard and provi
 
 * the second one, the TCP/IP server, opens one connection to port 5006, where the connected devices can request the information by using the [[CON:Rack_Monitoring_Platform#BSMP_Entities|BSMP entities specified further in this project]]. Currently this connection is used by [[CON:Sirius_control_system_servers|the Sirius control system servers]] to acquire the data and turn this information into EPICs Process Variables.
 
+<br>
 
 #### BBB Configuration
 
 Whilst SERIALxxCON can't yet automatically identify the baseboard, it needs to be manually configured by running the following commands via SSH:
 
 * Configure the SPI buses
- $ config-pin P9_17 spi_cs
- $ config-pin P9_21 spi
- $ config-pin P9_18 spi
- $ config-pin P9_22 spi_sclk
-<section end=systemUpgrade />
+
+```
+$ config-pin P9_17 spi_cs
+$ config-pin P9_21 spi
+$ config-pin P9_18 spi
+$ config-pin P9_22 spi_sclk
+```
 
 * Write the previous commands on `/etc/rc.local` if desired
 
 * Stop bbb-function
- $ systemctl stop bbb-function
-<section end=systemUpgrade />
+
+```
+$ systemctl stop bbb-function
+```
 
 * Disable bbb-function if desired
- $ systemctl disable bbb-function
-<section end=systemUpgrade />
+
+```
+$ systemctl disable bbb-function
+```
+
+<br>
 
 #### Python3 module
 
@@ -411,6 +450,8 @@ Returns supply voltage value
 
 Returns the board version if version is v1.6 or higher.
 
+<br>
+
 ### EPICS-Input/Output Controller
 
 Runs o Control System Servers, requesting data through TCP-IP to the BBB that controls the baseboard and then converts the information into EPICS Process Variables. The program connects to every BBB registered as a baseboard owner.
@@ -418,28 +459,25 @@ Runs o Control System Servers, requesting data through TCP-IP to the BBB that co
 The Current PV names are:
 
 - IA-XY:CO-LM35:Temperature-Mon
-
 - IA-XY:CO-DHT:Temperature-Mon
-
 - IA-XY:CO-DHT:Humidity-Mon
-
 - IA-XY:CO-FrontDoor:Status-Mon
-
 - IA-XY:CO-BackDoor:Status-Mon
-
 - IA-XY:CO-Fan:Status-Mon
-
 - IA-XY:CO-Fan:Current-Mon
-
 - IA-XY:CO-Outlet:Voltage-Mon
+
+<br>
 
 ### Graphical User Interface
 
 In older versions, the other possible TCP/IP client developed for this project is a Graphical User Interface, which shows the current information per rack room. In more recent versions, the GUI is based on PyDM, a EPICS client, so the software does not need to connect to every baseboard-owner individually, it gets the value directly from the PV.
 
-|![](/img/groups/con/rack_monitor/GUI_sr.jpeg)|
+|![](/img/groups/con/rack_monitor/GUI_sr.jpeg =350x)|
 |-|
 |**Figure 6**: Rack Room screen (old version).|
+
+<br>
 
 ## BSMP Entities
 The higher level of communications (TCP/IP) uses [[CON:Basic_Small_Messages_Protocol_(BSMP)|Basic Small Messages Protocol(BSMP)]].
