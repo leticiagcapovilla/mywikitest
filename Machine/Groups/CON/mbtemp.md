@@ -2,7 +2,7 @@
 title: MBTemp
 description: 
 published: 1
-date: 2024-05-28T15:29:48.632Z
+date: 2024-05-28T15:30:23.417Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-27T21:20:33.868Z
@@ -36,9 +36,11 @@ Pt100 is a resistance temperature detector (RTD) made of platinum (Pt) having a 
 
 The relation between temperature and resistance is given by the Callendar-Van Dusen equation, for positive temperatures:
 
-RT=R0\[1+AT+BT2\]  (0  ∘C≤T<850  ∘C)R\_T = R\_0 \\left\[ 1 + AT + BT^2 \\right\] \\; (0\\;{}^{\\circ}\\mathrm{C} \\leq T < 850\\;{}^{\\circ}\\mathrm{C}) RT​=R0​\[1+AT+BT2\](0∘C≤T<850∘C)
+$$
+R_T = R_0 \left[ 1 + AT + BT^2 \right] \; (0\;{}^{\circ}\mathrm{C} \leq T < 850\;{}^{\circ}\mathrm{C})
+$$
 
-Here RTR\_TRT​ is the resistance at temperature *T*, R0R\_0R0​ is the resistance at 0 °C.
+Here $R_T$ is the resistance at temperature *T*, R0R\_0R0​ is the resistance at 0 °C.
 
 the constants for a Pt100 385 are:
 
