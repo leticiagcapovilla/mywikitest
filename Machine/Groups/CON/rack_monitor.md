@@ -2,7 +2,7 @@
 title: Rack Monitoring Platform
 description: 
 published: 1
-date: 2024-05-28T21:37:58.762Z
+date: 2024-05-28T21:41:12.147Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-28T21:15:58.763Z
@@ -19,7 +19,7 @@ dateCreated: 2024-05-28T21:15:58.763Z
 |**Figure 1**: Hardware prototype version v0.4.|
 
 
-This is a hardware and software solution for Sirius cabinets monitoring designed by [[CON:CON|LNLS Controls Group (CON)]]. It's based on [[CON:SPIxxCON|SPIxxCON]](link), a Serial Peripheral Interface Protocol (SPI) bus present on [[CON:SERIALxxCON|the main node for Sirius Controls System]] and NXP's microcontroller: FRDM-KL25Z. Since version v1.6 the microcontroller was changed to LPC1768.
+This is a hardware and software solution for Sirius cabinets monitoring designed by [CON:CON|LNLS Controls Group (CON)](link). It's based on [[CON:SPIxxCON|SPIxxCON]](link), a Serial Peripheral Interface Protocol (SPI) bus present on [CON:SERIALxxCON|the main node for Sirius Controls System](link) and NXP's microcontroller: FRDM-KL25Z. Since version v1.6 the microcontroller was changed to LPC1768.
 
 The designed board can provide values for temperature, humidity, outlet supply voltage, fan electric current consumption and door status inside Sirius Control System cabinet.
 
@@ -28,21 +28,21 @@ The platform's Software includes:
 * Graphical User Interface (GUI) with current values
 * EPICS - Archiving Interface
 
-The project's files can be found in [Rack Monitoring Platform's GitLab repository](https://gitlab.cnpem.br/vitor.santos/racks)(available only through CNPEM's network) or in [RackMon GitHub/lnls-sirius repository](https://github.com/lnls-sirius/rack-mon).
+The project's files can be found in [Rack Monitoring Platform's GitLab repository](https://gitlab.cnpem.br/vitor.santos/racks){target=_blank}(available only through CNPEM's network) or in [RackMon GitHub/lnls-sirius repository](https://github.com/lnls-sirius/rack-mon){target=_blank}.
 
 <br>
 
 ## Hardware
 
-The baseboard works as a shield for NXP's development platform and is connected to [[CON:SERIALxxCON|SERIALxxCON]] through a RJ25(6P6C) connector and cable, which contains the 4 necessary SPI buses and 2 extra buses that power the cabinet monitoring platform. The most recent version also includes a adapter for LPC1768 pinout.
+The baseboard works as a shield for NXP's development platform and is connected to [CON:SERIALxxCON|SERIALxxCON](link) through a RJ25(6P6C) connector and cable, which contains the 4 necessary SPI buses and 2 extra buses that power the cabinet monitoring platform. The most recent version also includes a adapter for LPC1768 pinout.
 
-The microcontroller works as a Slave in the SPI communication and uses the peripherals present on the baseboard to read [[CON:Rack_Monitoring_Platform#Temperature_sensor_-_LM35|temperature]](link), [[CON:Rack_Monitoring_Platform#Temperature_and_humidity_sensor_-_DHT11|humidity]](link), [[CON:Rack_Monitoring_Platform#Voltage_Transformer|voltage]](link), [[CON:Rack_Monitoring_Platform#Electric_current_sensor_-_CST1010|electric current]](link) and [[CON:Rack_Monitoring_Platform#Magnetic_sensor_-_SM1001|magnetic]](link) sensors, so it can then provide the acquired data in [ASCII](https://en.wikipedia.org/wiki/ASCII) string format to the Master of the Serial communication (SERIALxxCON).
+The microcontroller works as a Slave in the SPI communication and uses the peripherals present on the baseboard to read [CON:Rack_Monitoring_Platform#Temperature_sensor_-_LM35|temperature](link), [CON:Rack_Monitoring_Platform#Temperature_and_humidity_sensor_-_DHT11|humidity](link), [CON:Rack_Monitoring_Platform#Voltage_Transformer|voltage](link),[CON:Rack_Monitoring_Platform#Electric_current_sensor_-_CST1010|electric current](link) and [CON:Rack_Monitoring_Platform#Magnetic_sensor_-_SM1001|magnetic](link) sensors, so it can then provide the acquired data in [ASCII](https://en.wikipedia.org/wiki/ASCII){target=_blank} string format to the Master of the Serial communication (SERIALxxCON).
 
 <br>
 
 ### 6P6C Connector
 
-Even though the platform box contains a power plug and a voltage transformer, they are not used to provide energy to the baseboard. To power up the platform and enable it's [[CON:Rack_Monitoring_Platform#SPI_Protocol|serial communication]] with SERIALxxCON hardware, a Printed Circuit Board(PCB) adapter connects RJ25 plug to [[CON:SPIxxCON|SPIxxCON]](link) necessary signals:
+Even though the platform box contains a power plug and a voltage transformer, they are not used to provide energy to the baseboard. To power up the platform and enable it's [CON:Rack_Monitoring_Platform#SPI_Protocol|serial communication](link) with SERIALxxCON hardware, a Printed Circuit Board(PCB) adapter connects RJ25 plug to [[CON:SPIxxCON|SPIxxCON]](link) necessary signals:
 
 |![](/img/groups/con/rack_monitor/SPIxxCON-RJ25_adapter.jpeg =350x)|
 |-|
@@ -81,7 +81,7 @@ Both LM35 and DHT11 sensors are connected to the board by RJ11(4P4C) connectors.
 
 LM35 is a low-cost, yet very accurate, temperature sensor that provides a 10mV variation for every degree. It is soldered to a 1-meter serial cable that is connected to the board by one of the 4P4C connectors.
 
-These small variations are amplified by one of the four operational amplifiers on LM324, working as a [non-inverting amplifier](https://en.wikipedia.org/wiki/Operational_amplifier#Non-inverting_amplifier) with an approximate 3x voltage gain, enabling getting final temperature values from 0°C up to approximately 82°C.
+These small variations are amplified by one of the four operational amplifiers on LM324, working as a [non-inverting amplifier](https://en.wikipedia.org/wiki/Operational_amplifier#Non-inverting_amplifier){target=_blank} with an approximate 3x voltage gain, enabling getting final temperature values from 0°C up to approximately 82°C.
 
 <br>
 
@@ -119,7 +119,7 @@ The box is connected to the cabinets power outlet using a simple AC power cord t
 |-|
 |**Figure 6**: Stage 1 - Precision rectifier.|
 
-CST1010 is a reliable electric current sense transformer fabricated by Triad Magnetics with a turns ratio of 1000:1 mA. Since KL25Z is not capable of detecting electric current variations, in the first stage of the circuit the alternate electric current that comes out of the transformer is used to make a voltage source using two 1kΩ in parallel.The voltage is then rectified by a [precision rectifier](https://en.wikipedia.org/wiki/Precision_rectifier) with a voltage gain of 10x (since the average fan electric current is lesser than 0,5A), made with another one of the operational amplifiers present on LM324.
+CST1010 is a reliable electric current sense transformer fabricated by Triad Magnetics with a turns ratio of 1000:1 mA. Since KL25Z is not capable of detecting electric current variations, in the first stage of the circuit the alternate electric current that comes out of the transformer is used to make a voltage source using two 1kΩ in parallel.The voltage is then rectified by a [precision rectifier](https://en.wikipedia.org/wiki/Precision_rectifier){target=_blank} with a voltage gain of 10x (since the average fan electric current is lesser than 0,5A), made with another one of the operational amplifiers present on LM324.
 
 <br>
 
@@ -140,7 +140,7 @@ CST1010 is a reliable electric current sense transformer fabricated by Triad Mag
 
 When being used to monitor Controls Group cabinets, the baseboard also provides ternary information about the fan status: On, Off or Overload. The last one informing if the fan is consuming more electric current than the usual, which can result in long term problems.
 
-These values are created by analyzing two digital inputs , which are generated by the remaining two modules of LM324 Operational Amplifiers working as an [ADC](https://en.wikipedia.org/wiki/Analog-to-digital_converter).
+These values are created by analyzing two digital inputs , which are generated by the remaining two modules of LM324 Operational Amplifiers working as an [ADC](https://en.wikipedia.org/wiki/Analog-to-digital_converter){target=_blank}.
 
 <br>
 
@@ -276,9 +276,9 @@ The following chart illustrates the data flow along the project: every sensor is
 
 ### SPI Protocol
 
-[Serial Peripheral Interface or SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface) is, in few words, a full-duplex synchronous serial communication protocol used for short-distance communication. It uses a Master-Slave structure and needs 4 wires to communicate: Master Output Slave Input (MOSI), Master Input Slave Output (MISO), Clock (CLK) and Slave Select (CS).
+[Serial Peripheral Interface or SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface){target=_blank} is, in few words, a full-duplex synchronous serial communication protocol used for short-distance communication. It uses a Master-Slave structure and needs 4 wires to communicate: Master Output Slave Input (MOSI), Master Input Slave Output (MISO), Clock (CLK) and Slave Select (CS).
 
-In this monitoring platform a SPI protocol is used to send the information from KL25Z (working as Slave) to the BBB (working as Master) in a request-response system, with 1 byte requests from the Master and 10 bytes responses from the Slave, each byte sent one activation of CS at a time. These bytes are [ASCII coded characters](https://en.wikipedia.org/wiki/ASCII).
+In this monitoring platform a SPI protocol is used to send the information from KL25Z (working as Slave) to the BBB (working as Master) in a request-response system, with 1 byte requests from the Master and 10 bytes responses from the Slave, each byte sent one activation of CS at a time. These bytes are [ASCII coded characters](https://en.wikipedia.org/wiki/ASCII){target=_blank}.
 
 
 |Character| ASCII correspondent (Hexadecimal)| Request |
@@ -299,14 +299,14 @@ Every information flowing through this protocol is treated as a string and no pa
 
 ### KL25Z Firmware
 
-The firmware for KL25Z was developed through [MBED's platform and operating system](https://os.mbed.com/platforms/KL25Z/) in C programming language and is Interrupt based. It has 3 modes of operation: [[CON:Rack_Monitoring_Platform#Read_Mode|Read Mode]](link) (or idle mode), [[CON:Rack_Monitoring_Platform#Buffer_Copy|Buffer Copy]](link) and [[CON:Rack_Monitoring_Platform#Response_Mode|Response Mode]](link). It switches through these modes when an interruption happens on pin PTD4, which is electrically connected to the SPI CS bus (PTC4), in other words, it switches from mode to mode every time the Master reads or writes in the SPI protocol.
+The firmware for KL25Z was developed through [MBED's platform and operating system](https://os.mbed.com/platforms/KL25Z/){target=_blank} in C programming language and is Interrupt based. It has 3 modes of operation: [CON:Rack_Monitoring_Platform#Read_Mode|Read Mode](link) (or idle mode), [CON:Rack_Monitoring_Platform#Buffer_Copy|Buffer Copy](link) and [CON:Rack_Monitoring_Platform#Response_Mode|Response Mode](link). It switches through these modes when an interruption happens on pin PTD4, which is electrically connected to the SPI CS bus (PTC4), in other words, it switches from mode to mode every time the Master reads or writes in the SPI protocol.
 
 |![](/img/groups/con/rack_monitor/CS_interruption_diagram.png)|
 |-|
 |**Figure 12**:|
 
 
-When the program starts the [[CON:Rack_Monitoring_Platform#DHT_library|DHT sensor is read and a timer is initiated]](link), the mode variables are also defined. The mode variables are used to control whether the program makes an operation inside any interruption.
+When the program starts the [CON:Rack_Monitoring_Platform#DHT_library|DHT sensor is read and a timer is initiated](link), the mode variables are also defined. The mode variables are used to control whether the program makes an operation inside any interruption.
 
 
 |![](/img/groups/con/rack_monitor/Slave_SW_flowchart.png)|
@@ -325,7 +325,7 @@ The program exits this mode when a rise interruption happens, it stores the requ
 
 #### Buffer Copy
 
-This mode of operation is a switch-case conditional inside the main thread of the program. It compares the request stored previously in Read Mode with [[|CON:Rack_Monitoring_Platform#SPI_Protocol|the known SPI requests]], case it is a valid request it reads the sensor to which the information was requested, formats this data as a string, copies the string characters to a 10-byte integer response buffer and finally enters Response Mode.
+This mode of operation is a switch-case conditional inside the main thread of the program. It compares the request stored previously in Read Mode with [|CON:Rack_Monitoring_Platform#SPI_Protocol|the known SPI requests](link), case it is a valid request it reads the sensor to which the information was requested, formats this data as a string, copies the string characters to a 10-byte integer response buffer and finally enters Response Mode.
 
 Case the request stored is not a valid request it switches back to Read Mode.
 
@@ -357,7 +357,7 @@ The Python3 program running in a BBB to communicate with the baseboard and provi
 
 * the first one, the SPI Master, sends requests and reads every information from the baseboard (voltage, temperature, humidity,etc...), filters the data by verifying if the last character is the correct measurement unit for the requested information and stores this strings in global variables.
 
-* the second one, the TCP/IP server, opens one connection to port 5006, where the connected devices can request the information by using the [[CON:Rack_Monitoring_Platform#BSMP_Entities|BSMP entities specified further in this project]]. Currently this connection is used by [[CON:Sirius_control_system_servers|the Sirius control system servers]] to acquire the data and turn this information into EPICs Process Variables.
+* the second one, the TCP/IP server, opens one connection to port 5006, where the connected devices can request the information by using the [CON:Rack_Monitoring_Platform#BSMP_Entities|BSMP entities specified further in this project](link). Currently this connection is used by [CON:Sirius_control_system_servers|the Sirius control system servers](link) to acquire the data and turn this information into EPICs Process Variables.
 
 <br>
 
