@@ -37,5 +37,6 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [PRUserial485](/Machine/Groups/CON/pruserial485)
 - [Pulsed magnets EPICS interface](/Machine/Groups/CON/pulsed_magnets_epics)
 - [Rack Monitoring Platform](/Machine/Groups/CON/rack_monitor)
+- [Radiation Protection EPICS Interface](/Machine/Groups/CON/rad_protec_epics_interface)
 - [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
 {.links-list}
