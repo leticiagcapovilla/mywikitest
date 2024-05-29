@@ -41,5 +41,6 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [Radiation Protection Software Supervisor](/Machine/Groups/CON/rad_protec_software_superv)
 - [ RF systems servers](/Machine/Groups/CON/rf_system_servers)
 - [SERIALxxCON](/Machine/Groups/CON/serialxxcon)
+- [SIMAR](/Machine/Groups/CON/simar)
 - [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
 {.links-list}
