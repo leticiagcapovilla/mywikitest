@@ -2,7 +2,7 @@
 title: simar
 description: 
 published: 1
-date: 2024-06-03T15:46:40.047Z
+date: 2024-06-03T15:48:26.068Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-29T15:59:54.692Z
@@ -244,7 +244,7 @@ To read the values of the digital data, it is necessary to first load the read r
 
 Then, the sequence to read the digital data will be:
 
-1. Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 0 1 0 ](LSB)*** (Load read register)
+1. Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 0 1 0 ](LSB)***(Load read register)
 
 2. Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 0 1 1 ](LSB)*** (Enable register)
 
