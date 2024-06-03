@@ -1,8 +1,22 @@
+---
+title: Sirius control system servers
+description: 
+published: 1
+date: 2024-06-03T19:57:50.489Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-03T19:49:45.993Z
+---
+
 # CON: Sirius control system servers
+
+<br>
 
 ##  Introduction 
 
 This page describes the servers and workstations which will be used to deploy our main applications, such as the [alarm server](/Machine/Groups/CON/control_beast) and [variable archiver](/Machine/Groups/CON/control_archiver).
+
+<br>
 
 ##  Hardware description 
 
@@ -41,7 +55,11 @@ The two workstations, also bought from Supermicro, have more modest features:
 |Graphics Card| 1| Nvidia Quadro M2000 |
 |SAS HBA| 1| Supermicro 12Gb/s Eight-Port SAS Internal Host Bus Adapter 
 
+<br>
+
 ##  Software description 
+
+<br>
 
 ###  Cluster infrastructure 
 
@@ -55,9 +73,13 @@ Besides distributing the available storage among the servers, the deployment of 
 
 From now on, we are going to refer to the machines by their configured hostnames. The servers are named `CA-RaCtrl:CO-Srv-1` and `LA-RaCtrl:CO-Srv-1` and are connected to the switches from the connectiviry and LINAC areas via a dedicated VLAN in other to prevent big latency in their communication exchanges.This latter is the main cause of performance degradation in network filesystems, so maintaining a dedicated channel between them is essencial for the good operation of GlusterFS or Ceph. One of the workstations, named `TA-TiRack:CO-FWSrv-1`, integrates the cluster to work as manager (for Docker Swarm) and as a volume arbitrer (for GlusterFS).  The second workstation `con-workst2` is currently being used in UVX's operation to host the services that will be used in Sirius too. This machine is probably going to be moved to our cluster once that UVX is no longer in operation. The image displayed on the right summarizes our small cloud infrastructure.
 
+<br>
+
 ###  Servers 
 
 The next subsections describe the settings present in the controls group servers. Both of them are set up identically, since they are part of the same cluster. To append new hosts to the cluster, the subsections related to GlusterFS (or Ceph) and [[CON:Sirius_control_system_servers#Docker|Docker Swarm]] should be followed.
+
+<br>
 
 ####  Status Monitoring 
 
@@ -66,6 +88,8 @@ The next subsections describe the settings present in the controls group servers
 |**Figure 3**: OPI interface for monitoring the servers parameters.|
 
 An [input/output controller](http://git.cnpem.br/gustavo.pinton/supermicro-ioc){target=_blank} (available only inside the campus network) was developed in order to monitor the main parameters of the servers, such as temperatures and total input power consumed. An OPI interface was also designed, according the figure to the right.
+
+<br>
 
 ####  Operating System 
 
@@ -85,6 +109,8 @@ sdf                                      8:80   0 447.1G  0 disk
   └─centos_ca--ractrl--co--srv--1-home 253:2    0   392G  0 lvm  /home
 ```
 
+<br>
+
 ####  Docker 
 
 Independently of the container management tool used, i.e., [[CON:Sirius_control_system_servers#Docker_Swarm|Docker Swarm]] or [[CON:Sirius_control_system_servers#Kubernetes|Kubernetes]] !!!, both need the Docker engine to work properly.
@@ -100,11 +126,15 @@ The complete list of applications which will be launched in containers is shown 
 * [[CON:control-olog|Logging system]]
 * [[CON:Git_repository|Internal Gitlab system]]
 
+<br>
+
 ####  Container orchestration 
 
 We intend to support both Docker Swarm and Kubernetes to manage the containers deployment and scaling. The following subsections provide a guide to set them up.
 
 For now, due to its configuration simplicity, only Docker Swarm was tested with our applications.
+
+<br>
 
 #####  Docker Swarm 
 
@@ -157,9 +187,13 @@ For information about the services deployment process, refer to the documentatio
 
 Services listed above can be accessed from any of the IP addresses currently associated with the machines, which are `10.0.6.44`, `10.0.6.48` and `10.0.6.57`.
 
+<br>
+
 #####  Kubernetes 
 
 As `kubeadm` is still in beta stage !!! <ref name="kubeadm">https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/</ref>, we chose to wait a little longer before setting everything up.
+
+<br>
 
 ####  Distributed Network Filesystem 
 
@@ -167,11 +201,15 @@ Two distributed filesystems were considered for our cluster infrastructure. Unti
 
 Some blogs discuss the advantages and disadvantages of these systems, arguing the use of one above the another. Our group's idea regarding this subject is to test both and verify each one is better suited for the Sirius' needs.
 
+<br>
+
 #####  GlusterFS 
 
 GlusterFS is a scalable network filesystem suitable for data-intensive tasks such as cloud storage and media streaming. Despite being an open-source project, GlusterFS is maintained and developed by Redhat as it constitutes one of the commercial solutions (the other is Ceph) of the company for distributed network filesystems. Besides, GlusterFS is fairly used in Facebook's data clusters !!! <ref name="facebook">https://www.socallinuxexpo.org/scale/14x/presentations/scaling-glusterfs-facebook</ref><ref name=facebook2>http://blog.gluster.org/scaling-glusterfs-facebook/</ref>.
 
 For a complete overview of the GlusterFS' architecture, refer to this [guide](http://docs.gluster.org/en/latest/Quick-Start-Guide/Architecture/){target=_blank}. From this point on, it's assumed that the user understands the concepts of GlusterFS volumes and bricks.
+
+<br>
 
 ######  Installation 
 
@@ -218,6 +256,8 @@ $ sudo systemctl disable firewalld.service
 Repeat this procedure for all nodes in the cluster.
 
 '''Reminder:''' If you intend to use GlusterFS with a SELinux distribution such as CentOS, remember to set the policy to permissive!
+
+<br>
 
 ######  Peer connection 
 
@@ -267,52 +307,41 @@ An entry can be appended into `/etc/fstab` to mount the volume after a server bo
 
 In both cases, make sure that `<path_to_mount>` directory exists.
 
+<br>
+
 ######  Control group's servers brick allocation 
 
 The following table summarizes the brick allocation for the control group's services.
 
-{| class="wikitable"
-! style="text-align: center; font-weight:bold;" | Service
-! style="text-align: center; font-weight:bold;" | Volume name
-ext-align: center;" | misc
-| rowspan="2" style="text-align: center;" | /data/gluster/disk0/misc-brick
-| rowspan="2" style="text-align: center;" | /data/gluster/misc-metadata
-| rowspan="2" style="text-align: center;" | /storage/misc
-|-
-| style="text-align: center;" | Network services (DHCP, DNS, ...)
-|-
-| style="text-align: center;" | [[CON:Control-archiver|Archiver System]]
-| style="text-align: center;" | epics-archiver
-| style="text-align: center;" | /data/gluster/disk0/epics-archiver-brick
+**Table 3**: 
 
-/data/gluster/disk1/epics-archiver-brick
+|Service| Volume name| CA-RaCtrl:CO-Srv-1 <br> LA-RaCtrl:CO-Srv-1 | TA-TiRack:CO-FWSrv-1| Mount points |
+|-|-|-|
+|Alarm System <br> Logging System| epics-services| /data/gluster/disk0/epics-services-brick| /data/gluster/epics-services-metadata| /storage/epics-services |
+|Gitlab system <br> Network services (DHCP, DNS, ...)| misc| /data/gluster/disk0/misc-brick| /data/gluster/misc-metadata| /storage/misc |
+|Archiver System| epics-archiver| /data/gluster/disk0/epics-archiver-brick <br> /data/gluster/disk1/epics-archiver-brick <br> ... <br> /data/gluster/disk15/epics-archiver-brick | /data/gluster/epics-archiver-metadata-0 <br> /data/gluster/epics-archiver-metadata-1 <br> ... <br> /data/gluster/epics-archiver-metadata-15 | /storage/epics-archiver  |
 
-...
-
-/data/gluster/disk15/epics-archiver-brick
-| style="text-align: center;" | /data/gluster/epics-archiver-metadata-0
-
-/data/gluster/epics-archiver-metadata-1
-
-...
-
-/data/gluster/epics-archiver-metadata-15
-| style="text-align: center;" | /storage/epics-archiver
-|}
+<br>
 
 #####  Ceph 
 
 Ceph is a unified, distributed storage system designed for excellent performance, reliability and scalability.
 
+<br>
+
 ######  Installation 
 
 Follow the instructions in the [official website](http://docs.ceph.com/docs/master/start/quick-start-preflight/){target=_blank} to download and in [here](http://docs.ceph.com/docs/master/start/quick-ceph-deploy/){target=_blank} to set a Ceph cluster up.
+
+<br>
 
 ####  Kernel-based Virtual Machine 
 
 The two main servers can also host traditional virtual machines through the use of the Linux's KVM technology. KVM or (Kernel-based Virtual Machine) is a full virtualization solution for Linux on Intel 64 and AMD 64 hardware that is included in the mainline Linux kernel since 2.6.20 and is stable and fast for most workloads.
 
 If you need some storage or computing, please contact us with your requirements!
+
+<br>
 
 ####  Bonding network interfaces 
 
@@ -352,6 +381,8 @@ Connection 'bond-slave-ens1f1' (0d6f29b7-42b8-4ae2-926b-79385eeb5f94) successful
 $ sudo nmcli con up bond-swarm-glusterfs
 ```
 
+<br>
+
 #####  Bonding network interfaces addresses 
 
 Having set the bonded interfaces, we need to choose between static or dynamic addresses. For the cluster's services one, the best approach is to use first option, since they must not depend of any other service such DHCP and, therefore, should never change. For the general data case, the decision is still open. Besides these two bonded interfaces, each server offers a out-of-band IPMI interface for management whose addresses are statically set for the same reasons presented before. Table below summarizes the IP addresses of `CA-RaCtrl:CO-Srv-1`, `LA-RaCtrl:CO-Srv-1` and `TA-TiRack:CO-FWSrv-1`.
@@ -371,6 +402,8 @@ Having set the bonded interfaces, we need to choose between static or dynamic ad
 | style="text-align: center;" | 
 |}
 
+<br>
+
 ####  Connecting to Windows virtual machines from Linux 
 
 Use the `rdesktop` package to connect to the Windows Virtual Machine. In order to do that, you need to enable remote access in your machine. You may use this [guide](https://support.microsoft.com/en-us/help/17463/windows-7-connect-to-another-computer-remote-desktop-connection){target=_blank} for that. Finally, execute the following command from your bash terminal.
@@ -378,6 +411,8 @@ Use the `rdesktop` package to connect to the Windows Virtual Machine. In order t
 ```
 rdesktop -u <user> <Virtual machine's IP address> -f -g 2560x1440 -x l
 ```
+
+<br>
 
 ####  StorCLI 
 
@@ -401,6 +436,8 @@ A complete description of this tool can be listed by executing
 ```
 $ /opt/MegaRAID/storcli/storcli64 --help
 ```
+
+<br>
 
 ####  VNC 
 
@@ -431,11 +468,15 @@ In another computer, connect to the server with `vncviewer` and the password reg
 $ vncviewer <server_address>:1
 ```
 
+<br>
+
 #####  Guacamole 
 
 An [Apache Guacamole](https://guacamole.apache.org/){target=_blank} server is available to provide connection to the VNC servers from a simple web browser. Just access [it](https://10.0.6.57/guacamole){target=_blank}, login and choose the machine to access.
 
 As any other of our services, [Docker configuration files](https://github.com/lnls-sirius/docker-guacamole){target=_blank} were written for deployment in the cluster infrastructure. LDAP is supported for user authentication, but the authorization for a user to use a connection must be granted by an administrator inside Guacamole. This is achieved by [creating a user with the same name](http://guacamole.apache.org/doc/gug/ldap-auth.html#ldap-and-database){target=_blank} as the one registered in the LDAP service.
+
+<br>
 
 ###  Workstations 
 
@@ -449,9 +490,13 @@ The second workstation is being used as part of the cluster which will be used t
 
 The settings for each one is described in the subsections below.
 
+<br>
+
 ####  Cluster's workstation - TA-TiRack:CO-FWSrv-1 
 
 Machine hosting HAProxy and acting as a GlusterFS arbiter and a Swarm drained manager.
+
+<br>
 
 #####  Operating system 
 
@@ -469,6 +514,8 @@ sda       8:0    0 447.1G  0 disk
 ```
 
 This workstation acts as a [[CON:Sirius_control_system_servers#Docker_Swarm|manager node for the container swarm]](link) and as an [[CON:Sirius_control_system_servers#GlusterFS|arbitrer node]](link) for GlusterFS volumes. Refer to the subsections above for further information.
+
+<br>
 
 ####  Controls' room workstation - con-workst2 
 
@@ -502,6 +549,8 @@ Filesystem      1K-blocks     Used  Available Use% Mounted on
 /dev/sda1          967320   106712     794256  12% /boot
 /dev/sdb1      1153588084 84183784 1010782348   8% /home
 ```
+
+<br>
 
 ##  References 
 
