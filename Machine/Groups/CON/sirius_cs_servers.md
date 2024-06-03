@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:25:32.605Z
+date: 2024-06-03T20:30:26.758Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -514,13 +514,13 @@ sda       8:0    0 447.1G  0 disk
 └─sda3    8:3    0   954M  0 part /boot
 ```
 
-This workstation acts as a [[CON:Sirius_control_system_servers#Docker_Swarm|manager node for the container swarm]](link) and as an [[CON:Sirius_control_system_servers#GlusterFS|arbitrer node]](link) for GlusterFS volumes. Refer to the subsections above for further information.
+This workstation acts as a [manager node for the container swarm](/Machine/Groups/CON/sirius_cs_servers#docker-swarm) and as an [arbitrer node](/Machine/Groups/CON/sirius_cs_servers#glusterfs) for GlusterFS volumes. Refer to the subsections above for further information.
 
 <br>
 
 ####  Controls' room workstation - con-workst2 
 
-This workstation is set up with [Ubuntu Server 16.04 LTS](https://www.ubuntu.com/server){target=_blank} and its two network interfaces have the IP addresses `10.128.1.252` (`enp5s0` - internal control network) and `10.0.6.57` (`enp4s0` - campus network). The main services it hosts are an instance of the [[CON:Control-archiver|EPICS archiver]](link) accessible from [http://10.0.4.57](http://10.0.4.57){target=_blank} and another of the [[CON:Control-beast|alarm server]](link). Both of them run through Docker containers.
+This workstation is set up with [Ubuntu Server 16.04 LTS](https://www.ubuntu.com/server){target=_blank} and its two network interfaces have the IP addresses `10.128.1.252` (`enp5s0` - internal control network) and `10.0.6.57` (`enp4s0` - campus network). The main services it hosts are an instance of the [[CON:Control-archiver|EPICS archiver]](link) accessible from [http://10.0.4.57](http://10.0.4.57){target=_blank} and another of the [alarm server](/Machione/Groups/CON/control_beast). Both of them run through Docker containers.
 
 As we have only 2 disks being used, we didn't need to set any logical volume managers up. The mount points are configured as following:
 
