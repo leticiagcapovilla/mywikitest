@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:35:53.431Z
+date: 2024-06-03T20:36:30.182Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -275,7 +275,7 @@ Before creating volumes, the nodes in the cluster need to be probed. From any of
 $ gluster peer probe srv_addr
 ```
 
-`srv_addr` must be replaced by one of the addresses presented in [[CON:Sirius_control_system_servers#Bonding_network_interfaces_addresses|this page]](link !!!).
+`srv_addr` must be replaced by one of the addresses presented in [this page](/Machine/Groups/CON/sirius_cs_servers#bonding-network-interfaces-addresses).
 
 ######  Volume creation 
 
