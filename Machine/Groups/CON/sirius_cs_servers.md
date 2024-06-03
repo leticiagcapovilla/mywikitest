@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:37:26.693Z
+date: 2024-06-03T20:38:20.270Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -116,7 +116,7 @@ sdf                                      8:80   0 447.1G  0 disk
 
 ####  Docker 
 
-Independently of the container management tool used, i.e., [[CON:Sirius_control_system_servers#Docker_Swarm|Docker Swarm]] or [Kubernetes](/Machine/Groups/CON/sirius_cs_servers#kubernetes) !!!, both need the Docker engine to work properly.
+Independently of the container management tool used, i.e., [Docker Swarm](/Machine/Groups/CON/sirius_cs_servers#dockerswarm) or [Kubernetes](/Machine/Groups/CON/sirius_cs_servers#kubernetes), both need the Docker engine to work properly.
 
 To install Docker in CentOS 7, follow the described steps from [this official guide](https://docs.docker.com/engine/installation/linux/docker-ce/centos/){target=_blank}.
 
