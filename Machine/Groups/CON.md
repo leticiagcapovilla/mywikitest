@@ -7,8 +7,9 @@ tags:
 editor: markdown
 dateCreated: 2024-05-16T15:50:47.394Z
 ---
+# CON: Controls Group - (deprecated; CON group does not exit anymore; WIP to move content)
 
-# Sirius-related projects
+## Sirius-related projects
 
 Here all hardware/software projects under development for Sirius by the Controls Group are listed: 
 
@@ -45,4 +46,12 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [Sirius control system interfaces](/Machine/Groups/CON/sirius_cs_interfaces)
 - [Sirius control system network](/Machine/Groups/CON/sirius_cs_network)
 - [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
+{.links-list}
+
+## Other
+
+
+## External links
+- [LNLS Controls Group repository at GitHub.com (shared with other LNLS groups)](https://github.com/lnls-sirius){target=_blank}
+- [CNPEM Git repository (internal access only)](https://gitlab.cnpem.br/){target=_blank}
 {.links-list}
