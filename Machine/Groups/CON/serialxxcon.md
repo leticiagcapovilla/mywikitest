@@ -2,7 +2,7 @@
 title: SERIALxxCON
 description: 
 published: 1
-date: 2024-06-03T15:55:43.545Z
+date: 2024-06-03T15:56:47.688Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-29T15:36:02.089Z
@@ -116,20 +116,25 @@ Baudrates to be configured are the standard available at Debian system, reaching
 
 In order to increase reliability and avoid external interference into board power signals, it has been decided to electrically isolate RS-485 serial communication lines. A regulated 1W DCDC converter is powering the RS-485 driver, as well as its fail-safe resistors.
 
+<br>
 
 ###  Selection switches 
 
-|![](/img/groups/con/serialxxcon/serialxxcon-switch-diagram.png)|
+|![](/img/groups/con/serialxxcon/Serialxxcon-switch-diagram.png =450x)|
 |-|
-|**Figure 4**: |
+|**Figure 6**: |
 
 As shown above, there are two different switches that controls serial communication flow. They are located at the front panel and must be configured before communicating. One is dedicated to selection of communication physical layer (RS-232 or RS-485) and the other one selects whether FTDI or PRU interface will be connected to the serial line. They are also mapped on two BBB GPIOs, making it possible to know in which position they are.
+
+<br>
 
 ###  Hardware address and Board ID 
 
 It is a 5-position dip switch, making it possible to address from 0 to 31. For the moment, it is not used for any application and is pre-configured to address 21, due to self-tests during board manufacturing.
 
 Board ID is a unique identification for SERIALxxCON unit and there is no link with hardware address switches.
+
+<br>
 
 ###  SPIxxCON interface 
 
