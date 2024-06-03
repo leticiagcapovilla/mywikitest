@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-03T21:17:56.857Z
+date: 2024-06-03T21:24:42.233Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -97,75 +97,49 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 '''Ethernet Patch Panel - Top'''
 
-|Slot #| IP| Description |
-|1| -----| [POE] CountingPRU - LTB 1 |
-|2| -----| [POE] CountingPRU - LTB 2 |
-|3| -----| [POE] DIG Camera - LTB 1 |
-|4| -----| [POE] DIG Camera - LTB 2 |
-|5| -----| [POE] DIG Camera - LTB 3 |
-|6| -----| DIG Galil - LTB 1 |
-|7| -----| DIG Galil - LTB 2 |
-|8| -----| DIG Galil - LTB 3 |
-|9| -----| DIG Fenda de Energia 1H |
-|10| -----| DIG Fenda de Energia 1V |
-|11| -----| DIG Fenda de Energia 2H |
-|12| -----| DIG Fenda de Energia 2V |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| -----|  |
-|21| -----|  |
-|22| -----|  |
-|23| -----|  |
-|24| -----|  |
-
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|
+|1| -----| [POE] CountingPRU - LTB 1 ||13| -----|  |
+|2| -----| [POE] CountingPRU - LTB 2 ||14| -----|  |
+|3| -----| [POE] DIG Camera - LTB 1 ||15| -----|  |
+|4| -----| [POE] DIG Camera - LTB 2 ||16| -----|  |
+|5| -----| [POE] DIG Camera - LTB 3 ||17| -----|  |
+|6| -----| DIG Galil - LTB 1 ||18| -----|  |
+|7| -----| DIG Galil - LTB 2 ||19| -----|  |
+|8| -----| DIG Galil - LTB 3 ||20| -----|  |
+|9| -----| DIG Fenda de Energia 1H ||21| -----|  |
+|10| -----| DIG Fenda de Energia 1V ||22| -----|  |
+|11| -----| DIG Fenda de Energia 2H ||23| -----|  |
+|12| -----| DIG Fenda de Energia 2V ||24| -----|  |
 
 
 '''Ethernet Patch Panel - Bottom'''
 
-|Slot #| IP| Description |
-|1| -----| LINAC Controls Room #1 |
-|2| -----| LINAC Controls Room #2 |
-|3| -----| LINAC Controls Room #3 |
-|4| -----| LINAC Controls Room #4 |
-|5| -----| LINAC Controls Room #5 |
-|6| -----| LINAC Controls Room #6 |
-|7| -----| LINAC Controls Room #7 |
-|8| -----| LINAC Controls Room #8 |
-|9| -----| LINAC Controls Room #9 |
-|10| -----| LINAC Controls Room #10 |
-|11| -----| LINAC Controls Room #11 |
-|12| -----| LINAC Controls Room #12 |
-| |
-|Slot #| IP| Description |
-|13| -----| LINAC Controls Room #13 |
-|14| -----| LINAC Controls Room #14 |
-|15| -----| LINAC Controls Room #15 |
-|16| -----| LINAC Controls Room #16 |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| -----|  |
-|21| -----|  |
-|22| -----|  |
-|23| -----|  |
-|24| -----|  |
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|
+|1| -----| LINAC Controls Room #1 ||13| -----| LINAC Controls Room #13 |
+|2| -----| LINAC Controls Room #2 ||14| -----| LINAC Controls Room #14 |
+|3| -----| LINAC Controls Room #3 ||15| -----| LINAC Controls Room #15 |
+|4| -----| LINAC Controls Room #4 ||16| -----| LINAC Controls Room #16 |
+|5| -----| LINAC Controls Room #5 ||17| -----|  |
+|6| -----| LINAC Controls Room #6 ||18| -----|  |
+|7| -----| LINAC Controls Room #7 ||19| -----|  |
+|8| -----| LINAC Controls Room #8 ||20| -----|  |
+|9| -----| LINAC Controls Room #9 ||21| -----|  |
+|10| -----| LINAC Controls Room #10 ||22| -----|  |
+|11| -----| LINAC Controls Room #11 ||23| -----|  |
+|12| -----| LINAC Controls Room #12 ||24| -----|  |
 
 
 '''SERIALxxCON - Serial Networks'''
 
 |Boards| SERIALxxCON ID| IP| Device |
-|1| 	10.128.122.101| Temperature Monitor - MBTemp - LTB & UPS Monitoring |
-|2| 	10.128.122.160| Temperature and Humidity Monitor - Linac |
-|3| 		 |
-|4| 		 |
-|5| 		 |
+|-|-|-|-|
+|1| 	|10.128.122.101| Temperature Monitor - MBTemp - LTB & UPS Monitoring|
+|2| 	| 10.128.122.160| Temperature and Humidity Monitor - Linac |
+|3| 	|	 | |
+|4| 	|	 | |
+|5| 	|	 | |
 
 <br>
 
