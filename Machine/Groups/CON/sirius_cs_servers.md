@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:14:30.796Z
+date: 2024-06-03T20:20:34.823Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -69,7 +69,10 @@ The two workstations, also bought from Supermicro, have more modest features:
 
 The controls group's cluster is composed of three machines (for now), being two servers and one workstation. All those machines share their data through the use of network file system. We have been testing two kind of solutions, [GlusterFS](https://www.gluster.org/){target=_blank} and [Ceph](http://ceph.com/){target=_blank}. For each one, it will presented the setting up steps and the advantages of using the respective soluntion. One of the purposes on using a network file system to replicate data among distributed servers lies on the fact that, with the large growth of the hard disks data capacity in the last decades, RAID recovery times also became larger.  In-house tests showed that a RAID1 set with two 8TB disks (model listed above) took more than 20 hours to be recovered after an intentional disk failure. Besides, the probability of a second disk failure occurs while recovering the first one increases, since that read and write activity is also increased during the recovery process.
 
-Besides distributing the available storage among the servers, the deployment of our services as containers is performed either with [Docker Swarm](https://docs.docker.com/engine/swarm/){target=_blank} or [Kubernetes](https://kubernetes.io/){target=_blank}. At this moment, as the initial configuration for the first one is simpler and some of the tools for starting a Kubernetes cluster are in beta stage !!! <ref name="deprecated">https://kubernetes.io/docs/getting-started-guides/centos/centos_manual_config/</ref><ref name="kubeadm">https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/</ref>, we decided to use only the Docker Swarm solution. However, we plan as well to provide support for Kubernetes in the near future.
+Besides distributing the available storage among the servers, the deployment of our services as containers is performed either with [Docker Swarm](https://docs.docker.com/engine/swarm/){target=_blank} or [Kubernetes](https://kubernetes.io/){target=_blank}. At this moment, as the initial configuration for the first one is simpler and some of the tools for starting a Kubernetes cluster are in beta stage [^1] [^2], we decided to use only the Docker Swarm solution. However, we plan as well to provide support for Kubernetes in the near future.
+
+[^1]: https://kubernetes.io/docs/getting-started-guides/centos/centos_manual_config/
+[^2]: https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
 
 From now on, we are going to refer to the machines by their configured hostnames. The servers are named `CA-RaCtrl:CO-Srv-1` and `LA-RaCtrl:CO-Srv-1` and are connected to the switches from the connectiviry and LINAC areas via a dedicated VLAN in other to prevent big latency in their communication exchanges.This latter is the main cause of performance degradation in network filesystems, so maintaining a dedicated channel between them is essencial for the good operation of GlusterFS or Ceph. One of the workstations, named `TA-TiRack:CO-FWSrv-1`, integrates the cluster to work as manager (for Docker Swarm) and as a volume arbitrer (for GlusterFS).  The second workstation `con-workst2` is currently being used in UVX's operation to host the services that will be used in Sirius too. This machine is probably going to be moved to our cluster once that UVX is no longer in operation. The image displayed on the right summarizes our small cloud infrastructure.
 
@@ -473,7 +476,7 @@ As any other of our services, [Docker configuration files](https://github.com/ln
 
 ###  Workstations 
 
-|![](/img/groups/con/sirius_cs_servers/Con-workst.jpg =700x)|
+|![](/img/groups/con/sirius_cs_servers/Con-workst.jpg =250x)|
 |-|
 |**Figure 4**: Controls group cluster's workstation..|
 
