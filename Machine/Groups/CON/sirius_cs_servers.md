@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:38:20.270Z
+date: 2024-06-03T20:39:01.719Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -80,7 +80,7 @@ From now on, we are going to refer to the machines by their configured hostnames
 
 ###  Servers 
 
-The next subsections describe the settings present in the controls group servers. Both of them are set up identically, since they are part of the same cluster. To append new hosts to the cluster, the subsections related to GlusterFS (or Ceph) and [[CON:Sirius_control_system_servers#Docker|Docker Swarm]] should be followed.
+The next subsections describe the settings present in the controls group servers. Both of them are set up identically, since they are part of the same cluster. To append new hosts to the cluster, the subsections related to GlusterFS (or Ceph) and [Docker Swarm](/Machine/Groups/CON/sirius_cs_servers#dockerswarm) should be followed.
 
 <br>
 
