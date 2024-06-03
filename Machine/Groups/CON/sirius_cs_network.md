@@ -2,7 +2,7 @@
 title: Sirius control system network
 description: 
 published: 1
-date: 2024-06-03T18:53:38.842Z
+date: 2024-06-03T18:56:28.017Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T18:41:20.024Z
@@ -362,8 +362,10 @@ The location of each switch determines the subnetwork it will serve. As in this 
 
 |Room| Switch| Subnet| Switch Address| Room| Switch| Subnet| Switch Address |
 |-|-|-|-|-|-|-|-|
-|1| IA01-RaCtrl:CO-NetSw-1| 10.128.10.0/25| 10.128.10.1/25| 8| IA08-RaCtrl:CO-NetSw-1| 10.128.80.0/24| 10.128.80.1/24 |
-|IA01-RaCtrl:CO-NetSw-2| 10.128.10.128/25| 10.128.10.129/25| 9| IA09-RaCtrl:CO-NetSw-1| 10.128.90.0/24| 10.128.90.1/24 |
+|1| IA01-RaCtrl:CO-NetSw-1 <br> IA01-RaCtrl:CO-NetSw-2| 10.128.10.0/25 <br> 10.128.10.128/25 | 10.128.10.1/25 <br> 10.128.10.129/25 | 8 <br> 9| IA08-RaCtrl:CO-NetSw-1 <br> IA09-RaCtrl:CO-NetSw-1| 10.128.80.0/24 <br> 10.128.90.0/24 | 10.128.80.1/24 <br> 10.128.90.1/24 |
+
+
+|| | | | | |  |
 |2| IA02-RaCtrl:CO-NetSw-1| 10.128.20.0/24| 10.128.20.1/24| 10| IA10-RaCtrl:CO-NetSw-1| 10.128.100.0/24| 10.128.100.1/24 |
 |RF| RA-RaCtrl:CO-NetSw-1| 10.128.25.0/26| 10.128.25.1/26| 11| IA11-RaCtrl:CO-NetSw-1| 10.128.110.0/24| 10.128.110.1/24 |
 |RA-RaCtrl:CO-NetSw-2| 10.128.25.64/26| 10.128.25.65/26| 12| IA12-RaCtrl:CO-NetSw-1| 10.128.120.0/24| 10.128.100.1/24 |
