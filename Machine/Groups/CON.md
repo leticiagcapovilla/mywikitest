@@ -2,12 +2,15 @@
 title: CON
 description: 
 published: 1
-date: 2024-06-03T16:34:26.460Z
+date: 2024-06-03T19:50:06.777Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-16T15:50:47.394Z
 ---
+
 # CON: Controls Group - (deprecated; CON group does not exit anymore; WIP to move content)
+
+<br>
 
 ## Sirius-related projects
 
