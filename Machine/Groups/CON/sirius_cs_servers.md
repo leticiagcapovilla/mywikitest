@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:32:55.087Z
+date: 2024-06-03T20:34:00.324Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -501,7 +501,7 @@ Machine hosting HAProxy and acting as a GlusterFS arbiter and a Swarm drained ma
 
 #####  Operating system 
 
-`TA-TiRack:CO-FWSrv-1` runs [Debian 9.2](https://www.debian.org/){target=_blank} release and as its operating system's drive is a solid state drive, only `/boot/efi`, `/boot` and `/` are stored into it. It's exactly the same as we did for the server in the subsection [[CON:Sirius_control_system_servers#Operating_System|Operating System]](link).
+`TA-TiRack:CO-FWSrv-1` runs [Debian 9.2](https://www.debian.org/){target=_blank} release and as its operating system's drive is a solid state drive, only `/boot/efi`, `/boot` and `/` are stored into it. It's exactly the same as we did for the server in the subsection [Operating System](/Machine/Groups/CON/sirius_cs_servers#operating-system).
 
 `lsblk` results in the following output:
 
