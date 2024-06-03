@@ -1,8 +1,22 @@
+---
+title:  Radiation Protection EPICS Interface
+description: 
+published: 1
+date: 2024-06-03T16:04:08.473Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-29T15:05:20.827Z
+---
+
 # CON: Radiation protection EPICS interface
+
+<br>
 
 ## Introduction
 
 This page will contain some documentation about the EPICS interface for Sirius Radiation Protection. The software is under development by [LNLS Controls Group](/Machine/Groups/CON).
+
+<br>
 
 ## Components
 
@@ -18,21 +32,25 @@ The software was developed for the following radiation detector probes:
 An example is (BEL)Data(CS)(ETX)
 Where: Data is the value of radiation in uSv/h
 
-**Berthold Techonologies:**It uses ethernet communication and has a single device that obtains the value of the two probes (gamma and neutron).
+**Berthold Techonologies:** It uses ethernet communication and has a single device that obtains the value of the two probes (gamma and neutron).
 
 The system was shipped in a BeagleBone Black with Linux distribution that managed the devices and communicated via network, ethernet, with the EPICS system binder.
+
+<br>
 
 ## Development
 
 The links below present the source code of each BeagleBone Black embedded in GitHub with comments on the lines of code.
 
--  **Cod Else Nuclear** - https://github.com/lnls-sirius/else-probe-ioc;
--  **Cod ThermoFisher Scientific** - https://github.com/lnls-sirius/thermo-probe-ioc;
+-  **Cod Else Nuclear** - https://github.com/lnls-sirius/else-probe-ioc
+-  **Cod ThermoFisher Scientific** - https://github.com/lnls-sirius/thermo-probe-ioc
 -  **Cod Berthold Technologies** - https://github.com/lnls-sirius/stream-ioc/blob/master/interface/Berthold-LB6420.py.
 
 BeagleBone Black has a UDP server and communicates with EPICS Archiver through the StreamIOC tool.
 
 -  **Git StreamIOC** - https://github.com/lnls-sirius/stream-ioc
+
+<br>
 
 ## PV List
 
