@@ -45,6 +45,7 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [SIMAR](/Machine/Groups/CON/simar)
 - [Sirius control system interfaces](/Machine/Groups/CON/sirius_cs_interfaces)
 - [Sirius control system network](/Machine/Groups/CON/sirius_cs_network)
+- [Sirius control system servers](/Machine/Groups/CON/sirius_cs_servers)
 - [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
 {.links-list}
 
