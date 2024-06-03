@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:20:34.823Z
+date: 2024-06-03T20:23:32.134Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -194,7 +194,7 @@ Services listed above can be accessed from any of the IP addresses currently ass
 
 #####  Kubernetes 
 
-As `kubeadm` is still in beta stage !!! <ref name="kubeadm">https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/</ref>, we chose to wait a little longer before setting everything up.
+As `kubeadm` is still in beta stage [^2], we chose to wait a little longer before setting everything up.
 
 <br>
 
@@ -208,7 +208,10 @@ Some blogs discuss the advantages and disadvantages of these systems, arguing th
 
 #####  GlusterFS 
 
-GlusterFS is a scalable network filesystem suitable for data-intensive tasks such as cloud storage and media streaming. Despite being an open-source project, GlusterFS is maintained and developed by Redhat as it constitutes one of the commercial solutions (the other is Ceph) of the company for distributed network filesystems. Besides, GlusterFS is fairly used in Facebook's data clusters !!! <ref name="facebook">https://www.socallinuxexpo.org/scale/14x/presentations/scaling-glusterfs-facebook</ref><ref name=facebook2>http://blog.gluster.org/scaling-glusterfs-facebook/</ref>.
+GlusterFS is a scalable network filesystem suitable for data-intensive tasks such as cloud storage and media streaming. Despite being an open-source project, GlusterFS is maintained and developed by Redhat as it constitutes one of the commercial solutions (the other is Ceph) of the company for distributed network filesystems. Besides, GlusterFS is fairly used in Facebook's data clusters [^4] [^5].
+
+[^4]: https://www.socallinuxexpo.org/scale/14x/presentations/scaling-glusterfs-facebook
+[^5]: http://blog.gluster.org/scaling-glusterfs-facebook/
 
 For a complete overview of the GlusterFS' architecture, refer to this [guide](http://docs.gluster.org/en/latest/Quick-Start-Guide/Architecture/){target=_blank}. From this point on, it's assumed that the user understands the concepts of GlusterFS volumes and bricks.
 
