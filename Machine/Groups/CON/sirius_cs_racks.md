@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-03T21:29:20.782Z
+date: 2024-06-03T21:30:34.413Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -240,26 +240,21 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 ### Room 03
 
 '''Ethernet Patch Panel'''
+| Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.103.151| [POE] CountingPRU - Trecho 3 M2 |
+|9| -----|  ||21| 10.128.103.152| [POE] CountingPRU - Trecho 3 C2 |
+|10| -----|  ||22| 10.128.103.153| [POE] CountingPRU - Trecho 3 C3 |
+|11| -----|  ||23| 10.128.103.154| [POE] CountingPRU - Trecho 3 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU - Booster  |
 
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 1
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | General Purpose - BC
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 2
-| style="text-align:center; foer; font-size:10px; text-align:center;" | 23
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.103.154
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 3 M1
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 24
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Booster
-|-
-|}
 
 
 
