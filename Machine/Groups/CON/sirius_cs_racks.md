@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-03T21:34:10.439Z
+date: 2024-06-03T21:35:22.435Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -715,19 +715,26 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
 
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
-! style="font-weig:10px; text-align:center;  " | 
-| style="font-size:10px; -align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.112.131
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Right 1
-|-
-| style="font-size:10px; text-align:center;  " | 18
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.112.132
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Right 2
-|}
+|Board Location| SERIALxxCON ID| IP| Device |
+|-|-|-|-|
+|1| 278| 10.128.112.101| Vacuum System - Gauge Controller MKS - Booster & Storage Ring |
+|2| 277| 10.128.112.102| Vacuum System - Ion Pump 4UHV - Booster & Storage Ring |
+|3| 		 |
+|4| 		 |
+|5| 		 |
+|6| 	10.128.112.104| Power Supplies - DCLINK - Storage Ring |
+|7| 		 |
+|8| 		 |
+|9| 300| 10.128.112.117| Temperature Monitor - MBTemp - Storage Ring (<-BC) |
+|10| 312| 10.128.112.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
+|11| 		 |
+|12| 		 |
+|13| 	10.128.112.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	10.128.112.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|15| 		 |
+|16| 		 |
+|17| 	10.128.112.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	10.128.112.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 
 
@@ -758,16 +765,26 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
 
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
-! style="font-weight:baliext-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Right 1
-|-
-| style="font-size:10px; text-align:center;  " | 18
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.113.132
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Right 2 
-|}
+|Board Location| SERIALxxCON ID| IP| Device |
+|-|-|-|-|
+|1| 232| 10.128.113.101| Vacuum System - Gauge Controller MKS - Booster & Storage Ring |
+|2| 231| 10.128.113.102| Vacuum System - Ion Pump 4UHV - Booster |
+|3| 		 |
+|4| 234| 10.128.113.106| Temperature Monitor - MBTemp - Booster |
+|5| 236| 10.128.113.104| Power Supplies - DCLINKs - Booster & Storage Ring |
+|6| 235| 10.128.113.105| Power Supplies - FBP - Booster |
+|7| 		 |
+|8| 233| 10.128.113.103| Vacuum System - Ion Pump 4UHV - Storage Ring |
+|9| 306| 10.128.113.117| Temperature Monitor - MBTemp - Storage Ring (<-BC) |
+|10| 310| 10.128.113.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
+|11| 		 |
+|12| 		 |
+|13| 	10.128.113.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	10.128.113.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|15| 		 |
+|16| 		 |
+|17| 	10.128.113.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	10.128.113.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 
 ### Room 14
@@ -798,12 +815,26 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
-! style="font-weight:bold;ext-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.114.132
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Right 2 
-|}
+|Board Location| SERIALxxCON ID| IP| Device |
+|-|-|-|-|
+|1| 228| 10.128.114.101| Vacuum System - Gauge Controller MKS - Booster & Storage Ring |
+|2| 227| 10.128.114.102| Vacuum System - Ion Pump 4UHV - Booster & Storage Ring |
+|3| 		 |
+|4| 		 |
+|5| 230| 10.128.114.104| Power Supplies - DCLINKs - Booster & Storage Ring |
+|6| 229| 10.128.114.105| Power Supplies - FBP - Booster |
+|7| 		 |
+|8| 		 |
+|9| 309| 10.128.114.117| Temperature Monitor - MBTemp - Storage Ring (<-BC) |
+|10| 321| 10.128.114.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
+|11| 		 |
+|12| 		 |
+|13| 	10.128.114.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	10.128.114.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|15| 		 |
+|16| 		 |
+|17| 	10.128.114.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	10.128.114.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 
 ### Room 15
@@ -834,15 +865,26 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
-
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
-! style="font-weight:b; text-align:center;  " | 18
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.115.132
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Right 2
-|}
+|Board Location| SERIALxxCON ID| IP| Device |
+|-|-|-|-|
+|1| 224| 10.128.115.101| Vacuum System - Gauge Controller MKS - Booster & Storage Ring |
+|2| 225| 10.128.115.102| Vacuum System - Ion Pump 4UHV - Booster |
+|3| 		 |
+|4| 219| 10.128.115.106| Temperature Monitor - MBTemp - Booster |
+|5| 		 |
+|6| 	10.128.115.104| Power Supplies - DCLINK - Storage Ring |
+|7| 		 |
+|8| 226| 10.128.115.103| Vacuum System - Ion Pump 4UHV - Storage Ring |
+|9| 327| 10.128.115.117| Temperature Monitor - MBTemp - Storage Ring (<-BC) |
+|10| 316| 10.128.115.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
+|11| 		 |
+|12| 		 |
+|13| 	10.128.115.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	10.128.115.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|15| 		 |
+|16| 		 |
+|17| 	10.128.115.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	10.128.115.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 ### Room 16
 
