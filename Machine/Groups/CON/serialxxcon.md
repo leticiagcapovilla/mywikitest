@@ -1,13 +1,27 @@
+---
+title: SERIALxxCON
+description: 
+published: 1
+date: 2024-06-03T15:53:29.113Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-29T15:36:02.089Z
+---
+
 # CON: SERIALxxCON
 
 |![](/img/groups/con/serialxxcon/Serialxxcon.jpg)|
 |-|
 |**Figure 1**: SERIALxxCON.|
 
+<br>
+
 ## Introduction
 
 SERIALxxCON is a general-purpose board based on Beaglebone Black, designed for Sirius Controls System, in order to control and monitor several equipments such as power supplies, interface boards, vacuum and temperature monitors, etc.
 This board consists on three functionalities: RS-232/RS-485 communication, interface for Timing System and [CON:SPIxxCON|SPIxxCON](link) master module.
+
+<br>
 
 ##  Hardware Overview
 
@@ -15,13 +29,13 @@ This board consists on three functionalities: RS-232/RS-485 communication, inter
 |-|
 |**Figure 2**: Hardware overview.|
 
-
 SERIALxxCON is a baseboard for Beaglebone Black, designed as a multi-serial platform and a dedicated SPI master. In addition, it has been conceived with two timing inputs (optical and electrical) for synchronized operations.
 
 There are two red switches on the panel, which configures the serial communication to one of the following modes: **high-speed RS-485** (via PRU: PRUserial485 project), **default RS-485** (FTDI) or **default RS-232** (FTDI). Note: there is no high-speed RS-232 (PRU).
 
 Another two red switches are available and they are needed when configuring a RS-485 communication network, allowing the user to enable/disable termination and fail-safe resistors.
 
+<br>
 
 ###  Powering the board 
 
@@ -29,10 +43,14 @@ In order to power the board and have it completely functional, connect the front
 
 Typical power consumption: **XXXXX W**
 
+<br>
+
 ###  Versions 
 
 * **v2.3: latest (nov/2017)**
 * v2.2: production prototype (early 2017)
+
+<br>
 
 ###  Production units 
 
@@ -44,7 +62,17 @@ Detailed documents can be found at project repository at CNPEM gitlab ([click he
 
 ##  Hardware Details 
 
-[[File:front-serialxxcon.png|500px||Front view]]  [[File:back-serialxxcon.png|530px||Back view]]
+[[File:front-serialxxcon.png|500px||Front view]]
+
+|![](/img/groups/con/serialxxcon/front-serialxxcon.png)|
+|-|
+|**Figure 3**: Hardware overview.|
+
+[[File:back-serialxxcon.png|530px||Back view]]
+
+|![](/img/groups/con/serialxxcon/back-serialxxcon.png)|
+|-|
+|**Figure 4**: Hardware overview.|
 
 ###  Hardware Reset 
 
