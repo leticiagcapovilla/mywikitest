@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-03T21:37:26.965Z
+date: 2024-06-03T21:38:42.829Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -981,26 +981,34 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 '''Ethernet Patch Panel'''
 
-
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-w0px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; fonont-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 18 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 23
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.118.154
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 18 M1
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 24
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU Booster - Trecho 18
-|-
-|}
+|Slot #| IP| Description |
+|1| -----| General Purpose - Trecho 18 BC |
+|2| -----|  |
+|3| -----|  |
+|4| -----|  |
+|5| -----|  |
+|6| -----|  |
+|7| -----|  |
+|8| -----|  |
+|9| -----|  |
+|10| -----|  |
+|11| -----|  |
+|12| -----|  |
+| |
+| |
+|Slot #| IP| Description |
+|13| -----|  |
+|14| -----|  |
+|15| -----|  |
+|16| -----|  |
+|17| -----|  |
+|18| -----|  |
+|19| -----|  |
+|20| 10.128.118.151| [POE] CountingPRU - Trecho 18 M2 |
+|21| 10.128.118.152| [POE] CountingPRU - Trecho 18 C2 |
+|22| 10.128.118.153| [POE] CountingPRU - Trecho 18 C3 |
+|23| 10.128.118.154| [POE] CountingPRU - Trecho 18 M1 |
+|24| -----| [POE] CountingPRU Booster - Trecho 18  |
 
 
 
@@ -1035,19 +1043,34 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 '''Ethernet Patch Panel'''
 
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style-size:10px; text-align:center;" | 22
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.119.153
-| style="text-align:center; fonnt-size:10px; text-align:center;" | 10.128.119.154
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 19 M1
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 24
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU Booster - Trecho 19
-|-
-|}
+|Slot #| IP| Description |
+|1| -----| General Purpose - Trecho 19 BC |
+|2| -----|  |
+|3| -----|  |
+|4| -----|  |
+|5| -----|  |
+|6| -----|  |
+|7| -----|  |
+|8| -----|  |
+|9| -----|  |
+|10| -----|  |
+|11| -----|  |
+|12| -----|  |
+| |
+| |
+|Slot #| IP| Description |
+|13| -----|  |
+|14| -----|  |
+|15| -----|  |
+|16| -----|  |
+|17| -----|  |
+|18| -----|  |
+|19| -----|  |
+|20| 10.128.119.151| [POE] CountingPRU - Trecho 19 M2 |
+|21| 10.128.119.152| [POE] CountingPRU - Trecho 19 C2 |
+|22| 10.128.119.153| [POE] CountingPRU - Trecho 19 C3 |
+|23| 10.128.119.154| [POE] CountingPRU - Trecho 19 M1 |
+|24| -----| [POE] CountingPRU Booster - Trecho 19  |
 
 
 
@@ -1081,36 +1104,66 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 '''Upper Ethernet Patch Panel'''
 
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style=
-|-nt-size:10px; text-align:center;" | -----
-| style="text-align:center; font--size:10px; text-align:left;  " | 
-|-font-size:10px; text-align:center;" | 23
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | DIG - Scrapper 01
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 24
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | DIG - Scrapper 02
-|-
-|}
+|Slot #| IP| Description |
+|1| -----| [POE] CountingPRU - Booster |
+|2| -----| [POE] Basler Camera DIG (Visible Light) - Booster |
+|3| -----| DIG 4 (Rack DIG) |
+|4| -----| [POE] DIG BTS - Booster - Monitor 1 |
+|5| -----| [POE] DIG BTS - Booster - Monitor 2 |
+|6| -----| [POE] DIG BTS - Trecho 20/M1 - Monitor 1 |
+|7| -----| [POE] DIG BTS - Trecho 20/M1 - Monitor 2 |
+|8| -----| [POE] DIG BTS - Trecho 20/M1 - Monitor 3 |
+|9| -----| [POE] DIG BTS - Trecho 20/M1 - Monitor 4 |
+|10| -----| DIG BTS - Galil 1 |
+|11| -----| DIG BTS - Galil 2 |
+|12| -----| DIG BTS - Galil 3 |
+| |
+| |
+|Slot #| IP| Description |
+|13| -----| DIG BTS - Galil 4 |
+|14| -----| DIG BTS - Galil 5 |
+|15| -----| DIG BTS - Galil 6 |
+|16| -----|  |
+|17| -----|  |
+|18| -----|  |
+|19| -----|  |
+|20| -----|  |
+|21| -----|  |
+|22| -----|  |
+|23| -----| DIG - Scrapper 01 |
+|24| -----| DIG - Scrapper 02  |
 
 
 '''Lower Ethernet Patch Panel'''
 
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="fze:10px; text-align:left;  " |  
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; foont-size:10px; text-align:center;" | 10.128.120.151
-| style="text-align:center; fontt-size:10px; text-align:center;" | 24
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.120.154
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 20 M1
-|-
-|}
+|Slot #| IP| Description |
+|1| -----| General Purpose - BC |
+|2| -----|  |
+|3| -----|  |
+|4| -----|  |
+|5| -----|  |
+|6| -----|  |
+|7| -----|  |
+|8| -----|  |
+|9| -----|  |
+|10| -----|  |
+|11| -----|  |
+|12| -----|  |
+| |
+| |
+|Slot #| IP| Description |
+|13| -----|  |
+|14| -----|  |
+|15| -----|  |
+|16| -----|  |
+|17| -----|  |
+|18| -----|  |
+|19| -----|  |
+|20| -----|  |
+|21| 10.128.120.151| [POE] CountingPRU - Trecho 20 M2 |
+|22| 10.128.120.152| [POE] CountingPRU - Trecho 20 C2 |
+|23| 10.128.120.153| [POE] CountingPRU - Trecho 20 C3 |
+|24| 10.128.120.154| [POE] CountingPRU - Trecho 20 M1  |
 
 
 
@@ -1148,17 +1201,34 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 '''Ethernet Patch Panel'''
 
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="f
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 5
-| style="text-align:center; ; font-size:10px; text-align:left;  " | 
-|-font-size:10px; text-align:center;" | 24
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-|}
+|Slot #| IP| Description |
+|1| -----| Cable 01 to Rack LA-RaPS02 (Room 21) |
+|2| -----| Cable 02 to Rack LA-RaPS02 (Room 21) |
+|3| -----| Cable 03 to Rack LA-RaPS02 (Room 21) |
+|4| -----| Cable 04 to Rack LA-RaPS02 (Room 21) |
+|5| -----| Cable 05 to Rack LA-RaPS02 (Room 21) |
+|6| -----| Cable 06 to Rack LA-RaPS04 (Room 21) |
+|7| -----| Cable 07 to Rack LA-RaPS04 (Room 21) |
+|8| -----| Cable 08 to Rack LA-RaPS04 (Room 21) |
+|9| -----|  |
+|10| -----|  |
+|11| -----|  |
+|12| -----|  |
+| |
+| |
+|Slot #| IP| Description |
+|13| -----|  |
+|14| -----|  |
+|15| -----|  |
+|16| -----|  |
+|17| -----|  |
+|18| -----|  |
+|19| -----|  |
+|20| -----|  |
+|21| -----|  |
+|22| -----|  |
+|23| -----|  |
+|24| -----|  |
 
 
 
