@@ -2,7 +2,7 @@
 title: SERIALxxCON
 description: 
 published: 1
-date: 2024-06-03T15:57:43.611Z
+date: 2024-06-03T15:58:29.789Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-29T15:36:02.089Z
@@ -203,9 +203,9 @@ Serial communication - Hardware configuration ("Mode" Panel Switches)
 |SW Left| SW Right| Mode |
 |-|-|-|
 |⬇| ⬇| RS-232 (FTDI) |
-|⬇| ⬆️| Not Available * |
+|⬇| ⬆️| Not Available ¹ |
 |⬆️| ⬇| RS-485 (FTDI) |
 |⬆️| ⬆️| RS-485 (High-performance PRU) |
 
 
-** Although this configuration is not available for serial communication, it can be used to perform any action on the system. For example, Controls Group has used this configuration to force a DHCP address for Beaglebone Black.*
+*¹ Although this configuration is not available for serial communication, it can be used to perform any action on the system. For example, Controls Group has used this configuration to force a DHCP address for Beaglebone Black.*
