@@ -2,7 +2,7 @@
 title: SERIALxxCON
 description: 
 published: 1
-date: 2024-06-03T15:55:12.566Z
+date: 2024-06-03T15:55:43.545Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-29T15:36:02.089Z
@@ -100,7 +100,9 @@ There is a dedicated UART interface in SERIALxxCON board. Based on Maxim MAX3107
 
 It has a wide baudrate range, it is configurable. Standard values are already available as well as 6, 10 and 12 Mbps. Also, it may operate synchonously to input timing signals.
 
-There is a C library and a Python module (built via cython) available to interface with it. For more details about it, see [[CON:PRUserial485 | PRUserial485]] project page. This interface is not mapped in any system device (/dev/tty*), making it mandatory to use the pre-developed software module.
+There is a C library and a Python module (built via cython) available to interface with it. For more details about it, see [PRUserial485](/Machine/Groups/CON/pruserial485) project page. This interface is not mapped in any system device (/dev/tty*), making it mandatory to use the pre-developed software module.
+
+<br>
 
 ###  FTDI UART 
 
