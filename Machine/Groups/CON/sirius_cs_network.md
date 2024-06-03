@@ -144,7 +144,7 @@ With a DNS server, we can easily associate IPs with node names (for example, ''n
 
 Other groups may decide freely whether to use static or dynamic IP addresses on the equipments under their responsibility.
 
-As we require that the IP addresses be allocated according to the port that the device is connected to, we decided to centralize the [DHCP service](/Machine/Groups/CON/dhcp_servers) in our [[CON:Sirius_control_system_servers|servers]](link) and to use two DHCP features: '''DHCP relay agent''' to forward IP requests from the switches to the server and '''option 82''' to append the respective switch's port and IP address to a DHCPDISCOVER packet.
+As we require that the IP addresses be allocated according to the port that the device is connected to, we decided to centralize the [DHCP service](/Machine/Groups/CON/dhcp_servers) in our [[CON:Sirius_control_system_servers|servers]](link) and to use two DHCP features: **DHCP relay agent** to forward IP requests from the switches to the server and **option 82** to append the respective switch's port and IP address to a DHCPDISCOVER packet.
 
 <br>
 
@@ -304,7 +304,7 @@ Finally, we need to enable the VLANs on the interfaces used for the ring topolog
 
 #### Front-end BPM VLANs
 
-All Controls Group's access switched are connected to a same-model Diagnostics Group's switch. This latter should be configured with two different VLANs, the default and the one dedicated for the front-end BPM devices whose ID is '''100''' according to [[CON:Sirius_control_system_network#Reserved_VLANs|this]](link).
+All Controls Group's access switched are connected to a same-model Diagnostics Group's switch. This latter should be configured with two different VLANs, the default and the one dedicated for the front-end BPM devices whose ID is **100** according to [[CON:Sirius_control_system_network#Reserved_VLANs|this]](link).
 
 <br>
 
@@ -541,9 +541,9 @@ $ iperf -c 10.128.1.10 -u -b 100m
 
 As a redundancy option, a ring topology is created connecting all access switches. Two new static  default routes are added: one for the switch to the left and another, to the right. To avoid that two neighbor switches exchange packets indefinitely as in a ping-pong game, we need to define a prioritary sense. By default, the clockwise routes will cost less than the anticlockwise's. The bad consequence of this approach is that a switch will need to know the addresses of its neighbours and in the case of an eventual repair (addition or remotion), at least two switches will need to be reconfigured. Futhermore, at least three new VLANs will be needed (2 would be enough with the number of switches were even), according to the figure.
 
-Given any three consecutive access switches `A`, `B` and `C` (whose addresses are `10.128.'''A'''.1`, `10.128.'''B'''.1` and `10.128.'''C'''.1` respectively), the VLAN used to connect `A` to `B` must be different from the one used to connect `B` to `C`.
+Given any three consecutive access switches `A`, `B` and `C` (whose addresses are `10.128.**A**.1`, `10.128.**B**.1` and `10.128.**C**.1` respectively), the VLAN used to connect `A` to `B` must be different from the one used to connect `B` to `C`.
 
-To configure `B` accordingly, you need to access `A` and `C` and verify if any of the VLANs 6, 7 and 8 exist. In `A` (switch from the left), search for a VLAN with the address `10.128.X.'''2'''` and in `C` (switch from the right), for the address `10.128.Y.'''1'''`. In `B`, therefore, use VLANs `X` and `Y`:
+To configure `B` accordingly, you need to access `A` and `C` and verify if any of the VLANs 6, 7 and 8 exist. In `A` (switch from the left), search for a VLAN with the address `10.128.X.**2**` and in `C` (switch from the right), for the address `10.128.Y.**1**`. In `B`, therefore, use VLANs `X` and `Y`:
 
 ```
 # In switch B:
