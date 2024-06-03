@@ -1,8 +1,22 @@
+---
+title: Sirius control system racks
+description: 
+published: 1
+date: 2024-06-03T21:13:34.804Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-03T21:08:07.259Z
+---
+
 # CON: Sirius control system racks
+
+<br>
 
 ## Introduction
 
 The Controls group will count on 24 racks to install its components, including [[CON:Sirius_control_system_servers|servers]], [[CON:Sirius_control_system_network|switches]] and control hosts. The [https://www.rittal.com/de_de/ts-it/public/index.php/en TS IT] developed by the German company [https://www.rittal.com/com-en/content/en/start/ Rittal] was chosen as the model and two different depths were acquired, according to the individual needs of each room.
+
+<br>
 
 ## Amount and functions
 
@@ -18,23 +32,33 @@ The table below summarizes the location, count and physical dimension of our rac
 |1| 600x1000| Connectivity room |
 |1| 600x1000| LINAC klystron room  |
 
+<br>
+
 ## Internal organization
 
 This section describes the internal organization for each group of racks.
 
 The proposed internal assembling models can be found [here](https://docs.google.com/spreadsheets/d/1LKvopICk3yRigLOoKa1PeqR0IQa8sIx_pQtwNyGZ84I/edit?usp=sharing).
 
+<br>
+
 ### Rack rooms with only one Aruba 2930M switch
 
 In this kind of rooms, we count on two switches: one [2930M](http://www.arubanetworks.com/assets/ds/DS_2930MSwitchSeries.pdf|Aruba) and another [1810-24G](https://h20195.www2.hpe.com/v2/GetDocument.aspx?docname=4AA4-6971ENW&doctype=data%20sheet&doclang=EN_US&searchquery=&cc=th&lc=en|HP). The rack dimensions, in millimeters, are 600x800.
+
+<br>
 
 ### Rack rooms with two 2930M switches
 
 Two [2930M](http://www.arubanetworks.com/assets/ds/DS_2930MSwitchSeries.pdf|Aruba) switches and other two [1810-24G](https://h20195.www2.hpe.com/v2/GetDocument.aspx?docname=4AA4-6971ENW&doctype=data%20sheet&doclang=EN_US&searchquery=&cc=th&lc=en|HP) are needed for rooms '''01''' and '''19/20''', due to the bigger amount of connections on these sectors. As in the previous section, these are 600x800mm racks.
 
+<br>
+
 ### RF room
 
 The Controls group has a rack in the RF room as well. In this case, we use three Aruba 2930M switches dedicated for the RF systems. No HP 1810 switches are used here.
+
+<br>
 
 ### High power supplies room
 
@@ -58,11 +82,13 @@ The connection density in the power supply room is high: five Aruba 2930M switch
 |11| -----|  ||23| -----|  |
 |12| -----|  ||24| -----|  |
 
-
+<br>
 
 ### LINAC klystron room
 
 Our rack in the LINAC klystron room is going to be the root of half of our star topology. A 600x1000mm rack will be placed in this room.
+
+<br>
 
 ### Connectivity room
 
@@ -141,6 +167,8 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |4| 		 |
 |5| 		 |
 
+<br>
+
 ### Room 01
 
 '''Ethernet Patch Panel'''
@@ -149,101 +177,9 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 ! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
 ! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
 |-
-| style="text-align:center; font-size:10px; text-align:center;" | 1
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - LTB 3
+| style="text-align:cet-size:10px; text-align:left;  " | [POE] CountingPRU - LTB 5
 |-
-| style="text-align:center; font-size:10px; text-align:center;" | 2
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - LTB 4
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 3
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - LTB 5
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 4
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Booster 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 5
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] DIG Camera - LTB 4
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] DIG Camera - LTB 5
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 7
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] DIG Camera - LTB 6
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 8
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] DIG Camera - Booster 1
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 9
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] DIG Camera - Booster 2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 10
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] DIG Camera - Booster 3
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 11
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | DIG Galil - LTB 4
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | DIG Galil - LTB 5
-|-
-|}
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 13
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | DIG Galil - LTB 6
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 14
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | DIG Galil - Booster 1
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 15
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | DIG Galil - Booster 2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 16
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | DIG Galil - Booster 3
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 17
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | DIG - Scrapper 03
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 18
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | DIG - Scrapper 04
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | Diagnostics Beamline
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 20
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.101.151
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 1 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 21
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.101.152
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 1 C2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 22
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.101.153
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 1 C3 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 23
+| style="textr; font-size:10px; text-align:center;" | 23
 | style="text-align:center; font-size:10px; text-align:center;" | 10.128.101.154
 | style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 1 M1 
 |-
@@ -260,27 +196,13 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 '''SERIALxxCON - Serial Networks'''
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
 ! style="font-weight:bold; font-size:12px; text-align:center;" | IP
-! style="font-weight:bold; font-size:12px; text-align:center;" | Device
-|-
-| style="font-size:10px; text-align:center;  " | 1
-| style="font-size:10px; text-align:center;  " | 95
-| style="font-size:10px; text-align:center;  " | 10.128.101.104
-| style="font-size:10px; text-align:left;    " | Power Supplies - DCLINKs - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 2
-| style="font-size:10px; text-align:center;  " | 96
-| style="font-size:10px; text-align:center;  " | 10.128.101.105
-| style="font-size:10px; text-align:left;    " | Power Supplies - FBP - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 3
-| style="font-size:10px; text-align:center;  " | 93
-| style="font-size:10px; text-align:center;  " | 10.128.101.101
-| style="font-size:10px; text-align:left;    " | Vacuum System - Gauge Controller MKS - Booster & Storage Ring
-|-
+! style="font-weight:bold;
 | style="font-size:10px; text-align:center;  " | 4
 | style="font-size:10px; text-align:center;  " | 94
 | style="font-size:10px; text-align:center;  " | 10.128.101.102
@@ -288,71 +210,9 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |-
 | style="font-size:10px; text-align:center;  " | 5
 | style="font-size:10px; text-align:center;  " | 
+| style="font-size:10p0px; text-align:center;  " | 14
 | style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 6
-| style="font-size:10px; text-align:center;  " | 111
-| style="font-size:10px; text-align:center;  " | 10.128.101.106
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 7
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 8
-| style="font-size:10px; text-align:center;  " | 115
-| style="font-size:10px; text-align:center;  " | 10.128.101.103
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 9
-| style="font-size:10px; text-align:center;  " | 293
-| style="font-size:10px; text-align:center;  " | 10.128.101.117
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (<-BC)
-|-
-| style="font-size:10px; text-align:center;  " | 10
-| style="font-size:10px; text-align:center;  " | 319
-| style="font-size:10px; text-align:center;  " | 10.128.101.118
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (BC->)
-|-
-| style="font-size:10px; text-align:center;  " | 11
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left;    " | 
-|-
-| style="font-size:10px; text-align:center;  " | 12
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 13
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.101.121
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 1 - Storage Ring - Left 1
-|-
-| style="font-size:10px; text-align:center;  " | 14
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.101.122
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 2 - Storage Ring - Left 2 
-|-
-| style="font-size:10px; text-align:center;  " | 15
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 16
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left  ;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 17
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.101.131
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Right 1
-|-
-| style="font-size:10px; text-align:center;  " | 18
-| style="font-size:10px; text-align:center;  " | 
+| stypx; text-align:center;  " | 
 | style="font-size:10px; text-align:center;  " | 10.128.101.132
 | style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Right 2
 |----
@@ -363,106 +223,20 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 '''Ethernet Patch Panel'''
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
 ! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 1
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | General Purpose BC
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 2
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 3
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 4
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 5
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " |  
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
+! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Descriptionfont-size:10px; text-align:center;" | -----
 | style="text-align:center; font-size:10px; text-align:left;  " | 
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 7
 | style="text-align:center; font-size:10px; text-align:center;" | -----
 | style="text-align:center; font-size:10px; text-align:left;  " | 
 |-
-| style="text-align:center; font-size:10px; text-align:center;" | 8
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 9
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 10
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 11
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-|}
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 13
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 14
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 15
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 16
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 17
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 18
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
+| style="text-align:center; fon
 | style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 20
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.102.151
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 2 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 21
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.102.152
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 2 C2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 22
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.102.153
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 2 C3
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 23
+| style="tent-size:10px; text-align:center;" | 23
 | style="text-align:center; font-size:10px; text-align:center;" | 10.128.102.154
 | style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 2 M1
 |-
@@ -479,94 +253,15 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 '''SERIALxxCON - Serial Networks'''
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! style="font-weight:bold; font-size:12px; text-align:center; width="80px" | Board Location
 ! style="font-weight:bold; font-size:12px; text-align:center; width="80px" | SERIALxxCON ID
-! style="font-weight:bold; font-size:12px; text-align:center; width="100px" | IP
-! style="font-weight:bold; font-size:12px; text-align:center;" | Device
-|-
-| style="font-size:10px; text-align:center;  " | 1
-| style="font-size:10px; text-align:center;  " | 57
-| style="font-size:10px; text-align:center;  " | 10.128.102.101
-| style="font-size:10px; text-align:left;    " | Vacuum System - Gauge Controller MKS - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 2
-| style="font-size:10px; text-align:center;  " | 58
-| style="font-size:10px; text-align:center;  " | 10.128.102.102
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Booster 
-|-
-| style="font-size:10px; text-align:center;  " | 3
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left;    " | 
-|-
-| style="font-size:10px; text-align:center;  " | 4
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left;    " | 
-|-
-| style="font-size:10px; text-align:center;  " | 5
-| style="font-size:10px; text-align:center;  " | 61
-| style="font-size:10px; text-align:center;  " | 10.128.102.104
-| style="font-size:10px; text-align:left;    " | Power Supplies - DCLINKs - Booster & Storage Ring
-|-
+! style="font-weight:bold; f
 | style="font-size:10px; text-align:center;  " | 6
 | style="font-size:10px; text-align:center;  " | 62
-| style="font-size:10px; text-align:center;  " | 10.128.102.105
-| style="font-size:10px; text-align:left;    " | Power Supplies - FBP - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 7
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.102.119
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - RF Petra-7 Cavity 
-|-
-| style="font-size:10px; text-align:center;  " | 8
-| style="font-size:10px; text-align:center;  " | 51
-| style="font-size:10px; text-align:center;  " | 10.128.102.103
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 9
-| style="font-size:10px; text-align:center;  " | 537
-| style="font-size:10px; text-align:center;  " | 10.128.102.117
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (<-BC)
-|-
-| style="font-size:10px; text-align:center;  " | 10
-| style="font-size:10px; text-align:center;  " | 298
-| style="font-size:10px; text-align:center;  " | 10.128.102.118
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (BC->) 
-|-
-| style="font-size:10px; text-align:center;  " | 11
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left;    " | 
-|-
-| style="font-size:10px; text-align:center;  " | 12
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left;    " | 
-|-
-| style="font-size:10px; text-align:center;  " | 13
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.102.121
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 1 - Storage Ring - Left 1 
-|-
-| style="font-size:10px; text-align:center;  " | 14
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.102.122
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 2 - Storage Ring - Left 2 
-|-
-| style="font-size:10px; text-align:center;  " | 15
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left;    " | 
-|-
-| style="font-size:10px; text-align:center;  " | 16
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left  ;  " |   
-|-
-| style="font-size:10px; text-align:center;  " | 17
-| style="font-size:10px; text-align:center;  " | 
+| style="font text-align:center;  " | 
 | style="font-size:10px; text-align:center;  " | 10.128.102.131
 | style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Right 1 
 |-
@@ -579,6 +274,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 ### Room 03
 
 '''Ethernet Patch Panel'''
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
 ! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
@@ -589,96 +285,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 | style="text-align:center; font-size:10px; text-align:left;  " | General Purpose - BC
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 2
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 3
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 4
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 5
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " |  
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 7
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 8
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 9
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 10
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 11
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-|}
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 13
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 14
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 15
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 16
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 17
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 18
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 20
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.103.151
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 3 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 21
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.103.152
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 3 C2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 22
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.103.153
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 3 C3
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 23
+| style="text-align:center; foer; font-size:10px; text-align:center;" | 23
 | style="text-align:center; font-size:10px; text-align:center;" | 10.128.103.154
 | style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 3 M1
 |-
@@ -690,98 +297,19 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-
-
 '''SERIALxxCON - Serial Networks'''
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
-! style="font-weight:bold; font-size:12px; text-align:center;" | IP
-! style="font-weight:bold; font-size:12px; text-align:center;" | Device
-|-
-| style="font-size:10px; text-align:center;  " | 1
-| style="font-size:10px; text-align:center;  " | 204
-| style="font-size:10px; text-align:center;  " | 10.128.103.101
-| style="font-size:10px; text-align:left;    " | Vacuum System - Gauge Controller MKS - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 2
-| style="font-size:10px; text-align:center;  " | 207
-| style="font-size:10px; text-align:center;  " | 10.128.103.102
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 3
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 4
-| style="font-size:10px; text-align:center;  " | 205
-| style="font-size:10px; text-align:center;  " | 10.128.103.106
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 5
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
+! style="font-weight:ize:10px; text-align:center;  " | 
 |-
 | style="font-size:10px; text-align:center;  " | 6
 | style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.103.104
-| style="font-size:10px; text-align:left;    " | Power Supplies - DCLINK - Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 7
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 8
-| style="font-size:10px; text-align:center;  " | 206
-| style="font-size:10px; text-align:center;  " | 10.128.103.103
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Storage Ring
-|-  
-| style="font-size:10px; text-align:center;  " | 9
-| style="font-size:10px; text-align:center;  " | 295
-| style="font-size:10px; text-align:center;  " | 10.128.103.117
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (<-BC)
-|-
-| style="font-size:10px; text-align:center;  " | 10
-| style="font-size:10px; text-align:center;  " | 289
-| style="font-size:10px; text-align:center;  " | 10.128.103.118
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (BC->)
-|-
-| style="font-size:10px; text-align:center;  " | 11
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 12
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 13
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.103.131
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Left 1
-|-
-| style="font-size:10px; text-align:center;  " | 14
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.103.132
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Left 2
-|-
-| style="font-size:10px; text-align:center;  " | 15
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 16
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left;    " |  
-|-
-| style="font-size:10px; text-align:center;  " | 17
+| style="font-size:10ize:10px; text-align:center;  " | 17
 | style="font-size:10px; text-align:center;  " | 
 | style="font-size:10px; text-align:center;  " | 10.128.103.121
 | style="font-size:10px; text-align:left;    " | Power Supplies - FBP 1 - Storage Ring - Right 1
@@ -795,108 +323,11 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 ### Room 04
 
 '''Ethernet Patch Panel'''
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 1
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | General Purpose - BC
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 2
-| style="text-align:center; font-size:10px; text-align:center;" | -----
+! scope="col" width="80px" styl; font-size:10px; text-align:center;" | -----
 | style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 3
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 4
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 5
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " |  
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 7
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 8
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 9
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 10
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 11
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-|}
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 13
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 14
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 15
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 16
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 17
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 18
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 20
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.104.151
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 4 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 21
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.104.152
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 4 C2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 22
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.104.153
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 4 C3
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 23
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.104.154
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 4 M1
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 24
 | style="text-align:center; font-size:10px; text-align:center;" | -----
@@ -906,101 +337,23 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-
-
 '''SERIALxxCON - Serial Networks'''
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
 ! style="font-weight:bold; font-size:12px; text-align:center;" | IP
 ! style="font-weight:bold; font-size:12px; text-align:center;" | Device
-|-
-| style="font-size:10px; text-align:center;  " | 1
-| style="font-size:10px; text-align:center;  " | 283
-| style="font-size:10px; text-align:center;  " | 10.128.104.101
-| style="font-size:10px; text-align:left;    " | Vacuum System - Gauge Controller MKS - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 2
-| style="font-size:10px; text-align:center;  " | 284
-| style="font-size:10px; text-align:center;  " | 10.128.104.102
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 3
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 4
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 5
-| style="font-size:10px; text-align:center;  " | 281
-| style="font-size:10px; text-align:center;  " | 10.128.104.104
-| style="font-size:10px; text-align:left;    " | Power Supplies - DCLINKs - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 6
-| style="font-size:10px; text-align:center;  " | 282
-| style="font-size:10px; text-align:center;  " | 10.128.104.105
-| style="font-size:10px; text-align:left;    " | Power Supplies - FBP - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 7
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 8
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 9
-| style="font-size:10px; text-align:center;  " | 294
-| style="font-size:10px; text-align:center;  " | 10.128.104.117
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (<-BC)
-|-
-| style="font-size:10px; text-align:center;  " | 10
-| style="font-size:10px; text-align:center;  " | 301
+|-px; text-align:center;  " | 10.128.104.104
+| style="font-size:10p10px; text-align:center;  " | 301
 | style="font-size:10px; text-align:center;  " | 10.128.104.118
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (BC->)
-|-
-| style="font-size:10px; text-align:center;  " | 11
+| style="font-size:10pe:10px; text-align:center;  " | 15
 | style="font-size:10px; text-align:center;  " | 
 | style="font-size:10px; text-align:center;  " | 
 | style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 12
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 13
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.104.121
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 1 - Storage Ring - Left 1
-|-
-| style="font-size:10px; text-align:center;  " | 14
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.104.122
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 2 - Storage Ring - Left 2
-|-
-| style="font-size:10px; text-align:center;  " | 15
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 16
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left  ;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 17
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.104.131
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Right 1
 |-
 | style="font-size:10px; text-align:center;  " | 18
 | style="font-size:10px; text-align:center;  " | 
@@ -1011,6 +364,8 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 ### Room 05
 
 '''Ethernet Patch Panel'''
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
 ! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
@@ -1019,96 +374,9 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 | style="text-align:center; font-size:10px; text-align:center;" | 1
 | style="text-align:center; font-size:10px; text-align:center;" | -----
 | style="text-align:center; font-size:10px; text-align:left;  " | General Purpose - BC
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 2
+|-er; font-size:10px; text-align:center;" | 17
 | style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 3
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 4
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 5
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " |  
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 7
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 8
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 9
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 10
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 11
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-|}
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 13
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 14
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 15
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 16
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 17
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 18
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 20
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.105.151
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 5 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 21
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.105.152
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 5 C2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 22
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.105.153
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 5 C3
+| style="text-align:centernter; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 5 C3
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 23
 | style="text-align:center; font-size:10px; text-align:center;" | 10.128.105.154
@@ -1122,100 +390,17 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-
-
 '''SERIALxxCON - Serial Networks'''
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
-! style="font-weight:bold; font-size:12px; text-align:center;" | IP
-! style="font-weight:bold; font-size:12px; text-align:center;" | Device
-|-
-| style="font-size:10px; text-align:center;  " | 1
-| style="font-size:10px; text-align:center;  " | 209
-| style="font-size:10px; text-align:center;  " | 10.128.105.101
-| style="font-size:10px; text-align:left;    " | Vacuum System - Gauge Controller MKS - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 2
-| style="font-size:10px; text-align:center;  " | 208
-| style="font-size:10px; text-align:center;  " | 10.128.105.102
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 3
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 4
-| style="font-size:10px; text-align:center;  " | 211
-| style="font-size:10px; text-align:center;  " | 10.128.105.106
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 5
-| style="font-size:10px; text-align:center;  " | 202
-| style="font-size:10px; text-align:center;  " | 10.128.105.104
-| style="font-size:10px; text-align:left;    " | Power Supplies - DCLINKs - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 6
-| style="font-size:10px; text-align:center;  " | 203
-| style="font-size:10px; text-align:center;  " | 10.128.105.105
-| style="font-size:10px; text-align:left;    " | Power Supplies - FBP - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 7
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 8
-| style="font-size:10px; text-align:center;  " | 212
-| style="font-size:10px; text-align:center;  " | 10.128.105.103
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 9
-| style="font-size:10px; text-align:center;  " | 288
-| style="font-size:10px; text-align:center;  " | 10.128.105.117
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (<-BC)
-|-
-| style="font-size:10px; text-align:center;  " | 10
-| style="font-size:10px; text-align:center;  " | 323
-| style="font-size:10px; text-align:center;  " | 10.128.105.118
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (BC->)
-|-
-| style="font-size:10px; text-align:center;  " | 11
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 12
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 13
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.105.121
-| style="font-size:10px; text-align:left;    " | Power Supplies - FBP 1 - Storage Ring - Left 1
+! style="font-weight:bold;x; text-align:left;    " | Power Supplies - FBP 1 - Storage Ring - Left 1
 |-
 | style="font-size:10px; text-align:center;  " | 14
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.105.122
-| style="font-size:10px; text-align:left;    " | Power Supplies - FBP 2 - Storage Ring - Left 2
-|-
-| style="font-size:10px; text-align:center;  " | 15
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 16
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left;    " | 
-|-
-| style="font-size:10px; text-align:center;  " | 17
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.105.131
 | style="font-size:10px; text-align:left;    " | Power Supplies - FBP 3 - Storage Ring - Right 1
 |-
 | style="font-size:10px; text-align:center;  " | 18
@@ -1228,104 +413,15 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 '''Ethernet Patch Panel'''
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
 ! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 1
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | General Purpose - BC
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 2
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 3
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 4
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 5
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " |  
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
+! scope="col" width="300px" style
 | style="text-align:center; font-size:10px; text-align:center;" | 7
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 8
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 9
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 10
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 11
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-|}
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 13
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 14
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 15
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 16
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 17
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
+| style="text-align:center;
 | style="text-align:center; font-size:10px; text-align:center;" | 18
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 20
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.106.151
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 6 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 21
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.106.152
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 6 C2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 22
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.106.153
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 6 C3
+| style="text-align:centeer; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 6 C3
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 23
 | style="text-align:center; font-size:10px; text-align:center;" | 10.128.106.154
@@ -1339,99 +435,19 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-
-
 '''SERIALxxCON - Serial Networks'''
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
-! style="font-weight:bold; font-size:12px; text-align:center;" | IP
-! style="font-weight:bold; font-size:12px; text-align:center;" | Device
-|-
-| style="font-size:10px; text-align:center;  " | 1
-| style="font-size:10px; text-align:center;  " | 200
-| style="font-size:10px; text-align:center;  " | 10.128.106.101
-| style="font-size:10px; text-align:left;    " | Vacuum System - Gauge Controller MKS - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 2
-| style="font-size:10px; text-align:center;  " | 199
-| style="font-size:10px; text-align:center;  " | 10.128.106.102
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 3
-| style="font-size:10px; text-align:center;  " | 213
-| style="font-size:10px; text-align:center;  " | 10.128.106.103
-| style="font-size:10px; text-align:left;    " | Power Supplies - 4UHV - Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 4
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 5
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 6
+! style="font-weightext-align:center;  " | 6
 | style="font-size:10px; text-align:center;  " | 
 | style="font-size:10px; text-align:center;  " | 10.128.106.104
-| style="font-size:10px; text-align:left;    " | Power Supplies - DCLINK - Storage Ring
+| style="font-size:10pxtext-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (BC ->)
 |-
-| style="font-size:10px; text-align:center;  " | 7
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 8
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 9
-| style="font-size:10px; text-align:center;  " | 314
-| style="font-size:10px; text-align:center;  " | 10.128.106.117
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (<- BC)
-|-
-| style="font-size:10px; text-align:center;  " | 10
-| style="font-size:10px; text-align:center;  " | 317
-| style="font-size:10px; text-align:center;  " | 10.128.106.118
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (BC ->)
-|-
-| style="font-size:10px; text-align:center;  " | 11
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 12
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 13
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.106.121
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 1 - Storage Ring - Left 1
-|-
-| style="font-size:10px; text-align:center;  " | 14
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.106.122
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 2 - Storage Ring - Left 2 
-|-
-| style="font-size:10px; text-align:center;  " | 15
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left  ;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 16
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left  ;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 17
-| style="font-size:10px; text-align:center;  " | 
+| style="font-size:10px;0px; text-align:center;  " | 
 | style="font-size:10px; text-align:center;  " | 10.128.106.131
 | style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Right 1
 |-
@@ -1441,103 +457,18 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 | style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Right 2
 |}
 
+
 ### Room 07
 
 '''Ethernet Patch Panel'''
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
 ! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 1
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | General Purpose - BC
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 2
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 3
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 4
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 5
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " |  
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 7
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
+! scope="col" width="300px" s font-size:10px; text-align:left;  " | 
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 8
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 9
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 10
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 11
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-|}
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 13
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 14
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 15
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 16
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 17
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 18
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 20
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.107.151
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 7 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 21
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.107.152
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 7 C2
+| style="text-align:center;r; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 7 C2
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 22
 | style="text-align:center; font-size:10px; text-align:center;" | 10.128.107.153
@@ -1555,97 +486,14 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-
-
 '''SERIALxxCON - Serial Networks'''
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
-! style="font-weight:bold; font-size:12px; text-align:center;" | IP
-! style="font-weight:bold; font-size:12px; text-align:center;" | Device
-|-
-| style="font-size:10px; text-align:center;  " | 1
-| style="font-size:10px; text-align:center;  " | 260
-| style="font-size:10px; text-align:center;  " | 10.128.107.101
-| style="font-size:10px; text-align:left;    " | Vacuum System - Gauge Controller MKS - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 2
-| style="font-size:10px; text-align:center;  " | 259
-| style="font-size:10px; text-align:center;  " | 10.128.107.102
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 3
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 4
-| style="font-size:10px; text-align:center;  " | 257
-| style="font-size:10px; text-align:center;  " | 10.128.107.106
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 5
-| style="font-size:10px; text-align:center;  " | 256
-| style="font-size:10px; text-align:center;  " | 10.128.107.104
-| style="font-size:10px; text-align:left;    " | Power Supplies - DCLINKs - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 6
-| style="font-size:10px; text-align:center;  " | 255
-| style="font-size:10px; text-align:center;  " | 10.128.107.105
-| style="font-size:10px; text-align:left;    " | Power Supplies - FBP - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 7
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 8
-| style="font-size:10px; text-align:center;  " | 258
-| style="font-size:10px; text-align:center;  " | 10.128.107.103
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 9
-| style="font-size:10px; text-align:center;  " | 135
-| style="font-size:10px; text-align:center;  " | 10.128.107.117
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (<-BC)
-|-
-| style="font-size:10px; text-align:center;  " | 10
-| style="font-size:10px; text-align:center;  " | 137
-| style="font-size:10px; text-align:center;  " | 10.128.107.118
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (BC->)
-|-
-| style="font-size:10px; text-align:center;  " | 11
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 12
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 13
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.107.121
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 1 - Storage Ring - Left 1
-|-
-| style="font-size:10px; text-align:center;  " | 14
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.107.122
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 2 - Storage Ring - Left 2
-|-
-| style="font-size:10px; text-align:center;  " | 15
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 16
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left  ;  " | 
-|-
+! style="font-wei
 | style="font-size:10px; text-align:center;  " | 17
 | style="font-size:10px; text-align:center;  " | 
 | style="font-size:10px; text-align:center;  " | 10.128.107.131
@@ -1657,109 +505,19 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 | style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Right 2
 |}
 
+
 ### Room 08
 
 '''Ethernet Patch Panel'''
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
 ! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 1
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | General Purpose - BC
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 2
-| style="text-align:center; font-size:10px; text-align:center;" | -----
+! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Descriptiongn:center; font-size:10px; text-align:center;" | -----
 | style="text-align:center; font-size:10px; text-align:left;  " | 
 |-
-| style="text-align:center; font-size:10px; text-align:center;" | 3
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 4
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 5
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " |  
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 7
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 8
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 9
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 10
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 11
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-|}
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 13
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 14
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 15
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 16
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 17
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 18
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 20
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.108.151
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 8 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 21
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.108.152
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 8 C2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 22
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.108.153
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 8 C3
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 23
+| style="text-align:center; font-si font-size:10px; text-align:center;" | 23
 | style="text-align:center; font-size:10px; text-align:center;" | 10.128.108.154
 | style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 8 M1
 |-
@@ -1771,101 +529,16 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-
-
 '''SERIALxxCON - Serial Networks'''
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
-! style="font-weight:bold; font-size:12px; text-align:center;" | IP
-! style="font-weight:bold; font-size:12px; text-align:center;" | Device
-|-
-| style="font-size:10px; text-align:center;  " | 1
-| style="font-size:10px; text-align:center;  " | 248
-| style="font-size:10px; text-align:center;  " | 10.128.108.101
-| style="font-size:10px; text-align:left;    " | Vacuum System - Gauge Controller MKS - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 2
-| style="font-size:10px; text-align:center;  " | 247
-| style="font-size:10px; text-align:center;  " | 10.128.108.102
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 3
+! style="font-weight:bol0px; text-align:center;  " | 15
 | style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 4
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 5
-| style="font-size:10px; text-align:center;  " | 280
-| style="font-size:10px; text-align:center;  " | 10.128.108.104
-| style="font-size:10px; text-align:left;    " | Power Supplies - DCLINKs - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 6
-| style="font-size:10px; text-align:center;  " | 279
-| style="font-size:10px; text-align:center;  " | 10.128.108.105
-| style="font-size:10px; text-align:left;    " | Power Supplies - FBP - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 7
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 8
-| style="font-size:10px; text-align:center;  " | 63
-| style="font-size:10px; text-align:center;  " | 10.128.108.103
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Storage Ring 
-|-
-| style="font-size:10px; text-align:center;  " | 9
-| style="font-size:10px; text-align:center;  " | 139
-| style="font-size:10px; text-align:center;  " | 10.128.108.117
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (<-BC)
-|-
-| style="font-size:10px; text-align:center;  " | 10
-| style="font-size:10px; text-align:center;  " | 138
-| style="font-size:10px; text-align:center;  " | 10.128.108.118
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (BC->)
-|-
-| style="font-size:10px; text-align:center;  " | 11
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 12
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 13
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.108.121
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 1 - Storage Ring - Left 1
-|-
-| style="font-size:10px; text-align:center;  " | 14
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.108.122
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 2 - Storage Ring - Left 2
-|-
-| style="font-size:10px; text-align:center;  " | 15
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 16
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:left  ;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 17
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.108.131
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Right 1
+| style="font-size:10ppx; text-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Right 1
 |-
 | style="font-size:10px; text-align:center;  " | 18
 | style="font-size:10px; text-align:center;  " | 
@@ -1873,111 +546,20 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 | style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Right 2
 |}
 
+
 ### Room 09
 
 '''Ethernet Patch Panel'''
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
 ! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 1
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | General Purpose - BC
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 2
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 3
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 4
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 5
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " |  
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
+! scope="col" width="300px"; font-size:10px; text-align:left;  " | 
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 7
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
+| style="text-align:center; ffont-size:10px; text-align:left;  " | 
 |-
-| style="text-align:center; font-size:10px; text-align:center;" | 8
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 9
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 10
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 11
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-|}
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 13
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 14
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 15
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 16
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 17
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 18
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 20
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.109.151
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 9 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 21
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.109.152
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 9 C2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 22
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.109.153
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 9 C3
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 23
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.109.154
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 9 M1
+| style="text-align:center; rfont-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 9 M1
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 24
 | style="text-align:center; font-size:10px; text-align:center;" | -----
@@ -1987,213 +569,43 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-
-
 '''SERIALxxCON - Serial Networks'''
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
-! style="font-weight:bold; font-size:12px; text-align:center;" | IP
-! style="font-weight:bold; font-size:12px; text-align:center;" | Device
-|-
-| style="font-size:10px; text-align:center;  " | 1
-| style="font-size:10px; text-align:center;  " | 244
-| style="font-size:10px; text-align:center;  " | 10.128.109.101
-| style="font-size:10px; text-align:left;    " | Vacuum System - Gauge Controller MKS - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 2
-| style="font-size:10px; text-align:center;  " | 243
-| style="font-size:10px; text-align:center;  " | 10.128.109.102
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 3
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 4
-| style="font-size:10px; text-align:center;  " | 245
-| style="font-size:10px; text-align:center;  " | 10.128.109.106
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 5
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 6
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.109.104
-| style="font-size:10px; text-align:left;    " | Power Supplies - DCLINK - Storage Ring 
-|-
-| style="font-size:10px; text-align:center;  " | 7
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 8
-| style="font-size:10px; text-align:center;  " | 246
-| style="font-size:10px; text-align:center;  " | 10.128.109.103
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 9
-| style="font-size:10px; text-align:center;  " | 133
-| style="font-size:10px; text-align:center;  " | 10.128.109.117
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (<-BC) 
-|-
-| style="font-size:10px; text-align:center;  " | 10
-| style="font-size:10px; text-align:center;  " | 136
-| style="font-size:10px; text-align:center;  " | 10.128.109.118
+! style="font-weight:bold; fontext-align:center;  " | 10.128.109.118
 | style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (BC->) 
 |-
-| style="font-size:10px; text-align:center;  " | 11
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 12
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 13
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.109.121 
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 1 - Storage Ring - Left 1
-|-
-| style="font-size:10px; text-align:center;  " | 14
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.109.122
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 2 - Storage Ring - Left 2
-|-
-| style="font-size:10px; text-align:center;  " | 15
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
+| style="font-size:10px; text-a
 | style="font-size:10px; text-align:center;  " | 16
 | style="font-size:10px; text-align:center;  " | 
 | style="font-size:10px; text-align:center;  " |
-| style="font-size:10px; text-align:left  ;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 17
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.109.131
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Right 1
-|-
+| style="font-size:1
 | style="font-size:10px; text-align:center;  " | 18
 | style="font-size:10px; text-align:center;  " | 
 | style="font-size:10px; text-align:center;  " | 10.128.109.132
 | style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Right 2
 |}
 
+
 ### Room 10
 
 '''Ethernet Patch Panel'''
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
 ! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
 ! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 1
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | General Purpose - BC
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 2
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 3
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 4
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 5
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " |  
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 7
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 8
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 9
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 10
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 11
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-|}
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 13
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 14
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 15
+| style="text-align:center; f fonont-size:10px; text-align:center;" | 15
 | style="text-align:center; font-size:10px; text-align:center;" | -----
 | style="text-align:center; font-size:10px; text-align:left;  " | 
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 16
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 17
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 18
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 20
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.110.151
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 10 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 21
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.110.152
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 10 C2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 22
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.110.153
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 10 C3
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 23
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.110.154
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 10 M1
+| style="text-align:10px; text-align:left;  " | [POE] CountingPRU - Trecho 10 M1
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 24
 | style="text-align:center; font-size:10px; text-align:center;" | -----
@@ -2203,209 +615,33 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-
-
 '''SERIALxxCON - Serial Networks'''
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
-! style="font-weight:bold; font-size:12px; text-align:center;" | IP
-! style="font-weight:bold; font-size:12px; text-align:center;" | Device
-|-
-| style="font-size:10px; text-align:center;  " | 1
-| style="font-size:10px; text-align:center;  " | 274
-| style="font-size:10px; text-align:center;  " | 10.128.110.101
-| style="font-size:10px; text-align:left;    " | Vacuum System - Gauge Controller MKS - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 2
-| style="font-size:10px; text-align:center;  " | 273
-| style="font-size:10px; text-align:center;  " | 10.128.110.102
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 3
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 4
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 5
-| style="font-size:10px; text-align:center;  " | 276
-| style="font-size:10px; text-align:center;  " | 10.128.110.104
-| style="font-size:10px; text-align:left;    " | Power Supplies - DCLINKs - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 6
-| style="font-size:10px; text-align:center;  " | 275
-| style="font-size:10px; text-align:center;  " | 10.128.110.105
-| style="font-size:10px; text-align:left;    " | Power Supplies - FBP - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 7
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 8
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 9
-| style="font-size:10px; text-align:center;  " | 311
-| style="font-size:10px; text-align:center;  " | 10.128.110.117
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (<-BC)
-|-
-| style="font-size:10px; text-align:center;  " | 10
-| style="font-size:10px; text-align:center;  " | 325
-| style="font-size:10px; text-align:center;  " | 10.128.110.118
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (BC->) 
-|-
-| style="font-size:10px; text-align:center;  " | 11
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 12
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 13
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.110.121
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 1 - Storage Ring - Left 1
-|-
-| style="font-size:10px; text-align:center;  " | 14
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.110.122
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 2 - Storage Ring - Left 2
-|-
-| style="font-size:10px; text-align:center;  " | 15
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 16
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 17
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.110.131
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Right 1
-|-
-| style="font-size:10px; text-align:center;  " | 18
+! style="font-weig
+| style="font-size:ze:10px; text-align:center;  " | 18
 | style="font-size:10px; text-align:center;  " | 
 | style="font-size:10px; text-align:center;  " | 10.128.110.132
 | style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Right 2
 |}
 
+
 ### Room 11
 
 '''Ethernet Patch Panel'''
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 1
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | General Purpose - Trecho 11 BC
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 2
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 3
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 4
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
+! scope="col" width="80px" stenter; font-size:10px; text-align:left;  " | 
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 5
 | style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " |  
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 7
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 8
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 9
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 10
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 11
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-|}
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 13
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 14
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 15
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 16
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 17
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 18
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 20
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.111.151
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 11 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 21
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.111.152
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 11 C2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 22
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.111.153
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 11 C3
+| style="text-align:center; fnter; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 11 C3
 |-
 | style="text-align:center; font-size:10px; text-align:center;" | 23
 | style="text-align:center; font-size:10px; text-align:center;" | 10.128.111.154
@@ -2418,102 +654,17 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |}
 
 
-
-
-
 '''SERIALxxCON - Serial Networks'''
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
 ! style="font-weight:bold; font-size:12px; text-align:center;" | IP
-! style="font-weight:bold; font-size:12px; text-align:center;" | Device
-|-
-| style="font-size:10px; text-align:center;  " | 1
-| style="font-size:10px; text-align:center;  " | 237
-| style="font-size:10px; text-align:center;  " | 10.128.111.101
-| style="font-size:10px; text-align:left;    " | Vacuum System - Gauge Controller MKS - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 2
-| style="font-size:10px; text-align:center;  " | 238
-| style="font-size:10px; text-align:center;  " | 10.128.111.102
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 3
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 4
-| style="font-size:10px; text-align:center;  " | 239
-| style="font-size:10px; text-align:center;  " | 10.128.111.106
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 5
-| style="font-size:10px; text-align:center;  " | 240
-| style="font-size:10px; text-align:center;  " | 10.128.111.104
-| style="font-size:10px; text-align:left;    " | Power Supplies - DCLINKs - Booster & Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 6
-| style="font-size:10px; text-align:center;  " | 241
-| style="font-size:10px; text-align:center;  " | 10.128.111.105
-| style="font-size:10px; text-align:left;    " | Power Supplies - FBP - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 7
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 8
-| style="font-size:10px; text-align:center;  " | 242
-| style="font-size:10px; text-align:center;  " | 10.128.111.103
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Storage Ring
-|-
-| style="font-size:10px; text-align:center;  " | 9
-| style="font-size:10px; text-align:center;  " | 299
-| style="font-size:10px; text-align:center;  " | 10.128.111.117
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (<-BC)
-|-
-| style="font-size:10px; text-align:center;  " | 10
-| style="font-size:10px; text-align:center;  " | 269
-| style="font-size:10px; text-align:center;  " | 10.128.111.118
-| style="font-size:10px; text-align:left;    " | Temperature Monitor - MBTemp - Storage Ring (BC->)
-|-
-| style="font-size:10px; text-align:center;  " | 11
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 12
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 13
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.111.121
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 1 - Storage Ring - Left 1
-|-
-| style="font-size:10px; text-align:center;  " | 14
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.111.122
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 2 - Storage Ring - Left 2
-|-
-| style="font-size:10px; text-align:center;  " | 15
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 16
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 17
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.111.131
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Right 1
+! style="font-weight:bold; fonx; text-align:left;    " | Temperature Monitor - MBTemp - Booster
+|-px; text-align:cen:10px; text-align:left  ;  " | Power Supplies - FBP 3 - Storage Ring - Right 1
 |-
 | style="font-size:10px; text-align:center;  " | 18
 | style="font-size:10px; text-align:center;  " | 
@@ -2524,105 +675,12 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 ### Room 12
 
 '''Ethernet Patch Panel'''
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 1
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | General Purpose - Trecho 12 BC
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 2
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 3
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 4
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 5
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " |  
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 6
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 7
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 8
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 9
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 10
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 11
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 12
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-|}
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 13
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 14
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 15
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 16
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 17
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 18
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 20
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.112.151
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 12 M2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 21
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.112.152
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 12 C2
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 22
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.112.153
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 12 C3
-|-
+! scope="col" width="80px" style="font-wze:10px; text-align:center;" | 6
+| style="text-align:center; font-ize:10px; text-align:center;" | -----
+| style="text-align:center; font-
 | style="text-align:center; font-size:10px; text-align:center;" | 23
 | style="text-align:center; font-size:10px; text-align:center;" | 10.128.112.154
 | style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 12 M1
@@ -2634,12 +692,11 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |}
 
 
-
-
-
 '''SERIALxxCON - Serial Networks'''
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+
+
 {| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
 ! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
