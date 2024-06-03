@@ -2,7 +2,7 @@
 title: CON
 description: 
 published: 1
-date: 2024-06-03T19:50:06.777Z
+date: 2024-06-03T19:50:17.764Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-16T15:50:47.394Z
@@ -52,8 +52,11 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
 {.links-list}
 
+<br>
+
 ## Other
 
+<br>
 
 ## External links
 - [LNLS Controls Group repository at GitHub.com (shared with other LNLS groups)](https://github.com/lnls-sirius){target=_blank}
