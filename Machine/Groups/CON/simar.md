@@ -2,7 +2,7 @@
 title: simar
 description: 
 published: 1
-date: 2024-06-03T15:48:48.646Z
+date: 2024-06-03T15:50:50.600Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-29T15:59:54.692Z
@@ -245,9 +245,7 @@ To read the values of the digital data, it is necessary to first load the read r
 Then, the sequence to read the digital data will be:
 
 1. Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 0 1 0 ](LSB)*** (Load read register)
-
 2. Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 0 1 1 ](LSB)*** (Enable register)
-
 3. Read one byte through spi.
 
 <br>
@@ -260,15 +258,17 @@ To write on digital bus, first select the SIPO register and, then, send one byte
 
 The sequence will be:
 
-1) Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 0 0 1 ](LSB)*** (Enable register)
-
-2) Send: ***[8 bits: digital data]*** (Writes data)
-3) Send: ***[8 bits: digital data]*** (Writes data)
-4) Send: ***[8 bits: digital data]*** (Writes data)
+1. Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 0 0 1 ](LSB)*** (Enable register)
+2. Send: ***[8 bits: digital data]*** (Writes data)
+3. Send: ***[8 bits: digital data]*** (Writes data)
+4. Send: ***[8 bits: digital data]*** (Writes data)
 ...
+
+<br>
 
 ####  Read/Write memory 
 
+<br>
 
 ####  Set potentiometer 
 
@@ -281,16 +281,15 @@ To changes the U/¬D value, first select the address 0x05 and then, generate a r
 
 Then, the sequence to set the potentiometer value is:
 
-1) Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 1 0 1 ](LSB)*** (Change U/¬D value, if necessary)
-2) Generate a rising edge on CS pin; 
-
-3) Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 1 0 0 ](LSB)*** (Enable potentiometer)
-
-4) Send: ***[8 bits: digital data]*** (Move potentiometer wiper through 8 positions)
-5) Send: ***[8 bits: digital data]*** (Move potentiometer wiper through 8 positions)
-6) Send: ***[8 bits: digital data]*** (Move potentiometer wiper through 8 positions)
+1. Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 1 0 1 ](LSB)*** (Change U/¬D value, if necessary)
+2. Generate a rising edge on CS pin; 
+3. Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 1 0 0 ](LSB)*** (Enable potentiometer)
+4. Send: ***[8 bits: digital data]*** (Move potentiometer wiper through 8 positions)
+5. Send: ***[8 bits: digital data]*** (Move potentiometer wiper through 8 positions)
+6. Send: ***[8 bits: digital data]*** (Move potentiometer wiper through 8 positions)
 ...
 
+<br>
 
 ##  SPI Interface Board 
 
@@ -323,13 +322,15 @@ The SPI Interface Board also has an addressing block, composed of a magnitude co
 
 .
 
+<br>
+
 ###  Protocol 
 
 All board functions are set sending one byte serially though SPI communication. This byte are responsible to enable the SPI board and select what output of decoder will be reset.
 
 The data byte is divided on: 
 
-`***(MSB)(1 bit: Even Parity) (4 bits: Board Addressing) (3 bits: Chooses Chip Select)(LSB)***`
+`(MSB)(1 bit: Even Parity) (4 bits: Board Addressing) (3 bits: Chooses Chip Select)(LSB)`
 
 The table below shows which "CS" is enabled according to the data received:
 
@@ -345,11 +346,18 @@ The table below shows which "CS" is enabled according to the data received:
 |110| CS Output 06 |
 |111| CS Output 07  |
 
+<br>
 
 ##  SPIxxSWI 
 
+<br>
+
 ###  Protocol 
 
+<br>
+
 ## Software Overview
+
+<br>
 
 ##  Protocol 
