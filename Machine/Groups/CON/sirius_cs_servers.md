@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:35:12.290Z
+date: 2024-06-03T20:35:53.431Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -281,7 +281,7 @@ $ gluster peer probe srv_addr
 
 The next step it to create the volumes which the data will be stored into. Volumes are composed of bricks which in our case are equivalent to a whole disk or a fraction, i.e., a partition of it.
 
-To build a brick, choose an available disk and if it has been used before, backup it because all its contents will erased. For the servers, you may need to use the [[CON:Sirius_control_system_servers#StorCLI|StorCLI tool]] to set a disk up for use. Then, format it using the XFS filesystem with the following command:
+To build a brick, choose an available disk and if it has been used before, backup it because all its contents will erased. For the servers, you may need to use the [StorCLI tool](/Machine/Groups/CON/sirius_cs_servers#storcli) to set a disk up for use. Then, format it using the XFS filesystem with the following command:
 
 ```
 $ sudo mkfs.xfs -i size=512 /dev/sdX
