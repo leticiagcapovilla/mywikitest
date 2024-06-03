@@ -1,9 +1,23 @@
+---
+title: Radiation Protection Software Supervisor
+description: 
+published: 1
+date: 2024-06-03T16:00:16.796Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-29T15:10:29.737Z
+---
+
 # CON: Radiation protection software
+
+<br>
 
 ## Introduction
 This page will contain documentation about the EPICS IOC for radiation protection equipments at Sirius building.
 
 Three radiation monitoring systems (from different manufacturers) were bought for evaluation. Controls group is working on remote interfaces for these equipments. They will be tested during Sirius Linac comissioning (scheduled to start in March 2018).
+
+<br>
 
 ## Project description
 The supervisory was developed with the purpose of performing the radiological area monitoring in the Sirius facilities. The supervisor is easy to see and to interpret the data. The system compares the reading of different probes in different regions. Each device performs dose readings in uSv / h.
@@ -42,6 +56,8 @@ Ps.: The Berthold probe, in addition to the cited PVs, there is a dose measureme
 In the second frame on the main frame of the supervisory we see a graph containing lines with the values of the instantaneous dose measurements in uSv / h as a function of time. The first frame contains the readings of the PVs related to the integrated doses in 4h. The integrated dose is the dose that has been achieved within the last four hours, obtained by the trapezoidal method that makes use of the instantaneous measurement and time difference for the calculation.
 
 There are interactive buttons and a legend relating the name of the PV, its value read instantly and the color of the line referring to that PV on the main frame. The buttons allow to open in a new frame the enlargement of each frame for better visualization, opening of a WEB page directed to the ‘Archiver EPICS’ and the access to a configuration menu. The new frames have a button to came back to main frame.
+
+<br>
 
 ## Download
 
