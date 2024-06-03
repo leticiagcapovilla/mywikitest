@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:34:00.324Z
+date: 2024-06-03T20:35:12.290Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -297,7 +297,7 @@ $ sudo gluster volume create <volume-name> replica 3 arbiter 1 transport tcp \
 $ sudo gluster volume start <volume-name>
 ```
 
-`10.128.2.3`, `10.128.2.4` and `10.128.2.5` correspond to the addresses of `LA-RaCtrl:CO-Srv-1`, `CA-RaCtrl:CO-Srv-1` and `A-TiRack:CO-FWSrv-1` respectively. Refer to this [[CON:Sirius_control_system_servers#Bonding_network_interfaces_addresses|section]](link) !!!.
+`10.128.2.3`, `10.128.2.4` and `10.128.2.5` correspond to the addresses of `LA-RaCtrl:CO-Srv-1`, `CA-RaCtrl:CO-Srv-1` and `A-TiRack:CO-FWSrv-1` respectively. Refer to this [section](/Machine/Groups/CON/sirius_cs_servers#bonding-network-interfaces-addresses) !!!.
 
 The statement `replica 3 arbiter 1` informs the GlusterFS nodes that 3 replicas of each file should be saved, but one of them should operate as an arbiter. This means that for every 3 bricks listed, 1 of them is an arbiter. The kind of brick will store only the file/directory names (i.e. the tree structure) and extended attributes (metadata) but not any data. i.e. the file size (as shown by ls -l) will be zero bytes. It will also store other gluster metadata like the .glusterfs folder and its contents. Since the arbiter brick does not store file data, its disk usage will be considerably less than the other bricks of the replica. The sizing of the brick will depend on how many files you plan to store in the volume. A good estimate will be 4KB times the number of files in the replica. As in the Docker Swarm case, having 3 nodes grants enough quorum to support up to one host failure without interrupting the storage services. Besides, it prevents the volume from being in [split-brain](http://docs.gluster.org/en/latest/Administrator%20Guide/arbiter-volumes-and-quorum/#why-arbiter){target=_blank} state, i.e., a state in which the nodes for some reason have different versions of the same file but cannot decide which one is the good one.
 
