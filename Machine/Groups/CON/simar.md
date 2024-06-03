@@ -1,8 +1,8 @@
 ---
-title: simar
+title: SIMAR
 description: 
 published: 1
-date: 2024-06-03T15:50:50.600Z
+date: 2024-06-03T15:51:00.766Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-29T15:59:54.692Z
