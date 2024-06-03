@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:23:32.134Z
+date: 2024-06-03T20:25:32.605Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -143,7 +143,9 @@ For now, due to its configuration simplicity, only Docker Swarm was tested with 
 
 Before reading this subsection, it's suggested that you read the brief [description](https://docs.docker.com/engine/swarm/key-concepts/){target=_blank} of the Docker Swarm architecture's key aspects. Some of the terms used in the next paragraphs are explained in more details in this reference.
 
-All machines joining the cluster, i.e. , `CA-RaCtrl:CO-Srv-1`, `LA-RaCtrl:CO-Srv-1` and `TA-TiRack:CO-FWSrv-1`, work as `manager` nodes, but only the servers act as `worker` nodes. This means that all hosts can act as managers and thus make all new deployments and orchestration decisions if that host was chosen as the cluster leader, but only `CA-RaCtrl:CO-Srv-1` and `LA-RaCtrl:CO-Srv-1` can actually run the docker containers. This choice of implementation supports the failure of up one manager node without interrupting the swarm operation !!! <ref name="manager">https://docs.docker.com/engine/swarm/admin_guide/#add-manager-nodes-for-fault-tolerance</ref>. On the other hand, if we had chosen to use a single manager node, we wouldn't have this kind of protection. If that node failed, for example, we couldn’t add or remove nodes until recovering it.
+All machines joining the cluster, i.e. , `CA-RaCtrl:CO-Srv-1`, `LA-RaCtrl:CO-Srv-1` and `TA-TiRack:CO-FWSrv-1`, work as `manager` nodes, but only the servers act as `worker` nodes. This means that all hosts can act as managers and thus make all new deployments and orchestration decisions if that host was chosen as the cluster leader, but only `CA-RaCtrl:CO-Srv-1` and `LA-RaCtrl:CO-Srv-1` can actually run the docker containers. This choice of implementation supports the failure of up one manager node without interrupting the swarm operation [^3]. On the other hand, if we had chosen to use a single manager node, we wouldn't have this kind of protection. If that node failed, for example, we couldn’t add or remove nodes until recovering it.
+
+[^3]: https://docs.docker.com/engine/swarm/admin_guide/#add-manager-nodes-for-fault-tolerance
 
 `sudo docker node ls` command executed in any of the cluster host gives, therefore:
 
