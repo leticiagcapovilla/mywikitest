@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-03T21:26:37.449Z
+date: 2024-06-03T21:28:55.335Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -148,7 +148,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 '''Ethernet Patch Panel'''
 
 |Slot #| IP| Description ||Slot #| IP| Description |
-|-|-|-|-|-|
+|-|-|-|-|-|-|
 |1| -----| [POE] CountingPRU - LTB 3 ||13| -----| DIG Galil - LTB 6 |
 |2| -----| [POE] CountingPRU - LTB 4 ||14| -----| DIG Galil - Booster 1 |
 |3| -----| [POE] CountingPRU - LTB 5 ||15| -----| DIG Galil - Booster 2 |
@@ -160,12 +160,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |9| -----| [POE] DIG Camera - Booster 2 ||21| 10.128.101.152| [POE] CountingPRU - Trecho 1 C2 |
 |10| -----| [POE] DIG Camera - Booster 3 ||22| 10.128.101.153| [POE] CountingPRU - Trecho 1 C3 |
 |11| -----| DIG Galil - LTB 4 ||23| 10.128.101.154| [POE] CountingPRU - Trecho 1 M1 |
-|12| -----| DIG Galil - LTB 5 ||24| -----| General Purpose BC  |}
-
-
-
-
-
+|12| -----| DIG Galil - LTB 5 ||24| -----| General Purpose BC  |
 
 
 '''SERIALxxCON - Serial Networks'''
@@ -173,53 +168,47 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
 
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
-! style="font-weight:bold; font-size:12px; text-align:center;" | IP
-! style="font-weight:bold;
-| style="font-size:10px; text-align:center;  " | 4
-| style="font-size:10px; text-align:center;  " | 94
-| style="font-size:10px; text-align:center;  " | 10.128.101.102
-| style="font-size:10px; text-align:left;    " | Vacuum System - Ion Pump 4UHV - Booster
-|-
-| style="font-size:10px; text-align:center;  " | 5
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10p0px; text-align:center;  " | 14
-| style="font-size:10px; text-align:center;  " | 
-| stypx; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.101.132
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Right 2
-|----
-| style="font-size:10px; text-align:center; " colspan="4" | Note: IPs 107 and 108 '''are reserved''' for EPP.
-|}
+|Board Location| SERIALxxCON ID| IP| Device |
+|-|-|-|-|
+|1| 95| 10.128.101.104| Power Supplies - DCLINKs - Booster & Storage Ring |
+|2| 96| 10.128.101.105| Power Supplies - FBP - Booster |
+|3| 93| 10.128.101.101| Vacuum System - Gauge Controller MKS - Booster & Storage Ring |
+|4| 94| 10.128.101.102| Vacuum System - Ion Pump 4UHV - Booster |
+|5| 		 |
+|6| 111| 10.128.101.106| Temperature Monitor - MBTemp - Booster |
+|7| 		 |
+|8| 115| 10.128.101.103| Vacuum System - Ion Pump 4UHV - Storage Ring |
+|9| 293| 10.128.101.117| Temperature Monitor - MBTemp - Storage Ring (<-BC) |
+|10| 319| 10.128.101.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
+|11| 		 |
+|12| 		 |
+|13| 	10.128.101.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	10.128.101.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|15| 		 |
+|16| 		 |
+|17| 	10.128.101.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	10.128.101.132| Power Supplies - FBP 4 - Storage Ring - Right 2 |
+
 
 ### Room 02
 
 
 '''Ethernet Patch Panel'''
 
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Descriptionfont-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 7
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | 
-|-
-| style="text-align:center; fon
-| style="text-align:center; font-size:10px; text-align:center;" | 19
-| style="tent-size:10px; text-align:center;" | 23
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.102.154
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 2 M1
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 24
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Booster
-|-
-|}
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.102.151| [POE] CountingPRU - Trecho 2 M2 |
+|9| -----|  ||21| 10.128.102.152| [POE] CountingPRU - Trecho 2 C2 |
+|10| -----|  ||22| 10.128.102.153| [POE] CountingPRU - Trecho 2 C3 |
+|11| -----|  ||23| 10.128.102.154| [POE] CountingPRU - Trecho 2 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU - Booster  |
 
 
 
