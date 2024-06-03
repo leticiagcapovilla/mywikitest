@@ -2,7 +2,7 @@
 title: Sirius control system network
 description: 
 published: 1
-date: 2024-06-03T18:56:28.017Z
+date: 2024-06-03T19:14:09.349Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T18:41:20.024Z
@@ -362,25 +362,16 @@ The location of each switch determines the subnetwork it will serve. As in this 
 
 |Room| Switch| Subnet| Switch Address| Room| Switch| Subnet| Switch Address |
 |-|-|-|-|-|-|-|-|
-|1| IA01-RaCtrl:CO-NetSw-1 <br> IA01-RaCtrl:CO-NetSw-2| 10.128.10.0/25 <br> 10.128.10.128/25 | 10.128.10.1/25 <br> 10.128.10.129/25 | 8 <br> 9| IA08-RaCtrl:CO-NetSw-1 <br> IA09-RaCtrl:CO-NetSw-1| 10.128.80.0/24 <br> 10.128.90.0/24 | 10.128.80.1/24 <br> 10.128.90.1/24 |
-
-
-|| | | | | |  |
+|**1**| **IA01-RaCtrl:CO-NetSw-1 <br> IA01-RaCtrl:CO-NetSw-2**| **10.128.10.0/25 <br> 10.128.10.128/25** | **10.128.10.1/25 <br> 10.128.10.129/25** | 8 <br> 9| IA08-RaCtrl:CO-NetSw-1 <br> IA09-RaCtrl:CO-NetSw-1| 10.128.80.0/24 <br> 10.128.90.0/24 | 10.128.80.1/24 <br> 10.128.90.1/24 |
 |2| IA02-RaCtrl:CO-NetSw-1| 10.128.20.0/24| 10.128.20.1/24| 10| IA10-RaCtrl:CO-NetSw-1| 10.128.100.0/24| 10.128.100.1/24 |
-|RF| RA-RaCtrl:CO-NetSw-1| 10.128.25.0/26| 10.128.25.1/26| 11| IA11-RaCtrl:CO-NetSw-1| 10.128.110.0/24| 10.128.110.1/24 |
-|RA-RaCtrl:CO-NetSw-2| 10.128.25.64/26| 10.128.25.65/26| 12| IA12-RaCtrl:CO-NetSw-1| 10.128.120.0/24| 10.128.100.1/24 |
-|RA-RaCtrl:CO-NetSw-3| 10.128.25.128/26| 10.128.25.129/26| 13| IA13-RaCtrl:CO-NetSw-1| 10.128.130.0/24| 10.128.130.1/24 |
+|**RF** | **RA-RaCtrl:CO-NetSw-1 <br> RA-RaCtrl:CO-NetSw-2 <br> RA-RaCtrl:CO-NetSw-3** | **10.128.25.0/26 <br> 10.128.25.64/26 <br> 10.128.25.128/26**| **10.128.25.1/26 <br> 10.128.25.65/26 <br> 10.128.25.129/26** | 11 <br> 12 <br> 13 | IA11-RaCtrl:CO-NetSw-1 <br> IA12-RaCtrl:CO-NetSw-1 <br> IA13-RaCtrl:CO-NetSw-1| 10.128.110.0/24 <br> 10.128.120.0/24 <br> 10.128.130.0/24 | 10.128.110.1/24 <br> 10.128.100.1/24 <br> 10.128.130.1/24|
 |3| IA03-RaCtrl:CO-NetSw-1| 10.128.30.0/24| 10.128.30.1/24| 14| IA14-RaCtrl:CO-NetSw-1| 10.128.140.0/24| 10.128.140.1/24 |
 |4| IA04-RaCtrl:CO-NetSw-1| 10.128.40.0/24| 10.128.40.1/24| 15| IA15-RaCtrl:CO-NetSw-1| 10.128.150.0/24| 10.128.150.1/24 |
 |5| IA05-RaCtrl:CO-NetSw-1| 10.128.50.0/24| 10.128.50.1/24| 16| IA16-RaCtrl:CO-NetSw-1| 10.128.160.0/24| 10.128.160.1/24 |
 |6| IA06-RaCtrl:CO-NetSw-1| 10.128.60.0/24| 10.128.60.1/24| 17| IA17-RaCtrl:CO-NetSw-1| 10.128.170.0/24| 10.128.170.1/24 |
 |7| IA07-RaCtrl:CO-NetSw-1| 10.128.70.0/24| 10.128.70.1/24| 18| IA18-RaCtrl:CO-NetSw-1| 10.128.180.0/24| 10.128.180.1/24 |
-|Power supplies| PA-RaCtrl:CO-NetSw-1| 10.128.75.0/27| 10.128.75.1/27| 18 (II)| IA19-RaCtrl:CO-NetSw-1| 10.128.190.0/24| 10.128.190.1/24 |
-|PA-RaCtrl:CO-NetSw-2| 10.128.75.32/27| 10.128.75.33/27| 19/20| IA20-RaCtrl:CO-NetSw-1| 10.128.200.0/25| 10.128.200.1/25 |
-|PA-RaCtrl:CO-NetSw-3| 10.128.75.64/27| 10.128.75.65/27| IA20-RaCtrl:CO-NetSw-2| 10.128.200.128/25| 10.128.200.129/25 |
-|PA-RaCtrl:CO-NetSw-4| 10.128.75.128/27| 10.128.75.129/27| LINAC| LA-RaCtrl-CO-NetSw-1| 10.128.1.0/25| 10.128.1.1/25 |
-|PA-RaCtrl:CO-NetSw-5| 10.128.75.160/27| 10.128.75.161/27| LA-RaCtrl-CO-NetSw-2| 10.128.1.128/25| 10.128.1.129/25 |
-|				Connectivity| CA-RaCtrl:CO-NetSw-1| 10.128.0.0/24| 10.128.0.1/24  |
+|**Power supplies**| **PA-RaCtrl:CO-NetSw-1 <br> PA-RaCtrl:CO-NetSw-2 <br> PA-RaCtrl:CO-NetSw-3 <br> PA-RaCtrl:CO-NetSw-4 <br> PA-RaCtrl:CO-NetSw-5** | **10.128.75.0/27 <br> 10.128.75.32/27 <br> 10.128.75.64/27 <br> 10.128.75.128/27 <br> 10.128.75.160/27** |**10.128.75.1/27 <br> 10.128.75.33/27 <br> 10.128.75.65/27 <br> 10.128.75.129/27 <br> 10.128.75.161/27 **| 18 (II) <br> **19/20 <br> " <br> LINAC <br> "**| **IA19-RaCtrl:CO-NetSw-1 <br> IA20-RaCtrl:CO-NetSw-1 <br>  IA20-RaCtrl:CO-NetSw-2 <br> LA-RaCtrl-CO-NetSw-1 <br> LA-RaCtrl-CO-NetSw-2** | **10.128.190.0/24 <br> 10.128.200.0/25 <br> 10.128.200.128/25 <br> 10.128.1.0/25 <br> 10.128.1.128/25**| **10.128.190.1/24 <br> 10.128.200.1/25 <br> 10.128.200.129/25 <br> 10.128.1.1/25 <br> 10.128.1.129/25** |
+|	|	|	|	| **Connectivity**|**CA-RaCtrl:CO-NetSw-1** | **10.128.0.0/24**| **10.128.0.1/24** |
 
 <br>
 
