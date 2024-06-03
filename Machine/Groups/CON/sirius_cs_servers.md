@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:40:43.517Z
+date: 2024-06-03T20:40:59.314Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -276,6 +276,8 @@ $ gluster peer probe srv_addr
 ```
 
 `srv_addr` must be replaced by one of the addresses presented in [this page](/Machine/Groups/CON/sirius_cs_servers#bonding-network-interfaces-addresses).
+
+<br>
 
 ######  Volume creation 
 
