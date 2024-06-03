@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T19:57:50.489Z
+date: 2024-06-03T20:14:02.159Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -387,20 +387,13 @@ $ sudo nmcli con up bond-swarm-glusterfs
 
 Having set the bonded interfaces, we need to choose between static or dynamic addresses. For the cluster's services one, the best approach is to use first option, since they must not depend of any other service such DHCP and, therefore, should never change. For the general data case, the decision is still open. Besides these two bonded interfaces, each server offers a out-of-band IPMI interface for management whose addresses are statically set for the same reasons presented before. Table below summarizes the IP addresses of `CA-RaCtrl:CO-Srv-1`, `LA-RaCtrl:CO-Srv-1` and `TA-TiRack:CO-FWSrv-1`.
 
-{| class="wikitable"
-! style="text-align: center; font-weight:bold;" | Node
-! style="text-align: center; font-weight:bold;" | Service
-! style="text-align: center; font-weight:bold;" | Mode
-5/24
-| style="text-align: center;" | ens1f0, ens1f1
-| style="text-align: center;" | D5, D5 (one port per switch)
-|-
-| style="text-align: center;" | General Data
-| style="text-align: center;" | To be decided
-| style="text-align: center;" | -
-| style="text-align: center;" | , 
-| style="text-align: center;" | 
-|}
+**Table 4**: 
+
+| Node| Service| Mode| Address| Server Interfaces| Switch Interfaces |
+|-|-|-|-|-|-|
+|LA-RaCtrl:CO-Srv-1| GlusterFS, Docker <br> General Data <br> IPMI | Static| 10.128.2.3/24 <br> 10.128.255.3/24 <br> 10.128.1.3/24| enp129s0f0, enp130s0f0 <br> enp129s0f1 <br> ,| D8, F8 <br> C7  <br> -|
+|CA-RaCtrl:CO-Srv-1| GlusterFS, Docker <br> General Data <br> IPMI | Static <br>  <br> | 10.128.2.4/24 <br> 10.128.255.4/24 <br> 10.128.0.3/24| enp129s0f0, enp130s0f0 <br> , <btr> , | D8, F8 <br>  <br> -|
+|TA-TiRack:CO-FWSrv-1| GlusterFS, Docker <br> General Data| Static <br> To be decided| 10.128.2.5/24 <br> -| ens1f0, ens1f1 <br> ,| D5, D5 (one port per switch) <br>|
 
 <br>
 
