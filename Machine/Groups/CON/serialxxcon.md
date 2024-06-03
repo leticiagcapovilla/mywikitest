@@ -2,7 +2,7 @@
 title: SERIALxxCON
 description: 
 published: 1
-date: 2024-06-03T15:56:47.688Z
+date: 2024-06-03T15:57:43.611Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-29T15:36:02.089Z
@@ -142,15 +142,21 @@ Board ID is a unique identification for SERIALxxCON unit and there is no link wi
 
 The main purpose for this module, currently, is to interface [CON:SPIxCONV|SPIxCONV](link) boards, which is a multi input/output analog/digital platform.
 
+<br>
+
 ###  Timing Receivers 
 
 Two timing inputs are available in SERIALxxCON hardware, an electrical (TTL input, 50Ω-matched) SMA input and an optical link receiver (660 nm red - HFBR-2521Z). Their output are in parallel, being tied to a Beaglebone Black input pin.
 
 The purpose of those inputs is to send serial packages synchronously, available **only** through [PRUserial485](/Machine/Groups/CON/pruserial485) library.
 
+<br>
+
 ##  Serial Communication 
 
 It has two serial modules: a specific RS-485 hardware interface for [PRUserial485](/Machine/Groups/CON/pruserial485), which can achieve high baud rates, and a USB/UART bridge (FTDI FT232RL), for communicating at slower baud rates with either RS-232 or RS-485.
+
+<br>
 
 ###  RS-232 
 
@@ -161,6 +167,8 @@ All RS-232 signals (CD, RX, TX, DTR, GND, DSR, RTS, CTS and RI) are available.
 
 ***Configuring the board to this mode:*** set red switches to FTDI and RS232.
 
+<br>
+
 ###  RS-485 
 
 * **Connector, cable and pinout**
@@ -168,7 +176,7 @@ A 6P6C (RJ-12/RJ-25) has been chosen for Controls system as well as its pinout, 
 
 |![](/img/groups/con/serialxxcon/6P6C_ConnectorPinout_RS485.png)|
 |-|
-|**Figure 5**: |
+|**Figure 7**: |
 
 It is recommended to use a 6-position modular cable. It has been largely tested under several conditions.
 * 6 Mbps: a 10-meter cable is assured to work in a noisy environment.
@@ -186,11 +194,14 @@ Termination is needed in order to match serial transmission line. RS-485 impedan
 : *** Slave ***
 : The last physical device of a RS-485 network must connect the differential data lines V+ and V- with a 120Ω resistor.
 
+<br>
+
 ###  Overview 
 
 Serial communication - Hardware configuration ("Mode" Panel Switches)
 
 |SW Left| SW Right| Mode |
+|-|-|-|
 |⬇| ⬇| RS-232 (FTDI) |
 |⬇| ⬆️| Not Available * |
 |⬆️| ⬇| RS-485 (FTDI) |
