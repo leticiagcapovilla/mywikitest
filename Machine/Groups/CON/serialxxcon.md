@@ -2,7 +2,7 @@
 title: SERIALxxCON
 description: 
 published: 1
-date: 2024-06-03T15:53:29.113Z
+date: 2024-06-03T15:55:12.566Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-29T15:36:02.089Z
@@ -56,40 +56,47 @@ Typical power consumption: **XXXXX W**
 
 550 units were manufactured in 2018 (v2.3) and some units are already installed and configured on Controls System Network. They are identified by an ID tag on the right on the front panel.
 
+<br>
+
 ###  More technical documentation 
 
 Detailed documents can be found at project repository at CNPEM gitlab ([click here](http://gitlab.cnpem.br/patricia.nallin/serialxxcon){target=_blank}, you must be connected through CNPEM network).
 
+<br>
+
 ##  Hardware Details 
 
-[[File:front-serialxxcon.png|500px||Front view]]
-
-|![](/img/groups/con/serialxxcon/front-serialxxcon.png)|
+|![](/img/groups/con/serialxxcon/Front-serialxxcon.png =500x)|
 |-|
 |**Figure 3**: Hardware overview.|
 
-[[File:back-serialxxcon.png|530px||Back view]]
 
-|![](/img/groups/con/serialxxcon/back-serialxxcon.png)|
+|![](/img/groups/con/serialxxcon/Back-serialxxcon.png =500x)|
 |-|
 |**Figure 4**: Hardware overview.|
+
+<br>
 
 ###  Hardware Reset 
 
 It is a "hardware watchdog" for Beaglebone Black. It may be activated or not, depending on the switch on the board. Based on a multi-trigger pulse-width timer, it prevents BBB hardware from being locked after a reboot or a system crash. Once it reaches the timeout, typically 30 seconds, it means that the BBB is locked so a reset pulse is delivered to an specific GPIO.
 
+<br>
+
 ###  Multi-purpose LED 
 
 There is a red LED on the board, which can be also seen at the front panel. It is a multi-purpose one, user may use it for any application. Controls Group usually uses it as a heart beat for the system.
+
+<br>
 
 ###  PRU-based UART 
 
 There is a dedicated UART interface in SERIALxxCON board. Based on Maxim MAX3107 integrated circuit, this interface has been designed to reach high performance (high baudrate and repetibility, low jitter and latency) concomitantly to the operational system. The 128-byte external UART FIFO is controlled through SPI from one of the [Programmable Real-Time Units](https://processors.wiki.ti.com/index.php/PRU-ICSS){target=_blank}, embedded on Sitara SoC.
 
 
-|![](/img/groups/con/serialxxcon/Hardware-PRUserial485.jpg)|
+|![](/img/groups/con/serialxxcon/Hardware-PRUserial485.jpg =650x)|
 |-|
-|**Figure 3**: |
+|**Figure 5**: |
 
 It has a wide baudrate range, it is configurable. Standard values are already available as well as 6, 10 and 12 Mbps. Also, it may operate synchonously to input timing signals.
 
