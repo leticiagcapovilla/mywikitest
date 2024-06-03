@@ -1,4 +1,16 @@
+---
+title: simar
+description: 
+published: 1
+date: 2024-06-03T15:46:40.047Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-29T15:59:54.692Z
+---
+
 # CON: Simar
+
+<br>
 
 ## Introduction
 
@@ -9,12 +21,17 @@ The Internet of things Group has developing a general communication board, with 
 * Serial Peripheral Interface - SPI;
 * Universal Asynchronous receiver-transmitter - UART;
 
+<br>
+
 ## Hardware Overview
 
+<br>
 
 ##  Base board 
 
 The base board is responsible to work as master on communication's bus, generate the necessaries power voltages to each integrate circuit and  controlling a general bus though the Processing Real Time Unit - PRU. The master controlling chosen was BeagleBone Black and its PRU0 and PRU1 are used to real time data processing.
+
+<br>
 
 ###  Board Power Circuits 
 
@@ -27,6 +44,8 @@ There are three voltages values available on base board, 5Vdc, 3.3Vdc and 1.8Vdc
 The LT3080 is a linear adjustable voltage regulator, where its output is defined by configuration resistors, according to the equation below. To converter operates with efficiently and reliably, a minimum output current is required, that must to be higher than 0,5 mA and it is performed putting a LED on circuit output. The circuit is showed on figure 01.
 
 `Vout = Rset . 10uA`
+
+<br>
 
 ###  Bus and Communication Circuits 
 
@@ -74,12 +93,15 @@ After the Demultiplexer switches the I2C signals, eigth outputs are available on
 |11| SCLK 3| P23 |
 |11| SDA 3| P24  |
 
+<br>
 
 ####  Chip Select enable 
 
 A simple circuit was developed in order to disable the CS singnal during a rise edge of "DS" signal. So, the "chip select" is just enable if the "DS" is set to HIGH. The final circuit is show below, where the CS of BUS following the boolean equation: 
 
 `CS_SPI = CS_BBB + ¬DS`
+
+<br>
 
 ###  PRU BUS 
 
@@ -103,6 +125,8 @@ The pins of the PRU Bus are described on table below:
 |23| RPM pulses| Input |
 |26| Bomba| Output  |
 
+<br>
+
 ##  Digital/Analog board 
 
 The first shield board of SIMAR is a general in/out digital data and read analogical data. It is divided on six blocks: board enable, module selector, read digital data, write digital data, memory and read analogical values.
@@ -110,6 +134,8 @@ The first shield board of SIMAR is a general in/out digital data and read analog
 First of all, a SIPO register 74HC595 is used to receive one byte of data by spi protocol, that will determined which module will be enable. four bit from data received are connected on XOR logic gates (74HC86), that has the aim to determinate the parity of them ("0" if even, "1" furthermore).
 
 The Board enable block is compound by a magnitude comparator (74LS688) and a dip switch of five positions. It will compared the four bits on dip switch and the output of XORs gates (mod_0 ⊕ mod_1 ⊕ mod_2 ⊕ mod_3) with the addressing and the bit parity, sent by spi.
+
+<br>
 
 ###  Protocol 
 
@@ -136,8 +162,10 @@ spi.msh = 10000000       # [[Testar qual a máxima taxa]]
 ```
 
 
-***Note: *** In all examples, the parity is only related to the board's address.
+> Note: In all examples, the parity is only related to the board's address.
+{.is-info}
 
+<br>
 
 ####  Select modules
 
@@ -151,7 +179,7 @@ To select the interested module, its necessary send 1 byte of data serially. The
 
 The data byte is divided on: 
 
-`***(MSB)(1 bit: Even Parity) (4 bits: Board Addressing) (3 bits: Module Addressing)(LSB)***`
+`(MSB)(1 bit: Even Parity) (4 bits: Board Addressing) (3 bits: Module Addressing)(LSB)`
 
 The table below shows the addresses to each module present on board:
 
@@ -206,6 +234,7 @@ GPIO.output(DS, GPIO.HIGH)
 
 In this example, it's selected the SIPO register.
 
+<br>
 
 ####  Read digital data 
 
@@ -215,12 +244,13 @@ To read the values of the digital data, it is necessary to first load the read r
 
 Then, the sequence to read the digital data will be:
 
-1) Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 0 1 0 ](LSB)*** (Load read register)
+1. Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 0 1 0 ](LSB)*** (Load read register)
 
-2) Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 0 1 1 ](LSB)*** (Enable register)
+2. Send: ***(MSB)[1 bit: Even Parity] [4 bits: Board Addressing] [ 0 1 1 ](LSB)*** (Enable register)
 
-3) Read one byte through spi.
+3. Read one byte through spi.
 
+<br>
 
 ####  Write digital data 
 
