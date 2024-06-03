@@ -2,7 +2,7 @@
 title: Sirius control system network
 description: 
 published: 1
-date: 2024-06-03T18:46:47.863Z
+date: 2024-06-03T18:53:38.842Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T18:41:20.024Z
@@ -201,20 +201,10 @@ As documented in [[CON:Sirius_control_system_servers| this page]], each server h
 
 **Table 5**:
 
-|System| Server |
-|-|-|
-| |
-|Interface Port |
-|	Core Switch |
-| |
-|Interface Port |
-|	VLAN |
-|GlusterFS |
-| |
-|Docker Swarm |
-|	Board #1 - Port 1| D8| 2 |
-|Board #2 - Port 2| F8 |
-|General data traffic| Board #1 - Port 2| C7| Default  |
+| System | Server <br> Interface Port | Core Switch <br> Interface Port| VLAN |
+|-|-|-|-|
+|GlusterFS <br> Docker Swarm |	Board #1 - Port 1 <br> Board #2 - Port 2| D8 <br> F8 | 2 |
+|General data traffic| Board #1 - Port 2 <br>  Board #2 - Port 2 <br>  Board #1 - Port 3 <br>  Board #2 - Port 3 <br>  Board #1 - Port 4 <br>  Board #2 - Port 4 | C7 <br> C8 <br>  D7 <br> E7 <br> E8 <br> F7| Default  |
 
 Aggregated interfaces were used in each server in order to provide redundancy and automatic fail recovery. A dedicated VLAN was created for the GlusterFS and Docker services with the purpose to increase security and decrease latency between them. This latter is the main source of performance loss in this type of services. To create it, connect to the switch through either a serial micro USB cable or a ssh encrypted connection and execute the following steps. Replace `x` with 1 or 2 according to the core switch you connected.
 
