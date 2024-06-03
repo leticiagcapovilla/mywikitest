@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:14:02.159Z
+date: 2024-06-03T20:14:30.796Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -392,7 +392,7 @@ Having set the bonded interfaces, we need to choose between static or dynamic ad
 | Node| Service| Mode| Address| Server Interfaces| Switch Interfaces |
 |-|-|-|-|-|-|
 |LA-RaCtrl:CO-Srv-1| GlusterFS, Docker <br> General Data <br> IPMI | Static| 10.128.2.3/24 <br> 10.128.255.3/24 <br> 10.128.1.3/24| enp129s0f0, enp130s0f0 <br> enp129s0f1 <br> ,| D8, F8 <br> C7  <br> -|
-|CA-RaCtrl:CO-Srv-1| GlusterFS, Docker <br> General Data <br> IPMI | Static <br>  <br> | 10.128.2.4/24 <br> 10.128.255.4/24 <br> 10.128.0.3/24| enp129s0f0, enp130s0f0 <br> , <btr> , | D8, F8 <br>  <br> -|
+|CA-RaCtrl:CO-Srv-1| GlusterFS, Docker <br> General Data <br> IPMI | Static <br>  <br> | 10.128.2.4/24 <br> 10.128.255.4/24 <br> 10.128.0.3/24| enp129s0f0, enp130s0f0 <br> , <br> , | D8, F8 <br>  <br> -|
 |TA-TiRack:CO-FWSrv-1| GlusterFS, Docker <br> General Data| Static <br> To be decided| 10.128.2.5/24 <br> -| ens1f0, ens1f1 <br> ,| D5, D5 (one port per switch) <br>|
 
 <br>
