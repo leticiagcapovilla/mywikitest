@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-03T21:31:00.844Z
+date: 2024-06-03T21:31:36.346Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -305,24 +305,27 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
 
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | Board Location
-! style="font-weight:bold; font-size:12px; text-align:center;" width="80px" | SERIALxxCON ID
-! style="font-weight:bold; font-size:12px; text-align:center;" | IP
-! style="font-weight:bold; font-size:12px; text-align:center;" | Device
-|-px; text-align:center;  " | 10.128.104.104
-| style="font-size:10p10px; text-align:center;  " | 301
-| style="font-size:10px; text-align:center;  " | 10.128.104.118
-| style="font-size:10pe:10px; text-align:center;  " | 15
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 
-|-
-| style="font-size:10px; text-align:center;  " | 18
-| style="font-size:10px; text-align:center;  " | 
-| style="font-size:10px; text-align:center;  " | 10.128.104.132
-| style="font-size:10px; text-align:left  ;  " | Power Supplies - FBP 4 - Storage Ring - Right 2
-|}
+|Board Location| SERIALxxCON ID| IP| Device |
+|-|-|-|-|
+|1| 283| 10.128.104.101| Vacuum System - Gauge Controller MKS - Booster & Storage Ring |
+|2| 284| 10.128.104.102| Vacuum System - Ion Pump 4UHV - Booster & Storage Ring |
+|3| 		 |
+|4| 		 |
+|5| 281| 10.128.104.104| Power Supplies - DCLINKs - Booster & Storage Ring |
+|6| 282| 10.128.104.105| Power Supplies - FBP - Booster |
+|7| 		 |
+|8| 		 |
+|9| 294| 10.128.104.117| Temperature Monitor - MBTemp - Storage Ring (<-BC) |
+|10| 301| 10.128.104.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
+|11| 		 |
+|12| 		 |
+|13| 	10.128.104.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	10.128.104.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|15| 		 |
+|16| 		 |
+|17| 	10.128.104.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	10.128.104.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
+
 
 ### Room 05
 
