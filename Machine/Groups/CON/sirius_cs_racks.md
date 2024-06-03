@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-03T21:24:42.233Z
+date: 2024-06-03T21:26:19.751Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -146,22 +146,22 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 ### Room 01
 
 '''Ethernet Patch Panel'''
-{| class="wikitable" style="display: inline-table; margin-left: auto; margin-right: auto;"
-! scope="col" width="20px" style="font-weight:bold; font-size:10px; text-align:center;" | Slot #
-! scope="col" width="80px" style="font-weight:bold; font-size:10px; text-align:center;" | IP
-! scope="col" width="300px" style="font-weight:bold; font-size:10px; text-align:center;" | Description
-|-
-| style="text-align:cet-size:10px; text-align:left;  " | [POE] CountingPRU - LTB 5
-|-
-| style="textr; font-size:10px; text-align:center;" | 23
-| style="text-align:center; font-size:10px; text-align:center;" | 10.128.101.154
-| style="text-align:center; font-size:10px; text-align:left;  " | [POE] CountingPRU - Trecho 1 M1 
-|-
-| style="text-align:center; font-size:10px; text-align:center;" | 24
-| style="text-align:center; font-size:10px; text-align:center;" | -----
-| style="text-align:center; font-size:10px; text-align:left;  " | General Purpose BC 
-|-
-|}
+
+|Slot #| IP| Description ||Slot #| IP| Description |
+|1| -----| [POE] CountingPRU - LTB 3 ||13| -----| DIG Galil - LTB 6 |
+|2| -----| [POE] CountingPRU - LTB 4 ||14| -----| DIG Galil - Booster 1 |
+|3| -----| [POE] CountingPRU - LTB 5 ||15| -----| DIG Galil - Booster 2 |
+|4| -----| [POE] CountingPRU - Booster ||16| -----| DIG Galil - Booster 3 |
+|5| -----| [POE] DIG Camera - LTB 4 ||17| -----| DIG - Scrapper 03 |
+|6| -----| [POE] DIG Camera - LTB 5 ||18| -----| DIG - Scrapper 04 |
+|7| -----| [POE] DIG Camera - LTB 6 ||19| -----| Diagnostics Beamline |
+|8| -----| [POE] DIG Camera - Booster 1 ||20| 10.128.101.151| [POE] CountingPRU - Trecho 1 M2 |
+|9| -----| [POE] DIG Camera - Booster 2 ||21| 10.128.101.152| [POE] CountingPRU - Trecho 1 C2 |
+|10| -----| [POE] DIG Camera - Booster 3 ||22| 10.128.101.153| [POE] CountingPRU - Trecho 1 C3 |
+|11| -----| DIG Galil - LTB 4 ||23| 10.128.101.154| [POE] CountingPRU - Trecho 1 M1 |
+|12| -----| DIG Galil - LTB 5 ||24| -----| General Purpose BC  |}
+
+
 
 
 
