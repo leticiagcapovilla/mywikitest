@@ -2,7 +2,7 @@
 title: Sirius control system servers
 description: 
 published: 1
-date: 2024-06-03T20:32:12.542Z
+date: 2024-06-03T20:32:55.087Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T19:49:45.993Z
@@ -520,7 +520,7 @@ This workstation acts as a [manager node for the container swarm](/Machine/Group
 
 ####  Controls' room workstation - con-workst2 
 
-This workstation is set up with [Ubuntu Server 16.04 LTS](https://www.ubuntu.com/server){target=_blank} and its two network interfaces have the IP addresses `10.128.1.252` (`enp5s0` - internal control network) and `10.0.6.57` (`enp4s0` - campus network). The main services it hosts are an instance of the [[CON:Control-archiver|EPICS archiver]](link) accessible from [http://10.0.4.57](http://10.0.4.57){target=_blank} and another of the [alarm server](/Machine/Groups/CON/control_beast). Both of them run through Docker containers.
+This workstation is set up with [Ubuntu Server 16.04 LTS](https://www.ubuntu.com/server){target=_blank} and its two network interfaces have the IP addresses `10.128.1.252` (`enp5s0` - internal control network) and `10.0.6.57` (`enp4s0` - campus network). The main services it hosts are an instance of the [EPICS archiver](/Machine/Groups/CON/control_archiver) accessible from [http://10.0.4.57](http://10.0.4.57){target=_blank} and another of the [alarm server](/Machine/Groups/CON/control_beast). Both of them run through Docker containers.
 
 As we have only 2 disks being used, we didn't need to set any logical volume managers up. The mount points are configured as following:
 
