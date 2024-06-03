@@ -2,7 +2,7 @@
 title: Sirius control system interfaces
 description: 
 published: 1
-date: 2024-06-03T16:29:19.993Z
+date: 2024-06-03T16:34:05.960Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T16:28:38.118Z
@@ -114,10 +114,7 @@ Translation of BSMP entities into EPICS process variables will be performed by a
 |6| SetISlowRef| float iSlowRef| uint8_t command_ack| Set new SlowRef current reference. Input is given in amperes. |
 |7| ConfigWfmRef| float gain| uint8_t command_ack| Set new parameters for WfmRef reference. Offset is given in amperes. |
 |float offset |
-|8| ConfigSigGen| uint16_t sigtype| uint8_t command_ack| Set new parameters for SigGen signal generator. Possible options for sigtype: 0 = sine wave, 1 = square wave, 2 = triangular wave, 3 = frequency sweep (for sigtype = 3, amplitude values are given by curve 1). Frequency is given in hertz. Amplitude and offset are given in amperes. |
-|float freq |
-|float amplitude |
-|float offset |
+|8| ConfigSigGen| uint16_t sigtype <br> float freq <br> float amplitude <br> float offset| uint8_t command_ack| Set new parameters for SigGen signal generator. Possible options for sigtype: 0 = sine wave, 1 = square wave, 2 = triangular wave, 3 = frequency sweep (for sigtype = 3, amplitude values are given by curve 1). Frequency is given in hertz. Amplitude and offset are given in amperes. |
 |9| ConfigDPModule| -| uint8_t command_ack| Configure DP module with parameters stored in corresponding BSMP variables. |
 |10| WfmRefUpdate| -| -| Broadcast command for ramp synchronization.  |
 
@@ -146,10 +143,8 @@ In Sirius, there will be ten controller units for pulsed magnets, distributed ov
 |2| Booster injection kicker| 1 |
 |3| Booster extraction kicker| 1 |
 |4| Booster extraction septum| 2 |
-|5| Storage ring injection thick septum| 2 |
-|Storage ring injection thin septum| 1 |
-|6| "On-axis" injection kicker| 1 |
-|Pulsed multipole magnet| 1  |
+|5| Storage ring injection thick septum <br> Storage ring injection thin septum| 2 <br> 1|
+|6| "On-axis" injection kicker <br> Pulsed multipole magnet| 1 <br> 1|
 
 
 Here, [[CON:PUC|PUC]](link)'s analog output signal is used as the reference for a Glassman high voltage power supply. Output level of the same power supply is read with [[CON:PUC|PUC]](link)'s analog input. Digital interface pins works as general-purpose inputs/outputs for remote operation of the controller unit:
