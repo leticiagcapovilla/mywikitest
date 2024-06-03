@@ -2,7 +2,7 @@
 title: Sirius control system network
 description: 
 published: 1
-date: 2024-06-03T19:14:09.349Z
+date: 2024-06-03T19:19:28.617Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T18:41:20.024Z
@@ -541,9 +541,9 @@ $ iperf -c 10.128.1.10 -u -b 100m
 
 As a redundancy option, a ring topology is created connecting all access switches. Two new static  default routes are added: one for the switch to the left and another, to the right. To avoid that two neighbor switches exchange packets indefinitely as in a ping-pong game, we need to define a prioritary sense. By default, the clockwise routes will cost less than the anticlockwise's. The bad consequence of this approach is that a switch will need to know the addresses of its neighbours and in the case of an eventual repair (addition or remotion), at least two switches will need to be reconfigured. Futhermore, at least three new VLANs will be needed (2 would be enough with the number of switches were even), according to the figure.
 
-Given any three consecutive access switches `A`, `B` and `C` (whose addresses are `10.128.**A**.1`, `10.128.**B**.1` and `10.128.**C**.1` respectively), the VLAN used to connect `A` to `B` must be different from the one used to connect `B` to `C`.
+Given any three consecutive access switches `A`, `B` and `C` (whose addresses are '10.128.**A**.1', '10.128.**B**.1' and '10.128.**C**.1' respectively), the VLAN used to connect `A` to `B` must be different from the one used to connect `B` to `C`.
 
-To configure `B` accordingly, you need to access `A` and `C` and verify if any of the VLANs 6, 7 and 8 exist. In `A` (switch from the left), search for a VLAN with the address `10.128.X.**2**` and in `C` (switch from the right), for the address `10.128.Y.**1**`. In `B`, therefore, use VLANs `X` and `Y`:
+To configure `B` accordingly, you need to access `A` and `C` and verify if any of the VLANs 6, 7 and 8 exist. In `A` (switch from the left), search for a VLAN with the address '10.128.X.**2**' and in `C` (switch from the right), for the address '10.128.Y.**1**'. In `B`, therefore, use VLANs `X` and `Y`:
 
 ```
 # In switch B:
