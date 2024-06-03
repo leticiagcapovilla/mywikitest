@@ -1,3 +1,13 @@
+---
+title: Sirius control system network
+description: 
+published: 1
+date: 2024-06-03T18:46:47.863Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-03T18:41:20.024Z
+---
+
 # CON: Sirius control system network
 
 <br>
@@ -101,7 +111,8 @@ As mentioned in the previous section, all copper ports of access layer switches 
 
 In order to facilitate calculations of the PoE budget for switches, the table below lists PoE devices in the control system and their power consumption.
 
-|Device| Description| Power consumption |
+|	Device| Description| Power consumption |
+|-|-|-|
 
 <br>
 
