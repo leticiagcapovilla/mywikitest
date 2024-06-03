@@ -1,12 +1,28 @@
+---
+title: Sirius control system interfaces
+description: 
+published: 1
+date: 2024-06-03T16:29:19.993Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-03T16:28:38.118Z
+---
+
 # CON: Sirius control system interfaces
+
+<br>
 
 ## Introduction
 
 This page contains listings of control hardware and its interfaces to Sirius control system, from a point of view of the integration tasks assigned to [LNLS Controls Group](/Machine/Groups/CON).
 
+<br>
+
 ## Beam diagnostics and feedback
 
 Beam diagnostics and feedback systems are under responsibility of [[DIG:DIG|LNLS Beam Diagnostics Group]]. All devices associated with these systems will be plugged into the control system through an Ethernet interface. EPICS IOCs will run on dedicated rackmount computers. In the future, this section will contain documentation about all beam diagnostics and feedback devices, network points and IOCs.
+
+<br>
 
 ## Interlock system
 
@@ -16,11 +32,15 @@ We intend to design an EPICS interface for the interlock system using [EtherIP](
 
 This section will be updated soon with details about the network connections and supervisory software of the interlock system.
 
+<br>
+
 ## Linac
 
 Sirius Linac will be supplied by the Shanghai Institute of Applied Physics (SINAP). As a turnkey solution, it has its own control system (based on EPICS), with client computers, operator interfaces and an archiving software, among others.
 
 Installation of Linac is scheduled to early 2018. After its assembly at the new building, we will plug its control system to [Sirius control system network](/Machine/Groups/CON/counting_system) and develop some integration with other [control system](/Machine/control_system) applications.
+
+<br>
 
 ## Power supplies
 
@@ -110,6 +130,8 @@ In the last table, ''command_ack'' answer is one of the following:
 * 0x03: power supply locked due to soft interlock event.
 * 0x04: power supply locked due to hard interlock event.
 
+<br>
+
 ## Pulsed magnets
 
 Current prototype of Sirius pulsed magnets controller unit has inside it a [[CON:PUC|PUC]](link) stack, with one analog and one digital interfaces. We intend to communicate to all controller units of the pulsed magnets with one BeagleBone Black, through a RS-485 serial network.
@@ -169,6 +191,8 @@ These PV names are provisory. Proper names will be defined later, and other PVs 
 
 [Sirius-CAS-PM](http://git.cnpem.br/eduardo.coelho/sirius-cas-pm){target=_blank} was created under an effort of evaluating [pcaspy](https://github.com/paulscherrerinstitute/pcaspy){target=_blank} as a reliable and easy-to-use tool for creating EPICS server applications. Overall, we are very satisfied with this Python module capabilities.
 
+<br>
+
 ## RF system
 
 [Controls Group](/Machine/Groups/CON) is working on the integration of these RF devices into the control system:
@@ -176,6 +200,8 @@ These PV names are provisory. Proper names will be defined later, and other PVs 
 * RF power amplifiers designed by our [[RF:RF|Radiofrequency Group]](link);
 * Low-level radiofrequency (LLRF) systems;
 * PLCs (the same Allen-Bradley used on the interlock system).
+
+<br>
 
 ## Vacuum systems
 
