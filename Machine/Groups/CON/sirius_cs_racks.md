@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-04T15:35:14.274Z
+date: 2024-06-04T15:38:21.350Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -768,12 +768,12 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |10| 310| 10.128.113.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
 |11| 		 |
 |12| 		 |
-|13| 	10.128.113.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
-|14| 	10.128.113.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|13| 	| 10.128.113.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	| 10.128.113.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
 |15| 		 |
 |16| 		 |
-|17| 	10.128.113.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
-|18| 	10.128.113.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
+|17| 	| 10.128.113.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	| 10.128.113.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 <br>
 
@@ -816,12 +816,12 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |10| 321| 10.128.114.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
 |11| 		 |
 |12| 		 |
-|13| 	10.128.114.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
-|14| 	10.128.114.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|13| 	| 10.128.114.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	| 10.128.114.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
 |15| 		 |
 |16| 		 |
-|17| 	10.128.114.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
-|18| 	10.128.114.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
+|17| 	| 10.128.114.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	| 10.128.114.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 <br>
 
@@ -857,19 +857,19 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |3| 		 |
 |4| 219| 10.128.115.106| Temperature Monitor - MBTemp - Booster |
 |5| 		 |
-|6| 	10.128.115.104| Power Supplies - DCLINK - Storage Ring |
+|6| 	| 10.128.115.104| Power Supplies - DCLINK - Storage Ring |
 |7| 		 |
 |8| 226| 10.128.115.103| Vacuum System - Ion Pump 4UHV - Storage Ring |
 |9| 327| 10.128.115.117| Temperature Monitor - MBTemp - Storage Ring (<-BC) |
 |10| 316| 10.128.115.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
 |11| 		 |
 |12| 		 |
-|13| 	10.128.115.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
-|14| 	10.128.115.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|13| 	| 10.128.115.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	| 10.128.115.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
 |15| 		 |
 |16| 		 |
-|17| 	10.128.115.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
-|18| 	10.128.115.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
+|17| 	| 10.128.115.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	| 10.128.115.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 <br>
 
@@ -912,12 +912,12 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |10| 326| 10.128.116.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
 |11| 		 |
 |12| 		 |
-|13| 	10.128.116.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
-|14| 	10.128.116.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|13| 	| 10.128.116.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	| 10.128.116.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
 |15| 		 |
 |16| 		 |
-|17| 	10.128.116.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
-|18| 	10.128.116.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
+|17| 	| 10.128.116.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	| 10.128.116.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 <br>
 
@@ -960,12 +960,12 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |10| 261| 10.128.117.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
 |11| 		 |
 |12| 		 |
-|13| 	10.128.117.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
-|14| 	10.128.117.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|13| 	| 10.128.117.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	| 10.128.117.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
 |15| 		 |
 |16| 		 |
-|17| 	10.128.117.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
-|18| 	10.128.117.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
+|17| 	| 10.128.117.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	| 10.128.117.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 <br>
 
@@ -1002,19 +1002,19 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |3| 		 |
 |4| 		 |
 |5| 		 |
-|6| 	10.128.118.104| Power Supplies - DCLINK - Storage Ring |
+|6| 	| 10.128.118.104| Power Supplies - DCLINK - Storage Ring |
 |7| 		 |
 |8| 		 |
 |9| 262| 10.128.118.117| Temperature Monitor - MBTemp - Storage Ring (<-BC) |
 |10| 318| 10.128.118.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
 |11| 		 |
 |12| 		 |
-|13| 	10.128.118.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
-|14| 	10.128.118.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|13| 	| 10.128.118.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	| 10.128.118.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
 |15| 		 |
 |16| 		 |
-|17| 	10.128.118.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
-|18| 	10.128.118.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
+|17| 	| 10.128.118.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	| 10.128.118.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 <br>
 
@@ -1050,19 +1050,19 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |3| 		 |
 |4| 116| 10.128.119.106| Temperature Monitor - MBTemp - Booster |
 |5| 		 |
-|6| 	10.128.119.104| Power Supplies - DCLINK - Storage Ring |
+|6| 	| 10.128.119.104| Power Supplies - DCLINK - Storage Ring |
 |7| 		 |
 |8| 215| 10.128.119.103| Vacuum System - Ion Pump 4UHV - Storage Ring |
 |9| 304| 10.128.119.117| Temperature Monitor - MBTemp - Storage Ring (<-BC) |
 |10| 315| 10.128.119.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
 |11| 		 |
 |12| 		 |
-|13| 	10.128.119.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
-|14| 	10.128.119.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|13| 	| 10.128.119.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	| 10.128.119.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
 |15| 		 |
 |16| 		 |
-|17| 	10.128.119.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
-|18| 	10.128.119.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
+|17| 	| 10.128.119.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	| 10.128.119.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 <br>
 
