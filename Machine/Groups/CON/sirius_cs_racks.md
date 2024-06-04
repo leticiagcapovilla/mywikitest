@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-04T15:34:43.408Z
+date: 2024-06-04T15:34:56.711Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -114,7 +114,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 **Ethernet Patch Panel - Bottom**
 
 |Slot #| IP| Description ||Slot #| IP| Description |
-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|
 |1| -----| LINAC Controls Room #1 ||13| -----| LINAC Controls Room #13 |
 |2| -----| LINAC Controls Room #2 ||14| -----| LINAC Controls Room #14 |
 |3| -----| LINAC Controls Room #3 ||15| -----| LINAC Controls Room #15 |
