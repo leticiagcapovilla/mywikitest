@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers (Debian 9)
 description: 
 published: 1
-date: 2024-06-04T17:47:22.501Z
+date: 2024-06-04T17:50:36.124Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-04T17:45:27.935Z
@@ -40,7 +40,7 @@ To address all this issues, other UART peripheral are being developed:
 
 These two hardware interfaces are mounted over BeagleBone Black through its two expansion headers. For more information about the associated hardware, see [SERIALxxCON](/Machine/Groups/CON/serialxxcon).
 
-The operating system in SBCs is Debian, a stable and easy-to-use Linux distribution. Ubuntu Linux, which is based on Debian, is the Linux distribution installed in [[CON:CON|Controls Group]] desktop computers, so no one will have difficulties using Debian.
+The operating system in SBCs is Debian, a stable and easy-to-use Linux distribution. Ubuntu Linux, which is based on Debian, is the Linux distribution installed in [Controls Group](/Mchine/Groups/CON) desktop computers, so no one will have difficulties using Debian.
 
 The default Debian installation of BeagleBone Black comes with interesting libraries and compilers. Moreover, many other software packages can be easily installed through the software repositories of the distribution.
 
@@ -193,7 +193,7 @@ chown root:root /root
 
 ### Creating the rc.local file
 
-There is no /etc/rc.local file in Debian 9 by default. In order to create one and have it called upon system startup, edit the file "/etc/systemd/system/rc-local.service" and add the following content:
+There is no /etc/rc.local file in Debian 9 by default. In order to create one and have it called upon system startup, edit the file `/etc/systemd/system/rc-local.service` and add the following content:
 
 ```
 [Unit]
@@ -212,7 +212,7 @@ SysVStartPriority=99
 WantedBy=multi-user.target
 ```
 
-After that, create the file "/etc/rc.local" and append the generic content below:
+After that, create the file `/etc/rc.local` and append the generic content below:
 
 ```
 #!/bin/sh -e
@@ -292,7 +292,7 @@ sudo apt-get install bb-cape-overlays
 
 ### beaglebone-universal-io
 
-Another interesting repository to keep in the BeagleBone Black is the beaglebone-universal-io. This repo has some device tree overlays that exports certain pins of BeagleBone Black, depending on the usage or not of the HDMI audio and video interface and the eMMC pins. As the HDMI is not beeing used, we will export all the pins by enabling the "cape-universala-00A0.dtbo" device tree overlay:
+Another interesting repository to keep in the BeagleBone Black is the beaglebone-universal-io. This repo has some device tree overlays that exports certain pins of BeagleBone Black, depending on the usage or not of the HDMI audio and video interface and the eMMC pins. As the HDMI is not beeing used, we will export all the pins by enabling the `cape-universala-00A0.dtbo` device tree overlay:
 
 ```
 cd 
@@ -302,7 +302,7 @@ sed -i 's/#uboot_overlay_addr4=\/lib\/firmware\/<file4>.dtbo/uboot_overlay_addr4
 
 This repository has also an useful utility. In the latest versions of Debian for BBB, loading device tree overlays can only be done during the boot. This way, configuring the mode of the pins can be achieved using the provided config-pin utility, which is intended to assist with setting up the various pin modes and querying the current pin state.
 
-After performing previous steps, it's time to install some software intended to support applications. All software installed from now on is used by one or more [[Machine:Control_System|Sirius control system]] server-side software, so installing all packages listed below results in a BeagleBone Black/Green ready for use in any network node.
+After performing previous steps, it's time to install some software intended to support applications. All software installed from now on is used by one or more [Sirius control system](/Machine/control_system) server-side software, so installing all packages listed below results in a BeagleBone Black/Green ready for use in any network node.
 
 <br>
 
