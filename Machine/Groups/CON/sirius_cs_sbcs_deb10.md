@@ -1,3 +1,13 @@
+---
+title: Sirius control system single-board computers (Debian 10)
+description: 
+published: 1
+date: 2024-06-04T18:42:53.054Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-04T18:39:28.823Z
+---
+
 # CON: Sirius control system SBCs (Debian 10)
 
 ## Introduction
@@ -15,7 +25,7 @@ There are several reasons for adopting SBCs as nodes of the control system. They
 BeagleBone Black is a credit-card sized computer powered by a Texas Instrument Sitara processor (AM335x). This chip comes with an ARM Cortex-A8 core, running Linux at frequencies up to 1 GHz. Additionally, it has two other dedicated cores (programmable real-time units, or PRUs). These two cores operate at 200 MHz and can be used to implement real-time tasks. An existing shared memory area permits communication between the main core and PRUs.
 
 Talking about peripherals, BeagleBone Black has everything [Sirius control system](/Machine/control_system) needs: Ethernet and USB. Serial communication could be handled by BeagleBone Black native UARTs, but this option was disconsidered due to:
-* Baud rate limitation. Native BeagleBone Black UARTs can't effectively handle communication at higher baud rates. In [[Machine:Control_System|Sirius control system]], there may be RS-485 serial networks operating at 10 Mbps.
+* Baud rate limitation. Native BeagleBone Black UARTs can't effectively handle communication at higher baud rates. In [Sirius control system](/Machine/control_system), there may be RS-485 serial networks operating at 10 Mbps.
 * Need for a previous configuration routine (device tree overlay loading). BeagleBone Black UARTs are not plug-and-play and may lead an unexperienced developer to spend some time setting up UARTs properly.
 * In case of RS-232 serial communication, native BeagleBone Black UARTs have only four wires: RxD, TxD, CTS and RTS. DSR and DTR are lacking, and may be useful in some situations.
 
@@ -543,7 +553,7 @@ The next script is necessary to reserve DDR memory for PRU serial interface and 
 ./overlay.sh
 ```
 
-Any USB/UART bridge based on the FTDI FT232RL IC should work without any additional software installation. For instance, [[CON:SERIALxxCON|SERIALxxCON]] has a serial interface of this type. Note that BeagleBone Black may not recognize the device if you plug it after system boot. So make sure to plug the USB/UART bridge before turnig on the single-board computer.
+Any USB/UART bridge based on the FTDI FT232RL IC should work without any additional software installation. For instance, [SERIALxxCON](/Machine/Groups/CON/serialxxcon) has a serial interface of this type. Note that BeagleBone Black may not recognize the device if you plug it after system boot. So make sure to plug the USB/UART bridge before turnig on the single-board computer.
 
 ### SPIxCONV
 
