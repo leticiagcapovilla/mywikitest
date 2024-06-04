@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers (Debian 9)
 description: 
 published: 1
-date: 2024-06-04T17:50:36.124Z
+date: 2024-06-04T17:54:06.724Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-04T17:45:27.935Z
@@ -328,7 +328,7 @@ cd base
 make
 ```
 
-It's convenient to add EPICS binaries directory to the system path and set other two environment variables. Edit "/root/.bashrc", adding at the end of the file:
+It's convenient to add EPICS binaries directory to the system path and set other two environment variables. Edit `/root/.bashrc`, adding at the end of the file:
 
 ```
 export PATH=/opt/epics-R3.15.7/base/linux-arm:$PATH
@@ -501,7 +501,7 @@ pip install pip-tools numpy ipython jupyter pandas sympy nose cython pandas pyse
 apt-get install python-scipy
 ```
 
-It is necessary to tell pyepics where EPICS libraries are installed. This can be done appending their path under the "/root/.bashrc" file:
+It is necessary to tell pyepics where EPICS libraries are installed. This can be done appending their path under the `/root/.bashrc` file:
 
 ```
 sed -i '$aexport PYEPICS_LIBCA=\/root\/base-3.15.5\/lib\/linux-arm\/libca.so' /root/.bashrc
@@ -514,7 +514,7 @@ apt-get install libfreetype6-dev pkg-config
 pip --no-cache-dir install matplotlib
 ```
 
-Now we will install the Python packaging tool "pipenv" and then use it to install the library requests:
+Now we will install the Python packaging tool `pipenv` and then use it to install the library requests:
 
 ```
 apt-get install libffi-dev libssl-dev
@@ -536,7 +536,7 @@ The Python version defined as the default is the Python 3.6. We followed the ins
 
 ### AM335x PRU package
 
-In previous Debian versions this package could be installed directly from Debian repository with "apt-get". However, since it has not been packaged in a long time, we will install it from source:
+In previous Debian versions this package could be installed directly from Debian repository with `apt-get`. However, since it has not been packaged in a long time, we will install it from source:
 
 ```
 cd 
@@ -568,7 +568,7 @@ cd PRUserial485/src
 ./library_build.sh
 ```
 
-In order to enable the usage of the PRU, a device tree overlay must be loaded. This can be done by editing the file under /boot/uEnv.txt, which can be achieved by typing the following command:
+In order to enable the usage of the PRU, a device tree overlay must be loaded. This can be done by editing the file under `/boot/uEnv.txt`, which can be achieved by typing the following command:
 
 ```
 sed -i 's/#uboot_overlay_addr5=\/lib\/firmware\/<file5>.dtbo/uboot_overlay_addr5=\/lib\/firmware\/uio_pruss_enable-00A0.dtbo/' /boot/uEnv.txt
@@ -685,7 +685,7 @@ We have bought a few units of the three single-board computers cited in the prev
 
 ### Wi-Fi configuration for CNPEM campus wireless network
 
-While developing some prototypes with BeagleBone Black Wireless or BeagleBone Green Wireless, the reader may want to connect the board to CNPEM campus wireless network. In order to do that, create a file named "Proteu.config" at the directory "/var/lib/connman" and add the following content to it, replacing <user> and <password> by the CNPEM credentials.
+While developing some prototypes with BeagleBone Black Wireless or BeagleBone Green Wireless, the reader may want to connect the board to CNPEM campus wireless network. In order to do that, create a file named `Proteu.config` at the directory `/var/lib/connman` and add the following content to it, replacing `<user>` and `<password>` by the CNPEM credentials.
 
 ```
 [service_Proteu]
@@ -704,7 +704,7 @@ After saving the file, the system will connect to the campus wireless network in
 
 ### Configure a static IP connection
 
-Debian, 9 distribution, has a connection manager called "connman". This manager has its own ways of operating with both static IP and dynamic IP. By default, the IP configuration is set dynamically. But in some cases, it is necessary to make the IP static, but "connman" does not allow IP to be fixed in the ways known to most people, and it overrides the information when the Linux device is rebooted. To prevent this and make the IP static, the steps are:
+Debian, 9 distribution, has a connection manager called `connman`. This manager has its own ways of operating with both static IP and dynamic IP. By default, the IP configuration is set dynamically. But in some cases, it is necessary to make the IP static, but `connman` does not allow IP to be fixed in the ways known to most people, and it overrides the information when the Linux device is rebooted. To prevent this and make the IP static, the steps are:
 
 1) Identify the eth0 name that "connman" manages. In directory in "/var/lib/connman" that identifies eth0:
 
@@ -717,7 +717,7 @@ drwx------ 2 root root 4096 Jan 27 18:42 ethernet_9059af4beffc_cable
 -rw------- 1 root root 284 Jan 27 18:42 settings
 ```
 
-For example the ethernet card eth0 is identified by the directory "ethernet_9059af4beffc_cable"
+For example the ethernet card eth0 is identified by the directory `ethernet_9059af4beffc_cable`
 
 2) Knowing this directory, run a "connman" command to make the static IP:
 
