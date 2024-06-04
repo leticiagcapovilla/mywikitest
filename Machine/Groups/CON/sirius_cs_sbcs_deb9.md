@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers (Debian 9)
 description: 
 published: 1
-date: 2024-06-04T17:45:58.129Z
+date: 2024-06-04T17:47:22.501Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-04T17:45:27.935Z
@@ -54,23 +54,31 @@ Currently we are working with BeagleBone Black Revision C (the last hardware ver
 
 With an "out of the box" BeagleBone Black/Green, first of all we write the latest operating system (OS) image to the board. Our OS choice is Debian Linux 9 (Stretch). In a Linux desktop machine running Ubuntu (just as [Controls Group](/Machine/Groups/CON) workstations), download the image with:
 
+```
 $ <nowiki>wget debian.beagleboard.org/images/bone-debian-9.3-iot-armhf-2018-03-05-4gb.img.xz</nowiki>
+```
 
 There are two options of BeagleBone Black/Green official Debian 9 images. The "Stretch IoT" and the "Stretch LXQT". The last one comes with LXQT (The Lightweight Qt Desktop Environment), a graphical environment that absolutely aren't useful for our purposes.
 
 Insert a microSD card into the computer and run GNOME Disks, in order to write the downloaded image to the card:
 
+```
 $ gnome-disks
+```
 
 Select the inserted device, click on the "More actions" button and choose "Restore Disk Image...". Then indicate the previously downloaded image file and click on "Start Restoring...". It might require superuser permission.
 
 After the process has been completed, it is possible to run Debian 9.3 from this microSD card. In order to flash the image into your Beaglebone's eMMC, edit the file "uEnv.txt" with sudo permission:
 
+```
 sudo nano /PATH_TO_YOUR_MEDIA/boot/uEnv.txt
+```
 
 And uncomment the following line at the end of the file:
 
+```
 #cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3.sh
+```
 
 Unmout the device and insert it into BeagleBone Black microSD card slot (the board must be powered off). Then, without any other cable or cape plugged, connect a 5V power supply to the board. Wait until D2, D3, D4 and D5 blue LEDs start to blink in sequence.
 
@@ -82,7 +90,9 @@ Plug the BeagleBone Black/Green to a PC with a USB cable and wait some time unti
 
 All instructions presented here must be executed from a desktop machine in a SSH terminal:
 
+```
 ssh debian@192.168.7.2
+```
 
 The default password for the user "debian" is "temppwd". After entering the password, a kernel and a boot loader update will be done. The scripts for doing so can be found at /opt/scripts which is a git repository.
 
