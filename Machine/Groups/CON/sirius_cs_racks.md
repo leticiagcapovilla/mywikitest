@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-04T15:29:53.603Z
+date: 2024-06-04T15:30:22.144Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -525,12 +525,12 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |10| 138| 10.128.108.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
 |11| 		 |	|	|
 |12| 		 |	|	|
-|13| 	10.128.108.121| Power Supplies - FBP 1 - Storage Ring - Left 1 | |
-|14| 	10.128.108.122| Power Supplies - FBP 2 - Storage Ring - Left 2 | |
+|13| 	| 10.128.108.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	| 10.128.108.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
 |15| 		 |	|	|
 |16| 		 |	|	|
-|17| 	10.128.108.131| Power Supplies - FBP 3 - Storage Ring - Right 1 | |
-|18| 	10.128.108.132| Power Supplies - FBP 4 - Storage Ring - Right 2  | |
+|17| 	| 10.128.108.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	| 10.128.108.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 <br>
 
