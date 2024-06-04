@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers (Debian 10)
 description: 
 published: 1
-date: 2024-06-04T18:44:10.461Z
+date: 2024-06-04T18:45:34.952Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-04T18:39:28.823Z
@@ -626,13 +626,13 @@ Section under construction.
 
 ## BeagleBone Green
 
-A few years ago, [Controls Group](/Machine/Groups/CON) started working with BeagleBone Black. More recently, [BeagleBone Green](https://beagleboard.org/green) was released. It is almost the same as BeagleBone Black, from which it derives. BeagleBone Green doesn't have the HDMI interface, a feature that is not used by any of our applications. Beside that, it costs a few dollars less than BeagleBone Black, which is, indeed, a real advantage.
+A few years ago, [Controls Group](/Machine/Groups/CON) started working with BeagleBone Black. More recently, [BeagleBone Green](https://beagleboard.org/green){target=_blank} was released. It is almost the same as BeagleBone Black, from which it derives. BeagleBone Green doesn't have the HDMI interface, a feature that is not used by any of our applications. Beside that, it costs a few dollars less than BeagleBone Black, which is, indeed, a real advantage.
 
 BeagleBone Green is being used as a cheaper substitute for BeagleBone Black in some designs. From a software perspective, there is no difference between these boards. So Linux images, configuration procedures and applications will work the same way in both of them. But there are some hardware differences between BeagleBone Black and BeagleBone Green. The lack of a barrel jack connector in BeagleBone Green for power supply is the most significant for us.
 
 ## Other BeagleBoard.org boards
 
-Other BeagleBoard.org boards may be useful for control system designs in the future. Aimed at wireless systems, [https://beagleboard.org/black-wireless BeagleBone Black Wireless] and [https://beagleboard.org/green-wireless BeagleBone Green Wireless] are counterparts of their wired Ethernet versions. Another option for embedded designs is [https://beagleboard.org/x15 BeagleBoard-x15], the most powerful board from the BeagleBoard.org pool.
+Other BeagleBoard.org boards may be useful for control system designs in the future. Aimed at wireless systems, [BeagleBone Black Wireless](https://beagleboard.org/black-wireless){target=_blank} and [BeagleBone Green Wireless](https://beagleboard.org/green-wireless){target=_blank} are counterparts of their wired Ethernet versions. Another option for embedded designs is [BeagleBoard-x15](https://beagleboard.org/x15){target=_blank}, the most powerful board from the BeagleBoard.org pool.
 
 We have bought a few units of the three single-board computers cited in the previous paragraph for some experiments.
 
