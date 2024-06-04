@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-04T15:30:44.116Z
+date: 2024-06-04T15:31:31.035Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -378,12 +378,12 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |10| 323| 10.128.105.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
 |11| 		 |	|	|
 |12| 		 |	|	|
-|13| 	10.128.105.121| Power Supplies - FBP 1 - Storage Ring - Left 1 | |
-|14| 	10.128.105.122| Power Supplies - FBP 2 - Storage Ring - Left 2 | |
+|13| 	| 10.128.105.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	| 10.128.105.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
 |15| 		 |	|	|
 |16| 		 |	|	|
-|17| 	10.128.105.131| Power Supplies - FBP 3 - Storage Ring - Right 1 | |
-|18| 	10.128.105.132| Power Supplies - FBP 4 - Storage Ring - Right 2  | |
+|17| 	| 10.128.105.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	| 10.128.105.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 <br>
 
@@ -420,19 +420,19 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |3| 213| 10.128.106.103| Power Supplies - 4UHV - Storage Ring |
 |4| 		 |	|	|
 |5| 		 |	|	|
-|6| 	10.128.106.104| Power Supplies - DCLINK - Storage Ring |
+|6| 	| 10.128.106.104| Power Supplies - DCLINK - Storage Ring |
 |7| 		 |	|	|
 |8| 		 |	|	|
 |9| 314| 10.128.106.117| Temperature Monitor - MBTemp - Storage Ring (<- BC) |
 |10| 317| 10.128.106.118| Temperature Monitor - MBTemp - Storage Ring (BC ->) |
 |11| 		 |	|	|
 |12| 		 |	|	|
-|13| 	10.128.106.121| Power Supplies - FBP 1 - Storage Ring - Left 1 | |
-|14| 	10.128.106.122| Power Supplies - FBP 2 - Storage Ring - Left 2 | |
+|13| 	| 10.128.106.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	| 10.128.106.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
 |15| 		 |	|	|
 |16| 		 |	|	|
-|17| 	10.128.106.131| Power Supplies - FBP 3 - Storage Ring - Right 1 | |
-|18| 	10.128.106.132| Power Supplies - FBP 4 - Storage Ring - Right 2  | |
+|17| 	| 10.128.106.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	| 10.128.106.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 <br>
 
