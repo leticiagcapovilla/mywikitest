@@ -14,7 +14,7 @@ dateCreated: 2024-06-03T21:08:07.259Z
 
 ## Introduction
 
-The Controls group will count on 24 racks to install its components, including [[CON:Sirius_control_system_servers|servers]], [[CON:Sirius_control_system_network|switches]] and control hosts. The [https://www.rittal.com/de_de/ts-it/public/index.php/en TS IT] developed by the German company [https://www.rittal.com/com-en/content/en/start/ Rittal] was chosen as the model and two different depths were acquired, according to the individual needs of each room.
+The Controls group will count on 24 racks to install its components, including [servers](/Machine/Groups/CON/sirius_cs_servers), [switches](/Machine/Groups/CON/sirius_cs_network) and control hosts. The [TS IT](https://www.rittal.com/de_de/ts-it/public/index.php/en) developed by the German company [Rittal](https://www.rittal.com/com-en/content/en/start/) was chosen as the model and two different depths were acquired, according to the individual needs of each room.
 
 <br>
 
@@ -165,7 +165,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -214,7 +214,8 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
+
 
 |Board Location| SERIALxxCON ID| IP| Device |
 |-|-|-|-|
@@ -259,7 +260,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -287,39 +288,25 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.104.151| [POE] CountingPRU - Trecho 4 M2 |
-|21| 10.128.104.152| [POE] CountingPRU - Trecho 4 C2 |
-|22| 10.128.104.153| [POE] CountingPRU - Trecho 4 C3 |
-|23| 10.128.104.154| [POE] CountingPRU - Trecho 4 M1 |
-|24| -----| [POE] CountingPRU - Booster  |
-
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.104.151| [POE] CountingPRU - Trecho 4 M2 |
+|9| -----|  ||21| 10.128.104.152| [POE] CountingPRU - Trecho 4 C2 |
+|10| -----|  ||22| 10.128.104.153| [POE] CountingPRU - Trecho 4 C3 |
+|11| -----|  ||23| 10.128.104.154| [POE] CountingPRU - Trecho 4 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU - Booster  |
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -348,40 +335,26 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.105.151| [POE] CountingPRU - Trecho 5 M2 |
-|21| 10.128.105.152| [POE] CountingPRU - Trecho 5 C2 |
-|22| 10.128.105.153| [POE] CountingPRU - Trecho 5 C3 |
-|23| 10.128.105.154| [POE] CountingPRU - Trecho 5 M1 |
-|24| -----| [POE] CountingPRU - Booster  |
-| |
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.105.151| [POE] CountingPRU - Trecho 5 M2 |
+|9| -----|  ||21| 10.128.105.152| [POE] CountingPRU - Trecho 5 C2 |
+|10| -----|  ||22| 10.128.105.153| [POE] CountingPRU - Trecho 5 C3 |
+|11| -----|  ||23| 10.128.105.154| [POE] CountingPRU - Trecho 5 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU - Booster  |
 
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -410,40 +383,25 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.106.151| [POE] CountingPRU - Trecho 6 M2 |
-|21| 10.128.106.152| [POE] CountingPRU - Trecho 6 C2 |
-|22| 10.128.106.153| [POE] CountingPRU - Trecho 6 C3 |
-|23| 10.128.106.154| [POE] CountingPRU - Trecho 6 M1 |
-|24| -----| [POE] CountingPRU - Booster  |
-
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.106.151| [POE] CountingPRU - Trecho 6 M2 |
+|9| -----|  ||21| 10.128.106.152| [POE] CountingPRU - Trecho 6 C2 |
+|10| -----|  ||22| 10.128.106.153| [POE] CountingPRU - Trecho 6 C3 |
+|11| -----|  ||23| 10.128.106.154| [POE] CountingPRU - Trecho 6 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU - Booster  |
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -472,40 +430,25 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.107.151| [POE] CountingPRU - Trecho 7 M2 |
-|21| 10.128.107.152| [POE] CountingPRU - Trecho 7 C2 |
-|22| 10.128.107.153| [POE] CountingPRU - Trecho 7 C3 |
-|23| 10.128.107.154| [POE] CountingPRU - Trecho 7 M1 |
-|24| -----| [POE] CountingPRU - Booster  |
-
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.107.151| [POE] CountingPRU - Trecho 7 M2 |
+|9| -----|  ||21| 10.128.107.152| [POE] CountingPRU - Trecho 7 C2 |
+|10| -----|  ||22| 10.128.107.153| [POE] CountingPRU - Trecho 7 C3 |
+|11| -----|  ||23| 10.128.107.154| [POE] CountingPRU - Trecho 7 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU - Booster  |
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -535,40 +478,26 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 **Ethernet Patch Panel**
 
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.108.151| [POE] CountingPRU - Trecho 8 M2 |
-|21| 10.128.108.152| [POE] CountingPRU - Trecho 8 C2 |
-|22| 10.128.108.153| [POE] CountingPRU - Trecho 8 C3 |
-|23| 10.128.108.154| [POE] CountingPRU - Trecho 8 M1 |
-|24| -----| [POE] CountingPRU - Booster  |
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.108.151| [POE] CountingPRU - Trecho 8 M2 |
+|9| -----|  ||21| 10.128.108.152| [POE] CountingPRU - Trecho 8 C2 |
+|10| -----|  ||22| 10.128.108.153| [POE] CountingPRU - Trecho 8 C3 |
+|11| -----|  ||23| 10.128.108.154| [POE] CountingPRU - Trecho 8 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU - Booster  |
 
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -597,41 +526,26 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.109.151| [POE] CountingPRU - Trecho 9 M2 |
-|21| 10.128.109.152| [POE] CountingPRU - Trecho 9 C2 |
-|22| 10.128.109.153| [POE] CountingPRU - Trecho 9 C3 |
-|23| 10.128.109.154| [POE] CountingPRU - Trecho 9 M1 |
-|24| -----| [POE] CountingPRU - Booster  |
-| |
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.109.151| [POE] CountingPRU - Trecho 9 M2 |
+|9| -----|  ||21| 10.128.109.152| [POE] CountingPRU - Trecho 9 C2 |
+|10| -----|  ||22| 10.128.109.153| [POE] CountingPRU - Trecho 9 C3 |
+|11| -----|  ||23| 10.128.109.154| [POE] CountingPRU - Trecho 9 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU - Booster  |
 
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -659,41 +573,25 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 ### Room 10
 
 **Ethernet Patch Panel**
-|Slot #| IP| Description |
-|1| -----| General Purpose - BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.110.151| [POE] CountingPRU - Trecho 10 M2 |
-|21| 10.128.110.152| [POE] CountingPRU - Trecho 10 C2 |
-|22| 10.128.110.153| [POE] CountingPRU - Trecho 10 C3 |
-|23| 10.128.110.154| [POE] CountingPRU - Trecho 10 M1 |
-|24| -----| [POE] CountingPRU - Booster  |
-| |
-
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.110.151| [POE] CountingPRU - Trecho 10 M2 |
+|9| -----|  ||21| 10.128.110.152| [POE] CountingPRU - Trecho 10 C2 |
+|10| -----|  ||22| 10.128.110.153| [POE] CountingPRU - Trecho 10 C3 |
+|11| -----|  ||23| 10.128.110.154| [POE] CountingPRU - Trecho 10 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU - Booster  |
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 | Board Location| SERIALxxCON ID| IP| Device |
@@ -722,39 +620,25 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - Trecho 11 BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.111.151| [POE] CountingPRU - Trecho 11 M2 |
-|21| 10.128.111.152| [POE] CountingPRU - Trecho 11 C2 |
-|22| 10.128.111.153| [POE] CountingPRU - Trecho 11 C3 |
-|23| 10.128.111.154| [POE] CountingPRU - Trecho 11 M1 |
-|24| -----| [POE] CountingPRU Booster - Trecho 11  |
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - Trecho 11 BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.111.151| [POE] CountingPRU - Trecho 11 M2 |
+|9| -----|  ||21| 10.128.111.152| [POE] CountingPRU - Trecho 11 C2 |
+|10| -----|  ||22| 10.128.111.153| [POE] CountingPRU - Trecho 11 C3 |
+|11| -----|  ||23| 10.128.111.154| [POE] CountingPRU - Trecho 11 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU Booster - Trecho 11  |
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -782,39 +666,25 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - Trecho 12 BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.112.151| [POE] CountingPRU - Trecho 12 M2 |
-|21| 10.128.112.152| [POE] CountingPRU - Trecho 12 C2 |
-|22| 10.128.112.153| [POE] CountingPRU - Trecho 12 C3 |
-|23| 10.128.112.154| [POE] CountingPRU - Trecho 12 M1 |
-|24| -----| [POE] CountingPRU Booster - Trecho 12  |
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - Trecho 12 BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.112.151| [POE] CountingPRU - Trecho 12 M2 |
+|9| -----|  ||21| 10.128.112.152| [POE] CountingPRU - Trecho 12 C2 |
+|10| -----|  ||22| 10.128.112.153| [POE] CountingPRU - Trecho 12 C3 |
+|11| -----|  ||23| 10.128.112.154| [POE] CountingPRU - Trecho 12 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU Booster - Trecho 12  |
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -845,40 +715,26 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 **Ethernet Patch Panel**
 
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - Trecho 13 BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.113.151| [POE] CountingPRU - Trecho 13 M2 |
-|21| 10.128.113.152| [POE] CountingPRU - Trecho 13 C2 |
-|22| 10.128.113.153| [POE] CountingPRU - Trecho 13 C3 |
-|23| 10.128.113.154| [POE] CountingPRU - Trecho 13 M1 |
-|24| -----| [POE] CountingPRU Booster - Trecho 13  |
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - Trecho 13 BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.113.151| [POE] CountingPRU - Trecho 13 M2 |
+|9| -----|  ||21| 10.128.113.152| [POE] CountingPRU - Trecho 13 C2 |
+|10| -----|  ||22| 10.128.113.153| [POE] CountingPRU - Trecho 13 C3 |
+|11| -----|  ||23| 10.128.113.154| [POE] CountingPRU - Trecho 13 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU Booster - Trecho 13  |
 
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -908,40 +764,25 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 **Ethernet Patch Panel**
 
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - Trecho 14 BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.114.151| [POE] CountingPRU - Trecho 14 M2 |
-|21| 10.128.114.152| [POE] CountingPRU - Trecho 14 C2 |
-|22| 10.128.114.153| [POE] CountingPRU - Trecho 14 C3 |
-|23| 10.128.114.154| [POE] CountingPRU - Trecho 14 M1 |
-|24| -----| [POE] CountingPRU Booster - Trecho 14  |
-
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - Trecho 14 BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.114.151| [POE] CountingPRU - Trecho 14 M2 |
+|9| -----|  ||21| 10.128.114.152| [POE] CountingPRU - Trecho 14 C2 |
+|10| -----|  ||22| 10.128.114.153| [POE] CountingPRU - Trecho 14 C3 |
+|11| -----|  ||23| 10.128.114.154| [POE] CountingPRU - Trecho 14 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU Booster - Trecho 14  |
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 |Board Location| SERIALxxCON ID| IP| Device |
 |-|-|-|-|
@@ -970,40 +811,25 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 **Ethernet Patch Panel**
 
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - Trecho 15 BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.115.151| [POE] CountingPRU - Trecho 15 M2 |
-|21| 10.128.115.152| [POE] CountingPRU - Trecho 15 C2 |
-|22| 10.128.115.153| [POE] CountingPRU - Trecho 15 C3 |
-|23| 10.128.115.154| [POE] CountingPRU - Trecho 15 M1 |
-|24| -----| [POE] CountingPRU Booster - Trecho 15  |
-
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - Trecho 15 BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.115.151| [POE] CountingPRU - Trecho 15 M2 |
+|9| -----|  ||21| 10.128.115.152| [POE] CountingPRU - Trecho 15 C2 |
+|10| -----|  ||22| 10.128.115.153| [POE] CountingPRU - Trecho 15 C3 |
+|11| -----|  ||23| 10.128.115.154| [POE] CountingPRU - Trecho 15 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU Booster - Trecho 15  |
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 |Board Location| SERIALxxCON ID| IP| Device |
 |-|-|-|-|
@@ -1030,40 +856,25 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - Trecho 16 BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.116.151| [POE] CountingPRU - Trecho 16 M2 |
-|21| 10.128.116.152| [POE] CountingPRU - Trecho 16 C2 |
-|22| 10.128.116.153| [POE] CountingPRU - Trecho 16 C3 |
-|23| 10.128.116.154| [POE] CountingPRU - Trecho 16 M1 |
-|24| -----| [POE] CountingPRU Booster - Trecho 16  |
-
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - Trecho 16 BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.116.151| [POE] CountingPRU - Trecho 16 M2 |
+|9| -----|  ||21| 10.128.116.152| [POE] CountingPRU - Trecho 16 C2 |
+|10| -----|  ||22| 10.128.116.153| [POE] CountingPRU - Trecho 16 C3 |
+|11| -----|  ||23| 10.128.116.154| [POE] CountingPRU - Trecho 16 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU Booster - Trecho 16  |
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -1092,40 +903,25 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Ethernet Patch Panel**
 
-| Slot #| IP| Description |
-|1| -----| General Purpose - Trecho 17 BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.117.151| [POE] CountingPRU - Trecho 17 M2 |
-|21| 10.128.117.152| [POE] CountingPRU - Trecho 17 C2 |
-|22| 10.128.117.153| [POE] CountingPRU - Trecho 17 C3 |
-|23| 10.128.117.154| [POE] CountingPRU - Trecho 17 M1 |
-|24| -----| [POE] CountingPRU Booster - Trecho 17  |
-
+| Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - Trecho 17 BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.117.151| [POE] CountingPRU - Trecho 17 M2 |
+|9| -----|  ||21| 10.128.117.152| [POE] CountingPRU - Trecho 17 C2 |
+|10| -----|  ||22| 10.128.117.153| [POE] CountingPRU - Trecho 17 C3 |
+|11| -----|  ||23| 10.128.117.154| [POE] CountingPRU - Trecho 17 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU Booster - Trecho 17  |
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -1153,40 +949,26 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - Trecho 18 BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.118.151| [POE] CountingPRU - Trecho 18 M2 |
-|21| 10.128.118.152| [POE] CountingPRU - Trecho 18 C2 |
-|22| 10.128.118.153| [POE] CountingPRU - Trecho 18 C3 |
-|23| 10.128.118.154| [POE] CountingPRU - Trecho 18 M1 |
-|24| -----| [POE] CountingPRU Booster - Trecho 18  |
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - Trecho 18 BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.118.151| [POE] CountingPRU - Trecho 18 M2 |
+|9| -----|  ||21| 10.128.118.152| [POE] CountingPRU - Trecho 18 C2 |
+|10| -----|  ||22| 10.128.118.153| [POE] CountingPRU - Trecho 18 C3 |
+|11| -----|  ||23| 10.128.118.154| [POE] CountingPRU - Trecho 18 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU Booster - Trecho 18  |
 
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -1215,40 +997,25 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - Trecho 19 BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| 10.128.119.151| [POE] CountingPRU - Trecho 19 M2 |
-|21| 10.128.119.152| [POE] CountingPRU - Trecho 19 C2 |
-|22| 10.128.119.153| [POE] CountingPRU - Trecho 19 C3 |
-|23| 10.128.119.154| [POE] CountingPRU - Trecho 19 M1 |
-|24| -----| [POE] CountingPRU Booster - Trecho 19  |
-
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - Trecho 19 BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| 10.128.119.151| [POE] CountingPRU - Trecho 19 M2 |
+|9| -----|  ||21| 10.128.119.152| [POE] CountingPRU - Trecho 19 C2 |
+|10| -----|  ||22| 10.128.119.153| [POE] CountingPRU - Trecho 19 C3 |
+|11| -----|  ||23| 10.128.119.154| [POE] CountingPRU - Trecho 19 M1 |
+|12| -----|  ||24| -----| [POE] CountingPRU Booster - Trecho 19  |
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -1276,72 +1043,43 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Upper Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| [POE] CountingPRU - Booster |
-|2| -----| [POE] Basler Camera DIG (Visible Light) - Booster |
-|3| -----| DIG 4 (Rack DIG) |
-|4| -----| [POE] DIG BTS - Booster - Monitor 1 |
-|5| -----| [POE] DIG BTS - Booster - Monitor 2 |
-|6| -----| [POE] DIG BTS - Trecho 20/M1 - Monitor 1 |
-|7| -----| [POE] DIG BTS - Trecho 20/M1 - Monitor 2 |
-|8| -----| [POE] DIG BTS - Trecho 20/M1 - Monitor 3 |
-|9| -----| [POE] DIG BTS - Trecho 20/M1 - Monitor 4 |
-|10| -----| DIG BTS - Galil 1 |
-|11| -----| DIG BTS - Galil 2 |
-|12| -----| DIG BTS - Galil 3 |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----| DIG BTS - Galil 4 |
-|14| -----| DIG BTS - Galil 5 |
-|15| -----| DIG BTS - Galil 6 |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| -----|  |
-|21| -----|  |
-|22| -----|  |
-|23| -----| DIG - Scrapper 01 |
-|24| -----| DIG - Scrapper 02  |
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| [POE] CountingPRU - Booster ||13| -----| DIG BTS - Galil 4 |
+|2| -----| [POE] Basler Camera DIG (Visible Light) - Booster ||14| -----| DIG BTS - Galil 5 |
+|3| -----| DIG 4 (Rack DIG) ||15| -----| DIG BTS - Galil 6 |
+|4| -----| [POE] DIG BTS - Booster - Monitor 1 ||16| -----|  |
+|5| -----| [POE] DIG BTS - Booster - Monitor 2 ||17| -----|  |
+|6| -----| [POE] DIG BTS - Trecho 20/M1 - Monitor 1 ||18| -----|  |
+|7| -----| [POE] DIG BTS - Trecho 20/M1 - Monitor 2 ||19| -----|  |
+|8| -----| [POE] DIG BTS - Trecho 20/M1 - Monitor 3 ||20| -----|  |
+|9| -----| [POE] DIG BTS - Trecho 20/M1 - Monitor 4 ||21| -----|  |
+|10| -----| DIG BTS - Galil 1 ||22| -----|  |
+|11| -----| DIG BTS - Galil 2 ||23| -----| DIG - Scrapper 01 |
+|12| -----| DIG BTS - Galil 3 ||24| -----| DIG - Scrapper 02  |
 
 
 **Lower Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| General Purpose - BC |
-|2| -----|  |
-|3| -----|  |
-|4| -----|  |
-|5| -----|  |
-|6| -----|  |
-|7| -----|  |
-|8| -----|  |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| -----|  |
-|21| 10.128.120.151| [POE] CountingPRU - Trecho 20 M2 |
-|22| 10.128.120.152| [POE] CountingPRU - Trecho 20 C2 |
-|23| 10.128.120.153| [POE] CountingPRU - Trecho 20 C3 |
-|24| 10.128.120.154| [POE] CountingPRU - Trecho 20 M1  |
-
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| General Purpose - BC ||13| -----|  |
+|2| -----|  ||14| -----|  |
+|3| -----|  ||15| -----|  |
+|4| -----|  ||16| -----|  |
+|5| -----|  ||17| -----|  |
+|6| -----|  ||18| -----|  |
+|7| -----|  ||19| -----|  |
+|8| -----|  ||20| -----|  |
+|9| -----|  ||21| 10.128.120.151| [POE] CountingPRU - Trecho 20 M2 |
+|10| -----|  ||22| 10.128.120.152| [POE] CountingPRU - Trecho 20 C2 |
+|11| -----|  ||23| 10.128.120.153| [POE] CountingPRU - Trecho 20 C3 |
+|12| -----|  ||24| 10.128.120.154| [POE] CountingPRU - Trecho 20 M1  |
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
@@ -1373,40 +1111,25 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 **Ethernet Patch Panel**
 
-|Slot #| IP| Description |
-|1| -----| Cable 01 to Rack LA-RaPS02 (Room 21) |
-|2| -----| Cable 02 to Rack LA-RaPS02 (Room 21) |
-|3| -----| Cable 03 to Rack LA-RaPS02 (Room 21) |
-|4| -----| Cable 04 to Rack LA-RaPS02 (Room 21) |
-|5| -----| Cable 05 to Rack LA-RaPS02 (Room 21) |
-|6| -----| Cable 06 to Rack LA-RaPS04 (Room 21) |
-|7| -----| Cable 07 to Rack LA-RaPS04 (Room 21) |
-|8| -----| Cable 08 to Rack LA-RaPS04 (Room 21) |
-|9| -----|  |
-|10| -----|  |
-|11| -----|  |
-|12| -----|  |
-| |
-| |
-|Slot #| IP| Description |
-|13| -----|  |
-|14| -----|  |
-|15| -----|  |
-|16| -----|  |
-|17| -----|  |
-|18| -----|  |
-|19| -----|  |
-|20| -----|  |
-|21| -----|  |
-|22| -----|  |
-|23| -----|  |
-|24| -----|  |
-
+|Slot #| IP| Description ||Slot #| IP| Description |
+|-|-|-|-|-|-|-|
+|1| -----| Cable 01 to Rack LA-RaPS02 (Room 21) ||13| -----|  |
+|2| -----| Cable 02 to Rack LA-RaPS02 (Room 21) ||14| -----|  |
+|3| -----| Cable 03 to Rack LA-RaPS02 (Room 21) ||15| -----|  |
+|4| -----| Cable 04 to Rack LA-RaPS02 (Room 21) ||16| -----|  |
+|5| -----| Cable 05 to Rack LA-RaPS02 (Room 21) ||17| -----|  |
+|6| -----| Cable 06 to Rack LA-RaPS04 (Room 21) ||18| -----|  |
+|7| -----| Cable 07 to Rack LA-RaPS04 (Room 21) ||19| -----|  |
+|8| -----| Cable 08 to Rack LA-RaPS04 (Room 21) ||20| -----|  |
+|9| -----|  ||21| -----|  |
+|10| -----|  ||22| -----|  |
+|11| -----|  ||23| -----|  |
+|12| -----|  ||24| -----|  
 
 
 **SERIALxxCON - Serial Networks**
 
-[[File:Racks_SERIALxxCON.png|350px|thumb|left]]
+![](/img/groups/con/sirius_cs_racks/Racks_SERIALxxCON.png =350x)
 
 
 |Board Location| SERIALxxCON ID| IP| Device |
