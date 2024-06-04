@@ -14,8 +14,6 @@ dateCreated: 2024-06-03T21:08:07.259Z
 
 ## Introduction
 
-LALALALALALA TESTANDO FIX DO CONFLITO
-
 The Controls group will count on 24 racks to install its components, including [[CON:Sirius_control_system_servers|servers]], [[CON:Sirius_control_system_network|switches]] and control hosts. The [https://www.rittal.com/de_de/ts-it/public/index.php/en TS IT] developed by the German company [https://www.rittal.com/com-en/content/en/start/ Rittal] was chosen as the model and two different depths were acquired, according to the individual needs of each room.
 
 <br>
@@ -52,7 +50,7 @@ In this kind of rooms, we count on two switches: one [2930M](http://www.arubanet
 
 ### Rack rooms with two 2930M switches
 
-Two [2930M](http://www.arubanetworks.com/assets/ds/DS_2930MSwitchSeries.pdf|Aruba) switches and other two [1810-24G](https://h20195.www2.hpe.com/v2/GetDocument.aspx?docname=4AA4-6971ENW&doctype=data%20sheet&doclang=EN_US&searchquery=&cc=th&lc=en|HP) are needed for rooms '''01''' and '''19/20''', due to the bigger amount of connections on these sectors. As in the previous section, these are 600x800mm racks.
+Two [2930M](http://www.arubanetworks.com/assets/ds/DS_2930MSwitchSeries.pdf|Aruba) switches and other two [1810-24G](https://h20195.www2.hpe.com/v2/GetDocument.aspx?docname=4AA4-6971ENW&doctype=data%20sheet&doclang=EN_US&searchquery=&cc=th&lc=en|HP) are needed for rooms **01** and **19/20**, due to the bigger amount of connections on these sectors. As in the previous section, these are 600x800mm racks.
 
 <br>
 
@@ -97,7 +95,7 @@ Our rack in the LINAC klystron room is going to be the root of half of our star 
 This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_network) and one of our [servers](/Machine/Groups/CON/sirius_cs_servers). As consequence, this rack must be wider: 600x1000mm.
 
 
-'''Ethernet Patch Panel - Top'''
+**Ethernet Patch Panel - Top**
 
 |Slot #| IP| Description ||Slot #| IP| Description |
 |-|-|-|-|-|-|
@@ -115,7 +113,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |12| -----| DIG Fenda de Energia 2V ||24| -----|  |
 
 
-'''Ethernet Patch Panel - Bottom'''
+**Ethernet Patch Panel - Bottom**
 
 |Slot #| IP| Description ||Slot #| IP| Description |
 |-|-|-|-|-|-|
@@ -133,7 +131,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |12| -----| LINAC Controls Room #12 ||24| -----|  |
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 |Boards| SERIALxxCON ID| IP| Device |
 |-|-|-|-|
@@ -147,7 +145,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 01
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description ||Slot #| IP| Description |
 |-|-|-|-|-|-|
@@ -165,7 +163,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |12| -----| DIG Galil - LTB 5 ||24| -----| General Purpose BC  |
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -195,7 +193,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 ### Room 02
 
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description ||Slot #| IP| Description |
 |-|-|-|-|-|-|-|
@@ -214,7 +212,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -241,7 +239,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 03
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 | Slot #| IP| Description ||Slot #| IP| Description |
 |-|-|-|-|-|-|-|
 |1| -----| General Purpose - BC ||13| -----|  |
@@ -259,7 +257,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -287,7 +285,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 04
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| General Purpose - BC |
@@ -319,7 +317,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -348,7 +346,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 05
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| General Purpose - BC |
@@ -381,7 +379,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -410,7 +408,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 ### Room 06
 
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| General Purpose - BC |
@@ -443,7 +441,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -472,7 +470,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 07
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| General Purpose - BC |
@@ -505,7 +503,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -534,7 +532,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 08
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 
 |Slot #| IP| Description |
@@ -568,7 +566,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -597,7 +595,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 09
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| General Purpose - BC |
@@ -631,7 +629,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -660,7 +658,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 10
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 |Slot #| IP| Description |
 |1| -----| General Purpose - BC |
 |2| -----|  |
@@ -693,7 +691,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -722,7 +720,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 11
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| General Purpose - Trecho 11 BC |
@@ -754,7 +752,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |24| -----| [POE] CountingPRU Booster - Trecho 11  |
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -782,7 +780,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 12
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| General Purpose - Trecho 12 BC |
@@ -814,7 +812,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |24| -----| [POE] CountingPRU Booster - Trecho 12  |
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -844,7 +842,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 13
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 
 |Slot #| IP| Description |
@@ -878,7 +876,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -907,7 +905,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 14
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 
 |Slot #| IP| Description |
@@ -941,7 +939,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -969,7 +967,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 15
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 
 |Slot #| IP| Description |
@@ -1003,7 +1001,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -1030,7 +1028,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 16
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| General Purpose - Trecho 16 BC |
@@ -1063,7 +1061,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -1092,7 +1090,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 17
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 | Slot #| IP| Description |
 |1| -----| General Purpose - Trecho 17 BC |
@@ -1125,7 +1123,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -1153,7 +1151,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 18-I
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| General Purpose - Trecho 18 BC |
@@ -1186,7 +1184,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -1215,7 +1213,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 18-II
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| General Purpose - Trecho 19 BC |
@@ -1248,7 +1246,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -1276,7 +1274,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 19/20
 
-'''Upper Ethernet Patch Panel'''
+**Upper Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| [POE] CountingPRU - Booster |
@@ -1308,7 +1306,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |24| -----| DIG - Scrapper 02  |
 
 
-'''Lower Ethernet Patch Panel'''
+**Lower Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| General Purpose - BC |
@@ -1341,7 +1339,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
@@ -1373,7 +1371,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 ### Room 21 (Transport Lines)
 
-'''Ethernet Patch Panel'''
+**Ethernet Patch Panel**
 
 |Slot #| IP| Description |
 |1| -----| Cable 01 to Rack LA-RaPS02 (Room 21) |
@@ -1406,7 +1404,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 
 
-'''SERIALxxCON - Serial Networks'''
+**SERIALxxCON - Serial Networks**
 
 [[File:Racks_SERIALxxCON.png|350px|thumb|left]]
 
