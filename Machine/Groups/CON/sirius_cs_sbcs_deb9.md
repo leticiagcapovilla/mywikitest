@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers (Debian 9)
 description: 
 published: 1
-date: 2024-06-04T17:54:56.166Z
+date: 2024-06-04T18:09:11.331Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-04T17:45:27.935Z
@@ -55,7 +55,7 @@ Currently we are working with BeagleBone Black Revision C (the last hardware ver
 With an "out of the box" BeagleBone Black/Green, first of all we write the latest operating system (OS) image to the board. Our OS choice is Debian Linux 9 (Stretch). In a Linux desktop machine running Ubuntu (just as [Controls Group](/Machine/Groups/CON) workstations), download the image with:
 
 ```
-$ <nowiki>wget debian.beagleboard.org/images/bone-debian-9.3-iot-armhf-2018-03-05-4gb.img.xz</nowiki>
+$ wget debian.beagleboard.org/images/bone-debian-9.3-iot-armhf-2018-03-05-4gb.img.xz
 ```
 
 There are two options of BeagleBone Black/Green official Debian 9 images. The "Stretch IoT" and the "Stretch LXQT". The last one comes with LXQT (The Lightweight Qt Desktop Environment), a graphical environment that absolutely aren't useful for our purposes.
