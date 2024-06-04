@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers (Debian 9)
 description: 
 published: 1
-date: 2024-06-04T18:09:11.331Z
+date: 2024-06-04T18:10:44.932Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-04T17:45:27.935Z
@@ -77,7 +77,7 @@ sudo nano /PATH_TO_YOUR_MEDIA/boot/uEnv.txt
 And uncomment the following line at the end of the file:
 
 ```
-#cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3.sh
+# cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3.sh
 ```
 
 Unmout the device and insert it into BeagleBone Black microSD card slot (the board must be powered off). Then, without any other cable or cape plugged, connect a 5V power supply to the board. Wait until D2, D3, D4 and D5 blue LEDs start to blink in sequence.
