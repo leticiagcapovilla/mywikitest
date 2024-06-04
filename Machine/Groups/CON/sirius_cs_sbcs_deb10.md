@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers (Debian 10)
 description: 
 published: 1
-date: 2024-06-04T18:42:53.054Z
+date: 2024-06-04T18:44:10.461Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-04T18:39:28.823Z
@@ -557,7 +557,7 @@ Any USB/UART bridge based on the FTDI FT232RL IC should work without any additio
 
 ### SPIxCONV
 
-[[CON:SPIxCONV|SPIxCONV]] software support can be installed in BeagleBone Black with the next commands:
+[[CON:SPIxCONV|SPIxCONV]](link) software support can be installed in BeagleBone Black with the next commands:
 
 ```
 cd 
@@ -626,7 +626,7 @@ Section under construction.
 
 ## BeagleBone Green
 
-A few years ago, [[CON:CON|Controls Group]] started working with BeagleBone Black. More recently, [https://beagleboard.org/green BeagleBone Green] was released. It is almost the same as BeagleBone Black, from which it derives. BeagleBone Green doesn't have the HDMI interface, a feature that is not used by any of our applications. Beside that, it costs a few dollars less than BeagleBone Black, which is, indeed, a real advantage.
+A few years ago, [Controls Group](/Machine/Groups/CON) started working with BeagleBone Black. More recently, [BeagleBone Green](https://beagleboard.org/green) was released. It is almost the same as BeagleBone Black, from which it derives. BeagleBone Green doesn't have the HDMI interface, a feature that is not used by any of our applications. Beside that, it costs a few dollars less than BeagleBone Black, which is, indeed, a real advantage.
 
 BeagleBone Green is being used as a cheaper substitute for BeagleBone Black in some designs. From a software perspective, there is no difference between these boards. So Linux images, configuration procedures and applications will work the same way in both of them. But there are some hardware differences between BeagleBone Black and BeagleBone Green. The lack of a barrel jack connector in BeagleBone Green for power supply is the most significant for us.
 
