@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-04T14:23:30.616Z
+date: 2024-06-04T15:18:38.164Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -22,10 +22,8 @@ The Controls group will count on 24 racks to install its components, including [
 
 The table below summarizes the location, count and physical dimension of our racks.
 
-| Amount| Physical |
-| |
-|Dimensions (mm) |
-|	Location |
+| Amount| Physical Dimensions (mm) | Location |
+|-|-|-|
 |20| 600x800| Rack rooms around the ring |
 |1| 600x800| RF room |
 |1| 600x1000| High power supply room |
@@ -174,24 +172,27 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |2| 96| 10.128.101.105| Power Supplies - FBP - Booster |
 |3| 93| 10.128.101.101| Vacuum System - Gauge Controller MKS - Booster & Storage Ring |
 |4| 94| 10.128.101.102| Vacuum System - Ion Pump 4UHV - Booster |
-|5| 		 |
+|5| 		 |	|	| 
 |6| 111| 10.128.101.106| Temperature Monitor - MBTemp - Booster |
-|7| 		 |
+|7| 		 |	|	|
 |8| 115| 10.128.101.103| Vacuum System - Ion Pump 4UHV - Storage Ring |
 |9| 293| 10.128.101.117| Temperature Monitor - MBTemp - Storage Ring (<-BC) |
 |10| 319| 10.128.101.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
-|11| 		 |
-|12| 		 |
+|11| 		 |	|	|
+|12| 		 |	|	|
 |13| 	10.128.101.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
 |14| 	10.128.101.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
-|15| 		 |
-|16| 		 |
+|15| 		 |	|	|
+|16| 		 |	|	|
 |17| 	10.128.101.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.101.132| Power Supplies - FBP 4 - Storage Ring - Right 2 |
 
+> Note: IPs 107 and 108 are reserved for EPP. 
+{.is-info}
+
+<br>
 
 ### Room 02
-
 
 **Ethernet Patch Panel**
 
@@ -237,6 +238,8 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |16| 		 |
 |17| 	10.128.102.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.102.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
+
+<br>
 
 ### Room 03
 
@@ -284,6 +287,8 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.103.121| Power Supplies - FBP 1 - Storage Ring - Right 1 |
 |18| 	10.128.103.122| Power Supplies - FBP 2 - Storage Ring - Right 2 
 
+<br>
+
 ### Room 04
 
 **Ethernet Patch Panel**
@@ -330,6 +335,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.104.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.104.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
 
 ### Room 05
 
@@ -378,6 +384,8 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.105.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.105.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
+
 ### Room 06
 
 
@@ -425,6 +433,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.106.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.106.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
 
 ### Room 07
 
@@ -472,6 +481,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.107.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.107.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
 
 ### Room 08
 
@@ -521,6 +531,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.108.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.108.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
 
 ### Room 09
 
@@ -569,6 +580,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.109.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.109.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
 
 ### Room 10
 
@@ -615,6 +627,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.110.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.110.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
 
 ### Room 11
 
@@ -662,6 +675,8 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.111.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.111.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
+
 ### Room 12
 
 **Ethernet Patch Panel**
@@ -708,7 +723,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.112.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.112.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
-
+<br>
 
 ### Room 13
 
@@ -758,6 +773,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.113.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.113.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
 
 ### Room 14
 
@@ -805,6 +821,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.114.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.114.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
 
 ### Room 15
 
@@ -852,6 +869,8 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.115.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.115.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
+
 ### Room 16
 
 **Ethernet Patch Panel**
@@ -898,6 +917,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.116.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.116.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
 
 ### Room 17
 
@@ -944,6 +964,8 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |16| 		 |
 |17| 	10.128.117.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.117.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
+
+<br>
 
 ### Room 18-I
 
@@ -992,6 +1014,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |17| 	10.128.118.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.118.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
+<br>
 
 ### Room 18-II
 
@@ -1038,6 +1061,8 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |16| 		 |
 |17| 	10.128.119.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
 |18| 	10.128.119.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
+
+<br>
 
 ### Room 19/20
 
@@ -1106,6 +1131,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 
 |Note: IPs 107 and 108 are reserved for EPP.  |
 
+<br>
 
 ### Room 21 (Transport Lines)
 
