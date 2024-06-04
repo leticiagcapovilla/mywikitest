@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-04T15:33:59.274Z
+date: 2024-06-04T15:34:43.408Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -96,7 +96,7 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 **Ethernet Patch Panel - Top**
 
 |Slot #| IP| Description ||Slot #| IP| Description |
-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|
 |1| -----| [POE] CountingPRU - LTB 1 ||13| -----|  |
 |2| -----| [POE] CountingPRU - LTB 2 ||14| -----|  |
 |3| -----| [POE] DIG Camera - LTB 1 ||15| -----|  |
