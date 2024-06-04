@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-04T15:32:11.286Z
+date: 2024-06-04T15:32:52.624Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -180,12 +180,12 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |10| 319| 10.128.101.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
 |11| 		 |	|	|
 |12| 		 |	|	|
-|13| 	10.128.101.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
-|14| 	10.128.101.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
+|13| 	| 10.128.101.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	| 10.128.101.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
 |15| 		 |	|	|
 |16| 		 |	|	|
-|17| 	10.128.101.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
-|18| 	10.128.101.132| Power Supplies - FBP 4 - Storage Ring - Right 2 |
+|17| 	| 10.128.101.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	| 10.128.101.132| Power Supplies - FBP 4 - Storage Ring - Right 2 |
 
 > Note: IPs 107 and 108 are reserved for EPP. 
 {.is-info}
@@ -226,18 +226,18 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |4| 		 |	|	|
 |5| 61| 10.128.102.104| Power Supplies - DCLINKs - Booster & Storage Ring |
 |6| 62| 10.128.102.105| Power Supplies - FBP - Booster |
-|7| 	10.128.102.119| Temperature Monitor - MBTemp - RF Petra-7 Cavity |
+|7| 	| 10.128.102.119| Temperature Monitor - MBTemp - RF Petra-7 Cavity |
 |8| 51| 10.128.102.103| Vacuum System - Ion Pump 4UHV - Storage Ring |
 |9| 537| 10.128.102.117| Temperature Monitor - MBTemp - Storage Ring (<-BC) |
 |10| 298| 10.128.102.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
 |11| 		 |	|	|
 |12| 		 |	|	|
-|13| 	10.128.102.121| Power Supplies - FBP 1 - Storage Ring - Left 1 | |
-|14| 	10.128.102.122| Power Supplies - FBP 2 - Storage Ring - Left 2 | |
+|13| 	| 10.128.102.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
+|14| 	| 10.128.102.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
 |15| 		 |	|	|
 |16| 		 |	|	|
-|17| 	10.128.102.131| Power Supplies - FBP 3 - Storage Ring - Right 1 | |
-|18| 	10.128.102.132| Power Supplies - FBP 4 - Storage Ring - Right 2  | |
+|17| 	| 10.128.102.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
+|18| 	| 10.128.102.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
 
 <br>
 
