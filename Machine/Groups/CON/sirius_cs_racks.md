@@ -2,7 +2,7 @@
 title: Sirius control system racks
 description: 
 published: 1
-date: 2024-06-04T15:21:18.789Z
+date: 2024-06-04T15:22:26.079Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-03T21:08:07.259Z
@@ -319,22 +319,22 @@ This room will host one of our [core switches](/Machine/Groups/CON/sirius_cs_net
 |-|-|-|-|
 |1| 283| 10.128.104.101| Vacuum System - Gauge Controller MKS - Booster & Storage Ring |
 |2| 284| 10.128.104.102| Vacuum System - Ion Pump 4UHV - Booster & Storage Ring |
-|3| 		 |
-|4| 		 |
+|3| 		 |	|	|
+|4| 		 |	|	|
 |5| 281| 10.128.104.104| Power Supplies - DCLINKs - Booster & Storage Ring |
 |6| 282| 10.128.104.105| Power Supplies - FBP - Booster |
-|7| 		 |
-|8| 		 |
+|7| 		 |	|	|
+|8| 		 |	|	|
 |9| 294| 10.128.104.117| Temperature Monitor - MBTemp - Storage Ring (<-BC) |
 |10| 301| 10.128.104.118| Temperature Monitor - MBTemp - Storage Ring (BC->) |
-|11| 		 |
-|12| 		 |
-|13| 	10.128.104.121| Power Supplies - FBP 1 - Storage Ring - Left 1 |
-|14| 	10.128.104.122| Power Supplies - FBP 2 - Storage Ring - Left 2 |
-|15| 		 |
-|16| 		 |
-|17| 	10.128.104.131| Power Supplies - FBP 3 - Storage Ring - Right 1 |
-|18| 	10.128.104.132| Power Supplies - FBP 4 - Storage Ring - Right 2  |
+|11| 		 |	|	|
+|12| 		 |	|	|
+|13| 	10.128.104.121| Power Supplies - FBP 1 - Storage Ring - Left 1 | |
+|14| 	10.128.104.122| Power Supplies - FBP 2 - Storage Ring - Left 2 | |
+|15| 		 |	|	|
+|16| 		 |	|	|
+|17| 	10.128.104.131| Power Supplies - FBP 3 - Storage Ring - Right 1 | |
+|18| 	10.128.104.132| Power Supplies - FBP 4 - Storage Ring - Right 2  | |
 
 <br>
 
