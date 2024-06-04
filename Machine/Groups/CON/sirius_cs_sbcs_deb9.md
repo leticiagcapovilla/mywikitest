@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers (Debian 9)
 description: 
 published: 1
-date: 2024-06-04T17:54:06.724Z
+date: 2024-06-04T17:54:56.166Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-04T17:45:27.935Z
@@ -40,7 +40,7 @@ To address all this issues, other UART peripheral are being developed:
 
 These two hardware interfaces are mounted over BeagleBone Black through its two expansion headers. For more information about the associated hardware, see [SERIALxxCON](/Machine/Groups/CON/serialxxcon).
 
-The operating system in SBCs is Debian, a stable and easy-to-use Linux distribution. Ubuntu Linux, which is based on Debian, is the Linux distribution installed in [Controls Group](/Mchine/Groups/CON) desktop computers, so no one will have difficulties using Debian.
+The operating system in SBCs is Debian, a stable and easy-to-use Linux distribution. Ubuntu Linux, which is based on Debian, is the Linux distribution installed in [Controls Group](/Machine/Groups/CON) desktop computers, so no one will have difficulties using Debian.
 
 The default Debian installation of BeagleBone Black comes with interesting libraries and compilers. Moreover, many other software packages can be easily installed through the software repositories of the distribution.
 
