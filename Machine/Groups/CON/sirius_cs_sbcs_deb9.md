@@ -1,3 +1,13 @@
+---
+title: Sirius control system single-board computers (Debian 9)
+description: 
+published: 1
+date: 2024-06-04T17:45:58.129Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-04T17:45:27.935Z
+---
+
 # CON: Sirius control system SBCs (Debian 9)
 
 <br>
