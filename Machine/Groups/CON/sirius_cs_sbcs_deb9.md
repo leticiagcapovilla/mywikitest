@@ -68,7 +68,7 @@ $ gnome-disks
 
 Select the inserted device, click on the "More actions" button and choose "Restore Disk Image...". Then indicate the previously downloaded image file and click on "Start Restoring...". It might require superuser permission.
 
-After the process has been completed, it is possible to run Debian 9.3 from this microSD card. In order to flash the image into your Beaglebone's eMMC, edit the file "uEnv.txt" with sudo permission:
+After the process has been completed, it is possible to run Debian 9.3 from this microSD card. In order to flash the image into your Beaglebone's eMMC, edit the file `uEnv.txt` with sudo permission:
 
 ```
 sudo nano /PATH_TO_YOUR_MEDIA/boot/uEnv.txt
@@ -94,7 +94,7 @@ All instructions presented here must be executed from a desktop machine in a SSH
 ssh debian@192.168.7.2
 ```
 
-The default password for the user "debian" is "temppwd". After entering the password, a kernel and a boot loader update will be done. The scripts for doing so can be found at /opt/scripts which is a git repository.
+The default password for the user `debian` is `temppwd`. After entering the password, a kernel and a boot loader update will be done. The scripts for doing so can be found at /opt/scripts which is a git repository.
 
 Updating the repository:
 
@@ -123,7 +123,7 @@ cd /opt/scripts/tools/developers
 ./update_bootloader.sh
 ```
 
-Confirm that "am335x_evm" is selected and press "y". After that, reboot:
+Confirm that `am335x_evm` is selected and press `y`. After that, reboot:
 
 ```
 reboot
@@ -142,7 +142,7 @@ apt-get install locales
 dpkg-reconfigure locales
 ```
 
-Generate, at least, these locales: "en_US.UTF-8 UTF-8" and "pt_BR.UTF-8 UTF-8". Select them from the list. OK. Define "en_US.UTF-8" as default locale for the system environment. OK. Wait until locales are generated and, finally, upgrade all installed software:
+Generate, at least, these locales: `en_US.UTF-8 UTF-8` and `pt_BR.UTF-8 UTF-8`. Select them from the list. OK. Define `en_US.UTF-8` as default locale for the system environment. OK. Wait until locales are generated and, finally, upgrade all installed software:
 
 ```
 apt-get -y upgrade
@@ -159,7 +159,7 @@ apt-get -y install acpid acpi-support-base build-essential device-tree-compiler 
 perl picocom procserv python python-dev python-numpy swig telnet usbutils wait-for-it vim tshark
 ```
 
-After that, set the system time zone to "America/Sao_Paulo" with "dpkg-reconfigure" utility:
+After that, set the system time zone to `America/Sao_Paulo` with `dpkg-reconfigure` utility:
 
 ```
 dpkg-reconfigure tzdata
@@ -176,7 +176,7 @@ reboot
 
 ### Enabling SSH root login and make root owner of /root 
 
-By default, Debian 9 comes with root login disabled. In order to enable it, it is necessary to edit the "sshd_config" file under /etc/ssh. For this, use the next command:
+By default, Debian 9 comes with root login disabled. In order to enable it, it is necessary to edit the `sshd_config` file under /etc/ssh. For this, use the next command:
 
 ```
 sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
@@ -220,7 +220,7 @@ After that, create the file `/etc/rc.local` and append the generic content below
 # rc.local
 #
 # This script is executed at the end of each multiuser runlevel.
-# Make sure that the script will "exit 0" on success or any other
+# Make sure that the script will `exit 0` on success or any other
 # value on error.
 #
 # In order to enable or disable this script just change the execution
@@ -320,7 +320,7 @@ Download and build EPICS Base with:
 ```
 apt-get -y install libreadline-gplv2-dev
 cd /opt/epics-R3.15.7
-wget --no-check-certificate <nowiki>https://epics.anl.gov/download/base/base-3.15.7.tar.gz</nowiki>
+wget --no-check-certificate https://epics.anl.gov/download/base/base-3.15.7.tar.gz
 tar -xvzf base-3.15.7.tar.gz
 rm base-3.15.7.tar.gz
 mv base-3.15.7 base
@@ -368,7 +368,7 @@ asynDriver is an useful EPICS module for communication to control hardware. Inst
 
 ```
 cd /opt/epics-R3.15.7/modules
-wget --no-check-certificate <nowiki>https://epics.anl.gov/download/modules/asyn4-35.tar.gz</nowiki>
+wget --no-check-certificate https://epics.anl.gov/download/modules/asyn4-35.tar.gz
 tar -xvzf asyn4-35.tar.gz
 rm -f asyn4-35.tar.gz
 sed -i \
@@ -563,7 +563,7 @@ cp pasm /usr/bin
 
 ```
 cd
-git clone <nowiki>https://github.com/lnls-sirius/pru-serial485</nowiki>
+git clone https://github.com/lnls-sirius/pru-serial485
 cd PRUserial485/src
 ./library_build.sh
 ```
@@ -657,7 +657,7 @@ This section will contain a link for downloading the image generated for BeagleB
 * In the past, when we were working with older Debian Linux images, sometimes BeagleBone Black Ethernet PHY was't detected at boot. As a consequence, the board couldn't communicate to other nodes in a computer network. As we started using fresher images, we have never experienced this anymore.
 * USB/UART bridges based on FT232RL chip have never been recognized by the operating system in an attempt of hotplug connection. Apparently, the only way to get it working is to plug the adapter to the board before turning it on. During the boot, the FTDI chip is always recognized. Although disappointing, this is not a critical issue, since our applications don't require a USB host with hotplug capabilitiy.
 * Eventually, when connecting a BeagleBone Black to a Ubuntu desktop PC with a USB cable, USB to Ethernet adapter of the board is not detected by the host machine. When it happens, in some cases the PC can detect the adapter properly after a BeagleBone Black power cycle.
-* After a reboot, either via software or hardware, Beaglebone Black running Debian 7.9 may not be able to restart itself. User LEDs remain off, the system does not restart and applications do not run. It is needed to push "reset" button to have it working again. It happens frequently and a "hard-reset system" was developed to reset the hardware automatically every ~30 seconds after a reset command until Beaglebone Black's reboot succeeds.
+* After a reboot, either via software or hardware, Beaglebone Black running Debian 7.9 may not be able to restart itself. User LEDs remain off, the system does not restart and applications do not run. It is needed to push `reset` button to have it working again. It happens frequently and a `hard-reset system` was developed to reset the hardware automatically every ~30 seconds after a reset command until Beaglebone Black's reboot succeeds.
 
 <br>
 
@@ -706,7 +706,7 @@ After saving the file, the system will connect to the campus wireless network in
 
 Debian, 9 distribution, has a connection manager called `connman`. This manager has its own ways of operating with both static IP and dynamic IP. By default, the IP configuration is set dynamically. But in some cases, it is necessary to make the IP static, but `connman` does not allow IP to be fixed in the ways known to most people, and it overrides the information when the Linux device is rebooted. To prevent this and make the IP static, the steps are:
 
-1) Identify the eth0 name that "connman" manages. In directory in "/var/lib/connman" that identifies eth0:
+1) Identify the eth0 name that `connman` manages. In directory in `/var/lib/connman` that identifies eth0:
 
 ```
 # ls -la /var/lib/connman
@@ -719,7 +719,7 @@ drwx------ 2 root root 4096 Jan 27 18:42 ethernet_9059af4beffc_cable
 
 For example the ethernet card eth0 is identified by the directory `ethernet_9059af4beffc_cable`
 
-2) Knowing this directory, run a "connman" command to make the static IP:
+2) Knowing this directory, run a `connman` command to make the static IP:
 
 ```
 connmanctl config ethernet_9059af4beffc_cable --ipv4 manual XXX.XXX.XXX.XXX YYY.YYY.YYY.YYY ZZZ.ZZZ.ZZZ.ZZZ
