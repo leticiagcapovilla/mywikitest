@@ -2,7 +2,7 @@
 title: Sirius control system single-board computers (Debian 10)
 description: 
 published: 1
-date: 2024-06-04T18:45:34.952Z
+date: 2024-06-04T18:47:19.376Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-04T18:39:28.823Z
@@ -507,7 +507,7 @@ sudo apt-get install build-essential python-dev python-setuptools python-pip pyt
 sudo pip install Adafruit_BBIO
 ```
 
-The Python version defined as the default is the Python 3.6. We followed the installation guide described [here](https://wiki-sirius.lnls.br/mediawiki/index.php/FAC:Setup_workstations_for_sirius#Install_Python3.6) to install it.
+The Python version defined as the default is the Python 3.6. We followed the installation guide described [here](https://wiki-sirius.lnls.br/mediawiki/index.php/FAC:Setup_workstations_for_sirius#Install_Python3.6){target=_blank} to install it.
 
 ### AM335x PRU package
 
@@ -690,6 +690,6 @@ ZZZ.ZZZ.ZZZ.ZZZ => Gateway IP #(Optional).
 
 ## External links
 
-*[BeagleBone Black web site](https://beagleboard.org/black){target=_blank}
+* [BeagleBone Black web site](https://beagleboard.org/black){target=_blank}
 
 ## BeagleBone Black
