@@ -51,6 +51,7 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [Sirius control system servers](/Machine/Groups/CON/sirius_cs_servers)
 - [Sirius control system racks](/Machine/Groups/CON/sirius_cs_racks)
 - [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
+- [Sirius control system single-board computers (Debian 9)](/Machine/Groups/CON/sirius_cs_sbcs_deb9)
 {.links-list}
 
 <br>
