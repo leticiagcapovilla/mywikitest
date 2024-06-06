@@ -1,8 +1,22 @@
+---
+title: FAC
+description: 
+published: 1
+date: 2024-06-06T21:31:37.452Z
+tags: 
+editor: markdown
+dateCreated: 2024-05-16T15:50:51.875Z
+---
+
 # FAC: FAC
+
+<br>
 
 ## Introduction
 
 Accelerator Physics Group main wiki page. This page contains a list of the group's members, infrastructure, projects and activities, with associated documentation.
+
+<br>
 
 ## Content available in the FAC namespace
 
@@ -30,15 +44,23 @@ Accelerator Physics Group main wiki page. This page contains a list of the group
 - [Configuration Database](/Machine/Groups/FAC/configuration_database)
 {.links-list}
 
+<br>
+
 ## Infrastructure
+
+<br>
 
 ### FAC Repositories
 
 We have code and data repositories hosting the software tools that the FAC group develops for sirius and the UVX machine studies. Code repositories are usually stored at [GitHub](https://github.com){target=_blank}, while data repos, due to their large sizes, are stored in one of our workstations, currently lnls82-linux.
 
+<br>
+
 #### Installation of Working Directories
 
 To compile (when necessary) and install the projects, check for specific documentation in README and INSTALL files or makefiles.
+
+<br>
 
 #### Directory `fac_files`
 
@@ -51,6 +73,8 @@ Directory `/home/fac_files` in the system is where all the working directories o
 * run script `fac-setfacl.sh` in order to set attributes of `/home/fac_files` directory.
 
 After these steps `/home/fac_files` should be ready to receive all repositories.
+
+<br>
 
 #### Repos Management
 
@@ -68,6 +92,8 @@ The code repositories are hosted at the [GitHub](https://github.com) site, where
 ```
 
 The `<ROOT>` path depends on the operating system. On Linux machines, `<ROOT>` is usually `/home`, whereas on Windows machines it can be either `C:\Arq` or `D:\Arq`.
+
+<br>
 
 #### Cloning
 
@@ -87,6 +113,8 @@ git config --global user.email <EMAIL>
 ```
 
 where `<USERNAME>` should be replaced with the GitHub username and `<EMAIL>` by the email address. An auxiliary script (fac-cloneall.sh) is provided for cloning all lnls-fac code repositories. The script can be downloaded from the [scripts](https://github.com/lnls-fac/scripts) repository, or the repository may be cloned as in the example above. When run, it will only clone the repositories not found in the destination directory.
+
+<br>
 
 #### Working with repos
 
@@ -144,6 +172,8 @@ cd ~
 ln -s /home/fac_files
 ```
 
+<br>
+
 #### Code repos
 
 The former `code` repository has been split into several project-related repositories; they are structured as follows:
@@ -172,6 +202,8 @@ vacpp                # incipient version of the virtual accelerator written in c
 
 A good guide to version numbering can be found at [http://semver.org/](http://semver.org/).
 
+<br>
+
 #### Data repo
 
 In this repository analysis and result files are stored.
@@ -185,6 +217,8 @@ sirius_tracy         # data corresponding to old sirius lattice versions
 uxv_epu              # misc data for the EPU in the UVX storage ring
 ```
 
+<br>
+
 #### HLA repo
 
 ```
@@ -192,9 +226,13 @@ hla                  # high level applications
 hla-vagrant          # environment for hla development and test with Vagrant and SaltStack
 ```
 
+<br>
+
 #### UVX-HLA repo
 
 The source code of the UVX control system high level software is kept in Git repositories, with remotes hosted at lnls82-linux, in the `/home/fac_files/repo/uvx_hla` directory. It includes a repository with the Dimfei libraries for beam image acquisition and calculation.
+
+<br>
 
 ### Centaurus-FAC
 
@@ -237,15 +275,23 @@ Sirius
 WebFAC
 ```
 
+<br>
+
 ## Projects
+
+<br>
 
 ### UVX - Low-alpha mode
 
 The idea in this optics mode is to generate a very short beam for terahertz experiments. This is accomplished by reducion the linear compaction factor $\alpha_1$ as much as possible. For details please read the [[FAC:Low-alpha optics mode|Low-alpha optics mode page]]
 
+<br>
+
 ### UVX - Low-emittance with Insertion Devices mode (BEDI)
 
 Realizamos estudos no modo BEDI para controlar instabilidades coletivas longitudinais e transversais com o sistema de feedback. Também tentamos otimizar o tempo de vida desse modo alterando a tensão de GAP das cavidades de RF, sem sucesso e atualmente estamos trabalhando para gerar um modo similar ao BEDI que possua tempo de vida mais elevado. A vantagens desses modos de baixa emitância é que eles possuem feixes de elétrons menores, o que melhora a qualidade da luz síncrotron gerada. Assim, tornar um desses modos adequado para a operação do UVX seria benéfico para os usuários da máquina. Ainda, aprender a usar equipamentos avançados, como o sistema de feedback, serve como treinamento para a operação futura do sírius, onde tais ferramentas serão essenciais para o funcionamento da máquina. (see [FAC:Project BEDI optics mode](/Machine/Groups/FAC/proj_bedi_opt_mode)) 
+
+<br>
 
 ### UVX - LNLSLink
 
@@ -253,17 +299,25 @@ This is a Delphi client running at the OPR1 computer that communicates with UVX 
 
 At this moment not all but most of the storage ring and booster parameters are implemented in LNLSLink. The main client that uses LNLSLink is the MML at MATLAB for beam dynamics machine experiments, routine corrector cycling and periodical optics measurements.
 
+<br>
+
 ### SIRIUS - Lattice versions
 
 In the course of the Sirius project's history, each submachine has been tagged with a version string identification. This identification consists in a two-letter initial indicating the submachine, a lattice version and, optionally, an identification of the optics of the lattice. Letters SI refer to the storage ring, TS refers to the booster to storage ring transport line, BO to the booster, TB refers to the linac to booster transport line and finally, LI refers to the linac. (see [FAC:Sirius lattice versions](/Machine/Groups/FAC/lattice_versions)) 
+
+<br>
 
 ### SIRIUS - Parameter specifications
 
 The Accelerator Physics Group is responsible for defining a large number of parameters which are critical in design various subsystems in the Sirius project.
 
+<br>
+
 ### SIRIUS - Fieldmap analysis
 
 Field specification of every 3D nominal model of magnets is checked. This is accomplished by having its 3D-field map sampled on the mid-plane (at y = 0 mm) and analyzed. It can be demonstrated that knowledge of the 3D magnetic field on any plane, and on the mid-plane in particular, is enough for the reconstruction of the 3D field over the entire gap region. Apart from the discreteness of the fieldmap grid on the xz plane, numerical trajectories with arbitrary precision can be computed using standard Runge-Kutta integration algorithms. Multipoles around these trajectories can then be calculated and compared to specifications. (see [Fieldmap analysis](/Machine/Groups/FAC/fieldmap_analysis)) 
+
+<br>
 
 ### SIRIUS - Magnets measurement
 
@@ -271,12 +325,18 @@ Accelerator Physics Group should closely interact with the Magnet Group for the 
 
 * we have created a set of python scripts to analyze data from rotating coil measurements. These scripts are in the directory `<ROOT>/code/python/BobinaGirante`. These scripts are being superseded by a corresponding set developed at the [[IMA:IMA|Magnets group]]
 
+<br>
+
 ### SIRIUS - Diagnostics beamlines
+
+<br>
 
 ### SIRIUS - Wiki
 
 This wiki is maintained for listing and discussing machine parameters and subsystems, alongside with a [[Sirius_wiki_tutorial|tutorial]](link). The Parameters extension available at [tools](https://github.com/lnls-fac/tools){target=_blank} is used to retrieve parameter values from a MySQL database.
 tions.
+
+<br>
 
 #### Parameters extension
 
@@ -290,6 +350,8 @@ There are three tables in the **parameters** mySQL database in order to manage S
 
 * A new version of the extension is available to be installed.
 
+<br>
+
 #### Wiki maintenance
 
 Currently, wiki administration is done by the SOL group. For help with wiki maintenance tasks, look at the [[FAC:Cookbook]] page. The following recipes are available:
@@ -298,13 +360,19 @@ Currently, wiki administration is done by the SOL group. For help with wiki main
 * [[FAC:Cookbook#Install the Parameters MediaWiki extension|Install the Parameters MediaWiki extension]]
 * [[FAC:Cookbook#Reset user password|Reset user password]]
 
+<br>
+
 #### Figures
 
 Figures generated for the Sirius Wiki by the Accelerator Physics group members should, in general, be uploaded the group's SharePoint Library, in the sirius_wiki_figures directory; this allows future modification for updates. Figures automatically generated by scripts and analysis programs do not need to be uploaded.
 
+<br>
+
 ### SIRIUS - High Level Applications
 
 The high level applications for the Sirius control system comprise software for monitoring and controlling parameters; parameter data archiving, visualisation and analysis; and the operations and maintenance management systems. (see [Machine:High Level Applications and Virtual Accelerator](/Machine/high_level_app_virt_acc)) 
+
+<br>
 
 ### SIRIUS - Fluka/Flair support
 
@@ -319,7 +387,6 @@ It is an application that is run from the command-line.
 code and visualization of the output files. It is based entirely on python and Tkinter. 
 
 **GEOVIEWER** is a C++ library for visualization of 3D geometries used in post-processing.
-
 
 ```
 Download
@@ -338,8 +405,6 @@ Download
 into folder a ~/flukaflair-installation
 
 ```
-
-
 
 ```
 NEW INSTALLATION
@@ -389,7 +454,6 @@ flair configuration
 21. configure flair to set gnuplot terminal to 'x11'.
 ```
 
-
 ```
 NEW VERSION UPDATING
 ###### ###### ###### 
@@ -423,13 +487,19 @@ NEW VERSION UPDATING
 
 ```
 
+<br>
+
 ### SIRIUS - Beam Dynamics Studies
 
 1. [Amplification Factors and Magnet Tolerances](/Machine/Groups/FAC/amplif_fac_mag_tol): In this section the alignment and excitation error tolerances for the Sirius storage ring magnets will be studied by the analysis of their orbit and optics distortion amplification factors.
 2. [Girder Possibilities](/Machine/Groups/FAC/girder_possibilities): We have performed a study where several possible girder configurations have been considered and analyzed. In this study amplification factors are defined and calculated, serving as a way to quickly estimate the statistical effects of misalignment errors on the beam optics. Amplification factors are calculated for free and corrected beam oscillations in the Sirius storage ring.
 3. [Segmented and Rectangular Sirius Dipole Models](/Machine/Groups/FAC/sirius_dipole_models): At this point the Sirius dipoles are supposed to be rectangular but with curved poles. We have studied feasibility of different dipole models for the Sirius storage ring. The first model studied is that of a rectangular dipole in which the pole is also rectangular, that is, with constant field and gradient in the rectangular coordinate system. In this case the field varies along the trajectory of the beam. We analyzed the impact of this varying field on the beam optics and equilibrium parameters in order to ascertain the feasibility of the model. The second model studied was that of breaking Sirius dipoles into a composition of basic segments: B1 dipoles would be made of two identical segments, B2 dipoles would be made of three segments and B3 dipoles are made of a single segment. In this case we analyzed the impact of independent alignment of the segments on the alignment tolerance, due to the impact on the beam optics.
 
+<br>
+
 ## Activities
+
+<br>
 
 ### UVX control system high level applications
 
@@ -440,6 +510,8 @@ The UVX control system high level applications run on Windows and are mostly wri
 * Add FOFB disabled as an alarm in operations program in OPR1.
 * Evaluate possibility of aborting undulator motion commands from beamline.
 
+<br>
+
 ### UVX beam size calculation
 
 The UVX beam size calculation system, located at the DFX beamline, consists of an Ethernet camera connected to a desktop computer running the Dimfei Delphi application. Dimfei uses DLLs to communicate with the camera and perform the beam size calculation. (see [FAC:UVX beam size calculation](/Machine/Groups/FAC/uvx_beam_size_calc)) 
@@ -447,24 +519,36 @@ The UVX beam size calculation system, located at the DFX beamline, consists of a
 * We need to get another film to be able to convert X-ray into visible light. The one we have right now is damaged.
 * We need to recalibrate the new camera.
 
+<br>
+
 ## Beam dynamics codes
+
+<br>
 
 ### MAD
 
 MAD is a beam dynamics code used in the accelerator physics group at LNLS mainly for creation of new lattices from afresh and for parameter match. Our current version is MAD8 which runs under Microsoft Windows.
+
+<br>
 
 ### Matlab
 
 Currently the accelerator physics group uses MATLAB as a platform for both simulations and high level machine control of the UVX storage ring. The main packages used are **MML** and **AT**. Various packages have been written in-house around these main two for studying beam dynamics for Sirius and for the existing UVX storage rings. Below we describe very succinctly all these packages. Matlab library path has to be configured so that the main function of MML and AT are accesible within its workspace.
 When this configuration is done all, relevant paths can be loaded into matlab prompt executing the global script `lnls_setpath_mml_at`
 
+<br>
+
 #### Accelerator Toolbox
 
 Accelerator Toolbox (AT) is a Matlab package [developed at SLAC](http://www.slac.stanford.edu/pubs/slacpubs/8000/slac-pub-8732.html){target=_blank} that implements a number of functions (scripts) that help in modeling elements, calculating optics in transport lines and storage rings and performing tracking simulations. A non-exhaustive list with help for available scripts can be obtained with the command athelp. Since AT is composed of a very large number of scripts there is no single document that describes every of its functionalities. The best documentation happens to be the source code of the scripts, which can looked at with matlab editor. (see [AT page](/Machine/Groups/FAC/matlab_at)) 
 
+<br>
+
 #### MatlabMiddleLayer
 
 MatlabMiddleLayer (MML) is a Matlab package containing a set of scripts and data structures that are used to 1) map an AT simulation model into the real machine and 2) perform process variable readouts and setpoint modifications. It is a software layer between the machine control system (LNLS1Link for UVX, EPICS for Sirius) on the bottom and high-level machine study algorithms or routine operations on the top. MML's basic data structures can be accessed from Matlab workspace through two functions: getao (accelerator object) and getad (accelerator data). Parametrization of these two structures is done through other scripts which have to be tailored for each machine in particular. (see [MML page](/Machine/Groups/FAC/matlab_middle_layer)) 
+
+<br>
 
 #### `lattice_errors` package
 
@@ -472,26 +556,37 @@ A set of scripts to generate machines with random errors and to correct the opti
 
 * revise how we implement rotation errors in bending magnets!!!
 
+<br>
+
 #### `magnet_modelling` package
 
 A set of scripts that take field maps from 3D magnetostatic calculations and perform Runge-Kutta trajectory integrations to calculate important field parameters such as integrated nominals and error multipoles. A segmented model of the magnet can be generated using theses scripts.
+
+<br>
 
 #### `insertion_devices` package
 
 Another set of script which defines which insertion devices are to be included in Sirius lattice, load their Radia kicktables, and does focusing compensation and tune adjustements.
 
+<br>
+
 #### `lnls_at2tracy_flatfile` script
 
 The script `lnls_at2tracy_flatfile` generates tracy-like output flat files from the AT lattice model. It is mainly used to prepare tracy input run data from `lattice_errors`.
+
+<br>
 
 #### `tracy3_*` package
 
 This is a set of scripts used to analyze and plot output results of Tracy runs.
 
+<br>
 
 #### `trackcpp_*` package
 
 This is a set of scripts used to analyze and plot output results of Trackcpp runs.
+
+<br>
 
 ### Pyjob
 
@@ -499,27 +594,41 @@ Pyjob is a job manager written in python created to distribute several tracking 
 
 [FAC:Pyjob](link) (see [pyjob page](link)) 
 
+<br>
+
 ### Tracy3LNLS
 
 Modified version of Soleil's Tracy3. Tracking code used for dynamical aperture calculations
+
+<br>
 
 ### Trackcpp
 
 Tracking code library written in C++ to calculate beam optics and dynamical apertures. It is supposed to be used as a library to be linked with other C++ codes, as a python module to be imported or a script-driven command-line tool that reads input files and writes output data. The code is at [GitHub trackcpp repository](https://github.com/lnls-fac/trackcpp){target=_blank} (see [Trackcpp](/Machine/Groups/FAC/trackcpp)) 
 
+<br>
+
 ### Pyaccel
 
 Python package for beam dynamics calculations. (see [PyAccel](/Machine/Groups/FAC/pyaccel)) 
+
+<br>
 
 ### OPA
 
 GUI for DA optimization. It is based on perturbation theory of driving resonance terms. Good starting point for sextupole optimizations.
 
+<br>
+
 ### Elegant/MOGA
 
 Tracking code used for numerical dynamical aperture optimizations
 
+<br>
+
 ## Whiteboard (ideas)
+
+<br>
 
 ### Infrastructure
 
@@ -528,24 +637,38 @@ Tracking code used for numerical dynamical aperture optimizations
 * parallel FPGA implementation of tracking code (we should ask Daniel for help with simple tests...)
 * define a cleaner flatfile format to be used in all beam dynamics codes
 
+<br>
+
 ### UVX
+
+<br>
 
 #### Excitation curves for dipoles
 
 * we have to implement biunivocal calibration curves for the dipoles at UVX to prevent the slow drift in current dipole as normalized configurations are saved and loaded.
+
+<br>
 
 #### LOCO symmetrization and calibration
 
 * should we import bpms and correctors gains fitted with LOCO into the UVX control system (Paradox tables)?
 * generalize LOCO to fit more than one optical mode at the same time (using same set of bpm and corrector gain)
 
+<br>
+
 #### Optics Improvements
 
 * Optics mode tabulation: varying QF,QD,QFC and look for a 'long beam lifetime mode' with small emittance.
 
+<br>
+
 ### SIRIUS
 
+<br>
+
 #### Initial List of High level Applications
+
+<br>
 
 ##### General Applications
 
@@ -565,6 +688,8 @@ Tracking code used for numerical dynamical aperture optimizations
 * Water leak monitors
 * HLS monitors
 
+<br>
+
 ##### Storage Ring Applications
 
 * Storage ring status: display info such as current, lifetime, operator messages, etc. 
@@ -579,6 +704,7 @@ Tracking code used for numerical dynamical aperture optimizations
 * Configuration manager: normalized configuration control (interpolation, tune adjustment, etc)
 * migration
 
+<br>
 
 ##### Booster Applications
 
@@ -593,6 +719,7 @@ Tracking code used for numerical dynamical aperture optimizations
 * Configuration manager: normalized configuration control (interpolation, tune adjustment, etc)
 * Energy ramping: magnets and RF
 
+<br>
 
 ##### Transport Line Applications
 
@@ -604,6 +731,7 @@ Tracking code used for numerical dynamical aperture optimizations
 * Energy slit
 * ICT, FTC
 
+<br>
 
 ##### LINAC Applications
 
@@ -618,8 +746,11 @@ Tracking code used for numerical dynamical aperture optimizations
 * ICTs, FCTs
 * Emittance measurement, energy measurement
 
+<br>
+
 #### [Diagnostics elements](/Machine/Groups/FAC/diagnostics_elements)
 
+<br>
 
 #### COD-finder algorithm
 
@@ -630,6 +761,8 @@ Tracking code used for numerical dynamical aperture optimizations
 * Try the algorithm at UVX.
 * Try the algorithm at MAX-IV?
 
+<br>
+
 #### High coupling mode
 
 * Study a new optics with high betatron coupling (revise the idea of using dispersion waves for coupling control at Sirius). 
@@ -638,13 +771,19 @@ Tracking code used for numerical dynamical aperture optimizations
 * One idea to be studied to overcome the difficulties described above is to create an 'amplitude-dependent coupling', where the coupling is high at low amplitudes but small at large amplitudes.
 * Additonal skew quadrupoles can be introduced in the lattice without a big impact. All sextupoles will already have skew quad coils available and the power supplies needed are simple and inexpensive (I=+/-10A).
 
+<br>
+
 #### High level applications integration for experiments
 
 * Evaluate possibilities for integration between operator interfaces and experiment data archiving and logbook.
 
+<br>
+
 ## Log
 
 [Log file](/Machine/Groups/FAC/fac_log) with current and pending activities.
+
+<br>
 
 ## Meetings
 
@@ -652,5 +791,7 @@ Tracking code used for numerical dynamical aperture optimizations
 * [[FAC:Meeting 2014-08-22|2014-08-22]] High level aplications and infrastructure for Sirius control system
 * [[FAC:Meeting 2014-08-15|2014-08-15]] JobManager and Sirius Diagnostic elements
 * [[FAC:Meeting 2014-08-08|2014-08-08]] FAC infrastructure
+
+<br>
 
 ## Publications
