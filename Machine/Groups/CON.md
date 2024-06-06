@@ -71,6 +71,9 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [EPICS clients on Rockwell - Allen Bradley PLC with EtherIP](/Machine/Groups/CON/epics_client_allen_bradley)
 - [EPICS clients on Java with JCA - Java Channel Access](/Machine/Groups/CON/epics_java)
 - [EPICS clients on netDev for Yokogawa PLC](/Machine/Groups/CON/epics_clients_netDev)
+- [Setting up a Linux workstation](/Machine/Groups/CON/setting_up_linux_workstation)
+- [Suggested readings](/Machine/Groups/CON/suggested_readings)
+- [Setting up EPICS](/Machine/Groups/CON/setting_up_epics)
 {.links-list}
 
 <br>
