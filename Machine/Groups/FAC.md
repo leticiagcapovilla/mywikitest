@@ -2,7 +2,7 @@
 title: FAC
 description: 
 published: 1
-date: 2024-06-06T21:36:30.335Z
+date: 2024-06-06T21:38:24.912Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-16T15:50:51.875Z
@@ -104,7 +104,7 @@ cd /home/fac_files/code
 git clone https://github.com/lnls-fac/scripts.git
 ```
 
-In order to contribute code, the user must have a [https://github.com/join GitHub account] and optionally a registered [https://help.github.com/articles/generating-ssh-keys public key] (in the absence of a key, login information will be asked when interacting with the remote repositories). Moreover you need to belong to GitHub's [https://github.com/lnls-fac LNLS Accelerator Physics Group] ([[FAC:FAC#Members|contact a FAC member]]). Once all requirements are fulfilled you can clone the code repositories with the command above, and set up user information with (Linux):
+In order to contribute code, the user must have a [GitHub account](https://github.com/join){target=_blank} and optionally a registered [public key](https://help.github.com/articles/generating-ssh-keys){target=_blank} (in the absence of a key, login information will be asked when interacting with the remote repositories). Moreover you need to belong to GitHub's [LNLS Accelerator Physics Group](https://github.com/lnls-fac). Once all requirements are fulfilled you can clone the code repositories with the command above, and set up user information with (Linux):
 
 ```
 git config --global user.name <USERNAME>
