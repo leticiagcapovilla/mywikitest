@@ -1,3 +1,13 @@
+---
+title: Setting up a Linux workstation
+description: 
+published: 1
+date: 2024-06-06T19:40:54.316Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-06T19:33:44.986Z
+---
+
 # CON: Setting up a Linux workstation
 
 <br>
