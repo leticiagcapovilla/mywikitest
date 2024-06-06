@@ -1,3 +1,13 @@
+---
+title: UPS Data Acquisition
+description: 
+published: 1
+date: 2024-06-06T16:07:57.547Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-06T16:05:14.024Z
+---
+
 # CON: Ups data acquisition
 
 <br>
@@ -138,7 +148,7 @@ The Next step is to configure the port of the web interface which the program wi
 
 ## Notification
 
-Some projects have been developed by the Controls Group to notify if a specific Process Variable has assumed a value out of a defined range. For this application, there are [hmailpy](ttps://github.com/lnls-sirius/mailpy){target=_blank} and [Telegrampy‎](/Machine/Groups/CON/epics_messaging) projects.
+Some projects have been developed by the Controls Group to notify if a specific Process Variable has assumed a value out of a defined range. For this application, there are [hmailpy](ttps://github.com/lnls-sirius/mailpy){target=_blank} and [Telegrampy](/Machine/Groups/CON/epics_messaging) projects.
 
 <br>
 
