@@ -2,7 +2,7 @@
 title: FAC
 description: 
 published: 1
-date: 2024-06-06T21:32:48.682Z
+date: 2024-06-06T21:35:23.828Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-16T15:50:51.875Z
@@ -354,10 +354,10 @@ There are three tables in the **parameters** mySQL database in order to manage S
 
 #### Wiki maintenance
 
-Currently, wiki administration is done by the SOL group. For help with wiki maintenance tasks, look at the [[FAC:Cookbook]] page. The following recipes are available:
-* [[FAC:Cookbook#Access MySQL parameter tables|Access MySQL parameter tables]]
-* [[FAC:Cookbook#Perform tests with the fac-wiki virtual machine|Perform tests with the fac-wiki virtual machine]]
-* [[FAC:Cookbook#Install the Parameters MediaWiki extension|Install the Parameters MediaWiki extension]]
+Currently, wiki administration is done by the SOL group. For help with wiki maintenance tasks, look at the [FAC:Cookbook](/Machine/Groups/FAC/cookbook) page. The following recipes are available:
+* [Access MySQL parameter tables](/Machine/Groups/FAC/cookbook#access-mysql-parameter-tables)
+* [Perform tests with the fac-wiki virtual machine](/Machine/Groups/FAC/cookbook#perform-tests-with-the-fac-wiki-virtual-machine)
+* [Install the Parameters MediaWiki extension](/Machine/Groups/FAC/cookbook#install-the-parameters-mediawiki-extension)
 * [Reset user password](/Machine/Groups/FAC/cookbook#reset-user-password)
 
 <br>
