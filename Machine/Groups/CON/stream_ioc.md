@@ -1,3 +1,13 @@
+---
+title: Stream-IOC
+description: 
+published: 1
+date: 2024-06-06T16:06:22.923Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-06T16:05:11.751Z
+---
+
 # CON: Stream-IOC
 
 <br>
@@ -12,7 +22,7 @@ Stream-IOC is an EPICS IOC application based on StreamDevice developed by [LNLS 
 
 * Agilent 4UHV Ion Pump Controller
 * Berthold Technologies LB 6420
-* [[CON:MBTemp|MBTemp]](/Machine/Groups/CON/mbtemp)
+* [MBTemp](/Machine/Groups/CON/mbtemp)
 * [DCM SE-10](https://dcmtech.com.br/equipamentos-e-sistemas-para-monitorar-temperatura-e-umidade/se-10-monitor-de-ambientes-com-acionamento-de-cargas/){target=_blank}
 * [CountingPRU](/Machine/Groups/CON/pruserial485)
 * [NTP time servers](/Machine/Groups/CON/ntp)
