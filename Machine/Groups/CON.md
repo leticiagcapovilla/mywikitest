@@ -66,6 +66,12 @@ Here all hardware/software projects under development for Sirius by the Controls
 
 ## Other
 
+- [Design guidelines for Control System Studio operator interfaces](/Machine/Groups/CON/design_guidelines)
+- [EPICS clients on Windows](/Machine/Groups/CON/epics_client_windows)
+- [EPICS clients on Rockwell - Allen Bradley PLC with EtherIP](/Machine/Groups/CON/epics_client_allen_bradley)
+- [EPICS clients on Java with JCA - Java Channel Access](/Machine/Groups/CON/epics_java)
+- [EPICS clients on netDev for Yokogawa PLC](/Machine/Groups/CON/epics_clients_netDev)
+{.links-list}
 <br>
 
 ## External links
