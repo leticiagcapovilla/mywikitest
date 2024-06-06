@@ -2,13 +2,15 @@
 title: EPICS clients on Java with JCA - Java Channel Access
 description: 
 published: 1
-date: 2024-06-06T16:57:47.631Z
+date: 2024-06-06T17:03:54.997Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-06T16:54:59.253Z
 ---
 
 # CON: EPICS on Java
+
+<br>
 
 ## Introduction
 
@@ -22,6 +24,8 @@ The article will contain:
 - JCA Monitor
 - JCA Get
 - JCA Write
+
+<br>
 
 ## Installation of EPICS Base
 
@@ -53,11 +57,15 @@ export EPICS_CA_ADDR_LIST=10.0.4.57
 
 To apply these settings to the current session, enter:
 
+```
 # source /root/.bashrc
+```
 
 Setting environment variables with information about EPICS Base is required for all users that will work on this platform. So the steps above should be repeated with the *.bashrc* file on each of these users home directories.
 
 10.0.4.57 is the IP address of the computer at UVX control room that runs [EPICS PV Gateway](http://www.aps.anl.gov/epics/extensions/gateway/index.php){target=_blank} to provide (read) access to accelerator process variables. These variables are published only in a separate, application-specific computer network (UVX control system newtork). We use the PV Gateway to access accelerator control system PVs while working on office.
+
+<br>
 
 ## Installation of JAVA and JCA
 
@@ -79,6 +87,8 @@ $  mvn install
 
 Once installed, add the jca-2.4.2-SNAPSHOT.jar library to your project to perform the following procedures.
 
+<br>
+
 ## JCA Library
 
 Initializes JCA
@@ -90,27 +100,27 @@ Initializes JCA
 There is only one instance
 Used to create contexts and manage JCA configuration info
 
-Properties:
+**Properties:**
 
 -  JNI_THREAD_SAFE preemptive
 -  Suggested for Java, which is inherently threaded
 -  JNI_SINGLE_THREADED non-preemptive
 
-Methods of Properties:
+**Methods of Properties:**
 
 -  createContext
 -  getProperty
 -  listProperties
 -  getVersion, getRevision, getModification
 
-Context Corresponds to a Channel Access context created by JCALibrary.createContext:
+**Context Corresponds to a Channel Access context created by JCALibrary.createContext:**
 
 -  createContext(JCALibrary.JNI_SINGLE_THREADED)
 -  createContext(JCALibrary.JNI_THREAD_SAFE)
 
 Controls all IO you can have more than one context
 
-Methods of Context:
+**Methods of Context:**
 
 -  createChannel
 -  flushIO, pendIO, pendEvent, poll
@@ -119,7 +129,7 @@ Methods of Context:
 -  addContextMessageListener, removeContextMessageListener
 -  destroy
 
-To created a Channel created by Context.createChannel:
+**To created a Channel created by Context.createChannel:**
 
 -  createChannet(String name, connectionListener 1)
 
@@ -128,7 +138,7 @@ Properties of Channel:
 -  CLOSED           - CONNECTED
 -  DISCONNECTED     - NEVER_CONNECTED
 
-Methods of Channel:
+**Methods of Channel:**
 
 -  get, many overloads
 -  put, many overloads
@@ -140,6 +150,8 @@ Methods of Channel:
 
 Remember that to perform the following procedures it is necessary to create a connection with the EPICS server, establish a communication channel and created a Server Context.
 
+<br>
+
 ## JCA Monitor
 
 To perform the EPICS PV readings, it is necessary to have a monitor object or a get.
@@ -150,11 +162,11 @@ You can use Monitor Objects in building frames for supervisors and configuring a
 
 To created a Monitor Object:
 
-With addMonitor:
+**With addMonitor:**
 
 -  addMonitor(DBRType type, int count, int mask, MonitorListener l)
 
-Methods of addMonitor:
+**Methods of addMonitor:**
 
 -  addMonitorListener, removeMonitorListener
 -  getMonitorListener, getMonitorListeners
@@ -163,7 +175,7 @@ Methods of addMonitor:
 -  getCount, getMask, getType
 -  isMonitoringAlarm, isMonitoringLog, isMonitoringValue
 
-The following is an example of implementing a JCAMonitor object: 
+**The following is an example of implementing a JCAMonitor object:** 
 
 ```   
 // Instance of SimpleJCAMonitor
@@ -211,6 +223,8 @@ getName() + ": “ + value[0]);
 }
 ```
 
+<br>
+
 ## JCA Get
 
 JCA get are objects that perform the current PV read only when given a get command. That is, it performs the reading once, different from the Monitor that reads according to what the EPICS Binder receives and performs.
@@ -219,18 +233,20 @@ As well as the Monitor it can also be used for creating supervisory frames and a
 
 To create a JCAGet object, perform the following steps:
 
-Get the value:
+**Get the value:**
 
 -  String [] value;
 -  value = ((STRING)chan.get(DBRType.STRING, 1)).getStringValue ();
 
-Wait for the get:
+**Wait for the get:**
 
 -  ctxt.pendIO(simpleJCAGet.timeout);
 
-Print the value:
+**Print the value:**
 
 -  System.out.println("The value of" + simpleJCAGet.name + "is" + value [0]);
+
+<br>
 
 ## JCA Write
 
