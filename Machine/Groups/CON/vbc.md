@@ -1,3 +1,13 @@
+---
+title: Vacuum Pumping Carts Controller (VBC)
+description: 
+published: 1
+date: 2024-06-06T16:08:40.807Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-06T16:05:16.441Z
+---
+
 # CON: VBC
 
 <br>
