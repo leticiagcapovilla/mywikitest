@@ -1,3 +1,13 @@
+---
+title: EPICS clients on Java with JCA - Java Channel Access
+description: 
+published: 1
+date: 2024-06-06T16:57:47.631Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-06T16:54:59.253Z
+---
+
 # CON: EPICS on Java
 
 ## Introduction
