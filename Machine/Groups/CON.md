@@ -58,6 +58,8 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [Stream-IOC](/Machine/Groups/CON/stream_ioc)
 - [UPS Data Acquisition](/Machine/Groups/CON/ups_data_acquisition)
 - [Vacuum Pumping Carts Controller (VBC)](/Machine/Groups/CON/vbc)
+- [Vacuum systems EPICS interface](/Machine/Groups/CON/vac_syst_epics_interface)
+- [Water leak monitors](/Machine/Groups/CON/water_leak_mon)
 {.links-list}
 
 <br>
