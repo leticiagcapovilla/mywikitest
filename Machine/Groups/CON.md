@@ -53,6 +53,8 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [Sirius control system single-board computers](/Machine/Groups/CON/csc_single_board_comps)
 - [Sirius control system single-board computers (Debian 9)](/Machine/Groups/CON/sirius_cs_sbcs_deb9)
 - [Sirius control system single-board computers (Debian 10)](/Machine/Groups/CON/sirius_cs_sbcs_deb10)
+- [SPIxCONV](/Machine/Groups/CON/spixconv)
+- [SPIxxCON](/Machine/Groups/CON/spixxcon)
 {.links-list}
 
 <br>
