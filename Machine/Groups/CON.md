@@ -55,6 +55,9 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [Sirius control system single-board computers (Debian 10)](/Machine/Groups/CON/sirius_cs_sbcs_deb10)
 - [SPIxCONV](/Machine/Groups/CON/spixconv)
 - [SPIxxCON](/Machine/Groups/CON/spixxcon)
+- [Stream-IOC](/Machine/Groups/CON/stream_ioc)
+- [UPS Data Acquisition](/Machine/Groups/CON/ups_data_acquisition)
+- [Vacuum Pumping Carts Controller (VBC)](/Machine/Groups/CON/vbc)
 {.links-list}
 
 <br>
