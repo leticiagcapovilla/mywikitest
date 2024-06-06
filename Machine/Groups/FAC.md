@@ -2,7 +2,7 @@
 title: FAC
 description: 
 published: 1
-date: 2024-06-06T21:31:37.452Z
+date: 2024-06-06T21:32:48.682Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-16T15:50:51.875Z
@@ -358,7 +358,7 @@ Currently, wiki administration is done by the SOL group. For help with wiki main
 * [[FAC:Cookbook#Access MySQL parameter tables|Access MySQL parameter tables]]
 * [[FAC:Cookbook#Perform tests with the fac-wiki virtual machine|Perform tests with the fac-wiki virtual machine]]
 * [[FAC:Cookbook#Install the Parameters MediaWiki extension|Install the Parameters MediaWiki extension]]
-* [[FAC:Cookbook#Reset user password|Reset user password]]
+* [Reset user password](/Machine/Groups/FAC/cookbook#reset-user-password)
 
 <br>
 
