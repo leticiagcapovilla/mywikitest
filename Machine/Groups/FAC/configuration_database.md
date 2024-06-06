@@ -1,3 +1,13 @@
+---
+title: Configuration Database
+description: 
+published: 1
+date: 2024-06-06T21:39:13.573Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-06T20:53:30.839Z
+---
+
 # FAC: Accessing configuration database
 
 <br>
