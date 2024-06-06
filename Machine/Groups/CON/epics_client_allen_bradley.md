@@ -2,7 +2,7 @@
 title: EPICS clients on Rockwell - Allen Bradley PLC with EtherIP
 description: 
 published: 1
-date: 2024-06-06T16:57:22.076Z
+date: 2024-06-06T17:04:58.926Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-06T16:54:52.256Z
@@ -113,10 +113,12 @@ You can use the files already contained in the .db directory in order to create 
 Your .db file should contain the PVs and Tag data (variable input or output and variable type (bollean, float, string)) that originated it.
 Note the following field:
 
-  record (bi, "$(IOC):name_of_pv")
-  {
-  field (INP, "@$(PLC) name_of_tag")
-  }
+```
+record (bi, "$(IOC):name_of_pv")
+{
+field (INP, "@$(PLC) name_of_tag")
+}
+```
 
 In the location "name_of_pv" you will replace with the name you want to give your PV and in the place "name_of_tag" you will put the name of your PLC Tag. The "bi" element means that this variable is a bollen input.
 
@@ -160,5 +162,3 @@ In LNLS we have our application in the git lnls-sirius repository that generates
 The repository link: [https://github.com/lnls-sirius/etherip-ioc](https://github.com/lnls-sirius/etherip-ioc){target=_blank}
 
 In the README files of the repository teach cloning and use the repository and applications.
-
-**Inquieries:** aureo.carneiro@lnls.br
