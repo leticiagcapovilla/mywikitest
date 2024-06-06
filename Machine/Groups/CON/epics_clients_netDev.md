@@ -1,3 +1,13 @@
+---
+title: EPICS clients on netDev for Yokogawa PLC
+description: 
+published: 1
+date: 2024-06-06T16:58:13.066Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-06T16:54:56.897Z
+---
+
 # CON: EPICS clients on netDev
 
 ## Introduction
