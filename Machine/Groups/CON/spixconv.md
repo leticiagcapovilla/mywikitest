@@ -1,3 +1,13 @@
+---
+title: SPIxCONV
+description: 
+published: 1
+date: 2024-06-06T15:25:32.438Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-06T15:22:06.528Z
+---
+
 # CON: SPIxCONV
 
 <br>
@@ -10,19 +20,19 @@ SPIxCONV is a general-purpose board featuring analog and digital interfaces. The
 
 ## Devices
 
-*Digital-to-analog converter
+* Digital-to-analog converter
 
 `component used: AD5781`
 
-*Analog-to-digital converter
+* Analog-to-digital converter
 
 `component used: AD7634`
 
-*Flash memory
+* Flash memory
 
 `component used: W25Q64FV`
 
-*Digital Ports A and B
+* Digital Ports A and B
 
 `component used: a 74LCX245 for each port`
 
@@ -41,7 +51,7 @@ Each device inside the board has a correspondent address, as shown above:
 |7| board type ID  |
 
 
-Device 7 is reserved for board type ID. If this device is chosen and a "read" command is requested, the value 0x04 should be returned, as explained [[CON:SPIxxCON#Board_type_ID|here]](link).
+Device 7 is reserved for board type ID. If this device is chosen and a "read" command is requested, the value 0x04 should be returned, as explained [here](/Machine/Groups/CON/spixxcon#board-type-id).
 
 Device 5 actually select another decoder, in order to use eight more functionalities, as described below:
 
@@ -60,7 +70,7 @@ Device 5 actually select another decoder, in order to use eight more functionali
 
 ## Communication
 
-The communication with the board is made by using the [[CON:SPIxxCON|SPIxxCON]](link) bus, and it uses the SPI protocol together with some control pins.
+The communication with the board is made by using the [SPIxxCON](/Machine/Groups/CON/spixxcon#board-type-id) bus, and it uses the SPI protocol together with some control pins.
 
 *RS pin:
    if RS = 0: enable MOSI and CLK for the devices inside the board.
