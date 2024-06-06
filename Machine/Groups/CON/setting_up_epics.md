@@ -1,3 +1,13 @@
+---
+title: Setting up EPICS
+description: 
+published: 1
+date: 2024-06-06T19:42:28.604Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-06T19:33:42.682Z
+---
+
 # CON: Setting up EPICS
 
 ```
@@ -57,7 +67,7 @@ export PROCSERVCONTROL=${EPICS_MODULES}/procServControl-1-9
 ### '''CaputLog'''
 ```
 
-This module will log caputs at an iocLogServer. docs at [https://github.com/epics-modules/caPutLog/blob/master/docs/index.rst#id1]
+This module will log caputs at an iocLogServer. docs at [https://github.com/epics-modules/caPutLog/blob/master/docs/index.rst#id1](https://github.com/epics-modules/caPutLog/blob/master/docs/index.rst#id1)
 
 ```
 cd ${EPICS_MODULES}
