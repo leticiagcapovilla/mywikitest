@@ -2,7 +2,7 @@
 title: FAC
 description: 
 published: 1
-date: 2024-06-06T21:35:23.828Z
+date: 2024-06-06T21:36:30.335Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-16T15:50:51.875Z
@@ -283,7 +283,7 @@ WebFAC
 
 ### UVX - Low-alpha mode
 
-The idea in this optics mode is to generate a very short beam for terahertz experiments. This is accomplished by reducion the linear compaction factor $\alpha_1$ as much as possible. For details please read the [[FAC:Low-alpha optics mode|Low-alpha optics mode page]]
+The idea in this optics mode is to generate a very short beam for terahertz experiments. This is accomplished by reducion the linear compaction factor $\alpha_1$ as much as possible. For details please read the [Low-alpha optics mode page](/Machine/Groups/FAC/low-alpha_optics_mode)
 
 <br>
 
@@ -323,7 +323,7 @@ Field specification of every 3D nominal model of magnets is checked. This is acc
 
 Accelerator Physics Group should closely interact with the Magnet Group for the definition of the characterization benches (Hall Probe, Rotating coil) and for magnetic measurements of magnet prototype and serial production elements.
 
-* we have created a set of python scripts to analyze data from rotating coil measurements. These scripts are in the directory `<ROOT>/code/python/BobinaGirante`. These scripts are being superseded by a corresponding set developed at the [[IMA:IMA|Magnets group]]
+* we have created a set of python scripts to analyze data from rotating coil measurements. These scripts are in the directory `<ROOT>/code/python/BobinaGirante`. These scripts are being superseded by a corresponding set developed at the [[IMA:IMA|Magnets group]](link)
 
 <br>
 
