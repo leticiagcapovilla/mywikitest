@@ -2,7 +2,7 @@
 title: SPIxCONV
 description: 
 published: 1
-date: 2024-06-06T15:25:32.438Z
+date: 2024-06-06T15:25:51.668Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-06T15:22:06.528Z
@@ -72,7 +72,7 @@ Device 5 actually select another decoder, in order to use eight more functionali
 
 The communication with the board is made by using the [SPIxxCON](/Machine/Groups/CON/spixxcon#board-type-id) bus, and it uses the SPI protocol together with some control pins.
 
-*RS pin:
+* RS pin:
    if RS = 0: enable MOSI and CLK for the devices inside the board.
    if RS = 1: enable MOSI and CLK for address selection.
 
