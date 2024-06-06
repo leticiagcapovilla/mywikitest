@@ -1,3 +1,13 @@
+---
+title: EPICS clients on Rockwell - Allen Bradley PLC with EtherIP
+description: 
+published: 1
+date: 2024-06-06T16:57:22.076Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-06T16:54:52.256Z
+---
+
 # CON: EPICS clients on Allen Bradley PLC
 
 <br>
