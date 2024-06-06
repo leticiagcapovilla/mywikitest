@@ -2,7 +2,7 @@
 title: CON
 description: 
 published: 1
-date: 2024-06-03T19:50:17.764Z
+date: 2024-06-06T16:55:55.498Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-16T15:50:47.394Z
@@ -72,6 +72,7 @@ Here all hardware/software projects under development for Sirius by the Controls
 - [EPICS clients on Java with JCA - Java Channel Access](/Machine/Groups/CON/epics_java)
 - [EPICS clients on netDev for Yokogawa PLC](/Machine/Groups/CON/epics_clients_netDev)
 {.links-list}
+
 <br>
 
 ## External links
