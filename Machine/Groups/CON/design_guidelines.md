@@ -1,3 +1,13 @@
+---
+title: Design guidelines for Control System Studio operator interfaces
+description: 
+published: 1
+date: 2024-06-06T16:56:23.185Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-06T16:54:50.001Z
+---
+
 # CON: Design guidelines for Control System Studio operator interfaces
 
 <br>
