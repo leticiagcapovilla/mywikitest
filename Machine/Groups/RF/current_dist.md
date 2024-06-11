@@ -1,4 +1,16 @@
+---
+title: Current Distribution
+description: 
+published: 1
+date: 2024-06-11T14:57:20.313Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-11T14:21:25.321Z
+---
+
 # RF: RF-CurrentDist
+
+<br>
 
 ## Introduction
 
@@ -10,6 +22,8 @@ Essa placa é utilizada em conjunto com a [[RF:RF-SIMuxBoard|RF-SIMuxBoard]](lin
 .
 
 A placa [[RF:RF-CurrentDistPre|RF-CurrentDistPre]] é uma versão de um único canal desta, utilizada exclusivamente para medir a corrente de alimentação dos pré amplificadores.
+
+<br>
 
 ## General description
 
@@ -27,6 +41,8 @@ A corrente é então distribuída em 8 ramos, onde cada um contém um sensor hal
 Após passar pelo ACS, a corrente é enviada para os módulos através dos conectores da Anderson Power vermelho e branco que podem ser vistos na <xr id="fig:RF-CurrentDist_top_pic.jpg" />. Os módulos amplificadores estão conectados a esta placa através de cabos PP 2 vias.
 
 Cada módulo amplificador necessita de 2 pontos de alimentação de 48V, dessa forma, esta placa é projetada para monitorar 4 módulos.
+
+<br>
 
 ### ACS724-20AU
 
@@ -49,11 +65,15 @@ $$
 
 Ainda de acordo com o Datasheet, o CI tem um erro total de saída de ±0.7%, erro de sensitividade ±0.7% e um offset de tensão de ±6mV.
 
+<br>
+
 ### Anderson Power Connectors
 
 A saída de corrente é feita utilizando conectores PP15/45 da Anderson Power, nas cores vermelha (P/N 1327FP) e branca (1327G7FP). Além disso, é utilizado o acessório de montagem azul (P/N 1399G8), que fornece uma melhor resistência mecânica, além do contato de cobre (P/N 1377G1) utilizado para ligar o conector a placa.
 
 Esse conjunto fornece uma conexão compacta e de alta capacidade de corrente (até 55A por polo) para a alimentação dos módulos.
+
+<br>
 
 ### Layers
 
@@ -63,6 +83,8 @@ As duas layers externas tem espessura de 4oz e são projetadas para suportar as 
 
 As duas layers internas tem espessura de 1oz e são responsáveis pelo plano de terra do circuito e também pela passagem dos sinais de nível TTL.
 
+<br>
+
 ## Versions Control
 
 {{Table:RF-CurrentDist_version_control}}
@@ -70,16 +92,23 @@ As duas layers internas tem espessura de 1oz e são responsáveis pelo plano de 
 The schematic, bill of materials and all other files related to this crate can be found at: <br>
 `\\centaurus\LNLS\Grupos\RF\Sirius DOC_TEC_RF\Sirius_DOC_TEC_RF\PCB Projects\Released Files\Sirius Current Aquisition\Current Aquisition Boards\Current_distribution_ACS724`
 
+<br>
+
 ### Devices in use
 
 {{Table:RF-CurrentDist_devices}}
 
+<br>
 
 ## Device PVs
 
 There is no PVs associated with this device.
 
+<br>
+
 ## Issues
+
+<br>
 
 ### Measured current too high
 
