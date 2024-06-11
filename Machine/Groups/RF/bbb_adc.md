@@ -1,4 +1,16 @@
+---
+title: BBB Analog to Digital Converter Cape
+description: 
+published: 1
+date: 2024-06-11T14:24:53.004Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-11T14:21:22.837Z
+---
+
 # RF: RF-BBADCape
+
+<br>
 
 ## Introduction
 
@@ -9,6 +21,8 @@ A comunicação com a BBB é feita através de um protocolo SPI, e tem uma preci
 É possível adequar o valor dos resistores de entrada (R*, R** e R***) da placa, para adequar a tensão de entrada à tensão suportada pelo ADC.
 
 Os scripts para aquisição dos dados podem ser encontrados no [github](https://github.com/lnls-sirius/cas-rf-poe-adc/tree/master/poeAdcSPI){target=_blank}
+
+<br>
 
 ## General description
 
@@ -22,6 +36,7 @@ A primeira versão (V3I2) não admite sinais negativos de tensão na entrada, en
 |-|
 |**Figure 1**: BBB ADC Cape block diagram.|
 
+<br>
 
 ### AD7923
 
@@ -31,6 +46,8 @@ Este CI tem a capacidade de medir tensões até 2*Vref, onde Vref é uma tensão
 
 Para a comunicação SPI, os sinais CS', MOSI, MISO e SCLK estão, respectivamente, nos pinos 17, 18, 21 e 22 do conector P9 da BBB. 
 
+<br>
+
 ### DCP010512DBP
 
 O CI DCP010512DBP-U é um conversor DCDC que fornece ±12V para o circuito a partir da tensão de 5V que alimenta a Beagle Bone Black.
@@ -39,9 +56,13 @@ O CI DCP010512DBP-U é um conversor DCDC que fornece ±12V para o circuito a par
 |-|
 |**Figure 2**: V3I2 Resistor bridge.|
 
+<br>
+
 ### Resistive Divider
 
 O AD7923 admite em sua entrada tensões de 0-5V. Para que esse circuito possa ser usado em qualquer hardware, há um divisor resistivo em cada uma das 4 entradas para condicionar as tensões que chegam ao ADC.
+
+<br>
 
 #### V3I2
 
@@ -58,6 +79,7 @@ Este circuito é útil para a função proposta, porém é limitado em um aspect
 |-|
 |**Figure 3**: V3I3 Resistor bridge.|
 
+<br>
 
 #### V3I3
 
@@ -75,6 +97,8 @@ Por exemplo, podemos medir um sinal que varia entre -12V e 0V utilizando R1 = 90
 
 [Este link](https://gitlab.cnpem.br/david.daminelli/resistors_calc){target=_blank} do gitlab contém a demonstração matemática e também scripts para auxiliar a calcular os resistores.
 
+<br>
+
 ## Versions Control
 
 **Table 1**: RF-ADCape version control. 
@@ -86,6 +110,8 @@ Por exemplo, podemos medir um sinal que varia entre -12V e 0V utilizando R1 = 90
 
 The schematic, bill of materials and all other files related to this crate can be found at: <br>
 `\\centaurus\LNLS\Grupos\RF\Sirius DOC_TEC_RF\Sirius_DOC_TEC_RF\PCB Projects\Released Files\BBB ADC Cape`
+
+<br>
 
 ### Devices in use
 
@@ -104,11 +130,17 @@ List of where this board is being used.
 |RA-RaBO02:RF-SSASwPS| 001| V3I2| 2| Booster Interlock Rack |
 |RA-RaSIA02:RF-SSASwPS| 002| V3I2| 2| Storage Ring A Interlock Rack |
 
+<br>
+
 ## Device PVs
 
 There is no PVs associated with this device.
 
+<br>
+
 ## Issues
+
+<br>
 
 ### BBB doesn't initiate (solved)
 
