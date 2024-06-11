@@ -2,7 +2,7 @@
 title: Machine
 description: 
 published: 1
-date: 2024-05-24T14:44:03.796Z
+date: 2024-06-11T14:36:22.515Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T19:46:13.088Z
