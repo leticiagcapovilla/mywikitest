@@ -2,7 +2,7 @@
 title: RF Main Page
 description: 
 published: 1
-date: 2024-06-11T14:51:37.780Z
+date: 2024-06-11T15:41:36.538Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-11T14:21:20.572Z
@@ -77,7 +77,7 @@ LLRF Rack crates
 * [BBB Analog to Digital Converter Cape](/Machine/Groups/RF/bbb_adc)
 * [Solid State Amplifier Fuse Board](/Machine/Groups/RF/solid_state_amplif_fuse_board)
 * [Current Distribution](/Machine/Groups/RF/current_dist)
-* Current Distribution Pre Amplifier
+* [Current Distribution Pre Amplifier](/Machine/Groups/RF/current_distpre)
 * RF Detector Board
 * RF Detector Interlock Board
 * MUX Board
