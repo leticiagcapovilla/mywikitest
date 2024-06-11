@@ -27,8 +27,9 @@ dateCreated: 2024-06-11T16:01:53.653Z
 ## Versions Control
 
 The schematic, bill of materials and all other files related to this crate can be found at:
-\\centaurus\LNLS\Grupos\RF\Sirius DOC_TEC_RF\Sirius_DOC_TEC_RF\PCB Projects\Released Files\RFPDETE2_F
-Devices in use
+`\\centaurus\LNLS\Grupos\RF\Sirius DOC_TEC_RF\Sirius_DOC_TEC_RF\PCB Projects\Released Files\RFPDETE2_F`
+
+**Devices in use**
 
 **Table 1**: RF-RFPDETE devices.
 
