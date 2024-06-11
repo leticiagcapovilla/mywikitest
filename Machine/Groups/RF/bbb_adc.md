@@ -2,7 +2,7 @@
 title: BBB Analog to Digital Converter Cape
 description: 
 published: 1
-date: 2024-06-11T15:17:44.472Z
+date: 2024-06-11T15:32:01.283Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-11T14:21:22.837Z
@@ -52,7 +52,7 @@ Para a comunicação SPI, os sinais CS', MOSI, MISO e SCLK estão, respectivamen
 
 O CI DCP010512DBP-U é um conversor DCDC que fornece ±12V para o circuito a partir da tensão de 5V que alimenta a Beagle Bone Black.
 
-|![](/img/groups/rf/bbb_adc/V3I2_resistors2.svg =600x)|
+|![](/img/groups/rf/bbb_adc/V3I2_resistors.svg =600x)|
 |-|
 |**Figure 2**: V3I2 Resistor bridge.|
 
