@@ -2,7 +2,7 @@
 title: Current Distribution
 description: 
 published: 1
-date: 2024-06-11T15:40:32.165Z
+date: 2024-06-11T15:40:51.821Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-11T14:21:25.321Z
@@ -21,7 +21,7 @@ O CI utilizado é o sensor hall ACS724-20AU, que retorna uma tensão de 0-5V, pr
 Essa placa é utilizada em conjunto com a [[RF:RF-SIMuxBoard|RF-SIMuxBoard]](link) e a [[RF:RF-SIMuxCBoard|RF-SIMuxCBoard]](link) no crate [[RF:RF-SSAMux|RF-SSAMux]](link)
 .
 
-A placa [[RF:RF-CurrentDistPre|RF-CurrentDistPre]] é uma versão de um único canal desta, utilizada exclusivamente para medir a corrente de alimentação dos pré amplificadores.
+A placa [[RF:RF-CurrentDistPre|RF-CurrentDistPre]](link) é uma versão de um único canal desta, utilizada exclusivamente para medir a corrente de alimentação dos pré amplificadores.
 
 <br>
 
