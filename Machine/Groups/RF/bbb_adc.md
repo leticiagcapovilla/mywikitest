@@ -32,7 +32,7 @@ No máximo quatro placas podem ser empilhadas ao mesmo tempo, sendo necessário 
 
 A primeira versão (V3I2) não admite sinais negativos de tensão na entrada, enquanto a versão V3I3 pode ser adequada para medir esse tipo de sinal. Maiores detalhes serão explicados abaixo. 
 
-|![](/img/groups/rf/bbb_adc/RF-BBADCape_block_diagram.svg =600x)|
+|![](/img/groups/rf/bbb_adc/block_diagram.svg =600x)|
 |-|
 |**Figure 1**: BBB ADC Cape block diagram.|
 
@@ -52,7 +52,7 @@ Para a comunicação SPI, os sinais CS', MOSI, MISO e SCLK estão, respectivamen
 
 O CI DCP010512DBP-U é um conversor DCDC que fornece ±12V para o circuito a partir da tensão de 5V que alimenta a Beagle Bone Black.
 
-|![](/img/groups/rf/bbb_adc/RF-BBADCape_V3I2_resistors2.svg =600x)|
+|![](/img/groups/rf/bbb_adc/V3I2_resistors2.svg =600x)|
 |-|
 |**Figure 2**: V3I2 Resistor bridge.|
 
@@ -75,7 +75,7 @@ $$
 Este circuito é útil para a função proposta, porém é limitado em um aspecto: A tensão de entrada deve ser positiva para que a saída esteja entre 0-5V. Para aumentar a versatilidade dessa placa, o divisor resistivo de entrada foi modificado para o abaixo.
 
 
-|![](/img/groups/rf/bbb_adc/RF-BBADCape_V3I3_resistors.svg =600x)|
+|![](/img/groups/rf/bbb_adc/V3I3_resistors.svg =600x)|
 |-|
 |**Figure 3**: V3I3 Resistor bridge.|
 
