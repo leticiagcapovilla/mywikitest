@@ -1,8 +1,8 @@
 ---
-title: current_distpre
+title: Current Distribution Pre Amplifier
 description: 
 published: 1
-date: 2024-06-11T15:42:34.590Z
+date: 2024-06-11T15:42:53.369Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-11T14:21:27.683Z
