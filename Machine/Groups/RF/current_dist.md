@@ -2,7 +2,7 @@
 title: Current Distribution
 description: 
 published: 1
-date: 2024-06-11T15:39:06.626Z
+date: 2024-06-11T15:39:55.880Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-11T14:21:25.321Z
@@ -30,7 +30,7 @@ A placa [[RF:RF-CurrentDistPre|RF-CurrentDistPre]] é uma versão de um único c
 A placa de distribuição de corrente, em conjunto com a [[RF:RF-SIMuxBoard|RF-SIMuxBoard]](link) e a [[RF:RF-SIControlBoard|RF-SIMuxCBoard]](link), dentro do crate [[RF:RF-SSAMux|RF-SSAMux]](link), é responsável por medir e distribuir a corrente de alimentação dos módulos amplificadores em estado sólido do anel do Sirius.
 
 
-|![](/img/groups/rf/current_dist/RF-CurrentDist_top_pic.jpg)|
+|![](/img/groups/rf/current_dist/RF-CurrentDist_top_pic.jpg =200x)|
 |-|
 |**Figure 1**: Current Distribution Top view picture.|
 
@@ -48,12 +48,7 @@ Cada módulo amplificador necessita de 2 pontos de alimentação de 48V, dessa f
 
 O ACS724, mais especificamente o CI de part number ACS724LLCTR-20AU-T, é um sensor de efeito Hall fabricado pela Allegro MicroSystems. Esse componente suporta uma corrente unidirecional máxima de 20A e rejeita campos de modo comum através da sensitividade Hall diferencial. 
 
-<figure id="fig:RF-CurrentDist_bot_pic.jpg" >
-[[Image:RF-CurrentDist_bot_pic.jpg|thumb|150px|<caption>{{Caption|RF-CurrentDist_bot_pic.jpg}}</caption>]]
-</figure>
-
-
-|![](/img/groups/rf/current_dist/RF-CurrentDist_bot_pic.jpg)|
+|![](/img/groups/rf/current_dist/RF-CurrentDist_bot_pic.jpg =200x)|
 |-|
 |**Figure 2**: Current Distribution Top view picture.|
 
