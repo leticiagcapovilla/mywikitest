@@ -2,13 +2,15 @@
 title: Current Distribution Pre Amplifier
 description: 
 published: 1
-date: 2024-06-11T15:42:53.369Z
+date: 2024-06-11T15:43:37.322Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-11T14:21:27.683Z
 ---
 
 # RF: RF-CurrentDistPre
+
+<br>
 
 ## Introduction
 
@@ -20,6 +22,8 @@ Essa placa é utilizada em conjunto com a [[RF:RF-SIMuxBoard|RF-SIMuxBoard]](lin
 .
 
 A placa [[RF:RF-CurrentDist|RF-CurrentDist]](link) é uma versão de oito canais canal desta, utilizada para medir a corrente de alimentação de quatro módulos amplificadores.
+
+<br>
 
 ## General description
 
@@ -38,6 +42,8 @@ Após passar pelo ACS, a corrente é enviada para o módulo através dos conecto
 
 Cada módulo amplificador necessita de 2 pontos de alimentação de 48V, dessa forma, esta placa é projetada para monitorar apenas 1 módulos - mais especificamente, um módulo pré amplificador
 
+<br>
+
 ### ACS724-20AU
 
 O ACS724, mais especificamente o CI de part number ACS724LLCTR-20AU-T, é um sensor de efeito Hall fabricado pela Allegro MicroSystems. Esse componente suporta uma corrente unidirecional máxima de 20A e rejeita campos de modo comum através da sensitividade Hall diferencial. 
@@ -55,11 +61,15 @@ $$
 
 Ainda de acordo com o Datasheet, o CI tem um erro total de saída de ±0.7%, erro de sensitividade ±0.7% e um offset de tensão de ±6mV.
 
-### Anderson Power Connectors
+### Anders
+<br>
+on Power Connectors
 
 A saída de corrente é feita utilizando conectores PP15/45 da Anderson Power, nas cores vermelha (P/N 1327FP) e branca (1327G7FP). Além disso, é utilizado o contato de cobre (P/N 1377G1) utilizado para ligar o conector a placa.
 
 Esse conjunto fornece uma conexão compacta e de alta capacidade de corrente (até 55A por polo) para a alimentação dos módulos.
+
+<br>
 
 ### Layers
 
@@ -68,6 +78,8 @@ Esta PCI é composta por 4 layers.
 As duas layers externas tem espessura de 4oz e são projetadas para suportar as altas correntes exigidas pelos módulos.
 
 As duas layers internas tem espessura de 1oz e são responsáveis pelo plano de terra do circuito e também pela passagem dos sinais de nível TTL.
+
+<br>
 
 ## Versions Control
 
@@ -81,11 +93,11 @@ As duas layers internas tem espessura de 1oz e são responsáveis pelo plano de 
 The schematic, bill of materials and all other files related to this crate can be found at: <br>
 `\\centaurus\LNLS\Grupos\RF\Sirius DOC_TEC_RF\Sirius_DOC_TEC_RF\PCB Projects\Released Files\Sirius Current Aquisition\Current Aquisition Boards\Current_distribution_ACS724_pre`
 
+<br>
+
 ### Devices in use
 
 **Table 2**: RF-CurrentDistPre devices. 
-
-lalalalalalalala testeeeeee
 
 |Device Name| Device #| Board Version| Number of Boards| Location |
 |-|-|-|-|-|
@@ -98,11 +110,17 @@ lalalalalalalala testeeeeee
 |RA-ToSIA02:RF-SSAMux-3| 007| V1I1| 1| Storage Ring A SSA Tower 2 |
 |RA-ToSIA02:RF-SSAMux-4| 008| V1I1| 2| Storage Ring A SSA Tower 2 |
 
+<br>
+
 ## Device PVs
 
 There is no PVs associated with this device.
 
+<br>
+
 ## Issues
+
+<br>
 
 ### Bad mechanical resistance
 
