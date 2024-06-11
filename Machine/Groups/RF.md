@@ -82,4 +82,4 @@ LLRF Rack crates
 * [RF Detector Interlock Board](/Machine/Groups/RF/det_interlock_board)
 * [MUX Board](/Machine/Groups/RF/muxboard)
 * [MUX Controller Board](/Machine/Groups/RF/mux_control_cape)
-* Beagle Bone MUX Controller Cape
+* [Beagle Bone MUX Controller Cape](/Machine/Groups/RF/bb_mux_control_cape)
