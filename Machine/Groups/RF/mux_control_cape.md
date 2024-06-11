@@ -2,13 +2,13 @@
 title: MUX Controller Board
 description: 
 published: 1
-date: 2024-06-11T16:33:35.547Z
+date: 2024-06-11T16:38:41.317Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-11T16:24:54.177Z
 ---
 
-# RF: RF-BBMuxCtrlCape
+# RF:RF-MuxCtrlBoard
 
 <br>
 
