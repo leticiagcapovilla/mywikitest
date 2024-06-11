@@ -80,6 +80,6 @@ LLRF Rack crates
 * [Current Distribution Pre Amplifier](/Machine/Groups/RF/current_distpre)
 * [RF Detector Board](/Machine/Groups/RF/det_board)
 * [RF Detector Interlock Board](/Machine/Groups/RF/det_interlock_board)
-* MUX Board
+* [MUX Board](/Machine/Groups/RF/muxboard)
 * MUX Controller Board
 * Beagle Bone MUX Controller Cape
