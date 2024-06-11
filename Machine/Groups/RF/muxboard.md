@@ -1,4 +1,16 @@
+---
+title: MUX Board
+description: 
+published: 1
+date: 2024-06-11T16:04:30.356Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-11T16:01:55.959Z
+---
+
 # RF: RF-MuxBoard
+
+<br>
 
 ## Introduction
 
@@ -10,11 +22,15 @@ A versão utilizada no Booster (V1I1) está localizada nos crates [[RF:RF-BOMux|
 
 As versões utilizadas no anel (V2I1 e V3I1) estão localizadas nos crates [[RF:RF-SSAMux|RF-SSAMux]](link), e trabalham em conjunto com [[RF:RF-MuxCtrlBoard|RF-MuxCtrlBoard]](link) (V2I1)/[[RF:RF-BBMuxCtrlCape|RF:RF-BBMuxCtrlCape]](link) (V3I1), [[RF:RF-CurrentDist|RF-CurrentDist]](link), [[RF:RF-CurrentDistPre|RF-CurrentDistPre]](link) e [[RF:RF-RFDET|RF Detector Board]](link).
 
+<br>
+
 ## General description
 
 A placa MUX tem como objetivo receber as tensões enviadas pelas respectivas placas de medição de corrente e potência, e envia-las para a sua respectiva placa de controle.
 
 Essa placa recebe da sua controladora 4 sinais (A0-A3) de endereçamento para selecionar qual dos 16 canais do multiplexador será lido e 3 sinais (E1-E3) para escolher qual multiplexador está ativo. 
+
+<br>
 
 ### V1I1
 
@@ -23,6 +39,8 @@ A primeira versão fabricada é utilizada no crate [[RF:RF-BOMux|RF-BOMux]](link
 |![](/img/groups/rf/mux_board/RF-MuxBoard_block_diagram.svg)|
 |-|
 |**Figure 1**: MUX Board block diagram.|
+
+<br>
 
 ### V2I1
 
@@ -34,6 +52,8 @@ Apesar de funcional, essa versão se mostrou inconveniente para o novo design da
 * **Tamanho** - como citado no item anterior, a área dessa versão é muito maior do que precisaria ser. Isso causou problemas na montagem do crate, fazendo com que fosse necessário um segundo "andar" dentro da [[RF:RF-SSAMux|RF-SSAMux]](link);
 * **Dado de saída** - a V1I1 utiliza um cabo SMA para transportar o dado de saída até a controladora. Essa solução faz sentido nesse projeto, onde o sinal precisa percorrer um longo caminho até a placa controladora. Porém, neste, essa abordagem não é necessária, uma vez que a placa multiplexadora e de controle estão no mesmo crate;
 
+<br>
+
 ### V3I1
 
 Esta versão manteve o mesmo princípio de funcionamento da anterior, porém visando, principalmente, solucionar os problemas listados acima.
@@ -43,11 +63,15 @@ Esta versão manteve o mesmo princípio de funcionamento da anterior, porém vis
 * **Alimentação** - foi adicionado um conversor DCDC DCP010512DBP-U. Agora, não é mais necessário fornecer +12V e -12V como na versão V2I1, basta uma fonte de +5V para que a PCI funcione;
 * **Dado de saída** - Saída agora é enviada pelo mesmo flat cable onde chegam os dados de controle.
 
+<br>
+
 #### CD74HC4067SM96
 
 O CD74HC4067SM96 é um mux/demux de 16 canais de alta velocidade que utiliza lógica CMOS. Este CI é alimentado com +5V e, nessa placa, é utilizado como 16 entradas e 1 saída.
 
 Para selecionar qual saída será lida, são utilizados os pinos S0-S4, selecionando um dos 16 canais. Além disso, para essa seleção funcionar, é necessário que o pino E' esteja em nível lógico 0.
+
+<br>
 
 #### SN7407DR
 
@@ -55,12 +79,16 @@ A placa de controle [[RF:RF-BBMuxCtrlCape|RF-BBMuxCtrlCape]](link) envia sinais 
 
 O SN7407DR é um buffer coletor aberto não inversor de 6 elementos, 1 bit por elemento.  O VIH deste CI é baixo o suficiente (2V) para que o sinal de nível alto enviado pela controladora (3.3V) seja suficiente para que a saída do buffer seja 5V.
 
+<br>
+
 ## Versions Control
 
 {{Table:RF-MuxBoard_version_control}}
 
 The schematic, bill of materials and all other files related to this crate can be found at: <br>
 ''\\centaurus\LNLS\Grupos\RF\Sirius DOC_TEC_RF\Sirius_DOC_TEC_RF\PCB Projects\Released Files\Sirius Current Aquisition\Mux Boards\Multiplexing Board''
+
+<br>
 
 ### Devices in use
 
@@ -72,6 +100,8 @@ The schematic, bill of materials and all other files related to this crate can b
 |V2I1| 2018| Redesigned to new Sirius SSAmpTower project |
 |V3I1| 01/2021| Redesigned to SMD components  |
 
+<br>
+
 ## Device PVs
 
 **Table 2**: RF-MuxBoard devices.
@@ -81,5 +111,7 @@ The schematic, bill of materials and all other files related to this crate can b
 |RA-ToBO:RF-BOMux| 001-006| V1I1| 1| Booster SSA Tower |
 |RA-ToSIA01:RF-SSAMux| 001-004| V2I1| 2| Storage Ring A SSA Tower 1 |
 |RA-ToSIA02:RF-SSAMux| 005-008| V2I1| 2| Storage Ring A SSA Tower 2 |
+
+<br>
 
 ## Issues
