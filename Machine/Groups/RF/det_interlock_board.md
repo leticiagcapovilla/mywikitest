@@ -2,7 +2,7 @@
 title: RF Detector Interlock Board
 description: 
 published: 1
-date: 2024-06-11T16:03:12.532Z
+date: 2024-06-11T16:03:36.652Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-11T16:01:53.653Z
@@ -18,7 +18,7 @@ dateCreated: 2024-06-11T16:01:53.653Z
 
 ## General description
 
-|![](/img/groups/rf/det_interlock_board/RF-RFPDETE_block_diagram.svg)|
+|![](/img/groups/rf/det_interlock_board/RF-RFPDETE_block_diagram.svg =700x)|
 |-|
 |**Figure 1**: |
 
