@@ -78,8 +78,8 @@ LLRF Rack crates
 * [Solid State Amplifier Fuse Board](/Machine/Groups/RF/solid_state_amplif_fuse_board)
 * [Current Distribution](/Machine/Groups/RF/current_dist)
 * [Current Distribution Pre Amplifier](/Machine/Groups/RF/current_distpre)
-* RF Detector Board
-* RF Detector Interlock Board
+* [RF Detector Board](/Machine/Groups/RF/det_board)
+* [RF Detector Interlock Board](/Machine/Groups/RF/det_interlock_board)
 * MUX Board
 * MUX Controller Board
 * Beagle Bone MUX Controller Cape
