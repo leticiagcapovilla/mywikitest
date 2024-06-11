@@ -39,7 +39,8 @@ LINAC, Booster and Storage Ring accelerators documentation
 
 ## Previous groups documentation (WIP)
 
-- [CON](/Machine/Groups/CON.md)
-- [DIG](/Machine/Groups/DIG.md)
-- [FAC](/Machine/Groups/FAC.md)
+- [CON](/Machine/Groups/CON)
+- [DIG](/Machine/Groups/DIG)
+- [FAC](/Machine/Groups/FAC)
+- [RF](/Machine/Groups/RF)
 {.links-list}
