@@ -1,12 +1,28 @@
+---
+title: RF Detector Interlock Board
+description: 
+published: 1
+date: 2024-06-11T16:03:12.532Z
+tags: 
+editor: markdown
+dateCreated: 2024-06-11T16:01:53.653Z
+---
+
 # RF: RF-RFPDETE
 
+<br>
+
 ## Introduction
+
+<br>
 
 ## General description
 
 |![](/img/groups/rf/det_interlock_board/RF-RFPDETE_block_diagram.svg)|
 |-|
 |**Figure 1**: |
+
+<br>
 
 ## Versions Control
 
@@ -20,5 +36,6 @@ Device Name| Device #| Board Version| Number of Boards| Location |
 |-|-|-|-|-|
 |RA-ToBO:RF-BOMuxC| 001| V1I1| 1| Booster SSA Tower |
 
+<br>
 
 ## Device PVs
