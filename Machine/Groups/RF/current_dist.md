@@ -2,7 +2,7 @@
 title: Current Distribution
 description: 
 published: 1
-date: 2024-06-11T15:39:55.880Z
+date: 2024-06-11T15:40:32.165Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-11T14:21:25.321Z
@@ -34,11 +34,11 @@ A placa de distribuição de corrente, em conjunto com a [[RF:RF-SIMuxBoard|RF-S
 |-|
 |**Figure 1**: Current Distribution Top view picture.|
 
-Cada PCI é fixada no barramento de cobre interno da [[RF:RF-SSAMux|RF-SSAMux]](link) através dos furos M6 contidos na placa. Na <xr id="fig:RF-CurrentDist_bot_pic.jpg" /> é possível ver a seção onde não há máscara de solda - por ali é feito o contato elétrico entre a placa e o barramento de cobre.
+Cada PCI é fixada no barramento de cobre interno da [[RF:RF-SSAMux|RF-SSAMux]](link) através dos furos M6 contidos na placa. Na Figura 2 é possível ver a seção onde não há máscara de solda - por ali é feito o contato elétrico entre a placa e o barramento de cobre.
 
 A corrente é então distribuída em 8 ramos, onde cada um contém um sensor hall ACS724-20AU. Tanto o envio do sinal de saída quanto a alimentação dos sensores são feitos através do conector de 10 vias.
 
-Após passar pelo ACS, a corrente é enviada para os módulos através dos conectores da Anderson Power vermelho e branco que podem ser vistos na <xr id="fig:RF-CurrentDist_top_pic.jpg" />. Os módulos amplificadores estão conectados a esta placa através de cabos PP 2 vias.
+Após passar pelo ACS, a corrente é enviada para os módulos através dos conectores da Anderson Power vermelho e branco que podem ser vistos na Figura 1. Os módulos amplificadores estão conectados a esta placa através de cabos PP 2 vias.
 
 Cada módulo amplificador necessita de 2 pontos de alimentação de 48V, dessa forma, esta placa é projetada para monitorar 4 módulos.
 
