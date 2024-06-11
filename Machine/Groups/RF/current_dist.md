@@ -2,7 +2,7 @@
 title: Current Distribution
 description: 
 published: 1
-date: 2024-06-11T14:57:20.313Z
+date: 2024-06-11T15:39:06.626Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-11T14:21:25.321Z
@@ -96,14 +96,23 @@ The schematic, bill of materials and all other files related to this crate can b
 
 ### Devices in use
 
-{{Table:RF-CurrentDist_devices}}
+**Table 1**: RF-CurrentDist version control. 
+
+|Version| Date| Description |
+|-|-|-
+|V1I1| 	First manufacturing |
+|V1I2| 01/2021| Changed comunication connector |
 
 <br>
 
 ## Device PVs
 
-There is no PVs associated with this device.
+**Table 2**: RF-CurrentDist devices
 
+|Device Name| Device #| Board Version| Number of Boards| Location |
+|-|-|-|-|-|
+|RA-ToSIA01:RF-SSAMux| 001-004| V1I1| 8| Storage Ring A SSA Tower 1 |
+|RA-ToSIA02:RF-SSAMux| 005-008| V1I1| 8| Storage Ring A SSA Tower 2 |
 <br>
 
 ## Issues
