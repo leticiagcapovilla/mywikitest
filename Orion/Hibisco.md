@@ -2,7 +2,7 @@
 title: Hibisco
 description: 
 published: 1
-date: 2024-06-12T20:53:33.907Z
+date: 2024-06-12T20:54:14.208Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:12:52.896Z
@@ -10,7 +10,7 @@ dateCreated: 2024-05-15T21:12:52.896Z
 
 # HIBISCO Wiki Content
 
-## [Introduction](/Beamlines/Hibisco/hib_intro)
+## [Introduction](/Orion/Hibisco/hib_intro)
 
 ## Useful links
 
