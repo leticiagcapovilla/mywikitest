@@ -2,7 +2,7 @@
 title: Timbo
 description: 
 published: 1
-date: 2024-06-13T00:37:47.774Z
+date: 2024-06-13T17:14:39.183Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:09:56.211Z
@@ -16,7 +16,7 @@ dateCreated: 2024-05-15T21:09:56.211Z
 
 ## [Source](/Orion/Timbo/tib_source)
 
-## [Frontend](/Orion/Timbo/tib_frontend)
+## [Front-End](/Orion/Timbo/tib_frontend)
 
 ## [Optics](/Orion/Timbo/tib_optics)
 
