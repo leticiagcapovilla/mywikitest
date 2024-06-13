@@ -2,7 +2,7 @@
 title: Sibipiruna
 description: 
 published: 1
-date: 2024-06-13T00:22:45.612Z
+date: 2024-06-13T00:23:18.594Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T19:58:07.051Z
@@ -28,7 +28,6 @@ dateCreated: 2024-05-15T19:58:07.051Z
 
 ## Useful links
 
-- [SIBIPIRUNA *Wiki*](/Orion/Sibipiruna/sib_intro)
 - [Orion Project *External Site*](https://cnpem.br/orion/){target=_blank}
 - [Orion Project Files *Sharepoint Page*](https://cnpemcamp.sharepoint.com/sites/lnls/projectsII/SitePages/orionbeamlines.aspx){target=_blank}
 {.links-list}
