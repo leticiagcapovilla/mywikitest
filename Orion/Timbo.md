@@ -2,7 +2,7 @@
 title: Timbo
 description: 
 published: 1
-date: 2024-06-13T00:37:21.336Z
+date: 2024-06-13T00:37:47.774Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:09:56.211Z
@@ -30,7 +30,6 @@ dateCreated: 2024-05-15T21:09:56.211Z
 
 ## Useful links
 
-- [TIMBO *Wiki*](/Orion/Timbo/tib_intro)
 - [Orion Project *External Site*](https://cnpem.br/orion/){target=_blank}
 - [Orion Project Files *Sharepoint Page*](https://cnpemcamp.sharepoint.com/sites/lnls/projectsII/SitePages/orionbeamlines.aspx){target=_blank}
 {.links-list}
