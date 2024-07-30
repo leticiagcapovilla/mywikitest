@@ -2,7 +2,7 @@
 title: Projeto Data
 description: 
 published: 1
-date: 2024-07-30T12:50:29.111Z
+date: 2024-07-30T12:50:56.705Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-14T14:19:38.055Z
@@ -53,4 +53,4 @@ A partir do MariaDB, começaremos a processar os dados. Teremos tanto uma tabela
 Nesta última etapa, se necessário, será feita a junção de dados do Dataflow, a criação de colunas que atendam a necessidades específicas e a preparação final para a carga no Power B.I. Depois disso, o usuário poderá conectar seu relatório, notebook para Aprendizado de Máquina (A.M), ou qualquer outra necessidade que precise ser atendida.
 
 ## Informações técnicas
-[Requerimentos](/Groups/GPP/new-pagehttp://10.39.50.85:3000/en/Groups/GPP/new-page)
+[Requerimentos](http://10.39.50.85:3000/en/Groups/GPP/new-page)
