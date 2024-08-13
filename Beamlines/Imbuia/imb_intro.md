@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-08-13T18:50:40.687Z
+date: 2024-08-13T18:52:31.734Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -18,8 +18,8 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 
 **Basic information**
 
-# Tabset {.tabset}
-## Energy ranges
+## Tabset {.tabset}
+### Energy ranges
 
 | Parameter | value |
 | --- | --- |
