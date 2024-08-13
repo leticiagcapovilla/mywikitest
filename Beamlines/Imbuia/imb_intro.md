@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-05-16T22:48:51.112Z
+date: 2024-08-13T18:50:40.687Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -75,11 +75,11 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 
 > In case of emergency, call **(19) 35149686** or the extension 686
 
-# Radiation extraction and source details
+## Radiation extraction and source details
 
 The 5-bend-achromat (5BA) cell of Sirius is comprised of 4 low-field (0.56 T) magnets named B1 and B2, one super-bend (BC, peak field 3.2 T) and one straight section, as illustrated in Fig. 1a. The IMBUIA beamline source is located in the Sector 7 of the storage ring, inside the first B2 dipole downstream the straight section. The source is defined by an extraction port (originally designed for visible photons diagnostics) centered at 3.01∘^\\circ∘ from the electrons orbit (Fig. 1b) and longitudinally located at 295 mm upstream the dipole center. A radiation mask of 7.07 ×\\times× 6.00 mm^2^ located in the pumping station of the B2 dipole (1137 mm from the source) defines a radiation extraction of 5.57 ×\\times× 5.27 mrad^2^ (Fig. 1c).
 
-![extraction](/img/beamlines/imbuia/extraction.svg)
+![extraction](/img/beamlines/imbuia/extraction.svg =700x)
 
 -   **Figure 1**: IR extraction port. a) Magnetic lattice of the sector 7 of the accelerator with indication of the bending magnet source (B2, 0.57 T). b) Top-view section of the B2 dipole chamber highlighting the electrons orbit, SR extraction port and source origin. c) Pumping station after the dipole with radiation mask of 5.57 ×\\times× 5.27 mrad^2^ for SR extraction.
 
@@ -95,7 +95,7 @@ An important figure to be considered in the designing of SR probes is the source
 
 -   **Figure 3**: SRW simulation of the IMBUIA source produced by an imaging optical scheme with magnification 1. Simulations performed for 100 mA stored current.
 
-# Flux, Polarization, Brilliance and Irradiance from far- to mid-IR
+## Flux, Polarization, Brilliance and Irradiance from far- to mid-IR
 
 The size of the source is directly proportional to the wavelength, therefore, it is a diffraction-limited point source in the infrared range. In the other hand, the maximum value for the flux density does not follow the same proportion law as it influenced by the maximum collection angle of the port. To illustrate this in depth, we calculated the spectral flux (Fig. 4a), polarization portions (Fig. 4b), spectral brilliance (Fig. 4c) and irradiance (Fig. 4d). By observing the flux trend (Fig. 4a), it is clear that longer wavelengths are hardly penalized by the small vertical aperture of the port, as the curve drops fast above 1 μm wavelengths. Moreover, the extracted radiation is dominated by horizontal polarization, as the total polarization flux is just slightly above the h-polarized flux. This is confirmed by the polarization study in Fig. 4b, where the h-polarized portion correspond to more than 75% of the total. For longer wavelengths (>20 μm) the polarization becomes mainly horizontal (above 90%), confirming that a very small central portion of the far-IR/THz beam is passing through the extraction port.
 
@@ -103,7 +103,7 @@ The size of the source is directly proportional to the wavelength, therefore, it
 
 -   **Figure 4**: Calculated spectral flux, polarization degree, brilliance and irradiance in the visible-to-IR ranges considering the extraction port described in Fig. 1 at 100 mA. All simulations were done using SRW.
 
-# Radiation extraction element (M1 mirror)
+## Radiation extraction element (M1 mirror)
 
 For radiation collection, we designed a vertically-supported flat mirror (M1) installed in front of the extraction port illustrated in Fig. 1c. The full white beam from the bending magnet illuminates the Au-coated Glidcop flat surface that absorbs most of the high energy portion (X-rays) and reflects the lower energy portion (UV, visible and IR), as illustrated in Fig. 5a. As a safety requirement, the entire M1 shaft can move vertically in case the mirror needs to be removed from the beam path, which is the only degree of freedom of M1. Most of the heat load from the white beam is absorbed by the M1, which corresponds to ∼\\sim∼ 140 W. Hence, a water-cooling system operates to drain this large power and to reduce M1 surface deformations. For that, a coaxial concept flows cold water (21∘^\\circ∘ C, 150 ml/min) towards the illuminated area guided by an inner pipe which returns warmer through the outer gap, as schemed in Fig. 5b. The maximum temperature of the mirror surface is about 130∘^\\circ∘ C predicted for 350 mA (maximum storage ring current), as depicted in Fig. 5c (left panel). Given the total heat load and illumination area of the beam over M1, we calculated the deformation in the X direction (thermal bump quasi-normal to the surface) whose maximum is near 1.24 μm, as displayed in Fig. 5c (middle panel) sided by the equivalent stress that peaks at 72 MPa (Fig. 5c, right panel).
 
@@ -122,7 +122,7 @@ The choice for the Glidcop substrate was based on the simulation study that comp
 
 -   **Table 1**: Main results on numerical simulations using Ansys code for the mirror substrates options at room temperature or at cryogenic conditions. All results were calculated for 350 mA. GlidCop was the best choice in the study.
 
-# Beamline optics and optomechanics
+## Beamline optics and optomechanics
 
 The optical layout of IMBUIA is comprised of 4 mirrors in vacuum that delivers the broadband IR beam to either the IMBUIA-nano station or the IMBUIA-micro station (Fig. 4a). The bending magnet IR radiation is first collected by a custom- designed water-cooled Au/Glidcop flat mirror (M1, Fig. 3) that directs the beam towards a periscope made of two Au/glass 2- inches flat mirrors (M2 and M3). Before the periscope, a 1-inch diameter and 500 nm thick CVD diamond window (W1) separates the storage ring and beamline vacuum environments. Flowing downstream, the IR beam crosses the X-rays beam from the neighbor undulator beamline, a concept that avoids extra reflections and makes the beam path as shorter as possible. Then a BaF2 window (W2) separates UHV and open-air environments downstream M3.
 
@@ -165,7 +165,7 @@ Table 3 shows the specifications optical-vacuum windows of the beamline
 
 -   **Table 3**: Summary of specifications for the optical/vacuum windows of the IMBUIA primary optics. L = longitudinal distance from the source origin.
 
-# Vacuum layout
+## Vacuum layout
 
 The vacuum concept have two main objectives: *i)* to be compatible to the requirements of the storage ring since the first optical element almost inside the B2 pumping station and *ii)* to offer a humidity-free path for the IR radiation. Despite UHV is not required, the use of ion pumps is mandatory as it avoids extra mechanical noise in the station. The sketch in Figure 9 presents the main idea for the vacuum components for this beamline.
 
@@ -205,15 +205,15 @@ Table 4 lists all the vacuum components of the IMBUIA beamline followed by their
 
 -   **Table 4**: Summary of specifications for the optical/vacuum windows of the IMBUIA primary optics. L = longitudinal distance from the source origin.
 
-# Radiation protection
+## Radiation protection
 
 ![imbuia-rad.png](/img/beamlines/imbuia/imbuia-rad.png)
 
 -   **Figure 11**: IMBUIA vacuum layout. Up to the first window (W1), the vacuum of the beamline is shared with the storage ring and is connected to the pre-frontend of the Caterê beamline. After the shielding wall, the vacuum path is extended to the two experimental station of the beamline (IMBUIA-nano and IMBUIA-micro stations).
 
-# Experimental stations
+## Experimental stations
 
-## IMBUIA-nano
+### IMBUIA-nano
 
 Brief explanation of the s-SNOM technique and its combination with SR.
 
@@ -244,92 +244,92 @@ Brief explanation of the s-SNOM technique and its combination with SR.
 -   [ ] Neasnom server: cables/connectors/switches
 -   [ ] Lasers: cables/connectors/switches
 
-## IMBUIA-micro
+### IMBUIA-micro
 
 ![commissioning.png](/img/beamlines/imbuia/commissioning.png)
 
 The IMBUIA-micro station is still under technical commissioning. This section will be added as soon as it starts operation with synchrotron radiation.
 
-# Beam and experiment diagnostics
+## Beam and experiment diagnostics
 
-## M1 camera and temperature readings
+### M1 camera and temperature readings
 
-## Secondary source
+### Secondary source
 
-## Collimation
+### Collimation
 
-## Synchrotron power, near-field signal levels and spectral response
+### Synchrotron power, near-field signal levels and spectral response
 
-## DFG laser power, near-field signal levels and spectral response
+### DFG laser power, near-field signal levels and spectral response
 
-## QCL laser: standard PsHet imaging
+### QCL laser: standard PsHet imaging
 
-# Control interfaces
+## Control interfaces
 
-## Hvac
+### Hvac
 
-## Vacuum sensors and power supplies
+### Vacuum sensors and power supplies
 
-## Shutter operation
+### Shutter operation
 
-## Primary optics mirrors
+### Primary optics mirrors
 
-## Compressed air and nitrogen flow control
+### Compressed air and nitrogen flow control
 
-## Beamline cameras
+### Beamline cameras
 
-## Remote access: beamline IHM
+### Remote access: beamline IHM
 
-## IMBUIA archiver
+### IMBUIA archiver
 
-## Remote access: Neasnom client
+### Remote access: Neasnom client
 
-# Data storage and processing
+## Data storage and processing
 
-## Accessing and saving data in the Ibira storage
+### Accessing and saving data in the Ibira storage
 
-## Browsing data in the Neasnom server
+### Browsing data in the Neasnom server
 
-## Visualization and post-processing data with Orange
+### Visualization and post-processing data with Orange
 
-## Visualization and post-processing data NeaPlot
+### Visualization and post-processing data NeaPlot
 
-# Safety guidelines
+## Safety guidelines
 
-## Liquid nitrogen handling
+### Liquid nitrogen handling
 
-## Laser beams risks
+### Laser beams risks
 
-## Monitoring the oxygen level in the hutch
+### Monitoring the oxygen level in the hutch
 
-## In case of emergency
+### In case of emergency
 
-## Allowed chemicals in the hutch
+### Allowed chemicals in the hutch
 
-# Recommended lab practices and procedures
+## Recommended lab practices and procedures
 
-## Semi-clean room dress code
+### Semi-clean room dress code
 
-## Watch out for sensitive optical components
+### Watch out for sensitive optical components
 
-## Samples handling
+### Samples handling
 
-## AFM tips replacement
+### AFM tips replacement
 
-## Mind the acoustic noise level in the hutch
+### Mind the acoustic noise level in the hutch
 
-## Do not speak over the samples or optical elements
+### Do not speak over the samples or optical elements
 
-## Keep it clean and neat
+### Keep it clean and neat
 
-# Troubleshooting
+## Troubleshooting
 
-## What to do in case of power failure?
+### What to do in case of power failure?
 
-## How to re-open the photon shutter?
+### How to re-open the photon shutter?
 
-## How to reset the oxygen sensor alarm?
+### How to reset the oxygen sensor alarm?
 
-## My spectrum is weak or null, what do I do?
+### My spectrum is weak or null, what do I do?
 
 > Written with [StackEdit](https://stackedit.io/).

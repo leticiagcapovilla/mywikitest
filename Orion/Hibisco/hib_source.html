@@ -2,7 +2,7 @@
 title: Source
 description: 
 published: 1
-date: 2024-07-26T13:17:26.704Z
+date: 2024-08-13T18:34:33.871Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-06-12T20:22:51.922Z
@@ -11,8 +11,9 @@ dateCreated: 2024-06-12T20:22:51.922Z
 <h1>HIBISCO SOURCE</h1>
 <p>&nbsp;</p>
 <h2>UNDULATOR - CPMU14</h2>
-<p style="text-align:justify;">HIBISCO is an Insertion Device (ID) beamline, located at the high-beta straight-section in sector 05. This source point allows that HIBISCO experimental station is as close as possible to where the living samples will be located. Due to the high energy range reaching up to 45 keV, the best source option for HIBISCO beamline is a Cryogenic Permanent Magnet Undulator (CPMU) with a short period. This section describes the HIBISCO undulator parameters and its light properties. The results below were calculated using SPECTRA v11.2 (spectrax.org), using the rigorous Wigner function methods.</p>
+<p style="text-align:justify;">HIBISCO is an Insertion Device (ID) beamline, located at the high-beta straight-section in sector 05. This source point allows that HIBISCO experimental station is as close as possible to where the living samples will be located. Due to the beamline energy range reaching up to 45 keV, the best source option for HIBISCO beamline is a Cryogenic Permanent Magnet Undulator (CPMU) with a short period.&nbsp;</p>
 <p style="text-align:justify;">The CPMU has its magnets cooled down by LN2 (in-vacuum magnets) and its operational temperature is 80 K. The cryogenic temperature increases the remanent field of the magnets material and allows the undulator to achieve stronger magnetic fields at the gap center. For this reason, higher deflection values (K) can be achieved at the same magnetic gap. The low temperature of the magnets also makes them more resistant to demagnetization, since this effect occurs when the temperature rises above a certain point. In storage rings, the temperature of undulator magnets can increase basically due to two mechanisms: the loss of electrons that collide with the magnets and due to radiation absorption by the magnets. Both effects are worsened as the gap value decreases. Since for HIBISCO we plan to operate the undulator at gaps below 5 mm, the demagnetization risk reduction due to cryogenic temperatures is an important feature of CPMUs for Sirius.</p>
+<p style="text-align:justify;">This section describes the HIBISCO undulator parameters and its light properties. The results below were calculated using SPECTRA v11.2 (spectrax.org), using the rigorous Wigner function methods.</p>
 <p style="text-align:justify;">&nbsp;</p>
 <h2 style="text-align:justify;">PARAMETERS</h2>
 <p style="text-align:justify;">The HIBISCO undulator will be a CPMU14, and its main parameters are displayed in Table 2.1. The small period of this undulator is optimized for the beamline's highest energies. The 2 m total length of the undulator is limited by fabrication-related aspects, which become increasingly complex as the length of the undulator grows.&nbsp;</p>
@@ -20,9 +21,16 @@ dateCreated: 2024-06-12T20:22:51.922Z
 <p style="text-align:justify;">Table 2.1: CPMU14 parameters for HIBISCO beamline.</p>
 <figure class="table">
   <table>
+    <thead>
+      <tr>
+        <th><strong>Parameter</strong></th>
+        <th><strong>Value</strong></th>
+        <th><strong>Unit</strong></th>
+      </tr>
+    </thead>
     <tbody>
       <tr>
-        <td>Period (\lambda_u)</td>
+        <td>Period (λ<sub>u</sub>)</td>
         <td>14.0</td>
         <td>mm</td>
       </tr>
@@ -87,12 +95,12 @@ dateCreated: 2024-06-12T20:22:51.922Z
         <td>&nbsp;</td>
       </tr>
       <tr>
-        <td>Remanent Field (Br) @ 80 K</td>
+        <td>Remanent Field (B<sub>r</sub>) @ 80 K</td>
         <td>1.71</td>
         <td>T</td>
       </tr>
       <tr>
-        <td>Coercivity Force (Hcj)</td>
+        <td>Coercivity Force (H<sub>cj</sub>)</td>
         <td>5300</td>
         <td>kA/m</td>
       </tr>
@@ -100,10 +108,12 @@ dateCreated: 2024-06-12T20:22:51.922Z
   </table>
 </figure>
 <p>&nbsp;</p>
-<p style="text-align:justify;">Note that the maximum K-value achieved does not satisfy the energy continuity requirement (which happens for K ≥ 2), and therefore there is a gap between the 1<sup>st</sup> and 3<sup>rd</sup> harmonic (from 6 to 9 keV), but that does not represent a problem for HIBISCO, since the beamline energy range starts at 15 keV. In fact, the beamline energy range can be covered from the 5<sup>th</sup> to the 15<sup>th</sup> odd harmonics. Figure 2.1 shows the fundamental energy dependence with the gap, and the harmonics energy coverage. &nbsp;</p>
-<figure class="image image_resized" style="width:34.22%;"><img src="/img/orion/hibisco/source/gap_fundamental_energy_cpmu14_2m_14mm.png"></figure>
+<p style="text-align:justify;">Note that the maximum K-value achieved does not satisfy the energy continuity requirement (which happens for K ≥ 2), and therefore there is a gap between the 1<sup>st</sup> and 3<sup>rd</sup> harmonic (from 6 to 9 keV), but that does not represent a problem for HIBISCO, since the beamline energy range starts at 15 keV. In fact, the beamline energy range can be covered from the 5<sup>th</sup> to the 15<sup>th</sup> odd harmonics. Figure 2.1 and 2.2 show the fundamental energy dependence with the gap, and the harmonics energy coverage. &nbsp;</p>
+<figure class="image image_resized" style="width:34.22%;"><img src="/img/orion/hibisco/source/gap_fundamental_energy_cpmu14_2m_14mm.png">
+  <figcaption>Figure 2.1: Fundamental energy of emission versus undulator gap.&nbsp;</figcaption>
+</figure>
 <figure class="image image_resized" style="width:34.23%;"><img src="/img/orion/hibisco/source/gap_energy_cpmu14_2m_14mm.png">
-  <figcaption>Figure 2.1: (left) Fundamental energy of emission versus undulator gap. (right) Energy coverage of the harmonics as function of the gap and energy.</figcaption>
+  <figcaption>Figure 2.2: Energy coverage of the harmonics as function of the gap and energy.</figcaption>
 </figure>
 <p>&nbsp;</p>
 <h2>LIGHT PROPERTIES</h2>
@@ -126,23 +136,25 @@ dateCreated: 2024-06-12T20:22:51.922Z
 </figure>
 <p style="text-align:justify;">&nbsp;</p>
 <h3>Source Size and Divergence</h3>
-<p>The source size of HIBISCO is nearly constant for E &gt; 15 keV, with sizes dominated by the electron beam dimensions. Thus, in most energies the photon beam sizes are equal to \sigma_x = 65.3 µm and \sigma_y = 3.0 µm. As in other high-beta beamlines, the beam is highly asymmetric at the source point, being much larger in the horizontal plane. However, as it propagates a few meters away from the source (leaving the Rayleigh range), it becomes a nearly round beam (see Figure 3.3). The rate of how much the beam size grows with the distance is determined by the beam divergence.&nbsp;As one can see in Figure 3.4, the divergence fluctuates around the value of sigma'_x = 8.5 µrad and sigma'_y = 7.5 µrad.</p>
-<figure class="image image_resized" style="width:34.85%;"><img src="/img/orion/hibisco/source/beam_size_cpmu14_2m_14mm.png"></figure>
-<figure class="image image_resized" style="width:34.79%;"><img src="/img/orion/hibisco/source/beam_div_cpmu14_2m_14mm.png">
-  <figcaption>Figure 3.4: Effective source (left) size and (right) divergence at the undulator center.</figcaption>
+<p>The source size of HIBISCO is nearly constant for E &gt; 15 keV, with sizes dominated by the electron beam dimensions. Thus, in most energies the photon beam sizes are equal to σ<sub>x</sub> = 65.3 µm and σ<sub>y</sub> = 3.0 µm (see Figure 3.4). As in other high-beta beamlines, the beam is highly asymmetric at the source point, being much larger in the horizontal plane. However, as it propagates a few meters away from the source (leaving the Rayleigh range), it becomes a nearly round beam (see Figure 3.3). The rate of how much the beam size grows with the distance is determined by the beam divergence.&nbsp;As one can see in Figure 3.5, the divergence fluctuates around the value of σ'<sub>x</sub> = 8.5 µrad and σ<sub>y</sub> = 7.5 µrad.</p>
+<figure class="image image_resized" style="width:34.85%;"><img src="/img/orion/hibisco/source/beam_size_cpmu14_2m_14mm.png">
+  <figcaption>Figure 3.4: Effective source size at the undulator center.</figcaption>
+</figure>
+<figure class="image image_resized" style="width:34.86%;"><img src="/img/orion/hibisco/source/numerical_beam_divergencecpmu14_2m_14mm_high_beta.png">
+  <figcaption>Figure 3.5: Effective source divergence at the undulator center.</figcaption>
 </figure>
 <p>&nbsp;</p>
 <h3>Power Load</h3>
-<p style="text-align:justify;">The power load was calculated inside a rectangular aperture of 60 x 60 µrad², which is the typical frontend aperture, for the maximum storage ring current I = 350 mA. The maximum power load occurs at the maximum value for the deflection parameter K<sub>max</sub> = 1.41, and is equal to P<sub>max</sub> = 170.6 W. The peak power density is 46.5 kW/mrad². To calculate the power density in W/mm², one can simply divide this value by the square of the distance from the source z<sub>src</sub>. For example, at z<sub>src</sub> = 30 m, the power density is 51.7 W/mm². Figure 3.5 shows the power density distribution for such conditions, with a rectangle displaying the aperture size.</p>
+<p style="text-align:justify;">The power load was calculated inside a rectangular aperture of 60 x 60 µrad², which is the typical frontend aperture, for the maximum storage ring current I = 350 mA. The maximum power load occurs at the maximum value for the deflection parameter K<sub>max</sub> = 1.41, and is equal to P<sub>max</sub> = 170.6 W. The peak power density is 46.5 kW/mrad². To calculate the power density in W/mm², one can simply divide this value by the square of the distance from the source z<sub>src</sub>. For example, at z<sub>src</sub> = 30 m, the power density is 51.7 W/mm². Figure 3.6 shows the power density distribution for such conditions, with a rectangle displaying the aperture size.</p>
 <figure class="image image_resized" style="width:34.94%;"><img src="/img/orion/hibisco/source/partial_power_cpmu14_2m_14mm.png">
-  <figcaption>Figure 3.5: Power density (angular distribution) at maximum K-value. The dotted rectangle shows the typical frontend aperture of 60 x 60 µrad², where the partial power was integrated.</figcaption>
+  <figcaption>Figure 3.6: Power density (angular distribution) at maximum K-value. The dotted rectangle shows the typical frontend aperture of 60 x 60 µrad², where the partial power was integrated.</figcaption>
 </figure>
 <p style="text-align:justify;">&nbsp;</p>
 <p style="text-align:justify;">&nbsp;</p>
 <h3>Polarization</h3>
-<p style="text-align:justify;">The degree of polarization was calculated at an aperture of 20 x 20 µrad². Figure 3.6 shows the degree of linear polarization (PL²) and the degree of circular polarization (PC²). These values are defined in terms of the Stokes parameters: PL = S<sub>1</sub>/S<sub>0</sub> and PC = S<sub>3</sub>/S<sub>0</sub>. As one can see, the radiation inside such aperture is highly linearly polarized.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p style="text-align:justify;">The degree of polarization was calculated at an aperture of 20 x 20 µrad². Figure 3.7 shows the degree of linear polarization (PL²) and the degree of circular polarization (PC²). These values are defined in terms of the Stokes parameters: PL = S<sub>1</sub>/S<sub>0</sub> and PC = S<sub>3</sub>/S<sub>0</sub>. As one can see, the radiation inside such aperture is highly linearly polarized.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <figure class="image image_resized" style="width:34.71%;"><img src="/img/orion/hibisco/source/degree_polarization_cpmu14_2m_14mm.png">
-  <figcaption>Figure 3.6: Degree of polarization of the radiation as function of the photon energy.</figcaption>
+  <figcaption>Figure 3.7: Degree of polarization of the radiation as function of the photon energy.</figcaption>
 </figure>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
