@@ -2,13 +2,13 @@
 title: Ema
 description: 
 published: 1
-date: 2024-08-27T15:14:16.076Z
+date: 2024-08-27T15:15:04.966Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T20:35:22.471Z
 ---
 
-# EMA content
+# EMA Wiki content
 
 <br>
 
