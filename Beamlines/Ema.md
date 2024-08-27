@@ -2,13 +2,13 @@
 title: Ema
 description: 
 published: 1
-date: 2024-08-27T15:10:23.312Z
+date: 2024-08-27T15:14:16.076Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T20:35:22.471Z
 ---
 
-# EMA content (WIP)
+# EMA content
 
 <br>
 
