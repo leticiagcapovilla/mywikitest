@@ -2,7 +2,7 @@
 title: Hibisco
 description: 
 published: 1
-date: 2024-08-27T19:28:43.976Z
+date: 2024-08-27T19:45:04.597Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:12:52.896Z
@@ -12,7 +12,7 @@ dateCreated: 2024-05-15T21:12:52.896Z
 
 <br>
 
-- [Introduction](/Orion/Hibisco/hib_intro)
+- [Introduction](/Orion/Hibisco/hib_intro.html)
 - [Source](/Orion/Hibisco/hib_source)
 - [Front-End](/Orion/Hibisco/hib_frontend)
 - [Optics](/Orion/Hibisco/hib_optics)
