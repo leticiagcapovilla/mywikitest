@@ -2,7 +2,7 @@
 title: Ema
 description: 
 published: 1
-date: 2024-08-27T15:20:12.364Z
+date: 2024-08-27T15:20:42.008Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T20:35:22.471Z
@@ -26,5 +26,5 @@ dateCreated: 2024-05-15T20:35:22.471Z
 
 ## Useful links
 
-- [EMA External Site](https://lnls.cnpem.br/grupos/ema/){target=_blank}
+- [EMA External Site *External Site*](https://lnls.cnpem.br/grupos/ema/){target=_blank}
 {.links-list}
