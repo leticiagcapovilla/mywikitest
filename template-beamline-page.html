@@ -2,7 +2,7 @@
 title: Template for Beamlines - Visual Editor
 description: 
 published: 1
-date: 2024-08-27T15:49:12.027Z
+date: 2024-08-27T16:01:28.377Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-08-27T15:48:52.059Z
@@ -13,12 +13,14 @@ dateCreated: 2024-08-27T15:48:52.059Z
 <h2>Headline 2</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex molestias aspernatur repellendus, neque accusamus quidem, nemo non deserunt sunt quasi et? Blanditiis dignissimos non quibusdam in dolorum quidem odit.</p>
 <p>&nbsp;</p>
-<p>To insert an image, use the “Insert Assets” tool. First, upload the image to the corresponding path (e.g. “img/&lt;beamlines/groups/machine/orion folder&gt;/&lt;subfolder&gt;/&lt;page_name&gt;/&lt;image-name&gt;”) and then use it in this page</p>
-<figure class="image"><img src="http://10.39.50.85:3000/img/orion/hibisco/placeholder-image.jpg"></figure>
+<p><strong>To insert an image, use the “Insert Assets” tool. First, upload the image to the corresponding path (e.g. “img/&lt;beamlines/groups/machine/orion folder&gt;/&lt;subfolder&gt;/&lt;page_name&gt;/&lt;image-name&gt;”) and then use it in this page</strong></p>
+<figure class="image"><img src="http://10.39.50.85:3000/img/orion/hibisco/placeholder-image.jpg">
+  <figcaption>Image 1 - Image caption</figcaption>
+</figure>
 <p>&nbsp;</p>
 <h2>Another Headline 2</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex molestias aspernatur repellendus, neque accusamus quidem, nemo non deserunt sunt quasi et? Blanditiis dignissimos non quibusdam in dolorum quidem odit.</p>
-<p>&nbsp;</p>
+<p>Table 1 - Table caption</p>
 <figure class="table">
   <table>
     <thead>
@@ -56,4 +58,52 @@ dateCreated: 2024-08-27T15:48:52.059Z
 <p><a href="https://www.google.com">Example link</a></p>
 <p><a href="/home">Internal link</a></p>
 <p>&nbsp;</p>
+<h4>Headline 4</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex molestias aspernatur repellendus, neque accusamus quidem, nemo non deserunt sunt quasi et? Blanditiis dignissimos non quibusdam in dolorum quidem odit.</p>
 <p>&nbsp;</p>
+<blockquote>
+  <p>Quote block</p>
+</blockquote>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex molestias aspernatur repellendus, neque accusamus quidem, nemo non deserunt sunt quasi et? Blanditiis dignissimos non quibusdam in dolorum quidem odit.</p>
+<p>&nbsp;</p>
+<hr>
+<p><strong>List</strong></p>
+<ol>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ol>
+<p>&nbsp;</p>
+<hr>
+<p><strong>Topics</strong></p>
+<ul>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>
+<p>&nbsp;</p>
+<hr>
+<p><strong><u>To-do list (the tasks can be checked)</u></strong></p>
+<ul class="todo-list">
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">Task 1</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">Task 2</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">Task 3</span></label></li>
+</ul>
+<p>&nbsp;</p>
+<h5>Headline 5</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex molestias aspernatur repellendus, neque accusamus quidem, nemo non deserunt sunt quasi et? Blanditiis dignissimos non quibusdam in dolorum quidem odit.</p>
+<p>&nbsp;</p>
+<p><strong>Code block</strong></p>
+<pre><code class="language-python">from urllib import request
+# access request directly.
+mine = request()
+
+import urllib.request
+# used as urllib.request
+mine = urllib.request()</code></pre>
+<p>&nbsp;</p>
+<p><strong>Code lines</strong></p>
+<p><code>from urllib import request</code></p>
+<p><code>import urllib.request</code></p>
+<p>&nbsp;</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <mark class="marker-green">Voluptatibus ex molestias aspernatur repellendus</mark>, neque accusamus quidem, nemo non deserunt sunt quasi et? Blanditiis dignissimos non quibusdam in dolorum quidem odit.</p>
