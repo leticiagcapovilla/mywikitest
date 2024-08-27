@@ -2,7 +2,7 @@
 title: Paineira
 description: 
 published: 1
-date: 2024-05-15T21:02:57.412Z
+date: 2024-08-27T16:46:44.184Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:02:57.412Z
@@ -16,7 +16,7 @@ dateCreated: 2024-05-15T21:02:57.412Z
 - [Optics](/Beamlines/Paineira/pnr_optics)
 - [Infrastructure](/Beamlines/Paineira/pnr_infra)
 - [Experimental Station](/Beamlines/Paineira/pnr_exp_station)
-- [Sample Preparation](/Beamlines/Paineira/pnr_sample_prep)
+- [Sample Preparation](/Beamlines/Paineira/pnr_samp_prep)
 {.links-list}
 
 <br>
