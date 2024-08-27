@@ -2,7 +2,7 @@
 title: Carnauba
 description: 
 published: 1
-date: 2024-05-16T16:57:24.026Z
+date: 2024-08-27T20:49:28.661Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T20:28:26.408Z
@@ -25,5 +25,5 @@ dateCreated: 2024-05-15T20:28:26.408Z
 
 ## Useful links
 
-- [CARNAUBA External Site](https://lnls.cnpem.br/grupos/carnauba){target=_blank}
+- [CARNAUBA *External Site*](https://lnls.cnpem.br/grupos/carnauba){target=_blank}
 {.links-list}
