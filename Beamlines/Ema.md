@@ -2,7 +2,7 @@
 title: Ema
 description: 
 published: 1
-date: 2024-05-15T20:35:22.471Z
+date: 2024-08-27T15:09:00.481Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T20:35:22.471Z
