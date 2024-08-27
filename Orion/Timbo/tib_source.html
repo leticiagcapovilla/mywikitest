@@ -1,21 +1,19 @@
 <!--
-title: Source
+title: Timbó Source
 description: 
 published: 1
-date: 2024-08-13T18:40:34.135Z
+date: 2024-08-27T20:50:53.340Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-06-13T00:25:50.117Z
 -->
 
-<h1>TIMBÓ SOURCE</h1>
-<p>&nbsp;</p>
-<h2>UNDULATOR - CPMU14</h2>
+<h1>UNDULATOR - CPMU14</h1>
 <p style="text-align:justify;">TIMBÓ is an Insertion Device (ID) beamline, located at the low-beta straight-section in sector 04. This source point allows TIMBÓ to obtain the maximum coherence that Sirius can deliver. Due to the need of maximizing the flux at the sample, the best source option for TIMBÓ beamline is a Cryogenic Permanent Magnet Undulator (CPMU) with a short period.</p>
 <p style="text-align:justify;">The CPMU has its magnets cooled down by LN2 (in-vacuum magnets) and its operational temperature is 80 K. The cryogenic temperature increases the remanent field of the magnets material and allows the undulator to achieve stronger magnetic fields at the gap center. For this reason, higher deflection values (K) can be achieved at the same magnetic gap. The low temperature of the magnets also makes them more resistant to demagnetization, since this effect occurs when the temperature rises above a certain point. In storage rings, the temperature of undulator magnets can increase basically due to two mechanisms: the loss of electrons that collide with the magnets and due to radiation absorption by the magnets. Both effects are worsened as the gap value decreases. Since for TIMBÓ we plan to operate the undulator at gaps below 4 mm, the demagnetization risk reduction due to cryogenic temperatures is an important feature of CPMUs for Sirius.&nbsp;</p>
 <p style="text-align:justify;">This section describes the TIMBÓ undulator parameters and its light properties. The results below were calculated using SPECTRA v11.2 (spectrax.org), using the rigorous Wigner function methods.</p>
 <p>&nbsp;</p>
-<h2>PARAMETERS</h2>
+<h1>PARAMETERS</h1>
 <p>The TIMBÓ undulator will be a CPMU14, and its main parameters are displayed in Table 2.1. The small period of this undulator is optimized for the beamline's highest energies. The 2 m total length of the undulator is limited by fabrication-related aspects, which become increasingly complex as the length of the undulator grows.&nbsp;</p>
 <p>&nbsp;</p>
 <figure class="table">
@@ -115,15 +113,15 @@ dateCreated: 2024-06-13T00:25:50.117Z
   <figcaption>Figure 2.2: Energy coverage of the harmonics as function of the gap and energy.</figcaption>
 </figure>
 <p>&nbsp;</p>
-<h2>LIGHT PROPERTIES</h2>
-<h3>Brilliance</h3>
+<h1>LIGHT PROPERTIES</h1>
+<h2>Brilliance</h2>
 <p style="text-align:justify;">Brilliance is the most used figure-of-merit to describe the spectral performance of an X-ray source. It is defined as the source flux within a small bandwidth (0.1%) divided by the source emittance. The values were normalized to a storage ring current of 100 mA (the brilliance scales linearly with the current). Therefore, it tells us how many photons are emitted in a small area and divergence.</p>
 <p>The small period was optimized for achieving high brilliance at the highest energy of the beamline, considering the relevant constraints such as the Beam Stay Clear (BSC). Figure 3.1 shows the brilliance as function of the radiation energy. In this graph, each curve represents an odd harmonic (starting from h=1), as the gap is scanned from minimum to maximum. The TIMBÓ undulator will be Sirius' most brilliant source point for this energy range, due to the combination of small β<sub>x</sub>,β<sub>y</sub> values and the powerful CPMU14. &nbsp;</p>
 <figure class="image image_resized" style="width:44.95%;"><img src="/img/orion/timbo/source/brilliance_curve_cpmu14_2m_14mm.png">
   <figcaption>Figure 3.1: Brilliance for the CPMU14 at the low-beta straight section.</figcaption>
 </figure>
 <p>&nbsp;</p>
-<h3>Flux</h3>
+<h2>Flux</h2>
 <p style="text-align:justify;">The spectral flux for TIMBÓ beamline was calculated inside the capillary mirror acceptance: a circular aperture with a diameter of 11 µrad, and a central beamstop with a diameter of 6 µrad. This corresponds to the capillary diameters D<sub>1</sub> = 0.8 mm and D<sub>2</sub> = 1.4 mm at a position 117 m downstream the source point. Therefore, it can be used as a reference to calculate the amount of flux delivered to the experimental station. Is calculated as the number of photons per second inside a small bandwidth (0.1%), at the storage ring of 100 mA (the flux scales linearly with the current).</p>
 <p style="text-align:justify;">Figure 3.3 shows the flux density (in units of flux divided by area) at 117 m from the source, for the energy E = 12 keV. The dotted rectangle depicts the capillary mirror aperture. It can be seen that such an aperture is smaller than the beam at this position.&nbsp;</p>
 <p>&nbsp;</p>
@@ -135,7 +133,7 @@ dateCreated: 2024-06-13T00:25:50.117Z
   <figcaption>Figure 3.3: Flux density at 117 m away from the source, at the energy E = 12 keV. The dotted circles show the capillary mirror aperture.</figcaption>
 </figure>
 <p>&nbsp;</p>
-<h3>Source Size and Divergence</h3>
+<h2>Source Size and Divergence</h2>
 <p>The source size of TIMBÓ is nearly constant for E &gt; 6 keV, with horizontal size dominated by the electron beam dimension, and vertical size dominated by the diffraction limit (see Figure 3.4). Thus, in most energies the photon beam sizes are equal to σ<sub>x</sub> = 20 µm and σ<sub>y</sub> = 5 µm (source aspect ratio = 4). The rate of how much the beam size grows with the distance is determined by the beam divergence.&nbsp; As one can see in Figure 3.5, the divergence fluctuates around the value of σ'<sub>x</sub> = 15 µrad and σ'<sub>y</sub> = 8 µrad (except for the first harmonic).&nbsp;</p>
 <figure class="image image_resized" style="width:45.37%;"><img src="/img/orion/timbo/source/numerical_beam_size_cpmu14_2m_14mm_low_beta.png">
   <figcaption>Figure 3.4: Effective source size at the undulator center.</figcaption>
@@ -145,14 +143,14 @@ dateCreated: 2024-06-13T00:25:50.117Z
   <figcaption>Figure 3.5: Effective source divergence at the undulator center.</figcaption>
 </figure>
 <p>&nbsp;</p>
-<h3>Power Load</h3>
+<h2>Power Load</h2>
 <p>The power load was calculated inside a rectangular aperture of 60 x 60 µrad², which is the typical frontend aperture, for the maximum storage ring current I = 350 mA. The maximum power load occurs at the maximum value for the deflection parameter K<sub>max</sub> = 1.79, and is equal to P<sub>max</sub> = 203.7 W. The peak power density is 59.5 kW/mrad². To calculate the power density in W/mm², one can simply divide this value by the square of the distance from the source z<sub>src</sub>. For example, at z<sub>src</sub> = 30 m, the power density is 66.1 W/mm². Figure 3.6 shows the power density distribution for such conditions, with a rectangle displaying the frontend aperture size.</p>
 <p>&nbsp;</p>
 <figure class="image image_resized" style="width:45.74%;"><img src="/img/orion/timbo/source/partial_power_cpmu14_2m_14mm.png">
   <figcaption>Figure 3.6: Power density (angular distribution) at maximum K-value. The dotted rectangle shows the typical frontend aperture of 60 x 60 µrad², where the partial power was integrated.</figcaption>
 </figure>
 <p>&nbsp;</p>
-<h3>Polarization</h3>
+<h2>Polarization</h2>
 <p>The degree of polarization was calculated at the capillary mirror aperture, as the flux. Figure 3.7 shows the degree of linear polarization (PL²) and the degree of circular polarization (PC²). These values are defined in terms of the Stokes parameters: PL = S<sub>1</sub>/S<sub>0</sub> and PC = S<sub>3</sub>/S<sub>0</sub>. As one can see, the radiation inside such aperture is highly linearly polarized.&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <figure class="image image_resized" style="width:45.48%;"><img src="/img/orion/timbo/source/degree_polarization_cpmu14_2m_14mm.png">
   <figcaption>Figure 3.7: Degree of polarization of the radiation as function of the photon energy.</figcaption>

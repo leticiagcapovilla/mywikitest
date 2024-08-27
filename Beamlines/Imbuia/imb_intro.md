@@ -2,7 +2,7 @@
 title: IMBUIA
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-08-13T18:50:40.687Z
+date: 2024-08-13T18:53:52.435Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
@@ -18,8 +18,8 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 
 **Basic information**
 
-# Tabset {.tabset}
-## Energy ranges
+## Tabset {.tabset}
+### Energy ranges
 
 | Parameter | value |
 | --- | --- |
@@ -32,7 +32,7 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 
 -   Despite the beamline delivers a broader range, the current coverage is limitted by the detector sensitivity and optical windows transmission.
 
-## Flux and Brilliance
+### Flux and Brilliance
 
 | Parameter | value |
 | --- | --- |
@@ -46,7 +46,7 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 -   Brilliance calculation ...
 -   Values for the beam at the endstation (after windows and optics)
 
-## Beam power
+### Beam power
 
 | Parameter | value |
 | --- | --- |
@@ -59,7 +59,7 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 -   Beam measured at the endstation (after windows and optics) using an Ophir power meter
 -   mid-IR filter UDR8 (Agilent Technologies, Inc.): 900-2000 cm^\-1^
 
-## Contacts
+### Contacts
 
 | Contact | Name | email | Extension |
 | --- | --- | --- | --- |
@@ -74,6 +74,10 @@ IMBUIA is the first infrared (IR) beamline to operate in the new brazilian accel
 **Notes**:
 
 > In case of emergency, call **(19) 35149686** or the extension 686
+
+
+<br>
+<br>
 
 ## Radiation extraction and source details
 
