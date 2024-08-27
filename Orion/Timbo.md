@@ -2,13 +2,13 @@
 title: Timbo
 description: 
 published: 1
-date: 2024-08-27T15:21:24.735Z
+date: 2024-08-27T15:21:41.892Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:09:56.211Z
 ---
 
-# TIMBO Wiki Content (WIP)
+# TIMBO Wiki Content
 
 <br>
 
