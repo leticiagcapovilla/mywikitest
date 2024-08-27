@@ -2,7 +2,7 @@
 title: Sibipiruna
 description: 
 published: 1
-date: 2024-06-13T17:15:47.114Z
+date: 2024-08-27T15:19:34.235Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T19:58:07.051Z
@@ -12,19 +12,14 @@ dateCreated: 2024-05-15T19:58:07.051Z
 
 <br>
 
-## [Introduction](/Orion/Sibipiruna/sib_intro)
-
-## [Source](/Orion/Sibipiruna/sib_source)
-
-## [Front-End](/Orion/Sibipiruna/sib_frontend)
-
-## [Optics](/Orion/Sibipiruna/sib_optics)
-
-## [Infrastructure](/Orion/Sibipiruna/sib_infra)
-
-## [Experimental Station](/Orion/Sibipiruna/sib_exp_station)
-
-## [Sample Preparation](/Orion/Sibipiruna/sib_sample_prep)
+- [Introduction](/Orion/Sibipiruna/sib_intro)
+- [Source](/Orion/Sibipiruna/sib_source)
+- [Front-End](/Orion/Sibipiruna/sib_frontend)
+- [Optics](/Orion/Sibipiruna/sib_optics)
+- [Infrastructure](/Orion/Sibipiruna/sib_infra)
+- [Experimental Station](/Orion/Sibipiruna/sib_exp_station)
+- [Sample Preparation](/Orion/Sibipiruna/sib_sample_prep)
+{.links-list}
 
 <br>
 
