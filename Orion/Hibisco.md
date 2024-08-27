@@ -2,7 +2,7 @@
 title: Hibisco
 description: 
 published: 1
-date: 2024-06-13T17:14:21.996Z
+date: 2024-08-27T15:18:31.192Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:12:52.896Z
@@ -12,19 +12,14 @@ dateCreated: 2024-05-15T21:12:52.896Z
 
 <br>
 
-## [Introduction](/Orion/Hibisco/hib_intro)
-
-## [Source](/Orion/Hibisco/hib_source)
-
-## [Front-End](/Orion/Hibisco/hib_frontend)
-
-## [Optics](/Orion/Hibisco/hib_optics)
-
-## [Infrastructure](/Orion/Hibisco/hib_infra)
-
-## [Experimental Station](/Orion/Hibisco/hib_exp_station)
-
-## [Sample Preparation](/Orion/Hibisco/hib_sample_prep)
+- [Introduction](/Orion/Hibisco/hib_intro){target=_blank}
+- [Source](/Orion/Hibisco/hib_source){target=_blank}
+- [Front-End](/Orion/Hibisco/hib_frontend){target=_blank}
+- [Optics](/Orion/Hibisco/hib_optics){target=_blank}
+- [Infrastructure](/Orion/Hibisco/hib_infra){target=_blank}
+- [Experimental Station](/Orion/Hibisco/hib_exp_station){target=_blank}
+- [Sample Preparation](/Orion/Hibisco/hib_sample_prep){target=_blank}
+{.links-list}
 
 <br>
 
