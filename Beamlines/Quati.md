@@ -2,13 +2,13 @@
 title: Quati
 description: 
 published: 1
-date: 2024-09-04T16:05:46.193Z
+date: 2024-09-04T16:06:46.230Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:04:00.302Z
 ---
 
-# Quati Wiki content
+# Quati Wiki Content
 
 <br>
 
@@ -26,5 +26,5 @@ dateCreated: 2024-05-15T21:04:00.302Z
 
 ## Useful links
 
-- [QUATI External Site](https://lnls.cnpem.br/grupos/quati/){target=_blank}
+- [QUATI *External Site*](https://lnls.cnpem.br/grupos/quati/){target=_blank}
 {.links-list}
