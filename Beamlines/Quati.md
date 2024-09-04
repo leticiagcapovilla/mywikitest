@@ -2,7 +2,7 @@
 title: Quati
 description: 
 published: 1
-date: 2024-09-04T16:00:27.605Z
+date: 2024-09-04T16:01:52.859Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:04:00.302Z
@@ -12,10 +12,10 @@ dateCreated: 2024-05-15T21:04:00.302Z
 
 <br>
 
-- [Introduction](Beamlines/Quati/qua_intro.html)
-- [Source](Beamlines/Quati/qua_source)
-- [Front-End](Beamlines/Quati/qua_frontend)
-- [Optics](Beamlines/Quati/qua_optics)
+- [Introduction](/Beamlines/Quati/qua_intro)
+- [Source](/Beamlines/Quati/qua_source)
+- [Front-End](/Beamlines/Quati/qua_frontend)
+- [Optics](/Beamlines/Quati/qua_optics)
 - [Infrastructure](Beamlines/Quati/qua_infra)
 - [Experimental Station](Beamlines/Quati/qua_exp_station)
 - [Sample Preparation](Beamlines/Quati/qua_sample_prep)
