@@ -2,13 +2,13 @@
 title: Quati
 description: 
 published: 1
-date: 2024-09-04T16:05:17.128Z
+date: 2024-09-04T16:05:46.193Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:04:00.302Z
 ---
 
-# QUA content
+# Quati Wiki content
 
 <br>
 
