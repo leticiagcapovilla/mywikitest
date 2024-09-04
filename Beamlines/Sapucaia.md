@@ -2,13 +2,13 @@
 title: Sapucaia
 description: 
 published: 1
-date: 2024-09-04T16:03:52.545Z
+date: 2024-09-04T16:04:58.479Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:07:58.197Z
 ---
 
-# SPU content (WIP)
+# SPU content
 <br>
 
 - [Introduction](/Beamlines/Sapucaia/spu_intro)
@@ -18,6 +18,7 @@ dateCreated: 2024-05-15T21:07:58.197Z
 - [Infrastructure](/Beamlines/Sapucaia/spu_infra)
 - [Experimental Station](/Beamlines/Sapucaia/spu_exp_station)
 - [Sample Preparation](/Beamlines/Sapucaia/spu_sample_prep)
+- [Experimental Routine](/Beamlines/Sapucaia/spu_exp_routine)
 {.links-list}
 
 <br>
