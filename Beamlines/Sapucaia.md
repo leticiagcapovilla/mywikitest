@@ -2,7 +2,7 @@
 title: Sapucaia
 description: 
 published: 1
-date: 2024-09-04T16:03:41.890Z
+date: 2024-09-04T16:03:52.545Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:07:58.197Z
@@ -11,7 +11,7 @@ dateCreated: 2024-05-15T21:07:58.197Z
 # SPU content (WIP)
 <br>
 
-- [Introduction](/Beamlines/Sapucaia/spu_intro.html)
+- [Introduction](/Beamlines/Sapucaia/spu_intro)
 - [Source](/Beamlines/Sapucaia/spu_source)
 - [Front-End](/Beamlines/Sapucaia/spu_frontend)
 - [Optics](/Beamlines/Sapucaia/spu_optics)
