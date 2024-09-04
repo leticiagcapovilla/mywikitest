@@ -2,7 +2,7 @@
 title: Quati
 description: 
 published: 1
-date: 2024-09-04T16:02:30.952Z
+date: 2024-09-04T16:02:39.422Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:04:00.302Z
