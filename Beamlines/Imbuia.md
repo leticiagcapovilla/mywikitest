@@ -2,7 +2,7 @@
 title: Imbuia
 description: 
 published: 1
-date: 2024-05-16T18:53:00.304Z
+date: 2024-09-11T19:11:48.655Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-16T16:50:59.482Z
@@ -17,3 +17,5 @@ dateCreated: 2024-05-16T16:50:59.482Z
 - [IMBUIA Wiki](/Beamlines/Imbuia/imb_intro)
 - [IMBUIA External Site](https://lnls.cnpem.br/grupos/imbuia/){target=_blank}
 {.links-list}
+
+$F_{res} = m \times \ddot{v}$
