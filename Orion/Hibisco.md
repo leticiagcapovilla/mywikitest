@@ -12,13 +12,15 @@ dateCreated: 2024-05-15T21:12:52.896Z
 
 <br>
 
-- [Introduction](/Orion/Hibisco/hib_intro.html)
-- [Source](/Orion/Hibisco/hib_source)
-- [Front-End](/Orion/Hibisco/hib_frontend)
-- [Optics](/Orion/Hibisco/hib_optics)
-- [Infrastructure](/Orion/Hibisco/hib_infra)
-- [Experimental Station](/Orion/Hibisco/hib_exp_station)
-- [Sample Preparation](/Orion/Hibisco/hib_sample_prep)
+- [1. Introduction](/Orion/Hibisco/hib_intro.html)
+- [2. Source](/Orion/Hibisco/hib_source)
+- [3. Front-End](/Orion/Hibisco/hib_frontend)
+- [4. Optics](/Orion/Hibisco/hib_optics)
+- [5. Infrastructure](/Orion/Hibisco/hib_infra)
+- [6. Computing Systems]
+- [7. Experimental Station](/Orion/Hibisco/hib_exp_station)
+- [8. Sample Preparation](/Orion/Hibisco/hib_sample_prep)
+- [9. Experimental Routine]
 {.links-list}
 
 <br>

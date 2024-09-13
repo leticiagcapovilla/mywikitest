@@ -12,13 +12,15 @@ dateCreated: 2024-05-15T21:09:56.211Z
 
 <br>
 
-- [Introduction](/Orion/Timbo/tib_intro)
-- [Source](/Orion/Timbo/tib_source)
-- [Front-End](/Orion/Timbo/tib_frontend)
-- [Optics](/Orion/Timbo/tib_optics)
-- [Infrastructure](/Orion/Timbo/tib_infra)
-- [Experimental Station](/Orion/Timbo/tib_exp_station)
-- [Sample Preparation](/Orion/Timbo/tib_sample_prep)
+- [1. Introduction](/Orion/Timbo/tib_intro)
+- [2. Source](/Orion/Timbo/tib_source)
+- [3. Front-End](/Orion/Timbo/tib_frontend)
+- [4. Optics](/Orion/Timbo/tib_optics)
+- [5. Infrastructure](/Orion/Timbo/tib_infra)
+- [6. Computing Systems]
+- [7. Experimental Station](/Orion/Timbo/tib_exp_station)
+- [8. Sample Preparation](/Orion/Timbo/tib_sample_prep)
+- [9. Experimental Routine]
 {.links-list}
 
 <br>

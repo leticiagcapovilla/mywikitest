@@ -12,13 +12,15 @@ dateCreated: 2024-05-15T19:58:07.051Z
 
 <br>
 
-- [Introduction](/Orion/Sibipiruna/sib_intro)
-- [Source](/Orion/Sibipiruna/sib_source)
-- [Front-End](/Orion/Sibipiruna/sib_frontend)
-- [Optics](/Orion/Sibipiruna/sib_optics)
-- [Infrastructure](/Orion/Sibipiruna/sib_infra)
-- [Experimental Station](/Orion/Sibipiruna/sib_exp_station)
-- [Sample Preparation](/Orion/Sibipiruna/sib_sample_prep)
+- [1. Introduction](/Orion/Sibipiruna/sib_intro)
+- [2. Source](/Orion/Sibipiruna/sib_source)
+- [3. Front-End](/Orion/Sibipiruna/sib_frontend)
+- [4. Optics](/Orion/Sibipiruna/sib_optics)
+- [5. Infrastructure](/Orion/Sibipiruna/sib_infra)
+- [6. Computing Systems]
+- [7. Experimental Station](/Orion/Sibipiruna/sib_exp_station)
+- [8. Sample Preparation](/Orion/Sibipiruna/sib_sample_prep)
+- [9. Experimental Routine]
 {.links-list}
 
 <br>
