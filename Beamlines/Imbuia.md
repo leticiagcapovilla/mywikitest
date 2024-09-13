@@ -2,13 +2,13 @@
 title: Imbuia
 description: 
 published: 1
-date: 2024-09-11T19:11:48.655Z
+date: 2024-09-13T21:26:02.155Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-16T16:50:59.482Z
 ---
 
-# IMB content (WIP)
+# Imbuia Wiki Content
 <br>
 
 - [1. Introduction](/Beamlines/Imbuia/imb_intro)
