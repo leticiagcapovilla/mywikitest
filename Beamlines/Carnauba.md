@@ -2,7 +2,7 @@
 title: Carnauba
 description: 
 published: 1
-date: 2024-08-27T20:49:28.661Z
+date: 2024-09-13T21:15:20.898Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T20:28:26.408Z
@@ -12,13 +12,15 @@ dateCreated: 2024-05-15T20:28:26.408Z
 
 <br>
 
-- [Introduction](/Beamlines/Carnauba/cnb_intro)
-- [Source](/Beamlines/Carnauba/cnb_source)
-- [Front-End](/Beamlines/Carnauba/cnb_frontend)
-- [Optics](/Beamlines/Carnauba/cnb_optics)
-- [Infrastructure](/Beamlines/Carnauba/cnb_infra)
-- [Experimental Station](/Beamlines/Carnauba/cnb_exp_station)
-- [Sample Preparation](/Beamlines/Carnauba/cnb_sample_prep)
+- [1. Introduction](/Beamlines/Carnauba/cnb_intro)
+- [2. Source](/Beamlines/Carnauba/cnb_source)
+- [3. Front-End](/Beamlines/Carnauba/cnb_frontend)
+- [4. Optics](/Beamlines/Carnauba/cnb_optics)
+- [5. Infrastructure](/Beamlines/Carnauba/cnb_infra)
+- [6. Computing Systems](/Beamlines/Carnauba/cnb_comp_systems)
+- [7. Experimental Station](/Beamlines/Carnauba/cnb_exp_station)
+- [8. Sample Preparation](/Beamlines/Carnauba/cnb_sample_prep)
+- [9. Experimental Routine](/Beamlines/Carnauba/cnb_exp_routine)
 {.links-list}
 
 <br>
