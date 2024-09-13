@@ -2,13 +2,13 @@
 title: Carnauba
 description: 
 published: 1
-date: 2024-09-13T21:15:43.281Z
+date: 2024-09-13T21:15:49.702Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T20:28:26.408Z
 ---
 
-# Carnauba Wiki content
+# Carnauba Wiki Content
 
 <br>
 
