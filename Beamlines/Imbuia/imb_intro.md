@@ -1,8 +1,8 @@
 ---
-title: IMBUIA
+title: Imbuia Introduction
 description: Infrared beamline at Sirius
 published: 1
-date: 2024-08-13T18:53:52.435Z
+date: 2024-09-13T20:30:09.233Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-04T20:05:53.880Z
