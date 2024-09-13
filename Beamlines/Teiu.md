@@ -2,13 +2,13 @@
 title: Teiu
 description: 
 published: 1
-date: 2024-09-13T21:05:29.410Z
+date: 2024-09-13T21:18:02.840Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-16T13:43:40.779Z
 ---
 
-# TEI content (WIP)
+# Teiu Wiki Content
 <br>
 
 - [1. Introduction](/Beamlines/Teiu/tei_intro)
