@@ -2,7 +2,7 @@
 title: Sibipiruna
 description: 
 published: 1
-date: 2024-09-13T21:08:22.232Z
+date: 2024-09-13T21:08:42.272Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T19:58:07.051Z
@@ -20,7 +20,7 @@ dateCreated: 2024-05-15T19:58:07.051Z
 - [6. Computing Systems](/Orion/Sibipiruna/sib_comp_systems)
 - [7. Experimental Station](/Orion/Sibipiruna/sib_exp_station)
 - [8. Sample Preparation](/Orion/Sibipiruna/sib_sample_prep)
-- [9. Experimental Routine](/Orion/Sibipiruna/sib_exp_rioutine)
+- [9. Experimental Routine](/Orion/Sibipiruna/sib_exp_routine)
 {.links-list}
 
 <br>
