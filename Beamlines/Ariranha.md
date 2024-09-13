@@ -2,7 +2,7 @@
 title: Arianha
 description: 
 published: 1
-date: 2024-09-04T16:11:21.934Z
+date: 2024-09-13T21:06:07.432Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-16T13:38:51.696Z
@@ -16,13 +16,14 @@ dateCreated: 2024-05-16T13:38:51.696Z
 - [3. Front-End](/Beamlines/Ariranha/ari_frontend)
 - [4. Optics](/Beamlines/Ariranha/ari_optics)
 - [5. Infrastructure](/Beamlines/Ariranha/ari_infra)
-- [6. Computing Systems]
+- [6. Computing Systems](/Beamlines/Ariranha/ari_comp_systems)
 - [7. Experimental Station](/Beamlines/Ariranha/ari_exp_station)
 - [8. Sample Preparation](/Beamlines/Ariranha/ari_sample_prep)
 - [9. Experimental Routine](/Beamlines/Ariranha/ari_exp_routine)
 {.links-list}
 
 <br>
+
 ## Useful links
 
 - [ARIRANHA *External Site*]()
