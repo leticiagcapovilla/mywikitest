@@ -2,7 +2,7 @@
 title: Hibisco
 description: 
 published: 1
-date: 2024-08-27T19:45:04.597Z
+date: 2024-09-13T21:07:39.947Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:12:52.896Z
@@ -17,10 +17,10 @@ dateCreated: 2024-05-15T21:12:52.896Z
 - [3. Front-End](/Orion/Hibisco/hib_frontend)
 - [4. Optics](/Orion/Hibisco/hib_optics)
 - [5. Infrastructure](/Orion/Hibisco/hib_infra)
-- [6. Computing Systems]
+- [6. Computing Systems](/Orion/Hibisco/hib_comp_systems)
 - [7. Experimental Station](/Orion/Hibisco/hib_exp_station)
 - [8. Sample Preparation](/Orion/Hibisco/hib_sample_prep)
-- [9. Experimental Routine]
+- [9. Experimental Routine](/Orion/Hibisco/hib_exp_routine)
 {.links-list}
 
 <br>
