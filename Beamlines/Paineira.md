@@ -2,13 +2,13 @@
 title: Paineira
 description: 
 published: 1
-date: 2024-09-24T14:10:00.970Z
+date: 2024-09-24T14:12:28.282Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-15T21:02:57.412Z
 ---
 
-# PNR Wiki content
+# Paineira Wiki Content
 
 - [1. Introduction](/Beamlines/Paineira/pnr_intro)
 - [2. Source](/Beamlines/Paineira/pnr_source)
