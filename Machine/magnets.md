@@ -2541,7 +2541,7 @@ Actual designed dipole model shows numbers are that in accordance with these spe
 
 ##### Fieldmap Analysis
 
-Each dipole in the booster deflects the beam in 7.2 Â° nominally. A 3D magnetic model has been created and its [fieldmap analyzed](/home/Groups/FAC/fieldmap_analysis) for a excitation current corresponding to 3.0 GeV. The model has been optimized in a way that the beam trajectory is roughly centered at the good-field region of the magnet, corresponding to the axis x = 0 mm. At the longitudinal center of the magnet the trajectory starts at x = 9.045 mm. The reference point, defined as the interception of the straight lines asymptotically tangent to the up and downstream trajectory branches, is located at x = 28.572 mm, at the longitudinal center of the magnet. Multipoles from fieldmap analysis are all very well within specifications. A summary of the analysis for extraction energy can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-dipoles/tree/master/links-official-3gev). As for low energy, the corresponding file can be found in [here](https://github.com/lnls-ima/bo-dipoles/tree/master/links-official-150mev). 
+Each dipole in the booster deflects the beam in 7.2 Â° nominally. A 3D magnetic model has been created and its [fieldmap analyzed](/home/Groups/FAC/fieldmap_analysis) for a excitation current corresponding to [3.0](/Parameters/Machine/SI_beam_energy) GeV. The model has been optimized in a way that the beam trajectory is roughly centered at the good-field region of the magnet, corresponding to the axis x = 0 mm. At the longitudinal center of the magnet the trajectory starts at x = 9.045 mm. The reference point, defined as the interception of the straight lines asymptotically tangent to the up and downstream trajectory branches, is located at x = 28.572 mm, at the longitudinal center of the magnet. Multipoles from fieldmap analysis are all very well within specifications. A summary of the analysis for extraction energy can be found in analysis.txt at [this folder](https://github.com/lnls-ima/bo-dipoles/tree/master/links-official-3gev). As for low energy, the corresponding file can be found in [here](https://github.com/lnls-ima/bo-dipoles/tree/master/links-official-150mev). 
 
 <br />
 
@@ -3049,7 +3049,7 @@ The magnetic measurement results for Booster corrector at I=10 A are shown in Fi
 
 ### Booster Magnets Ramping Curve
 
-For beam energy ramping in the Booster from 0.15 GeV to 3.0 GeV, the booster main magnetic elements will follow cycling curves with main parameters defined in Table 62. The cycling waveform shape will be a rounded triangle with rise time longer than fall time, as shown in Figure 77, a scaled universal curve where the extraction current at 3.0 GeV is set to 1 A. The maximum current is 5% higher than the extraction current. 
+For beam energy ramping in the Booster from 0.15 GeV to [3.0](/Parameters/Machine/SI_beam_energy) GeV, the booster main magnetic elements will follow cycling curves with main parameters defined in Table 62. The cycling waveform shape will be a rounded triangle with rise time longer than fall time, as shown in Figure 77, a scaled universal curve where the extraction current at [3.0](/Parameters/Machine/SI_beam_energy) GeV is set to 1 A. The maximum current is 5% higher than the extraction current. 
 
 | Parameter | Value | Unit |
 | --- | --- | --- |
