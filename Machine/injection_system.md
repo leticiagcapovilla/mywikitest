@@ -37,7 +37,7 @@ The booster main parameters are summarized in Table 1 and Table 2, and the optic
 | Parameter | Value | Unit |
 | --- | --- | ---|
 | Lattice version | V03 |  |
-| Beam extraction energy | 3.0 | GeV |
+| Beam extraction energy | [3.0](/Parameters/Machine/SI_beam_energy)| GeV |
 | Beam injection energy | 0.150 | GeV |
 | Beam current | 2.0 | mA |
 | Circumference | 496.800 | m |
@@ -381,7 +381,7 @@ Table:Booster RF parameters shows the design parameters of the RF system for the
 
 | Parameter | Value | Unit |
 | --- | --- | --- |
-| Beam energy | 3.0 | GeV |
+| Beam energy | [3.0](/Parameters/Machine/SI_beam_energy)| GeV |
 | Beam current | 2.0 | mA |
 | Energy loss/turn | 721.3 | keV |
 | SR power | 1.44 | kW |
@@ -757,7 +757,7 @@ Model: ID 34.9 - Bergoz CF4.5"-34.9-40/1.1
 
 ## Booster to storage ring transport line (BTS) 
 
-The main function of the booster-to-storage ring transport line (BTS - with naming initials TS), is to transport the 3.0 GeV electron beam from the booster synchrotron to the storage ring (SR). The geometric requirements for this line are determined by the lattice of the two accelerators located in the same machine tunnel. Since the BTS line traverses the machine tunnel, a long element-free drift section is required to facilitate the passage of people and equipment through this region. To save costs, the BTS line uses the same quadrupoles as the storage ring and same dipoles and correctors as the booster. The booster dipole is scaled to a lower value as compared to the booster peak value, so that it can be set to DC operation without overheating the coils. 
+The main function of the booster-to-storage ring transport line (BTS - with naming initials TS), is to transport the [3.0](/Parameters/Machine/SI_beam_energy) GeV electron beam from the booster synchrotron to the storage ring (SR). The geometric requirements for this line are determined by the lattice of the two accelerators located in the same machine tunnel. Since the BTS line traverses the machine tunnel, a long element-free drift section is required to facilitate the passage of people and equipment through this region. To save costs, the BTS line uses the same quadrupoles as the storage ring and same dipoles and correctors as the booster. The booster dipole is scaled to a lower value as compared to the booster peak value, so that it can be set to DC operation without overheating the coils. 
 
 A general view of the BTS transport line is shown in Figure 30. A schematic diagram of the BTS elements with their names is shown in Figure 31. The main parameters are shown in Table 29. 
 
@@ -771,7 +771,7 @@ A general view of the BTS transport line is shown in Figure 30. A schematic diag
 
 | Parameter | Value | Unit |
 | --- | --- | --- |
-| Operation energy | 3.0 | GeV |
+| Operation energy | [3.0](/Parameters/Machine/SI_beam_energy)| GeV |
 | Lattice version | V03 |  |
 | Total length including septa | 26.89 | m |
 | Number of dipoles | 3 |  |
@@ -1033,7 +1033,7 @@ The injection point in the storage ring is, by definition, the physical end of t
 
 | Kicker | Booster <br />Injection | Booster <br />Extraction | Storage Ring <br /> DpKckr (On-axis) | Storage Ring <br /> NLKckr | Unit |
 | --- | --- | --- | --- | --- | --- |
-| Beam energy | 0.15 | 3.0 | 3.0 | 3.0 | GeV |
+| Beam energy | 0.15 | [3.0](/Parameters/Machine/SI_beam_energy)| 3.0 | 3.0 | GeV |
 | Number | 1 | 1 | 1 | 1 |  |
 | Length | 0.5 | 0.5 | 0.5 | 0.47 | m |
 | Nominal deflection | 19.34 | 2.52 | 6.1 | 2.9 (@x=-8 mm) | mrad |
