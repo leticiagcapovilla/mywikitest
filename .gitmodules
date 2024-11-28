@@ -1,0 +1,3 @@
+[submodule "param_sync"]
+	path = param_sync
+	url = git@github.com:leticiagcapovilla/param_sync.git
