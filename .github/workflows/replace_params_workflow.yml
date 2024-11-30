@@ -7,4 +7,4 @@ jobs:
   deploy1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Initial testing. It worked!!"
+      - run: python3 ../../param_sync/update_param.py
